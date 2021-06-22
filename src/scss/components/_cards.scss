@@ -481,6 +481,7 @@
   &__text {
     color: color(gray-7);
     margin-top: 42px;
+    margin-bottom: 12px;
   }
 
   &__info {
@@ -593,6 +594,97 @@
     }
     span {
       color: color(green-4);
+    }
+  }
+}
+
+// Shipping Cards
+.cards-ship {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 40px;
+
+  &__item-process-info {
+    h2 {
+      color: color(gray-9);
+    }
+    p {
+      color: color(gray-4);
+    }
+  }
+
+  // Specfic Styles
+  &--one,
+  &--two {
+    .cards-ship__item {
+      display: flex;
+      align-items: center;
+      &-icon {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  // border-radius
+  &--one,
+  &--three {
+    border-radius: 8px;
+  }
+
+  // box-shaddow
+  &--one {
+    box-shadow: 0px 8px 40px 0px #00260314;
+  }
+
+  &--two {
+    box-shadow: 0px -0.5px 0px 0px #cccccc inset;
+  }
+
+  &--three {
+    box-shadow: 0px 16px 48px 0px #0e6b1514;
+    border: 1px solid color(gray-1);
+  }
+
+  &--four {
+    box-shadow: 0px -0.5px 0px 0px #cccccc inset;
+  }
+
+  // Shipping Card one
+
+  // shipping Card two
+  &--two {
+    border-bottom: 1px solid color(gray-1);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    .cards-ship__item {
+      padding: 40px 0px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+      }
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: color(green-0);
+      }
+      &-process-info {
+        h2 {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
     }
   }
 }
