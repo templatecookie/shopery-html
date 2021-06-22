@@ -9849,6 +9849,10 @@ a {
   .cards-ss--darktext .cards-ss__content .h2,
   .cards-ss--darktext .cards-ss__content .h2 {
     color: #1a1a1a; }
+  .cards-ss--small .cards-ss__content h6, .cards-ss--small .cards-ss__content .h6,
+  .cards-ss--small .cards-ss__content .h6 {
+    font-size: 12px;
+    line-height: 12px; }
   .cards-ss__content {
     position: absolute;
     top: 35px;
@@ -9903,6 +9907,16 @@ a {
       border-radius: 5px;
       display: inline-block;
       background-color: #1a1a1a; }
+  .cards-ss__save p {
+    font-size: 32px;
+    line-height: 38.4px;
+    color: #1a1a1a;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 55%;
+    margin: auto; }
+    .cards-ss__save p span {
+      font-weight: 400; }
 
 ul#example {
   list-style: none;

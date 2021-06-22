@@ -326,6 +326,13 @@
       color: color(gray-9);
     }
   }
+  &--small {
+    .cards-ss__content h6,
+    .cards-ss__content .h6 {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
 
   &__content {
     position: absolute;
@@ -402,6 +409,21 @@
         border-radius: 5px;
         display: inline-block;
         background-color: color(gray-9);
+      }
+    }
+  }
+
+  &__save {
+    p {
+      font-size: 32px;
+      line-height: 38.4px;
+      color: color(gray-9);
+      font-weight: 600;
+      text-transform: capitalize;
+      width: 55%;
+      margin: auto;
+      span {
+        font-weight: 400;
       }
     }
   }
