@@ -90,3 +90,12 @@
     background-color: #2388ff;
   }
 }
+
+// Responsive
+@media (max-width: 767px) {
+  .button {
+    &--lg {
+      padding: 16px 20px;
+    }
+  }
+}

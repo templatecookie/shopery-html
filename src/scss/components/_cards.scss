@@ -708,7 +708,7 @@
     overflow: hidden;
     .cards-ship__item {
       border-right: 1px solid color(green-1);
-      padding: 40px 55px;
+      padding: 40px 54px;
       transition: all 0.3s linear;
 
       &:hover {
@@ -795,7 +795,6 @@
       &-process-info h2 {
         font-size: 18px;
         line-height: 27px;
-
         margin-bottom: 8px;
       }
     }
