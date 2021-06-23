@@ -654,20 +654,32 @@
 
   // shipping Card two
   &--two {
-    border-bottom: 1px solid color(gray-1);
     padding-top: 0px;
     padding-bottom: 0px;
+    border-bottom: 1px solid color(gray-2);
     .cards-ship__item {
       padding: 40px 0px;
       position: relative;
+      &:hover {
+        .cards-ship__item-icon {
+          color: #fff;
+          background-color: color(primary);
+          transition: all 0.3s linear;
+        }
 
+        &::after {
+          height: 2px;
+          background-color: color(primary);
+        }
+      }
       &::after {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 1px;
+        transition: all 0.3s linear;
       }
       &-icon {
         display: flex;
@@ -678,12 +690,113 @@
         border-radius: 100%;
         overflow: hidden;
         background-color: color(green-0);
+        color: color(primary);
       }
       &-process-info {
         h2 {
           font-size: 18px;
           line-height: 27px;
         }
+      }
+    }
+  }
+
+  // Shipping Cards three
+  &--three {
+    justify-content: flex-start;
+    padding: 0;
+    overflow: hidden;
+    .cards-ship__item {
+      border-right: 1px solid color(green-1);
+      padding: 40px 55px;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background-color: color(primary);
+        .cards-ship__item-icon {
+          background-color: #fff;
+          border-color: transparent;
+        }
+
+        .cards-ship__item-process-info h2,
+        .cards-ship__item-process-info .h2 {
+          color: #fff;
+        }
+        .cards-ship__item-process-info p {
+          color: #fff;
+        }
+      }
+
+      &:nth-last-child(1) {
+        border-right: 0px;
+      }
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 1px solid color(green-1);
+        margin-bottom: 16px;
+      }
+
+      &-process-info {
+        h2 {
+          font-size: 18px;
+          line-height: 27px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  // Shipping Cards Four
+  &--four {
+    border: 0px;
+    border-bottom: 2px solid color(gray-2);
+    padding: 0px;
+    .cards-ship__item {
+      text-align: center;
+      padding: 40px;
+      position: relative;
+      transition: all 0.3s linear;
+      &:hover {
+        &::after {
+          height: 2px;
+          background-color: color(primary);
+        }
+        .cards-ship__item-icon {
+          color: #fff;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        transition: all 0.3s linear;
+      }
+
+      &-icon {
+        display: inline-block;
+        margin-bottom: 16px;
+        color: color(primary);
+      }
+
+      &-process-info h2 {
+        font-size: 18px;
+        line-height: 27px;
+
+        margin-bottom: 8px;
       }
     }
   }
