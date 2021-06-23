@@ -282,10 +282,10 @@
   background-color: #618062; }
 
 .section--green-4 {
-  background-color: #618062; }
+  background-color: #7a997c; }
 
 .bg--green-4 {
-  background-color: #618062; }
+  background-color: #7a997c; }
 
 .section--green-3 {
   background-color: #96b297; }
@@ -339,7 +339,7 @@
   --bs-green-7: #2b572e;
   --bs-green-6: #406b42;
   --bs-green-5: #618062;
-  --bs-green-4: #618062;
+  --bs-green-4: #7a997c;
   --bs-green-3: #96b297;
   --bs-green-2: #b4ccb4;
   --bs-green-1: #dae5da;
@@ -9476,6 +9476,315 @@ p {
 a {
   text-decoration: none; }
 
+.footer {
+  position: relative;
+  background-color: #1a1a1a;
+  z-index: 1; }
+  .footer__top {
+    padding: 66px 0px; }
+  .footer__brand-info-logo,
+  .footer__brand-info h2,
+  .footer__brand-info .h2 {
+    margin-bottom: 16px; }
+  
+  .footer__brand-info h2,
+  .footer__brand-info .h2 {
+    color: #fff; }
+  .footer__brand-info p {
+    color: #808080;
+    max-width: 75%;
+    margin-bottom: 22px; }
+  .footer__brand-info-contact {
+    color: #808080; }
+    .footer__brand-info-contact span {
+      color: #fff;
+      margin: 0px 16px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #00b207;
+      font-weight: 500; }
+      .footer__brand-info-contact span:nth-child(1) {
+        margin-left: 0px; }
+      .footer__brand-info-contact span:nth-child(2) {
+        margin-right: 0px; }
+  .footer__navigation-title {
+    margin-bottom: 20px; }
+    .footer__navigation-title h2, .footer__navigation-title .h2 {
+      color: #fff;
+      text-transform: capitalize; }
+  .footer__navigation-link {
+    margin-bottom: 12px; }
+    .footer__navigation-link a {
+      font-size: 14px;
+      line-height: 21px;
+      color: #999999;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      text-transform: capitalize; }
+      .footer__navigation-link a:hover {
+        color: #fff; }
+  .footer__bottom {
+    padding: 30px 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 1px solid #333333; }
+  .footer__copyright-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #808080; }
+  .footer__partner-item {
+    margin-right: 8px; }
+    .footer__partner-item:nth-last-child(1) {
+      margin-right: 0px; }
+  .footer__mobile-app {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer__mobile-app--item {
+      background-color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-right: 8px;
+      padding: 10px; }
+      .footer__mobile-app--item:nth-last-child(1) {
+        margin-right: 0px; }
+      .footer__mobile-app--item span {
+        margin-right: 8px; }
+    .footer__mobile-app--info h5, .footer__mobile-app--info .h5 {
+      font-size: 11px;
+      line-height: 14.3px;
+      color: #4d4d4d; }
+  .footer__instagram-item {
+    margin-right: 12px;
+    margin-bottom: 12px; }
+  .footer__social-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer__social-icon-link {
+      margin-right: 20px; }
+      .footer__social-icon-link a {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #b3b3b3; }
+        .footer__social-icon-link a:hover {
+          color: #fff;
+          background-color: #00b207; }
+  .footer__overlay span {
+    position: absolute;
+    z-index: -1; }
+  .footer__overlay--one {
+    top: 0;
+    left: 0; }
+  .footer__overlay--two {
+    top: 0;
+    right: 0; }
+  .footer--two {
+    background-color: #fff; }
+    .footer--two .footer__brand-info-contact span {
+      color: #1a1a1a; }
+    .footer--two .footer__navigation-title h2, .footer--two .footer__navigation-title .h2 {
+      color: #1a1a1a; }
+    .footer--two .footer__navigation-link a {
+      color: #666666; }
+    .footer--two .footer__top {
+      background-color: #f2f2f2;
+      padding: 60px; }
+    .footer--two .footer__bottom {
+      border-top: 0px; }
+  .footer--four {
+    background-color: #002603; }
+    .footer--four .footer__brand-info p {
+      color: #618062; }
+    .footer--four .footer__brand-info-contact {
+      color: #618062; }
+    .footer--four .footer__navigation-link a {
+      color: #618062; }
+      .footer--four .footer__navigation-link a:hover {
+        color: #fff; }
+    .footer--four .footer__social-icon-link a {
+      color: #96b297; }
+      .footer--four .footer__social-icon-link a:hover {
+        color: #fff; }
+    .footer--four .footer__copyright-text {
+      color: #618062; }
+  .footer--five {
+    background-color: #1a1a1a;
+    overflow: hidden; }
+    .footer--five .footer__bottom {
+      border-top: 0px;
+      position: relative; }
+      .footer--five .footer__bottom::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: calc(100% * 2);
+        height: 1px;
+        background-color: #333333; }
+    .footer--five .footer__brand-info p {
+      color: #999999; }
+    .footer--five .footer__navigation-title h2, .footer--five .footer__navigation-title .h2 {
+      position: relative; }
+      .footer--five .footer__navigation-title h2::after, .footer--five .footer__navigation-title .h2::after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        left: 0px;
+        width: 24px;
+        height: 2px;
+        background-color: #00b207; }
+    .footer--five .footer__navigation-link a {
+      color: #999999; }
+      .footer--five .footer__navigation-link a:hover {
+        color: #fff; }
+    .footer--five .footer__mobile-app {
+      margin-top: 30px; }
+      .footer--five .footer__mobile-app--item {
+        border-radius: 4px;
+        background-color: #333333; }
+        .footer--five .footer__mobile-app--item span {
+          color: #fff; }
+      .footer--five .footer__mobile-app--info h5, .footer--five .footer__mobile-app--info .h5 {
+        color: #b2b2b2; }
+      .footer--five .footer__mobile-app--info h2, .footer--five .footer__mobile-app--info .h2 {
+        color: #fff; }
+    .footer--five .footer__copyright-text {
+      color: #999999; }
+
+@media (max-width: 1200px) {
+  .footer--two .footer__brand-info-contact,
+  .footer--three .footer__brand-info-contact {
+    margin-bottom: 30px; }
+  .footer--five .footer__social-icon {
+    margin-bottom: 30px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .footer__brand-info-contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .footer__brand-info-contact span {
+      margin: 0; } }
+
+@media (max-width: 991px) {
+  .footer__brand-info-contact {
+    margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  .footer__top {
+    padding-bottom: 30px; }
+  .footer__brand-info-contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #1a1a1a; }
+    .footer__brand-info-contact span {
+      margin: 0; }
+  .footer__brand-info p {
+    max-width: 100%; }
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+    .footer__bottom .footer__copyright-text {
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2; }
+    .footer__bottom .footer__partner {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      margin-bottom: 15px; }
+  .footer__mobile-app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer__mobile-app--item {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 15px; }
+  .footer--two .footer__top {
+    padding: 60px 30px; }
+  .footer--two .footer__brand-info-contact {
+    color: #f2f2f2; }
+  .footer--three .footer__bottom .footer__copyright-text,
+  .footer--four .footer__bottom .footer__copyright-text {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 15px 0px; }
+  .footer--three .footer__bottom .footer__partner,
+  .footer--four .footer__bottom .footer__partner {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-bottom: 0px; } }
+
 .border--bottom-left::after {
   content: '';
   position: absolute;
@@ -10100,7 +10409,7 @@ a {
   color: #002603; }
 
 .cards-tm-2__designation span {
-  color: #618062; }
+  color: #7a997c; }
 
 .cards-ship {
   display: -webkit-box;
