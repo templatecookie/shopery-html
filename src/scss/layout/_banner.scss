@@ -1,0 +1,234 @@
+// Banner Layouts...
+
+.banner {
+  position: relative;
+
+  &--01 {
+    margin: 24px 0px;
+
+    .banner {
+      &__wrapper {
+        &-img {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          img {
+            width: inherit;
+          }
+        }
+        &-text {
+          position: absolute;
+        }
+
+        &--img-02,
+        &--img-03 {
+          .banner__wrapper-text {
+            .button {
+              background-color: transparent;
+              color: color(primary);
+              text-transform: capitalize;
+              font-weight: 600;
+              padding: 0;
+            }
+          }
+        }
+
+        &--img-01 {
+          .banner__wrapper-text {
+            top: 165px;
+            left: 65px;
+            h2 {
+              width: 70%;
+              color: #fff;
+            }
+
+            .sale-off {
+              margin: 30px 0px;
+              padding-left: 12px;
+              border-left: 2px solid color(soft-primary);
+
+              h5 {
+                color: #fff;
+                margin-bottom: 12px;
+                span {
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  padding: 4px 12px;
+                  background-color: color(warning);
+                  border-radius: 5px;
+                }
+              }
+              p {
+                color: color(gray-2);
+                font-size: 14px;
+                line-height: 21px;
+              }
+            }
+
+            .button {
+              background-color: #fff;
+              color: color(primary);
+              &:hover {
+                background-color: color(gray-1);
+              }
+            }
+          }
+        }
+
+        &--img-02 {
+          margin-bottom: 24px;
+          .banner__wrapper-text {
+            top: 32px;
+            left: 32px;
+            h5 {
+              letter-spacing: 0.03em;
+              text-transform: uppercase;
+              color: color(gray-9);
+              margin-bottom: 8px;
+            }
+            h2 {
+              text-transform: uppercase;
+              color: color(gray-9);
+              margin-bottom: 12px;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 21px;
+              color: color(gray-6);
+              margin-bottom: 24px;
+            }
+          }
+        }
+
+        &--img-03 {
+          .banner__wrapper-text {
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            h5,
+            h2 {
+              color: #fff;
+            }
+
+            h5 {
+              text-transform: uppercase;
+              margin-bottom: 12px;
+            }
+            h2 {
+              max-width: 72%;
+              margin: auto;
+              margin-bottom: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 1200px) {
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text h2,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2 {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text h5,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h5,
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text h5,
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text .h5,
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text p {
+    margin-bottom: 0px;
+  }
+
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text h2,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  // Banner 01
+  .banner__wrapper-img-sm {
+    display: flex;
+    margin-top: 12px;
+    .banner__wrapper-img {
+      margin-right: 12px;
+      margin-bottom: 0px;
+
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
+    width: 100%;
+  }
+  .banner__wrapper-img-sm {
+    flex-direction: column;
+    .banner__wrapper-img {
+      margin-right: 0px;
+      margin-bottom: 12pxx;
+    }
+  }
+
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text {
+    left: 32px;
+    text-align: left;
+    h2 {
+      margin-left: 0px;
+    }
+  }
+
+  .banner__wrapper-img-sm .banner__wrapper-img {
+    margin-bottom: 12px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text {
+    left: 32px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off {
+    margin: 15px 0px;
+  }
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .button {
+    background-color: transparent;
+    padding: 0px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
+    margin-bottom: 5px;
+  }
+}

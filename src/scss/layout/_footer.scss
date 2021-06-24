@@ -360,6 +360,7 @@
   .footer__top {
     padding-bottom: 30px;
   }
+
   .footer__brand-info-contact {
     display: flex;
     flex-direction: column;
@@ -368,6 +369,7 @@
       margin: 0;
     }
   }
+
   .footer__brand-info p {
     max-width: 100%;
   }
@@ -387,6 +389,7 @@
   .footer__mobile-app {
     flex-direction: column;
   }
+
   .footer__mobile-app--item {
     width: 100%;
     justify-content: center;
@@ -415,6 +418,4 @@
       margin-bottom: 0px;
     }
   }
-
-  // Footer five
 }
