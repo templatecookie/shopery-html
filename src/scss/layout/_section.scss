@@ -5,5 +5,15 @@
     color: color(gray-9);
     text-transform: capitalize;
     margin-bottom: 32px;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 767px) {
+  .section {
+    padding-top: 0px;
   }
 }

@@ -9483,6 +9483,13 @@ a {
     color: #1a1a1a;
     text-transform: capitalize;
     margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .section--title-one {
+        text-align: center; } }
+
+@media (max-width: 767px) {
+  .section {
+    padding-top: 0px; } }
 
 .banner {
   position: relative; }
@@ -9667,16 +9674,18 @@ a {
   grid-template-columns: repeat(5, 1fr); }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .popular-categories__wrapper {
+  .popular-categories__wrapper,
+  .popular-products__wrapper {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .popular-categories__wrapper {
+  .popular-categories__wrapper,
+  .popular-products__wrapper {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media (min-width: 768px) {
-  .popular-categories__wrapper--slider,
-  .popular-products__wrapper--slider {
+  .popular-categories--slider,
+  .popular-products--slider {
     display: none; } }
 
 @media (max-width: 767px) {
@@ -10000,6 +10009,9 @@ a {
   left: 0;
   width: 80px;
   height: 3px;
+  background-color: #00b207; }
+
+.swiper-pagination-bullet {
   background-color: #00b207; }
 
 .button {
@@ -10650,9 +10662,6 @@ a {
       margin-right: 16px; }
   .cards-ship--one, .cards-ship--three {
     border-radius: 8px; }
-  .cards-ship--one {
-    -webkit-box-shadow: 0px 8px 40px 0px #00260314;
-            box-shadow: 0px 8px 40px 0px #00260314; }
   .cards-ship--two {
     -webkit-box-shadow: 0px -0.5px 0px 0px #cccccc inset;
             box-shadow: 0px -0.5px 0px 0px #cccccc inset; }
@@ -10665,8 +10674,11 @@ a {
             box-shadow: 0px -0.5px 0px 0px #cccccc inset; }
   .cards-ship--one .cards-ship__item {
     padding: 40px 0px;
-    background-color: #fff;
-    margin: auto !important; }
+    margin: auto !important;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .cards-ship--two {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -11029,4 +11041,18 @@ ul#example li p {
       width: 67%; }
   .newsletter--two .newsletter__leftcontent p {
     max-width: 100%; } }
+
+.shipping-container {
+  margin-bottom: 26px; }
+  .shipping-container--slider {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 8px 40px 0px #00260314;
+            box-shadow: 0px 8px 40px 0px #00260314; }
+
+.popular-categories--slider,
+.popular-products--slider {
+  padding-bottom: 30px; }
+
+.popular-categories--slider .swiper-slide {
+  text-align: center; }
 

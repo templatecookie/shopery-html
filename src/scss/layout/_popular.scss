@@ -22,20 +22,22 @@
 // Responsive
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .popular-categories__wrapper {
+  .popular-categories__wrapper,
+  .popular-products__wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .popular-categories__wrapper {
+  .popular-categories__wrapper,
+  .popular-products__wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 768px) {
-  .popular-categories__wrapper--slider,
-  .popular-products__wrapper--slider {
+  .popular-categories--slider,
+  .popular-products--slider {
     display: none;
   }
 }

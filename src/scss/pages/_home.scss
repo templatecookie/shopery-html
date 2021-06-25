@@ -1,0 +1,24 @@
+// Homepage 01 => Shipping Cards
+
+.shipping-container {
+  margin-bottom: 26px;
+  &--slider {
+    background-color: #fff;
+    box-shadow: 0px 8px 40px 0px #00260314;
+  }
+}
+
+// Homepage 01  =>
+
+// Homepage 01  => Commons
+.popular-categories--slider,
+.popular-products--slider {
+  padding-bottom: 30px;
+}
+
+// Homepage 01 => popular categories
+.popular-categories--slider {
+  .swiper-slide {
+    text-align: center;
+  }
+}
