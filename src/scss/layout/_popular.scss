@@ -1,0 +1,48 @@
+@use "sass:math";
+// Homepage 01 = > Popular - Categories, Products
+
+// == Functions == //
+
+.popular-categories {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+.popular-products {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+// Responsive
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .popular-categories__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .popular-categories__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .popular-categories__wrapper--slider,
+  .popular-products__wrapper--slider {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .popular-categories__wrapper,
+  .popular-products__wrapper {
+    display: none;
+  }
+}

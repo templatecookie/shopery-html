@@ -602,8 +602,8 @@
 .cards-ship {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #fff;
-  padding: 40px;
 
   &__item-process-info {
     h2 {
@@ -651,6 +651,14 @@
   }
 
   // Shipping Card one
+
+  &--one {
+    .cards-ship__item {
+      padding: 40px 0px;
+      background-color: #fff;
+      margin: auto !important;
+    }
+  }
 
   // shipping Card two
   &--two {

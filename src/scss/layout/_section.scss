@@ -1,3 +1,9 @@
 .section {
   position: relative;
+
+  &--title-one {
+    color: color(gray-9);
+    text-transform: capitalize;
+    margin-bottom: 32px;
+  }
 }
