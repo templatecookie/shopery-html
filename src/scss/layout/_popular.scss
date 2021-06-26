@@ -13,6 +13,7 @@
 }
 
 .popular-products {
+  padding-bottom: 0px;
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -46,5 +47,9 @@
   .popular-categories__wrapper,
   .popular-products__wrapper {
     display: none;
+  }
+
+  .popular-products {
+    padding-bottom: 30px;
   }
 }

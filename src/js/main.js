@@ -7,8 +7,8 @@
 
 ==========  Table Contents ============
 
-** Swipper Slider
-  => Homepage 01 - Shipping Cards
+ === Swipper Slider ==
+ => Homepage 01 - Shipping Cards
 
 
 \*/
@@ -77,10 +77,10 @@ var products = new Swiper('.popular-products--slider', {
   loop: true,
   loopFillGroupWithBlank: true,
 
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   pagination: {
     el: '.swiper-pagination',
@@ -92,6 +92,30 @@ var products = new Swiper('.popular-products--slider', {
     },
     575: {
       slidesPerView: 2,
+    },
+  },
+});
+
+// Sales Card
+var salesCard = new Swiper('.cyclone--slider', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
   },
 });

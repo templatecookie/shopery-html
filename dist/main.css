@@ -9659,6 +9659,17 @@ a {
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
     margin-bottom: 5px; } }
 
+.cyclone__content .cards-ss {
+  margin-bottom: 24px; }
+
+@media (min-width: 768px) {
+  .cyclone--slider {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .cyclone__content {
+    display: none; } }
+
 @use "sass:math";
 .popular-categories__wrapper {
   display: grid;
@@ -9669,9 +9680,11 @@ a {
           justify-content: center;
   gap: 24px; }
 
-.popular-products__wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); }
+.popular-products {
+  padding-bottom: 0px; }
+  .popular-products__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .popular-categories__wrapper,
@@ -9691,7 +9704,9 @@ a {
 @media (max-width: 767px) {
   .popular-categories__wrapper,
   .popular-products__wrapper {
-    display: none; } }
+    display: none; }
+  .popular-products {
+    padding-bottom: 30px; } }
 
 .footer {
   position: relative;
@@ -10172,14 +10187,20 @@ a {
 
 .cards-md__img-wrapper {
   position: relative;
-  padding: 5px; }
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .cards-md__img-wrapper img {
+    width: inherit;
+    height: inherit; }
   .cards-md__img-wrapper .tag {
     position: absolute;
     top: 16px;
     left: 16px; }
 
 .cards-md__info {
-  padding: 12px; }
+  padding: 12px;
+  position: relative; }
   .cards-md__info-left h6, .cards-md__info-left .h6 {
     color: #4d4d4d; }
   .cards-md__info-left span {
@@ -10438,6 +10459,14 @@ a {
 
 .cards-ss {
   position: relative; }
+  .cards-ss__img-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden; }
+    .cards-ss__img-wrapper img {
+      width: inherit;
+      height: inherit; }
   .cards-ss--darktext .cards-ss__content h6, .cards-ss--darktext .cards-ss__content .h6,
   .cards-ss--darktext .cards-ss__content .h6,
   .cards-ss--darktext .cards-ss__content h2,
@@ -10806,6 +10835,13 @@ a {
         font-size: 18px;
         line-height: 27px;
         margin-bottom: 8px; }
+
+@media (max-width: 767px) {
+  .cards-ss__content {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
 
 ul#example {
   list-style: none;
