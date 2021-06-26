@@ -42,31 +42,29 @@ var shiping = new Swiper('.shipping-container--slider', {
 // Categories
 var categories = new Swiper('.popular-categories--slider', {
   slidesPerView: 1,
-  centeredSlides: true,
+  // centeredSlides: true,
   spaceBetween: 0,
   loop: true,
   loopFillGroupWithBlank: true,
 
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
 
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
   },
-  // breakpoints: {
-  //   0: {
-  //     slidesPerView: 1,
-  //   },
-  //   768: {
-  //     slidesPerView: 2,
-  //   },
-  //   1200: {
-  //     slidesPerView: 4,
-  //   },
-  // },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+  },
 });
 
 // Shipping Slider one

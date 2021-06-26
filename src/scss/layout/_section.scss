@@ -15,5 +15,9 @@
 @media (max-width: 767px) {
   .section {
     padding-top: 0px;
+    &--title-one {
+      font-size: 28px;
+      line-height: 38px;
+    }
   }
 }
