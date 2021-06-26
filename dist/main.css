@@ -9622,6 +9622,49 @@ a {
         margin: auto;
         margin-bottom: 32px; }
 
+.banner-sale__img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden; }
+  .banner-sale__img-wrapper img {
+    width: inherit;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.banner-sale__text-content {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  .banner-sale__text-content h5, .banner-sale__text-content .h5 {
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 12px; }
+  .banner-sale__text-content h2, .banner-sale__text-content .h2 {
+    font-size: 56px;
+    line-height: 67.2px;
+    color: #ff8a00;
+    font-weight: 600;
+    margin-bottom: 16px; }
+    .banner-sale__text-content h2 span, .banner-sale__text-content .h2 span {
+      color: #fff;
+      font-weight: 400; }
+  .banner-sale__text-content p {
+    color: #fff;
+    opacity: 70%;
+    max-width: 75%;
+    margin-bottom: 28px; }
+  .banner-sale__text-content a.button:hover {
+    background-color: #fff;
+    color: #00b207; }
+
 @media (max-width: 1200px) {
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text {
     top: 50%;
@@ -9635,7 +9678,17 @@ a {
   .banner--01 .banner__wrapper--img-03 .banner__wrapper-text h2,
   .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2,
   .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2 {
-    max-width: 95%; } }
+    max-width: 95%; }
+  .banner-sale__img-wrapper {
+    height: 45vh; }
+  .banner-sale__text-content {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center; }
+    .banner-sale__text-content p {
+      max-width: 100%; } }
 
 @media (max-width: 1199px) {
   .banner--01 .banner__wrapper--img-03 .banner__wrapper-text h5, .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h5,
@@ -9704,7 +9757,9 @@ a {
     padding: 0px; }
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5, .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+  .banner-sale__text-content {
+    width: 95%; } }
 
 .cyclone__content .cards-ss {
   margin-bottom: 24px; }
