@@ -112,6 +112,12 @@
     }
   }
 
+  &__group-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .tag-group {
     span {
       margin-right: 8px;
@@ -149,6 +155,15 @@
       color: color(gray-4);
       line-height: 18px;
       margin-bottom: 6px;
+    }
+  }
+
+  &__favs-list {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    .action-btn {
+      margin-bottom: 15px;
     }
   }
 }
@@ -415,18 +430,18 @@
   }
 
   &__countdown {
-    ul#example li {
+    ul.example li {
       margin-right: 8px;
     }
-    ul#example li span {
+    ul.example li span {
       font-size: 24px;
       line-height: 36px;
       font-weight: 400;
     }
-    ul#example li.seperator {
+    ul.example li.seperator {
       color: #ffffff99;
     }
-    ul#example li p {
+    ul.example li p {
       font-size: 12px;
       line-height: 12px;
       letter-spacing: 0.03em;
@@ -828,6 +843,14 @@
 
 // responsive
 
+@media (min-width: 768px) {
+  .cards-lg {
+    &__favs-list {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   // Sales Cards
   .cards-ss {
@@ -835,6 +858,17 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+  }
+
+  // Products cards
+  .cards-lg {
+    padding: 15px;
+    &__group-action {
+      justify-content: center;
+      .action-btn {
+        display: none;
+      }
     }
   }
 }

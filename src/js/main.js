@@ -70,6 +70,7 @@ var categories = new Swiper('.popular-categories--slider', {
 // Shipping Slider one
 var products = new Swiper('.popular-products--slider', {
   slidesPerView: 'auto',
+  autoHeight: true,
   // centeredSlides: true,
   spaceBetween: 15,
   loop: true,
@@ -106,6 +107,31 @@ var salesCard = new Swiper('.cyclone--slider', {
     delay: 2500,
     disableOnInteraction: false,
   },
+
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+// deals Slider one
+var deals = new Swiper('.deals-products--slider', {
+  slidesPerView: 'auto',
+  autoHeight: true,
+  // centeredSlides: true,
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
 
   pagination: {
     el: '.swiper-pagination',

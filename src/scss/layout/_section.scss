@@ -1,12 +1,32 @@
 .section {
   position: relative;
 
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    a {
+      display: flex;
+      align-items: center;
+
+      text-transform: capitalize;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      color: color(primary);
+      span {
+        margin-left: 12px;
+      }
+    }
+  }
+
   &--title-one {
     color: color(gray-9);
     text-transform: capitalize;
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
     @media (max-width: 767px) {
-      text-align: center;
+      // text-align: center;
     }
   }
 }
@@ -15,9 +35,15 @@
 @media (max-width: 767px) {
   .section {
     padding-top: 0px;
+
+    &__head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &--title-one {
       font-size: 28px;
       line-height: 38px;
+      margin-bottom: 15px;
     }
   }
 }
