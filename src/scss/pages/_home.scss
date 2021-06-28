@@ -11,10 +11,10 @@
 // Homepage 01  =>
 
 // Homepage 01  => Commons
-.popular-categories--slider,
-.popular-products--slider {
-  padding-bottom: 30px;
-}
+// .popular-categories--slider,
+// .popular-products--slider {
+//   padding-bottom: 30px;
+// }
 
 // popular categories
 .popular-categories--slider {
@@ -36,7 +36,10 @@
 @media (max-width: 767px) {
   // Homepage 01
   .featured,
-  .news {
+  .news,
+  .popular-categories--slider,
+  .popular-products--slider,
+  .testimonial-slider--one {
     .swiper-wrapper {
       padding-bottom: 30px;
     }

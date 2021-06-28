@@ -207,14 +207,47 @@ var news = new Swiper('.news-slider--one', {
   spaceBetween: 24,
   loop: true,
   loopFillGroupWithBlank: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
     dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// Testimonials
+var testimonialOne = new Swiper('.testimonial-slider--one', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoHeight: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ' .swiper-button--next',
+    prevEl: ' .swiper-button--prev',
   },
   breakpoints: {
     0: {
