@@ -10658,6 +10658,8 @@ a {
       font-weight: 600;
       color: #00b207;
       margin-top: 12px; }
+      .cards-blog__info button span {
+        margin-left: 12px; }
 
 .cards-mb {
   border: 0px; }
@@ -11411,16 +11413,15 @@ ul.example li p {
 .popular-categories--slider .swiper-slide {
   text-align: center; }
 
-.featured .swiper-wrapper,
-.news .swiper-wrapper {
-  padding-bottom: 30px; }
-
 @media (min-width: 768px) {
   .featured .swiper-pagination,
   .news .swiper-pagination {
     display: none; } }
 
 @media (max-width: 767px) {
+  .featured .swiper-wrapper,
+  .news .swiper-wrapper {
+    padding-bottom: 30px; }
   .featured .swiper-pagination,
   .news .swiper-pagination {
     display: block; } }

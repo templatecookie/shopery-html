@@ -23,13 +23,6 @@
   }
 }
 
-.featured,
-.news {
-  .swiper-wrapper {
-    padding-bottom: 30px;
-  }
-}
-
 // Responsive {
 @media (min-width: 768px) {
   // Featured Section
@@ -41,7 +34,14 @@
   }
 }
 @media (max-width: 767px) {
-  // Featured Section
+  // Homepage 01
+  .featured,
+  .news {
+    .swiper-wrapper {
+      padding-bottom: 30px;
+    }
+  }
+
   .featured,
   .news {
     .swiper-pagination {
