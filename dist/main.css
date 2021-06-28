@@ -11095,7 +11095,7 @@ a {
         height: 2px;
         background-color: #00b207; }
       .cards-ship--four .cards-ship__item:hover .cards-ship__item-icon {
-        color: #fff; }
+        color: #1a1a1a; }
       .cards-ship--four .cards-ship__item::after {
         content: '';
         width: 100%;
