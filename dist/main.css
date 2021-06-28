@@ -9880,16 +9880,17 @@ a {
     margin-bottom: 22px; }
   .footer__brand-info-contact {
     color: #808080; }
+    .footer__brand-info-contact a {
+      margin: 0px 16px; }
+      .footer__brand-info-contact a:nth-child(1) {
+        margin-left: 0px; }
+      .footer__brand-info-contact a:nth-child(2) {
+        margin-right: 0px; }
     .footer__brand-info-contact span {
       color: #fff;
-      margin: 0px 16px;
       padding-bottom: 6px;
       border-bottom: 2px solid #00b207;
       font-weight: 500; }
-      .footer__brand-info-contact span:nth-child(1) {
-        margin-left: 0px; }
-      .footer__brand-info-contact span:nth-child(2) {
-        margin-right: 0px; }
   .footer__navigation-title {
     margin-bottom: 20px; }
     .footer__navigation-title h2, .footer__navigation-title .h2 {
@@ -9954,11 +9955,16 @@ a {
       .footer__mobile-app--item:nth-last-child(1) {
         margin-right: 0px; }
       .footer__mobile-app--item span {
-        margin-right: 8px; }
+        margin-right: 8px;
+        color: #1a1a1a; }
     .footer__mobile-app--info h5, .footer__mobile-app--info .h5 {
       font-size: 11px;
       line-height: 14.3px;
       color: #4d4d4d; }
+    .footer__mobile-app--info h2, .footer__mobile-app--info .h2 {
+      font-size: 16px;
+      line-height: 24px;
+      color: #1a1a1a; }
   .footer__instagram-item {
     margin-right: 12px;
     margin-bottom: 12px; }
@@ -9989,6 +9995,8 @@ a {
         .footer__social-icon-link a:hover {
           color: #fff;
           background-color: #00b207; }
+        .footer__social-icon-link a svg {
+          width: 18px; }
   .footer__overlay span {
     position: absolute;
     z-index: -1; }
@@ -10071,7 +10079,15 @@ a {
     .footer--five .footer__copyright-text {
       color: #999999; }
 
+@media (max-width: 1440px) {
+  .footer--two .footer__top {
+    padding: 60px 30px; } }
+
 @media (max-width: 1200px) {
+  .footer--two {
+    background-color: #f2f2f2; }
+  .footer--two .footer__top {
+    padding: 60px 0px; }
   .footer--two .footer__brand-info-contact,
   .footer--three .footer__brand-info-contact {
     margin-bottom: 30px; }
@@ -10093,8 +10109,9 @@ a {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start; }
-    .footer__brand-info-contact span {
-      margin: 0; } }
+    .footer__brand-info-contact a {
+      margin-left: 0;
+      margin-bottom: 15px; } }
 
 @media (max-width: 991px) {
   .footer__brand-info-contact {
@@ -10112,10 +10129,10 @@ a {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column;
-    color: #1a1a1a; }
-    .footer__brand-info-contact span {
-      margin: 0; }
+            flex-direction: column; }
+    .footer__brand-info-contact a {
+      margin: 0;
+      margin-bottom: 15px; }
   .footer__brand-info p {
     max-width: 100%; }
   .footer__bottom {
@@ -10136,24 +10153,10 @@ a {
           -ms-flex-order: 1;
               order: 1;
       margin-bottom: 15px; }
-  .footer__mobile-app {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .footer__mobile-app--item {
-    width: 100%;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-right: 0px;
-    margin-bottom: 15px; }
+  .footer--two {
+    background-color: #f2f2f2; }
   .footer--two .footer__top {
-    padding: 60px 30px; }
-  .footer--two .footer__brand-info-contact {
-    color: #f2f2f2; }
+    padding: 60px 0px; }
   .footer--three .footer__bottom .footer__copyright-text,
   .footer--four .footer__bottom .footer__copyright-text {
     -webkit-box-ordinal-group: 3;
@@ -10168,6 +10171,22 @@ a {
         -ms-flex-order: 3;
             order: 3;
     margin-bottom: 0px; } }
+
+@media (max-width: 574px) {
+  .footer__mobile-app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer__mobile-app--item {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 15px; } }
 
 .border--bottom-left::after {
   content: '';
