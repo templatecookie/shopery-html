@@ -8,10 +8,38 @@
 ==========  Table Contents ============
 
  === Swipper Slider ==
+
  => Homepage 01 - Shipping Cards
 
 
 \*/
+
+// Banner Slider
+var bannerOne = new Swiper('.banner-slider--one', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //   },
+  //   1200: {
+  //     slidesPerView: 4,
+  //   },
+  // },
+});
 
 // Shipping Slider one
 var shiping = new Swiper('.shipping-container--slider', {

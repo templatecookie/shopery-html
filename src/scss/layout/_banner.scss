@@ -1,5 +1,4 @@
 // Banner Layouts...
-
 .banner {
   position: relative;
 
@@ -248,7 +247,143 @@
   }
 }
 
+@media (min-width: 768px) {
+  .banner--01 .banner-slider--one {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
+  // Swiper Slider Customizations
+  .banner {
+    &-slider {
+      &--one {
+        .banner {
+          &__wrapper {
+            &-img {
+              overflow: hidden;
+            }
+
+            &--img-01,
+            &--img-02,
+            &--img-03 {
+              .banner__wrapper-text {
+                .button {
+                  span {
+                    svg {
+                      opacity: 0.3;
+                      transform: translateY(-3px) rotate(-45deg);
+                    }
+                  }
+                }
+              }
+            }
+
+            &--img-01 {
+              .banner__wrapper-text {
+                h2,
+                .sale-off span {
+                  opacity: 0;
+                }
+                h2 {
+                  transform: translateX(-350px);
+                  pointer-events: none;
+                  transition: all 0.6s ease-in-out;
+                }
+              }
+            }
+            &--img-02,
+            &--img-03 {
+              .banner__wrapper-text {
+                h5,
+                h2 {
+                  opacity: 0.6;
+                }
+                h5 {
+                  transform: translateY(-250px);
+                }
+                h2 {
+                  transform: translateX(-350px);
+                }
+              }
+            }
+          }
+        }
+
+        .swiper-slide {
+          opacity: 0 !important;
+          &-active {
+            opacity: 1 !important;
+            transition: all 0.6s ease-in-out;
+            .banner__wrapper {
+              &--img-01,
+              &--img-02,
+              &--img-03 {
+                .banner__wrapper-text {
+                  .button {
+                    span {
+                      svg {
+                        opacity: 1;
+                        transform: translateY(0px) rotate(0deg);
+                        transition: all 0.6s linear;
+                      }
+                    }
+                  }
+                }
+              }
+
+              &--img-01 {
+                .banner__wrapper-text {
+                  h2 {
+                    transform: translateX(0);
+                    opacity: 1;
+                    transition: all 0.9s linear;
+                    pointer-events: all;
+                  }
+                  .sale-off {
+                    span {
+                      opacity: 1;
+                      transition: all 0.3s ease-in-out;
+                      transition-delay: 0.6s;
+                    }
+                  }
+                }
+              }
+
+              &--img-02,
+              &--img-03 {
+                .banner__wrapper-text {
+                  h5,
+                  h2 {
+                    opacity: 1;
+                    transform: translate(0);
+                  }
+                  h5 {
+                    transition: all 0.6s linear;
+                  }
+                  h2 {
+                    transition: all 0.9s ease-in;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text,
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text {
+    left: 15px;
+  }
+
+  // Homepage 01
+  .banner--01 .banner__wrapper {
+    display: none;
+  }
+
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
     width: 100%;
@@ -273,10 +408,6 @@
     margin-bottom: 12px;
   }
 
-  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text {
-    left: 32px;
-  }
-
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
     font-size: 20px;
@@ -292,7 +423,8 @@
     line-height: 21px;
   }
 
-  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .button {
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .button,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .button:hover {
     background-color: transparent;
     padding: 0px;
   }
@@ -300,6 +432,10 @@
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
     margin-bottom: 5px;
+  }
+
+  .banner--01 .banner__wrapper--img-02 {
+    margin-bottom: 0px;
   }
 
   // banner sales cards
