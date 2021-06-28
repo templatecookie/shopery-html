@@ -28,17 +28,6 @@ var bannerOne = new Swiper('.banner-slider--one', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  // breakpoints: {
-  //   0: {
-  //     slidesPerView: 1,
-  //   },
-  //   768: {
-  //     slidesPerView: 2,
-  //   },
-  //   1200: {
-  //     slidesPerView: 4,
-  //   },
-  // },
 });
 
 // Shipping Slider one
@@ -232,7 +221,6 @@ var news = new Swiper('.news-slider--one', {
 
 // Testimonials
 var testimonialOne = new Swiper('.testimonial-slider--one', {
-  spaceBetween: 24,
   loop: true,
   loopFillGroupWithBlank: true,
   autoHeight: true,
@@ -259,6 +247,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
     },
     1200: {
       slidesPerView: 3,
+      spaceBetween: 24,
     },
   },
 });

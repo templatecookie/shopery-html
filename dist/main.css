@@ -11447,7 +11447,8 @@ ul.example li p {
 
 @media (min-width: 768px) {
   .featured .swiper-pagination,
-  .news .swiper-pagination {
+  .news .swiper-pagination,
+  .testimonial-slider--one .swiper-pagination {
     display: none; } }
 
 @media (max-width: 767px) {
@@ -11456,8 +11457,5 @@ ul.example li p {
   .popular-categories--slider .swiper-wrapper,
   .popular-products--slider .swiper-wrapper,
   .testimonial-slider--one .swiper-wrapper {
-    padding-bottom: 30px; }
-  .featured .swiper-pagination,
-  .news .swiper-pagination {
-    display: block; } }
+    padding-bottom: 30px; } }
 
