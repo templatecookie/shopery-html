@@ -16,9 +16,34 @@
   padding-bottom: 30px;
 }
 
-// Homepage 01 => popular categories
+// popular categories
 .popular-categories--slider {
   .swiper-slide {
     text-align: center;
+  }
+}
+
+// Featured Products
+.featured {
+  .swiper-wrapper {
+    padding-bottom: 30px;
+  }
+}
+
+// Responsive {
+@media (min-width: 768px) {
+  // Featured Section
+  .featured {
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}
+@media (max-width: 767px) {
+  // Featured Section
+  .featured {
+    .swiper-pagination {
+      display: block;
+    }
   }
 }

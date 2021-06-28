@@ -171,3 +171,33 @@ var deals = new Swiper('.deals-products--slider', {
     },
   },
 });
+
+// featured Slider one
+var featured = new Swiper('.featured-slider--one', {
+  spaceBetween: 0,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});

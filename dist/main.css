@@ -11383,3 +11383,14 @@ ul.example li p {
 .popular-categories--slider .swiper-slide {
   text-align: center; }
 
+.featured .swiper-wrapper {
+  padding-bottom: 30px; }
+
+@media (min-width: 768px) {
+  .featured .swiper-pagination {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .featured .swiper-pagination {
+    display: block; } }
+
