@@ -11445,6 +11445,9 @@ ul.example li p {
 .popular-categories--slider .swiper-slide {
   text-align: center; }
 
+.instagram .swiper-slide {
+  text-align: center; }
+
 @media (min-width: 768px) {
   .featured .swiper-pagination,
   .news .swiper-pagination,
@@ -11456,6 +11459,7 @@ ul.example li p {
   .news .swiper-wrapper,
   .popular-categories--slider .swiper-wrapper,
   .popular-products--slider .swiper-wrapper,
-  .testimonial-slider--one .swiper-wrapper {
+  .testimonial-slider--one .swiper-wrapper,
+  .instagram-slider--one .swiper-wrapper {
     padding-bottom: 30px; } }
 

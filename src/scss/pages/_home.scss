@@ -17,6 +17,13 @@
   }
 }
 
+// Instagram
+.instagram {
+  .swiper-slide {
+    text-align: center;
+  }
+}
+
 // Responsive {
 @media (min-width: 768px) {
   // Featured Section
@@ -34,7 +41,8 @@
   .news,
   .popular-categories--slider,
   .popular-products--slider,
-  .testimonial-slider--one {
+  .testimonial-slider--one,
+  .instagram-slider--one {
     .swiper-wrapper {
       padding-bottom: 30px;
     }

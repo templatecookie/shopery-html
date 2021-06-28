@@ -251,3 +251,37 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
     },
   },
 });
+
+// Testimonials
+var testimonialOne = new Swiper('.instagram-slider--one', {
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoHeight: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    420: {
+      slidesPerView: 3,
+      spaceBetween: 12,
+    },
+
+    768: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 6,
+      spaceBetween: 24,
+    },
+  },
+});
