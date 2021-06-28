@@ -201,3 +201,31 @@ var featured = new Swiper('.featured-slider--one', {
     },
   },
 });
+
+// News Slider one
+var news = new Swiper('.news-slider--one', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
