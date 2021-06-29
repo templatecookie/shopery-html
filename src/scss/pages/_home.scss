@@ -10,15 +10,41 @@
 
 // Homepage 01  =>
 
-// Homepage 01  => Commons
-.popular-categories--slider,
-.popular-products--slider {
-  padding-bottom: 30px;
-}
-
-// Homepage 01 => popular categories
+// popular categories
 .popular-categories--slider {
   .swiper-slide {
     text-align: center;
+  }
+}
+
+// Instagram
+.instagram {
+  .swiper-slide {
+    text-align: center;
+  }
+}
+
+// Responsive {
+@media (min-width: 768px) {
+  // Featured Section
+  .featured,
+  .news,
+  .testimonial-slider--one {
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}
+@media (max-width: 767px) {
+  // Homepage 01
+  .featured,
+  .news,
+  .popular-categories--slider,
+  .popular-products--slider,
+  .testimonial-slider--one,
+  .instagram-slider--one {
+    .swiper-wrapper {
+      padding-bottom: 30px;
+    }
   }
 }

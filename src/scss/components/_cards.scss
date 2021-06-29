@@ -259,8 +259,12 @@
       font-weight: 400;
       margin-right: 15px;
       text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       span {
         color: color(gray-3);
+        margin-right: 8px;
       }
     }
 
@@ -275,6 +279,10 @@
       font-weight: 600;
       color: color(primary);
       margin-top: 12px;
+
+      span {
+        margin-left: 12px;
+      }
     }
   }
 }
@@ -812,7 +820,7 @@
           background-color: color(primary);
         }
         .cards-ship__item-icon {
-          color: #fff;
+          color: color(gray-9);
         }
       }
 
@@ -869,6 +877,27 @@
       .action-btn {
         display: none;
       }
+    }
+  }
+
+  // Blog Cards
+  .cards-blog__img-wrapper .date {
+    left: 12px;
+  }
+  .cards-blog__info {
+    padding: 24px 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  // blog Cards
+  .cards-blog__info-tags {
+    justify-content: space-between;
+  }
+  .cards-blog__info-tags-item {
+    margin-right: 0px;
+    span {
+      margin-right: 2px;
     }
   }
 }
