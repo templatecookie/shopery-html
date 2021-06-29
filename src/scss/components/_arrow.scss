@@ -1,5 +1,6 @@
-.arrow {
+.arrows {
   display: flex;
+  align-items: center;
   button {
     margin-right: 12px;
     &:nth-last-child(1) {

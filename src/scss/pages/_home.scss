@@ -29,12 +29,14 @@
   // Featured Section
   .featured,
   .news,
-  .testimonial-slider--one {
+  .testimonial-slider--one,
+  .instagram-slider--one {
     .swiper-pagination {
       display: none;
     }
   }
 }
+
 @media (max-width: 767px) {
   // Homepage 01
   .featured,
