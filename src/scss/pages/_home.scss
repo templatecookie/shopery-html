@@ -24,6 +24,16 @@
   }
 }
 
+// Homepage 02 =>
+
+// Shipping Cards
+.shipping-container--two {
+  margin-bottom: 0px;
+  .swiper-container {
+    border-bottom: 1px solid color(gray-2);
+  }
+}
+
 // Responsive {
 @media (min-width: 768px) {
   // Featured Section

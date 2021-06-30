@@ -9500,6 +9500,16 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 32px; }
+    .section__head--two {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
     .section__head a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -9516,6 +9526,14 @@ a {
       color: #00b207; }
       .section__head a span {
         margin-left: 12px; }
+  .section__title {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #00b207;
+    margin-bottom: 8px; }
   .section--title-one {
     color: #1a1a1a;
     text-transform: capitalize; }
@@ -11666,7 +11684,11 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .cards-ship--one .cards-ship__item-icon, .cards-ship--two .cards-ship__item-icon {
       margin-right: 16px; }
   .cards-ship--one, .cards-ship--three {
@@ -11690,8 +11712,7 @@ a {
             justify-content: center; }
   .cards-ship--two {
     padding-top: 0px;
-    padding-bottom: 0px;
-    border-bottom: 1px solid #cccccc; }
+    padding-bottom: 0px; }
     .cards-ship--two .cards-ship__item {
       padding: 40px 0px;
       position: relative; }
@@ -12098,6 +12119,11 @@ ul.example li p {
 
 .instagram .swiper-slide {
   text-align: center; }
+
+.shipping-container--two {
+  margin-bottom: 0px; }
+  .shipping-container--two .swiper-container {
+    border-bottom: 1px solid #cccccc; }
 
 @media (min-width: 768px) {
   .featured .swiper-pagination,

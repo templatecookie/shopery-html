@@ -664,6 +664,7 @@
     .cards-ship__item {
       display: flex;
       align-items: center;
+      justify-content: center;
       &-icon {
         margin-right: 16px;
       }
@@ -704,7 +705,6 @@
   &--two {
     padding-top: 0px;
     padding-bottom: 0px;
-    border-bottom: 1px solid color(gray-2);
     .cards-ship__item {
       padding: 40px 0px;
       position: relative;
