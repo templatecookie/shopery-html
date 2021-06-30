@@ -10499,8 +10499,9 @@ a {
   .banner-sale__text-content {
     width: 95%; } }
 
-.cyclone__content .cards-ss {
-  margin-bottom: 24px; }
+@media (max-width: 991px) {
+  .cyclone__content .cards-ss {
+    margin-bottom: 24px; } }
 
 @media (min-width: 768px) {
   .cyclone--slider {
@@ -11458,23 +11459,30 @@ a {
 .cards-ss {
   position: relative; }
   .cards-ss__img-wrapper {
-    width: 100%;
-    height: 100%;
     border-radius: 8px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
     .cards-ss__img-wrapper img {
       width: inherit;
-      height: inherit; }
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .cards-ss--lg .cards-ss__img-wrapper {
+    width: 424px;
+    height: 536px; }
+  .cards-ss--small-two .cards-ss__img-wrapper {
+    width: 312px;
+    height: 423px; }
+  .cards-ss--small .cards-ss__content h6, .cards-ss--small .cards-ss__content .h6,
+  .cards-ss--small .cards-ss__content .h6 {
+    font-size: 12px;
+    line-height: 12px; }
   .cards-ss--darktext .cards-ss__content h6, .cards-ss--darktext .cards-ss__content .h6,
   .cards-ss--darktext .cards-ss__content .h6,
   .cards-ss--darktext .cards-ss__content h2,
   .cards-ss--darktext .cards-ss__content .h2,
   .cards-ss--darktext .cards-ss__content .h2 {
     color: #1a1a1a; }
-  .cards-ss--small .cards-ss__content h6, .cards-ss--small .cards-ss__content .h6,
-  .cards-ss--small .cards-ss__content .h6 {
-    font-size: 12px;
-    line-height: 12px; }
   .cards-ss__content {
     position: absolute;
     top: 35px;
@@ -11485,7 +11493,7 @@ a {
     color: #fff; }
     .cards-ss__content h6, .cards-ss__content .h6 {
       letter-spacing: 0.03em;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       text-transform: uppercase; }
     .cards-ss__content h2, .cards-ss__content .h2 {
       margin-bottom: 8px; }
@@ -11535,7 +11543,7 @@ a {
     color: #1a1a1a;
     font-weight: 600;
     text-transform: capitalize;
-    width: 55%;
+    width: 80%;
     margin: auto; }
     .cards-ss__save p span {
       font-weight: 400; }
