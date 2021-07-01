@@ -85,6 +85,9 @@
   }
 
   &--two {
+    padding-left: 60px;
+    padding-right: 60px;
+
     .newsletter {
       &__leftcontent {
         display: flex;
@@ -155,13 +158,13 @@
 
 // Responsive
 
-@media (max-width: 1200px) {
+@include max(1200px) {
   .newsletter {
     flex-direction: column;
 
     &__leftcontent {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       p {
         margin: auto;
       }
@@ -185,6 +188,8 @@
 
     // Newsletter two
     &--two {
+      padding-left: 0px;
+      padding-right: 0px;
       .newsletter {
         &__leftcontent {
           flex-direction: column;

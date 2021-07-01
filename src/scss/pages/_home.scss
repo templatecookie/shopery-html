@@ -71,7 +71,18 @@
   }
 }
 
-// Responsive
+// =========  Responsive ======== \\
+
+@include max(1200px) {
+  // ======== Homepage 02 ========== \\
+
+  // == > Call To Actions
+  .call-to-action {
+    &--two {
+      background-color: color(gray-9);
+    }
+  }
+}
 @include max(991px) {
   // homepage 02
 
