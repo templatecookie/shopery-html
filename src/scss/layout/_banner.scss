@@ -547,13 +547,26 @@
     .banner--02__wrapper-text {
       left: 12px;
     }
+    .swiper-pagination {
+      bottom: 15px;
+    }
     .banner {
+      &__wrapper-img {
+        height: 350px;
+      }
+
       &__wrapper-text {
         left: 12px;
         h2 {
           font-size: 32px;
           line-height: 42px;
           max-width: 100%;
+        }
+        .sale-off {
+          h5 {
+            font-size: 18px;
+            line-height: 28px;
+          }
         }
       }
     }

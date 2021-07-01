@@ -10586,12 +10586,19 @@ a {
   .banner--02 .swiper-pagination,
   .banner--02 .banner--02__wrapper-text {
     left: 12px; }
+  .banner--02 .swiper-pagination {
+    bottom: 15px; }
+  .banner--02 .banner__wrapper-img {
+    height: 350px; }
   .banner--02 .banner__wrapper-text {
     left: 12px; }
     .banner--02 .banner__wrapper-text h2, .banner--02 .banner__wrapper-text .h2 {
       font-size: 32px;
       line-height: 42px;
-      max-width: 100%; } }
+      max-width: 100%; }
+    .banner--02 .banner__wrapper-text .sale-off h5, .banner--02 .banner__wrapper-text .sale-off .h5 {
+      font-size: 18px;
+      line-height: 28px; } }
 
 @media (max-width: 991px) {
   .cyclone__content .cards-ss {
