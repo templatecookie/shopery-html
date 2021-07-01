@@ -47,6 +47,17 @@
   }
 }
 
+// Our Profesional Members
+.members {
+  padding-bottom: 0px;
+  &-slider--one {
+    padding-bottom: 60px;
+    @include max(767px) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
 // Responsive
 
 @include max(991px) {
@@ -69,7 +80,8 @@
   .featured,
   .news,
   .testimonial-slider--one,
-  .instagram-slider--one {
+  .instagram-slider--one,
+  .members-slider--one {
     .swiper-pagination {
       display: none;
     }

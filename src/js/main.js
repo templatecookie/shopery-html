@@ -230,10 +230,10 @@ var featuredThree = new Swiper('.featured-slider--three', {
   loop: true,
   loopFillGroupWithBlank: true,
   direction: 'vertical',
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   // pagination: {
   //   el: '.swiper-pagination',
   //   clickable: true,
@@ -377,6 +377,35 @@ var brandsName = new Swiper('.brand-name-slide--one', {
     },
     1200: {
       slidesPerView: 6,
+      spaceBetween: 24,
+    },
+  },
+});
+
+// Members
+
+var memebers = new Swiper('.members-slider--one', {
+  loop: true,
+  loopFillGroupWithBlank: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1201: {
+      slidesPerView: 4,
       spaceBetween: 24,
     },
   },

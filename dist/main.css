@@ -12250,6 +12250,14 @@ ul.example li p {
 .featured-slider--three {
   height: 350px; }
 
+.members {
+  padding-bottom: 0px; }
+  .members-slider--one {
+    padding-bottom: 60px; }
+    @media (max-width: 767px) {
+      .members-slider--one {
+        padding-bottom: 30px; } }
+
 @media (max-width: 991px) {
   .featured .cards-ss--small-one,
   .featured .cards-ss--small-two {
@@ -12261,7 +12269,8 @@ ul.example li p {
   .featured .swiper-pagination,
   .news .swiper-pagination,
   .testimonial-slider--one .swiper-pagination,
-  .instagram-slider--one .swiper-pagination {
+  .instagram-slider--one .swiper-pagination,
+  .members-slider--one .swiper-pagination {
     display: none; } }
 
 @media (max-width: 767px) {
