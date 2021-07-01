@@ -24,6 +24,8 @@
   }
 }
 
+// cyclone Sale banner
+
 // Homepage 02 =>
 
 // Shipping Cards
@@ -81,7 +83,8 @@
   .news,
   .testimonial-slider--one,
   .instagram-slider--one,
-  .members-slider--one {
+  .members-slider--one,
+  .cyclone--slider {
     .swiper-pagination {
       display: none;
     }
@@ -95,7 +98,8 @@
   .popular-categories--slider,
   .popular-products--slider,
   .testimonial-slider--one,
-  .instagram-slider--one {
+  .instagram-slider--one,
+  .cyclone--slider {
     .swiper-wrapper {
       padding-bottom: 30px;
     }

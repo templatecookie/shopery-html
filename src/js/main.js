@@ -131,7 +131,7 @@ var salesCard = new Swiper('.cyclone--slider', {
       slidesPerView: 1,
       spaceBetween: 12,
     },
-    992: {
+    768: {
       slidesPerView: 2,
     },
     1400: {

@@ -12270,7 +12270,8 @@ ul.example li p {
   .news .swiper-pagination,
   .testimonial-slider--one .swiper-pagination,
   .instagram-slider--one .swiper-pagination,
-  .members-slider--one .swiper-pagination {
+  .members-slider--one .swiper-pagination,
+  .cyclone--slider .swiper-pagination {
     display: none; } }
 
 @media (max-width: 767px) {
@@ -12279,6 +12280,7 @@ ul.example li p {
   .popular-categories--slider .swiper-wrapper,
   .popular-products--slider .swiper-wrapper,
   .testimonial-slider--one .swiper-wrapper,
-  .instagram-slider--one .swiper-wrapper {
+  .instagram-slider--one .swiper-wrapper,
+  .cyclone--slider .swiper-wrapper {
     padding-bottom: 30px; } }
 
