@@ -30,6 +30,21 @@ var bannerOne = new Swiper('.banner-slider--one', {
   },
 });
 
+var bannerTwo = new Swiper('.banner-slider--02', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  effect: 'fade',
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
 // Shipping Slider one
 var shiping = new Swiper('.shipping-container--slider', {
   spaceBetween: 0,

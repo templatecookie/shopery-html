@@ -10297,6 +10297,66 @@ a {
         max-width: 72%;
         margin: auto;
         margin-bottom: 32px; }
+  .banner--02 .banner__wrapper-img {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    overflow: hidden; }
+    .banner--02 .banner__wrapper-img img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .banner--02 .banner__wrapper-text {
+    position: absolute;
+    top: 50%;
+    left: 48px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .banner--02 .banner__wrapper-text h2, .banner--02 .banner__wrapper-text .h2 {
+      color: #fff;
+      max-width: 400px;
+      text-transform: capitalize;
+      opacity: 0.3; }
+    .banner--02 .banner__wrapper-text .sale-off {
+      border-left: 1px solid transparent;
+      padding-left: 12px; }
+      .banner--02 .banner__wrapper-text .sale-off h5, .banner--02 .banner__wrapper-text .sale-off .h5 {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+        max-width: 135px;
+        margin: 12px 0px; }
+        .banner--02 .banner__wrapper-text .sale-off h5 span, .banner--02 .banner__wrapper-text .sale-off .h5 span {
+          color: rgba(255, 255, 255, 0.6); }
+    .banner--02 .banner__wrapper-text a.button {
+      background-color: #2c742f; }
+  .banner--02 .swiper-pagination {
+    position: absolute;
+    left: 48px;
+    bottom: 32px;
+    text-align: left; }
+    .banner--02 .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: #fff; }
+  .banner--02 .swiper-slide-active .banner__wrapper-text h2, .banner--02 .swiper-slide-active .banner__wrapper-text .h2,
+  .banner--02 .swiper-slide-active .banner__wrapper-text h5 span,
+  .banner--02 .swiper-slide-active .banner__wrapper-text .h5 span,
+  .banner--02 .swiper-slide-active .banner__wrapper-text a.button {
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in; }
+  .banner--02 .swiper-slide-active .banner__wrapper-text h2, .banner--02 .swiper-slide-active .banner__wrapper-text .h2 {
+    opacity: 1; }
+  
+  .banner--02 .swiper-slide-active .banner__wrapper-text h5 span,
+  .banner--02 .swiper-slide-active .banner__wrapper-text .h5 span {
+    color: #fff; }
+  .banner--02 .swiper-slide-active .banner__wrapper-text .sale-off {
+    border-color: #00b207;
+    -webkit-transition: all 0.9s linear;
+    transition: all 0.9s linear; }
+  .banner--02 .swiper-slide-active .banner__wrapper-text a.button {
+    background-color: #00b207; }
 
 .banner-sale__img-wrapper {
   position: relative;
@@ -10522,7 +10582,16 @@ a {
   .banner--01 .banner__wrapper--img-02 {
     margin-bottom: 0px; }
   .banner-sale__text-content {
-    width: 95%; } }
+    width: 95%; }
+  .banner--02 .swiper-pagination,
+  .banner--02 .banner--02__wrapper-text {
+    left: 12px; }
+  .banner--02 .banner__wrapper-text {
+    left: 12px; }
+    .banner--02 .banner__wrapper-text h2, .banner--02 .banner__wrapper-text .h2 {
+      font-size: 32px;
+      line-height: 42px;
+      max-width: 100%; } }
 
 @media (max-width: 991px) {
   .cyclone__content .cards-ss {
