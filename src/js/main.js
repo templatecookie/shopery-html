@@ -127,7 +127,7 @@ var products = new Swiper('.popular-products--slider', {
   },
 });
 
-// Sales Card
+// ===== Sales Card ======= \\
 var salesCard = new Swiper('.cyclone--slider', {
   loop: true,
   loopFillGroupWithBlank: true,
@@ -156,7 +156,7 @@ var salesCard = new Swiper('.cyclone--slider', {
   },
 });
 
-// deals Slider one
+//======  deals Slider one ====== \\
 var deals = new Swiper('.deals-products--slider', {
   slidesPerView: 'auto',
   autoHeight: true,
@@ -181,7 +181,7 @@ var deals = new Swiper('.deals-products--slider', {
   },
 });
 
-// featured Slider one
+//====== featured Slider one ====== \\
 var featured = new Swiper('.featured-slider--one', {
   spaceBetween: 0,
   loop: true,
@@ -225,7 +225,7 @@ var featuredTwo = new Swiper('.featured-slider--two', {
   },
   breakpoints: {
     0: {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 15,
     },
     480: {
