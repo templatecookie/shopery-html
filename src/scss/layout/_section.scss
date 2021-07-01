@@ -10,6 +10,10 @@
     &--two {
       justify-content: center;
       flex-direction: column;
+
+      h2 {
+        text-align: center;
+      }
     }
 
     a {

@@ -9510,6 +9510,8 @@ a {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
+      .section__head--two h2, .section__head--two .h2 {
+        text-align: center; }
     .section__head a {
       display: -webkit-box;
       display: -webkit-flex;
