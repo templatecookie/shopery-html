@@ -11,8 +11,12 @@
           position: relative;
           z-index: 1;
           width: 100%;
+          border-radius: 10px;
+          overflow: hidden;
           img {
             width: inherit;
+            height: inherit;
+            object-fit: cover;
           }
         }
         &-text {
@@ -21,6 +25,7 @@
 
         &--img-02,
         &--img-03 {
+          height: 288px;
           .banner__wrapper-text {
             .button {
               background-color: transparent;
@@ -33,6 +38,8 @@
         }
 
         &--img-01 {
+          height: 600px;
+
           .banner__wrapper-text {
             top: 165px;
             left: 65px;
@@ -76,6 +83,7 @@
 
         &--img-02 {
           margin-bottom: 24px;
+
           .banner__wrapper-text {
             top: 32px;
             left: 32px;
@@ -262,6 +270,10 @@
           &__wrapper {
             &-img {
               overflow: hidden;
+            }
+
+            &--img-01 {
+              height: 288px;
             }
 
             &--img-01,

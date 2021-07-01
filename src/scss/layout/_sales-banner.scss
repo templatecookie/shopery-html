@@ -13,17 +13,17 @@
 }
 
 @media (min-width: 768px) {
-  .cyclone {
-    &--slider {
-      display: none;
-    }
-  }
+  // .cyclone {
+  //   &--slider {
+  //     display: none;
+  //   }
+  // }
 }
 
 @media (max-width: 767px) {
   .cyclone {
     &__content {
-      display: none;
+      // display: none;
     }
   }
 }

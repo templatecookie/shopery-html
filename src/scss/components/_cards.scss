@@ -36,6 +36,19 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  &__img-wrapper {
+    width: 100%;
+    height: 130px;
+    margin: auto;
+    overflow: hidden;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: contain;
+    }
+  }
+
   h5 {
     margin-top: 16px;
     color: color(gray-9);
@@ -53,13 +66,14 @@
   }
   &__img-wrapper {
     position: relative;
-    // padding: 5px;
+    padding: 5px;
     width: 100%;
-    height: auto;
+    height: 230px;
     overflow: hidden;
     img {
       width: inherit;
       height: inherit;
+      object-fit: cover;
     }
     .tag {
       position: absolute;
@@ -100,11 +114,19 @@
 
 // Large products cards
 .cards-lg {
-  padding: 25px;
+  // padding: 25px;
 
   &__img-wrapper {
     position: relative;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
+    width: 100%;
+    height: 446px;
+    overflow: hidden;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
     .tag-group {
       position: absolute;
       top: 16px;
@@ -115,13 +137,28 @@
   &__group-action {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    button {
+      &:nth-child(2) {
+        margin: 0px 8px;
+      }
+    }
   }
 
   .tag-group {
     span {
       margin-right: 8px;
     }
+  }
+
+  &__info {
+    padding: 24px;
+    padding-top: 0px;
   }
 
   &__info-price {
@@ -161,7 +198,7 @@
   &__favs-list {
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 16px;
     .action-btn {
       margin-bottom: 15px;
     }
@@ -170,9 +207,19 @@
 
 // Instragram cards
 .cards-ig {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
+  &__img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -308,7 +355,7 @@
   }
   &__img-wrapper {
     width: 100%;
-    height: 100%;
+    height: 280px;
     overflow: hidden;
     position: relative;
 
@@ -327,8 +374,9 @@
     }
 
     img {
-      width: inherit;
+      width: 100%;
       height: inherit;
+      object-fit: cover;
     }
 
     &--social {
@@ -381,9 +429,6 @@
   position: relative;
 
   &__img-wrapper {
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
     img {
       width: inherit;
       height: inherit;
@@ -391,9 +436,13 @@
     }
   }
   &--lg {
-    .cards-ss__img-wrapper {
-      width: 424px;
-      height: 536px;
+    .cards-ss {
+      &__img-wrapper {
+        width: 100%;
+        height: 536px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
     }
   }
 
@@ -401,8 +450,9 @@
     &-two {
       .cards-ss {
         &__img-wrapper {
-          width: 312px;
+          width: 100%;
           height: 423px;
+          overflow: hidden;
         }
       }
     }
@@ -882,11 +932,19 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    &--lg,
+    &--small-two {
+      .cards-ss {
+        &__img-wrapper {
+          height: 350px;
+        }
+      }
+    }
   }
 
   // Products cards
   .cards-lg {
-    padding: 15px;
     &__group-action {
       justify-content: center;
       .action-btn {

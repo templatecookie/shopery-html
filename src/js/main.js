@@ -114,9 +114,6 @@ var products = new Swiper('.popular-products--slider', {
 
 // Sales Card
 var salesCard = new Swiper('.cyclone--slider', {
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  spaceBetween: 15,
   loop: true,
   loopFillGroupWithBlank: true,
 
@@ -132,6 +129,14 @@ var salesCard = new Swiper('.cyclone--slider', {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 24,
     },
   },
 });
@@ -190,6 +195,7 @@ var featured = new Swiper('.featured-slider--one', {
     },
   },
 });
+
 var featured = new Swiper('.featured-slider--two', {
   spaceBetween: 12,
   loop: true,
@@ -282,6 +288,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
 
 // Testimonials
 var insta = new Swiper('.instagram-slider--one', {
+  slidesPerView: 6,
   loop: true,
   loopFillGroupWithBlank: true,
   autoHeight: true,
@@ -299,15 +306,16 @@ var insta = new Swiper('.instagram-slider--one', {
       slidesPerView: 1,
       spaceBetween: 12,
     },
-    420: {
-      slidesPerView: 3,
-      spaceBetween: 12,
+    575: {
+      slidesPerView: 2,
     },
-
     768: {
+      slidesPerView: 3,
+    },
+    992: {
       slidesPerView: 4,
     },
-    1200: {
+    1201: {
       slidesPerView: 6,
       spaceBetween: 24,
     },
