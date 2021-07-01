@@ -1,20 +1,34 @@
 // Table Contents
 'use strict';
 
-// Swipper Slier
-//  ** Homepage
-/*\ 
+/*\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+--------------------------------------------------
+            ---------------------
+              ----------------
+    ==========  Table Contents ============
+--------------------------------------------------
+              -----------------
+          ------------------------
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ \/\/\/\/\/\ 
 
-==========  Table Contents ============
+
 
  === Swipper Slider ==
+ 01. Banners 
+ 02. Shipping
+ 03. Categories 
+ 04. Products 
+ 05. Sale Cards 
+ 06. Deal Cards 
+ 07. Featured 
+ 08. News 
+ 09. Testimonials 
+ 10. Brands name 
+ 11. Members 
+ 
+\/\/\/\/\/\/\/\*/
 
- => Homepage 01 - Shipping Cards
-
-
-\*/
-
-// Banner Slider
+//====== Banners Slider ====== \\
 var bannerOne = new Swiper('.banner-slider--one', {
   spaceBetween: 15,
   loop: true,
@@ -35,17 +49,17 @@ var bannerTwo = new Swiper('.banner-slider--02', {
   loop: true,
   loopFillGroupWithBlank: true,
   effect: 'fade',
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
 });
 
-// Shipping Slider one
+//====== Shipping Slider one ======\\
 var shiping = new Swiper('.shipping-container--slider', {
   spaceBetween: 0,
   loop: true,
@@ -71,7 +85,7 @@ var shiping = new Swiper('.shipping-container--slider', {
   },
 });
 
-// Categories
+//====== Categories ======\\
 var categories = new Swiper('.popular-categories--slider', {
   slidesPerView: 1,
   // centeredSlides: true,
@@ -99,7 +113,7 @@ var categories = new Swiper('.popular-categories--slider', {
   },
 });
 
-// Shipping Slider one
+//====== Shipping Slider one ======\\
 var products = new Swiper('.popular-products--slider', {
   slidesPerView: 'auto',
   autoHeight: true,
@@ -181,7 +195,7 @@ var deals = new Swiper('.deals-products--slider', {
   },
 });
 
-//====== featured Slider one ====== \\
+//====== featured Sliders one ====== \\
 var featured = new Swiper('.featured-slider--one', {
   spaceBetween: 0,
   loop: true,
@@ -266,7 +280,7 @@ var featuredThree = new Swiper('.featured-slider--three', {
   },
 });
 
-// News Slider one
+// ====== News Slider one ====== \\
 var news = new Swiper('.news-slider--one', {
   spaceBetween: 24,
   loop: true,
@@ -294,7 +308,7 @@ var news = new Swiper('.news-slider--one', {
   },
 });
 
-// Testimonials
+// ====== Testimonials ====== \\
 var testimonialOne = new Swiper('.testimonial-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
@@ -327,7 +341,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
   },
 });
 
-// Testimonials
+// ====== Testimonials ====== \\
 var insta = new Swiper('.instagram-slider--one', {
   slidesPerView: 6,
   loop: true,
@@ -363,7 +377,7 @@ var insta = new Swiper('.instagram-slider--one', {
   },
 });
 
-// brands name
+//====== brands name ====== \\
 var brandsName = new Swiper('.brand-name-slide--one', {
   loop: true,
   loopFillGroupWithBlank: true,
@@ -397,15 +411,14 @@ var brandsName = new Swiper('.brand-name-slide--one', {
   },
 });
 
-// Members
-
+//====== Members ====== \\
 var memebers = new Swiper('.members-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
