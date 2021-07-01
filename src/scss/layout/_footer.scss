@@ -195,6 +195,10 @@
         &-link {
           a {
             color: color(gray-6);
+
+            &:hover {
+              color: color(gray-9);
+            }
           }
         }
       }

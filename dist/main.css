@@ -9496,6 +9496,16 @@ p {
 a {
   text-decoration: none; }
 
+.box-layout {
+  max-width: 1400px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 0px 40px; }
+  @media (max-width: 1200px) {
+    .box-layout {
+      padding: 0px;
+      margin: 0px; } }
+
 .section {
   position: relative; }
   .section__head {
@@ -9894,8 +9904,24 @@ a {
 .header--two .header__dropdown {
   border-right: 0px; }
 
+.header--two .header__top {
+  padding: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .header--two .header__top-content {
+    padding: 13px 0px;
+    -webkit-box-shadow: 0px 1px 0px 0px #e5e5e5;
+            box-shadow: 0px 1px 0px 0px #e5e5e5; }
+
 .header--two .header__bottom {
-  background-color: #1a1a1a; }
+  background-color: transparent; }
+  .header--two .header__bottom-content {
+    background-color: #1a1a1a; }
+  .header--two .header__bottom-right {
+    padding-right: 30px; }
+    @media (max-width: 767px) {
+      .header--two .header__bottom-right {
+        padding-right: 0px; } }
 
 .header--two .header__bottom-left, .header--two .header__category-content {
   display: -webkit-box;
@@ -11097,6 +11123,8 @@ a {
       color: #1a1a1a; }
     .footer--two .footer__navigation-link a {
       color: #666666; }
+      .footer--two .footer__navigation-link a:hover {
+        color: #1a1a1a; }
     .footer--two .footer__top {
       background-color: #f2f2f2;
       padding: 60px; }
@@ -12388,6 +12416,14 @@ ul.example li p {
 .brand-name--two .brand-name-slide--one {
   padding: 60px 0px;
   border: 1px solid #e5e5e5; }
+
+.testimonial--two {
+  padding-left: 60px;
+  padding-right: 60px; }
+  @media (max-width: 1200px) {
+    .testimonial--two {
+      padding-left: 0px;
+      padding-right: 0px; } }
 
 @media (max-width: 1200px) {
   .call-to-action--two {

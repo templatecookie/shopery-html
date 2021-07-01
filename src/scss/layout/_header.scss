@@ -344,9 +344,27 @@
       &__dropdown {
         border-right: 0px;
       }
+      &__top {
+        padding: 0px;
+        box-shadow: none;
+        &-content {
+          padding: 13px 0px;
+          box-shadow: 0px 1px 0px 0px #e5e5e5;
+        }
+      }
 
       &__bottom {
-        background-color: color(gray-9);
+        background-color: transparent;
+        &-content {
+          background-color: color(gray-9);
+        }
+
+        &-right {
+          padding-right: 30px;
+          @include max(767px) {
+            padding-right: 0px;
+          }
+        }
       }
 
       &__bottom-left,

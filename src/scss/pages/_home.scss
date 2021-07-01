@@ -49,7 +49,7 @@
   }
 }
 
-// Our Profesional Members
+// ===== Our Profesional Members ===== \\
 .members {
   padding-bottom: 0px;
   &-slider--one {
@@ -60,6 +60,7 @@
   }
 }
 
+// ======== Brand Names ========= \\
 .brand-name {
   &--two {
     .brand-name {
@@ -71,6 +72,17 @@
   }
 }
 
+// ========= Testimonials ======== \\
+.testimonial {
+  &--two {
+    padding-left: 60px;
+    padding-right: 60px;
+    @include max(1200px) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
 // =========  Responsive ======== \\
 
 @include max(1200px) {
