@@ -44,6 +44,9 @@
   .section--#{$name} {
     padding: $space 0px;
   }
+  .section--my-#{$name} {
+    margin: $space 0px;
+  }
 }
 
 // Bg Colors

@@ -147,14 +147,26 @@
 .section--xl {
   padding: 100px 0px; }
 
+.section--my-xl {
+  margin: 100px 0px; }
+
 .section--lg {
   padding: 60px 0px; }
+
+.section--my-lg {
+  margin: 60px 0px; }
 
 .section--md {
   padding: 30px 0px; }
 
+.section--my-md {
+  margin: 30px 0px; }
+
 .section--sm {
   padding: 15px 0px; }
+
+.section--my-sm {
+  margin: 15px 0px; }
 
 .section--soft-primary {
   background-color: #84d187; }
@@ -12259,6 +12271,10 @@ ul.example li p {
     @media (max-width: 767px) {
       .members-slider--one {
         padding-bottom: 30px; } }
+
+.brand-name--two .brand-name-slide--one {
+  padding: 60px 0px;
+  border: 1px solid #e5e5e5; }
 
 @media (max-width: 991px) {
   .featured .cards-ss--small-one,
