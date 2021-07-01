@@ -34,7 +34,36 @@
   }
 }
 
-// Responsive {
+// Our Featured Products
+.featured {
+  &__content {
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-slider--three {
+    height: 350px;
+  }
+}
+
+// Responsive
+
+@include max(991px) {
+  // homepage 02
+
+  .featured {
+    .cards-ss--small-one,
+    .cards-ss--small-two {
+      margin-bottom: 15px;
+    }
+
+    &__content {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   // Featured Section
   .featured,

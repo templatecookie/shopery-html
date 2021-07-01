@@ -196,8 +196,7 @@ var featured = new Swiper('.featured-slider--one', {
   },
 });
 
-var featured = new Swiper('.featured-slider--two', {
-  spaceBetween: 12,
+var featuredTwo = new Swiper('.featured-slider--two', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
@@ -211,7 +210,8 @@ var featured = new Swiper('.featured-slider--two', {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 3,
+      spaceBetween: 15,
     },
     480: {
       slidesPerView: 2,
@@ -219,8 +219,34 @@ var featured = new Swiper('.featured-slider--two', {
     768: {
       slidesPerView: 3,
     },
-    1200: {
+    1201: {
       slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+var featuredThree = new Swiper('.featured-slider--three', {
+  loop: true,
+  loopFillGroupWithBlank: true,
+  direction: 'vertical',
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  //   dynamicBullets: true,
+  // },
+  breakpoints: {
+    0: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 16,
     },
   },
 });
