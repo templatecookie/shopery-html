@@ -24,17 +24,83 @@
   }
 }
 
-// Responsive {
+// cyclone Sale banner
+
+//=======  Homepage 02 ========== //
+
+// Shipping Cards
+.shipping-container--two {
+  margin-bottom: 0px;
+  .swiper-container {
+    border-bottom: 1px solid color(gray-2);
+  }
+}
+
+// Our Featured Products
+.featured {
+  &__content {
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-slider--three {
+    height: 350px;
+  }
+}
+
+// Our Profesional Members
+.members {
+  padding-bottom: 0px;
+  &-slider--one {
+    padding-bottom: 60px;
+    @include max(767px) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.brand-name {
+  &--two {
+    .brand-name {
+      &-slide--one {
+        padding: 60px 0px;
+        border: 1px solid color(gray-1);
+      }
+    }
+  }
+}
+
+// Responsive
+@include max(991px) {
+  // homepage 02
+
+  .featured {
+    .cards-ss--small-one,
+    .cards-ss--small-two {
+      margin-bottom: 15px;
+    }
+
+    &__content {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   // Featured Section
   .featured,
   .news,
-  .testimonial-slider--one {
+  .testimonial-slider--one,
+  .instagram-slider--one,
+  .members-slider--one,
+  .cyclone--slider {
     .swiper-pagination {
       display: none;
     }
   }
 }
+
 @media (max-width: 767px) {
   // Homepage 01
   .featured,
@@ -42,7 +108,8 @@
   .popular-categories--slider,
   .popular-products--slider,
   .testimonial-slider--one,
-  .instagram-slider--one {
+  .instagram-slider--one,
+  .cyclone--slider {
     .swiper-wrapper {
       padding-bottom: 30px;
     }

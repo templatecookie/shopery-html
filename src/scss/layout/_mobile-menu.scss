@@ -1,0 +1,205 @@
+.header {
+  &__mobile-sidebar {
+    // display none for now
+    display: none !important;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 308px;
+    height: 100%;
+    padding: 24px 0px;
+    z-index: 9999;
+    // overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__mobile-input {
+    position: relative;
+    width: 260px;
+    height: 44px;
+    margin: auto;
+    border-radius: 6px;
+    border: 1px solid color(gray-1);
+    overflow: hidden;
+    margin: 0px 24px;
+    input {
+      width: 80%;
+      height: inherit;
+      border: 0px;
+      font-size: 13px;
+      line-height: 21px;
+      text-transform: capitalize;
+      color: color(gray-5);
+      padding-left: 16px;
+
+      &::placeholder {
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+
+    .search-btn {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 0px 6px 6px 0px;
+      background-color: color(primary);
+      color: #fff;
+    }
+  }
+
+  &__mobile-menu {
+    margin-top: 12px;
+    overflow: hidden;
+    &-item {
+      padding: 16px 0px;
+      border-bottom: 1px solid color(gray-1);
+      &:nth-last-child(1) {
+        border-bottom: 0px;
+      }
+    }
+
+    &-item-link {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+      color: color(gray-9);
+      margin-left: 24px;
+      width: 100%;
+      position: relative;
+
+      &:hover {
+        color: inherit;
+      }
+
+      .drop-icon {
+        position: absolute;
+        right: 48px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: color(gray-5);
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  &__mobile-dropdown-menu {
+    // display: none;
+    height: 0px;
+    overflow: hidden;
+    pointer-events: none;
+    margin-left: 24px;
+    transition: all 0.6s linear;
+    &-link {
+      margin: 12px 0px;
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+      a {
+        font-size: 14px;
+        line-height: 21px;
+        color: color(gray-6);
+        width: 100%;
+        text-transform: capitalize;
+        &:hover {
+          color: color(primary);
+        }
+      }
+    }
+  }
+
+  &__mobile-action,
+  &__mobile-user {
+    padding-left: 24px;
+  }
+
+  &__mobile-action {
+    a {
+      margin-right: 16px;
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__mobile-user {
+    display: flex;
+    align-items: center;
+
+    &--img {
+      margin-right: 16px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    &--info {
+      h2 {
+        color: color(gray-9);
+      }
+      p {
+        color: color(gray-5);
+      }
+    }
+  }
+
+  &__cross {
+    position: fixed;
+    left: 338px;
+    top: 40px;
+    color: #fff;
+  }
+
+  // Action on hover/click
+  &__mobile-menu-item {
+    &.active {
+      .header__mobile-menu-item-link {
+        .drop-icon {
+          color: color(gray-9);
+          svg {
+            transform: rotate(0deg);
+          }
+        }
+      }
+
+      .header__mobile-dropdown-menu {
+        height: auto;
+        overflow: visible;
+        pointer-events: all;
+        // transition: all 1s linear;
+      }
+    }
+  }
+}
+
+// It's will be active after js
+// body {
+//   &.overlay {
+//     position: relative;
+
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       background: rgba(0, 0, 0, 0.7);
+//       z-index: 999;
+//     }
+//   }
+// }

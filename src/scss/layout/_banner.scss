@@ -11,8 +11,12 @@
           position: relative;
           z-index: 1;
           width: 100%;
+          border-radius: 10px;
+          overflow: hidden;
           img {
             width: inherit;
+            height: inherit;
+            object-fit: cover;
           }
         }
         &-text {
@@ -21,6 +25,7 @@
 
         &--img-02,
         &--img-03 {
+          height: 288px;
           .banner__wrapper-text {
             .button {
               background-color: transparent;
@@ -33,6 +38,8 @@
         }
 
         &--img-01 {
+          height: 600px;
+
           .banner__wrapper-text {
             top: 165px;
             left: 65px;
@@ -76,6 +83,7 @@
 
         &--img-02 {
           margin-bottom: 24px;
+
           .banner__wrapper-text {
             top: 32px;
             left: 32px;
@@ -119,6 +127,91 @@
               margin: auto;
               margin-bottom: 32px;
             }
+          }
+        }
+      }
+    }
+  }
+
+  &--02 {
+    .banner {
+      &__wrapper-img {
+        position: relative;
+        width: 100%;
+        height: 560px;
+        overflow: hidden;
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+        }
+      }
+
+      &__wrapper-text {
+        position: absolute;
+        top: 50%;
+        left: 48px;
+        transform: translateY(-50%);
+        h2 {
+          color: #fff;
+          max-width: 400px;
+          text-transform: capitalize;
+          opacity: 0.3;
+        }
+        .sale-off {
+          border-left: 1px solid transparent;
+          padding-left: 12px;
+          h5 {
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 135px;
+            margin: 12px 0px;
+            span {
+              color: rgba(255, 255, 255, 0.6);
+            }
+          }
+        }
+        a.button {
+          background-color: color(hard-primary);
+        }
+      }
+    }
+    // Swiper pagination
+    .swiper-pagination {
+      position: absolute;
+      left: 48px;
+      bottom: 32px;
+      text-align: left;
+      &-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+      }
+    }
+
+    // Swiper slide Animation
+    .swiper-slide {
+      &-active {
+        .banner__wrapper-text {
+          h2,
+          h5 span,
+          a.button {
+            transition: all 0.6s ease-in;
+          }
+          h2 {
+            opacity: 1;
+          }
+          h5 {
+            span {
+              color: #fff;
+            }
+          }
+          .sale-off {
+            border-color: color(primary);
+            transition: all 0.9s linear;
+          }
+          a.button {
+            background-color: color(primary);
           }
         }
       }
@@ -254,6 +347,8 @@
 }
 
 @media (max-width: 767px) {
+  // ====== Homepage 01 ========= \\
+
   // Swiper Slider Customizations
   .banner {
     &-slider {
@@ -262,6 +357,10 @@
           &__wrapper {
             &-img {
               overflow: hidden;
+            }
+
+            &--img-01 {
+              height: 288px;
             }
 
             &--img-01,
@@ -379,7 +478,6 @@
     left: 15px;
   }
 
-  // Homepage 01
   .banner--01 .banner__wrapper {
     display: none;
   }
@@ -441,5 +539,23 @@
   // banner sales cards
   .banner-sale__text-content {
     width: 95%;
+  }
+
+  // ===== Homepage 02 ====== \\
+  .banner--02 {
+    .swiper-pagination,
+    .banner--02__wrapper-text {
+      left: 12px;
+    }
+    .banner {
+      &__wrapper-text {
+        left: 12px;
+        h2 {
+          font-size: 32px;
+          line-height: 42px;
+          max-width: 100%;
+        }
+      }
+    }
   }
 }

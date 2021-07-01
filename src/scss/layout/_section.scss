@@ -6,6 +6,16 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
+
+    &--two {
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        text-align: center;
+      }
+    }
+
     a {
       display: flex;
       align-items: center;
@@ -19,6 +29,16 @@
         margin-left: 12px;
       }
     }
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: color(primary);
+    margin-bottom: 8px;
   }
 
   &--title-one {
@@ -40,6 +60,7 @@
       flex-direction: column;
       align-items: center;
     }
+
     &--title-one {
       font-size: 28px;
       line-height: 38px;
