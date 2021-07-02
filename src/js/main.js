@@ -207,7 +207,99 @@ var productsTwo = new Swiper('.newest-products-slider--one', {
   },
 });
 
-var productsThree = new Swiper('.our-products__content-slider', {
+var productsContent = new Swiper('.our-products__content-slider', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+  },
+});
+
+var productsContentOne = new Swiper('.our-products__content-slider-one', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+  },
+});
+
+var productsContentTwo = new Swiper('.our-products__content-slider-two', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+  },
+});
+
+var productsContentThree = new Swiper('.our-products__content-slider-three', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+  },
+});
+
+var productsContentFour = new Swiper('.our-products__content-slider-four', {
   spaceBetween: 24,
   loop: true,
   loopFillGroupWithBlank: true,

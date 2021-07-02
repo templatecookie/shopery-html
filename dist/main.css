@@ -12626,7 +12626,11 @@ ul.example li p {
   .cyclone--slider .swiper-wrapper,
   .newest-products .swiper-wrapper,
   .category--top-slider--two .swiper-wrapper,
-  .our-products__content-slider .swiper-wrapper {
+  .our-products__content-slider .swiper-wrapper,
+  .our-products__content-slider-one .swiper-wrapper,
+  .our-products__content-slider-two .swiper-wrapper,
+  .our-products__content-slider-three .swiper-wrapper,
+  .our-products__content-slider-four .swiper-wrapper {
     padding-bottom: 30px; }
   .cateogory--top .section__head .arrows {
     margin-left: 50px; } }
