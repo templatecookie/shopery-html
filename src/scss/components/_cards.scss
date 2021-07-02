@@ -890,14 +890,15 @@
 
   // Shipping Cards three
   &--three {
-    justify-content: flex-start;
-    padding: 0;
-    overflow: hidden;
+    margin-bottom: 0px;
     .cards-ship__item {
       border-right: 1px solid color(green-1);
-      padding: 40px 54px;
+      padding: 40px;
       transition: all 0.3s linear;
 
+      @include max(767px) {
+        padding: 30px;
+      }
       &:hover {
         background-color: color(primary);
         .cards-ship__item-icon {
@@ -912,10 +913,6 @@
         .cards-ship__item-process-info p {
           color: #fff;
         }
-      }
-
-      &:nth-last-child(1) {
-        border-right: 0px;
       }
 
       &-icon {

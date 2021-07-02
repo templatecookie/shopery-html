@@ -21,9 +21,11 @@
       }
     }
 
-    &--two {
+    &--two,
+    &--four {
       justify-content: center;
       flex-direction: column;
+
       h2 {
         text-align: center;
       }
@@ -31,9 +33,7 @@
 
     &--three {
       margin-bottom: 70px;
-      @include max(767px) {
-        margin-bottom: 30px;
-      }
+
       &-center {
         justify-content: center;
         .title-bar {
@@ -74,6 +74,9 @@
         }
       }
     }
+    &--four {
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
@@ -90,6 +93,9 @@
   &--title-two {
     color: color(gray-9);
     text-transform: capitalize;
+    @include max(767px) {
+      text-align: center;
+    }
   }
 }
 
@@ -101,7 +107,7 @@
       align-items: center;
 
       &--three {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         .section--title {
           &-two {
             .title-bar {

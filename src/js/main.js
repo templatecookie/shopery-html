@@ -64,10 +64,10 @@ var shiping = new Swiper('.shipping-container--slider', {
   spaceBetween: 0,
   loop: true,
   loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -408,6 +408,38 @@ var news = new Swiper('.news-slider--one', {
 
 // ====== Testimonials ====== \\
 var testimonialOne = new Swiper('.testimonial-slider--one', {
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoHeight: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ' .swiper-button--next',
+    prevEl: ' .swiper-button--prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
+});
+
+var testimonialThree = new Swiper('.testimonial-slider--three', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoHeight: true,
