@@ -1,22 +1,40 @@
 // abstracts
-@import "abstracts/functions";
-@import "abstracts/variables";
+@import 'abstracts/variables';
+@import 'abstracts/functions';
 
 // vendors
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
-@import "base/typography";
-@import "base/reset";
+// base
+@import 'base/typography';
+@import 'base/reset';
 
-@import "layout/footer";
-@import "layout/header";
-@import "layout/nav";
-@import "layout/breadcrumb";
+// layout
+@import 'layout/section';
+@import 'layout/header';
+@import 'layout/mobile-menu';
+@import 'layout/banner';
+@import 'layout/sales-banner';
+@import 'layout/products';
+@import 'layout/category';
+@import 'layout/newsletter';
+// @import 'layout/nav';
+// @import 'layout/breadcrumb';
+@import 'layout/footer';
 
-@import "components/buttons";
-@import "components/form";
+// components
+@import 'components/bar';
+@import 'components/dots';
+@import 'components/arrow';
+@import 'components/buttons';
+@import 'components/brands';
+@import 'components/form';
+@import 'components/cards';
+@import 'components/countdown';
 
-@import "pages/home";
-@import "pages/contact";
+// pages
+@import 'pages/home';
+@import 'pages/contact';
 
+// themes
 @import 'themes/theme';

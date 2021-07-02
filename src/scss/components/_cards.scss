@@ -1,0 +1,1038 @@
+.cards-sm,
+.cards-sm--two,
+.cards-md,
+.cards-lg,
+.cards-blog,
+.cards-tm,
+.cards-mm,
+.cards-tm-2__top {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid color(gray-1);
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  &:hover {
+    border: 1px solid color(hard-primary);
+    transition: all 0.3s linear;
+    box-shadow: 0px 0px 12px 0px #20b52652;
+    h5,
+    h6 {
+      color: color(hard-primary);
+    }
+    .cards-md__info-right {
+      .action-btn {
+        color: #fff;
+        background-color: color(primary);
+      }
+    }
+  }
+}
+
+// categories cards sm
+.cards-sm {
+  text-align: center;
+  padding: 16px 0px 24px 0px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &__img-wrapper {
+    width: 100%;
+    height: 130px;
+    margin: auto;
+    overflow: hidden;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: contain;
+    }
+  }
+
+  h5 {
+    margin-top: 16px;
+    color: color(gray-9);
+  }
+}
+
+.cards-sm--two {
+  display: flex;
+  align-items: center;
+
+  &__img-wrapper {
+    width: 102px;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    .action-btn {
+      margin-right: 12px;
+    }
+  }
+
+  // Hover
+  &:hover {
+    .cards-sm--two__content-text {
+      span,
+      .rating {
+        display: none !important;
+      }
+      .cards-sm--two__action {
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+      }
+    }
+  }
+}
+
+// categories cards md
+.cards-md {
+  &:hover {
+    .cards-md__info-left {
+      h6 {
+        color: color(primary);
+      }
+    }
+  }
+  &__img-wrapper {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+    .tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+  }
+
+  &__info {
+    padding: 12px;
+    position: relative;
+    &-left {
+      h6 {
+        color: color(gray-7);
+      }
+      span {
+        color: color(gray-9);
+      }
+      del {
+        color: color(gray-4);
+      }
+    }
+  }
+
+  &__favs-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    button {
+      margin-bottom: 6px;
+      background-color: #fff;
+      border: 1px solid #f2f2f2;
+    }
+  }
+}
+
+// Large products cards
+.cards-lg {
+  // padding: 25px;
+
+  &__img-wrapper {
+    position: relative;
+    // margin-bottom: 30px;
+    width: 100%;
+    height: 446px;
+    overflow: hidden;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+    .tag-group {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+  }
+
+  &__group-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    button {
+      &:nth-child(2) {
+        margin: 0px 8px;
+      }
+    }
+  }
+
+  .tag-group {
+    span {
+      margin-right: 8px;
+    }
+  }
+
+  &__info {
+    padding: 24px;
+    padding-top: 0px;
+  }
+
+  &__info-price {
+    margin: 9px 0px;
+    span {
+      color: color(gray-9);
+    }
+    del {
+      color: color(gray-4);
+    }
+  }
+
+  &__info-rating {
+    li {
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+      span {
+        font-size: 12px;
+        line-height: 15.6px;
+        margin-left: 5px;
+        color: color(gray-5);
+      }
+    }
+  }
+
+  &__info-countdown {
+    margin-top: 20px;
+    h6 {
+      color: color(gray-4);
+      line-height: 18px;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__favs-list {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    .action-btn {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// Instragram cards
+.cards-ig {
+  &__img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    opacity: 0;
+    visibility: hidden;
+    background: #2b572ecc;
+    span {
+      display: flex;
+      height: inherit;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    .cards-ig__overlay {
+      height: 100%;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.6s ease-in-out;
+    }
+  }
+}
+
+// Blogs pages card
+.cards-blog {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: transparent;
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0px 20px 50px 0px #00000014;
+    .cards-blog__info h2,
+    .cards-blog__info .h2 {
+      color: color(hard-primary);
+    }
+  }
+
+  &__img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+    .date {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      height: 58px;
+      border-radius: 4px;
+      background-color: #fff;
+      h3 {
+        color: color(gray-9);
+      }
+      span {
+        color: color(gray-5);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__info {
+    background: #fff;
+    padding: 24px;
+
+    &-tags-item {
+      font-size: 14px;
+      line-height: 21px;
+      color: color(gray-7);
+      font-weight: 400;
+      margin-right: 15px;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        color: color(gray-3);
+        margin-right: 8px;
+      }
+    }
+
+    h2 {
+      margin: 8px 0px;
+      color: color(gray-9);
+    }
+
+    button {
+      font-size: 16px;
+      line-height: 19.2px;
+      font-weight: 600;
+      color: color(primary);
+      margin-top: 12px;
+
+      span {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+// members cards
+.cards-mb {
+  border: 0px;
+  &:hover {
+    border: 0px;
+    box-shadow: 0px 20px 48px 0px #00260314;
+    .cards-mb__img-wrapper::after {
+      height: 100%;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      transition: all 0.6s ease-in-out;
+    }
+    .cards-mb__img-wrapper--social {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+  &__img-wrapper {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 35%;
+      background: #00000080;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.3s linear;
+    }
+
+    img {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
+
+    &--social {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      visibility: hidden;
+      pointer-events: none;
+      transition-delay: 0.1s;
+      span {
+        margin-right: 8px;
+        a {
+          color: #fff;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: color(primary);
+          }
+        }
+      }
+    }
+  }
+
+  &__designation {
+    background-color: #fff;
+    padding: 16px 20px;
+    h5 {
+      color: color(gray-9);
+      text-transform: capitalize;
+      span {
+        color: color(gray-5);
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+// Sales cards
+.cards-ss {
+  position: relative;
+
+  &__img-wrapper {
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  &--lg {
+    .cards-ss {
+      &__img-wrapper {
+        width: 100%;
+        height: 536px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &--small {
+    &-one {
+      .cards-ss {
+        &__img-wrapper {
+          width: 100%;
+          height: 325px;
+          overflow: hidden;
+        }
+
+        &__content {
+          p {
+            color: color(primary);
+          }
+        }
+      }
+    }
+
+    &-two {
+      .cards-ss {
+        &__img-wrapper {
+          width: 100%;
+          height: 395px;
+
+          overflow: hidden;
+        }
+      }
+    }
+
+    .cards-ss__content h6,
+    .cards-ss__content .h6 {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  &--darktext {
+    .cards-ss__content h6,
+    .cards-ss__content .h6,
+    .cards-ss__content h2,
+    .cards-ss__content .h2 {
+      color: color(gray-9);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    color: #fff;
+    h6 {
+      letter-spacing: 0.03em;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin-bottom: 8px;
+    }
+
+    a {
+      &.button {
+        margin-top: 24px;
+        background-color: #fff;
+        color: color(primary);
+        text-transform: capitalize;
+        &:hover {
+          background-color: color(gray-0);
+        }
+      }
+    }
+  }
+
+  &__countdown {
+    ul.example li {
+      margin-right: 8px;
+    }
+    ul.example li span {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+    }
+    ul.example li.seperator {
+      color: #ffffff99;
+    }
+    ul.example li p {
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffffcc;
+    }
+  }
+
+  &__startpackage {
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      color: #fff;
+    }
+    span {
+      color: color(warning);
+    }
+  }
+
+  &__saleoff {
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 400;
+      span {
+        color: #fcc900;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 6px 12px;
+        margin-left: 12px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: color(gray-9);
+      }
+    }
+  }
+
+  &__save {
+    p {
+      font-size: 32px;
+      line-height: 38.4px;
+      color: color(gray-9);
+      font-weight: 600;
+      text-transform: capitalize;
+      width: 80%;
+      margin: auto;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// testimonial cards
+.cards-tm {
+  border: 0px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px 0px #00000003;
+  &:hover {
+    border: 0px;
+    box-shadow: 0px 10px 20px 0px #00000003;
+
+    .cards-tm__text {
+      color: color(hard-primary);
+    }
+    .quotes {
+      transition: all 0.6s ease-in-out;
+      color: color(hard-primary);
+    }
+  }
+
+  &__text {
+    color: color(gray-7);
+    margin-top: 42px;
+    margin-bottom: 12px;
+  }
+
+  &__info {
+    &--user-img {
+      width: 56px;
+      height: 56px;
+      border-radius: 100%;
+      margin-right: 12px;
+      overflow: hidden;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+    &-left--designation {
+      h5 {
+        color: color(gray-9);
+      }
+      span {
+        color: color(gray-4);
+      }
+    }
+    &-right {
+      ul li span svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .quotes {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: color(primary);
+  }
+}
+
+.cards-tm-2 {
+  &__top {
+    position: relative;
+    padding: 32px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: visible;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 12px 12px 0 12px;
+      border-color: #ffffff transparent transparent transparent;
+      z-index: 1;
+    }
+    &:hover {
+      box-shadow: none;
+      border-color: color(gray-1);
+
+      .cards-tm-2__text {
+        transition: all 0.3s linear;
+        color: color(primary);
+      }
+    }
+
+    .quotes {
+      position: absolute;
+      top: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: color(primary);
+    }
+  }
+
+  &__text {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: color(green-6);
+  }
+
+  &__bottom {
+    margin-top: 28px;
+    text-align: center;
+  }
+
+  &__user {
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  &__designation {
+    h5 {
+      color: color(green-9);
+    }
+    span {
+      color: color(green-4);
+    }
+  }
+}
+
+// Shipping Cards
+.cards-ship {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+
+  &__item-process-info {
+    h2 {
+      color: color(gray-9);
+    }
+    p {
+      color: color(gray-4);
+    }
+  }
+
+  // Specfic Styles
+  &--one,
+  &--two {
+    .cards-ship__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-icon {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  // border-radius
+  &--one,
+  &--three {
+    border-radius: 8px;
+  }
+
+  &--two {
+    box-shadow: 0px -0.5px 0px 0px #cccccc inset;
+  }
+
+  &--three {
+    box-shadow: 0px 16px 48px 0px #0e6b1514;
+    border: 1px solid color(gray-1);
+  }
+
+  &--four {
+    box-shadow: 0px -0.5px 0px 0px #cccccc inset;
+  }
+
+  // Shipping Card one
+
+  &--one {
+    .cards-ship__item {
+      padding: 40px 0px;
+      // background-color: #fff;
+      margin: auto !important;
+      justify-content: center;
+    }
+  }
+
+  // shipping Card two
+  &--two {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    .cards-ship__item {
+      padding: 40px 0px;
+      position: relative;
+      &:hover {
+        .cards-ship__item-icon {
+          color: #fff;
+          background-color: color(primary);
+          transition: all 0.3s linear;
+        }
+
+        &::after {
+          height: 2px;
+          background-color: color(primary);
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        transition: all 0.3s linear;
+      }
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: color(green-0);
+        color: color(primary);
+      }
+      &-process-info {
+        h2 {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+
+  // Shipping Cards three
+  &--three {
+    justify-content: flex-start;
+    padding: 0;
+    overflow: hidden;
+    .cards-ship__item {
+      border-right: 1px solid color(green-1);
+      padding: 40px 54px;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background-color: color(primary);
+        .cards-ship__item-icon {
+          background-color: #fff;
+          border-color: transparent;
+        }
+
+        .cards-ship__item-process-info h2,
+        .cards-ship__item-process-info .h2 {
+          color: #fff;
+        }
+        .cards-ship__item-process-info p {
+          color: #fff;
+        }
+      }
+
+      &:nth-last-child(1) {
+        border-right: 0px;
+      }
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 1px solid color(green-1);
+        margin-bottom: 16px;
+      }
+
+      &-process-info {
+        h2 {
+          font-size: 18px;
+          line-height: 27px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  // Shipping Cards Four
+  &--four {
+    border: 0px;
+    border-bottom: 2px solid color(gray-2);
+    padding: 0px;
+    .cards-ship__item {
+      text-align: center;
+      padding: 40px;
+      position: relative;
+      transition: all 0.3s linear;
+      &:hover {
+        &::after {
+          height: 2px;
+          background-color: color(primary);
+        }
+        .cards-ship__item-icon {
+          color: color(gray-9);
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        transition: all 0.3s linear;
+      }
+
+      &-icon {
+        display: inline-block;
+        margin-bottom: 16px;
+        color: color(primary);
+      }
+
+      &-process-info h2 {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+// responsive
+
+@media (min-width: 768px) {
+  .cards-lg {
+    &__favs-list {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  // Sales Cards
+  .cards-ss {
+    &__content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--small-one {
+    }
+
+    &--lg,
+    &--small-two {
+      .cards-ss {
+        &__img-wrapper {
+          height: 350px;
+        }
+      }
+    }
+  }
+
+  // Products cards
+  .cards-lg {
+    &__group-action {
+      justify-content: center;
+      .action-btn {
+        display: none;
+      }
+    }
+  }
+
+  // Blog Cards
+  .cards-blog__img-wrapper .date {
+    left: 12px;
+  }
+  .cards-blog__info {
+    padding: 24px 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  // blog Cards
+  .cards-blog__info-tags {
+    justify-content: space-between;
+  }
+  .cards-blog__info-tags-item {
+    margin-right: 0px;
+    span {
+      margin-right: 2px;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+// Homepage 01 => Shipping Cards
+
+.shipping-container {
+  margin-bottom: 26px;
+  &--slider {
+    background-color: #fff;
+    box-shadow: 0px 8px 40px 0px #00260314;
+  }
+}
+
+// Homepage 01  =>
+
+// popular categories
+.popular-categories--slider {
+  .swiper-slide {
+    text-align: center;
+  }
+}
+
+// Instagram
+.instagram {
+  .swiper-slide {
+    text-align: center;
+  }
+}
+
+// cyclone Sale banner
+
+//=======  Homepage 02 ========== //
+
+// Shipping Cards
+.shipping-container--two {
+  margin-bottom: 0px;
+  .swiper-container {
+    border-bottom: 1px solid color(gray-2);
+  }
+}
+
+// Our Featured Products
+.featured {
+  &__content {
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-slider--three {
+    height: 350px;
+  }
+}
+
+// ===== Our Profesional Members ===== \\
+.members {
+  padding-bottom: 0px;
+  &-slider--one {
+    padding-bottom: 60px;
+    @include max(767px) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+// ======== Brand Names ========= \\
+.brand-name {
+  &--two {
+    .brand-name {
+      &-slide--one {
+        padding: 60px 0px;
+        border: 1px solid color(gray-1);
+      }
+    }
+  }
+}
+
+// ========= Testimonials ======== \\
+.testimonial {
+  &--two {
+    padding-left: 60px;
+    padding-right: 60px;
+    @include max(1200px) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+// =========  Responsive ======== \\
+
+@include max(1200px) {
+  // ======== Homepage 02 ========== \\
+
+  // == > Call To Actions
+  .call-to-action {
+    &--two {
+      background-color: color(gray-9);
+    }
+  }
+}
+@include max(991px) {
+  // homepage 02
+
+  .featured {
+    .cards-ss--small-one,
+    .cards-ss--small-two {
+      margin-bottom: 15px;
+    }
+
+    &__content {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  // Featured Section
+  .featured,
+  .news,
+  .testimonial-slider--one,
+  .instagram-slider--one,
+  .members-slider--one,
+  .cyclone--slider {
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  // Homepage 01
+  .featured,
+  .news,
+  .popular-categories--slider,
+  .popular-products--slider,
+  .testimonial-slider--one,
+  .instagram-slider--one,
+  .cyclone--slider {
+    .swiper-wrapper {
+      padding-bottom: 30px;
+    }
+  }
+}

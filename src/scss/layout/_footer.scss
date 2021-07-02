@@ -1,0 +1,450 @@
+.footer {
+  position: relative;
+  background-color: color(gray-9);
+  z-index: 1;
+  &__top {
+    padding: 66px 0px;
+  }
+
+  // brands information
+  &__brand-info {
+    &-logo,
+    h2 {
+      margin-bottom: 16px;
+    }
+    h2 {
+      color: #fff;
+    }
+
+    p {
+      color: color(gray-5);
+      max-width: 75%;
+      margin-bottom: 22px;
+    }
+
+    &-contact {
+      color: color(gray-5);
+      a {
+        margin: 0px 16px;
+        &:nth-child(1) {
+          margin-left: 0px;
+        }
+        &:nth-child(2) {
+          margin-right: 0px;
+        }
+      }
+      span {
+        color: #fff;
+        padding-bottom: 6px;
+        border-bottom: 2px solid color(primary);
+        font-weight: 500;
+      }
+    }
+  }
+
+  // footer navigation menu
+  &__navigation {
+    &-title {
+      margin-bottom: 20px;
+      h2 {
+        color: #fff;
+        text-transform: capitalize;
+      }
+    }
+    &-link {
+      margin-bottom: 12px;
+      a {
+        font-size: 14px;
+        line-height: 21px;
+        color: color(gray-4);
+        transition: all 0.3s linear;
+        text-transform: capitalize;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid color(gray-8);
+  }
+
+  &__copyright-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: color(gray-5);
+  }
+
+  &__partner {
+    &-item {
+      margin-right: 8px;
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  // Mobile app
+  &__mobile-app {
+    display: flex;
+    align-items: center;
+    &--item {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      padding: 10px;
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+      span {
+        margin-right: 8px;
+        color: color(gray-9);
+      }
+    }
+
+    &--info {
+      h5 {
+        font-size: 11px;
+        line-height: 14.3px;
+        color: color(gray-7);
+      }
+      h2 {
+        font-size: 16px;
+        line-height: 24px;
+        color: color(gray-9);
+      }
+    }
+  }
+
+  // instagram galery
+  &__instagram {
+    &-item {
+      margin-right: 12px;
+      margin-bottom: 12px;
+      .cards-ig__img {
+        width: 69px;
+        height: 69px;
+      }
+    }
+  }
+
+  // Social icons
+  &__social-icon {
+    display: flex;
+    &-link {
+      margin-right: 20px;
+      a {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b3b3b3;
+        &:hover {
+          color: #fff;
+          background-color: color(primary);
+        }
+        svg {
+          width: 18px;
+        }
+      }
+    }
+  }
+
+  // Footer Fours overlay shape
+  &__overlay {
+    span {
+      position: absolute;
+      z-index: -1;
+    }
+    &--one {
+      top: 0;
+      left: 0;
+    }
+    &--two {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  // Footer two
+  &--two {
+    background-color: #fff;
+    .footer {
+      &__brand-info {
+        &-contact {
+          span {
+            color: color(gray-9);
+          }
+        }
+      }
+      &__navigation {
+        &-title {
+          h2 {
+            color: color(gray-9);
+          }
+        }
+        &-link {
+          a {
+            color: color(gray-6);
+
+            &:hover {
+              color: color(gray-9);
+            }
+          }
+        }
+      }
+
+      &__top {
+        background-color: color(gray-0);
+        padding: 60px;
+      }
+
+      &__bottom {
+        border-top: 0px;
+      }
+    }
+  }
+
+  &--four {
+    background-color: color(green-9);
+    .footer {
+      &__brand-info {
+        p {
+          color: color(green-5);
+        }
+
+        &-contact {
+          color: color(green-5);
+        }
+      }
+
+      &__navigation {
+        &-link {
+          a {
+            color: color(green-5);
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &__social-icon {
+        &-link {
+          a {
+            color: color(green-3);
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &__copyright-text {
+        color: color(green-5);
+      }
+    }
+  }
+
+  &--five {
+    background-color: color(gray-9);
+    overflow: hidden;
+    .footer {
+      &__bottom {
+        border-top: 0px;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -50%;
+          width: calc(100% * 2);
+          height: 1px;
+          background-color: color(gray-8);
+        }
+      }
+
+      &__brand-info {
+        p {
+          color: color(gray-4);
+        }
+      }
+
+      &__navigation {
+        &-title {
+          h2 {
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: -12px;
+              left: 0px;
+              width: 24px;
+              height: 2px;
+              background-color: color(primary);
+            }
+          }
+        }
+
+        &-link {
+          a {
+            color: color(gray-4);
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &__mobile-app {
+        margin-top: 30px;
+
+        &--item {
+          border-radius: 4px;
+          background-color: color(gray-8);
+          span {
+            color: #fff;
+          }
+        }
+        &--info {
+          h5 {
+            color: color(gray-3);
+          }
+          h2 {
+            color: #fff;
+          }
+        }
+      }
+
+      &__copyright-text {
+        color: color(gray-4);
+      }
+    }
+  }
+}
+
+// Responsive
+
+@media (max-width: 1440px) {
+  .footer--two .footer__top {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  // Footer two
+  .footer--two {
+    background-color: #f2f2f2;
+  }
+  .footer--two .footer__top {
+    padding: 60px 0px;
+  }
+
+  .footer--two .footer__brand-info-contact,
+  .footer--three .footer__brand-info-contact {
+    margin-bottom: 30px;
+  }
+  // Footer five
+  .footer--five {
+    .footer__social-icon {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  // footer one
+  .footer {
+    &__brand-info {
+      &-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        a {
+          margin-left: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer__brand-info-contact {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__top {
+    padding-bottom: 30px;
+  }
+
+  .footer__brand-info-contact {
+    display: flex;
+    flex-direction: column;
+    a {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer__brand-info p {
+    max-width: 100%;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+    .footer__copyright-text {
+      order: 2;
+    }
+    .footer__partner {
+      order: 1;
+      margin-bottom: 15px;
+    }
+  }
+
+  // Footers Two
+  .footer--two {
+    background-color: #f2f2f2;
+  }
+  .footer--two .footer__top {
+    padding: 60px 0px;
+  }
+
+  // Footer three
+  .footer--three,
+  .footer--four {
+    .footer__bottom .footer__copyright-text {
+      order: 2;
+      margin: 15px 0px;
+    }
+    .footer__bottom .footer__partner {
+      order: 3;
+      margin-bottom: 0px;
+    }
+  }
+}
+@media (max-width: 574px) {
+  .footer__mobile-app {
+    flex-direction: column;
+  }
+
+  .footer__mobile-app--item {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}

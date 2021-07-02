@@ -1,0 +1,575 @@
+// Banner Layouts...
+.banner {
+  position: relative;
+
+  &--01 {
+    margin: 24px 0px;
+
+    .banner {
+      &__wrapper {
+        &-img {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          border-radius: 10px;
+          overflow: hidden;
+          img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+          }
+        }
+        &-text {
+          position: absolute;
+        }
+
+        &--img-02,
+        &--img-03 {
+          height: 288px;
+          .banner__wrapper-text {
+            .button {
+              background-color: transparent;
+              color: color(primary);
+              text-transform: capitalize;
+              font-weight: 600;
+              padding: 0;
+            }
+          }
+        }
+
+        &--img-01 {
+          height: 600px;
+
+          .banner__wrapper-text {
+            top: 165px;
+            left: 65px;
+            h2 {
+              width: 70%;
+              color: #fff;
+            }
+
+            .sale-off {
+              margin: 30px 0px;
+              padding-left: 12px;
+              border-left: 2px solid color(soft-primary);
+
+              h5 {
+                color: #fff;
+                margin-bottom: 12px;
+                span {
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  padding: 4px 12px;
+                  background-color: color(warning);
+                  border-radius: 5px;
+                }
+              }
+              p {
+                color: color(gray-2);
+                font-size: 14px;
+                line-height: 21px;
+              }
+            }
+
+            .button {
+              background-color: #fff;
+              color: color(primary);
+              &:hover {
+                background-color: color(gray-1);
+              }
+            }
+          }
+        }
+
+        &--img-02 {
+          margin-bottom: 24px;
+
+          .banner__wrapper-text {
+            top: 32px;
+            left: 32px;
+            h5 {
+              letter-spacing: 0.03em;
+              text-transform: uppercase;
+              color: color(gray-9);
+              margin-bottom: 8px;
+            }
+            h2 {
+              text-transform: uppercase;
+              color: color(gray-9);
+              margin-bottom: 12px;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 21px;
+              color: color(gray-6);
+              margin-bottom: 24px;
+            }
+          }
+        }
+
+        &--img-03 {
+          .banner__wrapper-text {
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            h5,
+            h2 {
+              color: #fff;
+            }
+
+            h5 {
+              text-transform: uppercase;
+              margin-bottom: 12px;
+            }
+            h2 {
+              max-width: 72%;
+              margin: auto;
+              margin-bottom: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--02 {
+    margin-top: 24px;
+    .banner {
+      &__wrapper-img {
+        position: relative;
+        width: 100%;
+        height: 560px;
+        overflow: hidden;
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+        }
+      }
+
+      &__wrapper-text {
+        position: absolute;
+        top: 50%;
+        left: 48px;
+        transform: translateY(-50%);
+        h2 {
+          color: #fff;
+          max-width: 400px;
+          text-transform: capitalize;
+          opacity: 0.3;
+        }
+        .sale-off {
+          border-left: 1px solid transparent;
+          padding-left: 12px;
+          h5 {
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 135px;
+            margin: 12px 0px;
+            span {
+              color: rgba(255, 255, 255, 0.6);
+            }
+          }
+        }
+        a.button {
+          background-color: color(hard-primary);
+        }
+      }
+    }
+    // Swiper pagination
+    .swiper-pagination {
+      position: absolute;
+      left: 48px;
+      bottom: 32px;
+      text-align: left;
+      &-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+      }
+    }
+
+    // Swiper slide Animation
+    .swiper-slide {
+      &-active {
+        .banner__wrapper-text {
+          h2,
+          h5 span,
+          a.button {
+            transition: all 0.6s ease-in;
+          }
+          h2 {
+            opacity: 1;
+          }
+          h5 {
+            span {
+              color: #fff;
+            }
+          }
+          .sale-off {
+            border-color: color(primary);
+            transition: all 0.9s linear;
+          }
+          a.button {
+            background-color: color(primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Banner Sales
+.banner-sale {
+  &__img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    h5 {
+      font-size: 16px;
+      line-height: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 56px;
+      line-height: 67.2px;
+      color: color(warning);
+      font-weight: 600;
+      margin-bottom: 16px;
+      span {
+        color: #fff;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      color: #fff;
+      opacity: 70%;
+      max-width: 75%;
+      margin-bottom: 28px;
+    }
+    a.button {
+      &:hover {
+        background-color: #fff;
+        color: color(primary);
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 1200px) {
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text h2,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2 {
+    max-width: 95%;
+  }
+
+  // Banner Sales Cards
+  .banner-sale {
+    &__img-wrapper {
+      height: 45vh;
+    }
+    &__text-content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text h5,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h5,
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text h5,
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text .h5,
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text p {
+    margin-bottom: 0px;
+  }
+
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text h2,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  // Banner 01
+  .banner__wrapper-img-sm {
+    display: flex;
+    margin-top: 12px;
+    .banner__wrapper-img {
+      margin-right: 12px;
+      margin-bottom: 0px;
+
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .banner--01 .banner-slider--one {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  // ====== Homepage 01 ========= \\
+
+  // Swiper Slider Customizations
+  .banner {
+    &-slider {
+      &--one {
+        .banner {
+          &__wrapper {
+            &-img {
+              overflow: hidden;
+            }
+
+            &--img-01 {
+              height: 288px;
+            }
+
+            &--img-01,
+            &--img-02,
+            &--img-03 {
+              .banner__wrapper-text {
+                .button {
+                  span {
+                    svg {
+                      opacity: 0.3;
+                      transform: translateY(-3px) rotate(-45deg);
+                    }
+                  }
+                }
+              }
+            }
+
+            &--img-01 {
+              .banner__wrapper-text {
+                h2,
+                .sale-off span {
+                  opacity: 0;
+                }
+                h2 {
+                  transform: translateX(-350px);
+                  pointer-events: none;
+                  transition: all 0.6s ease-in-out;
+                }
+              }
+            }
+            &--img-02,
+            &--img-03 {
+              .banner__wrapper-text {
+                h5,
+                h2 {
+                  opacity: 0.6;
+                }
+                h5 {
+                  transform: translateY(-250px);
+                }
+                h2 {
+                  transform: translateX(-350px);
+                }
+              }
+            }
+          }
+        }
+
+        .swiper-slide {
+          opacity: 0 !important;
+          &-active {
+            opacity: 1 !important;
+            transition: all 0.6s ease-in-out;
+            .banner__wrapper {
+              &--img-01,
+              &--img-02,
+              &--img-03 {
+                .banner__wrapper-text {
+                  .button {
+                    span {
+                      svg {
+                        opacity: 1;
+                        transform: translateY(0px) rotate(0deg);
+                        transition: all 0.6s linear;
+                      }
+                    }
+                  }
+                }
+              }
+
+              &--img-01 {
+                .banner__wrapper-text {
+                  h2 {
+                    transform: translateX(0);
+                    opacity: 1;
+                    transition: all 0.9s linear;
+                    pointer-events: all;
+                  }
+                  .sale-off {
+                    span {
+                      opacity: 1;
+                      transition: all 0.3s ease-in-out;
+                      transition-delay: 0.6s;
+                    }
+                  }
+                }
+              }
+
+              &--img-02,
+              &--img-03 {
+                .banner__wrapper-text {
+                  h5,
+                  h2 {
+                    opacity: 1;
+                    transform: translate(0);
+                  }
+                  h5 {
+                    transition: all 0.6s linear;
+                  }
+                  h2 {
+                    transition: all 0.9s ease-in;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text,
+  .banner--01 .banner__wrapper--img-02 .banner__wrapper-text,
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text {
+    left: 15px;
+  }
+
+  .banner--01 .banner__wrapper {
+    display: none;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
+    width: 100%;
+  }
+  .banner__wrapper-img-sm {
+    flex-direction: column;
+    .banner__wrapper-img {
+      margin-right: 0px;
+      margin-bottom: 12pxx;
+    }
+  }
+
+  .banner--01 .banner__wrapper--img-03 .banner__wrapper-text {
+    left: 32px;
+    text-align: left;
+    h2 {
+      margin-left: 0px;
+    }
+  }
+
+  .banner__wrapper-img-sm .banner__wrapper-img {
+    margin-bottom: 12px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off {
+    margin: 15px 0px;
+  }
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .button,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .button:hover {
+    background-color: transparent;
+    padding: 0px;
+  }
+
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5,
+  .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
+    margin-bottom: 5px;
+  }
+
+  .banner--01 .banner__wrapper--img-02 {
+    margin-bottom: 0px;
+  }
+
+  // banner sales cards
+  .banner-sale__text-content {
+    width: 95%;
+  }
+
+  // ===== Homepage 02 ====== \\
+  .banner--02 {
+    .swiper-pagination,
+    .banner--02__wrapper-text {
+      left: 12px;
+    }
+    .swiper-pagination {
+      bottom: 15px;
+    }
+    .banner {
+      &__wrapper-img {
+        height: 350px;
+      }
+
+      &__wrapper-text {
+        left: 12px;
+        h2 {
+          font-size: 32px;
+          line-height: 42px;
+          max-width: 100%;
+        }
+        .sale-off {
+          h5 {
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}
