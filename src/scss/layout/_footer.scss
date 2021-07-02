@@ -44,6 +44,7 @@
 
   // footer navigation menu
   &__navigation {
+    overflow: hidden;
     &-title {
       margin-bottom: 20px;
       h2 {
@@ -436,6 +437,7 @@
     }
   }
 }
+
 @media (max-width: 574px) {
   .footer__mobile-app {
     flex-direction: column;
