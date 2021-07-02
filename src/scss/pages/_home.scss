@@ -8,7 +8,7 @@
   }
 }
 
-// Homepage 01  =>
+//=======  Homepage 01 ========== //
 
 // popular categories
 .popular-categories--slider {
@@ -24,9 +24,7 @@
   }
 }
 
-// cyclone Sale banner
-
-//=======  Homepage 02 ========== //
+//\\=======  Homepage 02 ========== //\\
 
 // Shipping Cards
 .shipping-container--two {
@@ -36,7 +34,7 @@
   }
 }
 
-// Our Featured Products
+//Our Featured Products
 .featured {
   &__content {
     h2 {
@@ -49,7 +47,7 @@
   }
 }
 
-// ===== Our Profesional Members ===== \\
+// Our Profesional Members
 .members {
   padding-bottom: 0px;
   &-slider--one {
@@ -60,7 +58,7 @@
   }
 }
 
-// ======== Brand Names ========= \\
+// Brand Names
 .brand-name {
   &--two {
     .brand-name {
@@ -72,7 +70,7 @@
   }
 }
 
-// ========= Testimonials ======== \\
+// Testimonials
 .testimonial {
   &--two {
     padding-left: 60px;
@@ -83,7 +81,83 @@
     }
   }
 }
-// =========  Responsive ======== \\
+
+//\\=======  Homepage 03 ========== //\\
+
+// Top Category
+.cateogory--top {
+  .container {
+    position: relative;
+    .arrows {
+      z-index: 3;
+      &__btn {
+        position: absolute;
+        top: calc(50% + 30px);
+        transform: translate(-50%);
+
+        &.swiper-button {
+          &--prev {
+            left: -40px;
+          }
+          &--next {
+            right: -80px;
+          }
+        }
+      }
+    }
+  }
+}
+//\\ =========  Responsive ======== //\\
+
+@include max(1440px) {
+  // ====== Homepage 03 ========== \\
+  .cateogory--top {
+    .section__head {
+      .arrows {
+        button {
+          position: static !important;
+        }
+      }
+    }
+    .container {
+      .arrows {
+        &.category--top-arrows-lg {
+          display: none;
+        }
+      }
+    }
+
+    // .arrows {
+    //   position: absolute;
+    //   top: -25px;
+    //   right: 90px;
+    //   &__btn {
+    //     &.swiper-button {
+    //       &--prev {
+    //         left: -60px;
+    //       }
+    //       &--next {
+    //         right: -45px;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+
+@include min-max(768px, 1440px) {
+  .cateogory--top {
+    .section__head {
+      justify-content: space-between !important;
+      h2 {
+        span {
+          left: 20px;
+          transform: translateX(0px);
+        }
+      }
+    }
+  }
+}
 
 @include max(1200px) {
   // ======== Homepage 02 ========== \\
@@ -110,31 +184,42 @@
   }
 }
 
-@media (min-width: 768px) {
+@include min(768px) {
   // Featured Section
   .featured,
   .news,
   .testimonial-slider--one,
   .instagram-slider--one,
   .members-slider--one,
-  .cyclone--slider {
+  .cyclone--slider,
+  .newest-products {
     .swiper-pagination {
       display: none;
     }
   }
 }
 
-@media (max-width: 767px) {
-  // Homepage 01
+@include max(767px) {
+  //===== Homepage 01 ======= \\
   .featured,
   .news,
   .popular-categories--slider,
   .popular-products--slider,
   .testimonial-slider--one,
   .instagram-slider--one,
-  .cyclone--slider {
+  .cyclone--slider,
+  .newest-products {
     .swiper-wrapper {
       padding-bottom: 30px;
+    }
+  }
+
+  // ========= Homepage 03 ========\\
+  .cateogory--top {
+    .section__head {
+      .arrows {
+        margin-left: 50px;
+      }
     }
   }
 }
