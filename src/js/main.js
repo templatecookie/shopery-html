@@ -11,8 +11,6 @@
           ------------------------
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/ \/\/\/\/\/\ 
 
-
-
  === Swipper Slider ==
  01. Banners 
  02. Shipping
@@ -64,10 +62,10 @@ var shiping = new Swiper('.shipping-container--slider', {
   spaceBetween: 0,
   loop: true,
   loopFillGroupWithBlank: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -205,6 +203,29 @@ var productsTwo = new Swiper('.newest-products-slider--one', {
     },
     1200: {
       slidesPerView: 5,
+    },
+  },
+});
+
+var productsThree = new Swiper('.our-products__content-slider', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
     },
   },
 });
