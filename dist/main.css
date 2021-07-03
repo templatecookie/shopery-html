@@ -12645,6 +12645,9 @@ ul.example li p {
   .our-products__content-slider {
     display: none; } }
 
+.call-to-action--four {
+  border-top: 1px solid #b4ccb4; }
+
 @media (max-width: 1440px) {
   .cateogory--top .section__head .arrows button {
     position: static !important; }

@@ -228,6 +228,14 @@
   }
 }
 
+// ========= Homepage 04 ======== \\
+
+.call-to-action {
+  &--four {
+    border-top: 1px solid color(green-2);
+  }
+}
+
 //\\ =========  Responsive ======== //\\
 
 @include max(1440px) {
