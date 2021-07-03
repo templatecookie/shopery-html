@@ -23,6 +23,7 @@
  09. Testimonials 
  10. Brands name 
  11. Members 
+ 12. Instagram
  
 \/\/\/\/\/\/\/\*/
 
@@ -355,10 +356,10 @@ var salesCardOne = new Swiper('.sales-banner-slider--two', {
   loop: true,
   loopFillGroupWithBlank: true,
 
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   pagination: {
     el: '.swiper-pagination',
@@ -472,11 +473,11 @@ var featuredThree = new Swiper('.featured-slider--three', {
     delay: 2500,
     disableOnInteraction: false,
   },
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   clickable: true,
-  //   dynamicBullets: true,
-  // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
   breakpoints: {
     0: {
       slidesPerView: 3,
@@ -552,6 +553,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoHeight: true,
+  centeredSlides: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -612,7 +614,7 @@ var testimonialThree = new Swiper('.testimonial-slider--three', {
   },
 });
 
-// ====== Testimonials ====== \\
+// ====== Instagram ====== \\
 var insta = new Swiper('.instagram-slider--one', {
   slidesPerView: 6,
   loop: true,

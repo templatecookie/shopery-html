@@ -863,7 +863,7 @@
 
       .cards-tm-2__text {
         transition: all 0.3s linear;
-        color: color(primary);
+        color: color(soft-primary);
       }
     }
 
@@ -872,7 +872,7 @@
       top: 32px;
       left: 50%;
       transform: translateX(-50%);
-      color: color(primary);
+      color: color(soft-primary);
     }
   }
 
@@ -910,6 +910,29 @@
     }
     span {
       color: color(green-4);
+    }
+  }
+
+  // Hove
+  &:hover {
+    .cards-tm-2 {
+      .quotes,
+      &__text,
+      &__designation h5 {
+        color: color(primary);
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  &-active {
+    .cards-tm-2 {
+      .quotes,
+      &__text,
+      &__designation h5 {
+        color: color(primary);
+      }
     }
   }
 }
