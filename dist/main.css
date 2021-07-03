@@ -145,11 +145,17 @@
   font-size: 12px;
   font-weight: 600; }
 
-.section--xl {
+.section--xxl {
   padding: 100px 0px; }
 
-.section--my-xl {
+.section--my-xxl {
   margin: 100px 0px; }
+
+.section--xl {
+  padding: 80px 0px; }
+
+.section--my-xl {
+  margin: 80px 0px; }
 
 .section--lg {
   padding: 60px 0px; }
@@ -12290,7 +12296,9 @@ a {
 .swiper-slide-active .cards-tm-2 .quotes, .swiper-slide-active .cards-tm-2__text,
 .swiper-slide-active .cards-tm-2__designation h5,
 .swiper-slide-active .cards-tm-2__designation .h5 {
-  color: #00b207; }
+  color: #00b207;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
 
 .cards-ship {
   display: -webkit-box;

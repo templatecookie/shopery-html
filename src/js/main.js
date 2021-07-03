@@ -553,7 +553,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoHeight: true,
-  centeredSlides: true,
+
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -571,6 +571,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
     0: {
       slidesPerView: 1,
       spaceBetween: 12,
+      centeredSlides: false,
     },
     768: {
       slidesPerView: 2,
@@ -578,6 +579,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
     1200: {
       slidesPerView: 3,
       spaceBetween: 24,
+      centeredSlides: true,
     },
   },
 });

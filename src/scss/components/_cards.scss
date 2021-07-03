@@ -932,6 +932,7 @@
       &__text,
       &__designation h5 {
         color: color(primary);
+        transition: all 0.6s ease-in-out;
       }
     }
   }
