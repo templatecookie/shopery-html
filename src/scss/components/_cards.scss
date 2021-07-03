@@ -546,6 +546,115 @@
       color: color(gray-9);
     }
   }
+  &--md {
+    border-radius: 8px;
+    overflow: hidden;
+    &__img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 255px;
+      overflow: hidden;
+      z-index: 1;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.185);
+      }
+    }
+
+    &__text-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      h2 {
+        width: 185px;
+      }
+
+      .button {
+        background-color: #fff;
+        color: color(primary);
+      }
+    }
+
+    &-one,
+    &-three {
+      .cards-ss--md {
+        &__text-content {
+          left: 24px;
+        }
+      }
+    }
+
+    &-two {
+      .cards-ss--md {
+        &__text-content {
+          right: 32px;
+          @include max(767px) {
+            right: auto;
+            left: 24px;
+          }
+        }
+      }
+    }
+
+    &-one {
+      .cards-ss--md {
+        &__text-content {
+          h2 {
+            color: #fff;
+            margin-bottom: 8px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 16px;
+            span {
+              font: 20px;
+              line-height: 30px;
+              font-weight: 500;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    &-two,
+    &-three {
+      .cards-ss--md {
+        &__text-content {
+          h5,
+          h2 {
+            color: color(green-9);
+          }
+
+          h2 {
+            margin-bottom: 20px;
+          }
+          h5 {
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: capitalize;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
 
   &__content {
     position: absolute;
@@ -1002,9 +1111,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-    }
-
-    &--small-one {
     }
 
     &--lg,
