@@ -230,6 +230,28 @@
 
 // ========= Homepage 04 ======== \\
 
+// Latest News
+.latest-news {
+  position: relative;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+  &::before {
+    top: 0;
+    background-color: #fff;
+  }
+  &::after {
+    bottom: 0;
+    background-color: color(green-0);
+  }
+}
+
+// News letter
 .call-to-action {
   &--four {
     border-top: 1px solid color(green-2);
