@@ -85,7 +85,7 @@
 //\\=======  Homepage 03 ========== //\\
 
 // Top Category
-.cateogory--top {
+.category--top {
   .container {
     position: relative;
     .arrows {
@@ -421,6 +421,10 @@
 
 //\\=======  Homepage 05 ========== //\\
 
+.category--top {
+  background: linear-gradient(180deg, #f2f5f3 20.01%, #ffffff 100%);
+}
+
 // Featured Products
 .featured {
   &--five {
@@ -454,8 +458,7 @@
 }
 
 // Category
-.cateogory--top {
-  background: linear-gradient(180deg, #f2f5f3 20.01%, #ffffff 100%);
+.category--top {
   &__overlay-img {
     position: absolute;
     user-select: none;
@@ -476,11 +479,143 @@
   }
 }
 
+// food Store
+.food-store {
+  // background-color: color(green-0);
+  &__img-wrapper {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    &-img {
+      border-radius: 8px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+
+      &--one {
+        width: 275px;
+        height: 400px;
+        margin-right: 24px;
+      }
+      &--two {
+        width: 445px;
+        height: 455px;
+      }
+    }
+  }
+  &__img-overlay {
+    position: absolute;
+    pointer-events: none;
+    &--one {
+      bottom: 0;
+      left: -60px;
+      z-index: 2;
+    }
+    &--two {
+      top: -55px;
+      left: 115px;
+    }
+  }
+
+  &__content {
+    h2 {
+      color: color(gray-9);
+      margin-bottom: 26px;
+    }
+  }
+
+  &__content-list {
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 26px;
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: color(primary);
+        flex-basis: 5%;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__content-info {
+    flex-basis: 95%;
+    h5 {
+      color: color(gray-9);
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+    p {
+      color: color(gray-5);
+    }
+  }
+
+  &__overlay-shade {
+    &-img {
+      position: absolute;
+      pointer-events: none;
+      // begun
+      &--one {
+        bottom: 35px;
+        left: 0px;
+        color: #e6e6e6;
+      }
+
+      // shade
+      &--two {
+        top: 0;
+        left: 0;
+        color: #f2f2f2;
+      }
+
+      // mula {
+      &--three {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 35px;
+        color: #f2f2f2;
+      }
+
+      // leaf
+      &--four {
+        bottom: -40px;
+        right: 100px;
+      }
+    }
+  }
+
+  &:hover {
+    .food-store {
+      &__overlay-shade {
+        &-img {
+          &--one,
+          &--two,
+          &--three {
+            color: color(soft-primary);
+            transition: all 0.6s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
 //\\ =========  Responsive ======== //\\
 
 @include max(1440px) {
   // ====== Homepage 03 ========== \\
-  .cateogory--top {
+  .category--top {
     .section__head {
       .arrows {
         button {
@@ -495,27 +630,11 @@
         }
       }
     }
-
-    // .arrows {
-    //   position: absolute;
-    //   top: -25px;
-    //   right: 90px;
-    //   &__btn {
-    //     &.swiper-button {
-    //       &--prev {
-    //         left: -60px;
-    //       }
-    //       &--next {
-    //         right: -45px;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
 
 @include min-max(768px, 1440px) {
-  .cateogory--top {
+  .category--top {
     .section__head {
       justify-content: space-between !important;
       h2 {
@@ -600,7 +719,7 @@
   }
 
   // ========= Homepage 03 ========\\
-  .cateogory--top {
+  .category--top {
     .section__head {
       .arrows {
         margin-left: 50px;
