@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
+@import url(http://fonts.cdnfonts.com/css/segoe-script);
 @use "sass:math";
 .font-title--xxxl {
   font-size: 72px;
@@ -12668,6 +12669,78 @@ ul.example li p {
 @media (min-width: 768px) {
   .our-products__content-slider {
     display: none; } }
+
+.banner-promo {
+  position: relative; }
+  .banner-promo::after, .banner-promo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%; }
+  .banner-promo::after {
+    top: 0;
+    background-color: #edf2ee; }
+  .banner-promo::before {
+    bottom: 0;
+    background-color: #fff; }
+  .banner-promo__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 740px;
+    overflow: hidden;
+    border-radius: 20px; }
+    @media (max-width: 991px) {
+      .banner-promo__content {
+        height: 475px; } }
+    .banner-promo__content::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #002e0399; }
+    .banner-promo__content img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .banner-promo__content-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1; }
+      @media (max-width: 767px) {
+        .banner-promo__content-text {
+          width: 95%; } }
+      .banner-promo__content-text span.title {
+        font-size: 16px;
+        line-height: 16px;
+        font-family: "Segoe Script", sans-serif;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 12px; }
+      .banner-promo__content-text h5, .banner-promo__content-text .h5 {
+        width: 495px;
+        margin: auto;
+        color: #fff;
+        margin-bottom: 32px; }
+        @media (max-width: 767px) {
+          .banner-promo__content-text h5, .banner-promo__content-text .h5 {
+            width: 100%;
+            font-size: 28px;
+            line-height: 38px; } }
+      .banner-promo__content-text .play-icon {
+        color: #fff; }
+        .banner-promo__content-text .play-icon:hover {
+          -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+          color: #00b207; }
 
 .latest-news {
   position: relative; }

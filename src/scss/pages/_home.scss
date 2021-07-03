@@ -119,6 +119,7 @@
 
 //\\=======  Homepage 04 ========== //\\
 
+// 03. Shipping Container
 .shipping-container {
   &--three {
     padding-top: 50px;
@@ -148,6 +149,7 @@
   }
 }
 
+// 04. Our products
 .our-products {
   .section__head {
     h2 {
@@ -228,7 +230,92 @@
   }
 }
 
-// ========= Homepage 04 ======== \\
+// banner promo
+.banner-promo {
+  position: relative;
+  // overflow: hidden;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+  &::after {
+    top: 0;
+    background-color: color(green-0);
+  }
+  &::before {
+    bottom: 0;
+    background-color: #fff;
+  }
+  &__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 740px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    @include max(991px) {
+      height: 475px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #002e0399;
+      // z-index: -1;
+    }
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+      @include max(767px) {
+        width: 95%;
+      }
+      span.title {
+        font-size: 16px;
+        line-height: 16px;
+        font-family: $font-2;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 12px;
+      }
+      h5 {
+        width: 495px;
+        margin: auto;
+        color: #fff;
+        margin-bottom: 32px;
+        @include max(767px) {
+          width: 100%;
+          font-size: 28px;
+          line-height: 38px;
+        }
+      }
+      .play-icon {
+        color: #fff;
+        &:hover {
+          transition: all 0.3s linear;
+          color: color(primary);
+        }
+      }
+    }
+  }
+}
 
 // Latest News
 .latest-news {
