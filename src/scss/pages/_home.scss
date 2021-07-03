@@ -423,6 +423,13 @@
       display: none;
     }
   }
+
+  // Swiper Slider
+  .our-products {
+    .swiper-container {
+      display: none;
+    }
+  }
 }
 
 @include max(767px) {

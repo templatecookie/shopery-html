@@ -12790,6 +12790,8 @@ ul.example li p {
   .newest-products .swiper-pagination,
   .category--top-slider--two .swiper-pagination,
   .news-slider--one .swiper-pagination {
+    display: none; }
+  .our-products .swiper-container {
     display: none; } }
 
 @media (max-width: 767px) {
