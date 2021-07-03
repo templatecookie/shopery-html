@@ -419,6 +419,38 @@
   }
 }
 
+//\\=======  Homepage 05 ========== //\\
+
+// Featured Products
+.featured {
+  &--five {
+    .cards-md {
+      border-radius: 8px;
+    }
+  }
+
+  &__overlay-img {
+    position: absolute;
+    z-index: -1;
+    &--one {
+      bottom: 30px;
+      left: 0px;
+    }
+    &--two {
+      bottom: -15px;
+      left: calc(10% + 50px);
+      z-index: 1;
+      @include max(767px) {
+        bottom: -30px;
+      }
+      @include max(575px) {
+        left: auto;
+        right: 0px;
+      }
+    }
+  }
+}
+
 //\\ =========  Responsive ======== //\\
 
 @include max(1440px) {

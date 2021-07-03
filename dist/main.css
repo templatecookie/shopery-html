@@ -12851,6 +12851,27 @@ ul.example li p {
         .best-deals__img-content--two {
           right: 0px; } }
 
+.featured--five .cards-md {
+  border-radius: 8px; }
+
+.featured__overlay-img {
+  position: absolute;
+  z-index: -1; }
+  .featured__overlay-img--one {
+    bottom: 30px;
+    left: 0px; }
+  .featured__overlay-img--two {
+    bottom: -15px;
+    left: calc(10% + 50px);
+    z-index: 1; }
+    @media (max-width: 767px) {
+      .featured__overlay-img--two {
+        bottom: -30px; } }
+    @media (max-width: 575px) {
+      .featured__overlay-img--two {
+        left: auto;
+        right: 0px; } }
+
 @media (max-width: 1440px) {
   .cateogory--top .section__head .arrows button {
     position: static !important; }

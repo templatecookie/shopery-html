@@ -520,6 +520,36 @@ var featuredFour = new Swiper('.featured-slider--four', {
   },
 });
 
+var featuredFive = new Swiper('.featured-slider--five', {
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1201: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
+
 // ====== News Slider one ====== \\
 var news = new Swiper('.news-slider--one', {
   spaceBetween: 24,
