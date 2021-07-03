@@ -11012,7 +11012,8 @@ a {
 .footer {
   position: relative;
   background-color: #1a1a1a;
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
   .footer__top {
     padding: 66px 0px; }
   .footer__brand-info-logo,
