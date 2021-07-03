@@ -814,6 +814,8 @@
 }
 
 .cards-tm-2 {
+  position: relative;
+  overflow: hidden;
   &__top {
     position: relative;
     padding: 32px;
