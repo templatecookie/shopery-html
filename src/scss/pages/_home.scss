@@ -343,7 +343,8 @@
   .members-slider--one,
   .cyclone--slider,
   .newest-products,
-  .category--top-slider--two {
+  .category--top-slider--two,
+  .news-slider--one {
     .swiper-pagination {
       display: none;
     }
@@ -366,7 +367,8 @@
   .our-products__content-slider-one,
   .our-products__content-slider-two,
   .our-products__content-slider-three,
-  .our-products__content-slider-four {
+  .our-products__content-slider-four,
+  .news-slider--one {
     .swiper-wrapper {
       padding-bottom: 30px;
     }

@@ -3,6 +3,7 @@
   background-color: color(gray-9);
   z-index: 1;
   overflow: hidden;
+
   &__top {
     padding: 66px 0px;
   }
@@ -13,6 +14,7 @@
     h2 {
       margin-bottom: 16px;
     }
+
     h2 {
       color: #fff;
     }
@@ -25,15 +27,19 @@
 
     &-contact {
       color: color(gray-5);
+
       a {
         margin: 0px 16px;
+
         &:nth-child(1) {
           margin-left: 0px;
         }
+
         &:nth-child(2) {
           margin-right: 0px;
         }
       }
+
       span {
         color: #fff;
         padding-bottom: 6px;
@@ -46,21 +52,26 @@
   // footer navigation menu
   &__navigation {
     overflow: hidden;
+
     &-title {
       margin-bottom: 20px;
+
       h2 {
         color: #fff;
         text-transform: capitalize;
       }
     }
+
     &-link {
       margin-bottom: 12px;
+
       a {
         font-size: 14px;
         line-height: 21px;
         color: color(gray-4);
         transition: all 0.3s linear;
         text-transform: capitalize;
+
         &:hover {
           color: #fff;
         }
@@ -86,6 +97,7 @@
   &__partner {
     &-item {
       margin-right: 8px;
+
       &:nth-last-child(1) {
         margin-right: 0px;
       }
@@ -96,15 +108,18 @@
   &__mobile-app {
     display: flex;
     align-items: center;
+
     &--item {
       background-color: #fff;
       display: flex;
       align-items: center;
       margin-right: 8px;
       padding: 10px;
+
       &:nth-last-child(1) {
         margin-right: 0px;
       }
+
       span {
         margin-right: 8px;
         color: color(gray-9);
@@ -117,6 +132,7 @@
         line-height: 14.3px;
         color: color(gray-7);
       }
+
       h2 {
         font-size: 16px;
         line-height: 24px;
@@ -130,6 +146,7 @@
     &-item {
       margin-right: 12px;
       margin-bottom: 12px;
+
       .cards-ig__img {
         width: 69px;
         height: 69px;
@@ -140,8 +157,10 @@
   // Social icons
   &__social-icon {
     display: flex;
+
     &-link {
       margin-right: 20px;
+
       a {
         width: 40px;
         height: 40px;
@@ -150,10 +169,12 @@
         align-items: center;
         justify-content: center;
         color: #b3b3b3;
+
         &:hover {
           color: #fff;
           background-color: color(primary);
         }
+
         svg {
           width: 18px;
         }
@@ -167,10 +188,12 @@
       position: absolute;
       z-index: -1;
     }
+
     &--one {
       top: 0;
       left: 0;
     }
+
     &--two {
       top: 0;
       right: 0;
@@ -180,6 +203,7 @@
   // Footer two
   &--two {
     background-color: #fff;
+
     .footer {
       &__brand-info {
         &-contact {
@@ -188,12 +212,14 @@
           }
         }
       }
+
       &__navigation {
         &-title {
           h2 {
             color: color(gray-9);
           }
         }
+
         &-link {
           a {
             color: color(gray-6);
@@ -218,6 +244,7 @@
 
   &--four {
     background-color: color(green-9);
+
     .footer {
       &__brand-info {
         p {
@@ -233,6 +260,7 @@
         &-link {
           a {
             color: color(green-5);
+
             &:hover {
               color: #fff;
             }
@@ -244,6 +272,7 @@
         &-link {
           a {
             color: color(green-3);
+
             &:hover {
               color: #fff;
             }
@@ -260,10 +289,12 @@
   &--five {
     background-color: color(gray-9);
     overflow: hidden;
+
     .footer {
       &__bottom {
         border-top: 0px;
         position: relative;
+
         &::after {
           content: '';
           position: absolute;
@@ -301,6 +332,7 @@
         &-link {
           a {
             color: color(gray-4);
+
             &:hover {
               color: #fff;
             }
@@ -314,14 +346,17 @@
         &--item {
           border-radius: 4px;
           background-color: color(gray-8);
+
           span {
             color: #fff;
           }
         }
+
         &--info {
           h5 {
             color: color(gray-3);
           }
+
           h2 {
             color: #fff;
           }
@@ -348,6 +383,7 @@
   .footer--two {
     background-color: #f2f2f2;
   }
+
   .footer--two .footer__top {
     padding: 60px 0px;
   }
@@ -356,6 +392,7 @@
   .footer--three .footer__brand-info-contact {
     margin-bottom: 30px;
   }
+
   // Footer five
   .footer--five {
     .footer__social-icon {
@@ -372,6 +409,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
         a {
           margin-left: 0;
           margin-bottom: 15px;
@@ -395,6 +433,7 @@
   .footer__brand-info-contact {
     display: flex;
     flex-direction: column;
+
     a {
       margin: 0;
       margin-bottom: 15px;
@@ -408,9 +447,11 @@
   .footer__bottom {
     flex-direction: column;
     text-align: center;
+
     .footer__copyright-text {
       order: 2;
     }
+
     .footer__partner {
       order: 1;
       margin-bottom: 15px;
@@ -421,6 +462,7 @@
   .footer--two {
     background-color: #f2f2f2;
   }
+
   .footer--two .footer__top {
     padding: 60px 0px;
   }
@@ -432,6 +474,7 @@
       order: 2;
       margin: 15px 0px;
     }
+
     .footer__bottom .footer__partner {
       order: 3;
       margin-bottom: 0px;

@@ -12714,7 +12714,8 @@ ul.example li p {
   .members-slider--one .swiper-pagination,
   .cyclone--slider .swiper-pagination,
   .newest-products .swiper-pagination,
-  .category--top-slider--two .swiper-pagination {
+  .category--top-slider--two .swiper-pagination,
+  .news-slider--one .swiper-pagination {
     display: none; } }
 
 @media (max-width: 767px) {
@@ -12732,7 +12733,8 @@ ul.example li p {
   .our-products__content-slider-one .swiper-wrapper,
   .our-products__content-slider-two .swiper-wrapper,
   .our-products__content-slider-three .swiper-wrapper,
-  .our-products__content-slider-four .swiper-wrapper {
+  .our-products__content-slider-four .swiper-wrapper,
+  .news-slider--one .swiper-wrapper {
     padding-bottom: 30px; }
   .cateogory--top .section__head .arrows {
     margin-left: 50px; } }
