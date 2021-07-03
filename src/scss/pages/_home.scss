@@ -432,12 +432,14 @@
   &__overlay-img {
     position: absolute;
     z-index: -1;
+    user-select: none;
+    pointer-events: none;
     &--one {
       bottom: 30px;
       left: 0px;
     }
     &--two {
-      bottom: -15px;
+      bottom: -45px;
       left: calc(10% + 50px);
       z-index: 1;
       @include max(767px) {
@@ -447,6 +449,29 @@
         left: auto;
         right: 0px;
       }
+    }
+  }
+}
+
+// Category
+.cateogory--top {
+  background: linear-gradient(180deg, #f2f5f3 20.01%, #ffffff 100%);
+  &__overlay-img {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    &--one {
+      bottom: 0px;
+      right: 15%;
+      @include max(575px) {
+        bottom: -30px;
+        right: auto;
+        left: -30px;
+      }
+    }
+    &--two {
+      right: 0px;
+      bottom: 15px;
     }
   }
 }
