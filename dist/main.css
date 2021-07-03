@@ -12452,6 +12452,9 @@ a {
       position: relative;
       -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear; }
+      @media (max-width: 767px) {
+        .cards-ship--four .cards-ship__item {
+          padding: 40px 20px; } }
       .cards-ship--four .cards-ship__item:hover::after {
         height: 2px;
         background-color: #00b207; }
@@ -12470,6 +12473,12 @@ a {
         display: inline-block;
         margin-bottom: 16px;
         color: #00b207; }
+        @media (max-width: 1200px) {
+          .cards-ship--four .cards-ship__item-icon {
+            color: #fff; } }
+        @media (max-width: 767px) {
+          .cards-ship--four .cards-ship__item-icon {
+            color: #00b207; } }
       .cards-ship--four .cards-ship__item-process-info h2, .cards-ship--four .cards-ship__item-process-info .h2 {
         font-size: 18px;
         line-height: 27px;

@@ -1107,6 +1107,9 @@
       padding: 40px;
       position: relative;
       transition: all 0.3s linear;
+      @include max(767px) {
+        padding: 40px 20px;
+      }
       &:hover {
         &::after {
           height: 2px;
@@ -1131,6 +1134,12 @@
         display: inline-block;
         margin-bottom: 16px;
         color: color(primary);
+        @include max(1200px) {
+          color: #fff;
+        }
+        @include max(767px) {
+          color: color(primary);
+        }
       }
 
       &-process-info h2 {
