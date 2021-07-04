@@ -778,6 +778,62 @@
   }
 }
 
+// latest News
+
+// Testimonials
+.testimonial {
+  @include max(1200px) {
+    overflow: hidden;
+  }
+  &:hover {
+    .testimonial__overlay {
+      &-img {
+        &.three {
+          color: color(soft-primary);
+          transition: all 0.6s ease-in;
+        }
+      }
+    }
+  }
+  &--four {
+    background: linear-gradient(180deg, #ffffff 0%, #f2f5f3 63.02%),
+      linear-gradient(0deg, rgba(32, 181, 38, 0.1), rgba(32, 181, 38, 0.1));
+  }
+
+  &__overlay {
+    &-img {
+      position: absolute;
+      &.one {
+        bottom: -30px;
+        left: 175px;
+        @include max(1200px) {
+          left: 0px;
+          bottom: auto;
+          top: -35px;
+        }
+      }
+      &.two {
+        top: 140px;
+        right: 240px;
+        @include max(1200px) {
+          display: none;
+        }
+      }
+
+      &.three {
+        top: 64px;
+        right: 48px;
+        color: #e6e6e6;
+        @include max(1200px) {
+          top: auto;
+          bottom: -60px;
+          right: 0px;
+        }
+      }
+    }
+  }
+}
+
 //\\ =========  Responsive ======== //\\
 
 @include max(1440px) {

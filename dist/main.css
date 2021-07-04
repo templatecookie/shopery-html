@@ -9535,7 +9535,8 @@ a {
       line-height: 19.2px;
       color: #00b207;
       font-weight: 400;
-      font-family: "Segoe Script", sans-serif; }
+      font-family: "Segoe Script", sans-serif;
+      text-transform: uppercase; }
     .section__head a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -13203,6 +13204,45 @@ ul.example li p {
     @media (max-width: 575px) {
       .banner-sales__overlay-img.two {
         display: none; } }
+
+@media (max-width: 1200px) {
+  .testimonial {
+    overflow: hidden; } }
+
+.testimonial:hover .testimonial__overlay-img.three {
+  color: #84d187;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in; }
+
+.testimonial--four {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(63.02%, #f2f5f3)), -webkit-gradient(linear, left bottom, left top, from(rgba(32, 181, 38, 0.1)), to(rgba(32, 181, 38, 0.1)));
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5f3 63.02%), linear-gradient(0deg, rgba(32, 181, 38, 0.1), rgba(32, 181, 38, 0.1)); }
+
+.testimonial__overlay-img {
+  position: absolute; }
+  .testimonial__overlay-img.one {
+    bottom: -30px;
+    left: 175px; }
+    @media (max-width: 1200px) {
+      .testimonial__overlay-img.one {
+        left: 0px;
+        bottom: auto;
+        top: -35px; } }
+  .testimonial__overlay-img.two {
+    top: 140px;
+    right: 240px; }
+    @media (max-width: 1200px) {
+      .testimonial__overlay-img.two {
+        display: none; } }
+  .testimonial__overlay-img.three {
+    top: 64px;
+    right: 48px;
+    color: #e6e6e6; }
+    @media (max-width: 1200px) {
+      .testimonial__overlay-img.three {
+        top: auto;
+        bottom: -60px;
+        right: 0px; } }
 
 @media (max-width: 1440px) {
   .category--top .section__head .arrows button {
