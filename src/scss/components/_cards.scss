@@ -38,21 +38,36 @@
   height: 100%;
   overflow: hidden;
 
-  &__img-wrapper {
+  &__img-wrapper,
+  &__icon-wrapper {
     width: 100%;
-    height: 130px;
     margin: auto;
     overflow: hidden;
+    position: relative;
     img {
       width: inherit;
       height: inherit;
       object-fit: contain;
     }
   }
+  &__img-wrapper {
+    height: 130px;
+  }
+
+  &__icon-wrapper {
+    height: 80px;
+  }
 
   h5 {
     margin-top: 16px;
     color: color(gray-9);
+  }
+  .quantity {
+    font-size: 14px;
+    line-height: 21px;
+    color: color(gray-5);
+    font-weight: 400;
+    margin-top: 6px;
   }
 }
 
@@ -292,7 +307,7 @@
 
 // Blogs pages card
 .cards-blog {
-  border-radius: 15px;
+  border-radius: 8px;
   overflow: hidden;
   background-color: transparent;
 
@@ -307,7 +322,7 @@
 
   &__img-wrapper {
     width: 100%;
-    height: 100%;
+    height: 325px;
     overflow: hidden;
     position: relative;
     img {
@@ -371,6 +386,28 @@
 
       span {
         margin-left: 12px;
+      }
+    }
+  }
+
+  &--two {
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    .cards-blog {
+      &__img-wrapper {
+        height: 275px;
+        border-radius: 4px;
+      }
+
+      &__info {
+        padding: 0px;
+        p {
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 400;
+          color: color(green-5);
+        }
       }
     }
   }
@@ -531,6 +568,115 @@
       color: color(gray-9);
     }
   }
+  &--md {
+    border-radius: 8px;
+    overflow: hidden;
+    &__img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 255px;
+      overflow: hidden;
+      z-index: 1;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.185);
+      }
+    }
+
+    &__text-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      h2 {
+        width: 185px;
+      }
+
+      .button {
+        background-color: #fff;
+        color: color(primary);
+      }
+    }
+
+    &-one,
+    &-three {
+      .cards-ss--md {
+        &__text-content {
+          left: 24px;
+        }
+      }
+    }
+
+    &-two {
+      .cards-ss--md {
+        &__text-content {
+          right: 32px;
+          @include max(767px) {
+            right: auto;
+            left: 24px;
+          }
+        }
+      }
+    }
+
+    &-one {
+      .cards-ss--md {
+        &__text-content {
+          h2 {
+            color: #fff;
+            margin-bottom: 8px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 16px;
+            span {
+              font: 20px;
+              line-height: 30px;
+              font-weight: 500;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    &-two,
+    &-three {
+      .cards-ss--md {
+        &__text-content {
+          h5,
+          h2 {
+            color: color(green-9);
+          }
+
+          h2 {
+            margin-bottom: 20px;
+          }
+          h5 {
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: capitalize;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
 
   &__content {
     position: absolute;
@@ -543,6 +689,9 @@
       letter-spacing: 0.03em;
       margin-bottom: 12px;
       text-transform: uppercase;
+      @include max(767px) {
+        margin-bottom: 0px;
+      }
     }
     h2 {
       margin-bottom: 8px;
@@ -690,6 +839,8 @@
 }
 
 .cards-tm-2 {
+  position: relative;
+  overflow: hidden;
   &__top {
     position: relative;
     padding: 32px;
@@ -715,7 +866,7 @@
 
       .cards-tm-2__text {
         transition: all 0.3s linear;
-        color: color(primary);
+        color: color(soft-primary);
       }
     }
 
@@ -724,7 +875,7 @@
       top: 32px;
       left: 50%;
       transform: translateX(-50%);
-      color: color(primary);
+      color: color(soft-primary);
     }
   }
 
@@ -762,6 +913,30 @@
     }
     span {
       color: color(green-4);
+    }
+  }
+
+  // Hove
+  &:hover {
+    .cards-tm-2 {
+      .quotes,
+      &__text,
+      &__designation h5 {
+        color: color(primary);
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  &-active {
+    .cards-tm-2 {
+      .quotes,
+      &__text,
+      &__designation h5 {
+        color: color(primary);
+        transition: all 0.6s ease-in-out;
+      }
     }
   }
 }
@@ -875,14 +1050,15 @@
 
   // Shipping Cards three
   &--three {
-    justify-content: flex-start;
-    padding: 0;
-    overflow: hidden;
+    margin-bottom: 0px;
     .cards-ship__item {
       border-right: 1px solid color(green-1);
-      padding: 40px 54px;
+      padding: 40px;
       transition: all 0.3s linear;
 
+      @include max(767px) {
+        padding: 30px;
+      }
       &:hover {
         background-color: color(primary);
         .cards-ship__item-icon {
@@ -897,10 +1073,6 @@
         .cards-ship__item-process-info p {
           color: #fff;
         }
-      }
-
-      &:nth-last-child(1) {
-        border-right: 0px;
       }
 
       &-icon {
@@ -938,6 +1110,9 @@
       padding: 40px;
       position: relative;
       transition: all 0.3s linear;
+      @include max(767px) {
+        padding: 40px 20px;
+      }
       &:hover {
         &::after {
           height: 2px;
@@ -962,6 +1137,12 @@
         display: inline-block;
         margin-bottom: 16px;
         color: color(primary);
+        @include max(1200px) {
+          color: #fff;
+        }
+        @include max(767px) {
+          color: color(primary);
+        }
       }
 
       &-process-info h2 {
@@ -990,9 +1171,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-    }
-
-    &--small-one {
     }
 
     &--lg,
