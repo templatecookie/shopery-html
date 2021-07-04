@@ -10479,6 +10479,51 @@ a {
     background-color: #fff;
     color: #00b207; }
 
+.banner-sale--two__img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  border-radius: 10px;
+  overflow: hidden; }
+  .banner-sale--two__img-wrapper img {
+    width: inherit;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.banner-sale--two__text-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 40px; }
+  @media (max-width: 767px) {
+    .banner-sale--two__text-content {
+      left: 15px; } }
+  .banner-sale--two__text-content .title {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-transform: uppercase; }
+  .banner-sale--two__text-content h5, .banner-sale--two__text-content .h5 {
+    color: #fff;
+    margin-bottom: 15px; }
+    @media (max-width: 767px) {
+      .banner-sale--two__text-content h5, .banner-sale--two__text-content .h5 {
+        font-size: 28px;
+        line-height: 38px; } }
+  .banner-sale--two__text-content p {
+    color: rgba(255, 255, 255, 0.8); }
+    .banner-sale--two__text-content p span {
+      color: #fff;
+      margin-left: 8px;
+      padding: 4px 8px;
+      border-radius: 5px;
+      background-color: #ff8a00; }
+  .banner-sale--two__text-content a.button {
+    margin-top: 24px; }
+
 @media (max-width: 1200px) {
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text {
     top: 50%;
@@ -12900,6 +12945,11 @@ ul.example li p {
     right: 0px;
     bottom: 15px; }
 
+.food-store:hover .food-store__overlay-shade-img {
+  color: #84d187;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
 @media (max-width: 767px) {
   .food-store {
     overflow: hidden; } }
@@ -13068,13 +13118,10 @@ ul.example li p {
       .food-store__overlay-shade-img--four {
         display: none; } }
 
-.food-store:hover .food-store__overlay-shade-img--one, .food-store:hover .food-store__overlay-shade-img--two, .food-store:hover .food-store__overlay-shade-img--three {
-  color: #84d187;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out; }
-
-.counter:hover .counter__overlay-img.two, .counter:hover .counter__overlay-img.three {
-  color: #00b207; }
+.counter:hover .counter__overlay-img {
+  color: #00b207;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 .counter__content-items {
   position: relative;
@@ -13115,6 +13162,37 @@ ul.example li p {
   .counter__overlay-img.three {
     bottom: -10px;
     right: 88px; }
+
+.banner-sales:hover .banner-sales__overlay-img {
+  color: #84d187;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear; }
+
+@media (max-width: 767px) {
+  .banner-sales {
+    overflow: hidden; } }
+
+.banner-sales__overlay-img {
+  position: absolute;
+  z-index: -1; }
+  .banner-sales__overlay-img.one {
+    top: 0;
+    right: 30px;
+    color: #e6e6e6; }
+    @media (max-width: 767px) {
+      .banner-sales__overlay-img.one {
+        right: -175px; } }
+  .banner-sales__overlay-img.two {
+    top: 40px;
+    left: 75px;
+    color: #f2f2f2; }
+    @media (max-width: 767px) {
+      .banner-sales__overlay-img.two {
+        left: 0px;
+        top: -30px; } }
+    @media (max-width: 575px) {
+      .banner-sales__overlay-img.two {
+        display: none; } }
 
 @media (max-width: 1440px) {
   .category--top .section__head .arrows button {

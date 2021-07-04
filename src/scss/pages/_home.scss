@@ -482,6 +482,18 @@
 // food Store
 .food-store {
   // background-color: color(green-0);
+
+  &:hover {
+    .food-store {
+      &__overlay-shade {
+        &-img {
+          color: color(soft-primary);
+          transition: all 0.6s ease-in-out;
+        }
+      }
+    }
+  }
+
   @include max(767px) {
     overflow: hidden;
   }
@@ -652,21 +664,6 @@
       }
     }
   }
-
-  &:hover {
-    .food-store {
-      &__overlay-shade {
-        &-img {
-          &--one,
-          &--two,
-          &--three {
-            color: color(soft-primary);
-            transition: all 0.6s ease-in-out;
-          }
-        }
-      }
-    }
-  }
 }
 
 // Counter
@@ -675,10 +672,8 @@
     .counter {
       &__overlay {
         &-img {
-          &.two,
-          &.three {
-            color: color(primary);
-          }
+          color: color(primary);
+          transition: all 0.3s ease-in-out;
         }
       }
     }
@@ -733,6 +728,51 @@
       &.three {
         bottom: -10px;
         right: 88px;
+      }
+    }
+  }
+}
+
+// Banner sales
+.banner-sales {
+  &:hover {
+    .banner-sales {
+      &__overlay {
+        &-img {
+          color: color(soft-primary);
+          transition: all 0.6s linear;
+        }
+      }
+    }
+  }
+  @include max(767px) {
+    overflow: hidden;
+  }
+  &__overlay {
+    &-img {
+      position: absolute;
+      z-index: -1;
+
+      &.one {
+        top: 0;
+        right: 30px;
+        color: #e6e6e6;
+        @include max(767px) {
+          right: -175px;
+        }
+      }
+
+      &.two {
+        top: 40px;
+        left: 75px;
+        color: color(gray-0);
+        @include max(767px) {
+          left: 0px;
+          top: -30px;
+        }
+        @include max(575px) {
+          display: none;
+        }
       }
     }
   }
