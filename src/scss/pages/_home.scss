@@ -834,6 +834,104 @@
   }
 }
 
+//  News letter
+.newsletter--two {
+  &__content {
+    &-item {
+      position: relative;
+      padding: 25px 20px;
+      border-radius: 8px;
+      border: 1px solid #20b52633;
+      height: 220px;
+      @include max(1199px) {
+        margin-bottom: 24px;
+      }
+      @include max(991px) {
+        text-align: center;
+      }
+      &.three {
+        justify-self: center;
+      }
+      .icon {
+        margin-bottom: 18px;
+      }
+      h5 {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      p {
+        color: color(gray-6);
+        font-size: 14px;
+        line-height: 21p;
+        text-transform: capitalize;
+        font-weight: 400;
+        &.number {
+          font-size: 24px;
+          line-height: 24px;
+          color: color(primary);
+        }
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    width: 608px;
+    height: 45px;
+    border-radius: 500px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    @include max(1200px) {
+      width: 400px;
+    }
+    @include max(991px) {
+      margin: auto;
+      margin-top: 30px;
+    }
+    @include max(575px) {
+      width: 260px;
+    }
+    input {
+      border: 0px;
+      width: 75%;
+      height: inherit;
+      color: color(gray-4);
+      font-size: 14px;
+      line-height: 24px;
+      padding-left: 24px;
+      @include max(1200px) {
+        width: 65%;
+      }
+      @include max(991px) {
+        padding-left: 15px;
+        width: 50%;
+      }
+      @include max(575px) {
+        margin-left: -110px;
+        width: 60%;
+      }
+      &::placeholder {
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+      }
+    }
+    .button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0px;
+      @include max(575px) {
+        padding: 14px;
+      }
+    }
+  }
+}
+
 //\\ =========  Responsive ======== //\\
 
 @include max(1440px) {
