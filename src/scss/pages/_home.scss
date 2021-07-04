@@ -482,10 +482,16 @@
 // food Store
 .food-store {
   // background-color: color(green-0);
+  @include max(767px) {
+    overflow: hidden;
+  }
   &__img-wrapper {
     display: flex;
     align-items: flex-start;
     position: relative;
+    @include max(1024px) {
+      margin-bottom: 30px;
+    }
     &-img {
       border-radius: 8px;
       width: 100%;
@@ -502,10 +508,17 @@
         width: 275px;
         height: 400px;
         margin-right: 24px;
+        @include max(767px) {
+          width: 100%;
+          margin: 0px;
+        }
       }
       &--two {
         width: 445px;
         height: 455px;
+        @include max(767px) {
+          display: none;
+        }
       }
     }
   }
@@ -516,10 +529,17 @@
       bottom: 0;
       left: -60px;
       z-index: 2;
+      @include max(767px) {
+        bottom: -35px;
+        left: -25px;
+      }
     }
     &--two {
       top: -55px;
       left: 115px;
+      @include max(767px) {
+        display: none;
+      }
     }
   }
 
@@ -527,6 +547,12 @@
     h2 {
       color: color(gray-9);
       margin-bottom: 26px;
+      width: 390px;
+      @include max(767px) {
+        font-size: 28px;
+        line-height: 38px;
+        width: 100%;
+      }
     }
   }
 
@@ -535,26 +561,43 @@
       display: flex;
       align-items: flex-start;
       margin-bottom: 26px;
+      &:hover {
+        .icon {
+          background-color: color(primary);
+          transition: all 0.4s linear;
+        }
+      }
       .icon {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 24px;
         height: 24px;
-        border-radius: 50%;
-        background-color: color(primary);
-        flex-basis: 5%;
-        margin-right: 12px;
+        border-radius: 100%;
+        background-color: color(soft-primary);
+        flex-basis: 56px;
+        @include min-max(992px, 1199px) {
+          flex-basis: 32px;
+        }
+        @include min-max(768px, 991px) {
+          flex-basis: 48px;
+        }
+        @include max(574px) {
+          flex-basis: 115px;
+        }
       }
     }
   }
 
   &__content-info {
-    flex-basis: 95%;
+    margin-left: 12px;
     h5 {
       color: color(gray-9);
       margin-bottom: 10px;
       text-transform: capitalize;
+      @include max(767px) {
+        margin-bottom: 0px;
+      }
     }
     p {
       color: color(gray-5);
@@ -565,18 +608,25 @@
     &-img {
       position: absolute;
       pointer-events: none;
+      z-index: -1;
       // begun
       &--one {
         bottom: 35px;
         left: 0px;
         color: #e6e6e6;
+        @include max(575px) {
+          bottom: -70px;
+        }
       }
 
       // shade
       &--two {
         top: 0;
         left: 0;
-        color: #f2f2f2;
+        color: color(gray-0);
+        @include max(767px) {
+          display: none;
+        }
       }
 
       // mula {
@@ -585,12 +635,20 @@
         transform: translateY(-50%);
         right: 35px;
         color: #f2f2f2;
+
+        @include max(767px) {
+          right: -60px;
+          top: 70%;
+        }
       }
 
       // leaf
       &--four {
         bottom: -40px;
         right: 100px;
+        @include max(767px) {
+          display: none;
+        }
       }
     }
   }
