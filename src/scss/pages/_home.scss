@@ -438,9 +438,13 @@
     z-index: -1;
     user-select: none;
     pointer-events: none;
+    color: color(gray-0);
     &--one {
       bottom: 30px;
       left: 0px;
+      @include max(991px) {
+        left: -60px;
+      }
     }
     &--two {
       bottom: -45px;
@@ -453,6 +457,13 @@
         left: auto;
         right: 0px;
       }
+    }
+  }
+
+  &:hover {
+    .featured__overlay-img {
+      transition: all 0.6s ease-in;
+      color: color(soft-primary);
     }
   }
 }

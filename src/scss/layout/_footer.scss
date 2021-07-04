@@ -182,24 +182,6 @@
     }
   }
 
-  // Footer Fours overlay shape
-  &__overlay {
-    span {
-      position: absolute;
-      z-index: -1;
-    }
-
-    &--one {
-      top: 0;
-      left: 0;
-    }
-
-    &--two {
-      top: 0;
-      right: 0;
-    }
-  }
-
   // Footer two
   &--two {
     background-color: #fff;
@@ -365,6 +347,83 @@
 
       &__copyright-text {
         color: color(gray-4);
+      }
+    }
+  }
+
+  // Footer Fours overlay shape
+  &__overlay {
+    &-img {
+      position: absolute;
+      color: #333;
+      &.one {
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      &.two {
+        bottom: 50px;
+        left: 105px;
+        z-index: 1;
+        @include max(1024px) {
+          left: 0px;
+        }
+        @include max(767px) {
+          bottom: 90px;
+          z-index: -1;
+        }
+        @include max(575px) {
+          left: -55px;
+        }
+      }
+
+      &.three {
+        top: 12px;
+        right: 18px;
+      }
+      &.four {
+        top: 11px;
+        right: 142px;
+      }
+      &.five {
+        top: 106px;
+        right: 16px;
+      }
+      &.six {
+        top: 213px;
+        right: 60px;
+      }
+      &.seven {
+        top: 165px;
+        right: 0px;
+      }
+    }
+  }
+  &--four {
+    .footer__overlay {
+      &-img {
+        color: #173b1a;
+        z-index: -1;
+        @include max(767px) {
+          display: none;
+        }
+        &.three {
+          @include max(1024px) {
+            top: auto;
+            bottom: 0px;
+            right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .footer__overlay {
+      &-img {
+        color: color(soft-primary);
+        transition: all 0.6s ease-in;
       }
     }
   }
