@@ -689,6 +689,9 @@
       letter-spacing: 0.03em;
       margin-bottom: 12px;
       text-transform: uppercase;
+      @include max(767px) {
+        margin-bottom: 0px;
+      }
     }
     h2 {
       margin-bottom: 8px;
