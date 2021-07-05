@@ -9553,6 +9553,35 @@ a {
       color: #00b207; }
       .section__head a span {
         margin-left: 12px; }
+    .section__head p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #666666;
+      margin-top: 12px;
+      width: 640px;
+      margin: auto;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .section__head p {
+          max-width: 100%;
+          font-size: 14px; } }
+    .section__head--one {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 50px; }
+      @media (max-width: 767px) {
+        .section__head--one {
+          margin-bottom: 30px; } }
+      @media (max-width: 767px) {
+        .section__head--one .section--title-one {
+          margin-bottom: 0px; } }
     .section__head--two, .section__head--four {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -12369,9 +12398,9 @@ a {
         color: #618062; }
 
 .cards-mb {
-  border: 0px; }
+  border: 1px solid #e5e5e5; }
   .cards-mb:hover {
-    border: 0px;
+    border-color: transparent;
     -webkit-box-shadow: 0px 20px 48px 0px #00260314;
             box-shadow: 0px 20px 48px 0px #00260314; }
     .cards-mb:hover .cards-mb__img-wrapper::after {
@@ -13861,4 +13890,29 @@ ul.example li p {
     padding-bottom: 30px; }
   .category--top .section__head .arrows {
     margin-left: 50px; } }
+
+.members--two {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#ffffff));
+  background: linear-gradient(180deg, #f2f2f2 0%, #ffffff 100%); }
+  .members--two .container {
+    position: relative; }
+    .members--two .container .arrows .swiper-button--prev, .members--two .container .arrows .swiper-button--next {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      z-index: 1; }
+      @media (max-width: 1200px) {
+        .members--two .container .arrows .swiper-button--prev, .members--two .container .arrows .swiper-button--next {
+          display: none; } }
+    .members--two .container .arrows .swiper-button--prev {
+      left: -64px; }
+    .members--two .container .arrows .swiper-button--next {
+      right: -64px; }
+  .members--two .cards-mb {
+    border-radius: 8px;
+    overflow: hidden; }
+
+.testimonial--five {
+  background: #f2f2f2; }
 

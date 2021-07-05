@@ -813,6 +813,10 @@ var memebers = new Swiper('.members-slider--one', {
     clickable: true,
     dynamicBullets: true,
   },
+  navigation: {
+    nextEl: ' .arrows__btn-prev ',
+    prevEl: ' .arrows__btn-next',
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
