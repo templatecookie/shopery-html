@@ -387,6 +387,44 @@
   }
 
   &--04 {
+    .container {
+      position: relative;
+      .arrows {
+        .swiper-button {
+          &--prev,
+          &--next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            @include max(1200px) {
+              top: auto;
+              transform: translateY(0px);
+              bottom: 30px;
+            }
+            @include max(767px) {
+              bottom: -15px;
+            }
+          }
+          &--prev {
+            left: -30px;
+            @include max(1200px) {
+              left: auto;
+              right: 60px;
+            }
+          }
+          &--next {
+            right: -30px;
+            @include max(1200px) {
+              right: 0px;
+            }
+            @include max(767px) {
+              right: 15px;
+            }
+          }
+        }
+      }
+    }
     .swiper-pagination {
       @include max(767px) {
         bottom: 0px;
