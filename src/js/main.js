@@ -81,6 +81,26 @@ var bannerFour = new Swiper('.banner-slider--04', {
   loop: true,
   loopFillGroupWithBlank: true,
   effect: 'fade',
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ' .swiper-button--next',
+    prevEl: ' .swiper-button--prev',
+  },
+});
+
+var bannerFive = new Swiper('.banner-slider--05', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  effect: 'fade',
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
