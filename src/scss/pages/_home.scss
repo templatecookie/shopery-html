@@ -481,6 +481,15 @@
 
 // Shipping Container
 
+.shipping-container {
+  &--05 {
+    .shipping-container--slider {
+      box-shadow: none;
+      border-bottom: 2px solid color(gray-2);
+    }
+  }
+}
+
 .category--top {
   background: linear-gradient(180deg, #f2f5f3 20.01%, #ffffff 100%);
 }
