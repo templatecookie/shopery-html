@@ -12654,6 +12654,10 @@ ul.example li p {
 .instagram .swiper-slide {
   text-align: center; }
 
+.banner-promo--one .banner-promo__content {
+  border-radius: 0px;
+  height: 396px; }
+
 .shipping-container--two {
   margin-bottom: 0px; }
   .shipping-container--two .swiper-container {
@@ -12856,6 +12860,9 @@ ul.example li p {
           -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
           color: #00b207; }
+        @media (max-width: 767px) {
+          .banner-promo__content-text .play-icon svg {
+            height: 60px; } }
 
 .latest-news {
   position: relative; }

@@ -24,6 +24,18 @@
   }
 }
 
+// banner promo video
+.banner-promo {
+  &--one {
+    .banner-promo {
+      &__content {
+        border-radius: 0px;
+        height: 396px;
+      }
+    }
+  }
+}
+
 //\\=======  Homepage 02 ========== //\\
 
 // Shipping Cards
@@ -311,6 +323,11 @@
         &:hover {
           transition: all 0.3s linear;
           color: color(primary);
+        }
+        svg {
+          @include max(767px) {
+            height: 60px;
+          }
         }
       }
     }
