@@ -3,7 +3,8 @@
   position: relative;
 
   // Pagination
-  &--03 {
+  &--03,
+  &--04 {
     .swiper-pagination {
       @include min(575px) {
         bottom: 34px;
@@ -379,6 +380,137 @@
           &__img-wrapper {
             opacity: 1;
             transition: all 0.9s linear;
+          }
+        }
+      }
+    }
+  }
+
+  &--04 {
+    .swiper-pagination {
+      @include max(767px) {
+        bottom: 0px;
+      }
+    }
+
+    &__content {
+      height: 700px;
+      display: flex;
+      align-items: center;
+      @include max(991px) {
+        height: 100%;
+      }
+      @include max(767px) {
+        padding-bottom: 30px;
+      }
+    }
+
+    &__img-wrapper {
+      // opacity: 0.3;
+      position: relative;
+      .off-sale {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: color(warning);
+        @include min-max(992px, 1199px) {
+          top: 0px;
+          right: 0px;
+        }
+
+        @include max(767px) {
+          width: 60px;
+          height: 60px;
+          right: 0px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: 0.02em;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #fff;
+          text-align: center;
+          span {
+            font-size: 32px;
+            line-height: 38.4px;
+            font-weight: 600;
+            @include max(767px) {
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    &__text-content {
+      h5 {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: color(primary);
+        font-family: $font-2;
+        transform: translateX(90px);
+        opacity: 0.3;
+      }
+      h2 {
+        font-size: 56px;
+        line-height: 67.2px;
+        color: color(green-9);
+        margin-bottom: 20px;
+        opacity: 0.3;
+        @include max(767px) {
+          font-size: 32px;
+          line-height: 42px;
+          margin-bottom: 0px;
+        }
+      }
+      p {
+        font-weight: 400;
+        color: color(gray-9);
+      }
+      a.button {
+        margin-top: 32px;
+        background-color: color(soft-primary);
+        @include max(767px) {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .swiper-slide {
+      opacity: 0 !important;
+      &-active {
+        opacity: 1 !important;
+
+        .banner--04 {
+          &__text-content {
+            h5,
+            h2,
+            p {
+              transition: all 0.9s linear;
+            }
+            h5,
+            h2 {
+              opacity: 1;
+            }
+            h5 {
+              transform: translateX(0px);
+            }
+            p {
+              color: color(green-5);
+            }
+            a.button {
+              background-color: color(primary);
+            }
           }
         }
       }
