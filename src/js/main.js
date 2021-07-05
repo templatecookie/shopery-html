@@ -40,6 +40,7 @@ var bannerOne = new Swiper('.banner-slider--one', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
   },
 });
 
@@ -55,6 +56,23 @@ var bannerTwo = new Swiper('.banner-slider--02', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+var bannerThree = new Swiper('.banner-slider--03', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  effect: 'fade',
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
   },
 });
 

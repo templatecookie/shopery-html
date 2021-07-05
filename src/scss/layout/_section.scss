@@ -127,7 +127,6 @@
         .arrows,
         a {
           margin-top: 35px;
-          // margin-left: 50px;
         }
       }
     }
@@ -137,9 +136,9 @@
       line-height: 38px;
       margin-bottom: 15px;
     }
-
-    &--lg,
-    &--xl {
+    &--xxl,
+    &--xl,
+    &--lg {
       padding: 30px 0px;
     }
   }

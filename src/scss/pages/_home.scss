@@ -96,6 +96,45 @@
 
 //\\=======  Homepage 03 ========== //\\
 
+// BANNER
+
+// Shipping container
+.shipping-container {
+  &--03 {
+    position: relative;
+    width: 1520px;
+    margin: auto;
+    @include max(1680px) {
+      width: 95%;
+    }
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 50%;
+    }
+    &::before {
+      top: 0;
+      background-color: color(green-0);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    &::after {
+      bottom: 0;
+      background-color: #fff;
+    }
+    .swiper-container {
+      width: 1400px;
+      margin: auto;
+      @include max(1680px) {
+        width: 90%;
+      }
+    }
+  }
+}
+
 // Top Category
 .category--top {
   .container {
