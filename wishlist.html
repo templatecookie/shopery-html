@@ -8,8 +8,97 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
         <link rel="stylesheet" href="dist/main.css" />
+
+        <style>
+            body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+        </style>
     </head>
 
+    
     <body class="overlay">
 
 
@@ -33,6 +122,106 @@
                 </div>
         </section>
         <!-- breedcrumb section end   -->
+
+
+        <!-- Wishlist section start  -->
+        <section class="section section--xl wishlist"> 
+            <div class="container">
+                <div class="section__head justify-content-center">
+                    <h2 class="section--title-four font-title--sm">My Wishlist</h2>
+                </div> 
+                <div class="wishlist__content">
+
+                    <table>
+                        <caption>Statement Summary</caption>
+                        <thead>
+                          <tr>
+                            <th scope="col">Account</th>
+                            <th scope="col">Due Date</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Period</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Account">Visa - 3412</td>
+                            <td data-label="Due Date">04/01/2016</td>
+                            <td data-label="Amount">$1,190</td>
+                            <td data-label="Period">03/01/2016 - 03/31/2016</td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Account">Visa - 6076</td>
+                            <td data-label="Due Date">03/01/2016</td>
+                            <td data-label="Amount">$2,443</td>
+                            <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Account">Corporate AMEX</td>
+                            <td data-label="Due Date">03/01/2016</td>
+                            <td data-label="Amount">$1,181</td>
+                            <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Acount">Visa - 3412</td>
+                            <td data-label="Due Date">02/01/2016</td>
+                            <td data-label="Amount">$842</td>
+                            <td data-label="Period">01/01/2016 - 01/31/2016</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    <!-- <div class="table-responsive-md">
+                        <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="col">Product </th>
+                                <th class="col">Price</th>
+                                <th class="col">Stock Status </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td class="product-info-list">
+                                   <a class="product-info">
+                                    <div class="product-info-img">
+                                        <img src="src/images/products/img-09.png" alt="img-09">
+                                    </div>
+                                    <p class="font-body--lg-400">Green Capsicum</p>
+                                   </a>
+                               </td>
+                               <td class="product-price-info">
+                                   <div class="product-price">
+                                       <h5 class="current">$14.99</h5>
+                                       <span class="prev">$20</span>
+                                   </div>
+                               </td>
+                               <td class="product-tags ">
+                                   <span class="product-tag stock">In Stock</span>
+                                   <span class="product-tag stock-out">Out of Stock</span>
+                               </td>
+                               <td class="product-actions">
+                                    <form action="#">
+                                         <button class="button button--md">Add to Cart</button>
+                                        <button class="close-item">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z" stroke="#CCCCCC" stroke-miterlimit="10"/>
+                                                <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                
+                                        </button>
+                                    </form>
+                               </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                      </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Wishlist section end  -->
+
 
 
         <!-- cal-to-action Section Start  -->
