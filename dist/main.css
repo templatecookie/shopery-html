@@ -13161,6 +13161,58 @@ ul.example li p {
   line-height: 10px;
   color: #a7abb1; }
 
+.accordion-button {
+  outline: none; }
+  .accordion-button:active, .accordion-button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: none; }
+  .accordion-button::after {
+    display: none; }
+
+.faq .accordion-item {
+  margin-bottom: 12px; }
+
+.faq .accordion-button, .faq .accordion-body {
+  border: 1px solid #84d187;
+  -webkit-transition: all 0.9s linear;
+  transition: all 0.9s linear; }
+
+.faq .accordion-body {
+  border-top: 0px; }
+
+.faq .accordion-button, .faq .accordion-body {
+  padding: 16px; }
+
+.faq .accordion-button {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 16px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #1a1a1a;
+  text-align: left; }
+  .faq .accordion-button.collapsed {
+    border-radius: 6px;
+    border: 0px;
+    background-color: #f2f2f2; }
+    .faq .accordion-button.collapsed .icon {
+      color: #fff; }
+  .faq .accordion-button .icon {
+    margin-left: auto;
+    color: #f2f2f2; }
+
+.faq .accordion-body {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; }
+
 .shipping-container {
   margin-bottom: 26px; }
   .shipping-container--slider {
@@ -14084,4 +14136,32 @@ ul.example li p {
         width: 100%; } }
   .error__content a.button {
     margin-top: 24px; }
+
+.faq {
+  overflow: hidden; }
+  .faq__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative; }
+  .faq h5, .faq .h5 {
+    margin-bottom: 32px;
+    color: #1a1a1a; }
+    @media (max-width: 767px) {
+      .faq h5, .faq .h5 {
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center; } }
+  .faq__img-wrapper {
+    position: absolute;
+    bottom: -100px; }
+    @media (max-width: 991px) {
+      .faq__img-wrapper {
+        position: static;
+        margin-bottom: 30px; } }
 
