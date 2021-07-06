@@ -18,8 +18,9 @@
 @import 'layout/products';
 @import 'layout/category';
 @import 'layout/newsletter';
+@import 'layout/hero';
 // @import 'layout/nav';
-// @import 'layout/breadcrumb';
+@import 'layout/breadcrumb';
 @import 'layout/footer';
 
 // components
@@ -36,6 +37,7 @@
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
+@import 'pages/error';
 
 // themes
 @import 'themes/theme';
