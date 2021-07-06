@@ -15,6 +15,10 @@
       text-align: center;
       margin-bottom: 20px;
       color: color(gray-9);
+      @include max(767px) {
+        font-size: 28px;
+        line-height: 38px;
+      }
     }
   }
 
@@ -28,7 +32,7 @@
     margin-bottom: 12px;
 
     input {
-      width: 95%;
+      width: 90%;
       height: inherit;
       border: 0px;
       padding-left: 16px;
@@ -95,6 +99,15 @@
 
     &.success {
       border: 1px solid color(primary);
+      background: linear-gradient(
+          0deg,
+          rgba(32, 181, 38, 0.05),
+          rgba(32, 181, 38, 0.05)
+        ),
+        linear-gradient(0deg, #ffffff, #ffffff);
+      input {
+        background-color: inherit;
+      }
       .icon-success {
         display: block;
       }

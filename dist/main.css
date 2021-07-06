@@ -12127,6 +12127,10 @@ a {
     text-align: center;
     margin-bottom: 20px;
     color: #1a1a1a; }
+    @media (max-width: 767px) {
+      .form-wrapper h6, .form-wrapper .h6 {
+        font-size: 28px;
+        line-height: 38px; } }
 
 .form-input {
   position: relative;
@@ -12137,7 +12141,7 @@ a {
   overflow: hidden;
   margin-bottom: 12px; }
   .form-input input {
-    width: 95%;
+    width: 90%;
     height: inherit;
     border: 0px;
     padding-left: 16px;
@@ -12192,7 +12196,11 @@ a {
     .form-input.error .icon-error {
       display: block; }
   .form-input.success {
-    border: 1px solid #00b207; }
+    border: 1px solid #00b207;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(32, 181, 38, 0.05)), to(rgba(32, 181, 38, 0.05))), -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff));
+    background: linear-gradient(0deg, rgba(32, 181, 38, 0.05), rgba(32, 181, 38, 0.05)), linear-gradient(0deg, #ffffff, #ffffff); }
+    .form-input.success input {
+      background-color: inherit; }
     .form-input.success .icon-success {
       display: block; }
 
