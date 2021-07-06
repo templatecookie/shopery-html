@@ -11588,6 +11588,147 @@ a {
   .breedcrumb__content li.active a {
     color: #00b207; }
 
+.contact-form__contact-info, .contact-form-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 56px 0px #00260314;
+          box-shadow: 0px 0px 56px 0px #00260314;
+  overflow: hidden; }
+
+.contact-form__contact-info {
+  padding: 30px 20px;
+  text-align: center; }
+  @media (max-width: 991px) {
+    .contact-form__contact-info {
+      margin-bottom: 24px; } }
+  .contact-form__contact-info--item {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e5e5; }
+    .contact-form__contact-info--item:nth-child(1) {
+      padding-top: 0px; }
+    .contact-form__contact-info--item:nth-last-child(1) {
+      border-bottom: 0px; }
+    .contact-form__contact-info--item .icon {
+      display: inline-block;
+      margin-bottom: 20px; }
+    .contact-form__contact-info--item p {
+      font-size: 16px;
+      line-height: 27.2px;
+      color: #333333; }
+
+.contact-form-card {
+  padding: 45px 50px;
+  height: 100%; }
+  @media (max-width: 767px) {
+    .contact-form-card {
+      padding: 30px; } }
+  .contact-form-card h2, .contact-form-card .h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-transform: capitalize;
+    margin-bottom: 8px; }
+  .contact-form-card p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #808080;
+    text-transform: capitalize;
+    width: 485px; }
+    @media (max-width: 767px) {
+      .contact-form-card p {
+        width: 100%; } }
+  .contact-form-card form {
+    margin-top: 24px; }
+
+.contact-form--input {
+  position: relative;
+  width: 100%;
+  height: 49px;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 16px;
+  overflow: hidden; }
+  .contact-form--input input,
+  .contact-form--input textarea {
+    width: 95%;
+    height: inherit;
+    padding-left: 16px;
+    border: 0px;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #666666;
+    background-color: inherit; }
+    .contact-form--input input::-webkit-input-placeholder, .contact-form--input textarea::-webkit-input-placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+    .contact-form--input input::-moz-placeholder, .contact-form--input textarea::-moz-placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+    .contact-form--input input:-ms-input-placeholder, .contact-form--input textarea:-ms-input-placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+    .contact-form--input input::-ms-input-placeholder, .contact-form--input textarea::-ms-input-placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+    .contact-form--input input::placeholder,
+    .contact-form--input textarea::placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+  .contact-form--input.active {
+    border: 1px solid #00b207;
+    -webkit-transition: all 0.6s linear;
+    transition: all 0.6s linear; }
+
+.contact-form--input-area {
+  height: 98px;
+  padding-top: 14px; }
+
+.contact-form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 767px) {
+    .contact-form-group {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .contact-form-group .contact-form--input {
+    margin-right: 16px; }
+    .contact-form-group .contact-form--input:nth-last-child(1) {
+      margin-right: 0px; }
+    @media (max-width: 767px) {
+      .contact-form-group .contact-form--input {
+        margin-right: 0px; } }
+
+.contact-form-button {
+  margin-top: 24px; }
+  @media (max-width: 767px) {
+    .contact-form-button .button {
+      width: 100%; } }
+
+.iframe__canvas {
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
+  .iframe__canvas iframe {
+    width: inherit;
+    height: inherit; }
+
 .footer {
   position: relative;
   background-color: #1a1a1a;
