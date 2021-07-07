@@ -11844,35 +11844,6 @@ a {
     .footer__instagram-item .cards-ig__img {
       width: 69px;
       height: 69px; }
-  .footer__social-icon {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    .footer__social-icon-link {
-      margin-right: 20px; }
-      .footer__social-icon-link a {
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        color: #b3b3b3; }
-        .footer__social-icon-link a:hover {
-          color: #fff;
-          background-color: #00b207; }
-        .footer__social-icon-link a svg {
-          width: 18px; }
   .footer--two {
     background-color: #fff; }
     .footer--two .footer__brand-info-contact span {
@@ -12011,7 +11982,7 @@ a {
   .footer--two .footer__brand-info-contact,
   .footer--three .footer__brand-info-contact {
     margin-bottom: 30px; }
-  .footer--five .footer__social-icon {
+  .footer--five .social-icon {
     margin-bottom: 30px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -13497,6 +13468,36 @@ ul.example li p {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px; }
 
+.social-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .social-icon-link {
+    margin-right: 20px; }
+    .social-icon-link a {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: #b3b3b3; }
+      .social-icon-link a:hover {
+        color: #fff;
+        background-color: #00b207; }
+      .social-icon-link a svg {
+        width: 18px; }
+
 .shipping-container {
   margin-bottom: 26px; }
   .shipping-container--slider {
@@ -14421,10 +14422,134 @@ ul.example li p {
     font-weight: 400; }
 
 .single-blog__author-details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 24px;
   -webkit-box-shadow: 0px 1px 0px 0px #e5e5e5;
           box-shadow: 0px 1px 0px 0px #e5e5e5; }
+  .single-blog__author-details .author {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .single-blog__author-details .author-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      overflow: hidden;
+      position: relative;
+      margin-right: 12px; }
+      .single-blog__author-details .author-img img {
+        width: inherit;
+        height: inherit;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .single-blog__author-details .author-blog-details {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .single-blog__author-details .author-blog-details span.dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #808080;
+        margin: 0px 6px; }
+    .single-blog__author-details .author-info h5, .single-blog__author-details .author-info .h5 {
+      color: #1a1a1a;
+      margin-bottom: 5px; }
+    .single-blog__author-details .author-info p {
+      font-size: 14px;
+      line-height: 21px;
+      color: #808080;
+      text-transform: capitalize; }
+  .single-blog__author-details .social-icon-link a {
+    color: #4d4d4d; }
+    .single-blog__author-details .social-icon-link a:hover {
+      color: #fff; }
+
+.single-blog__inner-content .blog-title {
+  margin-top: 24px;
+  margin-bottom: 16px; }
+
+.single-blog__inner-content p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #808080;
+  margin-bottom: 24px; }
+
+.single-blog__inner-content .single-blog--sm-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px; }
+
+.single-blog__inner-content .single-blog__img-wrapper {
+  margin-right: 24px; }
+  .single-blog__inner-content .single-blog__img-wrapper:nth-last-child(1) {
+    margin-right: 0px; }
+
+.single-blog__banner {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px; }
+  .single-blog__banner img {
+    width: inherit;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .single-blog__banner .text-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 56px; }
+    .single-blog__banner .text-content .title {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #999999;
+      margin-bottom: 4px; }
+    .single-blog__banner .text-content h5, .single-blog__banner .text-content .h5 {
+      font-size: 36px;
+      line-height: 43.2px;
+      color: #fff;
+      margin-bottom: 24px; }
+    .single-blog__banner .text-content .sales-off {
+      position: absolute;
+      width: 91px;
+      height: 91px;
+      border-radius: 50%;
+      background-color: #1a1a1a; }
+      .single-blog__banner .text-content .sales-off p {
+        font-size: 11px;
+        line-height: 12.1px;
+        letter-spacing: 0.03em;
+        color: #b2b2b2; }
+      .single-blog__banner .text-content .sales-off h5, .single-blog__banner .text-content .sales-off .h5 {
+        font-size: 24px;
+        line-height: 26.4px;
+        font-weight: 600;
+        color: #ff8a00; }
 
 .error__content {
   display: -webkit-box;
