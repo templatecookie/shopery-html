@@ -101,7 +101,10 @@
 
   &--input-area {
     height: 98px;
-    padding-top: 14px;
+
+    textarea {
+      padding-top: 14px;
+    }
   }
 
   &-group {
