@@ -622,6 +622,9 @@
             @include max(1200px) {
               justify-content: flex-end;
             }
+            @include max(767px) {
+              width: 50%;
+            }
           }
 
           &__navigation-menu {
@@ -652,17 +655,21 @@
       &__sidebar-btn {
         padding-right: 20px;
       }
+
+      &__cart-single {
+        .heart-icon,
+        .user-icon {
+          display: none;
+        }
+        .icon {
+          margin-right: 15px;
+        }
+      }
     }
   }
 }
 
 // Responsive
-
-@include max(1200px) {
-  // Header Two
-  .header--two .header__category-content .bv_atual.bv_background {
-  }
-}
 
 @include min-max(992px, 1200px) {
   .header--two .header__navigation-menu-link {

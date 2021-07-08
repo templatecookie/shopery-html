@@ -10220,6 +10220,9 @@ a {
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
+  @media (max-width: 767px) {
+    .header--five .header__center-content .header__brand, .header--five .header__center-content .header__cart {
+      width: 50%; } }
 
 .header--five .header__center-content .header__navigation-menu-link.active a {
   color: #1a1a1a; }
@@ -10237,6 +10240,13 @@ a {
 
 .header--five .header__sidebar-btn {
   padding-right: 20px; }
+
+.header--five .header__cart-single .heart-icon,
+.header--five .header__cart-single .user-icon {
+  display: none; }
+
+.header--five .header__cart-single .icon {
+  margin-right: 15px; }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .header--two .header__navigation-menu-link {
