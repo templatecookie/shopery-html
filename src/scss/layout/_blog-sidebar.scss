@@ -1,35 +1,64 @@
-.blog {
-  &__sidebar {
-    position: relative;
+.sidebar {
+  @include max(991px) {
+    position: fixed;
+    top: 0px;
+    left: -5%;
+    background: #fff;
+    width: 5%;
+    height: 100%;
+    z-index: 3;
+    @include max(767px) {
+      width: 80%;
+      left: -80%;
+    }
+  }
+
+  &.active {
     @include max(991px) {
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      background: #fff;
-      padding: 15px;
+      left: 0;
       width: 35%;
-      height: 100%;
-      overflow: auto;
-      z-index: 3;
+      transition: all 0.9s linear;
+    }
+    @include max(767px) {
+      width: 80%;
     }
 
     .filter {
-      position: absolute;
-      right: -30px;
-      // width: 38px;
-      // height: 38px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px;
-      border-radius: 6px;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-      background-color: color(primary);
-      svg {
-        height: 18px;
-      }
+      top: 15px;
+      transform: translateY(0px);
+      transition: all 0.9s linear;
     }
+  }
+
+  .filter {
+    position: absolute;
+    right: -38px;
+    top: 30%;
+    transform: translateY(-30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: color(primary);
+    svg {
+      height: 18px;
+    }
+    &:hover {
+      background-color: color(hard-primary);
+      transition: all 0.9s linear;
+    }
+  }
+}
+
+.blog {
+  &__sidebar {
+    position: relative;
+    height: inherit;
+    overflow-y: auto;
+    padding: 15px;
     &--item {
       padding-top: 20px;
       padding-bottom: 28px;
@@ -161,6 +190,7 @@
         width: 80%;
         h5 {
           margin-bottom: 0px;
+          color: color(gray-9);
         }
         .date {
           display: flex;
@@ -180,7 +210,7 @@
     }
     &__img-wrapper {
       width: 100px;
-      height: 75px;
+      height: 80px;
       overflow: hidden;
       border-radius: 6px;
       overflow: hidden;
