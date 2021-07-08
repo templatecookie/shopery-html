@@ -284,6 +284,11 @@
   // bottom Content
   &__bottom {
     background-color: color(gray-8);
+
+    &--white {
+      background-color: #fff;
+      border-top: 1px solid color(gray-1);
+    }
   }
 
   &__navigation-menu {
@@ -292,7 +297,9 @@
       margin-right: 35px;
       position: relative;
       padding: 19.5px 0px;
-
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
       a {
         font-size: 14px;
         line-height: 21px;
@@ -324,6 +331,21 @@
               transform: rotate(180deg);
               transition: all 0.3s linear;
             }
+          }
+        }
+      }
+    }
+
+    &--two {
+      .header__navigation-menu {
+        &-link {
+          &.active {
+            a {
+              color: color(primary);
+            }
+          }
+          a {
+            color: color(gray-6);
           }
         }
       }
@@ -606,7 +628,7 @@
       &__center-content {
         .header {
           &__navigation-menu {
-            width: 38%;
+            width: 45%;
             @include max(1200px) {
               width: 65%;
             }
@@ -617,13 +639,18 @@
 
           &__brand,
           &__cart {
-            width: 31%;
+            width: 33%;
             justify-content: center;
             @include max(1200px) {
               justify-content: flex-end;
             }
             @include max(767px) {
               width: 50%;
+            }
+          }
+          &__brand {
+            @include max(1200px) {
+              justify-content: center;
             }
           }
 
@@ -659,9 +686,19 @@
       &__cart-single {
         .heart-icon,
         .user-icon {
-          display: none;
+          @include max(767px) {
+            display: none;
+          }
         }
         .icon {
+          @include max(767px) {
+            margin-right: 15px;
+          }
+        }
+      }
+
+      &__navigation-menu {
+        &-link {
           margin-right: 15px;
         }
       }
