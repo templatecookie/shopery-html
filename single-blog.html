@@ -324,11 +324,21 @@
 
         </div>
         <div class="col-lg-4">
-          <div class="blog__sidebar d-none">
+          <div class="blog__sidebar">
+              <!-- filter btn  -->
+            <button class="filter">
+              <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 5.75C18.4142 5.75 18.75 5.41421 18.75 5C18.75 4.58579 18.4142 4.25 18 4.25V5.75ZM9 4.25C8.58579 4.25 8.25 4.58579 8.25 5C8.25 5.41421 8.58579 5.75 9 5.75V4.25ZM18 4.25H9V5.75H18V4.25Z" fill="white"/>
+                <path d="M13 14.75C13.4142 14.75 13.75 14.4142 13.75 14C13.75 13.5858 13.4142 13.25 13 13.25V14.75ZM4 13.25C3.58579 13.25 3.25 13.5858 3.25 14C3.25 14.4142 3.58579 14.75 4 14.75V13.25ZM13 13.25H4V14.75H13V13.25Z" fill="white"/>
+                <circle cx="5" cy="5" r="4" stroke="white" stroke-width="1.5"/>
+                <circle cx="17" cy="14" r="4" stroke="white" stroke-width="1.5"/>
+                </svg>
+                
+            </button>
             <!-- Search Field  -->
             <div class="blog__sidebar--item">
               <div class="blog__search-field">
-                <input type="text" placeholder="Search ">
+                <input type="text" placeholder="Search...">
                 <div class="icon">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -344,32 +354,32 @@
             <!-- Top Categories  -->
             <div class="blog__sidebar--item">
               <h5 class="font-body--xxl-500">Top Categories </h5>
-              <ul class="top-categories">
-                <li class="top-categories-item">
+              <ul class="blog__top-categories">
+                <li class="blog__top-categories-item">
                   <p class="font-body--md-400">Fresh Fruit</p>
                   <p class="font-body--md-400 number">(134)</p>
                 </li>
-                <li class="top-categories-item">
+                <li class="blog__top-categories-item">
                   <p class="font-body--md-400">Vegetables</p>
                   <p class="font-body--md-400 number">(150)</p>
                 </li>
-                <li class="top-categories-item">
+                <li class="blog__top-categories-item">
                   <p class="font-body--md-400">Cooking </p>
                   <p class="font-body--md-400 number">(54) </p>
                 </li>
-                <li class="top-categories-item">
-                  <p class="font-body--md-400">Snacks /p>
+                <li class="blog__top-categories-item">
+                  <p class="font-body--md-400">Snacks </p>
                     <p class="font-body--md-400 number">(47)</p>
                 </li>
-                <li class="top-categories-item">
+                <li class="blog__top-categories-item">
                   <p class="font-body--md-400">Beverages</p>
                   <p class="font-body--md-400 number">(43)</p>
                 </li>
-                <li class="top-categories-item">
+                <li class="blog__top-categories-item">
                   <p class="font-body--md-400">Beauty & Health </p>
                   <p class="font-body--md-400 number">(38) </p>
                 </li>
-                <li class="top-categories-item">
+                <li class="blog__top-categories-item">
                   <p class="font-body--md-400">Bread & bakery </p>
                   <p class="font-body--md-400 number">(15) </p>
                 </li>
@@ -378,25 +388,25 @@
             <!-- Popular Tags  -->
             <div class="blog__sidebar--item">
               <h5 class="font-body--xxl-500">Popular Tag</h5>
-              <div class="popular-tags">
-                <span class="popular-tags-item">Healthy</span>
-                <span class="popular-tags-item">Low Fat</span>
-                <span class="popular-tags-item">Vegetarian </span>
-                <span class="popular-tags-item">Bread</span>
-                <span class="popular-tags-item">Kid Foods </span>
-                <span class="popular-tags-item">Vitamins </span>
-                <span class="popular-tags-item">Snacks </span>
-                <span class="popular-tags-item">Tiffin</span>
-                <span class="popular-tags-item">Meat </span>
-                <span class="popular-tags-item">Launch</span>
-                <span class="popular-tags-item">Dinner </span>
+              <div class="blog__popular-tags">
+                <a href="#"><span class="blog__popular-tags-item active">Healthy</span></a>
+               <a href="#"> <span class="blog__popular-tags-item">Low Fat</span></a>
+                <a href="#"><span class="blog__popular-tags-item">Vegetarian </span></a>
+              <a href="#">  <span class="blog__popular-tags-item">Bread</span></a>
+                <a href="#"> <span class="blog__popular-tags-item">Kid Foods </span></a>
+               <a href="#"> <span class="blog__popular-tags-item">Vitamins </span></a>
+               <a href="#"> <span class="blog__popular-tags-item">Snacks </span></a>
+               <a href="#"> <span class="blog__popular-tags-item">Tiffin</span></a>
+               <a href="#"> <span class="blog__popular-tags-item">Meat </span></a>
+               <a href="#"> <span class="blog__popular-tags-item">Launch</span></a>
+               <a href="#"> <span class="blog__popular-tags-item">Dinner </span></a>
               </div>
             </div>
             <!-- Gallery  -->
             <div class="blog__sidebar--item">
               <h5 class="font-body--xxl-500">Our Gallery</h5>
-              <div class="gallery">
-                <div class="gallery__item">
+              <div class="blog-gallery">
+                <div class="blog-gallery__item">
                   <a href="#" class="cards-ig">
                     <div class="cards-ig__img">
                       <img src="src/images/instagram//img-01-sm.png" alt="ig">
@@ -413,7 +423,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="gallery__item">
+                <div class="blog-gallery__item">
                   <a href="#" class="cards-ig">
                     <div class="cards-ig__img">
                       <img src="src/images/instagram//img-02-sm.png" alt="ig">
@@ -430,7 +440,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="gallery__item">
+                <div class="blog-gallery__item">
                   <a href="#" class="cards-ig">
                     <div class="cards-ig__img">
                       <img src="src/images/instagram//img-03-sm.png" alt="ig">
@@ -447,7 +457,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="gallery__item">
+                <div class="blog-gallery__item">
                   <a href="#" class="cards-ig">
                     <div class="cards-ig__img">
                       <img src="src/images/instagram//img-04-sm.png" alt="ig">
@@ -464,7 +474,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="gallery__item">
+                <div class="blog-gallery__item">
                   <a href="#" class="cards-ig">
                     <div class="cards-ig__img">
                       <img src="src/images/instagram//img-05-sm.png" alt="ig">
@@ -481,7 +491,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="gallery__item">
+                <div class="blog-gallery__item">
                   <a href="#" class="cards-ig">
                     <div class="cards-ig__img">
                       <img src="src/images/instagram//img-06-sm.png" alt="ig">
@@ -498,7 +508,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="gallery__item">
+                <div class="blog-gallery__item">
                   <a href="#" class="cards-ig">
                     <div class="cards-ig__img">
                       <img src="src/images/instagram//img-07-sm.png" alt="ig">
@@ -515,7 +525,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="gallery__item">
+                <div class="blog-gallery__item">
                   <a href="#" class="cards-ig">
                     <div class="cards-ig__img">
                       <img src="src/images/instagram//img-08-sm.png" alt="ig">
@@ -537,12 +547,12 @@
             <!-- Recent Added Products  -->
             <div class="blog__sidebar--item">
               <h5 class="font-body--xxl-500">Recently Added </h5>
-              <div class="recent-product">
-                <div class="recent-product__item">
-                  <div class="recent-product__img-wrapper">
+              <div class="blog__recent-product">
+                <div class="blog__recent-product__item">
+                  <div class="blog__recent-product__img-wrapper">
                     <img src="src/images/products/img-01.png" alt="products ">
                   </div>
-                  <div class="recent-product__item-info">
+                  <div class="blog__recent-product__item-info">
                     <h5 class="font-body--lg-500">Curabitur porttitor orci eget nequ accumsan.</h5>
                     <div class="date">
                       <span class="icon">
@@ -560,11 +570,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="recent-product__item">
-                  <div class="recent-product__img-wrapper">
+                <div class="blog__recent-product__item">
+                  <div class="blog__recent-product__img-wrapper">
                     <img src="src/images/products/img-02.png" alt="products ">
                   </div>
-                  <div class="recent-product__item-info">
+                  <div class="blog__recent-product__item-info">
                     <h5 class="font-body--lg-500">Donec mattis arcu faucibus suscipit viverra.</h5>
                     <div class="date">
                       <span class="icon">
@@ -582,11 +592,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="recent-product__item">
-                  <div class="recent-product__img-wrapper">
+                <div class="blog__recent-product__item">
+                  <div class="blog__recent-product__img-wrapper">
                     <img src="src/images/products/img-03.png" alt="products ">
                   </div>
-                  <div class="recent-product__item-info">
+                  <div class="blog__recent-product__item-info">
                     <h5 class="font-body--lg-500">Quisque posuere tempus rutrum. Integer velit ex.</h5>
                     <div class="date">
                       <span class="icon">
@@ -606,6 +616,8 @@
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>
