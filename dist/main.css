@@ -9726,6 +9726,45 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
+.header__cart-single .header__telephone-number {
+  margin-right: 30px; }
+
+.header__cart-single .icon {
+  position: relative;
+  color: #1a1a1a;
+  margin-right: 25px; }
+  .header__cart-single .icon:hover {
+    color: #00b207;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .header__cart-single .icon:nth-last-child(1) {
+    margin-right: 0px; }
+  .header__cart-single .icon.shopping-bag .numb {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #2c742f;
+    border: 1px solid #fff;
+    top: 0;
+    right: 0px;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 500; }
+
 .header__brand {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10156,6 +10195,48 @@ a {
 
 .header--four .header__cart-item button {
   padding-right: 5px; }
+
+.header--five .header__top {
+  background-color: #edf2ee; }
+
+.header--five .header__center-content .header__navigation-menu {
+  width: 38%; }
+  @media (max-width: 1200px) {
+    .header--five .header__center-content .header__navigation-menu {
+      width: 65%; } }
+  @media (max-width: 991px) {
+    .header--five .header__center-content .header__navigation-menu {
+      display: none; } }
+
+.header--five .header__center-content .header__brand, .header--five .header__center-content .header__cart {
+  width: 31%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 1200px) {
+    .header--five .header__center-content .header__brand, .header--five .header__center-content .header__cart {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+
+.header--five .header__center-content .header__navigation-menu-link.active a {
+  color: #1a1a1a; }
+
+.header--five .header__center-content .header__navigation-menu-link a {
+  color: #808080; }
+
+@media (max-width: 1200px) {
+  .header--five .header__center-content .header__telephone-number {
+    display: none; } }
+
+.header--five .header__center-content .header__telephone-number span {
+  color: #1a1a1a;
+  font-weight: 500; }
+
+.header--five .header__sidebar-btn {
+  padding-right: 20px; }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .header--two .header__navigation-menu-link {

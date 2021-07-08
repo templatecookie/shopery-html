@@ -49,6 +49,47 @@
     }
   }
 
+  // cart
+  &__cart-single {
+    .header__telephone-number {
+      margin-right: 30px;
+    }
+
+    .icon {
+      position: relative;
+      color: color(gray-9);
+      margin-right: 25px;
+
+      &:hover {
+        color: color(primary);
+        transition: all 0.3s linear;
+      }
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+
+      &.shopping-bag {
+        .numb {
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background-color: color(hard-primary);
+          border: 1px solid #fff;
+          top: 0;
+          right: 0px;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          line-height: 10px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
   // header brands
   &__brand {
     display: flex;
@@ -551,6 +592,65 @@
         button {
           padding-right: 5px;
         }
+      }
+    }
+  }
+
+  // Header Five
+  &--five {
+    .header {
+      &__top {
+        background-color: color(green-0);
+      }
+
+      &__center-content {
+        .header {
+          &__navigation-menu {
+            width: 38%;
+            @include max(1200px) {
+              width: 65%;
+            }
+            @include max(991px) {
+              display: none;
+            }
+          }
+
+          &__brand,
+          &__cart {
+            width: 31%;
+            justify-content: center;
+            @include max(1200px) {
+              justify-content: flex-end;
+            }
+          }
+
+          &__navigation-menu {
+            &-link {
+              &.active {
+                a {
+                  color: color(gray-9);
+                }
+              }
+              a {
+                color: color(gray-5);
+              }
+            }
+          }
+
+          &__telephone-number {
+            @include max(1200px) {
+              display: none;
+            }
+            span {
+              color: color(gray-9);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      &__sidebar-btn {
+        padding-right: 20px;
       }
     }
   }
