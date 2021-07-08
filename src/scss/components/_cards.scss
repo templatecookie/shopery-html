@@ -318,6 +318,11 @@
     .cards-blog__info .h2 {
       color: color(hard-primary);
     }
+
+    .cards-blog__play-icon {
+      color: color(primary);
+      transition: all 0.3s linear;
+    }
   }
 
   &__img-wrapper {
@@ -350,6 +355,21 @@
         text-transform: uppercase;
       }
     }
+  }
+  &__play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #00000033;
+    color: color(hard-primary);
   }
 
   &__info {

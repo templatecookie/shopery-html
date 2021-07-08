@@ -24,6 +24,7 @@
  10. Brands name 
  11. Members 
  12. Instagram
+ 13.Blogs-list
  
 \/\/\/\/\/\/\/\*/
 
@@ -829,5 +830,22 @@ var memebers = new Swiper('.members-slider--one', {
       slidesPerView: 4,
       spaceBetween: 24,
     },
+  },
+});
+
+// Blogs
+var blogs = new Swiper('.blog-list--slider', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
   },
 });

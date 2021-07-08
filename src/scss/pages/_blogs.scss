@@ -1,0 +1,25 @@
+.blog-list {
+  &__wrapper {
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__content--desktop {
+    // padding-bottom: 40px;
+    @include max(991px) {
+      display: none;
+    }
+    .cards-blog {
+      margin-bottom: 24px;
+    }
+  }
+  &--slider {
+    @include min(992px) {
+      display: none;
+    }
+
+    &.swiper-container {
+      padding-bottom: 30px;
+    }
+  }
+}

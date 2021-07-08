@@ -43,6 +43,9 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     background-color: color(primary);
+    @include min(992px) {
+      display: none;
+    }
     svg {
       height: 18px;
     }
