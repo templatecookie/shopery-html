@@ -11646,7 +11646,7 @@ a {
   border: 1px solid #e5e5e5;
   position: relative; }
   .blog__search-field input {
-    width: inherit;
+    width: 95%;
     height: inherit;
     border: 0px;
     padding-left: 45px;
