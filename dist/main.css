@@ -11259,6 +11259,9 @@ a {
   .newsletter__leftcontent h2, .newsletter__leftcontent .h2 {
     color: #1a1a1a;
     text-transform: capitalize; }
+    @media (max-width: 767px) {
+      .newsletter__leftcontent h2, .newsletter__leftcontent .h2 {
+        margin-bottom: 15px; } }
   .newsletter__leftcontent p {
     color: #999999;
     max-width: 75%; }
@@ -14691,6 +14694,21 @@ ul.example li p {
   @media (max-width: 767px) {
     .single-blog .user-comments {
       padding-bottom: 30px; } }
+  @media (max-width: 575px) {
+    .single-blog .user-comments {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .single-blog .user-comments h5, .single-blog .user-comments .h5 {
     color: #1a1a1a;
     text-transform: capitalize;

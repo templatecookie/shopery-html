@@ -8,6 +8,9 @@
     h2 {
       color: color(gray-9);
       text-transform: capitalize;
+      @include max(767px) {
+        margin-bottom: 15px;
+      }
     }
     p {
       color: color(gray-4);
