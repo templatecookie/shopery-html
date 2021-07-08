@@ -11734,8 +11734,8 @@ a {
   .blog-gallery__item {
     margin-right: 8px; }
     .blog-gallery__item .cards-ig__img {
-      width: 94px;
-      height: 94px; }
+      width: 80px;
+      height: 80px; }
       @media (max-width: 1199px) {
         .blog-gallery__item .cards-ig__img {
           width: 60px;
@@ -15148,6 +15148,64 @@ ul.example li p {
       .faq__img-wrapper {
         position: static;
         margin-bottom: 30px; } }
+
+.filter--search__content {
+  margin-top: 32px; }
+
+.filter--search-result {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .filter--search-result .sort-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .filter--search-result .sort-list label {
+      font-size: 14px;
+      line-height: 21px;
+      color: #808080;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-right: 6px; }
+    .filter--search-result .sort-list .bv_mainselect {
+      width: 165px; }
+      .filter--search-result .sort-list .bv_mainselect .bv_atual.bv_background {
+        font-size: 14px;
+        line-height: 21px;
+        color: #4d4d4d;
+        font-weight: 400;
+        text-transform: capitalize; }
+        .filter--search-result .sort-list .bv_mainselect .bv_atual.bv_background .arrow {
+          border: solid #4d4d4d;
+          border-width: 0 1.5px 1.5px 0;
+          display: inline-block;
+          padding: 3px;
+          pointer-events: none; }
+      .filter--search-result .sort-list .bv_mainselect .bv_ul_inner.bv_background {
+        z-index: 9; }
+  .filter--search-result .result-found p {
+    font-size: 16px;
+    line-height: 21px;
+    color: #808080;
+    font-weight: 400;
+    text-transform: capitalize; }
+    .filter--search-result .result-found p .number {
+      font-weight: 600;
+      color: #1a1a1a; }
 
 .blog-list__wrapper {
   margin-top: 32px;
