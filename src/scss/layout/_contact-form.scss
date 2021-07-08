@@ -75,7 +75,16 @@
     border-radius: 6px;
     border: 1px solid #e5e5e5;
     margin-bottom: 16px;
-    overflow: hidden;
+    // overflow: hidden;
+    label {
+      position: absolute;
+      top: -26px;
+      font-size: 14px;
+      line-height: 21px;
+      color: color(gray-9);
+      font-weight: 400;
+      text-transform: capitalize;
+    }
     input,
     textarea {
       width: 95%;
@@ -104,6 +113,24 @@
 
     textarea {
       padding-top: 14px;
+    }
+  }
+
+  &--check {
+    input {
+      box-shadow: none;
+      border: 1px solid color(gray-2);
+      &:checked {
+        background-color: color(primary);
+        border: color(primary);
+      }
+    }
+    label {
+      font-size: 14px;
+      line-height: 21px;
+      color: color(gray-6);
+      text-transform: capitalize;
+      font-weight: 400;
     }
   }
 
