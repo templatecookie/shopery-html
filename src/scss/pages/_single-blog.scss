@@ -2,6 +2,14 @@
 .single-blog {
   &__content {
     margin-top: 32px;
+    .blog-head-title {
+      text-transform: capitalize;
+
+      @include max(767px) {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
   }
   // Blogs img
   &__img-wrapper {
@@ -9,6 +17,7 @@
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
+
     img {
       width: inherit;
       height: inherit;
@@ -18,11 +27,17 @@
     &.one {
       height: 600px;
       margin-bottom: 32px;
+      @include max(767px) {
+        height: 250px;
+      }
     }
 
     &.two,
     &.three {
       height: 356px;
+      @include max(767px) {
+        height: 220px;
+      }
     }
   }
 
@@ -40,6 +55,9 @@
 
     &-item {
       margin-right: 20px;
+      @include max(767px) {
+        margin-right: 2px;
+      }
       .icon {
         margin-right: 5px;
       }
@@ -59,11 +77,17 @@
     padding-top: 32px;
     padding-bottom: 24px;
     box-shadow: 0px 1px 0px 0px #e5e5e5;
-
+    @include max(575px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
     // Author
     .author {
       display: flex;
       align-items: center;
+      @include max(575px) {
+        margin-bottom: 30px;
+      }
       &-img {
         width: 50px;
         height: 50px;
@@ -135,14 +159,25 @@
     .single-blog {
       &--sm-img {
         display: flex;
+        align-items: center;
         margin-bottom: 24px;
+        @include max(767px) {
+          flex-direction: column;
+        }
       }
 
       &__img-wrapper {
         margin-right: 24px;
+        @include max(767px) {
+          margin-right: 0px;
+          margin-bottom: 15px;
+        }
 
         &:nth-last-child(1) {
           margin-right: 0px;
+          @include max(767px) {
+            margin-bottom: 0px;
+          }
         }
       }
     }
@@ -166,7 +201,9 @@
       top: 50%;
       transform: translateY(-50%);
       left: 56px;
-
+      @include max(575px) {
+        left: 30px;
+      }
       .title {
         font-size: 14px;
         line-height: 14px;
@@ -199,6 +236,20 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include max(1024px) {
+        top: 90px;
+        left: auto;
+        right: 60px;
+      }
+      @include max(767px) {
+        width: 80px;
+        height: 80px;
+        top: 50px;
+        right: 15px;
+      }
+      @include max(575px) {
+        right: 0px;
+      }
       p {
         font-size: 11px;
         line-height: 12.1px;
@@ -212,6 +263,10 @@
         font-weight: 600;
         color: color(warning);
         margin-bottom: 0px;
+        @include max(767px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
       }
     }
   }
@@ -230,20 +285,14 @@
     .contact-form--input {
       margin-bottom: 32px;
     }
-
-    .form-check {
-      label {
-        font-size: 14px;
-        line-height: 21px;
-        color: color(gray-6);
-        font-weight: 400;
-        text-transform: capitalize;
-      }
-      &-input {
-        box-shadow: none;
-        &:checked {
-          background-color: color(primary);
-          border-color: color(primary);
+    .contact-form--check {
+      margin-top: 16px;
+      @include max(767px) {
+        display: flex;
+        align-items: flex-start;
+        input {
+          flex-shrink: 0;
+          margin-right: 6px;
         }
       }
     }
