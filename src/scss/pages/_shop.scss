@@ -1,0 +1,25 @@
+// Shope 01
+.shop {
+  &--one {
+    margin-top: 24px;
+  }
+
+  &__product-items {
+    @include max(767px) {
+      display: none;
+    }
+    .cards-md {
+      border-radius: 6px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &-slider--one {
+    @include min(768px) {
+      display: none;
+    }
+    .swiper-wrapper {
+      padding-bottom: 30px;
+    }
+  }
+}

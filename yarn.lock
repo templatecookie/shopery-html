@@ -2079,6 +2079,13 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
+exports-loader@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/exports-loader/-/exports-loader-3.0.0.tgz#dcc4596a034b3fa002a53f77bc8f04c9667166c2"
+  integrity sha512-b23Yg5SKR63ZvikGrQgfGgwd40MDehaYb7vOXgD7C0fMV04wS8U1I4f7n1j1wEhtQNKUqgdFox/ol2rOruOpOA==
+  dependencies:
+    source-map "^0.6.1"
+
 extend-shallow@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-2.0.1.tgz#51af7d614ad9a9f610ea1bafbb989d6b1c56890f"
@@ -3392,6 +3399,11 @@ normalize-url@1.9.1:
     prepend-http "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
+
+nouislider@^15.2.0:
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/nouislider/-/nouislider-15.2.0.tgz#21d6c94b34c70fe8097c3806f5e48eaa97332bd9"
+  integrity sha512-LoZwN+wwU+z/0/UtjQY8VUcVElFJX6GfHkgJ5z1NIt/+KpOsjxEW4EAtBkBWvHNxf9HBzR62K6ft9NpNBkA5/w==
 
 "npmlog@0 || 1 || 2 || 3 || 4", npmlog@^4.0.0:
   version "4.1.2"

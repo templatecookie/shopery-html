@@ -25,6 +25,7 @@
  11. Members 
  12. Instagram
  13.Blogs-list
+ 14.Shops
  
 \/\/\/\/\/\/\/\*/
 
@@ -835,6 +836,22 @@ var memebers = new Swiper('.members-slider--one', {
 
 // Blogs
 var blogs = new Swiper('.blog-list--slider', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+// Shops
+var shops = new Swiper('.shop-slider--one', {
   spaceBetween: 15,
   loop: true,
   loopFillGroupWithBlank: true,

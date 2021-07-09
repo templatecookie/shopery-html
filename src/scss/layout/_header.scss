@@ -90,6 +90,15 @@
     }
   }
 
+  // Telephone
+  &__telephone-number {
+    &.dark {
+      span {
+        color: color(gray-9);
+      }
+    }
+  }
+
   // header brands
   &__brand {
     display: flex;
@@ -399,6 +408,7 @@
       color: #fff;
       font-size: 14px;
       line-height: 21px;
+      font-weight: 500;
     }
   }
 

@@ -1,50 +1,25 @@
 .header {
-  &.active {
-    .header {
-      &__sidebar {
-        left: 0px;
-      }
-    }
-  }
-
-  &__sidebar {
-    position: fixed;
-    top: 0;
-    left: -50%;
-    width: 40%;
-    height: 100%;
-
-    padding: 24px 0px;
-    z-index: 9999;
-    background-color: #fff;
-    @include min(992px) {
-      display: none;
-    }
-    @include max(767px) {
-      width: 90%;
-    }
-  }
   &__mobile-sidebar {
     // display none for now
-    // display: none !important;
-    width: 100%;
+    display: none !important;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 308px;
     height: 100%;
+    padding: 24px 0px;
+    z-index: 9999;
+    // overflow: hidden;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__cross {
-    position: absolute;
-    top: 35px;
-    right: -35px;
-    color: #fff;
-  }
-
   &__mobile-input {
     position: relative;
-    width: 90%;
+    width: 260px;
     height: 44px;
     margin: auto;
     border-radius: 6px;
@@ -182,6 +157,13 @@
     }
   }
 
+  &__cross {
+    position: fixed;
+    left: 338px;
+    top: 40px;
+    color: #fff;
+  }
+
   // Action on hover/click
   &__mobile-menu-item {
     &.active {
@@ -205,19 +187,19 @@
 }
 
 // It's will be active after js
-body {
-  &.overlay {
-    position: relative;
+// body {
+//   &.overlay {
+//     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 999;
-    }
-  }
-}
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       background: rgba(0, 0, 0, 0.7);
+//       z-index: 999;
+//     }
+//   }
+// }
