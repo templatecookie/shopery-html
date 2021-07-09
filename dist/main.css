@@ -11983,6 +11983,45 @@ a {
     width: inherit;
     height: inherit; }
 
+@media (max-width: 991px) {
+  .shop__sidebar {
+    position: fixed;
+    top: 0;
+    left: -45%;
+    width: 45%;
+    background-color: #fff;
+    z-index: 9;
+    height: 100%; }
+    .shop__sidebar-content {
+      padding: 15px;
+      height: 100%;
+      overflow-y: auto; } }
+
+.shop__sidebar .filter {
+  position: absolute;
+  top: 35%;
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
+  right: -35px;
+  background-color: #00b207;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  z-index: 10; }
+  @media (min-width: 992px) {
+    .shop__sidebar .filter {
+      display: none; } }
+
+.shop__sidebar.active {
+  left: 0px; }
+  .shop__sidebar.active .filter {
+    top: 15px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+
 .shop-button {
   border: 0px; }
   .shop-button:not(.collapsed) {

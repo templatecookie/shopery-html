@@ -1,4 +1,50 @@
 .shop {
+  // Sidebar
+  &__sidebar {
+    @include max(991px) {
+      position: fixed;
+      top: 0;
+      left: -45%;
+      width: 45%;
+      background-color: #fff;
+      z-index: 9;
+      height: 100%;
+      &-content {
+        padding: 15px;
+        height: 100%;
+        overflow-y: auto;
+      }
+    }
+
+    .filter {
+      position: absolute;
+      // top: 15px;
+      top: 35%;
+      transform: translateY(-35%);
+      right: -35px;
+      background-color: color(primary);
+      color: #fff;
+      padding: 8px;
+      border-radius: 6px;
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      z-index: 10;
+      @include min(992px) {
+        display: none;
+      }
+    }
+
+    &.active {
+      left: 0px;
+
+      .filter {
+        top: 15px;
+        transition: all 0.3s linear;
+      }
+    }
+  }
+
   &-button {
     border: 0px;
     &:not(.collapsed) {
