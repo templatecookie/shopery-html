@@ -35,4 +35,11 @@
       }
     }
   }
+
+  &--two {
+    padding: 25px 0px;
+    .breedcrumb__content {
+      position: static;
+    }
+  }
 }
