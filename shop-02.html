@@ -38,10 +38,7 @@
             <div class="header__dropdown">
               <select id="selectbox1" class="header__dropdown-menu">
                 <option value="pt_1">Eng</option>
-                <option value="en_2">Bng</option>
-                <option value="es_3" disabled>Hin (Disabled)</option>
-                <option value="ch_4">cn</option>
-                <option value="5">Urdu</option>
+               
               </select>
               <select id="selectbox2" class="header__dropdown-menu">
                 <option value="pt_1">USD</option>
@@ -377,6 +374,9 @@
    </section>
   <!-- Breadcrumb Section End  -->
 
+
+
+
   <!-- Banner Section Start  -->
   <section class="banner-sales">
     <div class="container">
@@ -404,6 +404,102 @@
     </div>
   </section>
   <!-- Banner Section End  -->
+  <!-- Filter section Start  -->
+  <div class="filter-box">
+    <div class="container">
+     <div class="filter-box__top">
+       <div class="filter-box__top-left">
+         <div class="select-box--item">
+           <select id="category" class="filter__dropdown-menu">
+             <option value="01">wing Chair</option>
+             <option value="02">Vegetables</option>
+             <option value="03">Health & Beatuties</option>
+             <option value="04">Medicine</option>
+            
+           </select>
+         </div>
+         <div class="select-box--item">
+           <select id="price" class="filter__dropdown-menu">
+             <option value="01">Min $15 - max $300</option>
+             <option value="02">Min $30 - max $600</option>
+             <option value="02">Min $60 - max $1200</option>
+           
+           </select>
+         </div>
+         <div class="select-box--item">
+           <select id="rating" class="filter__dropdown-menu">
+             <option value="01"> ⭐⭐⭐⭐⭐ </option>
+             <option value="02"> ⭐⭐⭐⭐ </option>
+             <option value="03"> ⭐⭐⭐ </option>
+             <option value="04"> ⭐⭐ </option>
+             <option value="05"> ⭐ </option>
+            
+           </select>
+         </div>
+       </div>
+       <div class="filter-box__top-right">
+         <div class="select-box--item">
+           <select id="sort-by" class="filter__dropdown-menu">
+             <option value="01">Sort by: Latest</option>
+             <option value="02">Sort by: Oldest</option>
+             <option value="02">Sort by: Trending</option>
+          
+            
+           </select>
+         </div>
+         <div class="select-box--item">
+           <select id="number" class="filter__dropdown-menu">
+             <option value="01">Show: 01</option>
+             <option value="02">Show: 02</option>
+             <option value="03">Show: 03</option>
+             <option value="04">Show: 04</option>
+             <option value="05">Show: 05</option>
+             <option value="06">Show: 06</option>
+             <option value="07">Show: 07</option>
+             <option value="08">Show: 08</option>
+             <option value="09">Show: 09</option>
+             <option value="10">Show: 10</option>
+           
+           </select>
+         </div>
+
+       </div>
+     </div>
+    </div>
+     <div class="filter-box__bottom">
+       <div class="container">
+         <div class="filter-box__bottom-content">
+           <div class="active__filters">
+             <h5>
+               Active Filters:
+             </h5>
+             <div class="active__filters-item">
+                 <button class="filter-item">
+                   Wing Chair 
+                   <span class="icon">
+                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M2 2.5L6.00003 6.5M6.00003 6.5L10 2.5M6.00003 6.5L2 10.5M6.00003 6.5L10 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                   </span>
+                 </button>
+                 <button class="filter-item">
+                   Min $300 - Max $500
+                   <span class="icon">
+                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M2 2.5L6.00003 6.5M6.00003 6.5L10 2.5M6.00003 6.5L2 10.5M6.00003 6.5L10 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                   </span>
+                 </button>
+             </div>
+           </div>
+           <div class="filter__result">
+              <p><span class="number">2,547</span> Results found. </p>
+           </div>
+         </div>
+       </div>
+     </div>
+ </div>
+<!-- Filter section End  -->
 
 
 
@@ -1828,6 +1924,37 @@
       minute: 30,
       });
 
+      var category = new BVSelect({
+      selector: "#category",
+      searchbox: false,
+      offset: false,
+      placeholder: "Select Catecory",
+    });
+      var price = new BVSelect({
+      selector: "#price",
+      searchbox: false,
+      offset: false,
+      placeholder: "Select Price ",
+    });
+      var ratings = new BVSelect({
+      selector: "#rating",
+      searchbox: false,
+      offset: false,
+      placeholder: "Select Rating",
+    });
+      var sort = new BVSelect({
+      selector: "#sort-by",
+      searchbox: false,
+      offset: false,
+      placeholder: "sort by: Latest",
+    });
+      var number = new BVSelect({
+      selector: "#number",
+      searchbox: false,
+      offset: false,
+      placeholder: "Show: 16",
+    });
+
       var demo1 = new BVSelect({
       selector: "#selectbox1",
       searchbox: false,
@@ -1846,6 +1973,7 @@
       offset: false,
       placeholder: "Latest",
     });
+
   </script>
 </body>
 
