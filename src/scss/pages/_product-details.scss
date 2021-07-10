@@ -13,37 +13,3 @@
 }
 
 // Product Details
-
-.product-details {
-  &__info {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e5e5e5;
-
-    .product {
-      &--title {
-        color: color(gray-9);
-        text-transform: capitalize;
-        position: relative;
-        .tag {
-          // position: absolute;
-          // top: 50%;
-          // transform: translateY(-50%);
-          // right: 0px;
-          font-size: 14px;
-          line-height: 21px;
-          padding: 4px 8px;
-          border-radius: 4px;
-          text-transform: capitalize;
-          font-weight: 400;
-          &.stock {
-            color: color(hard-primary);
-            background: #20b52633;
-            &-not {
-              background-color: color(danger);
-            }
-          }
-        }
-      }
-    }
-  }
-}
