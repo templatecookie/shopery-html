@@ -14409,6 +14409,79 @@ ul.example li p {
       text-transform: uppercase;
       letter-spacing: 0.03em; }
 
+.dasboard__nav {
+  position: relative;
+  border-radius: 8px;
+  padding: 24px 0px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5; }
+  .dasboard__nav .filter-icon {
+    position: absolute;
+    top: 8px;
+    right: -38px;
+    background-color: #00b207;
+    padding: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; }
+  @media (max-width: 991px) {
+    .dasboard__nav {
+      position: fixed;
+      top: 50%;
+      left: -15%;
+      width: 15%;
+      height: auto;
+      z-index: 9;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      visibility: hidden; }
+      .dasboard__nav.active {
+        left: 0px;
+        width: 35%;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        visibility: visible; }
+      .dasboard__nav .filter-icon {
+        display: block;
+        visibility: visible; } }
+  @media (max-width: 767px) {
+    .dasboard__nav {
+      width: 35%;
+      left: -70%; }
+      .dasboard__nav.active {
+        width: 70%; } }
+  .dasboard__nav-title {
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    padding: 0px 24px; }
+  .dasboard__nav-item-link {
+    padding: 16px 24px;
+    border-left: 2px solid transparent; }
+    .dasboard__nav-item-link:hover, .dasboard__nav-item-link.active {
+      background-color: #edf2ee;
+      border-color: #00b207;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .dasboard__nav-item-link:hover a, .dasboard__nav-item-link.active a {
+        color: #1a1a1a; }
+    .dasboard__nav-item-link a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #666666; }
+      .dasboard__nav-item-link a .icon {
+        margin-right: 6px;
+        width: 30px; }
+      .dasboard__nav-item-link a .name {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+
 .shipping-container {
   margin-bottom: 26px; }
   .shipping-container--slider {
