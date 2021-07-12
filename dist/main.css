@@ -16012,23 +16012,10 @@ ul.example li p {
   .related .swiper-pagination {
     display: none; } }
 
-.product-details__info {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5; }
-  .product-details__info .product--title {
-    color: #1a1a1a;
-    text-transform: capitalize;
-    position: relative; }
-    .product-details__info .product--title .tag {
-      font-size: 14px;
-      line-height: 21px;
-      padding: 4px 8px;
-      border-radius: 4px;
-      text-transform: capitalize;
-      font-weight: 400; }
-      .product-details__info .product--title .tag.stock {
-        color: #2c742f;
-        background: #20b52633; }
-        .product-details__info .product--title .tag.stock-not {
-          background-color: #ea4b48; }
+.products-tab__description--text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+  font-weight: 400;
+  margin-bottom: 30px; }
 

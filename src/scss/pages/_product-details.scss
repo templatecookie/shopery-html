@@ -12,4 +12,16 @@
   }
 }
 
-// Product Details
+// Product Details tabcontent
+.products-tab {
+  // description tabs
+
+  // Description tab
+  &__description--text {
+    font-size: 14px;
+    line-height: 21px;
+    color: color(gray-5);
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
