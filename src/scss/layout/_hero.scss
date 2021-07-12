@@ -88,10 +88,154 @@
       height: 210px;
       margin-bottom: 15px;
     }
+
+    &-two-bg {
+      position: absolute;
+      width: 80%;
+      height: 685px;
+      z-index: -1;
+      @include max(1680px) {
+        width: 100%;
+      }
+      &::after {
+        @include max(1680px) {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+
     img {
       width: inherit;
       height: inherit;
       object-fit: cover;
+    }
+  }
+
+  // Features
+  .our-feature {
+    &--grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 100%;
+        overflow: hidden;
+        background: #00b2071a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: color(hard-primary);
+        margin-right: 16px;
+      }
+      &-info {
+        h2 {
+          color: color(gray-9);
+          text-transform: capitalize;
+          margin-bottom: 8px;
+        }
+        p {
+          color: color(gray-5);
+        }
+      }
+    }
+  }
+
+  &--two {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .hero {
+      &__text-content {
+        margin-left: 48px;
+        @include max(1200px) {
+          margin-left: 0px;
+        }
+        h5 {
+          color: color(green-9);
+          @include max(1680px) {
+            color: #fff;
+          }
+        }
+        p {
+          @include max(1680px) {
+            color: color(gray-2);
+          }
+          @include max(1400px) {
+            width: 570px;
+          }
+        }
+      }
+    }
+
+    .our-feature {
+      &--grid {
+        @include max(1400px) {
+          grid-template-columns: repeat(2, 350px);
+        }
+        @include max(1200px) {
+          width: 100%;
+          overflow: hidden;
+        }
+        @include max(767px) {
+          // grid-template-columns: repeat(1, 1fr);
+          display: none;
+        }
+      }
+      &__item {
+        // overflow: hidden;
+        @include max(1400px) {
+          // width: 350px;
+        }
+        .icon {
+          @include max(1680px) {
+            background-color: color(primary);
+            color: #fff;
+            flex-shrink: 0;
+          }
+        }
+        &-info {
+          h2 {
+            @include max(1680px) {
+              color: #fff;
+            }
+          }
+          p {
+            @include max(1680px) {
+              color: color(gray-2);
+            }
+          }
+        }
+      }
+      &--slider {
+        @include min(768px) {
+          display: none;
+        }
+        .swiper-wrapper {
+          padding-bottom: 30px;
+        }
+        .swiper-pagination {
+          @include min-max(480px, 767px) {
+            left: 40px;
+          }
+        }
+      }
     }
   }
 }

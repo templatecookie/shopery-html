@@ -665,6 +665,28 @@ var featured = new Swiper('.related-slider--one', {
   },
 });
 
+var featured = new Swiper('.our-feature--slider', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  // centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    },
+  },
+});
+
 // ====== News Slider one ====== \\
 var news = new Swiper('.news-slider--one', {
   spaceBetween: 24,
