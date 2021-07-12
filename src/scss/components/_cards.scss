@@ -5,7 +5,8 @@
 .cards-blog,
 .cards-tm,
 .cards-mm,
-.cards-tm-2__top {
+.cards-tm-2__top,
+.dashboard-card {
   position: relative;
   box-sizing: border-box;
   border: 1px solid color(gray-1);
@@ -1236,4 +1237,14 @@
       margin-right: 2px;
     }
   }
+}
+
+// Dashboard cards
+.dashboard-card {
+  padding: 32px;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }

@@ -1,4 +1,4 @@
-.dasboard {
+.dashboard {
   &__nav {
     position: relative;
     border-radius: 8px;
@@ -8,7 +8,7 @@
     border: 1px solid #e5e5e5;
 
     .filter-icon {
-      // display: none;
+      display: none;
       position: absolute;
       top: 8px;
       right: -38px;

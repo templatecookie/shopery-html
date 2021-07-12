@@ -383,15 +383,15 @@
         </div>
         <!-- breedcrumb section end   -->
 
-        <!-- Dasboard Secton Start  -->
+        <!-- dashboard Secton Start  -->
         <section class="dashboard section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                         <nav class="dasboard__nav active">
-                             <h5 class="dasboard__nav-title font-body--xxl-500">navigation</h5>
-                                <ul class="dasboard__nav-item">
-                                    <li class="dasboard__nav-item-link active"> 
+                <div class="row dashboard__content">
+                    <div class="col-lg-3">
+                         <nav class="dashboard__nav ">
+                             <h5 class="dashboard__nav-title font-body--xxl-500">navigation</h5>
+                                <ul class="dashboard__nav-item">
+                                    <li class="dashboard__nav-item-link active"> 
                                         <a href="user-dashboard.html" class="font-body--lg-400">
                                             <span class="icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -403,7 +403,7 @@
 
                                     </li>
                                     <!-- Order History -->
-                                    <li class="dasboard__nav-item-link"> 
+                                    <li class="dashboard__nav-item-link"> 
                                         <a href="order-history.html" class="font-body--lg-400">
                                             <span class="icon">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -416,7 +416,7 @@
 
                                     </li>
                                     <!-- Wishlist -->
-                                    <li class="dasboard__nav-item-link"> 
+                                    <li class="dashboard__nav-item-link"> 
                                         <a href="wishlist.html" class="font-body--lg-400">
                                             <span class="icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -428,7 +428,7 @@
 
                                     </li>
                                     <!-- Shopping Cart  -->
-                                    <li class="dasboard__nav-item-link"> 
+                                    <li class="dashboard__nav-item-link"> 
                                         <a href="shopping-cart.html" class="font-body--lg-400">
                                            <span class="icon">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -443,7 +443,7 @@
 
                                     </li>
                                     <!--  Settings   -->
-                                    <li class="dasboard__nav-item-link"> 
+                                    <li class="dashboard__nav-item-link"> 
                                         <a href="account-setting.html" class="font-body--lg-400">
                                           <span class="icon">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -456,7 +456,7 @@
 
                                     </li>
                                     <!--  Log out    -->
-                                    <li class="dasboard__nav-item-link"> 
+                                    <li class="dashboard__nav-item-link"> 
                                         <a href="#" class="font-body--lg-400">
                                            <span class="icon">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -480,10 +480,40 @@
                                 </button>
                          </nav>
                     </div>
+                    <div class="col-lg-9">
+                       <div class="row">
+                           <!-- User Profile  -->
+                           <div class="col-lg-7">
+                            <div class="dashboard__user-profile dashboard-card">
+                                <div class="dashboard__user-profile-img">
+                                    <img src="src/images/user/img-01.png" alt="userImg">
+                                </div>
+                                <div class="dashboard__user-profile-info">
+                                    <h5 class="font-body--xxl-500 name">Dianne Russell</h5>
+                                    <p class="font-body--md-400 designation">Customer</p>
+                                    <a href="account-setting.html" class="edit font-body--lg-500"> Edit Profile </a>
+                                </div>
+                            </div>
+                           </div>
+                           <!-- User Billing Address -->
+                           <div class="col-lg-5">
+                               <div class="dashboard__user-billing dashboard-card">
+                                   <h2 class="dashboard__user-billing-title font-body--md-500">Billing Address</h2>
+                                   <div class="dashboard__user-billing-info">
+                                       <h5 class="dashboard__user-billing-name font-body--xl-500">Dainne Russell</h5>
+                                       <p class="dashboard__user-billing-location font-body--md-400">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                       <p class="dashboard__user-billing-email font-body--lg-400">dainne.ressell@gmail.com</p>
+                                       <p class="dashboard__user-billing-number font-body--lg-400">(671) 555-0110</p>
+                                   </div>
+                                   <a href="account-setting.html" class="dashboard__user-billing-editaddress font-body--lg-500"> Edit address</a>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Dasboard Secton  End  -->
+        <!-- dashboard Secton  End  -->
 
         <!-- cal-to-action Section Start  -->
         <section class="call-to-action section--gray">

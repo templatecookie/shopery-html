@@ -13197,7 +13197,8 @@ a {
 .cards-blog,
 .cards-tm,
 .cards-mm,
-.cards-tm-2__top {
+.cards-tm-2__top,
+.dashboard-card {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13213,7 +13214,8 @@ a {
   .cards-blog:hover,
   .cards-tm:hover,
   .cards-mm:hover,
-  .cards-tm-2__top:hover {
+  .cards-tm-2__top:hover,
+  .dashboard-card:hover {
     border: 1px solid #2c742f;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -13249,7 +13251,11 @@ a {
     .cards-tm-2__top:hover h5,
     .cards-tm-2__top:hover .h5,
     .cards-tm-2__top:hover h6,
-    .cards-tm-2__top:hover .h6 {
+    .cards-tm-2__top:hover .h6,
+    .dashboard-card:hover h5,
+    .dashboard-card:hover .h5,
+    .dashboard-card:hover h6,
+    .dashboard-card:hover .h6 {
       color: #2c742f; }
     .cards-sm:hover .cards-md__info-right .action-btn,
     .cards-sm--two:hover .cards-md__info-right .action-btn,
@@ -13258,7 +13264,8 @@ a {
     .cards-blog:hover .cards-md__info-right .action-btn,
     .cards-tm:hover .cards-md__info-right .action-btn,
     .cards-mm:hover .cards-md__info-right .action-btn,
-    .cards-tm-2__top:hover .cards-md__info-right .action-btn {
+    .cards-tm-2__top:hover .cards-md__info-right .action-btn,
+    .dashboard-card:hover .cards-md__info-right .action-btn {
       color: #fff;
       background-color: #00b207; }
 
@@ -14246,6 +14253,14 @@ a {
     .cards-blog__info-tags-item span {
       margin-right: 2px; } }
 
+.dashboard-card {
+  padding: 32px;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden; }
+
 ul.example {
   list-style: none;
   padding: 0;
@@ -14409,13 +14424,14 @@ ul.example li p {
       text-transform: uppercase;
       letter-spacing: 0.03em; }
 
-.dasboard__nav {
+.dashboard__nav {
   position: relative;
   border-radius: 8px;
   padding: 24px 0px;
   background-color: #fff;
   border: 1px solid #e5e5e5; }
-  .dasboard__nav .filter-icon {
+  .dashboard__nav .filter-icon {
+    display: none;
     position: absolute;
     top: 8px;
     right: -38px;
@@ -14424,7 +14440,7 @@ ul.example li p {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px; }
   @media (max-width: 991px) {
-    .dasboard__nav {
+    .dashboard__nav {
       position: fixed;
       top: 50%;
       left: -15%;
@@ -14434,36 +14450,36 @@ ul.example li p {
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       visibility: hidden; }
-      .dasboard__nav.active {
+      .dashboard__nav.active {
         left: 0px;
         width: 35%;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         visibility: visible; }
-      .dasboard__nav .filter-icon {
+      .dashboard__nav .filter-icon {
         display: block;
         visibility: visible; } }
   @media (max-width: 767px) {
-    .dasboard__nav {
+    .dashboard__nav {
       width: 35%;
       left: -70%; }
-      .dasboard__nav.active {
+      .dashboard__nav.active {
         width: 70%; } }
-  .dasboard__nav-title {
+  .dashboard__nav-title {
     text-transform: capitalize;
     margin-bottom: 16px;
     padding: 0px 24px; }
-  .dasboard__nav-item-link {
+  .dashboard__nav-item-link {
     padding: 16px 24px;
     border-left: 2px solid transparent; }
-    .dasboard__nav-item-link:hover, .dasboard__nav-item-link.active {
+    .dashboard__nav-item-link:hover, .dashboard__nav-item-link.active {
       background-color: #edf2ee;
       border-color: #00b207;
       -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear; }
-      .dasboard__nav-item-link:hover a, .dasboard__nav-item-link.active a {
+      .dashboard__nav-item-link:hover a, .dashboard__nav-item-link.active a {
         color: #1a1a1a; }
-    .dasboard__nav-item-link a {
+    .dashboard__nav-item-link a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -14473,10 +14489,10 @@ ul.example li p {
           -ms-flex-align: center;
               align-items: center;
       color: #666666; }
-      .dasboard__nav-item-link a .icon {
+      .dashboard__nav-item-link a .icon {
         margin-right: 6px;
         width: 30px; }
-      .dasboard__nav-item-link a .name {
+      .dashboard__nav-item-link a .name {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
             -ms-flex: 1;
@@ -16212,4 +16228,78 @@ ul.example li p {
   color: #808080;
   font-weight: 400;
   margin-bottom: 30px; }
+
+.dashboard__content {
+  margin-top: 32px; }
+
+.dashboard__user-profile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .dashboard__user-profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 8px; }
+    .dashboard__user-profile-img img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .dashboard__user-profile-info .name,
+  .dashboard__user-profile-info .designation,
+  .dashboard__user-profile-info .edit {
+    text-transform: capitalize; }
+  .dashboard__user-profile-info .name {
+    color: #1a1a1a; }
+  .dashboard__user-profile-info .designation {
+    color: #808080; }
+  .dashboard__user-profile-info .edit {
+    color: #00b207;
+    margin-top: 9px; }
+
+.dashboard__user-billing-title {
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #999999;
+  letter-spacing: 0.03em;
+  margin-bottom: 18px; }
+
+.dashboard__user-billing-name, .dashboard__user-billing-location, .dashboard__user-billing-editaddress {
+  text-transform: capitalize; }
+
+.dashboard__user-billing-name, .dashboard__user-billing-email, .dashboard__user-billing-number {
+  color: #1a1a1a; }
+
+.dashboard__user-billing-location {
+  color: #666666; }
+
+.dashboard__user-billing-editaddress {
+  color: #00b207;
+  margin-top: 12px; }
+  .dashboard__user-billing-editaddress:hover {
+    color: #00b207; }
+
+.dashboard__user-billing-name, .dashboard__user-billing-location {
+  margin-bottom: 8px; }
+
+.dashboard__user-billing-email, .dashboard__user-billing-number {
+  margin-bottom: 6px; }
+
+@media (max-width: 991px) {
+  .dashboard__user-profile, .dashboard__user-billing {
+    margin-bottom: 24px;
+    height: auto; } }
 

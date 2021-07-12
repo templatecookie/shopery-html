@@ -1,0 +1,93 @@
+.dashboard {
+  &__content {
+    margin-top: 32px;
+  }
+
+  // User profile card
+  &__user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-bottom: 8px;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+
+    &-info {
+      .name,
+      .designation,
+      .edit {
+        text-transform: capitalize;
+      }
+      .name {
+        color: color(gray-9);
+      }
+      .designation {
+        color: color(gray-5);
+      }
+      .edit {
+        color: color(primary);
+        margin-top: 9px;
+      }
+    }
+  }
+  // User Billing card
+  &__user-billing {
+    &-title {
+      line-height: 14px;
+      text-transform: uppercase;
+      color: color(gray-4);
+      letter-spacing: 0.03em;
+      margin-bottom: 18px;
+    }
+
+    &-name,
+    &-location,
+    &-editaddress {
+      text-transform: capitalize;
+    }
+
+    &-name,
+    &-email,
+    &-number {
+      color: color(gray-9);
+    }
+    &-location {
+      color: color(gray-6);
+    }
+    &-editaddress {
+      color: color(primary);
+      margin-top: 12px;
+      &:hover {
+        color: color(primary);
+      }
+    }
+
+    &-name,
+    &-location {
+      margin-bottom: 8px;
+    }
+    &-email,
+    &-number {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__user-profile,
+  &__user-billing {
+    @include max(991px) {
+      margin-bottom: 24px;
+      height: auto;
+    }
+  }
+}
