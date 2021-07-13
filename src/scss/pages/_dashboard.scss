@@ -90,4 +90,85 @@
       height: auto;
     }
   }
+
+  // Order Hisotry
+  &__order-history {
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      @include max(767px) {
+        padding: 16px 12px;
+      }
+      h2,
+      a {
+        text-transform: capitalize;
+      }
+      h2 {
+        color: color(gray-9);
+        @include max(575px) {
+          font-size: 16px;
+        }
+      }
+      a {
+        color: color(primary);
+        @include max(575px) {
+          font-size: 14px;
+        }
+      }
+    }
+    &-table {
+      &-title,
+      &-item {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 12px 24px !important;
+        border-bottom: 0px !important;
+        @include max(767px) {
+          padding: 12px !important;
+        }
+      }
+
+      &-title {
+        color: color(gray-7);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-weight: 500;
+        background-color: color(gray-0) !important;
+      }
+
+      &-item {
+        font-weight: 400;
+        color: color(gray-8);
+        padding: 12px 24px !important;
+        @include max(767px) {
+          padding: 12px !important;
+        }
+        &:nth-last-child(1) {
+          padding-right: 24px !important;
+          text-align: right;
+        }
+
+        .order-total {
+          &-price {
+            font-weight: 500;
+            .quantity {
+              font-weight: 400;
+            }
+          }
+        }
+        &.order-details {
+          a {
+            font-weight: 500;
+            color: color(primary);
+          }
+        }
+      }
+    }
+  }
 }

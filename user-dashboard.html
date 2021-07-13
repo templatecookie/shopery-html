@@ -4,15 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>User Dashboard      || Shopery</title>
+        <title>User Dashboard || Shopery</title>
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
-    <body >
-
-
+    <body>
         <!-- Header Section start -->
         <header class="header header--one">
             <div class="header__top">
@@ -480,35 +478,136 @@
                                 </button>
                          </nav>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 section--xl pt-0">
+                        <div class="container">
+                                                    <!-- User Info -->
                        <div class="row">
-                           <!-- User Profile  -->
-                           <div class="col-lg-7">
-                            <div class="dashboard__user-profile dashboard-card">
-                                <div class="dashboard__user-profile-img">
-                                    <img src="src/images/user/img-01.png" alt="userImg">
+                        <!-- User Profile  -->
+                        <div class="col-lg-7">
+                         <div class="dashboard__user-profile dashboard-card">
+                             <div class="dashboard__user-profile-img">
+                                 <img src="src/images/user/img-01.png" alt="userImg">
+                             </div>
+                             <div class="dashboard__user-profile-info">
+                                 <h5 class="font-body--xxl-500 name">Dianne Russell</h5>
+                                 <p class="font-body--md-400 designation">Customer</p>
+                                 <a href="account-setting.html" class="edit font-body--lg-500"> Edit Profile </a>
+                             </div>
+                         </div>
+                        </div>
+                        <!-- User Billing Address -->
+                        <div class="col-lg-5">
+                            <div class="dashboard__user-billing dashboard-card">
+                                <h2 class="dashboard__user-billing-title font-body--md-500">Billing Address</h2>
+                                <div class="dashboard__user-billing-info">
+                                    <h5 class="dashboard__user-billing-name font-body--xl-500">Dainne Russell</h5>
+                                    <p class="dashboard__user-billing-location font-body--md-400">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                    <p class="dashboard__user-billing-email font-body--lg-400">dainne.ressell@gmail.com</p>
+                                    <p class="dashboard__user-billing-number font-body--lg-400">(671) 555-0110</p>
                                 </div>
-                                <div class="dashboard__user-profile-info">
-                                    <h5 class="font-body--xxl-500 name">Dianne Russell</h5>
-                                    <p class="font-body--md-400 designation">Customer</p>
-                                    <a href="account-setting.html" class="edit font-body--lg-500"> Edit Profile </a>
-                                </div>
+                                <a href="account-setting.html" class="dashboard__user-billing-editaddress font-body--lg-500"> Edit address</a>
                             </div>
-                           </div>
-                           <!-- User Billing Address -->
-                           <div class="col-lg-5">
-                               <div class="dashboard__user-billing dashboard-card">
-                                   <h2 class="dashboard__user-billing-title font-body--md-500">Billing Address</h2>
-                                   <div class="dashboard__user-billing-info">
-                                       <h5 class="dashboard__user-billing-name font-body--xl-500">Dainne Russell</h5>
-                                       <p class="dashboard__user-billing-location font-body--md-400">4140 Parker Rd. Allentown, New Mexico 31134</p>
-                                       <p class="dashboard__user-billing-email font-body--lg-400">dainne.ressell@gmail.com</p>
-                                       <p class="dashboard__user-billing-number font-body--lg-400">(671) 555-0110</p>
-                                   </div>
-                                   <a href="account-setting.html" class="dashboard__user-billing-editaddress font-body--lg-500"> Edit address</a>
+                        </div>
+                    </div>
+                    <!-- Order History  -->
+                    <div class="dashboard__order-history" style="margin-top: 24px;">
+                         <div class="dashboard__order-history-title">
+                             <h2 class="font-body--xxl-500">Recent Order History</h2>
+                             <a href="#" class="font-body--lg-500"> View All</a>
+                         </div>
+                         <div class="dashboard__order-history-table">
+                             <div class="table-responsive">
+                                 <table class="table">
+                                   <thead>
+                                     <tr>
+                                       <th scope="col" class="dashboard__order-history-table-title">Order Id </th>
+                                       <th scope="col" class="dashboard__order-history-table-title"> Date</th>
+                                       <th scope="col" class="dashboard__order-history-table-title">Total</th>
+                                       <th scope="col" class="dashboard__order-history-table-title">Status</th>
+                                       <th scope="col" class="dashboard__order-history-table-title"></th>
+                                      
+                                     </tr>
+                                   </thead>
+                                   <tbody>
+                                     <tr>
+                                     <!-- Order Id  -->
+                                     <td  class="dashboard__order-history-table-item order-id">#738</td>
+                                     <!-- Date  -->
+                                     <td class="dashboard__order-history-table-item order-date">8 Sep, 20220</td>
+                                     <!-- Total  -->
+                                     <td class="dashboard__order-history-table-item order-total"><p class="order-total-price"> $135.00 <span class="quantity"> (5 Products)</span> </p></td>
+                                     <!-- Status -->
+                                     <td class="dashboard__order-history-table-item order-status">Processing</td>
+                                     <!-- Details page  -->
+                                     <td class="dashboard__order-history-table-item order-details"> <a href="order-details.html"> View Details</a></td>
+                                     </tr>
+                                     <tr>
+                                     <!-- Order Id  -->
+                                     <td  class="dashboard__order-history-table-item order-id">#703</td>
+                                     <!-- Date  -->
+                                     <td class="dashboard__order-history-table-item order-date">24 May, 2020</td>
+                                     <!-- Total  -->
+                                     <td class="dashboard__order-history-table-item order-total"><p class="order-total-price"> $25.00 <span class="quantity"> (1 Products)</span> </p></td>
+                                     <!-- Status -->
+                                     <td class="dashboard__order-history-table-item order-status">on the way</td>
+                                     <!-- Details page  -->
+                                     <td class="dashboard__order-history-table-item order-details"> <a href="order-details.html"> View Details</a></td>
+                                     </tr>
+                                     <tr>
+                                     <!-- Order Id  -->
+                                     <td  class="dashboard__order-history-table-item order-id">#130</td>
+                                     <!-- Date  -->
+                                     <td class="dashboard__order-history-table-item order-date">22 Oct, 2020</td>
+                                     <!-- Total  -->
+                                     <td class="dashboard__order-history-table-item order-total"><p class="order-total-price"> $250.00 <span class="quantity"> (4 Products)</span> </p></td>
+                                     <!-- Status -->
+                                     <td class="dashboard__order-history-table-item order-status">Completed</td>
+                                     <!-- Details page  -->
+                                     <td class="dashboard__order-history-table-item order-details"> <a href="order-details.html"> View Details</a></td>
+                                     </tr>
+                                     <tr>
+                                     <!-- Order Id  -->
+                                     <td  class="dashboard__order-history-table-item order-id">#130</td>
+                                     <!-- Date  -->
+                                     <td class="dashboard__order-history-table-item order-date">22 Oct, 2020</td>
+                                     <!-- Total  -->
+                                     <td class="dashboard__order-history-table-item order-total"><p class="order-total-price"> $250.00 <span class="quantity"> (4 Products)</span> </p></td>
+                                     <!-- Status -->
+                                     <td class="dashboard__order-history-table-item order-status">Completed</td>
+                                     <!-- Details page  -->
+                                     <td class="dashboard__order-history-table-item order-details"> <a href="order-details.html"> View Details</a></td>
+                                     </tr>
+                                     <tr>
+                                     <!-- Order Id  -->
+                                     <td  class="dashboard__order-history-table-item order-id">#130</td>
+                                     <!-- Date  -->
+                                     <td class="dashboard__order-history-table-item order-date">22 Oct, 2020</td>
+                                     <!-- Total  -->
+                                     <td class="dashboard__order-history-table-item order-total"><p class="order-total-price"> $250.00 <span class="quantity"> (4 Products)</span> </p></td>
+                                     <!-- Status -->
+                                     <td class="dashboard__order-history-table-item order-status">Completed</td>
+                                     <!-- Details page  -->
+                                     <td class="dashboard__order-history-table-item order-details"> <a href="order-details.html"> View Details</a></td>
+                                     </tr>
+                                     <tr>
+                                     <!-- Order Id  -->
+                                     <td  class="dashboard__order-history-table-item order-id">#130</td>
+                                     <!-- Date  -->
+                                     <td class="dashboard__order-history-table-item order-date">22 Oct, 2020</td>
+                                     <!-- Total  -->
+                                     <td class="dashboard__order-history-table-item order-total"><p class="order-total-price"> $250.00 <span class="quantity"> (4 Products)</span> </p></td>
+                                     <!-- Status -->
+                                     <td class="dashboard__order-history-table-item order-status">Completed</td>
+                                     <!-- Details page  -->
+                                     <td class="dashboard__order-history-table-item order-details"> <a href="order-details.html"> View Details</a></td>
+                                     </tr>
+
+                                   </tbody>
+                                 </table>
                                </div>
-                           </div>
-                       </div>
+                         </div>
+                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -728,4 +827,5 @@
             });
         </script>
     </body>
+
 </html>

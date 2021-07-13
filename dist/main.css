@@ -14462,7 +14462,7 @@ ul.example li p {
   @media (max-width: 767px) {
     .dashboard__nav {
       width: 35%;
-      left: -70%; }
+      left: -35%; }
       .dashboard__nav.active {
         width: 70%; } }
   .dashboard__nav-title {
@@ -16561,4 +16561,71 @@ ul.example li p {
   .dashboard__user-profile, .dashboard__user-billing {
     margin-bottom: 24px;
     height: auto; } }
+
+.dashboard__order-history {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden; }
+  .dashboard__order-history-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px 24px; }
+    @media (max-width: 767px) {
+      .dashboard__order-history-title {
+        padding: 16px 12px; } }
+    .dashboard__order-history-title h2, .dashboard__order-history-title .h2,
+    .dashboard__order-history-title a {
+      text-transform: capitalize; }
+    .dashboard__order-history-title h2, .dashboard__order-history-title .h2 {
+      color: #1a1a1a; }
+      @media (max-width: 575px) {
+        .dashboard__order-history-title h2, .dashboard__order-history-title .h2 {
+          font-size: 16px; } }
+    .dashboard__order-history-title a {
+      color: #00b207; }
+      @media (max-width: 575px) {
+        .dashboard__order-history-title a {
+          font-size: 14px; } }
+  .dashboard__order-history-table-title, .dashboard__order-history-table-item {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 12px 24px !important;
+    border-bottom: 0px !important; }
+    @media (max-width: 767px) {
+      .dashboard__order-history-table-title, .dashboard__order-history-table-item {
+        padding: 12px !important; } }
+  .dashboard__order-history-table-title {
+    color: #4d4d4d;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #f2f2f2 !important; }
+  .dashboard__order-history-table-item {
+    font-weight: 400;
+    color: #333333;
+    padding: 12px 24px !important; }
+    @media (max-width: 767px) {
+      .dashboard__order-history-table-item {
+        padding: 12px !important; } }
+    .dashboard__order-history-table-item:nth-last-child(1) {
+      padding-right: 24px !important;
+      text-align: right; }
+    .dashboard__order-history-table-item .order-total-price {
+      font-weight: 500; }
+      .dashboard__order-history-table-item .order-total-price .quantity {
+        font-weight: 400; }
+    .dashboard__order-history-table-item.order-details a {
+      font-weight: 500;
+      color: #00b207; }
 
