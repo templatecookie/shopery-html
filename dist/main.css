@@ -16283,6 +16283,17 @@ ul.example li p {
     @media (max-width: 991px) {
       .products-video__card {
         margin-bottom: 24px; } }
+    @media (max-width: 540px) {
+      .products-video__card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .products-video__card-item {
       display: -webkit-box;
       display: -webkit-flex;
@@ -16292,6 +16303,11 @@ ul.example li p {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
+      @media (max-width: 540px) {
+        .products-video__card-item {
+          margin-bottom: 24px; }
+          .products-video__card-item:nth-last-child(1) {
+            margin-bottom: 0px; } }
       .products-video__card-item .icon {
         margin-right: 15px; }
       .products-video__card-item .text__info h5, .products-video__card-item .text__info .h5 {

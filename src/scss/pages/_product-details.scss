@@ -63,9 +63,19 @@
     @include max(991px) {
       margin-bottom: 24px;
     }
+    @include max(540px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &-item {
       display: flex;
       align-items: center;
+      @include max(540px) {
+        margin-bottom: 24px;
+        &:nth-last-child(1) {
+          margin-bottom: 0px;
+        }
+      }
       .icon {
         margin-right: 15px;
       }
