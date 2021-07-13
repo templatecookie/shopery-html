@@ -14396,7 +14396,7 @@ ul.example li p {
       -ms-flex-pack: center;
           justify-content: center;
   color: #666666; }
-  .pagination-link:hover {
+  .pagination-link:hover, .pagination-link.active {
     color: #fff;
     background-color: #00b207; }
 
@@ -16628,4 +16628,11 @@ ul.example li p {
     .dashboard__order-history-table-item.order-details a {
       font-weight: 500;
       color: #00b207; }
+
+.dashboard__order-pagination {
+  padding: 32px 0px;
+  padding-top: 12px; }
+  @media (max-width: 767px) {
+    .dashboard__order-pagination {
+      padding-top: 32px; } }
 

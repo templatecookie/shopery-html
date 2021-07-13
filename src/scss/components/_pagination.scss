@@ -28,7 +28,8 @@
     align-items: center;
     justify-content: center;
     color: color(gray-6);
-    &:hover {
+    &:hover,
+    &.active {
       color: #fff;
       background-color: color(primary);
     }

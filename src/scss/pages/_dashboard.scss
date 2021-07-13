@@ -171,4 +171,14 @@
       }
     }
   }
+
+  // Pagination
+  &__order-pagination {
+    padding: 32px 0px;
+    padding-top: 12px;
+
+    @include max(767px) {
+      padding-top: 32px;
+    }
+  }
 }
