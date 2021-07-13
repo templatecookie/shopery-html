@@ -12,9 +12,112 @@
   }
 }
 
+// Product video view
+.products-video {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: color(primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  &:hover {
+    .play-icon {
+      // color: color();
+      background-color: color(soft-primary);
+      transition: all 0.6s linear;
+    }
+  }
+
+  // video card item
+  &__card {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 24px 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-right: 15px;
+      }
+      .text__info {
+        h5 {
+          font-size: 14px;
+          line-height: 21px;
+          color: color(gray-9);
+          text-transform: capitalize;
+          font-weight: 500;
+          margin-bottom: 6px;
+        }
+        p {
+          font-size: 13px;
+          line-height: 19.5px;
+          color: color(gray-5);
+          text-transform: capitalize;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
 // Product Details tabcontent
 .products-tab {
-  // description tabs
+  // description tabs btn
+  &__btn {
+    padding: 0px 16px;
+    margin-bottom: 32px;
+    box-shadow: 0px 1px 0px 0px #e5e5e5;
+
+    .nav {
+      justify-content: center;
+      &-link {
+        font-size: 16px;
+        line-height: 24px;
+        color: color(gray-5);
+        font-weight: 500;
+        text-transform: capitalize;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 2px solid transparent;
+        &.active {
+          background-color: transparent;
+          color: color(gray-9);
+          border-color: color(primary);
+          transition: all 0.3s ease-in;
+        }
+      }
+    }
+  }
 
   // Description tab
   &__description--text {
@@ -23,5 +126,67 @@
     color: color(gray-5);
     font-weight: 400;
     margin-bottom: 30px;
+  }
+
+  // Description List
+  &__description {
+    &--list {
+      margin-bottom: 20px;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        .icon {
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          overflow: hidden;
+          background-color: color(primary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 8px;
+          color: #fff;
+        }
+        p {
+          font-size: 14px;
+          line-height: 19.6px;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: color(gray-5);
+        }
+      }
+    }
+  }
+
+  // Information
+  &__information-list {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      .title,
+      .title-description {
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: capitalize;
+        // color: color(gray-9);
+      }
+      .title {
+        width: 112px;
+        color: color(gray-9);
+        &-description {
+          color: color(gray-6);
+
+          &__tags-item {
+            color: color(gray-6);
+            &:hover {
+              color: color(gray-9);
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
   }
 }
