@@ -83,6 +83,170 @@
     }
   }
 
+  &__details-content {
+    margin: 24px;
+    @include max(767px) {
+      margin: 12px;
+    }
+  }
+
+  &__details-card,
+  &__totalpayment-card {
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    @include max(1200px) {
+      height: auto;
+    }
+  }
+
+  // Details card
+  &__details-card {
+    display: flex;
+    align-items: center;
+    @include max(1200px) {
+      margin-bottom: 24px;
+    }
+    @include max(767px) {
+      flex-direction: column;
+    }
+
+    &-item {
+      height: inherit;
+      border-right: 1px solid #e5efef;
+      &:nth-last-child(1) {
+        border-right: 0px;
+        @include max(767px) {
+          .dashboard__details-card-title {
+            border-top: 1px solid #e5efef;
+          }
+        }
+      }
+      @include max(767px) {
+        width: 100%;
+        border: 0px;
+      }
+
+      &__inner {
+        padding: 14px 20px;
+        @include max(767px) {
+          padding: 14px;
+        }
+        h2 {
+          text-transform: capitalize;
+          color: color(gray-9);
+          margin-bottom: 8px;
+        }
+        p {
+          text-transform: capitalize;
+          color: color(gray-6);
+        }
+
+        &-contact {
+          margin-bottom: 12px;
+          h5 {
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: color(gray-4);
+            margin-bottom: 4px;
+          }
+          p {
+            color: color(gray-9);
+          }
+        }
+      }
+    }
+
+    &-title {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      color: color(gray-4);
+      text-transform: uppercase;
+      padding: 18px 20px;
+      border-bottom: 1px solid #e5e5e5;
+      // @include max(767px) {
+      //   border-top: 1px solid #e5e5e5;
+      // }
+    }
+  }
+
+  // Payment total
+  &__totalpayment-card {
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e5e5e5;
+      &-item {
+        padding: 20px;
+        border-right: 1px solid #e5e5e5;
+        @include max(767px) {
+          padding: 20px 10px;
+        }
+        &:nth-last-child(1) {
+          border: 0px;
+        }
+        h5 {
+          font-size: 12px;
+          line-height: 12px;
+          letter-spacing: 0.03em;
+          color: color(gray-5);
+          text-transform: uppercase;
+          margin-bottom: 6px;
+        }
+        p {
+          color: color(gray-9);
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    &-body {
+      padding: 18px 20px;
+      @include max(767px) {
+        padding: 18px 10px;
+      }
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 0px;
+        border-bottom: 1px solid #e5e5e5;
+        &:nth-child(1) {
+          padding-top: 0px;
+        }
+        &:nth-last-child(1) {
+          border: 0px;
+        }
+
+        h5 {
+          text-transform: capitalize;
+          color: color(gray-6);
+        }
+        p {
+          font-weight: 500;
+          color: color(gray-9);
+          text-align: right;
+        }
+
+        &.total {
+          h5 {
+            color: color(gray-9);
+          }
+          p {
+            font-weight: 600;
+            color: color(hard-primary);
+          }
+        }
+      }
+    }
+  }
+
   &__user-profile,
   &__user-billing {
     @include max(991px) {

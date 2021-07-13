@@ -16557,6 +16557,152 @@ ul.example li p {
 .dashboard__user-billing-email, .dashboard__user-billing-number {
   margin-bottom: 6px; }
 
+.dashboard__details-content {
+  margin: 24px; }
+  @media (max-width: 767px) {
+    .dashboard__details-content {
+      margin: 12px; } }
+
+.dashboard__details-card, .dashboard__totalpayment-card {
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  @media (max-width: 1200px) {
+    .dashboard__details-card, .dashboard__totalpayment-card {
+      height: auto; } }
+
+.dashboard__details-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1200px) {
+    .dashboard__details-card {
+      margin-bottom: 24px; } }
+  @media (max-width: 767px) {
+    .dashboard__details-card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .dashboard__details-card-item {
+    height: inherit;
+    border-right: 1px solid #e5efef; }
+    .dashboard__details-card-item:nth-last-child(1) {
+      border-right: 0px; }
+      @media (max-width: 767px) {
+        .dashboard__details-card-item:nth-last-child(1) .dashboard__details-card-title {
+          border-top: 1px solid #e5efef; } }
+    @media (max-width: 767px) {
+      .dashboard__details-card-item {
+        width: 100%;
+        border: 0px; } }
+    .dashboard__details-card-item__inner {
+      padding: 14px 20px; }
+      @media (max-width: 767px) {
+        .dashboard__details-card-item__inner {
+          padding: 14px; } }
+      .dashboard__details-card-item__inner h2, .dashboard__details-card-item__inner .h2 {
+        text-transform: capitalize;
+        color: #1a1a1a;
+        margin-bottom: 8px; }
+      .dashboard__details-card-item__inner p {
+        text-transform: capitalize;
+        color: #666666; }
+      .dashboard__details-card-item__inner-contact {
+        margin-bottom: 12px; }
+        .dashboard__details-card-item__inner-contact h5, .dashboard__details-card-item__inner-contact .h5 {
+          font-size: 12px;
+          line-height: 12px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: #999999;
+          margin-bottom: 4px; }
+        .dashboard__details-card-item__inner-contact p {
+          color: #1a1a1a; }
+  .dashboard__details-card-title {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #999999;
+    text-transform: uppercase;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e5e5e5; }
+
+.dashboard__totalpayment-card-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5; }
+  .dashboard__totalpayment-card-header-item {
+    padding: 20px;
+    border-right: 1px solid #e5e5e5; }
+    @media (max-width: 767px) {
+      .dashboard__totalpayment-card-header-item {
+        padding: 20px 10px; } }
+    .dashboard__totalpayment-card-header-item:nth-last-child(1) {
+      border: 0px; }
+    .dashboard__totalpayment-card-header-item h5, .dashboard__totalpayment-card-header-item .h5 {
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0.03em;
+      color: #808080;
+      text-transform: uppercase;
+      margin-bottom: 6px; }
+    .dashboard__totalpayment-card-header-item p {
+      color: #1a1a1a;
+      text-transform: capitalize; }
+
+.dashboard__totalpayment-card-body {
+  padding: 18px 20px; }
+  @media (max-width: 767px) {
+    .dashboard__totalpayment-card-body {
+      padding: 18px 10px; } }
+  .dashboard__totalpayment-card-body-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 13px 0px;
+    border-bottom: 1px solid #e5e5e5; }
+    .dashboard__totalpayment-card-body-item:nth-child(1) {
+      padding-top: 0px; }
+    .dashboard__totalpayment-card-body-item:nth-last-child(1) {
+      border: 0px; }
+    .dashboard__totalpayment-card-body-item h5, .dashboard__totalpayment-card-body-item .h5 {
+      text-transform: capitalize;
+      color: #666666; }
+    .dashboard__totalpayment-card-body-item p {
+      font-weight: 500;
+      color: #1a1a1a;
+      text-align: right; }
+    .dashboard__totalpayment-card-body-item.total h5, .dashboard__totalpayment-card-body-item.total .h5 {
+      color: #1a1a1a; }
+    .dashboard__totalpayment-card-body-item.total p {
+      font-weight: 600;
+      color: #2c742f; }
+
 @media (max-width: 991px) {
   .dashboard__user-profile, .dashboard__user-billing {
     margin-bottom: 24px;
