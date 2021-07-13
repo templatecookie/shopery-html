@@ -16406,6 +16406,72 @@ ul.example li p {
           color: #1a1a1a;
           text-decoration: underline; }
 
+.products-tab__feedback-content {
+  padding: 20px 0px;
+  border-bottom: 1px solid #e5e5e5; }
+  .products-tab__feedback-content:nth-child(1) {
+    padding-top: 0px; }
+  .products-tab__feedback-content:nth-last-child(2) {
+    border-bottom: 0px; }
+  .products-tab__feedback-content-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 12px; }
+    .products-tab__feedback-content-top .user-details {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .products-tab__feedback-content-top .user-details__img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-right: 12px; }
+        .products-tab__feedback-content-top .user-details__img img {
+          width: inherit;
+          height: inherit;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .products-tab__feedback-content-top .user-details__info .user-name {
+        font-size: 14px;
+        line-height: 21px;
+        color: #1a1a1a;
+        text-transform: capitalize;
+        font-weight: 500; }
+      .products-tab__feedback-content-top .user-details__rating {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+    .products-tab__feedback-content-top .user-published__info p {
+      font-size: 14px;
+      line-height: 21px;
+      color: #999999;
+      text-transform: capitalize;
+      font-weight: 400; }
+
+.products-tab__feedback-comments {
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+  text-transform: capitalizes;
+  font-weight: 400; }
+
 .dashboard__content {
   margin-top: 32px; }
 
