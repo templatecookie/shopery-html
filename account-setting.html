@@ -512,116 +512,122 @@
                                 <div class="dashboard__content-card-header">
                                     <h5 class="font-body--xxl-500">Account Settings</h5>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-8 order-lg-0 order-2">
-                                        <form action="#">
-                                            <div class="contact-form__content">
-                                                <div class="contact-form-input">
-                                                    <label for="fname1">First Name </label>
-                                                    <input type="text" id="fname1" placeholder="Dianne" />
+                                <div class="dashboard__content-card-body">
+                                    <div class="row">
+                                        <div class="col-lg-7 order-lg-0 order-2">
+                                            <form action="#">
+                                                <div class="contact-form__content">
+                                                    <div class="contact-form-input">
+                                                        <label for="fname1">First Name </label>
+                                                        <input type="text" id="fname1" placeholder="Dianne" />
+                                                    </div>
+                                                    <div class="contact-form-input">
+                                                        <label for="lname2">Last Name </label>
+                                                        <input type="text" id="lname2" placeholder="Russell" />
+                                                    </div>
+                                                    <div class="contact-form-input">
+                                                        <label for="email1">Email </label>
+                                                        <input type="text" id="email1" placeholder="dianne.russell@gmail.com" />
+                                                    </div>
+                                                    <div class="contact-form-input">
+                                                        <label for="number1">Phone Number</label>
+                                                        <input type="number" id="number1" placeholder="(603) 555-0123" />
+                                                    </div>
+                                                    <div class="contact-form-btn">
+                                                        <button class="button button--md" type="submit">Save Changes</button>
+                                                    </div>
                                                 </div>
-                                                <div class="contact-form-input">
-                                                    <label for="lname2">Last Name </label>
-                                                    <input type="text" id="lname2" placeholder="Russell" />
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-5 order-lg-0 order-1">
+                                           <div class="dashboard__content-card-img">
+                                            <form action="#" style="text-align: center;">
+                                                <div class="dashboard__content-img-wrapper">
+                                                    <img src="src/images/user/img-07.png" alt="user-profile-img" />
                                                 </div>
-                                                <div class="contact-form-input">
-                                                    <label for="email1">Email </label>
-                                                    <input type="text" id="email1" placeholder="dianne.russell@gmail.com" />
-                                                </div>
-                                                <div class="contact-form-input">
-                                                    <label for="number1">Phone Number</label>
-                                                    <input type="number" id="number1" placeholder="(603) 555-0123" />
-                                                </div>
-                                                <div class="contact-form-btn">
-                                                    <button class="button button--md" type="submit">Save Changes</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-lg-4 order-lg-0 order-1">
-                                        <form action="#">
-                                            <div class="dashboard__content-cardimg">
-                                                <img src="src/images/user/img-07.png" alt="user-profile-img" />
-                                            </div>
-                                            <button class="button button--outline">Choose Image</button>
-                                        </form>
+                                                <button class="button button--outline">Choose Image</button>
+                                            </form>
+                                           </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Billing Address  -->
                             <div class="dashboard__content-card">
                                 <div class="dashboard__content-card-header">
                                     <h5 class="font-body--xxl-500">Billing Address</h5>
                                 </div>
-                                <form action="#">
-                                    <div class="contact-form__content">
-                                        <div class="contact-form__content-group">
-                                            <div class="contact-form-input">
-                                                <label for="fname">First Name </label>
-                                                <input type="text" id="fname" placeholder="Dianne" />
+                                <div class="dashboard__content-card-body">
+                                    <form action="#">
+                                        <div class="contact-form__content">
+                                            <div class="contact-form__content-group">
+                                                <div class="contact-form-input">
+                                                    <label for="fname">First Name </label>
+                                                    <input type="text" id="fname" placeholder="Dianne" />
+                                                </div>
+                                                <div class="contact-form-input">
+                                                    <label for="lname">Last Name </label>
+                                                    <input type="text" id="lname" placeholder="Dianne" />
+                                                </div>
+                                                <div class="contact-form-input">
+                                                    <label for="cname">Company Name <span>(Optional)</span> </label>
+                                                    <input type="text" id="cname" placeholder="Zakirsoft" />
+                                                </div>
                                             </div>
                                             <div class="contact-form-input">
-                                                <label for="lname">Last Name </label>
-                                                <input type="text" id="lname" placeholder="Dianne" />
+                                                <label for="address">Street Address </label>
+                                                <input type="text" id="address" placeholder="Mirpur, Dhaka" />
                                             </div>
-                                            <div class="contact-form-input">
-                                                <label for="cname">Company Name <span>(Optional)</span> </label>
-                                                <input type="text" id="cname" placeholder="Zakirsoft" />
+                                            <div class="contact-form__content-group">
+                                                <!-- Country -->
+                                                <div class="contact-form-input">
+                                                    <label for="country">Country / Region </label>
+                                                    <select id="country" class="contact-form-input__dropdown">
+                                                        <option value="01">United States</option>
+                                                        <option value="02">Canada</option>
+                                                        <option value="03">United Kingdom</option>
+                                                        <option value="04">Bangladesh</option>
+                                                    </select>
+                                                </div>
+                                                <!-- states -->
+                                                <div class="contact-form-input">
+                                                    <label for="states">states </label>
+                                                    <select id="states" class="contact-form-input__dropdown">
+                                                        <option value="01">Washington DC</option>
+                                                        <option value="02">Nova Scotia</option>
+                                                        <option value="03">Alberta</option>
+                                                        <option value="04">Manitoba</option>
+                                                        <option value="05">Dhaka</option>
+                                                    </select>
+                                                </div>
+                                                <!-- zip -->
+                                                <div class="contact-form-input">
+                                                    <label for="zip">Zip Code</label>
+                                                    <select id="zip" class="contact-form-input__dropdown">
+                                                        <option value="01">20033</option>
+                                                        <option value="02">975</option>
+                                                        <option value="03">880</option>
+                                                        <option value="04">95</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="contact-form__content-group">
+                                                <div class="contact-form-input">
+                                                    <label for="email"> email </label>
+                                                    <input type="text" id="email" placeholder="dianne.russell@gmail.com" />
+                                                </div>
+                                                <div class="contact-form-input">
+                                                    <label for="phone"> Phone </label>
+                                                    <input type="number" id="phone" placeholder="(603) 555-0123" />
+                                                </div>
+                                            </div>
+                                            <div class="contact-form-btn">
+                                                <button class="button button--md" type="submit">Save Changes</button>
                                             </div>
                                         </div>
-                                        <div class="contact-form-input">
-                                            <label for="address">Street Address </label>
-                                            <input type="text" id="address" placeholder="Mirpur, Dhaka" />
-                                        </div>
-                                        <div class="contact-form__content-group">
-                                            <!-- Country -->
-                                            <div class="contact-form-input">
-                                                <label for="country">Country / Region </label>
-                                                <select id="country" class="contact-form-input__dropdown">
-                                                    <option value="01">United States</option>
-                                                    <option value="02">Canada</option>
-                                                    <option value="03">United Kingdom</option>
-                                                    <option value="04">Bangladesh</option>
-                                                </select>
-                                            </div>
-                                            <!-- states -->
-                                            <div class="contact-form-input">
-                                                <label for="states">states </label>
-                                                <select id="states" class="contact-form-input__dropdown">
-                                                    <option value="01">Washington DC</option>
-                                                    <option value="02">Nova Scotia</option>
-                                                    <option value="03">Alberta</option>
-                                                    <option value="04">Manitoba</option>
-                                                    <option value="05">Dhaka</option>
-                                                </select>
-                                            </div>
-                                            <!-- zip -->
-                                            <div class="contact-form-input">
-                                                <label for="zip">Zip Code</label>
-                                                <select id="zip" class="contact-form-input__dropdown">
-                                                    <option value="01">20033</option>
-                                                    <option value="02">975</option>
-                                                    <option value="03">880</option>
-                                                    <option value="04">95</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="contact-form__content-group">
-                                            <div class="contact-form-input">
-                                                <label for="email"> email </label>
-                                                <input type="text" id="email" placeholder="dianne.russell@gmail.com" />
-                                            </div>
-                                            <div class="contact-form-input">
-                                                <label for="phone"> Phone </label>
-                                                <input type="number" id="phone" placeholder="(603) 555-0123" />
-                                            </div>
-                                        </div>
-                                        <div class="contact-form-btn">
-                                            <button class="button button--md" type="submit">Save Changes</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
 
                             <!-- Change Password  -->
@@ -629,57 +635,11 @@
                                 <div class="dashboard__content-card-header">
                                     <h5 class="font-body--xxl-500">Change Password</h5>
                                 </div>
-                                <form action="#">
-                                    <div class="contact-form__content">
-                                        <div class="contact-form-input">
-                                            <label for="cpassword">Current Password </label>
-                                            <input type="password" id="cpassword" placeholder="Password" />
-                                            <span class="icon">
-                                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1.66699 10.4993C1.66699 10.4993 4.69699 4.66602 10.0003 4.66602C15.3037 4.66602 18.3337 10.4993 18.3337 10.4993C18.3337 10.4993 15.3037 16.3327 10.0003 16.3327C4.69699 16.3327 1.66699 10.4993 1.66699 10.4993Z"
-                                                        stroke="#1A1A1A"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    />
-                                                    <path
-                                                        d="M10 13C10.663 13 11.2989 12.7366 11.7678 12.2678C12.2366 11.7989 12.5 11.163 12.5 10.5C12.5 9.83696 12.2366 9.20107 11.7678 8.73223C11.2989 8.26339 10.663 8 10 8C9.33696 8 8.70107 8.26339 8.23223 8.73223C7.76339 9.20107 7.5 9.83696 7.5 10.5C7.5 11.163 7.76339 11.7989 8.23223 12.2678C8.70107 12.7366 9.33696 13 10 13V13Z"
-                                                        stroke="#1A1A1A"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    />
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="contact-form__content-group">
-                                            <!-- New Password  -->
+                                <div class="dashboard__content-card-body">
+                                    <form action="#">
+                                        <div class="contact-form__content">
                                             <div class="contact-form-input">
-                                                <label for="npassword">new Password </label>
-                                                <input type="password" id="npassword" placeholder="Password" />
-                                                <span class="icon">
-                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M1.66699 10.4993C1.66699 10.4993 4.69699 4.66602 10.0003 4.66602C15.3037 4.66602 18.3337 10.4993 18.3337 10.4993C18.3337 10.4993 15.3037 16.3327 10.0003 16.3327C4.69699 16.3327 1.66699 10.4993 1.66699 10.4993Z"
-                                                            stroke="#1A1A1A"
-                                                            stroke-width="1.5"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        />
-                                                        <path
-                                                            d="M10 13C10.663 13 11.2989 12.7366 11.7678 12.2678C12.2366 11.7989 12.5 11.163 12.5 10.5C12.5 9.83696 12.2366 9.20107 11.7678 8.73223C11.2989 8.26339 10.663 8 10 8C9.33696 8 8.70107 8.26339 8.23223 8.73223C7.76339 9.20107 7.5 9.83696 7.5 10.5C7.5 11.163 7.76339 11.7989 8.23223 12.2678C8.70107 12.7366 9.33696 13 10 13V13Z"
-                                                            stroke="#1A1A1A"
-                                                            stroke-width="1.5"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        />
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <!-- confirm  Password  -->
-                                            <div class="contact-form-input">
-                                                <label for="cpassword">confirm Password</label>
+                                                <label for="cpassword">Current Password </label>
                                                 <input type="password" id="cpassword" placeholder="Password" />
                                                 <span class="icon">
                                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -700,12 +660,60 @@
                                                     </svg>
                                                 </span>
                                             </div>
+                                            <div class="contact-form__content-group">
+                                                <!-- New Password  -->
+                                                <div class="contact-form-input">
+                                                    <label for="npassword">new Password </label>
+                                                    <input type="password" id="npassword" placeholder="Password" />
+                                                    <span class="icon">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M1.66699 10.4993C1.66699 10.4993 4.69699 4.66602 10.0003 4.66602C15.3037 4.66602 18.3337 10.4993 18.3337 10.4993C18.3337 10.4993 15.3037 16.3327 10.0003 16.3327C4.69699 16.3327 1.66699 10.4993 1.66699 10.4993Z"
+                                                                stroke="#1A1A1A"
+                                                                stroke-width="1.5"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                            <path
+                                                                d="M10 13C10.663 13 11.2989 12.7366 11.7678 12.2678C12.2366 11.7989 12.5 11.163 12.5 10.5C12.5 9.83696 12.2366 9.20107 11.7678 8.73223C11.2989 8.26339 10.663 8 10 8C9.33696 8 8.70107 8.26339 8.23223 8.73223C7.76339 9.20107 7.5 9.83696 7.5 10.5C7.5 11.163 7.76339 11.7989 8.23223 12.2678C8.70107 12.7366 9.33696 13 10 13V13Z"
+                                                                stroke="#1A1A1A"
+                                                                stroke-width="1.5"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <!-- confirm  Password  -->
+                                                <div class="contact-form-input">
+                                                    <label for="cpassword">confirm Password</label>
+                                                    <input type="password" id="cpassword" placeholder="Password" />
+                                                    <span class="icon">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M1.66699 10.4993C1.66699 10.4993 4.69699 4.66602 10.0003 4.66602C15.3037 4.66602 18.3337 10.4993 18.3337 10.4993C18.3337 10.4993 15.3037 16.3327 10.0003 16.3327C4.69699 16.3327 1.66699 10.4993 1.66699 10.4993Z"
+                                                                stroke="#1A1A1A"
+                                                                stroke-width="1.5"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                            <path
+                                                                d="M10 13C10.663 13 11.2989 12.7366 11.7678 12.2678C12.2366 11.7989 12.5 11.163 12.5 10.5C12.5 9.83696 12.2366 9.20107 11.7678 8.73223C11.2989 8.26339 10.663 8 10 8C9.33696 8 8.70107 8.26339 8.23223 8.73223C7.76339 9.20107 7.5 9.83696 7.5 10.5C7.5 11.163 7.76339 11.7989 8.23223 12.2678C8.70107 12.7366 9.33696 13 10 13V13Z"
+                                                                stroke="#1A1A1A"
+                                                                stroke-width="1.5"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="contact-form-btn">
+                                                <button class="button button--md" type="submit">Change Password</button>
+                                            </div>
                                         </div>
-                                        <div class="contact-form-btn">
-                                            <button class="button button--md" type="submit">Change Password</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -913,11 +921,29 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
         <script>
+            var country = new BVSelect({
+                selector: "#country",
+                searchbox: false,
+                offset: false,
+                placeholder: "Eng",
+            });
+            var states = new BVSelect({
+                selector: "#states",
+                searchbox: false,
+                offset: false,
+                placeholder: "Washington DC",
+            });
+            var zip = new BVSelect({
+                selector: "#zip",
+                searchbox: false,
+                offset: false,
+                placeholder: "Eng",
+            });
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,
                 offset: false,
-                placeholder: "Eng",
+                placeholder: "20033",
             });
             var demo2 = new BVSelect({
                 selector: "#selectbox2",
