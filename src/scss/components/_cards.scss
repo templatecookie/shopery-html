@@ -1248,3 +1248,87 @@
   border-radius: 8px;
   overflow: hidden;
 }
+
+// Bills Cards
+.bill-card {
+  position: relative;
+  width: 100%;
+  padding: 24px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  @include max(767px) {
+    padding: 16px;
+  }
+
+  &__content {
+    margin-bottom: 24px;
+    &:nth-last-child(1) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 12px;
+  }
+
+  // product info
+  &__product {
+    margin-bottom: 12px;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-content {
+        display: flex;
+        align-items: center;
+        .img-wrapper {
+          position: relative;
+          width: 60px;
+          height: 60px;
+          overflow: hidden;
+          margin-right: 6px;
+
+          img {
+            width: inherit;
+            height: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  // memo
+  &__memo {
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0px;
+      border-bottom: 1px solid #e5e5e5;
+      &:nth-last-child(1) {
+        border-bottom: 0px;
+      }
+
+      p {
+        color: color(gray-7);
+        text-transform: capitalize;
+      }
+      span {
+        color: color(gray-9);
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  // Payments methods
+  &__payment-method {
+    margin-bottom: 24px;
+    &-item {
+      margin-bottom: 12px;
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
