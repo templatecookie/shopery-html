@@ -333,6 +333,30 @@
           }
         }
       }
+
+      &__product-content {
+        tbody {
+          tr {
+            position: relative;
+            width: 100%;
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 96%;
+              height: 1px;
+              background-color: #e5e5e5;
+            }
+            &:nth-last-child(1) {
+              &::after {
+                height: 0px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -528,6 +552,24 @@
     .button {
       margin: auto;
       text-align: center;
+    }
+  }
+
+  // Product
+  &__product-item {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      margin-right: 12px;
+      img {
+        width: inherit;
+        height: inherit;
+      }
     }
   }
 }
