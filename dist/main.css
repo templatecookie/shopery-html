@@ -14498,6 +14498,139 @@ ul.example li p {
             -ms-flex: 1;
                 flex: 1; }
 
+.progress__bar {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 24px;
+  margin-bottom: 40px; }
+  @media (max-width: 500px) {
+    .progress__bar {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 350px;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  .progress__bar .check-mark {
+    display: none; }
+  .progress__bar-1x .progress__bar-border-active, .progress__bar-2x .progress__bar-border-active, .progress__bar-3x .progress__bar-border-active, .progress__bar-4x .progress__bar-border-active {
+    -webkit-transition: all 0.6s linear;
+    transition: all 0.6s linear; }
+  .progress__bar-1x .progress__bar-border-active {
+    width: 20%; }
+    @media (max-width: 500px) {
+      .progress__bar-1x .progress__bar-border-active {
+        width: inherit;
+        height: 20%; } }
+  .progress__bar-2x .progress__bar-border-active {
+    width: 35%; }
+    @media (max-width: 500px) {
+      .progress__bar-2x .progress__bar-border-active {
+        width: inherit;
+        height: 35%; } }
+  .progress__bar-3x .progress__bar-border-active {
+    width: 70%; }
+    @media (max-width: 500px) {
+      .progress__bar-3x .progress__bar-border-active {
+        width: inherit;
+        height: 70%; } }
+  .progress__bar-4x .progress__bar-border-active {
+    width: 100%; }
+    @media (max-width: 500px) {
+      .progress__bar-4x .progress__bar-border-active {
+        width: inherit;
+        height: 100%; } }
+  .progress__bar-border {
+    position: absolute;
+    top: 30%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 75%;
+    height: 10px;
+    background-color: #f2f2f2;
+    z-index: -1; }
+    @media (max-width: 500px) {
+      .progress__bar-border {
+        top: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+        width: 10px;
+        height: 90%; } }
+    .progress__bar-border-active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      background-color: #00b207;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      -webkit-transition: all 0.6s linear;
+      transition: all 0.6s linear; }
+  .progress__bar-item {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1; }
+    .progress__bar-item-ball {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px dashed #00b207;
+      background-color: #fff; }
+      .progress__bar-item-ball .count-number {
+        color: #00b207; }
+    .progress__bar-item h2, .progress__bar-item .h2 {
+      text-transform: capitalize;
+      color: #2c742f;
+      margin-top: 8px; }
+    .progress__bar-item.active .progress__bar-item-ball {
+      background-color: #00b207; }
+      .progress__bar-item.active .progress__bar-item-ball .count-number {
+        color: #fff;
+        font-weight: 500; }
+        .progress__bar-item.active .progress__bar-item-ball .count-number-active {
+          display: none; }
+      .progress__bar-item.active .progress__bar-item-ball .check-mark {
+        display: block;
+        color: #fff; }
+    .progress__bar-item.active h2, .progress__bar-item.active .h2 {
+      font-weight: 500; }
+
 .shipping-container {
   margin-bottom: 26px; }
   .shipping-container--slider {
