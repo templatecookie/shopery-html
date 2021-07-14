@@ -18,8 +18,13 @@
 @import 'layout/products';
 @import 'layout/category';
 @import 'layout/newsletter';
+@import 'layout/hero';
+@import 'layout/blog-sidebar';
+@import 'layout/shop-sidebar';
 // @import 'layout/nav';
-// @import 'layout/breadcrumb';
+@import 'layout/breadcrumb';
+@import 'layout/contact-form';
+@import 'layout/maps';
 @import 'layout/footer';
 
 // components
@@ -31,10 +36,23 @@
 @import 'components/form';
 @import 'components/cards';
 @import 'components/countdown';
+@import 'components/accordion';
+@import 'components/social-icons';
+@import 'components/pagination';
+@import 'components/counter';
+@import 'components/navigation-card';
 
 // pages
 @import 'pages/home';
+@import 'pages/about';
+@import 'pages/single-blog';
 @import 'pages/contact';
+@import 'pages/error';
+@import 'pages/faq';
+@import 'pages/blogs';
+@import 'pages/shop';
+@import 'pages/product-details';
+@import 'pages/dashboard';
 
 // themes
 @import 'themes/theme';

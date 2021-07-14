@@ -24,6 +24,8 @@
  10. Brands name 
  11. Members 
  12. Instagram
+ 13.Blogs-list
+ 14.Shops
  
 \/\/\/\/\/\/\/\*/
 
@@ -40,6 +42,7 @@ var bannerOne = new Swiper('.banner-slider--one', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
   },
 });
 
@@ -55,6 +58,63 @@ var bannerTwo = new Swiper('.banner-slider--02', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+var bannerThree = new Swiper('.banner-slider--03', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+var bannerFour = new Swiper('.banner-slider--04', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ' .swiper-button--next',
+    prevEl: ' .swiper-button--prev',
+  },
+});
+
+var bannerFive = new Swiper('.banner-slider--05', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  effect: 'fade',
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ' .swiper-button--next',
+    prevEl: ' .swiper-button--prev',
   },
 });
 
@@ -576,6 +636,57 @@ var featuredFive = new Swiper('.featured-slider--five', {
   },
 });
 
+var featured = new Swiper('.related-slider--one', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+var featured = new Swiper('.our-feature--slider', {
+  spaceBetween: 24,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  // centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    },
+  },
+});
+
 // ====== News Slider one ====== \\
 var news = new Swiper('.news-slider--one', {
   spaceBetween: 24,
@@ -755,6 +866,10 @@ var memebers = new Swiper('.members-slider--one', {
     clickable: true,
     dynamicBullets: true,
   },
+  navigation: {
+    nextEl: ' .arrows__btn-prev ',
+    prevEl: ' .arrows__btn-next',
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -767,5 +882,38 @@ var memebers = new Swiper('.members-slider--one', {
       slidesPerView: 4,
       spaceBetween: 24,
     },
+  },
+});
+
+// Blogs
+var blogs = new Swiper('.blog-list--slider', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+// Shops
+var shops = new Swiper('.shop-slider--one', {
+  spaceBetween: 15,
+  loop: true,
+  loopFillGroupWithBlank: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
   },
 });

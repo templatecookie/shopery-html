@@ -1,0 +1,28 @@
+// Faq
+.faq {
+  overflow: hidden;
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  h5 {
+    margin-bottom: 32px;
+    color: color(gray-9);
+    @include max(767px) {
+      font-size: 28px;
+      line-height: 38px;
+      text-align: center;
+    }
+  }
+
+  &__img-wrapper {
+    position: absolute;
+    bottom: -100px;
+    @include max(991px) {
+      position: static;
+      margin-bottom: 30px;
+    }
+  }
+}

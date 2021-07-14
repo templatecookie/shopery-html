@@ -1,0 +1,37 @@
+.pagination {
+  &-item {
+    margin-right: 12px;
+    &:nth-last-child(1) {
+      margin-right: 0px;
+    }
+    &:first-child,
+    &:last-child {
+      .pagination-link {
+        border-radius: 50%;
+        color: color(gray-9);
+      }
+    }
+
+    &.disabled {
+      .pagination-link {
+        background-color: color(gray-0);
+        border-color: transparent;
+        color: color(gray-3);
+      }
+    }
+  }
+  &-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: color(gray-6);
+    &:hover,
+    &.active {
+      color: #fff;
+      background-color: color(primary);
+    }
+  }
+}

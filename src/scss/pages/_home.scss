@@ -24,6 +24,18 @@
   }
 }
 
+// banner promo video
+.banner-promo {
+  &--one {
+    .banner-promo {
+      &__content {
+        border-radius: 0px;
+        height: 396px;
+      }
+    }
+  }
+}
+
 //\\=======  Homepage 02 ========== //\\
 
 // Shipping Cards
@@ -84,6 +96,45 @@
 
 //\\=======  Homepage 03 ========== //\\
 
+// BANNER
+
+// Shipping container
+.shipping-container {
+  &--03 {
+    position: relative;
+    width: 1520px;
+    margin: auto;
+    @include max(1680px) {
+      width: 95%;
+    }
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 50%;
+    }
+    &::before {
+      top: 0;
+      background-color: color(green-0);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    &::after {
+      bottom: 0;
+      background-color: #fff;
+    }
+    .swiper-container {
+      width: 1400px;
+      margin: auto;
+      @include max(1680px) {
+        width: 90%;
+      }
+    }
+  }
+}
+
 // Top Category
 .category--top {
   .container {
@@ -122,10 +173,12 @@
 // 03. Shipping Container
 .shipping-container {
   &--three {
-    padding-top: 50px;
     margin-bottom: 0px;
-
     position: relative;
+
+    @include max(991px) {
+      margin-top: 30px;
+    }
 
     &::after,
     &::before {
@@ -312,6 +365,11 @@
           transition: all 0.3s linear;
           color: color(primary);
         }
+        svg {
+          @include max(767px) {
+            height: 60px;
+          }
+        }
       }
     }
   }
@@ -420,6 +478,17 @@
 }
 
 //\\=======  Homepage 05 ========== //\\
+
+// Shipping Container
+
+.shipping-container {
+  &--05 {
+    .shipping-container--slider {
+      box-shadow: none;
+      border-bottom: 2px solid color(gray-2);
+    }
+  }
+}
 
 .category--top {
   background: linear-gradient(180deg, #f2f5f3 20.01%, #ffffff 100%);
