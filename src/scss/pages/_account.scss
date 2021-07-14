@@ -1,0 +1,28 @@
+// Checkout
+.billing {
+  &__content {
+    margin-top: 32px;
+
+    &-card {
+      &:nth-last-child(1) {
+        .billing__content-card-body {
+          border-bottom: 0px;
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+        }
+      }
+      &-header {
+        h2 {
+          margin-bottom: 20px;
+          color: color(gray-9);
+          text-transform: capitalize;
+        }
+      }
+      &-body {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid #e5e5e5;
+      }
+    }
+  }
+}

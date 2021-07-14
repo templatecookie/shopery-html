@@ -12394,6 +12394,33 @@ a {
     top: 0;
     left: 0; }
 
+.form-check-label {
+  font-size: 14px;
+  line-height: 21px;
+  color: #4d4d4d;
+  font-weight: 400;
+  text-transform: capitalize; }
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  margin-right: 6px;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .form-check-input:checked {
+    background-color: #00b207;
+    border-color: #00b207;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .form-check-input:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #00b207; }
+
 .contact-form__contact-info, .contact-form-card {
   position: relative;
   background-color: #fff;
@@ -12546,6 +12573,182 @@ a {
 
 .contact-form-button {
   margin-top: 24px; }
+
+.contact-form__content-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 991px) {
+    .contact-form__content-group {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .contact-form__content-group .contact-form-input {
+    margin-right: 16px;
+    width: 100%; }
+    @media (max-width: 991px) {
+      .contact-form__content-group .contact-form-input {
+        margin-right: 0px; } }
+    .contact-form__content-group .contact-form-input:nth-last-child(1) {
+      margin-right: 0px; }
+
+.contact-form-input {
+  margin-bottom: 16px;
+  position: relative; }
+  .contact-form-input label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #1a1a1a;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    display: block; }
+    .contact-form-input label span {
+      color: #666666; }
+  .contact-form-input input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 60px;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #666666;
+    font-weight: 400;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    background-color: #fff; }
+    @media (max-width: 767px) {
+      .contact-form-input input {
+        padding-right: 16px; } }
+    .contact-form-input input::-webkit-outer-spin-button, .contact-form-input input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .contact-form-input input::-webkit-input-placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+    .contact-form-input input::-moz-placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+    .contact-form-input input:-ms-input-placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+    .contact-form-input input::-ms-input-placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+    .contact-form-input input::placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+      @media (max-width: 767px) {
+        .contact-form-input input::-webkit-input-placeholder {
+          font-size: 12px; }
+        .contact-form-input input::-moz-placeholder {
+          font-size: 12px; }
+        .contact-form-input input:-ms-input-placeholder {
+          font-size: 12px; }
+        .contact-form-input input::-ms-input-placeholder {
+          font-size: 12px; }
+        .contact-form-input input::placeholder {
+          font-size: 12px; } }
+    @media (max-width: 767px) {
+      .contact-form-input input[type='password'] {
+        padding-right: 60px; } }
+    .contact-form-input input:active, .contact-form-input input:hover {
+      border-color: #00b207;
+      -webkit-transform: all 0.3s linear;
+              transform: all 0.3s linear; }
+  .contact-form-input .bv_mainselect {
+    padding: 0px;
+    border: 1px solid #e5e5e5;
+    height: 50px; }
+    .contact-form-input .bv_mainselect:hover, .contact-form-input .bv_mainselect.active {
+      border-color: #00b207;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .contact-form-input .bv_mainselect .bv_atual {
+      border: 0px;
+      height: inherit;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 16px;
+      line-height: 30px;
+      color: #666666;
+      padding-left: 16px; }
+      .contact-form-input .bv_mainselect .bv_atual:hover, .contact-form-input .bv_mainselect .bv_atual.active {
+        border-color: #00b207;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
+      .contact-form-input .bv_mainselect .bv_atual .arrow {
+        border-color: #999999;
+        border-width: 0 1.5px 1.5px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-top: 8px;
+        margin-right: 8px; }
+    .contact-form-input .bv_mainselect .bv_ul_inner {
+      border: 1px solid #e5e5e5;
+      z-index: 9; }
+  .contact-form-input .icon {
+    position: absolute;
+    top: calc(50% + 10px);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 18px;
+    cursor: pointer; }
+
+.contact-form-textarea textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 400;
+  color: #666666; }
+  .contact-form-textarea textarea:hover, .contact-form-textarea textarea.active {
+    border-color: #00b207;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .contact-form-textarea textarea::-webkit-input-placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit; }
+  .contact-form-textarea textarea::-moz-placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit; }
+  .contact-form-textarea textarea:-ms-input-placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit; }
+  .contact-form-textarea textarea::-ms-input-placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit; }
+  .contact-form-textarea textarea::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit; }
+
+.contact-form-btn {
+  margin-top: 8px; }
 
 .iframe__canvas {
   width: 100%;
@@ -16947,144 +17150,6 @@ ul.example li p {
   .dashboard__content-card-body {
     padding: 24px; }
 
-.dashboard .contact-form__content-group {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  @media (max-width: 991px) {
-    .dashboard .contact-form__content-group {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
-  .dashboard .contact-form__content-group .contact-form-input {
-    margin-right: 16px;
-    width: 100%; }
-    @media (max-width: 991px) {
-      .dashboard .contact-form__content-group .contact-form-input {
-        margin-right: 0px; } }
-    .dashboard .contact-form__content-group .contact-form-input:nth-last-child(1) {
-      margin-right: 0px; }
-
-.dashboard .contact-form-input {
-  margin-bottom: 16px;
-  position: relative; }
-  .dashboard .contact-form-input label {
-    font-size: 14px;
-    line-height: 21px;
-    color: #1a1a1a;
-    text-transform: capitalize;
-    margin-bottom: 6px;
-    display: block; }
-  .dashboard .contact-form-input input {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    padding-left: 16px;
-    padding-right: 60px;
-    font-size: 16px;
-    line-height: 20.8px;
-    color: #666666;
-    font-weight: 400;
-    border: 1px solid #e5e5e5;
-    border-radius: 6px;
-    background-color: #fff; }
-    @media (max-width: 767px) {
-      .dashboard .contact-form-input input {
-        padding-right: 16px; } }
-    .dashboard .contact-form-input input::-webkit-outer-spin-button, .dashboard .contact-form-input input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0; }
-    .dashboard .contact-form-input input::-webkit-input-placeholder {
-      font-size: inherit;
-      line-height: inherit;
-      color: inherit; }
-    .dashboard .contact-form-input input::-moz-placeholder {
-      font-size: inherit;
-      line-height: inherit;
-      color: inherit; }
-    .dashboard .contact-form-input input:-ms-input-placeholder {
-      font-size: inherit;
-      line-height: inherit;
-      color: inherit; }
-    .dashboard .contact-form-input input::-ms-input-placeholder {
-      font-size: inherit;
-      line-height: inherit;
-      color: inherit; }
-    .dashboard .contact-form-input input::placeholder {
-      font-size: inherit;
-      line-height: inherit;
-      color: inherit; }
-      @media (max-width: 767px) {
-        .dashboard .contact-form-input input::-webkit-input-placeholder {
-          font-size: 12px; }
-        .dashboard .contact-form-input input::-moz-placeholder {
-          font-size: 12px; }
-        .dashboard .contact-form-input input:-ms-input-placeholder {
-          font-size: 12px; }
-        .dashboard .contact-form-input input::-ms-input-placeholder {
-          font-size: 12px; }
-        .dashboard .contact-form-input input::placeholder {
-          font-size: 12px; } }
-    @media (max-width: 767px) {
-      .dashboard .contact-form-input input[type='password'] {
-        padding-right: 60px; } }
-    .dashboard .contact-form-input input:active, .dashboard .contact-form-input input:hover {
-      border-color: #00b207;
-      -webkit-transform: all 0.3s linear;
-              transform: all 0.3s linear; }
-  .dashboard .contact-form-input .bv_mainselect {
-    padding: 0px;
-    border: 1px solid #e5e5e5;
-    height: 50px; }
-    .dashboard .contact-form-input .bv_mainselect:hover, .dashboard .contact-form-input .bv_mainselect.active {
-      border-color: #00b207;
-      -webkit-transition: all 0.3s linear;
-      transition: all 0.3s linear; }
-    .dashboard .contact-form-input .bv_mainselect .bv_atual {
-      border: 0px;
-      height: inherit;
-      border-bottom: 1px solid #e5e5e5;
-      font-size: 16px;
-      line-height: 30px;
-      color: #666666;
-      padding-left: 16px; }
-      .dashboard .contact-form-input .bv_mainselect .bv_atual:hover, .dashboard .contact-form-input .bv_mainselect .bv_atual.active {
-        border-color: #00b207;
-        -webkit-transition: all 0.3s linear;
-        transition: all 0.3s linear; }
-      .dashboard .contact-form-input .bv_mainselect .bv_atual .arrow {
-        border-color: #999999;
-        border-width: 0 1.5px 1.5px 0;
-        display: inline-block;
-        padding: 3px;
-        margin-top: 8px;
-        margin-right: 8px; }
-    .dashboard .contact-form-input .bv_mainselect .bv_ul_inner {
-      border: 1px solid #e5e5e5;
-      z-index: 9; }
-  .dashboard .contact-form-input .icon {
-    position: absolute;
-    top: calc(50% + 10px);
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 18px;
-    cursor: pointer; }
-
-.dashboard .contact-form-btn {
-  margin-top: 8px; }
-
 .dashboard__content-card-img {
   display: -webkit-box;
   display: -webkit-flex;
@@ -17141,4 +17206,19 @@ ul.example li p {
     .dashboard__product-item-img img {
       width: inherit;
       height: inherit; }
+
+.billing__content {
+  margin-top: 32px; }
+  .billing__content-card:nth-last-child(1) .billing__content-card-body {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+  .billing__content-card-header h2, .billing__content-card-header .h2 {
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    text-transform: capitalize; }
+  .billing__content-card-body {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5; }
 
