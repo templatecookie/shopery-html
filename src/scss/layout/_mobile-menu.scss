@@ -89,6 +89,10 @@
       width: 100%;
       position: relative;
 
+      &.active {
+        color: color(primary);
+      }
+
       &:hover {
         color: inherit;
       }

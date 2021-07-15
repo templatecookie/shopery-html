@@ -10464,6 +10464,8 @@ a {
     margin-left: 24px;
     width: 100%;
     position: relative; }
+    .header__mobile-menu-item-link.active {
+      color: #00b207; }
     .header__mobile-menu-item-link:hover {
       color: inherit; }
     .header__mobile-menu-item-link .drop-icon {
