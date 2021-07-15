@@ -45,6 +45,7 @@
     letter-spacing: 0.03em;
     font-weight: 500;
     color: color(gray-5);
+    text-transform: uppercase;
     padding: 16px 24px !important;
     border-color: #e5e5e5 !important;
   }
@@ -75,7 +76,9 @@
     position: relative;
     padding: 12px 24px !important;
     border: 0px;
-
+    @include max(991px) {
+      padding: 12px !important;
+    }
     &:nth-child(1) {
       padding-top: 0px !important;
     }
@@ -83,6 +86,40 @@
     &.order-subtotal {
       p {
         margin-right: 15px;
+      }
+    }
+
+    &.stock-status {
+      .in,
+      .out {
+        padding: 4px 8px;
+        border-radius: 4px;
+        text-transform: capitalize;
+        @include max(767px) {
+          font-size: 10px;
+        }
+      }
+      .in {
+        background: #20b52633;
+        color: color(hard-primary);
+      }
+      .out {
+        background: #ea4b4833;
+        color: #ea4b48;
+      }
+    }
+
+    &.add-cart {
+      .add-cart__wrapper {
+        display: flex;
+        .button {
+          margin-right: 25px;
+          flex-shrink: 0;
+          &--disable {
+            background-color: color(gray-0);
+            color: color(gray-3);
+          }
+        }
       }
     }
   }
