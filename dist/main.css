@@ -10363,17 +10363,28 @@ a {
     .header__activity-icons .user-icon {
       display: none; } }
 
-.header__mobile-sidebar {
-  display: none !important;
+.header__sidebar {
   background-color: #fff;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 308px;
+  left: -340px;
+  width: 150px;
   height: 100%;
   padding: 24px 0px;
   z-index: 9999;
-  overflow-y: auto;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .header__sidebar.active {
+    left: 0px;
+    width: 308px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    @media (max-width: 380px) {
+      .header__sidebar.active {
+        width: 270px; } }
+
+.header__mobile-sidebar {
+  height: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10386,7 +10397,8 @@ a {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  overflow-y: auto; }
 
 .header__mobile-input {
   position: relative;
@@ -10397,6 +10409,9 @@ a {
   border: 1px solid #e5e5e5;
   overflow: hidden;
   margin: 0px 24px; }
+  @media (max-width: 380px) {
+    .header__mobile-input {
+      width: 230px; } }
   .header__mobile-input input {
     width: 80%;
     height: inherit;
@@ -10473,6 +10488,8 @@ a {
     margin: 12px 0px; }
     .header__mobile-dropdown-menu-link:nth-last-child(1) {
       margin-bottom: 0px; }
+    .header__mobile-dropdown-menu-link.active a {
+      color: #00b207; }
     .header__mobile-dropdown-menu-link a {
       font-size: 14px;
       line-height: 21px;
@@ -10484,6 +10501,9 @@ a {
 
 .header__mobile-action, .header__mobile-user {
   padding-left: 24px; }
+  @media (max-width: 380px) {
+    .header__mobile-action, .header__mobile-user {
+      padding-left: 15px; } }
 
 .header__mobile-action a {
   margin-right: 16px; }
@@ -10514,9 +10534,9 @@ a {
     color: #808080; }
 
 .header__cross {
-  position: fixed;
-  left: 338px;
-  top: 40px;
+  position: absolute;
+  top: 30px;
+  right: -40px;
   color: #fff; }
 
 .header__mobile-menu-item.active .header__mobile-menu-item-link .drop-icon {
