@@ -13790,7 +13790,8 @@ body.overlay {
 .cards-tm,
 .cards-mm,
 .cards-tm-2__top,
-.dashboard-card {
+.dashboard-card,
+.template-card {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13807,7 +13808,8 @@ body.overlay {
   .cards-tm:hover,
   .cards-mm:hover,
   .cards-tm-2__top:hover,
-  .dashboard-card:hover {
+  .dashboard-card:hover,
+  .template-card:hover {
     border: 1px solid #2c742f;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -13847,7 +13849,11 @@ body.overlay {
     .dashboard-card:hover h5,
     .dashboard-card:hover .h5,
     .dashboard-card:hover h6,
-    .dashboard-card:hover .h6 {
+    .dashboard-card:hover .h6,
+    .template-card:hover h5,
+    .template-card:hover .h5,
+    .template-card:hover h6,
+    .template-card:hover .h6 {
       color: #2c742f; }
     .cards-sm:hover .cards-md__info-right .action-btn,
     .cards-sm--two:hover .cards-md__info-right .action-btn,
@@ -13857,7 +13863,8 @@ body.overlay {
     .cards-tm:hover .cards-md__info-right .action-btn,
     .cards-mm:hover .cards-md__info-right .action-btn,
     .cards-tm-2__top:hover .cards-md__info-right .action-btn,
-    .dashboard-card:hover .cards-md__info-right .action-btn {
+    .dashboard-card:hover .cards-md__info-right .action-btn,
+    .template-card:hover .cards-md__info-right .action-btn {
       color: #fff;
       background-color: #00b207; }
 
@@ -14931,6 +14938,15 @@ body.overlay {
       margin-bottom: 12px; }
       .bill-card__payment-method-item:nth-last-child(1) {
         margin-bottom: 0px; }
+
+.template-card {
+  padding: 40px;
+  text-align: center; }
+  @media (max-width: 991px) {
+    .template-card {
+      margin-bottom: 24px; } }
+  .template-card .icon-box {
+    margin-bottom: 25px; }
 
 ul.example {
   list-style: none;

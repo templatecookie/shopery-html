@@ -6,7 +6,8 @@
 .cards-tm,
 .cards-mm,
 .cards-tm-2__top,
-.dashboard-card {
+.dashboard-card,
+.template-card {
   position: relative;
   box-sizing: border-box;
   border: 1px solid color(gray-1);
@@ -1330,5 +1331,17 @@
         margin-bottom: 0px;
       }
     }
+  }
+}
+
+// Template featured card
+.template-card {
+  padding: 40px;
+  text-align: center;
+  @include max(991px) {
+    margin-bottom: 24px;
+  }
+  .icon-box {
+    margin-bottom: 25px;
   }
 }
