@@ -25,3 +25,24 @@
     justify-content: flex-start !important;
   }
 }
+
+.info-countdown__card {
+  .timer-body-block {
+    justify-content: center;
+    .table-cell {
+      .tab-val {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+        color: color(gray-9);
+      }
+      .tab-unit {
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.03em;
+        color: color(gray-4);
+        font-weight: 500;
+      }
+    }
+  }
+}

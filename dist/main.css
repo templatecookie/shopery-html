@@ -15084,6 +15084,23 @@ body.overlay {
       -ms-flex-pack: start !important;
           justify-content: flex-start !important; }
 
+.info-countdown__card .timer-body-block {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .info-countdown__card .timer-body-block .table-cell .tab-val {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #1a1a1a; }
+  .info-countdown__card .timer-body-block .table-cell .tab-unit {
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.03em;
+    color: #999999;
+    font-weight: 500; }
+
 .accordion-button {
   outline: none; }
   .accordion-button:active, .accordion-button:focus {
