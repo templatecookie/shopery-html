@@ -10515,6 +10515,18 @@ a {
   overflow: visible;
   pointer-events: all; }
 
+body.overlay {
+  position: relative; }
+  body.overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999; }
+
 .banner {
   position: relative; }
   @media (min-width: 575px) {
@@ -12350,6 +12362,112 @@ a {
         -ms-flex-align: center;
             align-items: center; }
 
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 455px;
+  height: 100%;
+  padding: 40px;
+  overflow-y: auto;
+  background-color: #fff;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 767px) {
+    .shopping-cart {
+      width: 100%;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; } }
+  .shopping-cart-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px; }
+  .shopping-cart__product-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 12px 0px;
+    border-bottom: 1px solid #e5e5e5; }
+    .shopping-cart__product-content-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .shopping-cart__product-content-item .img-wrapper {
+        width: 120px;
+        height: 100px;
+        overflow: hidden;
+        margin-right: 8px; }
+        .shopping-cart__product-content-item .img-wrapper img {
+          width: inherit;
+          height: inherit;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .shopping-cart__product-content-item .text-content p {
+        color: #808080; }
+        .shopping-cart__product-content-item .text-content p span {
+          color: #1a1a1a; }
+    .shopping-cart__product-content:nth-child(1) {
+      padding-top: 0px; }
+    .shopping-cart__product-content:nth-last-child(1) {
+      border: 0px; }
+  .shopping-cart-product-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 24px; }
+    .shopping-cart-product-info p,
+    .shopping-cart-product-info span {
+      color: #1a1a1a; }
+  .shopping-cart-bottom button {
+    margin-bottom: 12px; }
+    .shopping-cart-bottom button:nth-last-child(1) {
+      margin-bottom: 0px; }
+
 .breedcrumb__img-wrapper {
   position: relative;
   width: 100%;
@@ -13168,7 +13286,8 @@ a {
   background-color: #00b207;
   display: inline-block;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize; }
   .button span {
     margin-left: 12px; }
   .button:hover {
