@@ -17993,3 +17993,29 @@ ul.example li p {
     color: #fff;
     text-transform: capitalize; }
 
+.call-action {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  height: 660px; }
+  .call-action__text-content h2, .call-action__text-content .h2 {
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    color: #002603; }
+    @media (max-width: 767px) {
+      .call-action__text-content h2, .call-action__text-content .h2 {
+        margin-bottom: 30px; } }
+  .call-action__btn-group a {
+    margin: 0px 8px; }
+
