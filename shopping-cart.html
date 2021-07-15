@@ -384,10 +384,123 @@
         <!-- breedcrumb section end   -->
 
         <!-- Shopping Cart Section Start   -->
-        <section class="shoping-cart">
+        <section class="shoping-cart section section--xl ">
             <div class="container">
+
+                <div class="section__head justify-content-center">
+                    <h2 class="section--title-four font-title--sm">My Shopping Cart</h2>
+                </div> 
                 <div class="row shoping-cart__content">
-                    <div class="col-lg-8"></div>
+                    <div class="col-lg-8">
+
+                        <div class="cart-table">
+                            <div class="table-responsive">
+                                <table class="table">
+                                  <thead >
+                                    <tr >
+                                      <th scope="col" class="cart-table-title">Product</th>
+                                      <th scope="col" class="cart-table-title"> Price</th>
+                                      <th scope="col" class="cart-table-title"> quantity</th>
+                                      <th scope="col" class="cart-table-title">Subtotal</th>
+                                     
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                        <!-- Product item  -->
+                                           <td class="cart-table-item align-middle">
+                                            <div class="cart-table__product-item">
+                                                <div class="cart-table__product-item-img">
+                                                    <img src="src/images/products/img-01.png" alt="product">
+                                                </div>
+                                                <h5 class="font-body--lg-400">Green Apple</h5>
+                                            </div>
+                                        </td>
+                                        <!-- Price  -->
+                                        <td class="cart-table-item order-date align-middle">$14.00</td>
+                                        <!-- quantity -->
+                                        <td class="cart-table-item order-total align-middle">
+                                             <div class="counter-btn-wrapper">
+                                                 <button class="counter-btn-dec counter-btn " onclick="decrement()">-</button>
+                                                 <input type="number"  id="counter-btn-counter" class="counter-btn-counter" min="0" max="1000" placeholder="0">
+                                                 <button class="counter-btn-inc counter-btn " onclick="increment()">+</button>
+
+                                             </div>
+                                        </td>
+                                        <!-- Subtotal  -->
+                                        <td class="cart-table-item order-subtotal align-middle" >
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="font-body--md-500">$70.00</p>
+                                                <button class="delete-item">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 23.5C18.0748 23.5 23 18.5748 23 12.5C23 6.42525 18.0748 1.5 12 1.5C5.92525 1.5 1 6.42525 1 12.5C1 18.5748 5.92525 23.5 12 23.5Z" stroke="#CCCCCC" stroke-miterlimit="10"/>
+                                                        <path d="M16 8.5L8 16.5" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M16 16.5L8 8.5" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Product item  -->
+                                           <td class="cart-table-item align-middle">
+                                            <div class="cart-table__product-item">
+                                                <div class="cart-table__product-item-img">
+                                                    <img src="src/images/products/img-02.png" alt="product">
+                                                </div>
+                                                <h5 class="font-body--lg-400">Fresh Orrange</h5>
+                                            </div>
+                                        </td>
+                                        <!-- Price  -->
+                                        <td class="cart-table-item order-date align-middle">$14.00</td>
+                                        <!-- quantity -->
+                                        <td class="cart-table-item order-total align-middle">
+                                             <div class="counter-btn-wrapper">
+                                                 <button class="counter-btn-dec counter-btn " onclick="decrement()">-</button>
+                                                 <input type="number"  id="counter-btn-counter" class="counter-btn-counter" min="0" max="1000" placeholder="0">
+                                                 <button class="counter-btn-inc counter-btn " onclick="increment()">+</button>
+
+                                             </div>
+                                        </td>
+                                        <!-- Subtotal  -->
+                                        <td class="cart-table-item order-subtotal align-middle" >
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="font-body--md-500">$70.00</p>
+                                                <button class="delete-item">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 23.5C18.0748 23.5 23 18.5748 23 12.5C23 6.42525 18.0748 1.5 12 1.5C5.92525 1.5 1 6.42525 1 12.5C1 18.5748 5.92525 23.5 12 23.5Z" stroke="#CCCCCC" stroke-miterlimit="10"/>
+                                                        <path d="M16 8.5L8 16.5" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M16 16.5L8 8.5" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div>
+                            <!-- Action Buttons  -->
+                            <form action="#">
+                                <div class="cart-table-action-btn d-flex ">
+                                    <button class="button button--md button--disable shop">Return to Shop</button>
+                                    <button class="button button--md button--disable update">Update to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- newsletter  -->
+                        <div class="newsletter-card">
+                            <h5 class="newsletter-card-title font-body--xxl-500">Coupon Code </h5>
+                            <form action="#">
+                                <div class="newsletter-card__input">
+                                    <input type="text" placeholder="Enter Code ">
+                                    <button class="button button--lg" type="submit">Apply Coupon</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     
                     <div class="col-lg-4">
                         <div class="bill-card">
@@ -628,6 +741,15 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
         <script>
+
+    function increment() {
+        document.getElementById('counter-btn-counter').stepUp();
+    }
+    function decrement() {
+        document.getElementById('counter-btn-counter').stepDown();
+    }
+
+
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,
@@ -640,6 +762,9 @@
                 offset: false,
                 placeholder: "USD",
             });
+
+
+
         </script>
     </body>
 </html>
