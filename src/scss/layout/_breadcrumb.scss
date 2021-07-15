@@ -18,12 +18,20 @@
     display: flex;
     align-items: center;
     li {
+      &:nth-child(2),
+      &:nth-child(3) {
+        @include max(575px) {
+          display: none;
+        }
+      }
       a {
         font-size: 16px;
         line-height: 24px;
         color: color(gray-4);
         font-weight: 400;
         text-transform: capitalize;
+        display: flex;
+        align-items: center;
         span {
           margin: 0px 12px;
         }
