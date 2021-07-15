@@ -72,6 +72,232 @@
   }
 }
 
+// Products details
+
+.products__content {
+  padding: 20px 0px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:nth-child(1) {
+    padding-top: 0px;
+  }
+  &:nth-last-child(1) {
+    border: 0px;
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    h2 {
+      @include max(575px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    span {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      text-transform: capitalize;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin: 0px 8px;
+      flex-shrink: 0;
+      &.stock-in {
+        background: #20b52633;
+        color: color(hard-primary);
+      }
+      &.stock-out {
+        background: #ea4b481a;
+        color: color(danger);
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+
+    .ratings {
+      display: flex;
+      align-items: center;
+      .review-count {
+        color: color(gray-6);
+      }
+    }
+    .dot {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+      color: color(gray-3);
+      margin: 0px 12px;
+    }
+    h5 {
+      color: color(gray-9);
+      text-transform: uppercase;
+      .counting {
+        color: color(gray-6);
+      }
+    }
+  }
+
+  &-price {
+    display: flex;
+    align-items: center;
+    h2 {
+      color: color(hard-primary);
+      del {
+        color: color(gray-3);
+      }
+    }
+    .label {
+      margin-left: 12px;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: capitalize;
+      font-weight: 500;
+      &.sale-off {
+        background: #ea4b481a;
+        color: color(danger);
+      }
+    }
+  }
+
+  &-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    @include max(767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .brand-name {
+      display: flex;
+      align-items: center;
+      h2 {
+        margin-right: 8px;
+      }
+      &-logo {
+        padding: 14px 12px;
+        border-radius: 4px;
+        border: 0.8px solid #e5e5e5;
+        h6 {
+          font-size: 13px;
+          line-height: 13px;
+          font-family: $font-3;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .social-site {
+      display: flex;
+      align-items: center;
+      h2 {
+        color: color(gray-9);
+        text-transform: capitalize;
+        margin-right: 10px;
+        flex-shrink: 0;
+      }
+      .social-icon {
+        &-link {
+          @include max(767px) {
+            margin-right: 6px;
+          }
+          a {
+            color: color(gray-7);
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    &-info {
+      color: color(gray-5);
+      text-transform: capitalize;
+    }
+  }
+
+  &-action {
+    display: flex;
+    align-items: center;
+    @include max(991px) {
+      justify-content: center;
+    }
+    @include max(575px) {
+      flex-direction: column;
+    }
+    &-item {
+      margin-right: 12px;
+      flex-shrink: 0;
+      @include max(575px) {
+        margin-right: 0px;
+        margin-bottom: 15px;
+      }
+    }
+    .button {
+      &--md {
+        width: 445px;
+        @include max(1440px) {
+          width: 50%;
+        }
+        @include max(575px) {
+          width: auto;
+        }
+      }
+    }
+
+    .button-fav {
+      width: 52px;
+      height: 52px;
+      border-radius: 100%;
+      overflow: hidden;
+      background: #20b5261a;
+      color: color(primary);
+      &:hover {
+        color: #fff;
+        background-color: color(primary);
+        transition: all 0.3s linear;
+      }
+    }
+  }
+
+  &-category {
+    text-transform: capitalize;
+    color: color(gray-9);
+    margin-bottom: 12px;
+    span {
+      color: color(gray-5);
+    }
+  }
+
+  &-tags {
+    display: flex;
+    align-items: center;
+    h5 {
+      margin-right: 6px;
+      text-transform: capitalize;
+      color: color(gray-9);
+      flex-shrink: 0;
+    }
+    &-item {
+      a {
+        color: color(gray-5);
+        text-transform: capitalize;
+        margin-right: 6px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 // Responsive
 
 @media (min-width: 992px) and (max-width: 1200px) {
