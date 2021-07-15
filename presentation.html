@@ -1,21 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Presentation || Shopery</title>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
-        <link rel="stylesheet" href="dist/main.css" />
-    </head>
 
-    <body >
- 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Presentation || Shopery</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
+    <link rel="stylesheet" href="dist/main.css" />
+</head>
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="dist/plugins/js/bvselect.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="dist/main.js"></script>
-    </body>
+<body>
+
+
+
+
+
+    <!-- pageView Section Start  -->
+    <section class="pageView section section--xxl section--green-9">
+        <div class="container">
+            <div class="section__head section__head--four">
+                <h2 class="section--title-four font-title--xl" style="margin-bottom: 20px;">5 Awesomes Demo</h2>
+
+                <ul class="pageView__menu nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#all"
+                            type="button" role="tab" aria-controls="all" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="vegetable-tab" data-bs-toggle="tab" data-bs-target="#vegetable"
+                            type="button" role="tab" aria-controls="vegetable" aria-selected="false">Shop page</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fruit-tab" data-bs-toggle="tab" data-bs-target="#fruit"
+                            type="button" role="tab" aria-controls="fruit" aria-selected="false">Product Page</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="meat-tab" data-bs-toggle="tab" data-bs-target="#meat" type="button"
+                            role="tab" aria-controls="meat" aria-selected="false">Others</button>
+                    </li>
+                  
+                </ul>
+            </div>
+
+            <div class="pageView__content tab-content" id="myTabContent">
+                <!-- Home -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="All-tab">
+                    <div class="row pageView__content">
+                        <div class="col-lg-4 col-md-6">
+                            <a href="index.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/home-01.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Home-01</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="home-02.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/home-02.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Home-02</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="home-03.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/home-03.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Home-03</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="home-04.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/home-04.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Home-04</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="home-05.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/home-05.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Home-05</h5>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Shop Page  -->
+                <div class="tab-pane fade" id="vegetable" role="tabpanel" aria-labelledby="vegetable-tab">
+                    <div class="row pageView__content">
+                        <div class="col-lg-4 col-md-6">
+                            <a href="shop-01.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/shop-01.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Shop-01</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="shop-02.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/shop-02.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">shop-02</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- product page  -->
+                <div class="tab-pane fade" id="fruit" role="tabpanel" aria-labelledby="fruit-tab">
+                    <div class="row pageView__content">
+                        <div class="col-lg-4 col-md-6">
+                            <a href="product-details.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/product-details.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">product Details</h5>
+                            </a>
+                        </div>
+                     
+                    </div>
+                </div>
+                <!-- others -->
+                <div class="tab-pane fade" id="meat" role="tabpanel" aria-labelledby="meat-tab">
+                    <div class="row pageView__content">
+                        <div class="col-lg-4 col-md-6">
+                            <a href="wishlist.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/wishlist.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Wishlist</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="shopping-cart.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/shopping-cart.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Shoping Cart</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="checkout.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/checkout.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Checkout</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="blog-list.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/blog-list.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">blog list</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="single-blog.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/single-blog.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Single Blog</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="about.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/about.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">About</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="contact.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/contact.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Contact</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="sign-in.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/sign-in.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Sign in</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="create-account.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/create-account.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Create Account</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="user-dashboard.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/user-dashboard.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">user dashboard</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="order-history.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/order-history.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Order History</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="order-details.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/order-details.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Order Detailss</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="account-setting.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/account-settings.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Account Settings</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="faq.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/faqs.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">Faqs</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="404.html" class="pageView__card">
+                                <div class="img-box">
+                                    <img src="src/images/pview/errpr.png" alt="tab-content">
+                                </div>
+                                <h5 class="font-body--xxl-600">404 Error </h5>
+                            </a>
+                        </div>
+                     
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <!-- pageView Section end   -->
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="dist/plugins/js/bvselect.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/main.js"></script>
+</body>
+
 </html>

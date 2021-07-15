@@ -1,0 +1,62 @@
+.pageView {
+  .section {
+    &__head {
+      h2 {
+        color: #fff;
+      }
+    }
+  }
+
+  &__menu {
+    border: 0px;
+    @include max(575px) {
+      justify-content: center;
+    }
+    .nav {
+      &-link {
+        margin-right: 25px;
+        padding: 14px 32px;
+        border-radius: 43px;
+        border: 2px solid #ffffff33;
+        font-size: 14px;
+        line-height: 16.8px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #fff;
+        @include max(767px) {
+          margin-right: 12px;
+          margin-bottom: 12px;
+        }
+        &.active {
+          background-color: color(primary);
+          color: #fff;
+          border-color: color(primary);
+          transition: all 0.3s linear;
+        }
+      }
+    }
+  }
+
+  &__card {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+    .img-box {
+      position: relative;
+      width: inherits;
+      height: 312px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 18px;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+    h5 {
+      color: #fff;
+      text-transform: capitalize;
+    }
+  }
+}

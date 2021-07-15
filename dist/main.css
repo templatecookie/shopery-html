@@ -9408,14 +9408,29 @@ textarea.form-control-lg {
 .font-title--xxxl,
 .font-title--xxxl-n {
   line-height: 86.4px; }
+  @media (max-width: 767px) {
+    .font-title--xxxl,
+    .font-title--xxxl-n {
+      font-size: 28px;
+      line-height: 38px; } }
 
 .font-title--xxl,
 .font-title--xxl-n {
   line-height: 67.2px; }
+  @media (max-width: 767px) {
+    .font-title--xxl,
+    .font-title--xxl-n {
+      font-size: 28px;
+      line-height: 38px; } }
 
 .font-title--xl,
 .font-title--xl-n {
   line-height: 57.6px; }
+  @media (max-width: 767px) {
+    .font-title--xl,
+    .font-title--xl-n {
+      font-size: 28px;
+      line-height: 38px; } }
 
 .font-title--lg,
 .font-title--lg-n {
@@ -17909,4 +17924,56 @@ ul.example li p {
         .newsletter-card__input button {
           font-size: 14px;
           padding: 16px; } }
+
+.pageView .section__head h2, .pageView .section__head .h2 {
+  color: #fff; }
+
+.pageView__menu {
+  border: 0px; }
+  @media (max-width: 575px) {
+    .pageView__menu {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .pageView__menu .nav-link {
+    margin-right: 25px;
+    padding: 14px 32px;
+    border-radius: 43px;
+    border: 2px solid #ffffff33;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff; }
+    @media (max-width: 767px) {
+      .pageView__menu .nav-link {
+        margin-right: 12px;
+        margin-bottom: 12px; } }
+    .pageView__menu .nav-link.active {
+      background-color: #00b207;
+      color: #fff;
+      border-color: #00b207;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+
+.pageView__card {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 24px; }
+  .pageView__card .img-box {
+    position: relative;
+    width: inherits;
+    height: 312px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 18px; }
+    .pageView__card .img-box img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .pageView__card h5, .pageView__card .h5 {
+    color: #fff;
+    text-transform: capitalize; }
 
