@@ -68,21 +68,7 @@
           margin-bottom: 0px;
         }
       }
-      #countdown {
-        .timer-body-block {
-          .table-cell {
-            .tab-val {
-              font-size: 24px;
-              line-height: 36px;
-              color: color(primary);
-              font-weight: 400;
-            }
-            .tab-unit {
-              color: color(gray-4);
-            }
-          }
-        }
-      }
+
       a.button {
         margin-top: 32px;
       }
@@ -302,6 +288,22 @@
             font-weight: 600;
           }
         }
+      }
+    }
+  }
+}
+
+#countdown {
+  .timer-body-block {
+    .table-cell {
+      .tab-val {
+        font-size: 24px;
+        line-height: 36px;
+        color: color(primary);
+        font-weight: 400;
+      }
+      .tab-unit {
+        color: color(gray-4);
       }
     }
   }

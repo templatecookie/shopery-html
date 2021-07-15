@@ -1,28 +1,27 @@
-ul.example {
-  list-style: none;
-  padding: 0;
-  display: block;
-  text-align: center;
+#countdownTwo {
+  .timer-body-block {
+    justify-content: center;
+    .table-cell {
+      &::after {
+        top: 0px;
+        right: -12px;
+        color: #fff;
+      }
+      .tab-val {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .tab-unit {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+      }
+    }
+  }
 }
 
-ul.example li {
-  display: inline-block;
-}
-
-ul.example li span {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
-}
-
-ul.example li.seperator {
-  font-size: 20px;
-  line-height: 27px;
-  vertical-align: top;
-}
-
-ul.example li p {
-  font-size: 10px;
-  line-height: 10px;
-  color: #a7abb1;
+.banner-sale__countdown {
+  .timer-body-block {
+    justify-content: flex-start !important;
+  }
 }

@@ -29,6 +29,27 @@
  
 \/\/\/\/\/\/\/\*/
 
+// Modal
+$(document).ready(function () {
+  $('#newsletter').modal('show');
+
+  $('#countdown').syotimer({
+    year: 2021,
+    month: 7,
+    day: 25,
+    hour: 20,
+    minute: 30,
+  });
+
+  $('#countdownTwo').syotimer({
+    year: 2021,
+    month: 7,
+    day: 25,
+    hour: 20,
+    minute: 30,
+  });
+});
+
 //====== Banners Slider ====== \\
 var bannerOne = new Swiper('.banner-slider--one', {
   spaceBetween: 15,
@@ -401,10 +422,7 @@ var salesCard = new Swiper('.cyclone--slider', {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 2,
+      spaceBetween: 24,
     },
     1400: {
       slidesPerView: 3,

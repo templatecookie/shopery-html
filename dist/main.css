@@ -13138,6 +13138,90 @@ body.overlay {
 .contact-form-btn {
   margin-top: 8px; }
 
+.newsletter-popup .modal {
+  position: relative; }
+  .newsletter-popup .modal-body {
+    padding: 10px; }
+
+.newsletter-popup__text-content {
+  padding: 50px 40px;
+  text-align: center; }
+  @media (max-width: 991px) {
+    .newsletter-popup__text-content {
+      padding: 30px 15px; } }
+  .newsletter-popup__text-content h5, .newsletter-popup__text-content .h5 {
+    text-transform: capitalize;
+    color: #1a1a1a;
+    margin-bottom: 12px; }
+  .newsletter-popup__text-content p {
+    color: #999999;
+    margin-bottom: 24px;
+    text-transform: capitalize; }
+    .newsletter-popup__text-content p span {
+      color: #ff8a00;
+      font-weight: 600; }
+  .newsletter-popup__text-content .contact-mail {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #e5e5e5;
+    border-radius: 46px;
+    overflow: hidden;
+    padding-left: 24px;
+    margin-bottom: 50px; }
+    @media (max-width: 991px) {
+      .newsletter-popup__text-content .contact-mail {
+        margin-bottom: 30px; } }
+    .newsletter-popup__text-content .contact-mail input {
+      width: inherit;
+      height: inherit;
+      border: 0px;
+      font-size: 14px;
+      line-height: 21px;
+      color: #808080; }
+      .newsletter-popup__text-content .contact-mail input::-webkit-input-placeholder {
+        text-transform: capitalize; }
+      .newsletter-popup__text-content .contact-mail input::-moz-placeholder {
+        text-transform: capitalize; }
+      .newsletter-popup__text-content .contact-mail input:-ms-input-placeholder {
+        text-transform: capitalize; }
+      .newsletter-popup__text-content .contact-mail input::-ms-input-placeholder {
+        text-transform: capitalize; }
+      .newsletter-popup__text-content .contact-mail input::placeholder {
+        text-transform: capitalize; }
+    .newsletter-popup__text-content .contact-mail button {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      right: 0; }
+      @media (max-width: 575px) {
+        .newsletter-popup__text-content .contact-mail button {
+          padding: 14px; } }
+  .newsletter-popup__text-content .btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px; }
+    @media (max-width: 991px) {
+      .newsletter-popup__text-content .btn-close {
+        top: 18px;
+        right: 18px; } }
+  .newsletter-popup__text-content .form-check {
+    display: inline-block; }
+    .newsletter-popup__text-content .form-check label {
+      font-size: 14px;
+      line-height: 21px;
+      color: #666666; }
+
+.newsletter-popup__img-wrapper {
+  width: 100%;
+  height: 100%; }
+  .newsletter-popup__img-wrapper img {
+    width: inherit;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 .iframe__canvas {
   width: 100%;
   height: 400px;
@@ -14231,8 +14315,14 @@ body.overlay {
     border-radius: 8px;
     background-color: #fff; }
     .cards-blog--two .cards-blog__img-wrapper {
+      width: 100%;
       height: 275px;
       border-radius: 4px; }
+      .cards-blog--two .cards-blog__img-wrapper img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
     .cards-blog--two .cards-blog__info {
       padding: 0px; }
       .cards-blog--two .cards-blog__info p {
@@ -14240,6 +14330,9 @@ body.overlay {
         line-height: 21px;
         font-weight: 400;
         color: #618062; }
+      .cards-blog--two .cards-blog__info a {
+        margin-top: 20px;
+        color: #00b207; }
 
 .cards-mb {
   border: 1px solid #e5e5e5; }
@@ -14948,29 +15041,28 @@ body.overlay {
   .template-card .icon-box {
     margin-bottom: 25px; }
 
-ul.example {
-  list-style: none;
-  padding: 0;
-  display: block;
-  text-align: center; }
+#countdownTwo .timer-body-block {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #countdownTwo .timer-body-block .table-cell::after {
+    top: 0px;
+    right: -12px;
+    color: #fff; }
+  #countdownTwo .timer-body-block .table-cell .tab-val {
+    font-size: 24px;
+    line-height: 36px; }
+  #countdownTwo .timer-body-block .table-cell .tab-unit {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.03em; }
 
-ul.example li {
-  display: inline-block; }
-
-ul.example li span {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500; }
-
-ul.example li.seperator {
-  font-size: 20px;
-  line-height: 27px;
-  vertical-align: top; }
-
-ul.example li p {
-  font-size: 10px;
-  line-height: 10px;
-  color: #a7abb1; }
+.banner-sale__countdown .timer-body-block {
+  -webkit-box-pack: start !important;
+  -webkit-justify-content: flex-start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important; }
 
 .accordion-button {
   outline: none; }
@@ -15712,6 +15804,50 @@ ul.example li p {
       @media (max-width: 767px) {
         .best-deals__img-content--two {
           right: 0px; } }
+  .best-deals__countdown .timer-body-block .table-cell {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 8px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 0px 10px; }
+    @media (max-width: 575px) {
+      .best-deals__countdown .timer-body-block .table-cell {
+        width: 50px; } }
+    .best-deals__countdown .timer-body-block .table-cell::after {
+      top: 50% !important;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      color: #618062 !important; }
+    .best-deals__countdown .timer-body-block .table-cell .tab-val {
+      font-size: 32px;
+      line-height: 38.4px;
+      font-weight: 400;
+      color: #00b207; }
+    .best-deals__countdown .timer-body-block .table-cell .tab-unit {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      font-weight: 400;
+      color: #618062; }
 
 .shipping-container--05 .shipping-container--slider {
   -webkit-box-shadow: none;
@@ -16836,13 +16972,6 @@ ul.example li p {
           font-size: 28px;
           line-height: 38px;
           margin-bottom: 0px; } }
-    .banner-sales__content .text-content #countdown .timer-body-block .table-cell .tab-val {
-      font-size: 24px;
-      line-height: 36px;
-      color: #00b207;
-      font-weight: 400; }
-    .banner-sales__content .text-content #countdown .timer-body-block .table-cell .tab-unit {
-      color: #999999; }
     .banner-sales__content .text-content a.button {
       margin-top: 32px; }
   .banner-sales__content .sale-off {
@@ -17083,6 +17212,15 @@ ul.example li p {
         .filter-box__bottom-content .filter__result p .number {
           color: #1a1a1a;
           font-weight: 600; }
+
+#countdown .timer-body-block .table-cell .tab-val {
+  font-size: 24px;
+  line-height: 36px;
+  color: #00b207;
+  font-weight: 400; }
+
+#countdown .timer-body-block .table-cell .tab-unit {
+  color: #999999; }
 
 @media (max-width: 991px) {
   .related .swiper-wrapper {
@@ -17962,7 +18100,7 @@ ul.example li p {
 
 .banner {
   position: relative; }
-  .banner::after {
+  .banner-shaddow::after {
     content: '';
     position: absolute;
     top: 0;
@@ -17970,7 +18108,7 @@ ul.example li p {
     width: 100%;
     height: 100%; }
     @media (max-width: 1200px) {
-      .banner::after {
+      .banner-shaddow::after {
         background-color: rgba(0, 0, 0, 0.6); } }
   .banner__img-wrapper {
     position: relative;

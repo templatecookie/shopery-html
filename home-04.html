@@ -8173,6 +8173,9 @@
                 <div class="best-deals__content">
                     <span class="title">Best Deals</span>
                     <h2 class="font-title--lg">Our Special Products Deal of the Month</h2>
+
+                    <div class="best-deals__countdown" id="countdownTwo"></div>
+
                     <a href="#" class="button button--md">
                         Shop now
                         <span>
@@ -9595,10 +9598,58 @@
             </div>
         </footer>
         <!-- Footer Section end  -->
+                <!-- Modal -->
+                <div class="modal fade newsletter-popup" id="newsletter" tabindex="-1" aria-labelledby="newsletterLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+        
+                            <div class="modal-body">
+                                <div class="row  newsletter-popup__content">
+                                    <div class="col-lg-5">
+                                        <div class="newsletter-popup__img-wrapper">
+                                            <img src="src/images/banner/banner-sm-18.png" alt="newsletter">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="newsletter-popup__text-content">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="font-title--xl">Subscribe to Our Newsletter</h5>
+                                            <p class="font-body--lg">Subscribe to our newlletter and Save your <span>20% money </span>  with discount code today.</p>
+        
+                                          <form action="#">
+                                            <div class="contact-mail">
+                                                <input type="email" placeholder="Enter Your email">
+                                                <button class="button button--md">Subscribe</button>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="remember" />
+                                                <label class="form-check-label font-body--md-400" for="remember">
+                                                    Do not show this window
+                                                </label>
+                                            </div>
+                                          </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
 
+
+
+        <!-- <script src="dist/plugins/js/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="dist/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="dist/main.js"></script> -->
+        <script src="dist/plugins/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="dist/plugins/js/bvselect.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="dist/plugins/js/jquery.syotimer.min.js"></script>
         <script src="dist/main.js"></script>
         <script>
             var demo1 = new BVSelect({
