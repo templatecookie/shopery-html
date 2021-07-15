@@ -1,3 +1,30 @@
+// header
+
+.header {
+  &--six {
+    .navbar-nav {
+      padding: 32px 0px;
+      .nav-item {
+        margin: 0px 20px;
+        .nav-link {
+          font-size: 18px;
+          line-height: 27px;
+          color: color(green-9);
+          font-weight: 500;
+          text-transform: capitalize;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+    }
+    .navbar-collapse {
+      @include max(991px) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
 // Page View Tabs
 .pageView {
   .section {

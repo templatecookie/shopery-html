@@ -17941,6 +17941,23 @@ ul.example li p {
           font-size: 14px;
           padding: 16px; } }
 
+.header--six .navbar-nav {
+  padding: 32px 0px; }
+  .header--six .navbar-nav .nav-item {
+    margin: 0px 20px; }
+    .header--six .navbar-nav .nav-item .nav-link {
+      font-size: 18px;
+      line-height: 27px;
+      color: #002603;
+      font-weight: 500;
+      text-transform: capitalize;
+      padding-left: 0px;
+      padding-right: 0px; }
+
+@media (max-width: 991px) {
+  .header--six .navbar-collapse {
+    padding-bottom: 30px; } }
+
 .pageView .section__head h2, .pageView .section__head .h2 {
   color: #fff; }
 
