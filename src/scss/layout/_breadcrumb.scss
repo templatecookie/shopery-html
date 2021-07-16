@@ -37,6 +37,7 @@
         }
       }
       &.active {
+        display: block;
         a {
           color: color(primary);
         }
