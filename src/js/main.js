@@ -29,7 +29,7 @@
 
  \/\/\/\/\/\/\/\*/
 
-//  Close Sidebar
+//  Header navigation Sidebar
 let closeBar = document.querySelector('.header__cross');
 let mobileSidebar = document.querySelector('.header__sidebar');
 let menuBtn = document.querySelector('.header__sidebar-btn');
