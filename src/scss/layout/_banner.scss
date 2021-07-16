@@ -687,7 +687,7 @@
   &__img-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 358px;
     border-radius: 10px;
     overflow: hidden;
     img {
@@ -806,9 +806,9 @@
 
   // Banner Sales Cards
   .banner-sale {
-    &__img-wrapper {
-      height: 45vh;
-    }
+    // &__img-wrapper {
+    //   height: 45vh;
+    // }
     &__text-content {
       top: 50%;
       left: 50%;

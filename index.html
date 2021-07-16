@@ -4374,27 +4374,7 @@
                                 </ul>
                                 <div class="cards-lg__info-countdown">
                                     <h6 class="font-body--md-400">Hurry up! Offer ends In:</h6>
-                                    <ul class="example">
-                                        <li>
-                                            <span class="days">00</span>
-                                            <p class="days_text">Days</p>
-                                        </li>
-                                        <li class="seperator">:</li>
-                                        <li>
-                                            <span class="hours">00</span>
-                                            <p class="hours_text">Hours</p>
-                                        </li>
-                                        <li class="seperator">:</li>
-                                        <li>
-                                            <span class="minutes">00</span>
-                                            <p class="minutes_text">MINS</p>
-                                        </li>
-                                        <li class="seperator">:</li>
-                                        <li>
-                                            <span class="seconds">00</span>
-                                            <p class="seconds_text">SECS</p>
-                                        </li>
-                                    </ul>
+                                    <div id="countdownThree" class="info-countdown__card"></div>
                                 </div>
                             </div>
                         </div>
@@ -7308,7 +7288,7 @@
         <!--Footer Section end  -->
 
         <!-- Modal -->
-        <!-- <div class="modal fade newsletter-popup" id="newsletter" tabindex="-1"  aria-hidden="true">
+        <div class="modal fade newsletter-popup" id="newsletter" tabindex="-1"  aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
 
@@ -7343,7 +7323,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <script src="dist/plugins/js/jquery.min.js"></script>
         <script src="dist/plugins/js/venobox.min.js"></script>
@@ -7377,6 +7357,13 @@
                 minute: 30,
             });
             $("#countdownTwo").syotimer({
+                year: 2021,
+                month: 7,
+                day: 25,
+                hour: 20,
+                minute: 30,
+            });
+            $("#countdownThree").syotimer({
                 year: 2021,
                 month: 7,
                 day: 25,

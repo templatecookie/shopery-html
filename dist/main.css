@@ -11105,7 +11105,7 @@ body.overlay {
 .banner-sale__img-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 358px;
   border-radius: 10px;
   overflow: hidden; }
   .banner-sale__img-wrapper img {
@@ -11204,8 +11204,6 @@ body.overlay {
   .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2,
   .banner--01 .banner__wrapper--img-03 .banner__wrapper-text .h2 {
     max-width: 95%; }
-  .banner-sale__img-wrapper {
-    height: 45vh; }
   .banner-sale__text-content {
     top: 50%;
     left: 50%;
