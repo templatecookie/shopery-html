@@ -839,6 +839,18 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
         <script>
+
+                //  Filter Sidebar
+                const filterBtn = document.querySelector('.filter-icon');
+
+// Click Event
+filterBtn.addEventListener('click', () => {
+  let sidebarNav = document.querySelector('.dashboard__nav');
+  let body = document.querySelector('body');
+  sidebarNav.classList.toggle('active');
+  body.classList.toggle('overlay');
+});
+
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,
