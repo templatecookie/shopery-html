@@ -228,9 +228,9 @@ body {
       height: 100%;
       background: rgba(0, 0, 0, 0.7);
       z-index: 999;
-      @include min(992px) {
-        display: none;
-      }
+      // @include min(992px) {
+      //   display: none;
+      // }
     }
   }
 }

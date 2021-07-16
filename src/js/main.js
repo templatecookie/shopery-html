@@ -1,5 +1,4 @@
 // Table Contents
-'use strict';
 
 /*\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 --------------------------------------------------
@@ -28,6 +27,13 @@
  14.Shops
 
  \/\/\/\/\/\/\/\*/
+'use strict';
+
+//  Page Loader
+const preloader = document.querySelector('.loader');
+function loader() {
+  preloader.style.display = 'none';
+}
 
 //  Header navigation Sidebar
 let closeBar = document.querySelector('.header__cross');
@@ -66,6 +72,26 @@ function menuClick(current) {
     current.classList.add('active');
   }
 }
+
+// Shoping Cart
+// Cart
+let cartBtn = document.querySelector('.cart-bag');
+let closeBtn = document.querySelector('.shopping-cart .close');
+const shoppingCart = document.querySelector('.shopping-cart');
+
+console.log(closeBtn);
+// Event Click Popup cart open
+cartBtn.addEventListener('click', function () {
+  const body = document.querySelector('body');
+  body.classList.add('overlay');
+  shoppingCart.classList.add('active');
+});
+// Event Click Popup Close
+closeBtn.addEventListener('click', function () {
+  const body = document.querySelector('body');
+  body.classList.remove('overlay');
+  shoppingCart.classList.remove('active');
+});
 
 //====== Banners Slider ====== \\
 var bannerOne = new Swiper('.banner-slider--one', {
