@@ -69,25 +69,6 @@ function menuClick(current) {
   }
 }
 
-// Modal
-$(document).ready(function () {
-  // $('#newsletter').modal('show');
-  // $('#countdown').syotimer({
-  //   year: 2021,
-  //   month: 7,
-  //   day: 25,
-  //   hour: 20,
-  //   minute: 30,
-  // });
-  // $('#countdownTwo').syotimer({
-  //   year: 2021,
-  //   month: 7,
-  //   day: 25,
-  //   hour: 20,
-  //   minute: 30,
-  // });
-});
-
 //====== Banners Slider ====== \\
 var bannerOne = new Swiper('.banner-slider--one', {
   spaceBetween: 15,

@@ -6972,7 +6972,7 @@
     <!--Footer Section end  -->
 
     <!-- Modal -->
-    <!-- <div class="modal fade newsletter-popup" id="newsletter" tabindex="-1" aria-labelledby="newsletterLabel" aria-hidden="true">
+    <div class="modal fade newsletter-popup" id="newsletter" tabindex="-1" aria-labelledby="newsletterLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
 
@@ -7007,7 +7007,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
     <script src="dist/plugins/js/jquery.min.js"></script>
@@ -7018,6 +7018,11 @@
     <script src="dist/main.js"></script>
 
     <script>
+            // Modal
+            $(document).ready(function () {
+                 $('#newsletter').modal('show');
+            });
+
         $('#countdownOne').syotimer({
             year: 2021,
             month: 7,
