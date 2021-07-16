@@ -71,8 +71,7 @@ function menuClick(current) {
 
 // Modal
 $(document).ready(function () {
-  $('#newsletter').modal('show');
-
+  // $('#newsletter').modal('show');
   // $('#countdown').syotimer({
   //   year: 2021,
   //   month: 7,
@@ -80,7 +79,6 @@ $(document).ready(function () {
   //   hour: 20,
   //   minute: 30,
   // });
-
   // $('#countdownTwo').syotimer({
   //   year: 2021,
   //   month: 7,

@@ -14324,13 +14324,13 @@ body.overlay {
     .cards-blog__info h2, .cards-blog__info .h2 {
       margin: 8px 0px;
       color: #1a1a1a; }
-    .cards-blog__info button {
+    .cards-blog__info a {
       font-size: 16px;
       line-height: 19.2px;
       font-weight: 600;
       color: #00b207;
       margin-top: 12px; }
-      .cards-blog__info button span {
+      .cards-blog__info a span {
         margin-left: 12px; }
   .cards-blog--two {
     padding: 24px;
