@@ -67,10 +67,6 @@ function menuClick(current) {
   }
 }
 
-$(document).ready(function () {
-  $('.venobox').venobox();
-});
-
 //====== Banners Slider ====== \\
 var bannerOne = new Swiper('.banner-slider--one', {
   spaceBetween: 15,
