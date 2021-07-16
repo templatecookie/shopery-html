@@ -108,15 +108,13 @@
         }
         &-label {
           cursor: pointer;
-          p {
-            font-size: 14px;
-            line-height: 21px;
-            color: color(gray-9);
-            font-weight: 400;
-            text-transform: capitalize;
-            .current {
-              color: color(gray-5);
-            }
+          font-size: 14px;
+          line-height: 21px;
+          color: color(gray-9);
+          font-weight: 400;
+          text-transform: capitalize;
+          .current {
+            color: color(gray-5);
           }
         }
       }

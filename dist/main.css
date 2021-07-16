@@ -12489,15 +12489,14 @@ body.overlay {
       -webkit-box-shadow: none;
               box-shadow: none; }
   .shop .categories-item .form-check-label {
-    cursor: pointer; }
-    .shop .categories-item .form-check-label p {
-      font-size: 14px;
-      line-height: 21px;
-      color: #1a1a1a;
-      font-weight: 400;
-      text-transform: capitalize; }
-      .shop .categories-item .form-check-label p .current {
-        color: #808080; }
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1a1a1a;
+    font-weight: 400;
+    text-transform: capitalize; }
+    .shop .categories-item .form-check-label .current {
+      color: #808080; }
 
 .shop .ratings--list-item {
   margin-bottom: 10px; }
