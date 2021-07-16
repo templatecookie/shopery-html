@@ -26,8 +26,6 @@
  12. Instagram
  13.Blogs-list
  14.Shops
- 
-
 
  \/\/\/\/\/\/\/\*/
 
@@ -68,6 +66,10 @@ function menuClick(current) {
     current.classList.add('active');
   }
 }
+
+$(document).ready(function () {
+  $('.venobox').venobox();
+});
 
 //====== Banners Slider ====== \\
 var bannerOne = new Swiper('.banner-slider--one', {
