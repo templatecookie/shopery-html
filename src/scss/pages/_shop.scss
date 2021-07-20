@@ -35,7 +35,9 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
-
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
     img {
       width: inherit;
       height: inherit;

@@ -490,9 +490,12 @@
         border-radius: 6px;
         background-color: #fff;
         margin: 0px 10px;
-        @include max(575px) {
-          width: 50px;
+        @include min-max(375px, 734px) {
+          width: 70px;
         }
+        // @include max(575px) {
+        //   width: 50px;
+        // }
         &::after {
           top: 50% !important;
           transform: translateY(-50%);
@@ -706,16 +709,7 @@
         height: 24px;
         border-radius: 100%;
         background-color: color(soft-primary);
-        flex-basis: 56px;
-        @include min-max(992px, 1199px) {
-          flex-basis: 32px;
-        }
-        @include min-max(768px, 991px) {
-          flex-basis: 48px;
-        }
-        @include max(574px) {
-          flex-basis: 115px;
-        }
+        flex-shrink: 0;
       }
     }
   }

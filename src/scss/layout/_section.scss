@@ -141,7 +141,7 @@
       align-items: center;
 
       &--three {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         .section--title {
           &-two {
             .title-bar {
@@ -157,7 +157,11 @@
       }
     }
 
-    &--title-one {
+    &--title-one,
+    &--ttitle-two,
+    &--title-three,
+    &--title-four,
+    &--title-five {
       font-size: 28px;
       line-height: 38px;
       margin-bottom: 15px;
