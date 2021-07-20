@@ -1,5 +1,4 @@
 // Table Contents
-'use strict';
 
 /*\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 --------------------------------------------------
@@ -26,8 +25,72 @@
  12. Instagram
  13.Blogs-list
  14.Shops
- 
-\/\/\/\/\/\/\/\*/
+
+ \/\/\/\/\/\/\/\*/
+'use strict';
+
+//  Page Loader
+const preloader = document.querySelector('.loader');
+function loader() {
+  preloader.style.display = 'none';
+}
+
+//  Header navigation Sidebar
+let closeBar = document.querySelector('.header__cross');
+let mobileSidebar = document.querySelector('.header__sidebar');
+let menuBtn = document.querySelector('.header__sidebar-btn');
+const body = document.querySelector('body');
+
+// Open
+menuBtn.addEventListener('click', function () {
+  mobileSidebar.classList.add('active');
+  body.classList.add('overlay');
+});
+
+// close
+closeBar.addEventListener('click', function () {
+  mobileSidebar.classList.remove('active');
+  body.classList.remove('overlay');
+});
+
+var navMenu = [].slice.call(
+  document.querySelectorAll('.header__mobile-menu-item')
+);
+
+for (var y = 0; y < navMenu.length; y++) {
+  navMenu[y].addEventListener('click', function () {
+    menuClick(this);
+  });
+}
+
+function menuClick(current) {
+  const active = current.classList.contains('active');
+  navMenu.forEach((el) => el.classList.remove('active'));
+  if (active) {
+    current.classList.remove('active');
+  } else {
+    current.classList.add('active');
+  }
+}
+
+// Shoping Cart
+// Cart
+let cartBtn = document.querySelector('.cart-bag');
+let closeBtn = document.querySelector('.shopping-cart .close');
+const shoppingCart = document.querySelector('.shopping-cart');
+
+// Event Click Popup cart open
+cartBtn.addEventListener('click', function () {
+  const body = document.querySelector('body');
+  body.classList.add('overlay');
+  shoppingCart.classList.add('active');
+});
+// Event Click Popup Close
+closeBtn.addEventListener('click', function () {
+  const body = document.querySelector('body');
+  body.classList.remove('overlay');
+  shoppingCart.classList.remove('active');
+});
 
 //====== Banners Slider ====== \\
 var bannerOne = new Swiper('.banner-slider--one', {
@@ -401,10 +464,7 @@ var salesCard = new Swiper('.cyclone--slider', {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 2,
+      spaceBetween: 24,
     },
     1400: {
       slidesPerView: 3,

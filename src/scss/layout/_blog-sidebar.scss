@@ -6,7 +6,8 @@
     background: #fff;
     width: 5%;
     height: 100%;
-    z-index: 3;
+    z-index: 9999;
+    transition: all 0.4s linear;
     @include max(767px) {
       width: 80%;
       left: -80%;
@@ -17,7 +18,7 @@
     @include max(991px) {
       left: 0;
       width: 35%;
-      transition: all 0.9s linear;
+      transition: all 0.6s linear;
     }
     @include max(767px) {
       width: 80%;
@@ -26,7 +27,7 @@
     .filter {
       top: 15px;
       transform: translateY(0px);
-      transition: all 0.9s linear;
+      transition: all 0.6s linear;
     }
   }
 
@@ -43,6 +44,7 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     background-color: color(primary);
+    z-index: 9999;
     @include min(992px) {
       display: none;
     }
@@ -51,7 +53,7 @@
     }
     &:hover {
       background-color: color(hard-primary);
-      transition: all 0.9s linear;
+      transition: all 0.6s linear;
     }
   }
 }

@@ -11,14 +11,26 @@ $font-3: 'Dancing Script', cursive;
 .font-title--xxxl,
 .font-title--xxxl-n {
   line-height: 86.4px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 .font-title--xxl,
 .font-title--xxl-n {
   line-height: 67.2px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 .font-title--xl,
 .font-title--xl-n {
   line-height: 57.6px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 .font-title--lg,
 .font-title--lg-n {
