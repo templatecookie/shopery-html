@@ -79,7 +79,6 @@ let cartBtn = document.querySelector('.cart-bag');
 let closeBtn = document.querySelector('.shopping-cart .close');
 const shoppingCart = document.querySelector('.shopping-cart');
 
-console.log(closeBtn);
 // Event Click Popup cart open
 cartBtn.addEventListener('click', function () {
   const body = document.querySelector('body');
