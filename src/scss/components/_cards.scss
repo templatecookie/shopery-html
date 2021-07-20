@@ -1178,6 +1178,9 @@
         @include max(767px) {
           color: color(primary);
         }
+        &:hover {
+          color: #fff !important;
+        }
       }
 
       &-process-info h2 {

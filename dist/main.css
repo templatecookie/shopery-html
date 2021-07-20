@@ -15006,6 +15006,8 @@ body.overlay {
         @media (max-width: 767px) {
           .cards-ship--four .cards-ship__item-icon {
             color: #00b207; } }
+        .cards-ship--four .cards-ship__item-icon:hover {
+          color: #fff !important; }
       .cards-ship--four .cards-ship__item-process-info h2, .cards-ship--four .cards-ship__item-process-info .h2 {
         font-size: 18px;
         line-height: 27px;
