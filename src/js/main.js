@@ -446,6 +446,50 @@ var productsContentFour = new Swiper('.our-products__content-slider-four', {
   },
 });
 
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  slidesPerView: 4,
+  watchOverflow: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  direction: 'vertical',
+  breakpoints: {
+    0: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+var galleryMain = new Swiper('.gallery-main', {
+  watchOverflow: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  preventInteractionOnTransition: true,
+  navigation: {
+    nextEl: '.swiper-button-next-item',
+    prevEl: '.swiper-button-prev-item',
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+});
+
+galleryMain.on('slideChangeTransitionStart', function () {
+  galleryThumbs.slideTo(galleryMain.activeIndex);
+});
+
+galleryThumbs.on('transitionStart', function () {
+  galleryMain.slideTo(galleryThumbs.activeIndex);
+});
+
 // ===== Sales Card ======= \\
 
 var salesCard = new Swiper('.cyclone--slider', {
