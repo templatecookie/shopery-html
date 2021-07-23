@@ -9975,11 +9975,11 @@ a {
   color: #1a1a1a;
   font-weight: 500; }
 
-.header__cart-item button {
+.header__cart-item a {
   padding-right: 18px;
   border-right: 1px solid #cccccc; }
 
-.header__cart-item:nth-last-child(1) button {
+.header__cart-item:nth-last-child(1) a {
   border-right: 0px;
   padding-right: 0px; }
 

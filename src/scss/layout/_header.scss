@@ -252,12 +252,12 @@
   }
 
   &__cart-item {
-    button {
+    a {
       padding-right: 18px;
       border-right: 1px solid color(gray-2);
     }
     &:nth-last-child(1) {
-      button {
+      a {
         border-right: 0px;
         padding-right: 0px;
       }
