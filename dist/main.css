@@ -13972,6 +13972,8 @@ body.overlay {
   border: 1px solid #e5e5e5;
   overflow: hidden;
   margin-bottom: 12px; }
+  .form-input:hover {
+    border: 1px solid #00b207; }
   .form-input input {
     width: 90%;
     height: inherit;

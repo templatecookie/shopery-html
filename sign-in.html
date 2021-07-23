@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Sign-in || Shopery</title>
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
-        <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
@@ -252,7 +252,7 @@
                                     </span>
                                 </a>
                                 <ul class="header__navigation-drop-menu">
-                                    <li class="header__navigation-drop-menu-link "><a href="index.html">Homepage 01</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="index.html">Homepage 01</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-02.html">Homepage 02</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-03.html">Homepage 03</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-04.html">Homepage 04</a></li>
@@ -283,12 +283,12 @@
                                     </span>
                                 </a>
                                 <ul class="header__navigation-drop-menu">
-                                    <li class="header__navigation-drop-menu-link "><a href="user-dashboard.html">User Dashboard </a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="user-dashboard.html">User Dashboard </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="order-history.html">Order History </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="order-details.html">Order Details </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="account-setting.html">Settings </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="product-details.html">Product Details</a></li>
-                                   <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="shopping-cart.html"> Shopping Cart</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="checkout.html"> Checkout</a></li>
                                     <li class="header__navigation-drop-menu-link active"><a href="sign-in.html"> Sign in</a></li>
@@ -541,9 +541,9 @@
                                 </svg>
                             </span>
                         </div>
-                        <div class="form-input active">
-                            <input type="password" placeholder="Password" />
-                            <button class="icon icon-eye">
+                        <div class="form-input">
+                            <input type="password" placeholder="Password" id="password" />
+                            <button class="icon icon-eye" onclick="showPassword('password',this)">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M1.66663 10.5003C1.66663 10.5003 4.69663 4.66699 9.99996 4.66699C15.3033 4.66699 18.3333 10.5003 18.3333 10.5003C18.3333 10.5003 15.3033 16.3337 9.99996 16.3337C4.69663 16.3337 1.66663 10.5003 1.66663 10.5003Z"
@@ -562,16 +562,20 @@
                                 </svg>
                             </button>
                             <span class="icon icon-warning">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.0003 18.8333C14.6027 18.8333 18.3337 15.1024 18.3337 10.5C18.3337 5.89762 14.6027 2.16666 10.0003 2.16666C5.39795 2.16666 1.66699 5.89762 1.66699 10.5C1.66699 15.1024 5.39795 18.8333 10.0003 18.8333Z"
-                                        stroke="#FF8A00"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path d="M10 7.16666V10.5" stroke="#FF8A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10 13.8333H10.0083" stroke="#FF8A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="21"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-eye"
+                                >
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
                                 </svg>
                             </span>
                             <span class="icon icon-error">
@@ -806,7 +810,7 @@
         </footer>
         <!--Footer Section end  -->
 
-          <script src="dist/plugins/js/swiper-bundle.min.js"></script>
+        <script src="dist/plugins/js/swiper-bundle.min.js"></script>
         <script src="dist/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
@@ -817,6 +821,21 @@
                 preloader.style.display = "none";
             }
 
+            // Hide type in toggle
+            function showPassword(id, el) {
+                let x = document.getElementById(id);
+                if (x.type === "password") {
+                    x.type = "text";
+                    el.innerHTML =
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> ';
+                } else {
+                    x.type = "password";
+                    el.innerHTML =
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+                }
+            }
+
+            // Select box
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,
