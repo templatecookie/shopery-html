@@ -14290,10 +14290,8 @@ body.overlay {
   position: absolute;
   top: 16px;
   right: 16px; }
-  .cards-md__favs-list button {
-    margin-bottom: 6px;
-    background-color: #fff;
-    border: 1px solid #f2f2f2; }
+  .cards-md__favs-list .action-btn {
+    margin-bottom: 6px; }
 
 .cards-lg__img-wrapper {
   position: relative;

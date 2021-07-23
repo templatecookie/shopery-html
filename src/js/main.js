@@ -482,12 +482,40 @@ var galleryMain = new Swiper('.gallery-main', {
   },
 });
 
-galleryMain.on('slideChangeTransitionStart', function () {
-  galleryThumbs.slideTo(galleryMain.activeIndex);
+var productViewThumbs = new Swiper('.gallery-thumbs-slider', {
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  slidesPerView: 4,
+  watchOverflow: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  direction: 'vertical',
+  breakpoints: {
+    0: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+  },
 });
 
-galleryThumbs.on('transitionStart', function () {
-  galleryMain.slideTo(galleryThumbs.activeIndex);
+var productViewGallery = new Swiper('.gallery-main-slider', {
+  watchOverflow: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  preventInteractionOnTransition: true,
+  navigation: {
+    nextEl: '.swiper-button-next-item',
+    prevEl: '.swiper-button-prev-item',
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  thumbs: {
+    swiper: productViewThumbs,
+  },
 });
 
 // ===== Sales Card ======= \\
