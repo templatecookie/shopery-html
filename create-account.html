@@ -7,7 +7,7 @@
         <title>Create Account || Shopery</title>
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
-        <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
@@ -15,7 +15,7 @@
     <body onload="loader()">
         <div class="loader">
             <div class="loader-icon">
-                <?xml version="1.0" encoding="utf-8"?>
+                <xml version="1.0" encoding="utf-8">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -251,7 +251,7 @@
                                     </span>
                                 </a>
                                 <ul class="header__navigation-drop-menu">
-                                    <li class="header__navigation-drop-menu-link "><a href="index.html">Homepage 01</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="index.html">Homepage 01</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-02.html">Homepage 02</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-03.html">Homepage 03</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-04.html">Homepage 04</a></li>
@@ -282,17 +282,17 @@
                                     </span>
                                 </a>
                                 <ul class="header__navigation-drop-menu">
-                                    <li class="header__navigation-drop-menu-link "><a href="user-dashboard.html">User Dashboard </a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="user-dashboard.html">User Dashboard </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="order-history.html">Order History </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="order-details.html">Order Details </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="account-setting.html">Settings </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="product-details.html">Product Details</a></li>
-                                   <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="shopping-cart.html"> Shopping Cart</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="checkout.html"> Checkout</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="sign-in.html"> Sign in</a></li>
                                     <li class="header__navigation-drop-menu-link active"><a href="create-account.html"> Create Account</a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="faq.html">  Faqs</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="faq.html"> Faqs</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="404.html"> Error 404</a></li>
                                 </ul>
                             </li>
@@ -540,7 +540,7 @@
                                 </svg>
                             </span>
                         </div>
-                        <div class="form-input ">
+                        <div class="form-input">
                             <input type="password" placeholder="Password" id="password" />
                             <button class="icon icon-eye" onclick="showPassword('password',this)">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -592,7 +592,7 @@
                                 </svg>
                             </span>
                         </div>
-                        <div class="form-input ">
+                        <div class="form-input">
                             <input type="password" placeholder="Confirm Password" id="confirmPassword" />
                             <button class="icon icon-eye" onclick="showPassword('confirmPassword',this)">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -856,7 +856,7 @@
         </footer>
         <!--Footer Section end  -->
 
-          <script src="dist/plugins/js/swiper-bundle.min.js"></script>
+        <script src="dist/plugins/js/swiper-bundle.min.js"></script>
         <script src="dist/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
@@ -867,8 +867,8 @@
                 preloader.style.display = "none";
             }
 
-                        // Hide type in toggle
-                        function showPassword(id, el) {
+            // Hide type in toggle
+            function showPassword(id, el) {
                 let x = document.getElementById(id);
                 if (x.type === "password") {
                     x.type = "text";
@@ -881,8 +881,7 @@
                 }
             }
 
-
-            // Select box 
+            // Select box
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,
