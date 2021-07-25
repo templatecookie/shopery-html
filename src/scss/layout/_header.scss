@@ -199,6 +199,10 @@
     border: 1px solid color(gray-1);
     overflow: hidden;
     position: relative;
+    &:hover {
+      border-color: color(hard-primary);
+      transition: all 0.3s linear;
+    }
     input {
       width: 75%;
       height: inherit;
