@@ -1124,6 +1124,10 @@
         border-radius: 100%;
         border: 1px solid color(green-1);
         margin-bottom: 16px;
+        @include max(767px) {
+          margin: auto;
+          margin-bottom: 16px;
+        }
       }
 
       &-process-info {
@@ -1137,11 +1141,6 @@
           line-height: 21px;
         }
       }
-    }
-    .cards-ship__item-icon {
-      // margin: ;
-      margin: auto;
-      margin-bottom: 16px;
     }
   }
 
