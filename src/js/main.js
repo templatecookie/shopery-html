@@ -166,10 +166,10 @@ var bannerFive = new Swiper('.banner-slider--05', {
   loop: true,
   loopFillGroupWithBlank: true,
   effect: 'fade',
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -182,30 +182,6 @@ var bannerFive = new Swiper('.banner-slider--05', {
 });
 
 //====== Shipping Slider one ======\\
-var shiping = new Swiper('.shipping-container--slider', {
-  spaceBetween: 0,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
-  },
-});
 
 //====== Categories ======\\
 var categories = new Swiper('.popular-categories--slider', {

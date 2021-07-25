@@ -954,10 +954,24 @@
 
 // Shipping Cards
 .cards-ship {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
+  gap: 24px;
   background-color: #fff;
+  box-shadow: 0px 8px 40px 0px #00260314;
+  @include min-max(768px, 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include max(767px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0;
+  }
+
+  &__item {
+    height: 100%;
+  }
 
   &__item-process-info {
     h2 {
@@ -966,6 +980,9 @@
     p {
       color: color(gray-4);
     }
+  }
+  &__item-icon {
+    flex-shrink: 0;
   }
 
   // Specfic Styles
@@ -1005,9 +1022,10 @@
   &--one {
     .cards-ship__item {
       padding: 40px 0px;
-      // background-color: #fff;
-      margin: auto !important;
       justify-content: center;
+      @include max(767px) {
+        padding: 26px 0px;
+      }
     }
   }
 
@@ -1015,9 +1033,15 @@
   &--two {
     padding-top: 0px;
     padding-bottom: 0px;
+    @include max(1199px) {
+      box-shadow: none;
+    }
     .cards-ship__item {
       padding: 40px 0px;
       position: relative;
+      @include max(767px) {
+        padding: 30px 0px;
+      }
       &:hover {
         .cards-ship__item-icon {
           color: #fff;
@@ -1062,13 +1086,18 @@
   // Shipping Cards three
   &--three {
     margin-bottom: 0px;
+    gap: 0;
     .cards-ship__item {
       border-right: 1px solid color(green-1);
       padding: 40px;
       transition: all 0.3s linear;
-
+      @include max(1199px) {
+        border-bottom: 1px solid #dae5da;
+      }
       @include max(767px) {
         padding: 30px;
+        text-align: center;
+        border-right: 1px solid #dae5da;
       }
       &:hover {
         background-color: color(primary);
@@ -1109,13 +1138,21 @@
         }
       }
     }
+    .cards-ship__item-icon {
+      // margin: ;
+      margin: auto;
+      margin-bottom: 16px;
+    }
   }
 
   // Shipping Cards Four
   &--four {
     border: 0px;
-    border-bottom: 2px solid color(gray-2);
+    border-bottom: 1px solid color(gray-2);
     padding: 0px;
+    @include max(767px) {
+      border-bottom: 0px;
+    }
     .cards-ship__item {
       text-align: center;
       padding: 40px;
@@ -1123,12 +1160,13 @@
       transition: all 0.3s linear;
       @include max(767px) {
         padding: 40px 20px;
+        border-bottom: 1px solid color(gray-2);
       }
       &:hover {
         &::after {
-          height: 2px;
+          height: 1px;
           background-color: color(primary);
-          bottom: -2px;
+          bottom: -1px;
         }
         .cards-ship__item-icon {
           color: color(gray-9);
