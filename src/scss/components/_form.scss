@@ -30,7 +30,9 @@
     border: 1px solid color(gray-1);
     overflow: hidden;
     margin-bottom: 12px;
-
+    &:hover {
+      border: 1px solid color(primary);
+    }
     input {
       width: 90%;
       height: inherit;

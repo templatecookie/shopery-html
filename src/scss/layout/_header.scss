@@ -199,6 +199,10 @@
     border: 1px solid color(gray-1);
     overflow: hidden;
     position: relative;
+    &:hover {
+      border-color: color(hard-primary);
+      transition: all 0.3s linear;
+    }
     input {
       width: 75%;
       height: inherit;
@@ -252,12 +256,12 @@
   }
 
   &__cart-item {
-    button {
+    a {
       padding-right: 18px;
       border-right: 1px solid color(gray-2);
     }
     &:nth-last-child(1) {
-      button {
+      a {
         border-right: 0px;
         padding-right: 0px;
       }

@@ -1,3 +1,32 @@
+.form-check {
+  &-label {
+    font-size: 14px;
+    line-height: 21px;
+    color: color(gray-7);
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  &-input {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    margin-right: 6px;
+    box-shadow: none;
+    &:checked {
+      background-color: color(primary);
+      border-color: color(primary);
+      box-shadow: none;
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: color(primary);
+    }
+  }
+}
+
 .contact-form {
   &__contact-info,
   &-card {
@@ -159,5 +188,161 @@
       //   width: 100%;
       // }
     }
+  }
+}
+
+.contact-form {
+  &__content-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include max(991px) {
+      flex-direction: column;
+    }
+    .contact-form-input {
+      margin-right: 16px;
+      width: 100%;
+      @include max(991px) {
+        margin-right: 0px;
+      }
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &-input {
+    margin-bottom: 16px;
+    position: relative;
+    label {
+      font-size: 14px;
+      line-height: 21px;
+      color: color(gray-9);
+      text-transform: capitalize;
+      margin-bottom: 6px;
+      display: block;
+      span {
+        color: color(gray-6);
+      }
+    }
+    input {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      padding-left: 16px;
+      padding-right: 60px;
+      font-size: 16px;
+      line-height: 20.8px;
+      color: color(gray-6);
+      font-weight: 400;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      background-color: #fff;
+      @include max(767px) {
+        padding-right: 16px;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &::placeholder {
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+
+        @include max(767px) {
+          font-size: 12px;
+        }
+      }
+
+      &[type='password'] {
+        @include max(767px) {
+          padding-right: 60px;
+        }
+      }
+
+      &:active,
+      &:hover {
+        border-color: color(primary);
+        transform: all 0.3s linear;
+      }
+    }
+
+    // Dropdown input
+    .bv_mainselect {
+      padding: 0px;
+      border: 1px solid #e5e5e5;
+      height: 50px;
+      &:hover,
+      &.active {
+        border-color: color(primary);
+        transition: all 0.3s linear;
+      }
+      .bv_atual {
+        border: 0px;
+        height: inherit;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 16px;
+        line-height: 30px;
+        color: color(gray-6);
+        padding-left: 16px;
+        &:hover,
+        &.active {
+          border-color: color(primary);
+          transition: all 0.3s linear;
+        }
+        .arrow {
+          border-color: color(gray-4);
+          border-width: 0 1.5px 1.5px 0;
+          display: inline-block;
+          padding: 3px;
+          margin-top: 8px;
+          margin-right: 8px;
+        }
+      }
+      .bv_ul_inner {
+        border: 1px solid #e5e5e5;
+        z-index: 9;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      top: calc(50% + 10px);
+      transform: translateY(-50%);
+      right: 18px;
+      cursor: pointer;
+    }
+  }
+
+  &-textarea {
+    textarea {
+      resize: none;
+      width: 100%;
+      height: 100px;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      padding: 14px 16px;
+      font-size: 16px;
+      line-height: 20.8px;
+      font-weight: 400;
+      color: color(gray-6);
+      &:hover,
+      &.active {
+        border-color: color(primary);
+        transition: all 0.3s linear;
+      }
+      &::placeholder {
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+      }
+    }
+  }
+
+  &-btn {
+    margin-top: 8px;
   }
 }

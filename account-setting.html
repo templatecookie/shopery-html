@@ -5,12 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Account Settings || Shopery</title>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
+        <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
+        <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
-    <body>
+    <body onload="loader()">
+        <div class="loader">
+            <div class="loader-icon">
+                <img src="src/images/loader.gif" alt="loader" />
+            </div>
+        </div>
         <!-- Header Section start -->
         <header class="header header--one">
             <div class="header__top">
@@ -100,11 +107,11 @@
                         </form>
                         <div class="header__cart">
                             <div class="header__cart-item">
-                                <button class="fav">
+                                <a class="fav" href="wishlist.html">
                                     <svg width="25" height="23" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="#1A1A1A" stroke-width="1.5" />
                                     </svg>
-                                </button>
+                                </a>
                             </div>
                             <div class="header__cart-item">
                                 <div class="header__cart-item-content">
@@ -134,7 +141,7 @@
                 <div class="container">
                     <div class="header__bottom-content">
                         <ul class="header__navigation-menu header__navigation-menu--two">
-                            <li class="header__navigation-menu-link active">
+                            <li class="header__navigation-menu-link">
                                 <a href="#">
                                     Home
                                     <span class="drop-icon">
@@ -144,7 +151,7 @@
                                     </span>
                                 </a>
                                 <ul class="header__navigation-drop-menu">
-                                    <li class="header__navigation-drop-menu-link active"><a href="index.html">Homepage 01</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="index.html">Homepage 01</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-02.html">Homepage 02</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-03.html">Homepage 03</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-04.html">Homepage 04</a></li>
@@ -165,7 +172,7 @@
                                     <li class="header__navigation-drop-menu-link"><a href="shop-02.html">Shop 02</a></li>
                                 </ul>
                             </li>
-                            <li class="header__navigation-menu-link">
+                            <li class="header__navigation-menu-link active">
                                 <a href="#">
                                     Pages
                                     <span class="drop-icon">
@@ -175,12 +182,11 @@
                                     </span>
                                 </a>
                                 <ul class="header__navigation-drop-menu">
-                                    <li class="header__navigation-drop-menu-link active"><a href="user-dashboard.html">User Dashboard </a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="user-dashboard.html">User Dashboard </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="order-history.html">Order History </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="order-details.html">Order Details </a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="settings.html">Settings </a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="account-setting.html">Settings </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="product-details.html">Product Details</a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="shopping-cart.html"> Shopping Cart</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="checkout.html"> Checkout</a></li>
@@ -244,120 +250,125 @@
                     </div>
                 </div>
             </div>
-            <div class="header__mobile-sidebar">
-                <div class="header__mobile-top">
-                    <form action="#">
-                        <div class="header__mobile-input">
-                            <input type="text" placeholder="Search" />
-                            <button class="search-btn">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path d="M17.4999 18L13.8749 14.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                    <ul class="header__mobile-menu">
-                        <li class="header__mobile-menu-item active">
-                            <a href="#" class="header__mobile-menu-item-link">
-                                Home
-                                <span class="drop-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="header__mobile-dropdown-menu">
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">
-                                Shop
-                                <span class="drop-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="header__mobile-dropdown-menu">
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">
-                                Pages
-                                <span class="drop-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="header__mobile-dropdown-menu">
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">
-                                Blog
-                                <span class="drop-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="header__mobile-dropdown-menu">
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">About</a>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header__mobile-bottom">
-                    <div class="header__mobile-user">
-                        <div class="header__mobile-user--img">
-                            <img src="src/images/user/img-03.png" alt="user" />
-                        </div>
-                        <div class="header__mobile-user--info">
-                            <h2 class="font-body--lg-500">Dianne Russell</h2>
-                            <p class="font-body--md-400">dianne.russell@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="header__mobile-action d-none">
-                        <a href="#" class="button button--md">Sign in</a>
-                        <a href="#" class="button button--md button--disable">Sign up</a>
-                    </div>
-                </div>
-
+            <div class="header__sidebar">
                 <button class="header__cross">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
+                <div class="header__mobile-sidebar">
+                    <div class="header__mobile-top">
+                        <form action="#">
+                            <div class="header__mobile-input">
+                                <input type="text" placeholder="Search" />
+                                <button class="search-btn">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path d="M17.4999 18L13.8749 14.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <ul class="header__mobile-menu">
+                            <li class="header__mobile-menu-item">
+                                <a href="#" class="header__mobile-menu-item-link">
+                                    Home
+                                    <span class="drop-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="header__mobile-dropdown-menu">
+                                    <li class="header__mobile-dropdown-menu-link"><a href="index.html">Home 01</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="home-02.html">Home 02</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="home-03.html">Home 03</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="home-04.html">Home 04</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="#" class="header__mobile-menu-item-link">
+                                    Shop
+                                    <span class="drop-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="header__mobile-dropdown-menu">
+                                    <li class="header__mobile-dropdown-menu-link"><a href="shop-01.html">Shop 01</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="shop-02.html">Shop 02</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="#" class="header__mobile-menu-item-link">
+                                    Pages
+                                    <span class="drop-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="header__mobile-dropdown-menu">
+                                    <li class="header__mobile-dropdown-menu-link"><a href="product-details.html">Product Details</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="wishlist.html">Wishlist</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="shopping-cart.html">Shopping Cart</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="checkout.html">Checkout</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="sign-in.html">Sign in</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="create-account.html">Create Account</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="user-dashboard.html">User Dashboard</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="order-history.html">order history</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="order-details.html">Order Details</a></li>
+                                    <li class="header__mobile-dropdown-menu-link active"><a href="account-setting.html">Account Settings</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="faq.html">Faqs</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="#" class="header__mobile-menu-item-link">
+                                    Blog
+                                    <span class="drop-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="header__mobile-dropdown-menu">
+                                    <li class="header__mobile-dropdown-menu-link"><a href="single-blog.html">Single Blog </a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="blog-list.html">Blog list</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="about.html" class="header__mobile-menu-item-link">About</a>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="contact.html" class="header__mobile-menu-item-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__mobile-bottom">
+                        <div class="header__mobile-user">
+                            <div class="header__mobile-user--img">
+                                <img src="src/images/user/img-03.png" alt="user" />
+                            </div>
+                            <div class="header__mobile-user--info">
+                                <h2 class="font-body--lg-500">Dianne Russell</h2>
+                                <p class="font-body--md-400">dianne.russell@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="header__mobile-action d-none">
+                            <a href="#" class="button button--md">Sign in</a>
+                            <a href="#" class="button button--md button--disable">Sign up</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- Header  Section start -->
@@ -396,7 +407,7 @@
         <!-- breedcrumb section end   -->
 
         <!-- dashboard Secton Start  -->
-        <section class="dashboard section">
+        <div class="dashboard section">
             <div class="container">
                 <div class="row dashboard__content">
                     <div class="col-lg-3">
@@ -540,14 +551,14 @@
                                             </form>
                                         </div>
                                         <div class="col-lg-5 order-lg-0 order-1">
-                                           <div class="dashboard__content-card-img">
-                                            <form action="#" style="text-align: center;">
-                                                <div class="dashboard__content-img-wrapper">
-                                                    <img src="src/images/user/img-07.png" alt="user-profile-img" />
-                                                </div>
-                                                <button class="button button--outline">Choose Image</button>
-                                            </form>
-                                           </div>
+                                            <div class="dashboard__content-card-img">
+                                                <form action="#" style="text-align: center;">
+                                                    <div class="dashboard__content-img-wrapper">
+                                                        <img src="src/images/user/img-07.png" alt="user-profile-img" />
+                                                    </div>
+                                                    <button class="button button--outline">Choose Image</button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -564,20 +575,20 @@
                                             <div class="contact-form__content-group">
                                                 <div class="contact-form-input">
                                                     <label for="fname">First Name </label>
-                                                    <input type="text" id="fname" placeholder="Dianne" />
+                                                    <input type="text" id="fname" placeholder="First Name" />
                                                 </div>
                                                 <div class="contact-form-input">
                                                     <label for="lname">Last Name </label>
-                                                    <input type="text" id="lname" placeholder="Dianne" />
+                                                    <input type="text" id="lname" placeholder="Last Name" />
                                                 </div>
                                                 <div class="contact-form-input">
                                                     <label for="cname">Company Name <span>(Optional)</span> </label>
-                                                    <input type="text" id="cname" placeholder="Zakirsoft" />
+                                                    <input type="text" id="cname" placeholder="Your Company Name" />
                                                 </div>
                                             </div>
                                             <div class="contact-form-input">
                                                 <label for="address">Street Address </label>
-                                                <input type="text" id="address" placeholder="Mirpur, Dhaka" />
+                                                <input type="text" id="address" placeholder="Your address" />
                                             </div>
                                             <div class="contact-form__content-group">
                                                 <!-- Country -->
@@ -615,11 +626,11 @@
                                             <div class="contact-form__content-group">
                                                 <div class="contact-form-input">
                                                     <label for="email"> email </label>
-                                                    <input type="text" id="email" placeholder="dianne.russell@gmail.com" />
+                                                    <input type="text" id="email" placeholder="Email Address" />
                                                 </div>
                                                 <div class="contact-form-input">
                                                     <label for="phone"> Phone </label>
-                                                    <input type="number" id="phone" placeholder="(603) 555-0123" />
+                                                    <input type="number" id="phone" placeholder="Phone number" />
                                                 </div>
                                             </div>
                                             <div class="contact-form-btn">
@@ -641,22 +652,21 @@
                                             <div class="contact-form-input">
                                                 <label for="cpassword">Current Password </label>
                                                 <input type="password" id="cpassword" placeholder="Password" />
-                                                <span class="icon">
-                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M1.66699 10.4993C1.66699 10.4993 4.69699 4.66602 10.0003 4.66602C15.3037 4.66602 18.3337 10.4993 18.3337 10.4993C18.3337 10.4993 15.3037 16.3327 10.0003 16.3327C4.69699 16.3327 1.66699 10.4993 1.66699 10.4993Z"
-                                                            stroke="#1A1A1A"
-                                                            stroke-width="1.5"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        />
-                                                        <path
-                                                            d="M10 13C10.663 13 11.2989 12.7366 11.7678 12.2678C12.2366 11.7989 12.5 11.163 12.5 10.5C12.5 9.83696 12.2366 9.20107 11.7678 8.73223C11.2989 8.26339 10.663 8 10 8C9.33696 8 8.70107 8.26339 8.23223 8.73223C7.76339 9.20107 7.5 9.83696 7.5 10.5C7.5 11.163 7.76339 11.7989 8.23223 12.2678C8.70107 12.7366 9.33696 13 10 13V13Z"
-                                                            stroke="#1A1A1A"
-                                                            stroke-width="1.5"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        />
+                                                <span class="icon" onclick="showPassword('cpassword',this)">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="21"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-eye"
+                                                    >
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
                                                     </svg>
                                                 </span>
                                             </div>
@@ -665,45 +675,43 @@
                                                 <div class="contact-form-input">
                                                     <label for="npassword">new Password </label>
                                                     <input type="password" id="npassword" placeholder="Password" />
-                                                    <span class="icon">
-                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M1.66699 10.4993C1.66699 10.4993 4.69699 4.66602 10.0003 4.66602C15.3037 4.66602 18.3337 10.4993 18.3337 10.4993C18.3337 10.4993 15.3037 16.3327 10.0003 16.3327C4.69699 16.3327 1.66699 10.4993 1.66699 10.4993Z"
-                                                                stroke="#1A1A1A"
-                                                                stroke-width="1.5"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                            />
-                                                            <path
-                                                                d="M10 13C10.663 13 11.2989 12.7366 11.7678 12.2678C12.2366 11.7989 12.5 11.163 12.5 10.5C12.5 9.83696 12.2366 9.20107 11.7678 8.73223C11.2989 8.26339 10.663 8 10 8C9.33696 8 8.70107 8.26339 8.23223 8.73223C7.76339 9.20107 7.5 9.83696 7.5 10.5C7.5 11.163 7.76339 11.7989 8.23223 12.2678C8.70107 12.7366 9.33696 13 10 13V13Z"
-                                                                stroke="#1A1A1A"
-                                                                stroke-width="1.5"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                            />
+                                                    <span class="icon" onclick="showPassword('npassword',this)">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="20"
+                                                            height="21"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-eye"
+                                                        >
+                                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                            <circle cx="12" cy="12" r="3"></circle>
                                                         </svg>
                                                     </span>
                                                 </div>
                                                 <!-- confirm  Password  -->
                                                 <div class="contact-form-input">
-                                                    <label for="cpassword">confirm Password</label>
-                                                    <input type="password" id="cpassword" placeholder="Password" />
-                                                    <span class="icon">
-                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M1.66699 10.4993C1.66699 10.4993 4.69699 4.66602 10.0003 4.66602C15.3037 4.66602 18.3337 10.4993 18.3337 10.4993C18.3337 10.4993 15.3037 16.3327 10.0003 16.3327C4.69699 16.3327 1.66699 10.4993 1.66699 10.4993Z"
-                                                                stroke="#1A1A1A"
-                                                                stroke-width="1.5"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                            />
-                                                            <path
-                                                                d="M10 13C10.663 13 11.2989 12.7366 11.7678 12.2678C12.2366 11.7989 12.5 11.163 12.5 10.5C12.5 9.83696 12.2366 9.20107 11.7678 8.73223C11.2989 8.26339 10.663 8 10 8C9.33696 8 8.70107 8.26339 8.23223 8.73223C7.76339 9.20107 7.5 9.83696 7.5 10.5C7.5 11.163 7.76339 11.7989 8.23223 12.2678C8.70107 12.7366 9.33696 13 10 13V13Z"
-                                                                stroke="#1A1A1A"
-                                                                stroke-width="1.5"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                            />
+                                                    <label for="confirmPassword">confirm Password</label>
+                                                    <input type="password" id="confirmPassword" placeholder="Password" />
+                                                    <span class="icon" onclick="showPassword('confirmPassword',this)">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="20"
+                                                            height="21"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-eye"
+                                                        >
+                                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                            <circle cx="12" cy="12" r="3"></circle>
                                                         </svg>
                                                     </span>
                                                 </div>
@@ -719,7 +727,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- dashboard Secton  End  -->
 
         <!-- cal-to-action Section Start  -->
@@ -916,34 +924,131 @@
         </footer>
         <!--Footer Section end  -->
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Shopping Cart sidebar  start  -->
+        <div class="shopping-cart">
+            <div class="shopping-cart-top">
+                <div class="shopping-cart-header">
+                    <h5 class="font-body--xxl-500">Shopping Cart (<span class="count">2</span>)</h5>
+                    <button class="close">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22.5" fill="white" />
+                            <path d="M28.75 16.25L16.25 28.75" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.25 16.25L28.75 28.75" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="shopping-cart__product-content">
+                    <div class="shopping-cart__product-content-item">
+                        <div class="img-wrapper">
+                            <img src="src/images/products/img-01.png" alt="product" />
+                        </div>
+                        <div class="text-content">
+                            <h5 class="font-body--md-400">Fresh Indian Orange</h5>
+                            <p class="font-body--md-400">1kg x <span class="font-body--md-500">12.00</span></p>
+                        </div>
+                    </div>
+                    <button class="delete-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z" stroke="#CCCCCC" stroke-miterlimit="10" />
+                            <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="shopping-cart__product-content">
+                    <div class="shopping-cart__product-content-item">
+                        <div class="img-wrapper">
+                            <img src="src/images/products/img-01.png" alt="product" />
+                        </div>
+                        <div class="text-content">
+                            <h5 class="font-body--md-400">Fresh Indian Orange</h5>
+                            <p class="font-body--md-400">1kg x <span class="font-body--md-500">12.00</span></p>
+                        </div>
+                    </div>
+                    <button class="delete-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z" stroke="#CCCCCC" stroke-miterlimit="10" />
+                            <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="shopping-cart-bottom">
+                <div class="shopping-cart-product-info">
+                    <p class="product-count font-body--lg-400">2 Product</p>
+                    <span class="product-price font-body--lg-500">$26.00</span>
+                </div>
+
+                <form action="#">
+                    <button class="button button--lg w-100">Checkout</button>
+                    <button class="button button--lg button--disable w-100">go to cart</button>
+                </form>
+            </div>
+        </div>
+        <!-- Shopping Cart sidebar  end -->
+
+        <script src="dist/plugins/js/swiper-bundle.min.js"></script>
         <script src="dist/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
         <script>
+            //  Page Loader
+            const preloader = document.querySelector(".loader");
+
+            function loader() {
+                preloader.style.display = "none";
+            }
+            // Hide type in toggle
+            function showPassword(id, el) {
+                let x = document.getElementById(id);
+                if (x.type === "password") {
+                    x.type = "text";
+                    el.innerHTML =
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> ';
+                } else {
+                    x.type = "password";
+                    el.innerHTML =
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+                }
+            }
+
+            //  Filter Sidebar
+            const filterBtn = document.querySelector(".filter-icon");
+
+            // Click Event
+            filterBtn.addEventListener("click", () => {
+                let sidebarNav = document.querySelector(".dashboard__nav");
+                let body = document.querySelector("body");
+                sidebarNav.classList.toggle("active");
+                body.classList.toggle("overlay");
+            });
+
             var country = new BVSelect({
                 selector: "#country",
                 searchbox: false,
                 offset: false,
-                placeholder: "Eng",
+                placeholder: "Select",
             });
             var states = new BVSelect({
                 selector: "#states",
                 searchbox: false,
                 offset: false,
-                placeholder: "Washington DC",
+                placeholder: "Select",
             });
             var zip = new BVSelect({
                 selector: "#zip",
                 searchbox: false,
                 offset: false,
-                placeholder: "Eng",
+                placeholder: "Zip Code",
             });
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,
                 offset: false,
-                placeholder: "20033",
+                placeholder: "20033 ",
             });
             var demo2 = new BVSelect({
                 selector: "#selectbox2",

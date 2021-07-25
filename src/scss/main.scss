@@ -11,6 +11,7 @@
 
 // layout
 @import 'layout/section';
+@import 'layout/loader';
 @import 'layout/header';
 @import 'layout/mobile-menu';
 @import 'layout/banner';
@@ -21,10 +22,11 @@
 @import 'layout/hero';
 @import 'layout/blog-sidebar';
 @import 'layout/shop-sidebar';
-// @import 'layout/nav';
 @import 'layout/breadcrumb';
 @import 'layout/contact-form';
+@import 'layout/newsletter-pop';
 @import 'layout/maps';
+@import 'layout/product-view';
 @import 'layout/footer';
 
 // components
@@ -41,6 +43,9 @@
 @import 'components/pagination';
 @import 'components/counter';
 @import 'components/navigation-card';
+@import 'components/progress-bar';
+@import 'components/counter-btn';
+// @import 'components/range';
 
 // pages
 @import 'pages/home';
@@ -53,6 +58,5 @@
 @import 'pages/shop';
 @import 'pages/product-details';
 @import 'pages/dashboard';
-
-// themes
-@import 'themes/theme';
+@import 'pages/account';
+@import 'pages/presentation';

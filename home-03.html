@@ -5,12 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Homepage-03 || Shopery</title>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
+        <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
+        <link rel="stylesheet" href="dist/plugins/css/venobox.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
-    <body >
+    <body onload="loader()">
+        <div class="loader">
+            <div class="loader-icon">
+                <img src="src/images/loader.gif" alt="loader">
+            </div>
+        </div>
+
         <!-- Header Section start -->
         <header class="header header--one header--three">
             <div class="header__top">
@@ -100,11 +108,14 @@
                         </form>
                         <div class="header__cart">
                             <div class="header__cart-item">
-                                <button class="fav">
-                                    <svg width="25" height="23" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5" />
+                                <a class="fav" href="wishlist.html">
+                                    <svg width="25" height="23" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z"
+                                            stroke="#1A1A1A" stroke-width="1.5" />
                                     </svg>
-                                </button>
+                                </a>
                             </div>
                             <div class="header__cart-item">
                                 <div class="header__cart-item-content">
@@ -144,10 +155,10 @@
                                     </span>
                                 </a>
                                 <ul class="header__navigation-drop-menu">
-                                    <li class="header__navigation-drop-menu-link active"><a href="index.html">Homepage 01</a></li>
+                                    <li class="header__navigation-drop-menu-link "><a href="index.html">Homepage 01</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-02.html">Homepage 02</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-03.html">Homepage 03</a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="home-04.html">Homepage 04</a></li>
+                                    <li class="header__navigation-drop-menu-link active"><a href="home-04.html">Homepage 04</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="home-05.html">Homepage 05</a></li>
                                 </ul>
                             </li>
@@ -165,7 +176,7 @@
                                     <li class="header__navigation-drop-menu-link"><a href="shop-02.html">Shop 02</a></li>
                                 </ul>
                             </li>
-                            <li class="header__navigation-menu-link">
+                            <li class="header__navigation-menu-link ">
                                 <a href="#">
                                     Pages
                                     <span class="drop-icon">
@@ -175,13 +186,12 @@
                                     </span>
                                 </a>
                                 <ul class="header__navigation-drop-menu">
-                                    <li class="header__navigation-drop-menu-link active"><a href="user-dashboard.html">User Dashboard </a></li>
+                                    <li class="header__navigation-drop-menu-link "><a href="user-dashboard.html">User Dashboard </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="order-history.html">Order History </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="order-details.html">Order Details </a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="settings.html">Settings </a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="account-setting.html">Settings </a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="product-details.html">Product Details</a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
+                                   <li class="header__navigation-drop-menu-link"><a href="wishlist.html"> Wishlist</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="shopping-cart.html"> Shopping Cart</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="checkout.html"> Checkout</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="sign-in.html"> Sign in</a></li>
@@ -238,120 +248,125 @@
                     </div>
                 </div>
             </div>
-            <div class="header__mobile-sidebar">
-                <div class="header__mobile-top">
-                    <form action="#">
-                        <div class="header__mobile-input">
-                            <input type="text" placeholder="Search" />
-                            <button class="search-btn">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path d="M17.4999 18L13.8749 14.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                    <ul class="header__mobile-menu">
-                        <li class="header__mobile-menu-item active">
-                            <a href="#" class="header__mobile-menu-item-link">
-                                Home
-                                <span class="drop-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="header__mobile-dropdown-menu">
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">
-                                Shop
-                                <span class="drop-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="header__mobile-dropdown-menu">
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">
-                                Pages
-                                <span class="drop-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="header__mobile-dropdown-menu">
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">
-                                Blog
-                                <span class="drop-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <ul class="header__mobile-dropdown-menu">
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                                <li class="header__mobile-dropdown-menu-link"><a href="#">Home 01</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">About</a>
-                        </li>
-                        <li class="header__mobile-menu-item">
-                            <a href="#" class="header__mobile-menu-item-link">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header__mobile-bottom">
-                    <div class="header__mobile-user">
-                        <div class="header__mobile-user--img">
-                            <img src="src/images/user/img-03.png" alt="user" />
-                        </div>
-                        <div class="header__mobile-user--info">
-                            <h2 class="font-body--lg-500">Dianne Russell</h2>
-                            <p class="font-body--md-400">dianne.russell@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="header__mobile-action d-none">
-                        <a href="#" class="button button--md">Sign in</a>
-                        <a href="#" class="button button--md button--disable">Sign up</a>
-                    </div>
-                </div>
-
+            <div class="header__sidebar">
                 <button class="header__cross">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
+                <div class="header__mobile-sidebar">
+                    <div class="header__mobile-top">
+                        <form action="#">
+                            <div class="header__mobile-input">
+                                <input type="text" placeholder="Search" />
+                                <button class="search-btn">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path d="M17.4999 18L13.8749 14.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <ul class="header__mobile-menu">
+                            <li class="header__mobile-menu-item">
+                                <a href="#" class="header__mobile-menu-item-link">
+                                    Home
+                                    <span class="drop-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="header__mobile-dropdown-menu">
+                                    <li class="header__mobile-dropdown-menu-link"><a href="index.html">Home 01</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="home-02.html">Home 02</a></li>
+                                    <li class="header__mobile-dropdown-menu-link active"><a href="home-03.html">Home 03</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="home-04.html">Home 04</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="#" class="header__mobile-menu-item-link">
+                                    Shop
+                                    <span class="drop-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="header__mobile-dropdown-menu">
+                                    <li class="header__mobile-dropdown-menu-link"><a href="shop-01.html">Shop 01</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="shop-02.html">Shop 02</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="#" class="header__mobile-menu-item-link">
+                                    Pages
+                                    <span class="drop-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="header__mobile-dropdown-menu">
+                                    <li class="header__mobile-dropdown-menu-link"><a href="product-details.html">Product Details</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="wishlist.html">Wishlist</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="shopping-cart.html">Shopping Cart</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="checkout.html">Checkout</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="sign-in.html">Sign in</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="create-account.html">Create Account</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="user-dashboard.html">User Dashboard</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="order-history.html">order history</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="order-details.html">Order Details</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="account-setting.html">Account Settings</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="faq.html">Faqs</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="#" class="header__mobile-menu-item-link">
+                                    Blog
+                                    <span class="drop-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul class="header__mobile-dropdown-menu">
+                                    <li class="header__mobile-dropdown-menu-link"><a href="single-blog.html">Single Blog </a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="blog-list.html">Blog list</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="about.html" class="header__mobile-menu-item-link">About</a>
+                            </li>
+                            <li class="header__mobile-menu-item">
+                                <a href="contact.html" class="header__mobile-menu-item-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__mobile-bottom">
+                        <div class="header__mobile-user">
+                            <div class="header__mobile-user--img">
+                                <img src="src/images/user/img-03.png" alt="user" />
+                            </div>
+                            <div class="header__mobile-user--info">
+                                <h2 class="font-body--lg-500">Dianne Russell</h2>
+                                <p class="font-body--md-400">dianne.russell@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="header__mobile-action d-none">
+                            <a href="#" class="button button--md">Sign in</a>
+                            <a href="#" class="button button--md button--disable">Sign up</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- Header  Section start -->
@@ -2220,29 +2235,7 @@
                                             Sale of the Month
                                         </h2>
 
-                                        <div class="cards-ss__countdown">
-                                            <ul class="example">
-                                                <li>
-                                                    <span class="days">00</span>
-                                                    <p class="days_text">Days</p>
-                                                </li>
-                                                <li class="seperator">:</li>
-                                                <li>
-                                                    <span class="hours">00</span>
-                                                    <p class="hours_text">Hours</p>
-                                                </li>
-                                                <li class="seperator">:</li>
-                                                <li>
-                                                    <span class="minutes">00</span>
-                                                    <p class="minutes_text">MINS</p>
-                                                </li>
-                                                <li class="seperator">:</li>
-                                                <li>
-                                                    <span class="seconds">00</span>
-                                                    <p class="seconds_text">SECS</p>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <div id="countdownTwo" class="countdown-clock"></div>
 
                                         <a href="#" class="button button--md">
                                             Shop now
@@ -3141,7 +3134,7 @@
                 <div class="instagram-slider--one swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#" class="cards-ig">
+                            <a href="src/images/instagram/img-01.png" class="cards-ig venobox">
                                 <div class="cards-ig__img">
                                     <img src="src/images/instagram/img-01.png" alt="ig" />
                                     <div class="cards-ig__overlay">
@@ -3158,7 +3151,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="cards-ig">
+                            <a href="src/images/instagram/img-02.png" class="cards-ig venobox">
                                 <div class="cards-ig__img">
                                     <img src="src/images/instagram/img-02.png" alt="ig" />
                                     <div class="cards-ig__overlay">
@@ -3175,7 +3168,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="cards-ig">
+                            <a href="src/images/instagram/img-03.png" class="cards-ig venobox">
                                 <div class="cards-ig__img">
                                     <img src="src/images/instagram/img-03.png" alt="ig" />
                                     <div class="cards-ig__overlay">
@@ -3192,7 +3185,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="cards-ig">
+                            <a href="src/images/instagram/img-04.png" class="cards-ig venobox">
                                 <div class="cards-ig__img">
                                     <img src="src/images/instagram/img-04.png" alt="ig" />
                                     <div class="cards-ig__overlay">
@@ -3209,7 +3202,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="cards-ig">
+                            <a href="src/images/instagram/img-05.png" class="cards-ig venobox">
                                 <div class="cards-ig__img">
                                     <img src="src/images/instagram/img-05.png" alt="ig" />
                                     <div class="cards-ig__overlay">
@@ -3226,7 +3219,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="cards-ig">
+                            <a href="src/images/instagram/img-06.png" class="cards-ig venobox">
                                 <div class="cards-ig__img">
                                     <img src="src/images/instagram/img-06.png" alt="ig" />
                                     <div class="cards-ig__overlay">
@@ -3489,11 +3482,138 @@
         </footer>
         <!--Footer Section end  -->
 
-        <!-- <script src="dist/plugins/js/swiper-bundle.min.js"></script> -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Modal -->
+        <div class="modal fade newsletter-popup" id="newsletter" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row newsletter-popup__content">
+                            <div class="col-lg-5">
+                                <div class="newsletter-popup__img-wrapper">
+                                    <img src="src/images/banner/banner-sm-18.png" alt="newsletter" />
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="newsletter-popup__text-content">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h5 class="font-title--xl">Subscribe to Our Newsletter</h5>
+                                    <p class="font-body--lg">Subscribe to our newlletter and Save your <span>20% money </span> with discount code today.</p>
+
+                                    <form action="#">
+                                        <div class="contact-mail">
+                                            <input type="email" placeholder="Enter Your email" />
+                                            <button class="button button--md">Subscribe</button>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="remember" />
+                                            <label class="form-check-label font-body--md-400" for="remember">
+                                                Do not show this window
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping Cart sidebar  start  -->
+        <div class="shopping-cart">
+            <div class="shopping-cart-top">
+                <div class="shopping-cart-header">
+                    <h5 class="font-body--xxl-500">Shopping Cart (<span class="count">2</span>)</h5>
+                    <button class="close">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22.5" fill="white" />
+                            <path d="M28.75 16.25L16.25 28.75" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.25 16.25L28.75 28.75" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="shopping-cart__product-content">
+                    <div class="shopping-cart__product-content-item">
+                        <div class="img-wrapper">
+                            <img src="src/images/products/img-01.png" alt="product" />
+                        </div>
+                        <div class="text-content">
+                            <h5 class="font-body--md-400">Fresh Indian Orange</h5>
+                            <p class="font-body--md-400">1kg x <span class="font-body--md-500">12.00</span></p>
+                        </div>
+                    </div>
+                    <button class="delete-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z" stroke="#CCCCCC" stroke-miterlimit="10" />
+                            <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="shopping-cart__product-content">
+                    <div class="shopping-cart__product-content-item">
+                        <div class="img-wrapper">
+                            <img src="src/images/products/img-01.png" alt="product" />
+                        </div>
+                        <div class="text-content">
+                            <h5 class="font-body--md-400">Fresh Indian Orange</h5>
+                            <p class="font-body--md-400">1kg x <span class="font-body--md-500">12.00</span></p>
+                        </div>
+                    </div>
+                    <button class="delete-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z" stroke="#CCCCCC" stroke-miterlimit="10" />
+                            <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="shopping-cart-bottom">
+                <div class="shopping-cart-product-info">
+                    <p class="product-count font-body--lg-400">2 Product</p>
+                    <span class="product-price font-body--lg-500">$26.00</span>
+                </div>
+
+                <form action="#">
+                    <button class="button button--lg w-100">Checkout</button>
+                    <button class="button button--lg button--disable w-100">go to cart</button>
+                </form>
+            </div>
+        </div>
+        <!-- Shopping Cart sidebar  end -->
+
+        <script src="dist/plugins/js/jquery.min.js"></script>
+        <script src="dist/plugins/js/venobox.min.js"></script>
+          <script src="dist/plugins/js/swiper-bundle.min.js"></script>
         <script src="dist/plugins/js/bvselect.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="dist/plugins/js/jquery.syotimer.min.js"></script>
         <script src="dist/main.js"></script>
         <script>
+            //  Page Loader
+            const preloader = document.querySelector(".loader");
+            function loader() {
+                preloader.style.display = "none";
+            }
+
+            // Modal
+            $(document).ready(function () {
+                $("#newsletter").modal("show");
+
+                $(".venobox").venobox();
+            });
+
+            $("#countdownTwo").syotimer({
+                year: 2021,
+                month: 7,
+                day: 25,
+                hour: 20,
+                minute: 30,
+            });
+
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,
@@ -3506,13 +3626,6 @@
                 offset: false,
                 placeholder: "USD",
             });
-            // var demo6 = new BVSelect({
-            //     selector: "#category-item",
-            //     searchbox: false,
-            //     offset: false,
-            //     placeholder: 'All Category',
-            //     search_placeholder: "Search..."
-            // });
         </script>
     </body>
 </html>
