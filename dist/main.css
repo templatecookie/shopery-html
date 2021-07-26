@@ -14818,20 +14818,6 @@ body.overlay {
       text-transform: capitalize; }
       .cards-ss__content a.button:hover {
         background-color: #f2f2f2; }
-  .cards-ss__countdown ul.example li {
-    margin-right: 8px; }
-  .cards-ss__countdown ul.example li span {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400; }
-  .cards-ss__countdown ul.example li.seperator {
-    color: #ffffff99; }
-  .cards-ss__countdown ul.example li p {
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffffcc; }
   .cards-ss__startpackage p {
     font-size: 18px;
     line-height: 27px;
