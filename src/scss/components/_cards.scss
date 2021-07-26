@@ -122,6 +122,12 @@
         color: color(primary);
       }
     }
+    .cards-md__favs-list {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      transition: all 0.6s linear;
+    }
   }
   &__img-wrapper {
     position: relative;
@@ -163,10 +169,11 @@
     position: absolute;
     top: 16px;
     right: 16px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     .action-btn {
       margin-bottom: 6px;
-      // background-color: #fff;
-      // border: 1px solid #f2f2f2;
     }
   }
 }

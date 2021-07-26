@@ -14255,6 +14255,13 @@ body.overlay {
 .cards-md:hover .cards-md__info-left h6, .cards-md:hover .cards-md__info-left .h6 {
   color: #00b207; }
 
+.cards-md:hover .cards-md__favs-list {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear; }
+
 .cards-md__img-wrapper {
   position: relative;
   padding: 5px;
@@ -14293,7 +14300,10 @@ body.overlay {
           flex-direction: column;
   position: absolute;
   top: 16px;
-  right: 16px; }
+  right: 16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; }
   .cards-md__favs-list .action-btn {
     margin-bottom: 6px; }
 
