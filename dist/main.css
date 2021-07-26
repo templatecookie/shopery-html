@@ -9544,6 +9544,10 @@ a {
       padding: 0px;
       margin: 0px; } }
 
+.modal-backdrop {
+  background: #000000;
+  opacity: 0.8; }
+
 .section {
   position: relative; }
   .section__head {
@@ -10601,7 +10605,8 @@ body.overlay {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: #000000;
+    opacity: 0.8;
     z-index: 999; }
 
 .banner {
@@ -16453,6 +16458,9 @@ body.overlay {
     @media (max-width: 575px) {
       .banner-sales__overlay-img.two {
         display: none; } }
+
+.banner-sales .banner-sale--two {
+  margin-bottom: 24px; }
 
 @media (max-width: 1200px) {
   .testimonial {

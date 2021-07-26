@@ -15,7 +15,6 @@
  02. Shipping
  03. Categories 
  04. Products 
- 05. Sale Cards 
  06. Deal Cards 
  07. Featured 
  08. News 
@@ -491,33 +490,6 @@ var productViewGallery = new Swiper('.gallery-main-slider', {
   },
   thumbs: {
     swiper: productViewThumbs,
-  },
-});
-
-// ===== Sales Card ======= \\
-
-var salesCard = new Swiper('.banner-sales--slider', {
-  spaceBetween: 24,
-  loop: true,
-  loopFillGroupWithBlank: true,
-
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
   },
 });
 
