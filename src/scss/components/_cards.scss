@@ -121,6 +121,7 @@
 // categorie  s cards md
 .cards-md {
   &:hover {
+    z-index: 3;
     .cards-md__info-left {
       h6 {
         color: color(primary);
@@ -185,7 +186,9 @@
 // Large products cards
 .cards-lg {
   // padding: 25px;
-
+  &:hover {
+    z-index: 3;
+  }
   &__img-wrapper {
     position: relative;
     // margin-bottom: 30px;

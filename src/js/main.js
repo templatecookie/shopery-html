@@ -496,31 +496,6 @@ var productViewGallery = new Swiper('.gallery-main-slider', {
 
 // ===== Sales Card ======= \\
 
-var salesCard = new Swiper('.cyclone--slider', {
-  loop: true,
-  loopFillGroupWithBlank: true,
-
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 24,
-    },
-    1400: {
-      slidesPerView: 3,
-      spaceBetween: 24,
-    },
-  },
-});
-
 var salesCard = new Swiper('.banner-sales--slider', {
   spaceBetween: 24,
   loop: true,

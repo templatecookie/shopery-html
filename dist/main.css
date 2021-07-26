@@ -11405,8 +11405,13 @@ body.overlay {
       font-size: 18px;
       line-height: 28px; } }
 
+.cyclone .cards-ss--lg {
+  margin-bottom: 24px; }
+
 @media (max-width: 991px) {
   .cyclone__content .cards-ss {
+    margin-bottom: 24px; }
+  .cyclone .cards-ss--lg {
     margin-bottom: 24px; } }
 
 @use "sass:math";
@@ -14254,15 +14259,16 @@ body.overlay {
 .cards-sm--three {
   padding-top: 24px; }
 
-.cards-md:hover .cards-md__info-left h6, .cards-md:hover .cards-md__info-left .h6 {
-  color: #00b207; }
-
-.cards-md:hover .cards-md__favs-list {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  -webkit-transition: all 0.6s linear;
-  transition: all 0.6s linear; }
+.cards-md:hover {
+  z-index: 3; }
+  .cards-md:hover .cards-md__info-left h6, .cards-md:hover .cards-md__info-left .h6 {
+    color: #00b207; }
+  .cards-md:hover .cards-md__favs-list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    -webkit-transition: all 0.6s linear;
+    transition: all 0.6s linear; }
 
 .cards-md__img-wrapper {
   position: relative;
@@ -14308,6 +14314,9 @@ body.overlay {
   pointer-events: none; }
   .cards-md__favs-list .action-btn {
     margin-bottom: 6px; }
+
+.cards-lg:hover {
+  z-index: 3; }
 
 .cards-lg__img-wrapper {
   position: relative;
