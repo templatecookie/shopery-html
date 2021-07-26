@@ -493,26 +493,32 @@
         @include min-max(375px, 734px) {
           width: 70px;
         }
-        // @include max(575px) {
-        //   width: 50px;
-        // }
+        @include max(575px) {
+          width: 60px;
+        }
         &::after {
           top: 50% !important;
           transform: translateY(-50%);
           color: color(green-5) !important;
         }
         .tab-val {
-          font-size: 32px;
-          line-height: 38.4px;
+          font-size: 32px !important;
+          line-height: 38.4px !important;
           font-weight: 400;
           color: color(primary);
+          @include max(767px) {
+            font-size: 22px !important;
+          }
         }
         .tab-unit {
-          font-size: 14px;
-          line-height: 14px;
+          font-size: 14px !important;
+          line-height: 14px !important;
           letter-spacing: 0.03em;
           font-weight: 400;
           color: color(green-5);
+          @include max(767px) {
+            font-size: 10px !important;
+          }
         }
       }
     }
