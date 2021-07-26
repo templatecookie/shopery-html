@@ -14434,8 +14434,16 @@ body.overlay {
     border-color: transparent;
     -webkit-box-shadow: 0px 20px 50px 0px #00000014;
             box-shadow: 0px 20px 50px 0px #00000014; }
-    .cards-blog:hover .cards-blog__info h2, .cards-blog:hover .cards-blog__info .h2,
-    .cards-blog:hover .cards-blog__info .h2 {
+    .cards-blog:hover .cards-blog__img-wrapper img {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .cards-blog:hover .cards-blog__img-wrapper .date {
+      background-color: #fff;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .cards-blog:hover .cards-blog__info h2, .cards-blog:hover .cards-blog__info .h2 {
       color: #2c742f; }
     .cards-blog:hover .cards-blog__play-icon {
       color: #00b207;
@@ -14475,7 +14483,7 @@ body.overlay {
       width: 58px;
       height: 58px;
       border-radius: 4px;
-      background-color: #fff; }
+      background: rgba(255, 255, 255, 0.85); }
       .cards-blog__img-wrapper .date h3, .cards-blog__img-wrapper .date .h3 {
         color: #1a1a1a; }
       .cards-blog__img-wrapper .date span {

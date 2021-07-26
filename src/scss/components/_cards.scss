@@ -323,14 +323,26 @@
   &:hover {
     border-color: transparent;
     box-shadow: 0px 20px 50px 0px #00000014;
-    .cards-blog__info h2,
-    .cards-blog__info .h2 {
-      color: color(hard-primary);
-    }
 
-    .cards-blog__play-icon {
-      color: color(primary);
-      transition: all 0.3s linear;
+    .cards-blog {
+      &__img-wrapper {
+        img {
+          transform: scale(1.1);
+          transition: all 0.3s linear;
+        }
+        .date {
+          background-color: #fff;
+          transition: all 0.3s linear;
+        }
+      }
+      &__info h2 {
+        color: color(hard-primary);
+      }
+
+      &__play-icon {
+        color: color(primary);
+        transition: all 0.3s linear;
+      }
     }
   }
 
@@ -355,7 +367,9 @@
       width: 58px;
       height: 58px;
       border-radius: 4px;
-      background-color: #fff;
+      // background-color: #fff;
+      background: rgba(255, 255, 255, 0.85);
+
       h3 {
         color: color(gray-9);
       }
