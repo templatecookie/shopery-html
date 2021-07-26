@@ -114,7 +114,11 @@
   }
 }
 
-// categories cards md
+.cards-sm--three {
+  padding-top: 24px;
+}
+
+// categorie  s cards md
 .cards-md {
   &:hover {
     .cards-md__info-left {

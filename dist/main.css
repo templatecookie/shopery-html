@@ -14251,6 +14251,9 @@ body.overlay {
     height: auto;
     overflow: visible; }
 
+.cards-sm--three {
+  padding-top: 24px; }
+
 .cards-md:hover .cards-md__info-left h6, .cards-md:hover .cards-md__info-left .h6 {
   color: #00b207; }
 
