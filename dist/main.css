@@ -13963,6 +13963,9 @@ body.overlay {
     transition: all 0.6s ease-in-out;
     color: #00b207; }
 
+.brand-name .swiper-wrapper .swiper-slide:nth-last-child(1) {
+  border-right: 0px !important; }
+
 .form-wrapper {
   position: relative;
   width: 520px;
