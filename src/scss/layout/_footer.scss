@@ -38,12 +38,18 @@
         &:nth-child(2) {
           margin-right: 0px;
         }
+        span {
+          &:hover {
+            border-bottom: 2px solid color(hard-primary);
+            transition: all 0.3s linear;
+          }
+        }
       }
 
       span {
         color: #fff;
         padding-bottom: 6px;
-        border-bottom: 2px solid color(primary);
+        border-bottom: 1px solid color(primary);
         font-weight: 500;
       }
     }
@@ -116,6 +122,10 @@
       margin-right: 8px;
       padding: 10px;
 
+      &:hover {
+        background-color: color(gray-1);
+        transition: all 0.3s linear;
+      }
       &:nth-last-child(1) {
         margin-right: 0px;
       }

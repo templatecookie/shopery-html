@@ -13483,10 +13483,14 @@ body.overlay {
         margin-left: 0px; }
       .footer__brand-info-contact a:nth-child(2) {
         margin-right: 0px; }
+      .footer__brand-info-contact a span:hover {
+        border-bottom: 2px solid #2c742f;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
     .footer__brand-info-contact span {
       color: #fff;
       padding-bottom: 6px;
-      border-bottom: 2px solid #00b207;
+      border-bottom: 1px solid #00b207;
       font-weight: 500; }
   .footer__navigation {
     overflow: hidden; }
@@ -13551,6 +13555,10 @@ body.overlay {
               align-items: center;
       margin-right: 8px;
       padding: 10px; }
+      .footer__mobile-app--item:hover {
+        background-color: #e5e5e5;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
       .footer__mobile-app--item:nth-last-child(1) {
         margin-right: 0px; }
       .footer__mobile-app--item span {
