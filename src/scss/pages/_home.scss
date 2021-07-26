@@ -163,7 +163,7 @@
 
 //\\=======  Homepage 04 ========== //\\
 
-// 03. Shipping Container
+//  Shipping Container
 .shipping-container {
   &--three {
     margin-bottom: 0px;
@@ -202,7 +202,7 @@
   }
 }
 
-// 04. Our products
+// Our products
 .our-products {
   .section__head {
     h2 {
@@ -516,6 +516,13 @@
         }
       }
     }
+  }
+}
+
+// Sales Banner card
+.sales-banner--two {
+  .cards-ss--md {
+    margin-bottom: 24px;
   }
 }
 

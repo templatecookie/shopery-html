@@ -14715,7 +14715,9 @@ body.overlay {
       z-index: 1; }
       .cards-ss--md__img-wrapper img {
         width: inherit;
-        height: inherit; }
+        height: inherit;
+        -o-object-fit: cover;
+           object-fit: cover; }
       .cards-ss--md__img-wrapper::after {
         content: '';
         position: absolute;
@@ -16136,6 +16138,9 @@ body.overlay {
       letter-spacing: 0.03em;
       font-weight: 400;
       color: #618062; }
+
+.sales-banner--two .cards-ss--md {
+  margin-bottom: 24px; }
 
 .category--top {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20.01%, #f2f5f3), to(#ffffff));

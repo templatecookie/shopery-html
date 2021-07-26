@@ -521,34 +521,6 @@ var salesCard = new Swiper('.cyclone--slider', {
   },
 });
 
-var salesCardOne = new Swiper('.sales-banner-slider--two', {
-  loop: true,
-  loopFillGroupWithBlank: true,
-
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1400: {
-      slidesPerView: 3,
-      spaceBetween: 24,
-    },
-  },
-});
-
 var salesCard = new Swiper('.banner-sales--slider', {
   spaceBetween: 24,
   loop: true,
