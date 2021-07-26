@@ -312,6 +312,12 @@
   }
 
   &:hover {
+    .cards-ig__img {
+      img {
+        transform: scale(1.1);
+        transition: all 0.3s linear;
+      }
+    }
     .cards-ig__overlay {
       height: 100%;
       opacity: 1;

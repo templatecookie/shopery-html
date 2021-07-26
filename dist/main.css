@@ -14430,6 +14430,12 @@ body.overlay {
             justify-content: center;
     color: #fff; }
 
+.cards-ig:hover .cards-ig__img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
 .cards-ig:hover .cards-ig__overlay {
   height: 100%;
   opacity: 1;
