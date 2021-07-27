@@ -15545,8 +15545,8 @@ body.overlay {
         visibility: visible; } }
   @media (max-width: 767px) {
     .dashboard__nav {
-      width: 35%;
-      left: -35%; }
+      width: 70%;
+      left: -70%; }
       .dashboard__nav.active {
         width: 70%; } }
   .dashboard__nav-title {

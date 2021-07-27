@@ -45,8 +45,8 @@
     }
 
     @include max(767px) {
-      width: 35%;
-      left: -35%;
+      width: 70%;
+      left: -70%;
       &.active {
         width: 70%;
       }
