@@ -12902,7 +12902,7 @@ body.overlay {
 
 .form-check-label {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 28px;
   color: #4d4d4d;
   font-weight: 400;
   text-transform: capitalize; }
@@ -13005,29 +13005,29 @@ body.overlay {
     border: 0px;
     font-size: 16px;
     line-height: 20.8px;
-    color: #666666;
+    color: #1a1a1a;
     background-color: inherit; }
     .contact-form--input input::-webkit-input-placeholder, .contact-form--input textarea::-webkit-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .contact-form--input input::-moz-placeholder, .contact-form--input textarea::-moz-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .contact-form--input input:-ms-input-placeholder, .contact-form--input textarea:-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .contact-form--input input::-ms-input-placeholder, .contact-form--input textarea::-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .contact-form--input input::placeholder,
     .contact-form--input textarea::placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
   .contact-form--input.active, .contact-form--input:hover {
     border: 1px solid #00b207;
     -webkit-transition: all 0.6s linear;
@@ -13130,7 +13130,7 @@ body.overlay {
     padding-right: 60px;
     font-size: 16px;
     line-height: 20.8px;
-    color: #666666;
+    color: #1a1a1a;
     font-weight: 400;
     border: 1px solid #e5e5e5;
     border-radius: 6px;
@@ -13144,23 +13144,23 @@ body.overlay {
     .contact-form-input input::-webkit-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .contact-form-input input::-moz-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .contact-form-input input:-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .contact-form-input input::-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .contact-form-input input::placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
       @media (max-width: 767px) {
         .contact-form-input input::-webkit-input-placeholder {
           font-size: 12px; }
@@ -13216,6 +13216,8 @@ body.overlay {
             transform: translateY(-50%);
     right: 18px;
     cursor: pointer; }
+  .contact-form-input.filled input {
+    color: #666666; }
 
 .contact-form-textarea textarea {
   resize: none;
@@ -14000,6 +14002,8 @@ body.overlay {
   border: 1px solid #e5e5e5;
   overflow: hidden;
   margin-bottom: 12px; }
+  .form-input.filled input {
+    color: #666666; }
   .form-input:hover {
     border: 1px solid #00b207; }
   .form-input input {
@@ -14009,30 +14013,30 @@ body.overlay {
     padding-left: 16px;
     font-size: 16px;
     line-height: 24px;
-    color: #999999; }
+    color: #1a1a1a; }
     @media (max-width: 767px) {
       .form-input input {
         width: 80%; } }
     .form-input input::-webkit-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .form-input input::-moz-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .form-input input:-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .form-input input::-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .form-input input::placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
   .form-input .icon {
     position: absolute;
     top: 50%;

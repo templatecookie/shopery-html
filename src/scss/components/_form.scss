@@ -30,6 +30,11 @@
     border: 1px solid color(gray-1);
     overflow: hidden;
     margin-bottom: 12px;
+    &.filled {
+      input {
+        color: color(gray-6);
+      }
+    }
     &:hover {
       border: 1px solid color(primary);
     }
@@ -40,14 +45,14 @@
       padding-left: 16px;
       font-size: 16px;
       line-height: 24px;
-      color: color(gray-4);
+      color: color(gray-9);
       @include max(767px) {
         width: 80%;
       }
       &::placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: color(gray-4);
       }
     }
     .icon {
@@ -56,8 +61,6 @@
       right: 16px;
       transform: translateY(-50%);
     }
-
-    // Activity
 
     // icons
     .icon {
