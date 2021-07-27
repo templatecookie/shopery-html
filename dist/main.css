@@ -15505,6 +15505,7 @@ body.overlay {
   position: relative;
   border-radius: 8px;
   padding: 24px 0px;
+  padding-bottom: 12px;
   background-color: #fff;
   border: 1px solid #e5e5e5; }
   .dashboard__nav .filter-icon {
@@ -15554,7 +15555,6 @@ body.overlay {
     margin-bottom: 16px;
     padding: 0px 24px; }
   .dashboard__nav-item-link {
-    padding: 16px 24px;
     border-left: 2px solid transparent; }
     .dashboard__nav-item-link:hover, .dashboard__nav-item-link.active {
       background-color: #edf2ee;
@@ -15572,7 +15572,8 @@ body.overlay {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      color: #666666; }
+      color: #666666;
+      padding: 16px 24px; }
       .dashboard__nav-item-link a .icon {
         margin-right: 6px;
         width: 30px; }
@@ -17855,6 +17856,11 @@ body.overlay {
 
 .dashboard__content {
   margin-top: 32px; }
+
+.dashboard__user-profile:hover, .dashboard__user-billing:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #e5e5e5; }
 
 .dashboard__user-profile {
   display: -webkit-box;

@@ -3,6 +3,14 @@
     margin-top: 32px;
   }
 
+  &__user-profile,
+  &__user-billing {
+    &:hover {
+      box-shadow: none;
+      border-color: color(gray-1);
+    }
+  }
+
   // User profile card
   &__user-profile {
     display: flex;
