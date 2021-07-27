@@ -181,6 +181,14 @@
       display: flex;
       align-items: center;
       margin-bottom: 24px;
+      &:hover {
+        .blog__recent-product__item-info {
+          h5 {
+            color: color(primary);
+            transition: all 0.3s linear;
+          }
+        }
+      }
       &:nth-last-child(1) {
         margin-bottom: 0px;
       }

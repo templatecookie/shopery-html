@@ -12431,6 +12431,10 @@ body.overlay {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 24px; }
+  .blog__recent-product__item:hover .blog__recent-product__item-info h5, .blog__recent-product__item:hover .blog__recent-product__item-info .h5 {
+    color: #00b207;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
   .blog__recent-product__item:nth-last-child(1) {
     margin-bottom: 0px; }
   .blog__recent-product__item-info {
@@ -17060,8 +17064,8 @@ body.overlay {
           -webkit-transform: translateY(-50%);
                   transform: translateY(-50%);
           right: -16px;
-          width: 6px;
-          height: 6px;
+          width: 4px;
+          height: 4px;
           border-radius: 50%;
           background-color: #1a1a1a;
           margin: 0px 6px; }

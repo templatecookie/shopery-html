@@ -9,6 +9,7 @@
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
         <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
+        <link rel="stylesheet" href="dist/plugins/css/venobox.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
@@ -539,7 +540,7 @@
                                     <h5 class="font-body--xxl-500">Our Gallery</h5>
                                     <div class="blog-gallery">
                                         <div class="blog-gallery__item">
-                                            <a href="#" class="cards-ig">
+                                            <a href="src/images/instagram//img-01-sm.png" class="cards-ig venobox">
                                                 <div class="cards-ig__img">
                                                     <img src="src/images/instagram//img-01-sm.png" alt="ig" />
                                                     <div class="cards-ig__overlay">
@@ -556,7 +557,7 @@
                                             </a>
                                         </div>
                                         <div class="blog-gallery__item">
-                                            <a href="#" class="cards-ig">
+                                            <a href="src/images/instagram//img-02-sm.png" class="cards-ig venobox">
                                                 <div class="cards-ig__img">
                                                     <img src="src/images/instagram//img-02-sm.png" alt="ig" />
                                                     <div class="cards-ig__overlay">
@@ -573,7 +574,7 @@
                                             </a>
                                         </div>
                                         <div class="blog-gallery__item">
-                                            <a href="#" class="cards-ig">
+                                            <a href="src/images/instagram//img-03-sm.png" class="cards-ig venobox">
                                                 <div class="cards-ig__img">
                                                     <img src="src/images/instagram//img-03-sm.png" alt="ig" />
                                                     <div class="cards-ig__overlay">
@@ -590,7 +591,7 @@
                                             </a>
                                         </div>
                                         <div class="blog-gallery__item">
-                                            <a href="#" class="cards-ig">
+                                            <a href="src/images/instagram//img-04-sm.png" class="cards-ig venobox">
                                                 <div class="cards-ig__img">
                                                     <img src="src/images/instagram//img-04-sm.png" alt="ig" />
                                                     <div class="cards-ig__overlay">
@@ -607,7 +608,7 @@
                                             </a>
                                         </div>
                                         <div class="blog-gallery__item">
-                                            <a href="#" class="cards-ig">
+                                            <a href="src/images/instagram//img-05-sm.png" class="cards-ig venobox">
                                                 <div class="cards-ig__img">
                                                     <img src="src/images/instagram//img-05-sm.png" alt="ig" />
                                                     <div class="cards-ig__overlay">
@@ -624,7 +625,7 @@
                                             </a>
                                         </div>
                                         <div class="blog-gallery__item">
-                                            <a href="#" class="cards-ig">
+                                            <a href="src/images/instagram//img-06-sm.png" class="cards-ig venobox">
                                                 <div class="cards-ig__img">
                                                     <img src="src/images/instagram//img-06-sm.png" alt="ig" />
                                                     <div class="cards-ig__overlay">
@@ -641,7 +642,7 @@
                                             </a>
                                         </div>
                                         <div class="blog-gallery__item">
-                                            <a href="#" class="cards-ig">
+                                            <a href="src/images/instagram//img-07-sm.png" class="cards-ig venobox">
                                                 <div class="cards-ig__img">
                                                     <img src="src/images/instagram//img-07-sm.png" alt="ig" />
                                                     <div class="cards-ig__overlay">
@@ -658,7 +659,7 @@
                                             </a>
                                         </div>
                                         <div class="blog-gallery__item">
-                                            <a href="#" class="cards-ig">
+                                            <a href="src/images/instagram//img-08-sm.png" class="cards-ig venobox">
                                                 <div class="cards-ig__img">
                                                     <img src="src/images/instagram//img-08-sm.png" alt="ig" />
                                                     <div class="cards-ig__overlay">
@@ -1697,6 +1698,9 @@
         </div>
         <!-- Shopping Cart sidebar  end -->
 
+        <!-- Scripts Content Goes Here -->
+        <script src="dist/plugins/js/jquery.min.js"></script>
+        <script src="dist/plugins/js/venobox.min.js"></script>
         <script src="dist/plugins/js/swiper-bundle.min.js"></script>
         <script src="dist/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -1718,6 +1722,7 @@
                 blogSidebar.classList.toggle("active");
                 body.classList.toggle("overlay");
             });
+            $(".venobox").venobox();
 
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
