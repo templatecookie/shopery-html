@@ -6,7 +6,10 @@
 img {
   border: 0;
   outline: 0;
-  max-width: 100%;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  // max-width: 100%;
 }
 
 button {

@@ -84,6 +84,11 @@
     align-items: center;
     overflow: hidden;
     padding: 5px;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
   }
 
   &__action {

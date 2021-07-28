@@ -303,7 +303,8 @@
       border-bottom-right-radius: 0px;
       margin: auto;
       background-color: color(green-0);
-      padding-left: 95px;
+      // padding-left: 95px;
+      padding-left: 40px;
       margin-top: 24px;
       display: flex;
       align-items: center;
@@ -386,13 +387,14 @@
       }
       a.button {
         margin-top: 32px;
-        span {
-          margin-left: 0px;
-        }
+        background-color: color(soft-primary);
       }
     }
     &__img-wrapper {
       opacity: 0.3;
+      img {
+        max-width: 100%;
+      }
     }
     .swiper-slide {
       opacity: 0 !important;
@@ -413,11 +415,9 @@
                 transform: translate(0px);
               }
             }
-            a {
-              span {
-                margin-left: 12px;
-                transform: all 0.9s linear;
-              }
+            a.button {
+              background-color: color(primary);
+              transform: all 0.9s linear;
             }
           }
           &__img-wrapper {

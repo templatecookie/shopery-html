@@ -9496,7 +9496,10 @@ textarea.form-control-lg {
 img {
   border: 0;
   outline: 0;
-  max-width: 100%; }
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 button {
   margin: 0;
@@ -10817,7 +10820,7 @@ body.overlay {
     border-bottom-right-radius: 0px;
     margin: auto;
     background-color: #edf2ee;
-    padding-left: 95px;
+    padding-left: 40px;
     margin-top: 24px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -10897,11 +10900,12 @@ body.overlay {
     color: #808080;
     text-transform: capitalize; }
   .banner--03__text-content a.button {
-    margin-top: 32px; }
-    .banner--03__text-content a.button span {
-      margin-left: 0px; }
+    margin-top: 32px;
+    background-color: #84d187; }
   .banner--03__img-wrapper {
     opacity: 0.3; }
+    .banner--03__img-wrapper img {
+      max-width: 100%; }
   .banner--03 .swiper-slide {
     opacity: 0 !important; }
     .banner--03 .swiper-slide-active {
@@ -10923,8 +10927,8 @@ body.overlay {
           .banner--03 .swiper-slide-active .banner--03__text-content h5, .banner--03 .swiper-slide-active .banner--03__text-content .h5 {
             -webkit-transform: translate(0px);
                     transform: translate(0px); } }
-      .banner--03 .swiper-slide-active .banner--03__text-content a span {
-        margin-left: 12px;
+      .banner--03 .swiper-slide-active .banner--03__text-content a.button {
+        background-color: #00b207;
         -webkit-transform: all 0.9s linear;
                 transform: all 0.9s linear; }
       .banner--03 .swiper-slide-active .banner--03__img-wrapper {
@@ -14252,6 +14256,11 @@ body.overlay {
             align-items: center;
     overflow: hidden;
     padding: 5px; }
+    .cards-sm--two__img-wrapper img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
   .cards-sm--two__action {
     display: -webkit-box;
     display: -webkit-flex;
