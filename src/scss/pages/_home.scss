@@ -695,12 +695,7 @@
       display: flex;
       align-items: flex-start;
       margin-bottom: 26px;
-      &:hover {
-        .icon {
-          background-color: color(primary);
-          transition: all 0.4s linear;
-        }
-      }
+
       .icon {
         display: flex;
         align-items: center;
@@ -708,7 +703,7 @@
         width: 24px;
         height: 24px;
         border-radius: 100%;
-        background-color: color(soft-primary);
+        background-color: color(primary);
         flex-shrink: 0;
       }
     }
@@ -734,7 +729,6 @@
       position: absolute;
       pointer-events: none;
       z-index: -1;
-      // begun
       &--one {
         bottom: 35px;
         left: 0px;
@@ -743,7 +737,6 @@
           bottom: -70px;
         }
       }
-
       // shade
       &--two {
         top: 0;
@@ -753,7 +746,6 @@
           display: none;
         }
       }
-
       // mula {
       &--three {
         top: 50%;

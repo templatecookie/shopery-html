@@ -16302,10 +16302,6 @@ body.overlay {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 26px; }
-  .food-store__content-list li:hover .icon {
-    background-color: #00b207;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear; }
   .food-store__content-list li .icon {
     display: -webkit-box;
     display: -webkit-flex;
@@ -16322,7 +16318,7 @@ body.overlay {
     width: 24px;
     height: 24px;
     border-radius: 100%;
-    background-color: #84d187;
+    background-color: #00b207;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0; }
