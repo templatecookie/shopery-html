@@ -1177,7 +1177,7 @@
       }
       &:hover {
         &::after {
-          height: 1px;
+          height: 4px;
           background-color: color(primary);
           bottom: -1px;
         }
@@ -1189,7 +1189,7 @@
       &::after {
         content: '';
         width: 100%;
-        height: 1px;
+        height: 2px;
         position: absolute;
         bottom: 0px;
         left: 0px;
