@@ -29,9 +29,11 @@
     justify-content: center;
     color: color(gray-6);
     &:hover,
+    &:focus,
     &.active {
       color: #fff;
       background-color: color(primary);
+      box-shadow: none;
     }
   }
 }

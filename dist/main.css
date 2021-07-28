@@ -15470,9 +15470,11 @@ body.overlay {
       -ms-flex-pack: center;
           justify-content: center;
   color: #666666; }
-  .pagination-link:hover, .pagination-link.active {
+  .pagination-link:hover, .pagination-link:focus, .pagination-link.active {
     color: #fff;
-    background-color: #00b207; }
+    background-color: #00b207;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .timer-body-block {
   display: -webkit-box;
