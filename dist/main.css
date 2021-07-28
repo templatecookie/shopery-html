@@ -10066,7 +10066,7 @@ a {
   position: absolute;
   top: 90%;
   left: 0;
-  z-index: 9;
+  z-index: 99;
   width: 240px;
   border-radius: 6px;
   overflow: hidden;
