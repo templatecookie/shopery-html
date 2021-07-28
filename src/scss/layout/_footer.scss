@@ -401,14 +401,14 @@
     }
   }
 
-  &:hover {
-    .footer__overlay {
-      &-img {
-        color: color(soft-primary);
-        transition: all 0.6s ease-in;
-      }
-    }
-  }
+  // &:hover {
+  //   .footer__overlay {
+  //     &-img {
+  //       color: color(soft-primary);
+  //       transition: all 0.6s ease-in;
+  //     }
+  //   }
+  // }
 }
 
 // Responsive

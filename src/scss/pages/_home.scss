@@ -573,12 +573,12 @@
     }
   }
 
-  &:hover {
-    .featured__overlay-img {
-      transition: all 0.6s ease-in;
-      color: color(soft-primary);
-    }
-  }
+  // &:hover {
+  //   .featured__overlay-img {
+  //     transition: all 0.6s ease-in;
+  //     color: color(soft-primary);
+  //   }
+  // }
 }
 
 // Category
@@ -605,17 +605,15 @@
 
 // food Store
 .food-store {
-  // background-color: color(green-0);
-
   &:hover {
-    .food-store {
-      &__overlay-shade {
-        &-img {
-          color: color(soft-primary);
-          transition: all 0.6s ease-in-out;
-        }
-      }
-    }
+    // .food-store {
+    //   &__overlay-shade {
+    //     &-img {
+    //       color: color(soft-primary);
+    //       transition: all 0.6s ease-in-out;
+    //     }
+    //   }
+    // }
   }
 
   @include max(767px) {
@@ -850,16 +848,16 @@
 
 // Banner sales
 .banner-sales {
-  &:hover {
-    .banner-sales {
-      &__overlay {
-        &-img {
-          color: color(soft-primary);
-          transition: all 0.6s linear;
-        }
-      }
-    }
-  }
+  // &:hover {
+  //   .banner-sales {
+  //     &__overlay {
+  //       &-img {
+  //         color: color(soft-primary);
+  //         transition: all 0.6s linear;
+  //       }
+  //     }
+  //   }
+  // }
   @include max(767px) {
     overflow: hidden;
   }
@@ -904,16 +902,16 @@
   @include max(1200px) {
     overflow: hidden;
   }
-  &:hover {
-    .testimonial__overlay {
-      &-img {
-        &.three {
-          color: color(soft-primary);
-          transition: all 0.6s ease-in;
-        }
-      }
-    }
-  }
+  // &:hover {
+  //   .testimonial__overlay {
+  //     &-img {
+  //       &.three {
+  //         color: color(soft-primary);
+  //         transition: all 0.6s ease-in;
+  //       }
+  //     }
+  //   }
+  // }
   &--four {
     background: linear-gradient(180deg, #ffffff 0%, #f2f5f3 63.02%),
       linear-gradient(0deg, rgba(32, 181, 38, 0.1), rgba(32, 181, 38, 0.1));

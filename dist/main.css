@@ -11101,10 +11101,6 @@ body.overlay {
     .banner--05__overlay-img.nine {
       right: 0;
       bottom: 0; }
-  .banner--05:hover .banner--05__overlay-img {
-    color: #84d187;
-    -webkit-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out; }
   .banner--05 .banner--03 .container .arrows .swiper-button--next {
     right: 30px; }
   .banner--05 .banner--03 .container .arrows .swiper-button--prev {
@@ -13698,10 +13694,6 @@ body.overlay {
         top: auto;
         bottom: 0px;
         right: 0px; } }
-  .footer:hover .footer__overlay-img {
-    color: #84d187;
-    -webkit-transition: all 0.6s ease-in;
-    transition: all 0.6s ease-in; }
 
 @media (max-width: 1440px) {
   .footer--two .footer__top {
@@ -16210,11 +16202,6 @@ body.overlay {
         left: auto;
         right: 0px; } }
 
-.featured:hover .featured__overlay-img {
-  -webkit-transition: all 0.6s ease-in;
-  transition: all 0.6s ease-in;
-  color: #84d187; }
-
 .category--top__overlay-img {
   position: absolute;
   -webkit-user-select: none;
@@ -16233,11 +16220,6 @@ body.overlay {
   .category--top__overlay-img--two {
     right: 0px;
     bottom: 15px; }
-
-.food-store:hover .food-store__overlay-shade-img {
-  color: #84d187;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out; }
 
 @media (max-width: 767px) {
   .food-store {
@@ -16437,11 +16419,6 @@ body.overlay {
     bottom: -10px;
     right: 88px; }
 
-.banner-sales:hover .banner-sales__overlay-img {
-  color: #84d187;
-  -webkit-transition: all 0.6s linear;
-  transition: all 0.6s linear; }
-
 @media (max-width: 767px) {
   .banner-sales {
     overflow: hidden; } }
@@ -16474,11 +16451,6 @@ body.overlay {
 @media (max-width: 1200px) {
   .testimonial {
     overflow: hidden; } }
-
-.testimonial:hover .testimonial__overlay-img.three {
-  color: #84d187;
-  -webkit-transition: all 0.6s ease-in;
-  transition: all 0.6s ease-in; }
 
 .testimonial--four {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(63.02%, #f2f5f3)), -webkit-gradient(linear, left bottom, left top, from(rgba(32, 181, 38, 0.1)), to(rgba(32, 181, 38, 0.1)));

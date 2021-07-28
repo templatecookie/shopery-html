@@ -81,8 +81,6 @@
             height: inherit;
             object-fit: cover;
           }
-          &-sm {
-          }
         }
         &-text {
           position: absolute;
@@ -645,12 +643,12 @@
       }
     }
     &:hover {
-      .banner--05 {
-        &__overlay-img {
-          color: color(soft-primary);
-          transition: all 0.6s ease-in-out;
-        }
-      }
+      // .banner--05 {
+      //   &__overlay-img {
+      //     color: color(soft-primary);
+      //     transition: all 0.6s ease-in-out;
+      //   }
+      // }
     }
 
     .banner--03 {
