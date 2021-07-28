@@ -11823,6 +11823,10 @@ body.overlay {
     background-color: #fff;
     overflow: hidden;
     margin-right: 40px; }
+    .newsletter__input:hover {
+      border-color: #84d187;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
     .newsletter__input input {
       width: 70%;
       height: inherit;
@@ -11830,34 +11834,34 @@ body.overlay {
       border: 0px;
       font-size: 16px;
       line-height: 24px;
-      color: #808080; }
+      color: #1a1a1a; }
       .newsletter__input input:focus {
         border: 0;
         outline: 0; }
       .newsletter__input input::-webkit-input-placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: #999999;
         text-transform: capitalize; }
       .newsletter__input input::-moz-placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: #999999;
         text-transform: capitalize; }
       .newsletter__input input:-ms-input-placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: #999999;
         text-transform: capitalize; }
       .newsletter__input input::-ms-input-placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: #999999;
         text-transform: capitalize; }
       .newsletter__input input::placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: #999999;
         text-transform: capitalize; }
     .newsletter__input button {
       position: absolute;
