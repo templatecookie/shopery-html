@@ -9920,33 +9920,28 @@ a {
     border: 0px;
     font-size: 15px;
     line-height: 21px;
-    color: #808080;
+    color: #1a1a1a;
     padding-left: 45px; }
     .header__input-form input::-webkit-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit;
-      text-transform: capitalize; }
+      color: #999999; }
     .header__input-form input::-moz-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit;
-      text-transform: capitalize; }
+      color: #999999; }
     .header__input-form input:-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit;
-      text-transform: capitalize; }
+      color: #999999; }
     .header__input-form input::-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit;
-      text-transform: capitalize; }
+      color: #999999; }
     .header__input-form input::placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit;
-      text-transform: capitalize; }
+      color: #999999; }
   .header__input-form .search-btn,
   .header__input-form .search-icon {
     position: absolute;
@@ -15168,7 +15163,7 @@ body.overlay {
           padding: 40px 20px;
           border-bottom: 1px solid #cccccc; } }
       .cards-ship--four .cards-ship__item:hover::after {
-        height: 1px;
+        height: 4px;
         background-color: #00b207;
         bottom: -1px; }
       .cards-ship--four .cards-ship__item:hover .cards-ship__item-icon {
@@ -15176,7 +15171,7 @@ body.overlay {
       .cards-ship--four .cards-ship__item::after {
         content: '';
         width: 100%;
-        height: 1px;
+        height: 2px;
         position: absolute;
         bottom: 0px;
         left: 0px;

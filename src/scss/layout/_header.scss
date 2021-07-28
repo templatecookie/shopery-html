@@ -209,13 +209,12 @@
       border: 0px;
       font-size: 15px;
       line-height: 21px;
-      color: color(gray-5);
+      color: color(gray-9);
       padding-left: 45px;
       &::placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
-        text-transform: capitalize;
+        color: color(gray-4);
       }
     }
     .search-btn,
