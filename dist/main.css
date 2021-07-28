@@ -11263,10 +11263,6 @@ body.overlay {
       .banner__wrapper-img-sm .banner__wrapper-img:nth-last-child(1) {
         margin-right: 0px; } }
 
-@media (min-width: 768px) {
-  .banner--01 .banner-slider--one {
-    display: none; } }
-
 @media (max-width: 767px) {
   .banner-slider--one .banner__wrapper-img {
     overflow: hidden; }
@@ -11348,8 +11344,6 @@ body.overlay {
   .banner--01 .banner__wrapper--img-02 .banner__wrapper-text,
   .banner--01 .banner__wrapper--img-03 .banner__wrapper-text {
     left: 15px; }
-  .banner--01 .banner__wrapper {
-    display: none; }
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2, .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
     width: 100%; }
@@ -11361,7 +11355,7 @@ body.overlay {
             flex-direction: column; }
     .banner__wrapper-img-sm .banner__wrapper-img {
       margin-right: 0px;
-      margin-bottom: 12pxx; }
+      margin-bottom: 12px; }
   .banner--01 .banner__wrapper--img-03 .banner__wrapper-text {
     left: 32px;
     text-align: left; }
@@ -11388,8 +11382,6 @@ body.overlay {
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5, .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
     margin-bottom: 5px; }
-  .banner--01 .banner__wrapper--img-02 {
-    margin-bottom: 0px; }
   .banner-sale__text-content {
     width: 95%; }
   .banner--02 .swiper-pagination,

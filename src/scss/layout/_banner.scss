@@ -81,6 +81,8 @@
             height: inherit;
             object-fit: cover;
           }
+          &-sm {
+          }
         }
         &-text {
           position: absolute;
@@ -855,12 +857,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .banner--01 .banner-slider--one {
-    display: none;
-  }
-}
-
 @media (max-width: 767px) {
   // ====== Homepage 01 ========= \\
 
@@ -993,10 +989,6 @@
     left: 15px;
   }
 
-  .banner--01 .banner__wrapper {
-    display: none;
-  }
-
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
     width: 100%;
@@ -1005,7 +997,7 @@
     flex-direction: column;
     .banner__wrapper-img {
       margin-right: 0px;
-      margin-bottom: 12pxx;
+      margin-bottom: 12px;
     }
   }
 
@@ -1045,10 +1037,6 @@
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
     margin-bottom: 5px;
-  }
-
-  .banner--01 .banner__wrapper--img-02 {
-    margin-bottom: 0px;
   }
 
   // banner sales cards
