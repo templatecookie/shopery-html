@@ -14622,12 +14622,11 @@ body.overlay {
     -webkit-box-shadow: 0px 20px 48px 0px #00260314;
             box-shadow: 0px 20px 48px 0px #00260314; }
     .cards-mb:hover .cards-mb__img-wrapper img {
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5);
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
       -webkit-transition: all 0.6s linear;
       transition: all 0.6s linear; }
     .cards-mb:hover .cards-mb__img-wrapper::after {
-      height: 100%;
       opacity: 1;
       visibility: visible;
       pointer-events: all;
@@ -14648,7 +14647,7 @@ body.overlay {
       top: 0;
       left: 0;
       width: 100%;
-      height: 35%;
+      height: 100%;
       background: #00000080;
       opacity: 0;
       visibility: hidden;
