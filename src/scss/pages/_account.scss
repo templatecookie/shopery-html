@@ -112,6 +112,8 @@
     &.add-cart {
       .add-cart__wrapper {
         display: flex;
+        align-items: center;
+        justify-content: flex-end;
         .button {
           margin-right: 25px;
           flex-shrink: 0;
@@ -138,6 +140,12 @@
         object-fit: cover;
       }
     }
+    h5 {
+      font-size: 16px;
+      line-height: 24px;
+      color: color(gray-9);
+      font-weight: 400;
+    }
   }
 
   &-action {
@@ -154,6 +162,25 @@
         @include max(480px) {
           font-size: 12px;
           padding: 14px;
+        }
+      }
+    }
+  }
+
+  &__share-content {
+    padding: 24px 20px;
+    border-top: 1px solid #e5e5e5;
+    .social-icon {
+      &-link {
+        margin-right: 16px;
+        &:hover {
+          a {
+            color: #fff;
+            transition: all 0.3s linear;
+          }
+        }
+        a {
+          color: color(gray-7);
         }
       }
     }
