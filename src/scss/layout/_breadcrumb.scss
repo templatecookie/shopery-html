@@ -32,6 +32,11 @@
         text-transform: capitalize;
         display: flex;
         align-items: center;
+
+        svg {
+          margin-bottom: 6px;
+        }
+
         span {
           margin: 0px 12px;
         }
