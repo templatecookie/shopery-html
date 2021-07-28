@@ -237,7 +237,14 @@
       padding-right: 50px;
       font-size: 16px;
       line-height: 24px;
-      color: color(gray-4);
+      color: color(gray-9);
+      &:hover {
+        border-color: color(gray-2);
+        transition: all 0.3s linear;
+      }
+      &::placeholder {
+        color: color(gray-4);
+      }
     }
     button {
       position: absolute;
@@ -245,6 +252,7 @@
       right: 0px;
       background-color: color(gray-8);
       color: #fff;
+      z-index: 9;
       &:hover {
         background-color: color(gray-7);
       }
