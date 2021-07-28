@@ -90,9 +90,9 @@
     display: flex;
     align-items: center;
     margin: 8px 0px;
-    opacity: 0;
     height: 0;
     overflow: hidden;
+    transform: translateY(150px);
     .action-btn {
       margin-right: 12px;
     }
@@ -103,12 +103,13 @@
     .cards-sm--two__content-text {
       span,
       .rating {
-        display: none !important;
+        display: none;
+        transition: all 0.3s linear;
       }
       .cards-sm--two__action {
-        opacity: 1;
-        height: auto;
-        overflow: visible;
+        height: 100%;
+        transform: translateY(0px);
+        transition: all 0.3s linear;
       }
     }
   }

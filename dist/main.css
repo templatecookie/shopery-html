@@ -14262,18 +14262,23 @@ body.overlay {
         -ms-flex-align: center;
             align-items: center;
     margin: 8px 0px;
-    opacity: 0;
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px); }
     .cards-sm--two__action .action-btn {
       margin-right: 12px; }
   .cards-sm--two:hover .cards-sm--two__content-text span,
   .cards-sm--two:hover .cards-sm--two__content-text .rating {
-    display: none !important; }
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
   .cards-sm--two:hover .cards-sm--two__content-text .cards-sm--two__action {
-    opacity: 1;
-    height: auto;
-    overflow: visible; }
+    height: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
 
 .cards-sm--three {
   padding-top: 24px; }
