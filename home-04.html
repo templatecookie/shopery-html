@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Homepage-04 || Shopery</title>
-        <!-- <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css" /> -->
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
         <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
@@ -8878,7 +8877,8 @@
                         <span class="title"> Video</span>
                         <h5 class="font-title--md">We’re the Best Organic Farm in the World</h5>
 
-                        <a href="#" class="play-icon">
+
+                        <a href="https://youtu.be/JkaxUblCGz0" class="play-icon video-player" data-autoplay="true" data-vbtype="video">
                             <svg width="83" height="84" viewBox="0 0 83 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="41.5" cy="42" r="40.75" stroke="#fff" stroke-width="1.5" />
                                 <path d="M33.5 30V54L53.5 42L33.5 30Z" fill="currentColor" />
@@ -9773,7 +9773,13 @@
             // Modal
             $(document).ready(function () {
                 $("#newsletter").modal("show");
+
+                // Popup window
                 $(".venobox").venobox();
+                $(".video-player").venobox( { 
+                    spinner : 'cube-grid'
+                });
+                
             });
 
             $("#countdownTwo").syotimer({
@@ -9796,13 +9802,6 @@
                 offset: false,
                 placeholder: "USD",
             });
-            // var demo6 = new BVSelect({
-            //     selector: "#category-item",
-            //     searchbox: false,
-            //     offset: false,
-            //     placeholder: "All Category",
-            //     search_placeholder: "Search...",
-            // });
         </script>
     </body>
 </html>

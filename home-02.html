@@ -8,6 +8,7 @@
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
         <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
+        <link rel="stylesheet" href="dist/plugins/css/venobox.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
@@ -2699,7 +2700,7 @@
                         <div class="banner-promo__content-text">
                             <h5 class="font-title--md">We’re the Best Organic Farm in the World</h5>
 
-                            <a href="#" class="play-icon">
+                            <a href="https://youtu.be/JkaxUblCGz0" class="play-icon venobox" data-autoplay="true" data-vbtype="video">
                                 <svg width="83" height="84" viewBox="0 0 83 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="41.5" cy="42" r="40.75" stroke="#fff" stroke-width="1.5" />
                                     <path d="M33.5 30V54L53.5 42L33.5 30Z" fill="currentColor" />
@@ -4215,6 +4216,7 @@
         <!-- Shopping Cart sidebar  end -->
 
         <script src="dist/plugins/js/jquery.min.js"></script>
+        <script src="dist/plugins/js/venobox.min.js"></script>
           <script src="dist/plugins/js/swiper-bundle.min.js"></script>
         <script src="dist/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -4226,6 +4228,9 @@
             function loader() {
                 preloader.style.display = "none";
             }
+            $(".venobox").venobox({
+                spinner: 'cube-grid'
+            });
 
             // Modal
             $(document).ready(function () {
