@@ -12004,18 +12004,7 @@ body.overlay {
       border: 1px solid transparent;
       background-color: #333333; }
       .newsletter--two .newsletter__input input {
-        background-color: #333333;
-        color: #999999; }
-        .newsletter--two .newsletter__input input::-webkit-input-placeholder {
-          color: inherit; }
-        .newsletter--two .newsletter__input input::-moz-placeholder {
-          color: inherit; }
-        .newsletter--two .newsletter__input input:-ms-input-placeholder {
-          color: inherit; }
-        .newsletter--two .newsletter__input input::-ms-input-placeholder {
-          color: inherit; }
-        .newsletter--two .newsletter__input input::placeholder {
-          color: inherit; }
+        background-color: #333333; }
     .newsletter--two .newsletter__social-icon li a {
       color: #b3b3b3; }
       .newsletter--two .newsletter__social-icon li a:hover {
@@ -12026,8 +12015,6 @@ body.overlay {
     color: #7a997c; }
   .newsletter--four .newsletter__input {
     border: 1px solid #dae5da; }
-    .newsletter--four .newsletter__input input {
-      color: #618062; }
 
 @media (max-width: 1200px) {
   .newsletter {
@@ -16644,7 +16631,7 @@ body.overlay {
     border: 0px;
     width: 75%;
     height: inherit;
-    color: #999999;
+    color: #1a1a1a;
     font-size: 14px;
     line-height: 24px;
     padding-left: 24px; }
@@ -16662,23 +16649,23 @@ body.overlay {
     .newsletter--two__form input::-webkit-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .newsletter--two__form input::-moz-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .newsletter--two__form input:-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .newsletter--two__form input::-ms-input-placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
     .newsletter--two__form input::placeholder {
       font-size: inherit;
       line-height: inherit;
-      color: inherit; }
+      color: #999999; }
   .newsletter--two__form .button {
     position: absolute;
     top: 50%;

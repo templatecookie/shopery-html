@@ -120,10 +120,6 @@
         background-color: color(gray-8);
         input {
           background-color: color(gray-8);
-          color: color(gray-4);
-          &::placeholder {
-            color: inherit;
-          }
         }
       }
 
@@ -154,9 +150,6 @@
 
       &__input {
         border: 1px solid #dae5da;
-        input {
-          color: color(green-5);
-        }
       }
     }
   }

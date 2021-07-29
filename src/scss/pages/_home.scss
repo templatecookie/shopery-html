@@ -1008,7 +1008,7 @@
       border: 0px;
       width: 75%;
       height: inherit;
-      color: color(gray-4);
+      color: color(gray-9);
       font-size: 14px;
       line-height: 24px;
       padding-left: 24px;
@@ -1026,7 +1026,7 @@
       &::placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: color(gray-4);
       }
     }
     .button {
