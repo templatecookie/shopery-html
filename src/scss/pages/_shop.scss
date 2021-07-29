@@ -170,7 +170,7 @@
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    z-index: 9999;
+    z-index: 9;
     transition: all 0.3s linear;
     @include min(992px) {
       display: none;
@@ -343,22 +343,6 @@
             }
           }
         }
-      }
-    }
-  }
-}
-
-#countdown {
-  .timer-body-block {
-    .table-cell {
-      .tab-val {
-        font-size: 24px;
-        line-height: 36px;
-        color: color(primary);
-        font-weight: 400;
-      }
-      .tab-unit {
-        color: color(gray-4);
       }
     }
   }

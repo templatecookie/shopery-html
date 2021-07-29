@@ -1,3 +1,27 @@
+#countdown {
+  .timer-body-block {
+    .table-cell {
+      .tab-val {
+        font-size: 24px;
+        line-height: 36px;
+        color: color(primary);
+        font-weight: 400;
+        @include max(767px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+      .tab-unit {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        color: color(gray-4);
+      }
+    }
+  }
+}
+
 #countdownTwo {
   .timer-body-block {
     justify-content: center;
