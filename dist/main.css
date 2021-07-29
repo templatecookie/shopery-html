@@ -13553,14 +13553,37 @@ body.overlay {
     color: #fff; }
   .footer__brand-info p {
     color: #808080;
-    max-width: 75%;
+    max-width: 350px;
     margin-bottom: 22px; }
   .footer__brand-info-contact {
     color: #808080; }
+    @media (max-width: 420px) {
+      .footer__brand-info-contact {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .footer__brand-info-contact a {
-      margin: 0px 16px; }
+      margin: 0px 16px;
+      max-width: 250px; }
+      @media (max-width: 420px) {
+        .footer__brand-info-contact a {
+          margin: 0px;
+          margin: 6px; } }
       .footer__brand-info-contact a:nth-child(1) {
         margin-left: 0px; }
+        @media (max-width: 420px) {
+          .footer__brand-info-contact a:nth-child(1) {
+            margin-top: 0px; } }
       .footer__brand-info-contact a:nth-child(2) {
         margin-right: 0px; }
       .footer__brand-info-contact a span:hover {
@@ -13574,6 +13597,9 @@ body.overlay {
       font-weight: 500; }
   .footer__navigation {
     overflow: hidden; }
+    @media (max-width: 767px) {
+      .footer__navigation {
+        margin-bottom: 20px; } }
     .footer__navigation-title {
       margin-bottom: 20px; }
       .footer__navigation-title h2, .footer__navigation-title .h2 {
@@ -13634,7 +13660,11 @@ body.overlay {
           -ms-flex-align: center;
               align-items: center;
       margin-right: 8px;
-      padding: 10px; }
+      padding: 10px;
+      -webkit-box-flex: 0;
+      -webkit-flex: none;
+          -ms-flex: none;
+              flex: none; }
       .footer__mobile-app--item:hover {
         background-color: #e5e5e5;
         -webkit-transition: all 0.3s linear;
@@ -13652,12 +13682,35 @@ body.overlay {
       font-size: 16px;
       line-height: 24px;
       color: #1a1a1a; }
-  .footer__instagram-item {
-    margin-right: 12px;
-    margin-bottom: 12px; }
-    .footer__instagram-item .cards-ig__img {
-      width: 69px;
-      height: 69px; }
+  .footer__instagram {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    @media (max-width: 1460px) {
+      .footer__instagram {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
+    .footer__instagram-item {
+      margin-bottom: 4px; }
+      @media (max-width: 1460px) {
+        .footer__instagram-item {
+          margin-right: 12px; } }
+      .footer__instagram-item .cards-ig__img {
+        width: 65px;
+        height: 65px; }
   .footer--two {
     background-color: #fff; }
     .footer--two .footer__brand-info-contact span {
@@ -13671,10 +13724,17 @@ body.overlay {
     .footer--two .footer__top {
       background-color: #f2f2f2;
       padding: 60px; }
+      @media (max-width: 1200px) {
+        .footer--two .footer__top {
+          padding: 0px;
+          padding-top: 60px; } }
     .footer--two .footer__bottom {
       border-top: 0px; }
   .footer--four {
     background-color: #002603; }
+    @media (max-width: 1199px) {
+      .footer--four .footer__brand-info {
+        margin-bottom: 30px; } }
     .footer--four .footer__brand-info p {
       color: #618062; }
     .footer--four .footer__brand-info-contact {
@@ -13689,6 +13749,10 @@ body.overlay {
         color: #fff; }
     .footer--four .footer__copyright-text {
       color: #618062; }
+    .footer--four .footer__bottom {
+      border-top: 0;
+      -webkit-box-shadow: 0px -1px 0px 0px #1b421d;
+              box-shadow: 0px -1px 0px 0px #1b421d; }
   .footer--five {
     background-color: #1a1a1a;
     overflow: hidden; }
@@ -13780,39 +13844,14 @@ body.overlay {
         bottom: 0px;
         right: 0px; } }
 
-@media (max-width: 1440px) {
-  .footer--two .footer__top {
-    padding: 60px 30px; } }
-
 @media (max-width: 1200px) {
   .footer--two {
     background-color: #f2f2f2; }
-  .footer--two .footer__top {
-    padding: 60px 0px; }
   .footer--two .footer__brand-info-contact,
   .footer--three .footer__brand-info-contact {
     margin-bottom: 30px; }
   .footer--five .social-icon {
     margin-bottom: 30px; } }
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .footer__brand-info-contact {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    .footer__brand-info-contact a {
-      margin-left: 0;
-      margin-bottom: 15px; } }
 
 @media (max-width: 991px) {
   .footer__brand-info-contact {
@@ -13821,19 +13860,6 @@ body.overlay {
 @media (max-width: 767px) {
   .footer__top {
     padding-bottom: 30px; }
-  .footer__brand-info-contact {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .footer__brand-info-contact a {
-      margin: 0;
-      margin-bottom: 15px; }
   .footer__brand-info p {
     max-width: 100%; }
   .footer__bottom {
@@ -13856,8 +13882,6 @@ body.overlay {
       margin-bottom: 15px; }
   .footer--two {
     background-color: #f2f2f2; }
-  .footer--two .footer__top {
-    padding: 60px 0px; }
   .footer--three .footer__bottom .footer__copyright-text,
   .footer--four .footer__bottom .footer__copyright-text {
     -webkit-box-ordinal-group: 3;
