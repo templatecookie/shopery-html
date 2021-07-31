@@ -12402,23 +12402,23 @@ body.overlay {
     padding-left: 45px;
     font-size: 16px;
     line-height: 20.8px;
-    color: #999999;
+    color: #1a1a1a;
     text-transform: capitalize; }
     .blog__search-field input::-webkit-input-placeholder {
       font-size: inherit;
-      color: inherit; }
+      color: colo(gray-4); }
     .blog__search-field input::-moz-placeholder {
       font-size: inherit;
-      color: inherit; }
+      color: colo(gray-4); }
     .blog__search-field input:-ms-input-placeholder {
       font-size: inherit;
-      color: inherit; }
+      color: colo(gray-4); }
     .blog__search-field input::-ms-input-placeholder {
       font-size: inherit;
-      color: inherit; }
+      color: colo(gray-4); }
     .blog__search-field input::placeholder {
       font-size: inherit;
-      color: inherit; }
+      color: colo(gray-4); }
   .blog__search-field .icon {
     position: absolute;
     top: 50%;
@@ -13120,7 +13120,7 @@ body.overlay {
 
 .contact-form--check label {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 28px;
   color: #666666;
   text-transform: capitalize;
   font-weight: 400; }
@@ -15577,6 +15577,8 @@ body.overlay {
   .pagination-item:first-child .pagination-link, .pagination-item:last-child .pagination-link {
     border-radius: 50%;
     color: #1a1a1a; }
+  .pagination-item:hover a svg {
+    color: #fff; }
   .pagination-item.disabled .pagination-link {
     background-color: #f2f2f2;
     border-color: transparent;
@@ -18336,6 +18338,8 @@ body.overlay {
     .dashboard__product-item-img img {
       width: inherit;
       height: inherit; }
+  .dashboard__product-item h5, .dashboard__product-item .h5 {
+    color: #1a1a1a; }
 
 .billing__content {
   margin-top: 32px; }

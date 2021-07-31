@@ -12,6 +12,14 @@
       }
     }
 
+    &:hover {
+      a {
+        svg {
+          color: #fff;
+        }
+      }
+    }
+
     &.disabled {
       .pagination-link {
         background-color: color(gray-0);
