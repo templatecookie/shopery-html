@@ -17,6 +17,7 @@
     "autoprefixer": "^9.7.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "exports-loader": "^3.0.0",
     "file-loader": "^4.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "postcss-loader": "^3.0.0",
@@ -35,6 +36,7 @@
   ],
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "nouislider": "^15.2.0"
   }
 }

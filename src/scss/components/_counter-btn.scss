@@ -1,0 +1,44 @@
+// Counter Buttons
+.counter-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: color(gray-0);
+  flex-shrink: 0;
+  color: color(gray-6);
+  &:hover {
+    color: color(gray-9);
+  }
+  &-wrapper {
+    position: relative;
+    width: 125px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 170px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &-counter {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: color(gray-9);
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    &[type='number'] {
+      -moz-appearance: textfield; /* Firefox */
+    }
+  }
+}

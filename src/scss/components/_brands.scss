@@ -11,4 +11,11 @@
       color: color(primary);
     }
   }
+  .swiper-wrapper {
+    .swiper-slide {
+      &:nth-last-child(1) {
+        border-right: 0px !important;
+      }
+    }
+  }
 }

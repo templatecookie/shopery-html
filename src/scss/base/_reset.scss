@@ -6,7 +6,9 @@
 img {
   border: 0;
   outline: 0;
-  max-width: 100%;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
 }
 
 button {
@@ -56,4 +58,21 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.box-layout {
+  max-width: 1400px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 0px 40px;
+
+  @include max(1200px) {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.modal-backdrop {
+  background: #000000;
+  opacity: 0.8;
 }

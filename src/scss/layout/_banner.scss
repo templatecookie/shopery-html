@@ -2,6 +2,69 @@
 .banner {
   position: relative;
 
+  // Pagination
+  &--03,
+  &--04 {
+    .swiper-pagination {
+      @include min(575px) {
+        bottom: 34px;
+      }
+      &-bullet {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        &-active {
+          width: 16px;
+          border-radius: 50px;
+          transition: all 0.6s linear ease-in-out;
+        }
+      }
+    }
+  }
+
+  // Arrows
+  &--04,
+  &--05 {
+    .container {
+      position: relative;
+      .arrows {
+        .swiper-button {
+          &--prev,
+          &--next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            @include max(1200px) {
+              top: auto;
+              transform: translateY(0px);
+              bottom: 30px;
+            }
+            @include max(767px) {
+              bottom: -15px;
+            }
+          }
+          &--prev {
+            left: -30px;
+            @include max(1200px) {
+              left: auto;
+              right: 60px;
+            }
+          }
+          &--next {
+            right: -30px;
+            @include max(1200px) {
+              right: 0px;
+            }
+            @include max(767px) {
+              right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &--01 {
     margin: 24px 0px;
 
@@ -134,6 +197,7 @@
   }
 
   &--02 {
+    margin-top: 24px;
     .banner {
       &__wrapper-img {
         position: relative;
@@ -217,6 +281,405 @@
       }
     }
   }
+
+  &--03 {
+    .swiper-container {
+      @include max(991px) {
+        width: 95%;
+
+        margin: auto;
+        margin-top: 24px;
+        background-color: color(green-0);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+
+    &__content {
+      width: 1520px;
+      height: 740px;
+      border-radius: 8px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin: auto;
+      background-color: color(green-0);
+      // padding-left: 95px;
+      padding-left: 40px;
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      @include max(1680px) {
+        width: 95%;
+      }
+      @include max(1200px) {
+        padding-left: 18px;
+      }
+
+      @include max(991px) {
+        height: auto;
+        padding-bottom: 30px;
+      }
+      @include max(767px) {
+        padding-left: 15px;
+      }
+    }
+
+    &__text-content {
+      .title {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: color(primary);
+        transform: translateY(-60px);
+        opacity: 0.3;
+        @include max(991px) {
+          transform: translate(-150px, 0px);
+        }
+        @include max(767px) {
+          margin-bottom: 10px;
+        }
+      }
+      h2 {
+        color: color(gray-9);
+        margin-bottom: 28px;
+        opacity: 0.3;
+        @include max(1200px) {
+          font-size: 62px;
+          line-height: 76px;
+        }
+        @include max(991px) {
+          font-size: 48px;
+          line-height: 60px;
+          margin-bottom: 14px;
+        }
+        @include max(767px) {
+          font-size: 32px;
+          line-height: 42px;
+          margin-bottom: 0px;
+        }
+      }
+
+      h6 {
+        font-weight: 400;
+        color: color(gray-9);
+        text-transform: capitalize;
+        margin-bottom: 12px;
+        span {
+          font-weight: 600;
+          color: color(warning);
+          text-transform: uppercase;
+          opacity: 0;
+        }
+        @include max(991px) {
+          font-size: 28px;
+          line-height: 38px;
+        }
+        @include max(767px) {
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+      p {
+        color: color(gray-5);
+        text-transform: capitalize;
+      }
+      a.button {
+        margin-top: 32px;
+        background-color: color(soft-primary);
+      }
+    }
+    &__img-wrapper {
+      opacity: 0.3;
+      img {
+        max-width: 100%;
+      }
+    }
+    .swiper-slide {
+      opacity: 0 !important;
+      &-active {
+        opacity: 1 !important;
+        .banner--03 {
+          &__text-content {
+            h5,
+            h2,
+            h6 span {
+              opacity: 1;
+              transition: all 0.9s linear;
+            }
+            h5 {
+              transform: translateY(0px);
+              transition: all 0.6s ease-in-out;
+              @include max(991px) {
+                transform: translate(0px);
+              }
+            }
+            a.button {
+              background-color: color(primary);
+              transform: all 0.9s linear;
+            }
+          }
+          &__img-wrapper {
+            opacity: 1;
+            transition: all 0.9s linear;
+          }
+        }
+      }
+    }
+  }
+
+  &--04 {
+    .swiper-pagination {
+      @include max(767px) {
+        bottom: 0px;
+      }
+    }
+
+    &__content {
+      height: 700px;
+      display: flex;
+      align-items: center;
+      @include max(991px) {
+        height: 100%;
+      }
+      @include max(767px) {
+        padding-bottom: 30px;
+      }
+    }
+
+    &__img-wrapper {
+      opacity: 0.3;
+      position: relative;
+      .off-sale {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: color(warning);
+        @include min-max(992px, 1199px) {
+          top: 0px;
+          right: 0px;
+        }
+
+        @include max(767px) {
+          width: 60px;
+          height: 60px;
+          right: 0px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: 0.02em;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #fff;
+          text-align: center;
+          span {
+            font-size: 32px;
+            line-height: 38.4px;
+            font-weight: 600;
+            @include max(767px) {
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    &__text-content {
+      h5 {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: color(primary);
+        font-family: $font-2;
+        transform: translateX(90px);
+        opacity: 0.3;
+      }
+      h2 {
+        font-size: 56px;
+        line-height: 67.2px;
+        color: color(green-9);
+        margin-bottom: 20px;
+        opacity: 0.3;
+        @include max(767px) {
+          font-size: 32px;
+          line-height: 42px;
+          margin-bottom: 0px;
+        }
+      }
+      p {
+        font-weight: 400;
+        color: color(gray-9);
+      }
+      a.button {
+        margin-top: 32px;
+        background-color: color(soft-primary);
+        @include max(767px) {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .swiper-slide {
+      opacity: 0 !important;
+      &-active {
+        opacity: 1 !important;
+
+        .banner--04 {
+          &__img-wrapper {
+            opacity: 1;
+          }
+          &__text-content {
+            h5,
+            h2,
+            p {
+              transition: all 0.9s linear;
+            }
+            h5,
+            h2 {
+              opacity: 1;
+            }
+            h5 {
+              transform: translateX(0px);
+            }
+            p {
+              color: color(green-5);
+            }
+            a.button {
+              background-color: color(primary);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--05 {
+    .swiper-pagination {
+      &-bullet {
+        width: 12px;
+        height: 12px;
+        &-active {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .swiper-container {
+      @include max(991px) {
+        width: 100%;
+      }
+    }
+    .container {
+      .arrows {
+        .swiper-button {
+          &--next,
+          &--prev {
+            bottom: 30px;
+          }
+        }
+      }
+    }
+
+    &__overlay {
+      &-img {
+        position: absolute;
+        color: color(green-1);
+        pointer-events: none;
+        user-select: none;
+        // z-index: -1;
+        @include max(991px) {
+          display: none;
+        }
+        &.one {
+          top: 0;
+          left: 85px;
+        }
+        &.two {
+          bottom: 24px;
+          left: 302px;
+        }
+
+        &.three {
+          top: 0;
+          right: 0;
+        }
+        &.four {
+          right: 168px;
+          bottom: -60px;
+        }
+        &.five {
+          top: 70px;
+          left: 165px;
+        }
+        &.six {
+          left: 140px;
+          bottom: 35px;
+        }
+
+        &.seven {
+          top: 0;
+          right: 768px;
+        }
+        &.eight {
+          top: 48px;
+          right: 300px;
+        }
+        &.nine {
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+    &:hover {
+      // .banner--05 {
+      //   &__overlay-img {
+      //     color: color(soft-primary);
+      //     transition: all 0.6s ease-in-out;
+      //   }
+      // }
+    }
+
+    .banner--03 {
+      .container {
+        .arrows {
+          .swiper-button {
+            &--next {
+              right: 30px;
+            }
+            &--prev {
+              right: 90px;
+            }
+          }
+        }
+      }
+
+      .swiper-container {
+        width: 100%;
+      }
+      &__content {
+        background-color: transparent;
+        height: 580px;
+        padding-left: 0px;
+        width: 100%;
+        z-index: 2;
+        @include max(991px) {
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 
 // Banner Sales
@@ -224,7 +687,7 @@
   &__img-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 358px;
     border-radius: 10px;
     overflow: hidden;
     img {
@@ -271,6 +734,58 @@
       }
     }
   }
+
+  &--two {
+    &__img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 360px;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+    &__text-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 40px;
+      @include max(767px) {
+        left: 15px;
+      }
+      .title {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      h5 {
+        color: #fff;
+        margin-bottom: 15px;
+        @include max(767px) {
+          font-size: 28px;
+          line-height: 38px;
+        }
+      }
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        span {
+          color: #fff;
+          margin-left: 8px;
+          padding: 4px 8px;
+          border-radius: 5px;
+          background-color: color(warning);
+        }
+      }
+      a.button {
+        margin-top: 24px;
+      }
+    }
+  }
 }
 
 // Responsive
@@ -291,9 +806,9 @@
 
   // Banner Sales Cards
   .banner-sale {
-    &__img-wrapper {
-      height: 45vh;
-    }
+    // &__img-wrapper {
+    //   height: 45vh;
+    // }
     &__text-content {
       top: 50%;
       left: 50%;
@@ -337,12 +852,6 @@
         margin-right: 0px;
       }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .banner--01 .banner-slider--one {
-    display: none;
   }
 }
 
@@ -478,10 +987,6 @@
     left: 15px;
   }
 
-  .banner--01 .banner__wrapper {
-    display: none;
-  }
-
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
     width: 100%;
@@ -490,7 +995,7 @@
     flex-direction: column;
     .banner__wrapper-img {
       margin-right: 0px;
-      margin-bottom: 12pxx;
+      margin-bottom: 12px;
     }
   }
 
@@ -532,10 +1037,6 @@
     margin-bottom: 5px;
   }
 
-  .banner--01 .banner__wrapper--img-02 {
-    margin-bottom: 0px;
-  }
-
   // banner sales cards
   .banner-sale__text-content {
     width: 95%;
@@ -547,13 +1048,26 @@
     .banner--02__wrapper-text {
       left: 12px;
     }
+    .swiper-pagination {
+      bottom: 15px;
+    }
     .banner {
+      &__wrapper-img {
+        height: 350px;
+      }
+
       &__wrapper-text {
         left: 12px;
         h2 {
           font-size: 32px;
           line-height: 42px;
           max-width: 100%;
+        }
+        .sale-off {
+          h5 {
+            font-size: 18px;
+            line-height: 28px;
+          }
         }
       }
     }

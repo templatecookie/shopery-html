@@ -11,13 +11,22 @@
 
 // layout
 @import 'layout/section';
+@import 'layout/loader';
 @import 'layout/header';
 @import 'layout/mobile-menu';
 @import 'layout/banner';
 @import 'layout/sales-banner';
 @import 'layout/products';
-@import 'layout/nav';
+@import 'layout/category';
+@import 'layout/newsletter';
+@import 'layout/hero';
+@import 'layout/blog-sidebar';
+@import 'layout/shop-sidebar';
 @import 'layout/breadcrumb';
+@import 'layout/contact-form';
+@import 'layout/newsletter-pop';
+@import 'layout/maps';
+@import 'layout/product-view';
 @import 'layout/footer';
 
 // components
@@ -29,11 +38,25 @@
 @import 'components/form';
 @import 'components/cards';
 @import 'components/countdown';
-@import 'components/newsletter';
+@import 'components/accordion';
+@import 'components/social-icons';
+@import 'components/pagination';
+@import 'components/counter';
+@import 'components/navigation-card';
+@import 'components/progress-bar';
+@import 'components/counter-btn';
+// @import 'components/range';
 
 // pages
 @import 'pages/home';
+@import 'pages/about';
+@import 'pages/single-blog';
 @import 'pages/contact';
-
-// themes
-@import 'themes/theme';
+@import 'pages/error';
+@import 'pages/faq';
+@import 'pages/blogs';
+@import 'pages/shop';
+@import 'pages/product-details';
+@import 'pages/dashboard';
+@import 'pages/account';
+@import 'pages/presentation';

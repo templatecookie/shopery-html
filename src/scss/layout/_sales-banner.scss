@@ -1,7 +1,10 @@
-// Homepage 01 => Cyclone sale
+.cyclone {
+  .cards-ss--lg {
+    margin-bottom: 24px;
+  }
+}
 
 // responsive
-
 @include max(991px) {
   .cyclone {
     &__content {
@@ -9,21 +12,8 @@
         margin-bottom: 24px;
       }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  // .cyclone {
-  //   &--slider {
-  //     display: none;
-  //   }
-  // }
-}
-
-@media (max-width: 767px) {
-  .cyclone {
-    &__content {
-      // display: none;
+    .cards-ss--lg {
+      margin-bottom: 24px;
     }
   }
 }

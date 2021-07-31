@@ -1,32 +1,60 @@
 // Font Import
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/segoe-script');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 
 $font: 'Poppins', sans-serif;
-
+$font-2: 'Segoe Script', sans-serif;
+$font-3: 'Dancing Script', cursive;
 // title line-height
 .font-title--xxxl,
 .font-title--xxxl-n {
   line-height: 86.4px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 .font-title--xxl,
 .font-title--xxl-n {
   line-height: 67.2px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 .font-title--xl,
 .font-title--xl-n {
   line-height: 57.6px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 .font-title--lg,
 .font-title--lg-n {
   line-height: 48px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 .font-title--md,
 .font-title--md-n {
   line-height: 43.2px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 .font-title--sm,
 .font-title--sm-n {
   line-height: 38.4px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 
 // Fonts body line height
