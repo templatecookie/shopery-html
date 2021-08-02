@@ -661,6 +661,11 @@
     .cards-ss__content .h2 {
       color: color(gray-9);
     }
+    .cards-ss__saleoff {
+      p {
+        color: color(gray-9);
+      }
+    }
   }
   &--md {
     border-radius: 8px;

@@ -14924,6 +14924,8 @@ body.overlay {
   .cards-ss--darktext .cards-ss__content .h2,
   .cards-ss--darktext .cards-ss__content .h2 {
     color: #1a1a1a; }
+  .cards-ss--darktext .cards-ss__saleoff p {
+    color: #1a1a1a; }
   .cards-ss--md {
     border-radius: 8px;
     overflow: hidden; }
