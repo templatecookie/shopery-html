@@ -171,9 +171,6 @@
 
     &__rightcontent {
       flex-direction: column;
-      form {
-        order: 2;
-      }
     }
 
     &__input {
@@ -181,8 +178,7 @@
     }
 
     &__social-icon {
-      order: 1;
-      margin: 15px 0px;
+      margin-top: 15px;
     }
 
     // Newsletter two
