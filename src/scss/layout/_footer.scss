@@ -29,7 +29,7 @@
     }
 
     &-contact {
-      color: color(gray-5);
+      // color: color(gray-5);
       @include max(420px) {
         display: flex;
         flex-direction: column;
@@ -38,6 +38,7 @@
       a {
         margin: 0px 16px;
         max-width: 250px;
+
         @include max(420px) {
           margin: 0px;
           margin: 6px;
@@ -52,12 +53,6 @@
         &:nth-child(2) {
           margin-right: 0px;
         }
-        span {
-          &:hover {
-            border-bottom: 2px solid color(hard-primary);
-            transition: all 0.3s linear;
-          }
-        }
       }
 
       span {
@@ -65,6 +60,12 @@
         padding-bottom: 6px;
         border-bottom: 1px solid color(primary);
         font-weight: 500;
+        transition: all 0.3s linear;
+        &:hover {
+          color: color(primary);
+          border-color: color(hard-primary);
+          transition: all 0.3s linear;
+        }
       }
     }
   }
@@ -199,6 +200,11 @@
         &-contact {
           span {
             color: color(gray-9);
+            &:hover {
+              color: color(primary);
+              border-color: color(hard-primary);
+              transition: all 0.3s linear;
+            }
           }
         }
       }

@@ -14,10 +14,11 @@
       align-items: center;
       justify-content: center;
       color: #b3b3b3;
-
+      transition: all 0.3s linear;
       &:hover {
         color: #fff;
         background-color: color(primary);
+        transition: all 0.3s linear;
       }
 
       svg {

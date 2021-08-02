@@ -13564,46 +13564,47 @@ body.overlay {
     color: #808080;
     max-width: 350px;
     margin-bottom: 22px; }
-  .footer__brand-info-contact {
-    color: #808080; }
+  @media (max-width: 420px) {
+    .footer__brand-info-contact {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+  .footer__brand-info-contact a {
+    margin: 0px 16px;
+    max-width: 250px; }
     @media (max-width: 420px) {
-      .footer__brand-info-contact {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-            -ms-flex-align: start;
-                align-items: flex-start; } }
-    .footer__brand-info-contact a {
-      margin: 0px 16px;
-      max-width: 250px; }
+      .footer__brand-info-contact a {
+        margin: 0px;
+        margin: 6px; } }
+    .footer__brand-info-contact a:nth-child(1) {
+      margin-left: 0px; }
       @media (max-width: 420px) {
-        .footer__brand-info-contact a {
-          margin: 0px;
-          margin: 6px; } }
-      .footer__brand-info-contact a:nth-child(1) {
-        margin-left: 0px; }
-        @media (max-width: 420px) {
-          .footer__brand-info-contact a:nth-child(1) {
-            margin-top: 0px; } }
-      .footer__brand-info-contact a:nth-child(2) {
-        margin-right: 0px; }
-      .footer__brand-info-contact a span:hover {
-        border-bottom: 2px solid #2c742f;
-        -webkit-transition: all 0.3s linear;
-        transition: all 0.3s linear; }
-    .footer__brand-info-contact span {
-      color: #fff;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #00b207;
-      font-weight: 500; }
+        .footer__brand-info-contact a:nth-child(1) {
+          margin-top: 0px; } }
+    .footer__brand-info-contact a:nth-child(2) {
+      margin-right: 0px; }
+  .footer__brand-info-contact span {
+    color: #fff;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #00b207;
+    font-weight: 500;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .footer__brand-info-contact span:hover {
+      color: #00b207;
+      border-color: #2c742f;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
   .footer__navigation {
     overflow: hidden; }
     @media (max-width: 767px) {
@@ -13724,6 +13725,11 @@ body.overlay {
     background-color: #fff; }
     .footer--two .footer__brand-info-contact span {
       color: #1a1a1a; }
+      .footer--two .footer__brand-info-contact span:hover {
+        color: #00b207;
+        border-color: #2c742f;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
     .footer--two .footer__navigation-title h2, .footer--two .footer__navigation-title .h2 {
       color: #1a1a1a; }
     .footer--two .footer__navigation-link a {
@@ -15570,10 +15576,14 @@ body.overlay {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      color: #b3b3b3; }
+      color: #b3b3b3;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
       .social-icon-link a:hover {
         color: #fff;
-        background-color: #00b207; }
+        background-color: #00b207;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
       .social-icon-link a svg {
         width: 18px; }
 
