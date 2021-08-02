@@ -13940,6 +13940,9 @@ body.overlay {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 767px) {
+    .arrows {
+      margin-top: 12px; } }
   .arrows button {
     margin-right: 12px; }
     .arrows button:nth-last-child(1) {
