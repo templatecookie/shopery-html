@@ -14714,7 +14714,8 @@ body.overlay {
     .cards-blog--two .cards-blog__img-wrapper {
       width: 100%;
       height: 275px;
-      border-radius: 4px; }
+      border-radius: 4px;
+      margin-bottom: 16px; }
       .cards-blog--two .cards-blog__img-wrapper img {
         width: 100%;
         height: 100%;
