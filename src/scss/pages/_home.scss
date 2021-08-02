@@ -609,17 +609,6 @@
 
 // food Store
 .food-store {
-  &:hover {
-    // .food-store {
-    //   &__overlay-shade {
-    //     &-img {
-    //       color: color(soft-primary);
-    //       transition: all 0.6s ease-in-out;
-    //     }
-    //   }
-    // }
-  }
-
   @include max(767px) {
     overflow: hidden;
   }

@@ -14940,6 +14940,10 @@ body.overlay {
           margin-bottom: 0px; } }
     .cards-ss__content h2, .cards-ss__content .h2 {
       margin-bottom: 8px; }
+      @media (max-width: 991px) {
+        .cards-ss__content h2, .cards-ss__content .h2 {
+          font-size: 28px;
+          line-height: 38px; } }
     .cards-ss__content a.button {
       margin-top: 24px;
       background-color: #fff;

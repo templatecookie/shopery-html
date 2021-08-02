@@ -764,6 +764,7 @@
     width: 100%;
     transform: translateX(-50%);
     color: #fff;
+
     h6 {
       letter-spacing: 0.03em;
       margin-bottom: 12px;
@@ -774,6 +775,10 @@
     }
     h2 {
       margin-bottom: 8px;
+      @include max(991px) {
+        font-size: 28px;
+        line-height: 38px;
+      }
     }
 
     a {
