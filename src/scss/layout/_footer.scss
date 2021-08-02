@@ -246,6 +246,34 @@
     }
   }
 
+  &--three,
+  &--five {
+    .footer {
+      &__mobile-app {
+        &--item {
+          background-color: color(gray-8);
+          border-radius: 4px;
+          transition: all 0.3s linear;
+
+          &:hover {
+            background-color: color(gray-7);
+          }
+          span {
+            color: #fff;
+          }
+        }
+        &--info {
+          h5 {
+            color: color(gray-3);
+          }
+          h2 {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
   &--four {
     background-color: color(green-9);
 

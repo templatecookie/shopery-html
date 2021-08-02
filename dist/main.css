@@ -13750,6 +13750,19 @@ body.overlay {
           padding-top: 60px; } }
     .footer--two .footer__bottom {
       border-top: 0px; }
+  .footer--three .footer__mobile-app--item, .footer--five .footer__mobile-app--item {
+    background-color: #333333;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .footer--three .footer__mobile-app--item:hover, .footer--five .footer__mobile-app--item:hover {
+      background-color: #4d4d4d; }
+    .footer--three .footer__mobile-app--item span, .footer--five .footer__mobile-app--item span {
+      color: #fff; }
+  .footer--three .footer__mobile-app--info h5, .footer--three .footer__mobile-app--info .h5, .footer--five .footer__mobile-app--info h5, .footer--five .footer__mobile-app--info .h5 {
+    color: #b2b2b2; }
+  .footer--three .footer__mobile-app--info h2, .footer--three .footer__mobile-app--info .h2, .footer--five .footer__mobile-app--info h2, .footer--five .footer__mobile-app--info .h2 {
+    color: #fff; }
   .footer--four {
     background-color: #002603; }
     @media (max-width: 1199px) {
