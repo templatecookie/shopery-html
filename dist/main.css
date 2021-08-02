@@ -13038,17 +13038,17 @@ body.overlay {
   overflow: hidden; }
 
 .contact-form__contact-info {
-  padding: 30px 20px;
-  text-align: center; }
+  text-align: center;
+  padding: 0px 20px; }
   @media (max-width: 991px) {
     .contact-form__contact-info {
       margin-bottom: 24px; } }
   .contact-form__contact-info--item {
     padding-top: 30px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #e5e5e5; }
+    border-top: 1px solid #e5e5e5; }
     .contact-form__contact-info--item:nth-child(1) {
-      padding-top: 0px; }
+      border-top: 0px; }
     .contact-form__contact-info--item:nth-last-child(1) {
       border-bottom: 0px; }
     .contact-form__contact-info--item .icon {
@@ -13061,6 +13061,7 @@ body.overlay {
 
 .contact-form-card {
   padding: 45px 50px;
+  padding-bottom: 50px;
   height: 100%; }
   @media (max-width: 767px) {
     .contact-form-card {
@@ -13090,7 +13091,8 @@ body.overlay {
   height: 49px;
   border-radius: 6px;
   border: 1px solid #e5e5e5;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  overflow: hidden; }
   .contact-form--input label {
     position: absolute;
     top: -26px;
@@ -13138,7 +13140,8 @@ body.overlay {
 .contact-form--input-area {
   height: 98px; }
   .contact-form--input-area textarea {
-    padding-top: 14px; }
+    padding-top: 14px;
+    resize: none; }
 
 .contact-form--check input {
   -webkit-box-shadow: none;
