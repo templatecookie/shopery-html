@@ -149,7 +149,7 @@
     img {
       width: inherit;
       height: inherit;
-      object-fit: cover;
+      object-fit: contain;
     }
     .tag {
       position: absolute;
@@ -849,14 +849,6 @@
   &:hover {
     border: 0px;
     box-shadow: 0px 10px 20px 0px #00000003;
-
-    // .cards-tm__text {
-    //   color: color(hard-primary);
-    // }
-    // .quotes {
-    //   transition: all 0.6s ease-in-out;
-    //   color: color(hard-primary);
-    // }
   }
 
   &__text {
