@@ -161,12 +161,13 @@
   // Gallery
   &-gallery {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     &__item {
-      margin-right: 8px;
+      margin-right: 6px;
       .cards-ig__img {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         @include max(1199px) {
           width: 60px;
           height: 60px;
