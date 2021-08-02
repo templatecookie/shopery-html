@@ -172,20 +172,24 @@
   &__instagram {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    @include max(1199px) {
+      width: 350px;
+    }
     @include max(1460px) {
       justify-content: flex-start;
     }
     &-item {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      margin-right: -6px;
       @include max(1460px) {
         margin-right: 12px;
       }
       .cards-ig {
         &__img {
-          width: 65px;
-          height: 65px;
+          width: 69px;
+          height: 69px;
         }
       }
     }
