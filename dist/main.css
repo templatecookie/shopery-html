@@ -10226,12 +10226,6 @@ a {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
 
-.header--two .header__category-content-menu-bar button {
-  color: #fff;
-  width: 64px;
-  height: 64px;
-  background-color: #00b207; }
-
 .header--two .header__category-content .bv_mainselect {
   padding: 0px; }
 
@@ -10268,9 +10262,6 @@ a {
 
 .header--two .header__category-content .bv_ul_inner.bv_background {
   z-index: 9; }
-
-.header--two .header__navigation-menu {
-  margin-left: 32px; }
 
 .header--two .header__activity-icons button {
   margin-right: 28px;
@@ -10359,7 +10350,7 @@ a {
   background-color: #edf2ee; }
 
 .header--five .header__center-content .header__navigation-menu {
-  width: 45%; }
+  width: 48%; }
   @media (max-width: 1200px) {
     .header--five .header__center-content .header__navigation-menu {
       width: 65%; } }
@@ -10367,28 +10358,33 @@ a {
     .header--five .header__center-content .header__navigation-menu {
       display: none; } }
 
-.header--five .header__center-content .header__brand, .header--five .header__center-content .header__cart {
+.header--five .header__center-content .header__cart {
   width: 33%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
   @media (max-width: 1200px) {
-    .header--five .header__center-content .header__brand, .header--five .header__center-content .header__cart {
+    .header--five .header__center-content .header__cart {
       -webkit-box-pack: end;
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
   @media (max-width: 767px) {
-    .header--five .header__center-content .header__brand, .header--five .header__center-content .header__cart {
+    .header--five .header__center-content .header__cart {
       width: 100%; } }
 
-@media (max-width: 1200px) {
-  .header--five .header__center-content .header__brand {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
+.header--five .header__center-content .header__brand {
+  width: 30%; }
+  @media (max-width: 1200px) {
+    .header--five .header__center-content .header__brand {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media (max-width: 991px) {
+    .header--five .header__center-content .header__brand {
+      width: auto; } }
 
 .header--five .header__center-content .header__cart {
   margin-left: 0px; }
