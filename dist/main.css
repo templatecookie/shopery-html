@@ -9588,7 +9588,13 @@ a {
       font-size: 16px;
       line-height: 24px;
       font-weight: 500;
-      color: #00b207; }
+      color: #00b207;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .section__head a:hover {
+        color: #2c742f;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
       .section__head a span {
         margin-left: 12px; }
     .section__head p {
