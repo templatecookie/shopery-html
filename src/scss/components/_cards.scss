@@ -978,6 +978,9 @@
   gap: 24px;
   background-color: #fff;
   box-shadow: 0px 8px 40px 0px #00260314;
+  @include max(1199px) {
+    gap: 0px;
+  }
   @include min-max(768px, 1199px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1041,8 +1044,8 @@
     .cards-ship__item {
       padding: 40px 0px;
       justify-content: center;
-      @include max(767px) {
-        padding: 26px 0px;
+      @include max(1199px) {
+        padding: 24px 0px;
       }
     }
   }

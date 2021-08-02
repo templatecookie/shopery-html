@@ -67,7 +67,9 @@
 
   &--01 {
     margin: 24px 0px;
-
+    @include max(767px) {
+      margin-bottom: 12px;
+    }
     .banner {
       &__wrapper {
         &-img {
