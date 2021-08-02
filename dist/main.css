@@ -15210,7 +15210,8 @@ body.overlay {
         color: #00b207; }
       .cards-ship--two .cards-ship__item-process-info h2, .cards-ship--two .cards-ship__item-process-info .h2 {
         font-size: 18px;
-        line-height: 27px; }
+        line-height: 27px;
+        white-space: nowrap; }
   .cards-ship--three {
     margin-bottom: 0px;
     gap: 0; }
