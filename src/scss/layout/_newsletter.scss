@@ -28,27 +28,29 @@
     position: relative;
     width: 492px;
     height: 52px;
-    border-radius: 46px;
-    border: 1px solid color(gray-1);
-    background-color: #fff;
-    overflow: hidden;
+
+    // border: 1px solid color(gray-1);
+    // overflow: hidden;
     margin-right: 22px;
-    &:hover {
-      border-color: color(soft-primary);
-      transition: all 0.3s linear;
-    }
+
     input {
-      width: 70%;
+      width: 100%;
       height: inherit;
+      border-radius: 46px;
       padding: 14px 24px;
-      border: 0px;
+      background-color: #fff;
+
       font-size: 16px;
       line-height: 24px;
       color: color(gray-9);
+      border: 1px solid color(gray-1);
 
       &:focus {
-        border: 0;
-        outline: 0;
+        border-color: color(soft-primary);
+      }
+      &:hover {
+        border-color: color(soft-primary);
+        transition: all 0.3s linear;
       }
 
       &::placeholder {
@@ -217,9 +219,6 @@
 
     &__input {
       width: 305px;
-      input {
-        width: 67%;
-      }
     }
 
     &--two {

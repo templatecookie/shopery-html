@@ -9915,18 +9915,12 @@ a {
 .header__input-form {
   width: 498px;
   height: 45px;
-  border-radius: 6px;
-  border: 1px solid #e5e5e5;
-  overflow: hidden;
   position: relative; }
-  .header__input-form:hover {
-    border-color: #2c742f;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
   .header__input-form input {
-    width: 75%;
+    width: inherit;
     height: inherit;
-    border: 0px;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
     font-size: 15px;
     line-height: 21px;
     color: #1a1a1a;
@@ -9951,6 +9945,10 @@ a {
       font-size: inherit;
       line-height: inherit;
       color: #999999; }
+    .header__input-form input:hover, .header__input-form input:focus {
+      border-color: #84d187;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
   .header__input-form .search-btn,
   .header__input-form .search-icon {
     position: absolute;
@@ -9982,7 +9980,8 @@ a {
   font-size: 11px;
   line-height: 13.2px;
   font-weight: 400;
-  color: #4d4d4d; }
+  color: #4d4d4d;
+  white-space: nowrap; }
 
 .header__cart-item-content-info span {
   font-size: 14px;
@@ -11949,26 +11948,23 @@ body.overlay {
     position: relative;
     width: 492px;
     height: 52px;
-    border-radius: 46px;
-    border: 1px solid #e5e5e5;
-    background-color: #fff;
-    overflow: hidden;
     margin-right: 22px; }
-    .newsletter__input:hover {
-      border-color: #84d187;
-      -webkit-transition: all 0.3s linear;
-      transition: all 0.3s linear; }
     .newsletter__input input {
-      width: 70%;
+      width: 100%;
       height: inherit;
+      border-radius: 46px;
       padding: 14px 24px;
-      border: 0px;
+      background-color: #fff;
       font-size: 16px;
       line-height: 24px;
-      color: #1a1a1a; }
+      color: #1a1a1a;
+      border: 1px solid #e5e5e5; }
       .newsletter__input input:focus {
-        border: 0;
-        outline: 0; }
+        border-color: #84d187; }
+      .newsletter__input input:hover {
+        border-color: #84d187;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
       .newsletter__input input::-webkit-input-placeholder {
         font-size: inherit;
         line-height: inherit;
@@ -12110,8 +12106,6 @@ body.overlay {
     max-width: 100%; }
   .newsletter__input {
     width: 305px; }
-    .newsletter__input input {
-      width: 67%; }
   .newsletter--two .newsletter__leftcontent p {
     max-width: 100%; } }
 
@@ -12418,14 +12412,13 @@ body.overlay {
 .blog__search-field {
   width: 100%;
   height: 50px;
-  border-radius: 6px;
   overflow: hidden;
-  border: 1px solid #e5e5e5;
   position: relative; }
   .blog__search-field input {
     width: 95%;
     height: inherit;
-    border: 0px;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
     padding-left: 45px;
     font-size: 16px;
     line-height: 20.8px;
@@ -12446,6 +12439,10 @@ body.overlay {
     .blog__search-field input::placeholder {
       font-size: inherit;
       color: colo(gray-4); }
+    .blog__search-field input:hover, .blog__search-field input:focus {
+      border-color: #00b207;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
   .blog__search-field .icon {
     position: absolute;
     top: 50%;
@@ -13099,8 +13096,6 @@ body.overlay {
   position: relative;
   width: 100%;
   height: 49px;
-  border-radius: 6px;
-  border: 1px solid #e5e5e5;
   margin-bottom: 16px;
   overflow: hidden; }
   .contact-form--input label {
@@ -13116,7 +13111,8 @@ body.overlay {
     width: 95%;
     height: inherit;
     padding-left: 16px;
-    border: 0px;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
     font-size: 16px;
     line-height: 20.8px;
     color: #1a1a1a;
@@ -13142,10 +13138,13 @@ body.overlay {
       font-size: inherit;
       line-height: inherit;
       color: #999999; }
-  .contact-form--input.active, .contact-form--input:hover {
-    border: 1px solid #00b207;
-    -webkit-transition: all 0.6s linear;
-    transition: all 0.6s linear; }
+    .contact-form--input input.active, .contact-form--input input:hover, .contact-form--input input:focus,
+    .contact-form--input textarea.active,
+    .contact-form--input textarea:hover,
+    .contact-form--input textarea:focus {
+      border: 1px solid #00b207;
+      -webkit-transition: all 0.6s linear;
+      transition: all 0.6s linear; }
 
 .contact-form--input-area {
   height: 98px; }
@@ -13290,7 +13289,7 @@ body.overlay {
     @media (max-width: 767px) {
       .contact-form-input input[type='password'] {
         padding-right: 60px; } }
-    .contact-form-input input:active, .contact-form-input input:hover {
+    .contact-form-input input:active, .contact-form-input input:hover, .contact-form-input input:focus {
       border-color: #00b207;
       -webkit-transform: all 0.3s linear;
               transform: all 0.3s linear; }
@@ -14159,18 +14158,15 @@ body.overlay {
   position: relative;
   width: 100%;
   height: 49px;
-  border-radius: 6px;
-  border: 1px solid #e5e5e5;
   overflow: hidden;
   margin-bottom: 12px; }
   .form-input.filled input {
     color: #666666; }
-  .form-input:hover {
-    border: 1px solid #00b207; }
   .form-input input {
     width: 90%;
     height: inherit;
-    border: 0px;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
     padding-left: 16px;
     font-size: 16px;
     line-height: 24px;
@@ -14198,6 +14194,10 @@ body.overlay {
       font-size: inherit;
       line-height: inherit;
       color: #999999; }
+    .form-input input:hover, .form-input input:focus {
+      border: 1px solid #00b207;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
   .form-input .icon {
     position: absolute;
     top: 50%;
@@ -15575,6 +15575,7 @@ body.overlay {
     font-weight: 500; }
 
 .accordion-button {
+  position: relative;
   outline: none; }
   .accordion-button:active, .accordion-button:focus {
     -webkit-box-shadow: none;
@@ -15607,7 +15608,8 @@ body.overlay {
   font-weight: 500;
   text-transform: capitalize;
   color: #1a1a1a;
-  text-align: left; }
+  text-align: left;
+  position: relative; }
   .faq .accordion-button.collapsed {
     border-radius: 6px;
     border: 0px;

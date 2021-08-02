@@ -193,18 +193,15 @@
   &__input-form {
     width: 498px;
     height: 45px;
-    border-radius: 6px;
-    border: 1px solid color(gray-1);
-    overflow: hidden;
+    // border: 1px solid color(gray-1);
+    // overflow: hidden;
     position: relative;
-    &:hover {
-      border-color: color(hard-primary);
-      transition: all 0.3s linear;
-    }
+
     input {
-      width: 75%;
+      width: inherit;
       height: inherit;
-      border: 0px;
+      border-radius: 6px;
+      border: 1px solid color(gray-1);
       font-size: 15px;
       line-height: 21px;
       color: color(gray-9);
@@ -213,6 +210,11 @@
         font-size: inherit;
         line-height: inherit;
         color: color(gray-4);
+      }
+      &:hover,
+      &:focus {
+        border-color: color(soft-primary);
+        transition: all 0.3s linear;
       }
     }
     .search-btn,
@@ -248,6 +250,7 @@
       line-height: 13.2px;
       font-weight: 400;
       color: color(gray-7);
+      white-space: nowrap;
     }
     span {
       font-size: 14px;
