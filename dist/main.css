@@ -11221,6 +11221,14 @@ body.overlay {
   height: 358px;
   border-radius: 10px;
   overflow: hidden; }
+  .banner-sale__img-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 38, 3, 0.8); }
   .banner-sale__img-wrapper img {
     width: inherit;
     height: inherit;
@@ -11232,7 +11240,8 @@ body.overlay {
   top: 50%;
   left: 60%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
+          transform: translateY(-50%);
+  z-index: 1; }
   .banner-sale__text-content h5, .banner-sale__text-content .h5 {
     font-size: 16px;
     line-height: 16px;
@@ -14535,7 +14544,9 @@ body.overlay {
     width: inherit;
     height: inherit;
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
 
 .cards-ig__overlay {
   position: absolute;
@@ -15913,8 +15924,8 @@ body.overlay {
 .popular-categories--slider .swiper-slide {
   text-align: center; }
 
-.instagram .swiper-slide {
-  text-align: center; }
+.instagram .cards-ig {
+  margin-bottom: 24px; }
 
 .banner-promo--one .banner-promo__content {
   border-radius: 0px;

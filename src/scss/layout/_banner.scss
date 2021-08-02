@@ -684,6 +684,15 @@
     height: 358px;
     border-radius: 10px;
     overflow: hidden;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 38, 3, 0.8);
+    }
     img {
       width: inherit;
       height: inherit;
@@ -695,6 +704,7 @@
     top: 50%;
     left: 60%;
     transform: translateY(-50%);
+    z-index: 1;
     h5 {
       font-size: 16px;
       line-height: 16px;
