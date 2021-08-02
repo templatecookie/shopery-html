@@ -8,6 +8,7 @@
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
         <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
+        <link rel="stylesheet" href="dist/plugins/css/venobox.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
@@ -826,7 +827,7 @@
                                 <div class="col-lg-5 order-lg-0 order-1">
                                     <div class="products-video">
                                         <img src="src/images/members/img-10.png" alt="img-src" />
-                                        <a href="#" class="play-icon">
+                                        <a href="https://youtu.be/JkaxUblCGz0" class="play-icon venobox" data-autoplay="true" data-vbtype="video">
                                             <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 0V18L14 9L0 0Z" fill="currentColor" />
                                             </svg>
@@ -953,7 +954,7 @@
                                 <div class="col-lg-5 order-lg-0 order-1">
                                     <div class="products-video">
                                         <img src="src/images/members/img-10.png" alt="img-src" />
-                                        <a href="#" class="play-icon">
+                                        <a href="https://youtu.be/JkaxUblCGz0" class="play-icon venobox" data-autoplay="true" data-vbtype="video">
                                             <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 0V18L14 9L0 0Z" fill="currentColor" />
                                             </svg>
@@ -1323,7 +1324,7 @@
                                 <div class="col-lg-5 order-lg-0 order-1">
                                     <div class="products-video">
                                         <img src="src/images/members/img-10.png" alt="img-src" />
-                                        <a href="#" class="play-icon">
+                                        <a href="https://youtu.be/JkaxUblCGz0" class="play-icon venobox" data-autoplay="true" data-vbtype="video">
                                             <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 0V18L14 9L0 0Z" fill="currentColor" />
                                             </svg>
@@ -2197,8 +2198,9 @@
             </div>
         </footer>
         <!--Footer Section end  -->
-
+        <script src="dist/plugins/js/jquery.min.js"></script>
         <script src="dist/plugins/js/swiper-bundle.min.js"></script>
+        <script src="dist/plugins/js/venobox.min.js"></script>
         <script src="dist/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
@@ -2230,6 +2232,10 @@
             function decrement() {
                 document.getElementById("counter-btn-counter").stepDown();
             }
+
+            $(".venobox").venobox({
+                spinner: 'cube-grid'
+            });
 
             var swiper = new Swiper(".mySwiper", {
                 spaceBetween: 10,
