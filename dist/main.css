@@ -14536,7 +14536,7 @@ body.overlay {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
   opacity: 0;
   visibility: hidden;
   background: #2b572ecc; }
@@ -14563,7 +14563,6 @@ body.overlay {
   transition: all 0.3s linear; }
 
 .cards-ig:hover .cards-ig__overlay {
-  height: 100%;
   opacity: 1;
   visibility: visible;
   -webkit-transition: all 0.6s ease-in-out;
@@ -14601,7 +14600,9 @@ body.overlay {
       width: inherit;
       height: inherit;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
     .cards-blog__img-wrapper .date {
       position: absolute;
       left: 24px;
