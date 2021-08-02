@@ -833,16 +833,6 @@
 
 // Banner sales
 .banner-sales {
-  // &:hover {
-  //   .banner-sales {
-  //     &__overlay {
-  //       &-img {
-  //         color: color(soft-primary);
-  //         transition: all 0.6s linear;
-  //       }
-  //     }
-  //   }
-  // }
   @include max(767px) {
     overflow: hidden;
   }

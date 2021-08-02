@@ -564,14 +564,14 @@
       }
       // ites will be delete
 
-      // &__category-content-menu-bar {
-      //   button {
-      //     color: #fff;
-      //     width: 64px;
-      //     height: 64px;
-      //     background-color: color(primary);
-      //   }
-      // }
+      &__category-content-menu-bar {
+        button {
+          color: #fff;
+          width: 64px;
+          height: 64px;
+          background-color: color(primary);
+        }
+      }
 
       &__category-content {
         .bv_mainselect {
@@ -607,10 +607,10 @@
           z-index: 9;
         }
       }
-      // // ites will be delete
-      // &__navigation-menu {
-      //   margin-left: 32px;
-      // }
+      // ites will be delete
+      &__navigation-menu {
+        margin-left: 32px;
+      }
 
       &__activity-icons {
         button {

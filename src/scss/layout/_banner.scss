@@ -2,6 +2,13 @@
 .banner {
   position: relative;
 
+  &__wrapper-img {
+  }
+
+  &__wrapper-text {
+    z-index: 1;
+  }
+
   // Pagination
   &--03,
   &--04 {
@@ -78,6 +85,7 @@
           width: 100%;
           border-radius: 10px;
           overflow: hidden;
+
           img {
             width: inherit;
             height: inherit;
@@ -104,6 +112,19 @@
 
         &--img-01 {
           height: 600px;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              90.02deg,
+              rgba(0, 0, 0, 0.7) 0.03%,
+              rgba(0, 0, 0, 0) 91.31%
+            );
+          }
 
           .banner__wrapper-text {
             top: 165px;
@@ -305,7 +326,6 @@
       border-bottom-right-radius: 0px;
       margin: auto;
       background-color: color(green-0);
-      // padding-left: 95px;
       padding-left: 85px;
       margin-top: 24px;
       display: flex;
@@ -691,7 +711,14 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 38, 3, 0.8);
+      background: linear-gradient(
+        90.02deg,
+        rgba(0, 0, 0, 0.7) 0.03%,
+        rgba(0, 0, 0, 0) 91.31%
+      );
+      @include max(991px) {
+        background: rgba(0, 38, 3, 0.8);
+      }
     }
     img {
       width: inherit;
