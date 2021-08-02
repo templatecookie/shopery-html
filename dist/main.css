@@ -13549,6 +13549,9 @@ body.overlay {
   overflow: hidden; }
   .footer__top {
     padding: 66px 0px; }
+  @media (max-width: 991px) {
+    .footer__brand-info {
+      margin-bottom: 38px; } }
   .footer__brand-info-logo,
   .footer__brand-info h2,
   .footer__brand-info .h2 {
@@ -13857,10 +13860,6 @@ body.overlay {
   .footer--three .footer__brand-info-contact {
     margin-bottom: 30px; }
   .footer--five .social-icon {
-    margin-bottom: 30px; } }
-
-@media (max-width: 991px) {
-  .footer__brand-info-contact {
     margin-bottom: 30px; } }
 
 @media (max-width: 767px) {
