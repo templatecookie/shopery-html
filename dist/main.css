@@ -15298,7 +15298,10 @@ body.overlay {
         background-color: #00b207; }
         .cards-ship--three .cards-ship__item:hover .cards-ship__item-icon {
           background-color: #fff;
-          border-color: transparent; }
+          border-color: transparent;
+          color: #00b207;
+          -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear; }
         .cards-ship--three .cards-ship__item:hover .cards-ship__item-process-info h2, .cards-ship--three .cards-ship__item:hover .cards-ship__item-process-info .h2,
         .cards-ship--three .cards-ship__item:hover .cards-ship__item-process-info .h2 {
           color: #fff; }

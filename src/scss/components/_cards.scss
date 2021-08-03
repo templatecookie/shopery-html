@@ -1143,6 +1143,8 @@
         .cards-ship__item-icon {
           background-color: #fff;
           border-color: transparent;
+          color: color(primary);
+          transition: all 0.3s linear;
         }
 
         .cards-ship__item-process-info h2,
