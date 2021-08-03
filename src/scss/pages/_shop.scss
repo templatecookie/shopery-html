@@ -196,10 +196,6 @@
       overflow-y: auto;
     }
 
-    @include max(767px) {
-      // width: 275px;
-    }
-
     &__top {
       display: flex;
       align-items: center;
@@ -263,6 +259,9 @@
                 }
               }
             }
+          }
+          .bv_atual.bv_background {
+            padding: 12px 15px;
           }
         }
       }

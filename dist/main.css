@@ -17711,6 +17711,8 @@ body.overlay {
               border-bottom: 1px solid #e5e5e5; }
               .filter__sidebar .filter-box__top .select-box--item .bv_mainselect .bv_background.bv_ul_inner li:nth-last-child(1) {
                 margin-bottom: 0px; }
+      .filter__sidebar .filter-box__top .select-box--item .bv_atual.bv_background {
+        padding: 12px 15px; }
       @media (max-width: 991px) {
         .filter__sidebar .filter-box__top-left .select-box--item .bv_mainselect {
           margin-bottom: 16px; } }
