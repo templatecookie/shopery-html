@@ -15339,7 +15339,6 @@ body.overlay {
         line-height: 21px; }
   .cards-ship--four {
     border: 0px;
-    border-bottom: 1px solid #cccccc;
     padding: 0px; }
     @media (max-width: 767px) {
       .cards-ship--four {
@@ -15359,7 +15358,13 @@ body.overlay {
         background-color: #00b207;
         bottom: -1px; }
       .cards-ship--four .cards-ship__item:hover .cards-ship__item-icon {
-        color: #1a1a1a; }
+        color: #fff;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
+        .cards-ship--four .cards-ship__item:hover .cards-ship__item-icon .background svg {
+          color: #00b207;
+          -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear; }
       .cards-ship--four .cards-ship__item::after {
         content: '';
         width: 100%;
@@ -15372,15 +15377,28 @@ body.overlay {
       .cards-ship--four .cards-ship__item-icon {
         display: inline-block;
         margin-bottom: 16px;
-        color: #00b207; }
-        @media (max-width: 1200px) {
-          .cards-ship--four .cards-ship__item-icon {
-            color: #fff; } }
-        @media (max-width: 767px) {
-          .cards-ship--four .cards-ship__item-icon {
-            color: #00b207; } }
-        .cards-ship--four .cards-ship__item-icon:hover {
-          color: #fff !important; }
+        color: #00b207;
+        position: relative;
+        width: 72px;
+        height: 72px; }
+        .cards-ship--four .cards-ship__item-icon .background {
+          position: relative; }
+          .cards-ship--four .cards-ship__item-icon .background svg {
+            width: 72px;
+            height: 72px;
+            color: #d9f4da;
+            -webkit-transition: all 0.3s linear;
+            transition: all 0.3s linear; }
+        .cards-ship--four .cards-ship__item-icon .background,
+        .cards-ship--four .cards-ship__item-icon .forground {
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .cards-ship--four .cards-ship__item-icon .forground {
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
       .cards-ship--four .cards-ship__item-process-info h2, .cards-ship--four .cards-ship__item-process-info .h2 {
         font-size: 18px;
         line-height: 27px;

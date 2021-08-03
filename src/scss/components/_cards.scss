@@ -1187,7 +1187,7 @@
   // Shipping Cards Four
   &--four {
     border: 0px;
-    border-bottom: 1px solid color(gray-2);
+    // border-bottom: 1px solid color(gray-2);
     padding: 0px;
     @include max(767px) {
       border-bottom: 0px;
@@ -1208,7 +1208,14 @@
           bottom: -1px;
         }
         .cards-ship__item-icon {
-          color: color(gray-9);
+          color: #fff;
+          transition: all 0.3s linear;
+          .background {
+            svg {
+              color: color(primary);
+              transition: all 0.3s linear;
+            }
+          }
         }
       }
 
@@ -1226,14 +1233,28 @@
         display: inline-block;
         margin-bottom: 16px;
         color: color(primary);
-        @include max(1200px) {
-          color: #fff;
+        position: relative;
+        width: 72px;
+        height: 72px;
+        .background {
+          position: relative;
+          svg {
+            width: 72px;
+            height: 72px;
+            color: #d9f4da;
+            transition: all 0.3s linear;
+          }
         }
-        @include max(767px) {
-          color: color(primary);
+        .background,
+        .forground {
+          position: absolute;
+          top: 0;
+          left: 0;
         }
-        &:hover {
-          color: #fff !important;
+        .forground {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
 
