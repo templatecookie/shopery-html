@@ -402,6 +402,19 @@
 
 // News letter
 .call-to-action {
+  &--two {
+    .newsletter__input {
+      input {
+        border-color: transparent;
+        color: color(gray-4);
+        &:hover,
+        &:focus {
+          border-color: color(gray-3);
+          transition: all 0.3s linear;
+        }
+      }
+    }
+  }
   &--four {
     border-top: 1px solid color(green-2);
   }
@@ -798,7 +811,7 @@
     border-radius: 8px;
     padding: 40px;
     overflow: hidden;
-    h2 {
+    span {
       color: color(primary);
       font-weight: 300;
     }
