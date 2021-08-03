@@ -11548,6 +11548,9 @@ body.overlay {
   .popular-products__wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr); }
+    .popular-products__wrapper-item {
+      border: none !important;
+      border-collapse: none !important; }
 
 .deals-products__wrapper {
   display: grid;
@@ -13765,6 +13768,8 @@ body.overlay {
       .footer__instagram-item .cards-ig__img {
         width: 69px;
         height: 69px; }
+  .footer--one .footer__brand-info-contact {
+    color: #808080; }
   .footer--two {
     background-color: #fff; }
     .footer--two .footer__brand-info-contact span {
@@ -14892,14 +14897,6 @@ body.overlay {
   .cards-ss__img-wrapper {
     position: relative;
     overflow: hidden; }
-    .cards-ss__img-wrapper::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90.02deg, rgba(0, 0, 0, 0.7) 0.03%, rgba(0, 0, 0, 0) 91.31%); }
     .cards-ss__img-wrapper img {
       width: inherit;
       height: inherit;
@@ -15139,7 +15136,6 @@ body.overlay {
     margin: auto;
     margin-bottom: 14px;
     border-radius: 50%;
-    background-color: red;
     overflow: hidden;
     display: -webkit-box;
     display: -webkit-flex;
@@ -18596,14 +18592,16 @@ body.overlay {
             align-items: center;
     padding: 16px 20px;
     border-top: 1px solid #e5e5e5; }
-    .cart-table-action-btn button {
+    .cart-table-action-btn .button {
       background-color: #f2f2f2;
       color: #4d4d4d;
       font-weight: 600; }
       @media (max-width: 480px) {
-        .cart-table-action-btn button {
+        .cart-table-action-btn .button {
           font-size: 12px;
           padding: 14px; } }
+      .cart-table-action-btn .button:hover {
+        background-color: #e5e5e5; }
   .cart-table__share-content {
     padding: 24px 20px;
     border-top: 1px solid #e5e5e5; }

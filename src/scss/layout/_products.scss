@@ -17,6 +17,11 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
+    &-item {
+      border: none !important;
+      border-collapse: none !important;
+    }
   }
 }
 

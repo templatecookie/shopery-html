@@ -195,6 +195,14 @@
     }
   }
 
+  // Footer one
+
+  &--one {
+    .footer__brand-info-contact {
+      color: color(gray-5);
+    }
+  }
+
   // Footer two
   &--two {
     background-color: #fff;

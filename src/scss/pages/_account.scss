@@ -155,13 +155,16 @@
       align-items: center;
       padding: 16px 20px;
       border-top: 1px solid #e5e5e5;
-      button {
+      .button {
         background-color: color(gray-0);
         color: color(gray-7);
         font-weight: 600;
         @include max(480px) {
           font-size: 12px;
           padding: 14px;
+        }
+        &:hover {
+          background-color: color(gray-1);
         }
       }
     }
