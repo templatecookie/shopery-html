@@ -194,14 +194,11 @@
           overflow: hidden;
         }
         @include max(767px) {
-          // grid-template-columns: repeat(1, 1fr);
           display: none;
         }
       }
       &__item {
-        // overflow: hidden;
         @include max(1400px) {
-          // width: 350px;
         }
         .icon {
           @include max(1680px) {

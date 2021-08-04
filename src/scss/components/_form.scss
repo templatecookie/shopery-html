@@ -36,7 +36,7 @@
     }
 
     input {
-      width: 90%;
+      width: 100%;
       height: inherit;
       border-radius: 6px;
       border: 1px solid color(gray-1);
@@ -126,7 +126,7 @@
   &-wrapper__content a,
   &-register {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 28px;
     color: color(gray-6);
     font-weight: 400;
     text-transform: capitalize;

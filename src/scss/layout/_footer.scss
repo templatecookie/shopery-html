@@ -29,7 +29,6 @@
     }
 
     &-contact {
-      // color: color(gray-5);
       @include max(420px) {
         display: flex;
         flex-direction: column;

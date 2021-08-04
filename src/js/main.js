@@ -129,10 +129,10 @@ var bannerThree = new Swiper('.banner-slider--03', {
   loop: true,
   loopFillGroupWithBlank: true,
   effect: 'fade',
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -696,10 +696,10 @@ var featured = new Swiper('.our-feature--slider', {
   spaceBetween: 24,
   loop: true,
   loopFillGroupWithBlank: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   // centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',

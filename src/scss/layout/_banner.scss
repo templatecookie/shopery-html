@@ -2,9 +2,6 @@
 .banner {
   position: relative;
 
-  &__wrapper-img {
-  }
-
   &__wrapper-text {
     z-index: 1;
   }
@@ -620,7 +617,6 @@
         color: color(green-1);
         pointer-events: none;
         user-select: none;
-        // z-index: -1;
         @include max(991px) {
           display: none;
         }
@@ -837,9 +833,6 @@
 
   // Banner Sales Cards
   .banner-sale {
-    // &__img-wrapper {
-    //   height: 45vh;
-    // }
     &__text-content {
       top: 50%;
       left: 50%;

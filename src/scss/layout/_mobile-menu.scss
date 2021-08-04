@@ -113,7 +113,6 @@
   }
 
   &__mobile-dropdown-menu {
-    // display: none;
     height: 0px;
     overflow: hidden;
     pointer-events: none;
@@ -208,7 +207,6 @@
         height: auto;
         overflow: visible;
         pointer-events: all;
-        // transition: all 1s linear;
       }
     }
   }
@@ -228,11 +226,7 @@ body {
       height: 100%;
       background: #000000;
       opacity: 0.8;
-
       z-index: 999;
-      // @include min(992px) {
-      //   display: none;
-      // }
     }
   }
 }
