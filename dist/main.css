@@ -10183,6 +10183,7 @@ a {
       .header--two .header__category-content-item a .bar::after, .header--two .header__category-content-item a .bar::before {
         content: '';
         position: absolute;
+        left: 0;
         width: 18px;
         height: 1.5px;
         background-color: #fff;
@@ -10193,7 +10194,9 @@ a {
       .header--two .header__category-content-item a .bar::before {
         bottom: -7px; }
     .header--two .header__category-content-item a .toggle-icon {
-      margin-left: 12px; }
+      margin-left: 12px;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
   .header--two .header__category-content-dropdown {
     position: absolute;
     top: 90%;
@@ -10225,6 +10228,11 @@ a {
       .header--two .header__category-content-dropdown li a .icon {
         color: #808080;
         margin-right: 12px; }
+  .header--two .header__category-content:hover .header__category-content-item a .toggle-icon {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
   .header--two .header__category-content:hover .header__category-content-dropdown {
     top: 100%;
     opacity: 1;
@@ -10232,6 +10240,51 @@ a {
     pointer-events: all;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
+  .header--two .header__category-content.dark {
+    background-color: #333333; }
+    .header--two .header__category-content.dark .header__category-content-item {
+      padding-right: 30px; }
+      @media (max-width: 767px) {
+        .header--two .header__category-content.dark .header__category-content-item {
+          padding-right: 15px; } }
+      .header--two .header__category-content.dark .header__category-content-item a {
+        padding: 0px;
+        font-size: 16px;
+        line-height: 24px; }
+        .header--two .header__category-content.dark .header__category-content-item a .toggle-icon {
+          margin-left: 70px; }
+          @media (max-width: 1200px) {
+            .header--two .header__category-content.dark .header__category-content-item a .toggle-icon {
+              margin-left: 25px; } }
+          @media (max-width: 767px) {
+            .header--two .header__category-content.dark .header__category-content-item a .toggle-icon {
+              margin-left: 8px; } }
+      .header--two .header__category-content.dark .header__category-content-item .bar-content {
+        padding: 23px 20px;
+        background-color: #00b207;
+        margin-right: 16px; }
+        @media (max-width: 1200px) {
+          .header--two .header__category-content.dark .header__category-content-item .bar-content {
+            padding: 20px; } }
+        @media (max-width: 767px) {
+          .header--two .header__category-content.dark .header__category-content-item .bar-content {
+            padding: 14px;
+            margin-right: 8px; } }
+        .header--two .header__category-content.dark .header__category-content-item .bar-content .bar {
+          margin-right: 0px;
+          width: 24px;
+          height: 2px; }
+          .header--two .header__category-content.dark .header__category-content-item .bar-content .bar::after, .header--two .header__category-content.dark .header__category-content-item .bar-content .bar::before {
+            width: 24px;
+            height: 2px; }
+          .header--two .header__category-content.dark .header__category-content-item .bar-content .bar::before {
+            bottom: -9px; }
+          .header--two .header__category-content.dark .header__category-content-item .bar-content .bar::after {
+            top: -9px; }
+    .header--two .header__category-content.dark .header__category-content-dropdown {
+      width: 100%; }
+      .header--two .header__category-content.dark .header__category-content-dropdown li a {
+        padding: 9.5px 20px; }
 
 .header--two .header__category-content-menu-bar button {
   color: #fff;
@@ -10278,6 +10331,9 @@ a {
 
 .header--two .header__navigation-menu {
   margin-left: 32px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .header--two .header__navigation-menu-link {
+      margin-right: 12px !important; } }
 
 .header--two .header__activity-icons button {
   margin-right: 28px;

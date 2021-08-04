@@ -193,8 +193,6 @@
   &__input-form {
     width: 498px;
     height: 45px;
-    // border: 1px solid color(gray-1);
-    // overflow: hidden;
     position: relative;
 
     input {
@@ -494,6 +492,7 @@
               &::before {
                 content: '';
                 position: absolute;
+                left: 0;
                 width: 18px;
                 height: 1.5px;
                 background-color: #fff;
@@ -509,6 +508,7 @@
             }
             .toggle-icon {
               margin-left: 12px;
+              transition: all 0.3s linear;
             }
           }
         }
@@ -558,12 +558,82 @@
 
         &:hover {
           .header__category-content {
+            &-item {
+              a {
+                .toggle-icon {
+                  transform: rotate(-180deg);
+                  transition: all 0.3s linear;
+                }
+              }
+            }
             &-dropdown {
               top: 100%;
               opacity: 1;
               visibility: visible;
               pointer-events: all;
               transition: all 0.4s ease-in-out;
+            }
+          }
+        }
+        &.dark {
+          background-color: color(gray-8);
+          .header__category-content {
+            &-item {
+              padding-right: 30px;
+              @include max(767px) {
+                padding-right: 15px;
+              }
+              a {
+                padding: 0px;
+                font-size: 16px;
+                line-height: 24px;
+                .toggle-icon {
+                  margin-left: 70px;
+                  @include max(1200px) {
+                    margin-left: 25px;
+                  }
+                  @include max(767px) {
+                    margin-left: 8px;
+                  }
+                }
+              }
+              .bar-content {
+                padding: 23px 20px;
+                background-color: color(primary);
+                margin-right: 16px;
+                @include max(1200px) {
+                  padding: 20px;
+                }
+                @include max(767px) {
+                  padding: 14px;
+                  margin-right: 8px;
+                }
+                .bar {
+                  margin-right: 0px;
+                  width: 24px;
+                  height: 2px;
+
+                  &::after,
+                  &::before {
+                    width: 24px;
+                    height: 2px;
+                  }
+                  &::before {
+                    bottom: -9px;
+                  }
+                  &::after {
+                    top: -9px;
+                  }
+                }
+              }
+            }
+            &-dropdown {
+              width: 100%;
+              li {
+                a {
+                  padding: 9.5px 20px;
+                }
+              }
             }
           }
         }
@@ -616,6 +686,12 @@
       // ites will be delete
       &__navigation-menu {
         margin-left: 32px;
+
+        &-link {
+          @include min-max(992px, 1199px) {
+            margin-right: 12px !important;
+          }
+        }
       }
 
       &__activity-icons {
