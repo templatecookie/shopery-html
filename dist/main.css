@@ -15697,10 +15697,18 @@ body.overlay {
     border: 0px;
     background-color: #f2f2f2; }
     .faq .accordion-button.collapsed .icon {
-      color: #fff; }
+      color: #fff;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
   .faq .accordion-button .icon {
     margin-left: auto;
-    color: #f2f2f2; }
+    color: #f2f2f2;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
 
 .faq .accordion-body {
   font-size: 14px;

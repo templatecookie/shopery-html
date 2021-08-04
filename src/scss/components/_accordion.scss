@@ -53,12 +53,15 @@
         background-color: color(gray-0);
         .icon {
           color: #fff;
+          transition: all 0.3s linear;
+          transform: rotate(0deg);
         }
       }
       .icon {
         margin-left: auto;
-        // color: #fff;
         color: color(gray-0);
+        transition: all 0.3s linear;
+        transform: rotate(45deg);
       }
     }
 
