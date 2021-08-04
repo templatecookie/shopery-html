@@ -3,6 +3,14 @@
     margin-top: 32px;
   }
 
+  &__user-profile,
+  &__user-billing {
+    &:hover {
+      box-shadow: none;
+      border-color: color(gray-1);
+    }
+  }
+
   // User profile card
   &__user-profile {
     display: flex;
@@ -375,8 +383,6 @@
     height: 100%;
     border-radius: 8px;
     border: 1px solid #e5e5e5;
-    // overflow: hidden;
-
     margin-bottom: 24px;
     &-header {
       padding: 16px 24px;
@@ -436,6 +442,9 @@
         width: inherit;
         height: inherit;
       }
+    }
+    h5 {
+      color: color(gray-9);
     }
   }
 }

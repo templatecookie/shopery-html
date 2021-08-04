@@ -84,15 +84,20 @@
     align-items: center;
     overflow: hidden;
     padding: 5px;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
   }
 
   &__action {
     display: flex;
     align-items: center;
     margin: 8px 0px;
-    opacity: 0;
     height: 0;
     overflow: hidden;
+    transform: translateY(150px);
     .action-btn {
       margin-right: 12px;
     }
@@ -103,24 +108,42 @@
     .cards-sm--two__content-text {
       span,
       .rating {
-        display: none !important;
+        display: none;
+        transition: all 0.3s linear;
       }
       .cards-sm--two__action {
-        opacity: 1;
-        height: auto;
-        overflow: visible;
+        height: 100%;
+        transform: translateY(0px);
+        transition: all 0.3s linear;
       }
     }
   }
 }
 
+.cards-sm--three {
+  padding-top: 24px;
+}
+
 // categories cards md
 .cards-md {
   &:hover {
+    z-index: 3;
     .cards-md__info-left {
       h6 {
         color: color(primary);
       }
+    }
+    .cards-md__info-right {
+      .action-btn {
+        cursor: pointer;
+      }
+    }
+    .cards-md__favs-list {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      transition: all 0.6s linear;
+      cursor: pointer;
     }
   }
   &__img-wrapper {
@@ -132,7 +155,7 @@
     img {
       width: inherit;
       height: inherit;
-      object-fit: cover;
+      object-fit: contain;
     }
     .tag {
       position: absolute;
@@ -163,10 +186,12 @@
     position: absolute;
     top: 16px;
     right: 16px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     .action-btn {
       margin-bottom: 6px;
-      // background-color: #fff;
-      // border: 1px solid #f2f2f2;
+      cursor: pointer;
     }
   }
 }
@@ -174,10 +199,11 @@
 // Large products cards
 .cards-lg {
   // padding: 25px;
-
+  &:hover {
+    z-index: 3;
+  }
   &__img-wrapper {
     position: relative;
-    // margin-bottom: 30px;
     width: 100%;
     height: 446px;
     overflow: hidden;
@@ -276,6 +302,7 @@
       width: inherit;
       height: inherit;
       object-fit: cover;
+      transition: all 0.3s linear;
     }
   }
 
@@ -284,7 +311,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 100%;
     opacity: 0;
     visibility: hidden;
     background: #2b572ecc;
@@ -298,8 +325,13 @@
   }
 
   &:hover {
+    .cards-ig__img {
+      img {
+        transform: scale(1.1);
+        transition: all 0.3s linear;
+      }
+    }
     .cards-ig__overlay {
-      height: 100%;
       opacity: 1;
       visibility: visible;
       transition: all 0.6s ease-in-out;
@@ -316,14 +348,26 @@
   &:hover {
     border-color: transparent;
     box-shadow: 0px 20px 50px 0px #00000014;
-    .cards-blog__info h2,
-    .cards-blog__info .h2 {
-      color: color(hard-primary);
-    }
 
-    .cards-blog__play-icon {
-      color: color(primary);
-      transition: all 0.3s linear;
+    .cards-blog {
+      &__img-wrapper {
+        img {
+          transform: scale(1.1);
+          transition: all 0.3s linear;
+        }
+        .date {
+          background-color: #fff;
+          transition: all 0.3s linear;
+        }
+      }
+      &__info h2 {
+        color: color(hard-primary);
+      }
+
+      &__play-icon {
+        color: color(primary);
+        transition: all 0.3s linear;
+      }
     }
   }
 
@@ -336,6 +380,7 @@
       width: inherit;
       height: inherit;
       object-fit: cover;
+      transition: all 0.3s linear;
     }
     .date {
       position: absolute;
@@ -348,7 +393,8 @@
       width: 58px;
       height: 58px;
       border-radius: 4px;
-      background-color: #fff;
+      background: rgba(255, 255, 255, 0.85);
+
       h3 {
         color: color(gray-9);
       }
@@ -421,6 +467,7 @@
         width: 100%;
         height: 275px;
         border-radius: 4px;
+        margin-bottom: 16px;
         img {
           width: 100%;
           height: 100%;
@@ -455,11 +502,10 @@
     box-shadow: 0px 20px 48px 0px #00260314;
     .cards-mb__img-wrapper {
       img {
-        transform: scale(1.5);
+        transform: scale(1.1);
         transition: all 0.6s linear;
       }
       &::after {
-        height: 100%;
         opacity: 1;
         visibility: visible;
         pointer-events: all;
@@ -484,7 +530,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 35%;
+      height: 100%;
       background: #00000080;
       opacity: 0;
       visibility: hidden;
@@ -548,6 +594,8 @@
   position: relative;
 
   &__img-wrapper {
+    position: relative;
+    overflow: hidden;
     img {
       width: inherit;
       height: inherit;
@@ -607,6 +655,11 @@
     .cards-ss__content .h2 {
       color: color(gray-9);
     }
+    .cards-ss__saleoff {
+      p {
+        color: color(gray-9);
+      }
+    }
   }
   &--md {
     border-radius: 8px;
@@ -620,18 +673,7 @@
       img {
         width: inherit;
         height: inherit;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-
-        background-color: rgba(0, 0, 0, 0.185);
+        object-fit: cover;
       }
     }
 
@@ -725,6 +767,7 @@
     width: 100%;
     transform: translateX(-50%);
     color: #fff;
+    z-index: 1;
     h6 {
       letter-spacing: 0.03em;
       margin-bottom: 12px;
@@ -735,6 +778,10 @@
     }
     h2 {
       margin-bottom: 8px;
+      @include max(991px) {
+        font-size: 28px;
+        line-height: 38px;
+      }
     }
 
     a {
@@ -747,27 +794,6 @@
           background-color: color(gray-0);
         }
       }
-    }
-  }
-
-  &__countdown {
-    ul.example li {
-      margin-right: 8px;
-    }
-    ul.example li span {
-      font-size: 24px;
-      line-height: 36px;
-      font-weight: 400;
-    }
-    ul.example li.seperator {
-      color: #ffffff99;
-    }
-    ul.example li p {
-      font-size: 12px;
-      line-height: 12px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: #ffffffcc;
     }
   }
 
@@ -825,14 +851,6 @@
   &:hover {
     border: 0px;
     box-shadow: 0px 10px 20px 0px #00000003;
-
-    // .cards-tm__text {
-    //   color: color(hard-primary);
-    // }
-    // .quotes {
-    //   transition: all 0.6s ease-in-out;
-    //   color: color(hard-primary);
-    // }
   }
 
   &__text {
@@ -931,7 +949,6 @@
     margin: auto;
     margin-bottom: 14px;
     border-radius: 50%;
-    background-color: red;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -960,6 +977,9 @@
   gap: 24px;
   background-color: #fff;
   box-shadow: 0px 8px 40px 0px #00260314;
+  @include max(1199px) {
+    gap: 0px;
+  }
   @include min-max(768px, 1199px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1023,8 +1043,8 @@
     .cards-ship__item {
       padding: 40px 0px;
       justify-content: center;
-      @include max(767px) {
-        padding: 26px 0px;
+      @include max(1199px) {
+        padding: 24px 0px;
       }
     }
   }
@@ -1078,6 +1098,7 @@
         h2 {
           font-size: 18px;
           line-height: 27px;
+          white-space: nowrap;
         }
       }
     }
@@ -1104,6 +1125,8 @@
         .cards-ship__item-icon {
           background-color: #fff;
           border-color: transparent;
+          color: color(primary);
+          transition: all 0.3s linear;
         }
 
         .cards-ship__item-process-info h2,
@@ -1147,7 +1170,7 @@
   // Shipping Cards Four
   &--four {
     border: 0px;
-    border-bottom: 1px solid color(gray-2);
+    // border-bottom: 1px solid color(gray-2);
     padding: 0px;
     @include max(767px) {
       border-bottom: 0px;
@@ -1163,19 +1186,26 @@
       }
       &:hover {
         &::after {
-          height: 1px;
+          height: 4px;
           background-color: color(primary);
           bottom: -1px;
         }
         .cards-ship__item-icon {
-          color: color(gray-9);
+          color: #fff;
+          transition: all 0.3s linear;
+          .background {
+            svg {
+              color: color(primary);
+              transition: all 0.3s linear;
+            }
+          }
         }
       }
 
       &::after {
         content: '';
         width: 100%;
-        height: 1px;
+        height: 2px;
         position: absolute;
         bottom: 0px;
         left: 0px;
@@ -1186,14 +1216,28 @@
         display: inline-block;
         margin-bottom: 16px;
         color: color(primary);
-        @include max(1200px) {
-          color: #fff;
+        position: relative;
+        width: 72px;
+        height: 72px;
+        .background {
+          position: relative;
+          svg {
+            width: 72px;
+            height: 72px;
+            color: #d9f4da;
+            transition: all 0.3s linear;
+          }
         }
-        @include max(767px) {
-          color: color(primary);
+        .background,
+        .forground {
+          position: absolute;
+          top: 0;
+          left: 0;
         }
-        &:hover {
-          color: #fff !important;
+        .forground {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
 

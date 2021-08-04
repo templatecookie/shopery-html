@@ -11,8 +11,8 @@
 
 // Instagram
 .instagram {
-  .swiper-slide {
-    text-align: center;
+  .cards-ig {
+    margin-bottom: 24px;
   }
 }
 
@@ -84,6 +84,10 @@
 
 // Shipping container
 .shipping-container {
+  @include max(767px) {
+    padding-bottom: 0px;
+  }
+
   &--03 {
     position: relative;
     width: 1520px;
@@ -163,7 +167,7 @@
 
 //\\=======  Homepage 04 ========== //\\
 
-// 03. Shipping Container
+//  Shipping Container
 .shipping-container {
   &--three {
     margin-bottom: 0px;
@@ -202,7 +206,7 @@
   }
 }
 
-// 04. Our products
+// Our products
 .our-products {
   .section__head {
     h2 {
@@ -286,7 +290,6 @@
 // banner promo
 .banner-promo {
   position: relative;
-  // overflow: hidden;
   &::after,
   &::before {
     content: '';
@@ -323,7 +326,6 @@
       width: 100%;
       height: 100%;
       background: #002e0399;
-      // z-index: -1;
     }
     img {
       width: inherit;
@@ -398,6 +400,19 @@
 
 // News letter
 .call-to-action {
+  &--two {
+    .newsletter__input {
+      input {
+        border-color: transparent;
+        color: color(gray-4);
+        &:hover,
+        &:focus {
+          border-color: color(gray-3);
+          transition: all 0.3s linear;
+        }
+      }
+    }
+  }
   &--four {
     border-top: 1px solid color(green-2);
   }
@@ -493,29 +508,42 @@
         @include min-max(375px, 734px) {
           width: 70px;
         }
-        // @include max(575px) {
-        //   width: 50px;
-        // }
+        @include max(575px) {
+          width: 60px;
+        }
         &::after {
           top: 50% !important;
           transform: translateY(-50%);
           color: color(green-5) !important;
         }
         .tab-val {
-          font-size: 32px;
-          line-height: 38.4px;
+          font-size: 32px !important;
+          line-height: 38.4px !important;
           font-weight: 400;
           color: color(primary);
+          @include max(767px) {
+            font-size: 22px !important;
+          }
         }
         .tab-unit {
-          font-size: 14px;
-          line-height: 14px;
+          font-size: 14px !important;
+          line-height: 14px !important;
           letter-spacing: 0.03em;
           font-weight: 400;
           color: color(green-5);
+          @include max(767px) {
+            font-size: 10px !important;
+          }
         }
       }
     }
+  }
+}
+
+// Sales Banner card
+.sales-banner--two {
+  .cards-ss--md {
+    margin-bottom: 24px;
   }
 }
 
@@ -559,13 +587,6 @@
       }
     }
   }
-
-  &:hover {
-    .featured__overlay-img {
-      transition: all 0.6s ease-in;
-      color: color(soft-primary);
-    }
-  }
 }
 
 // Category
@@ -592,19 +613,6 @@
 
 // food Store
 .food-store {
-  // background-color: color(green-0);
-
-  &:hover {
-    .food-store {
-      &__overlay-shade {
-        &-img {
-          color: color(soft-primary);
-          transition: all 0.6s ease-in-out;
-        }
-      }
-    }
-  }
-
   @include max(767px) {
     overflow: hidden;
   }
@@ -684,12 +692,7 @@
       display: flex;
       align-items: flex-start;
       margin-bottom: 26px;
-      &:hover {
-        .icon {
-          background-color: color(primary);
-          transition: all 0.4s linear;
-        }
-      }
+
       .icon {
         display: flex;
         align-items: center;
@@ -697,7 +700,7 @@
         width: 24px;
         height: 24px;
         border-radius: 100%;
-        background-color: color(soft-primary);
+        background-color: color(primary);
         flex-shrink: 0;
       }
     }
@@ -723,7 +726,6 @@
       position: absolute;
       pointer-events: none;
       z-index: -1;
-      // begun
       &--one {
         bottom: 35px;
         left: 0px;
@@ -732,7 +734,6 @@
           bottom: -70px;
         }
       }
-
       // shade
       &--two {
         top: 0;
@@ -742,7 +743,6 @@
           display: none;
         }
       }
-
       // mula {
       &--three {
         top: 50%;
@@ -802,7 +802,7 @@
     border-radius: 8px;
     padding: 40px;
     overflow: hidden;
-    h2 {
+    span {
       color: color(primary);
       font-weight: 300;
     }
@@ -837,16 +837,6 @@
 
 // Banner sales
 .banner-sales {
-  &:hover {
-    .banner-sales {
-      &__overlay {
-        &-img {
-          color: color(soft-primary);
-          transition: all 0.6s linear;
-        }
-      }
-    }
-  }
   @include max(767px) {
     overflow: hidden;
   }
@@ -878,6 +868,10 @@
       }
     }
   }
+
+  .banner-sale--two {
+    margin-bottom: 24px;
+  }
 }
 
 // latest News
@@ -886,16 +880,6 @@
 .testimonial {
   @include max(1200px) {
     overflow: hidden;
-  }
-  &:hover {
-    .testimonial__overlay {
-      &-img {
-        &.three {
-          color: color(soft-primary);
-          transition: all 0.6s ease-in;
-        }
-      }
-    }
   }
   &--four {
     background: linear-gradient(180deg, #ffffff 0%, #f2f5f3 63.02%),
@@ -1001,7 +985,7 @@
       border: 0px;
       width: 75%;
       height: inherit;
-      color: color(gray-4);
+      color: color(gray-9);
       font-size: 14px;
       line-height: 24px;
       padding-left: 24px;
@@ -1019,7 +1003,7 @@
       &::placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: color(gray-4);
       }
     }
     .button {

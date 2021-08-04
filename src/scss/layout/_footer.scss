@@ -10,6 +10,9 @@
 
   // brands information
   &__brand-info {
+    @include max(991px) {
+      margin-bottom: 38px;
+    }
     &-logo,
     h2 {
       margin-bottom: 16px;
@@ -21,18 +24,29 @@
 
     p {
       color: color(gray-5);
-      max-width: 75%;
+      max-width: 350px;
       margin-bottom: 22px;
     }
 
     &-contact {
-      color: color(gray-5);
-
+      @include max(420px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
       a {
         margin: 0px 16px;
+        max-width: 250px;
 
+        @include max(420px) {
+          margin: 0px;
+          margin: 6px;
+        }
         &:nth-child(1) {
           margin-left: 0px;
+          @include max(420px) {
+            margin-top: 0px;
+          }
         }
 
         &:nth-child(2) {
@@ -43,8 +57,14 @@
       span {
         color: #fff;
         padding-bottom: 6px;
-        border-bottom: 2px solid color(primary);
+        border-bottom: 1px solid color(primary);
         font-weight: 500;
+        transition: all 0.3s linear;
+        &:hover {
+          color: color(primary);
+          border-color: color(hard-primary);
+          transition: all 0.3s linear;
+        }
       }
     }
   }
@@ -52,7 +72,9 @@
   // footer navigation menu
   &__navigation {
     overflow: hidden;
-
+    @include max(767px) {
+      margin-bottom: 20px;
+    }
     &-title {
       margin-bottom: 20px;
 
@@ -115,7 +137,11 @@
       align-items: center;
       margin-right: 8px;
       padding: 10px;
-
+      flex: none;
+      &:hover {
+        background-color: color(gray-1);
+        transition: all 0.3s linear;
+      }
       &:nth-last-child(1) {
         margin-right: 0px;
       }
@@ -143,14 +169,36 @@
 
   // instagram galery
   &__instagram {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include max(1199px) {
+      width: 350px;
+    }
+    @include max(1460px) {
+      justify-content: flex-start;
+    }
     &-item {
-      margin-right: 12px;
-      margin-bottom: 12px;
-
-      .cards-ig__img {
-        width: 69px;
-        height: 69px;
+      margin-bottom: 6px;
+      margin-right: -6px;
+      @include max(1460px) {
+        margin-right: 12px;
       }
+      .cards-ig {
+        &__img {
+          width: 69px;
+          height: 69px;
+        }
+      }
+    }
+  }
+
+  // Footer one
+
+  &--one {
+    .footer__brand-info-contact {
+      color: color(gray-5);
     }
   }
 
@@ -163,6 +211,11 @@
         &-contact {
           span {
             color: color(gray-9);
+            &:hover {
+              color: color(primary);
+              border-color: color(hard-primary);
+              transition: all 0.3s linear;
+            }
           }
         }
       }
@@ -188,10 +241,42 @@
       &__top {
         background-color: color(gray-0);
         padding: 60px;
+        @include max(1200px) {
+          padding: 0px;
+          padding-top: 60px;
+        }
       }
 
       &__bottom {
         border-top: 0px;
+      }
+    }
+  }
+
+  &--three,
+  &--five {
+    .footer {
+      &__mobile-app {
+        &--item {
+          background-color: color(gray-8);
+          border-radius: 4px;
+          transition: all 0.3s linear;
+
+          &:hover {
+            background-color: color(gray-7);
+          }
+          span {
+            color: #fff;
+          }
+        }
+        &--info {
+          h5 {
+            color: color(gray-3);
+          }
+          h2 {
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -201,6 +286,9 @@
 
     .footer {
       &__brand-info {
+        @include max(1199px) {
+          margin-bottom: 30px;
+        }
         p {
           color: color(green-5);
         }
@@ -225,7 +313,7 @@
       &__social-icon {
         &-link {
           a {
-            color: color(green-3);
+            color: #96b297;
 
             &:hover {
               color: #fff;
@@ -236,6 +324,11 @@
 
       &__copyright-text {
         color: color(green-5);
+      }
+
+      &__bottom {
+        border-top: 0;
+        box-shadow: 0px -1px 0px 0px #1b421d;
       }
     }
   }
@@ -390,33 +483,14 @@
       }
     }
   }
-
-  &:hover {
-    .footer__overlay {
-      &-img {
-        color: color(soft-primary);
-        transition: all 0.6s ease-in;
-      }
-    }
-  }
 }
 
 // Responsive
-
-@media (max-width: 1440px) {
-  .footer--two .footer__top {
-    padding: 60px 30px;
-  }
-}
 
 @media (max-width: 1200px) {
   // Footer two
   .footer--two {
     background-color: #f2f2f2;
-  }
-
-  .footer--two .footer__top {
-    padding: 60px 0px;
   }
 
   .footer--two .footer__brand-info-contact,
@@ -432,43 +506,9 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  // footer one
-  .footer {
-    &__brand-info {
-      &-contact {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        a {
-          margin-left: 0;
-          margin-bottom: 15px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 991px) {
-  .footer__brand-info-contact {
-    margin-bottom: 30px;
-  }
-}
-
 @media (max-width: 767px) {
   .footer__top {
     padding-bottom: 30px;
-  }
-
-  .footer__brand-info-contact {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      margin: 0;
-      margin-bottom: 15px;
-    }
   }
 
   .footer__brand-info p {
@@ -492,10 +532,6 @@
   // Footers Two
   .footer--two {
     background-color: #f2f2f2;
-  }
-
-  .footer--two .footer__top {
-    padding: 60px 0px;
   }
 
   // Footer three

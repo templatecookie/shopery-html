@@ -26,32 +26,32 @@
 
   &__input {
     position: relative;
-    width: 492px;
-    height: 52px;
     border-radius: 46px;
-    border: 1px solid color(gray-1);
-    background-color: #fff;
-    overflow: hidden;
-    margin-right: 40px;
+    margin-right: 22px;
 
     input {
-      width: 70%;
-      height: inherit;
+      width: 492px;
+      height: 52px;
+      border-radius: 46px;
       padding: 14px 24px;
-      border: 0px;
+      background-color: #fff;
       font-size: 16px;
       line-height: 24px;
-      color: color(gray-5);
+      color: color(gray-9);
+      border: 1px solid color(gray-1);
 
       &:focus {
-        border: 0;
-        outline: 0;
+        border-color: color(soft-primary);
+      }
+      &:hover {
+        border-color: color(soft-primary);
+        transition: all 0.3s linear;
       }
 
       &::placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: inherit;
+        color: color(gray-4);
         text-transform: capitalize;
       }
     }
@@ -68,7 +68,7 @@
     display: flex;
     align-items: center;
     li {
-      margin-right: 20px;
+      margin-right: 8px;
 
       a {
         color: color(gray-7);
@@ -117,10 +117,6 @@
         background-color: color(gray-8);
         input {
           background-color: color(gray-8);
-          color: color(gray-4);
-          &::placeholder {
-            color: inherit;
-          }
         }
       }
 
@@ -151,9 +147,6 @@
 
       &__input {
         border: 1px solid #dae5da;
-        input {
-          color: color(green-5);
-        }
       }
     }
   }
@@ -175,9 +168,6 @@
 
     &__rightcontent {
       flex-direction: column;
-      form {
-        order: 2;
-      }
     }
 
     &__input {
@@ -185,8 +175,7 @@
     }
 
     &__social-icon {
-      order: 1;
-      margin: 15px 0px;
+      margin-top: 15px;
     }
 
     // Newsletter two
@@ -225,9 +214,6 @@
 
     &__input {
       width: 305px;
-      input {
-        width: 67%;
-      }
     }
 
     &--two {

@@ -3,9 +3,9 @@
     position: relative;
     border-radius: 8px;
     padding: 24px 0px;
+    padding-bottom: 12px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
-
     .filter-icon {
       display: none;
       position: absolute;
@@ -45,8 +45,8 @@
     }
 
     @include max(767px) {
-      width: 35%;
-      left: -35%;
+      width: 70%;
+      left: -70%;
       &.active {
         width: 70%;
       }
@@ -60,7 +60,6 @@
 
     &-item {
       &-link {
-        padding: 16px 24px;
         border-left: 2px solid transparent;
         &:hover,
         &.active {
@@ -75,6 +74,7 @@
           display: flex;
           align-items: center;
           color: color(gray-6);
+          padding: 16px 24px;
           .icon {
             margin-right: 6px;
             width: 30px;

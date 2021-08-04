@@ -2,6 +2,10 @@
 .banner {
   position: relative;
 
+  &__wrapper-text {
+    z-index: 1;
+  }
+
   // Pagination
   &--03,
   &--04 {
@@ -67,7 +71,9 @@
 
   &--01 {
     margin: 24px 0px;
-
+    @include max(767px) {
+      margin-bottom: 12px;
+    }
     .banner {
       &__wrapper {
         &-img {
@@ -76,6 +82,7 @@
           width: 100%;
           border-radius: 10px;
           overflow: hidden;
+
           img {
             width: inherit;
             height: inherit;
@@ -102,6 +109,19 @@
 
         &--img-01 {
           height: 600px;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              90.02deg,
+              rgba(0, 0, 0, 0.7) 0.03%,
+              rgba(0, 0, 0, 0) 91.31%
+            );
+          }
 
           .banner__wrapper-text {
             top: 165px;
@@ -303,7 +323,7 @@
       border-bottom-right-radius: 0px;
       margin: auto;
       background-color: color(green-0);
-      padding-left: 95px;
+      padding-left: 85px;
       margin-top: 24px;
       display: flex;
       align-items: center;
@@ -386,13 +406,14 @@
       }
       a.button {
         margin-top: 32px;
-        span {
-          margin-left: 0px;
-        }
+        background-color: color(soft-primary);
       }
     }
     &__img-wrapper {
       opacity: 0.3;
+      img {
+        max-width: 100%;
+      }
     }
     .swiper-slide {
       opacity: 0 !important;
@@ -413,11 +434,9 @@
                 transform: translate(0px);
               }
             }
-            a {
-              span {
-                margin-left: 12px;
-                transform: all 0.9s linear;
-              }
+            a.button {
+              background-color: color(primary);
+              transform: all 0.9s linear;
             }
           }
           &__img-wrapper {
@@ -598,7 +617,6 @@
         color: color(green-1);
         pointer-events: none;
         user-select: none;
-        // z-index: -1;
         @include max(991px) {
           display: none;
         }
@@ -642,14 +660,6 @@
         }
       }
     }
-    &:hover {
-      .banner--05 {
-        &__overlay-img {
-          color: color(soft-primary);
-          transition: all 0.6s ease-in-out;
-        }
-      }
-    }
 
     .banner--03 {
       .container {
@@ -690,6 +700,22 @@
     height: 358px;
     border-radius: 10px;
     overflow: hidden;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90.02deg,
+        rgba(0, 0, 0, 0.7) 0.03%,
+        rgba(0, 0, 0, 0) 91.31%
+      );
+      @include max(991px) {
+        background: rgba(0, 38, 3, 0.8);
+      }
+    }
     img {
       width: inherit;
       height: inherit;
@@ -701,6 +727,7 @@
     top: 50%;
     left: 60%;
     transform: translateY(-50%);
+    z-index: 1;
     h5 {
       font-size: 16px;
       line-height: 16px;
@@ -806,9 +833,6 @@
 
   // Banner Sales Cards
   .banner-sale {
-    // &__img-wrapper {
-    //   height: 45vh;
-    // }
     &__text-content {
       top: 50%;
       left: 50%;
@@ -852,12 +876,6 @@
         margin-right: 0px;
       }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .banner--01 .banner-slider--one {
-    display: none;
   }
 }
 
@@ -993,10 +1011,6 @@
     left: 15px;
   }
 
-  .banner--01 .banner__wrapper {
-    display: none;
-  }
-
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text h2,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .h2 {
     width: 100%;
@@ -1005,7 +1019,7 @@
     flex-direction: column;
     .banner__wrapper-img {
       margin-right: 0px;
-      margin-bottom: 12pxx;
+      margin-bottom: 12px;
     }
   }
 
@@ -1045,10 +1059,6 @@
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off h5,
   .banner--01 .banner__wrapper--img-01 .banner__wrapper-text .sale-off .h5 {
     margin-bottom: 5px;
-  }
-
-  .banner--01 .banner__wrapper--img-02 {
-    margin-bottom: 0px;
   }
 
   // banner sales cards

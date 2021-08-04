@@ -15,7 +15,6 @@
  02. Shipping
  03. Categories 
  04. Products 
- 05. Sale Cards 
  06. Deal Cards 
  07. Featured 
  08. News 
@@ -494,86 +493,6 @@ var productViewGallery = new Swiper('.gallery-main-slider', {
   },
 });
 
-// ===== Sales Card ======= \\
-
-var salesCard = new Swiper('.cyclone--slider', {
-  loop: true,
-  loopFillGroupWithBlank: true,
-
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 24,
-    },
-    1400: {
-      slidesPerView: 3,
-      spaceBetween: 24,
-    },
-  },
-});
-
-var salesCardOne = new Swiper('.sales-banner-slider--two', {
-  loop: true,
-  loopFillGroupWithBlank: true,
-
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1400: {
-      slidesPerView: 3,
-      spaceBetween: 24,
-    },
-  },
-});
-
-var salesCard = new Swiper('.banner-sales--slider', {
-  spaceBetween: 24,
-  loop: true,
-  loopFillGroupWithBlank: true,
-
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-  },
-});
-
 //======  deals Slider one ====== \\
 var deals = new Swiper('.deals-products--slider', {
   slidesPerView: 'auto',
@@ -777,10 +696,10 @@ var featured = new Swiper('.our-feature--slider', {
   spaceBetween: 24,
   loop: true,
   loopFillGroupWithBlank: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   // centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
@@ -850,6 +769,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
     },
     768: {
       slidesPerView: 2,
+      spaceBetween: 12,
     },
     1200: {
       slidesPerView: 3,
@@ -932,10 +852,10 @@ var brandsName = new Swiper('.brand-name-slide--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoHeight: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
