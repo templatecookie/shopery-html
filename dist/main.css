@@ -13502,8 +13502,8 @@ body.overlay {
       color: #1a1a1a; }
     @media (max-width: 991px) {
       .newsletter-popup__text-content .btn-close {
-        top: 18px;
-        right: 18px; } }
+        top: 0px;
+        right: 0px; } }
   .newsletter-popup__text-content .form-check {
     display: inline-block;
     margin-bottom: 0; }

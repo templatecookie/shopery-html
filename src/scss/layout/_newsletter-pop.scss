@@ -82,8 +82,8 @@
         color: color(gray-9);
       }
       @include max(991px) {
-        top: 18px;
-        right: 18px;
+        top: 0px;
+        right: 0px;
       }
     }
     .form-check {
