@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
 @import url(https://fonts.cdnfonts.com/css/segoe-script);
-@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap);
 @use "sass:math";
 .font-title--xxxl {
   font-size: 72px;
@@ -10062,10 +10061,6 @@ a {
       top: 100%;
       opacity: 1;
       pointer-events: all;
-      -webkit-user-select: all;
-         -moz-user-select: all;
-          -ms-user-select: all;
-              user-select: all;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
     .header__navigation-menu-link:hover a {
