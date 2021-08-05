@@ -3659,8 +3659,11 @@
             }
 
             // Modal
+            var newsletterModal = new bootstrap.Modal(document.getElementById('newsletter'))
+            newsletterModal.show();
+            
             $(document).ready(function () {
-                $("#newsletter").modal("show");
+                // $("#newsletter").modal("show");
 
                 $(".venobox").venobox();
             });

@@ -6504,7 +6504,9 @@
             // Modal
             $(document).ready(function () {
                 // modal
-                $("#newsletter").modal("show");
+                var newsletterModal = new bootstrap.Modal(document.getElementById('newsletter'))
+                newsletterModal.show();
+                // $("#newsletter").modal("show");
 
                 //  Venobox
                 $(".venobox").venobox();

@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
-@import url(http://fonts.cdnfonts.com/css/segoe-script);
+@import url(https://fonts.cdnfonts.com/css/segoe-script);
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap);
 @use "sass:math";
 .font-title--xxxl {
@@ -11610,7 +11610,7 @@ body.overlay {
 .deals-products__wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: 'lg-card lg-card sm-card-one sm-card-two sm-card-three' 'lg-card lg-card sm-card-four sm-card-five sm-card-six' 'sm-card-seven sm-card-eight sm-card-nine sm-card-ten sm-card-eleven'; }
+  grid-template-areas: 'lg-card lg-card sm-card-one sm-card-two sm-card-three' 'lg-card lg-card sm-card-four sm-card-five sm-card-six' 'sm-card-seven sm-card-eight sm-card-nine sm-card-ten sm-card-eleven'; }
 
 .deals-products__wrapper-item--one {
   grid-area: lg-card; }
@@ -11909,7 +11909,7 @@ body.overlay {
     grid-template-columns: repeat(4, 1fr); }
   .deals-products__wrapper {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 'lg-card lg-card sm-card-one sm-card-two ' 'lg-card lg-card sm-card-three sm-card-four' 'sm-card-five sm-card-six sm-card-seven sm-card-eight' 'sm-card-nine sm-card-ten sm-card-eleven sm-card-twelve'; } }
+    grid-template-areas: 'lg-card lg-card sm-card-one sm-card-two ' 'lg-card lg-card sm-card-three sm-card-four' 'sm-card-five sm-card-six sm-card-seven sm-card-eight' 'sm-card-nine sm-card-ten sm-card-eleven sm-card-twelve'; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .popular-categories__wrapper,
@@ -11917,7 +11917,7 @@ body.overlay {
     grid-template-columns: repeat(3, 1fr); }
   .deals-products__wrapper {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'lg-card lg-card sm-card-one' 'lg-card lg-card sm-card-two' 'sm-card-three sm-card-four sm-card-five' 'sm-card-six sm-card-seven sm-card-eight' 'sm-card-nine sm-card-ten sm-card-eleven'; } }
+    grid-template-areas: 'lg-card lg-card sm-card-one' 'lg-card lg-card sm-card-two' 'sm-card-three sm-card-four sm-card-five' 'sm-card-six sm-card-seven sm-card-eight' 'sm-card-nine sm-card-ten sm-card-eleven'; } }
 
 @media (min-width: 768px) {
   .popular-categories--slider,

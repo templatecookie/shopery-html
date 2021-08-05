@@ -4666,9 +4666,12 @@
             });
 
             // Modal
-            $(document).ready(function () {
-                $("#newsletter").modal("show");
-            });
+            // $(document).ready(function () {
+            //     $("#newsletter").modal("show");
+            // });
+
+            var newsletterModal = new bootstrap.Modal(document.getElementById('newsletter'))
+            newsletterModal.show();
 
             $("#countdownTwo").syotimer({
                 year: 2022,
