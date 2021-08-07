@@ -30,9 +30,10 @@
 
 //  Page Loader
 const preloader = document.querySelector('.loader');
-function loader() {
-  preloader.style.display = 'none';
-}
+
+window.addEventListener('load', (event) => {
+    preloader.style.display = 'none';
+});
 
 //  Header navigation Sidebar
 let closeBar = document.querySelector('.header__cross');

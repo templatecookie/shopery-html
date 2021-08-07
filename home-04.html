@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
-    <body onload="loader()">
+    <body>
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -8314,44 +8314,6 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="src/plugins/js/jquery.syotimer.min.js"></script>
         <script src="dist/main.js"></script>
-        <script>
-            //  Page Loader
-            const preloader = document.querySelector(".loader");
-            function loader() {
-                preloader.style.display = "none";
-            }
-
-            // Modal
-            $(document).ready(function () {
-                $("#newsletter").modal("show");
-
-                // Popup window
-                $(".venobox").venobox();
-                $(".video-player").venobox({
-                    spinner: "cube-grid",
-                });
-            });
-
-            $("#countdownTwo").syotimer({
-                year: 2023,
-                month: 7,
-                day: 25,
-                hour: 20,
-                minute: 30,
-            });
-
-            var demo1 = new BVSelect({
-                selector: "#selectbox1",
-                searchbox: false,
-                offset: false,
-                placeholder: "Eng",
-            });
-            var demo2 = new BVSelect({
-                selector: "#selectbox2",
-                searchbox: false,
-                offset: false,
-                placeholder: "USD",
-            });
-        </script>
+        <script src="src/js/home4.js"></script>
     </body>
 </html>

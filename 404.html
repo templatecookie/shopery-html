@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
-    <body onload="loader()">
+    <body>
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -679,10 +679,7 @@
         <script src="dist/main.js"></script>
         <script>
             //  Page Loader
-            const preloader = document.querySelector(".loader");
-            function loader() {
-                preloader.style.display = "none";
-            }
+            
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,
