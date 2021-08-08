@@ -17880,6 +17880,15 @@ body.overlay {
             color: #1a1a1a;
             font-weight: 600; }
 
+.noUi-target {
+  margin: 50px 0px 10px; }
+
+.noUi-connect {
+  background: #00b207 !important; }
+
+.price-range-slider {
+  margin-bottom: 30px; }
+
 @media (max-width: 991px) {
   .related .swiper-wrapper {
     padding-bottom: 30px; } }

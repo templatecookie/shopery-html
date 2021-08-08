@@ -8,8 +8,8 @@
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
         <link rel="stylesheet" href="src/plugins/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="src/plugins/css/bvselect.css" />
-        <link rel="stylesheet" href="src/plugins/css/rangeable.min.css" />
         <link rel="stylesheet" href="dist/main.css" />
+        <link rel="stylesheet" href="src/plugins/css/nouislider.min.css"></link>
     </head>
 
     <body>
@@ -540,10 +540,17 @@
                                             </button>
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse shop-collapse collapse" aria-labelledby="shop-item-accordion--two" data-bs-parent="#shop">
-                                            <form action="#">
-                                                <input type="range" class="price-range" />
-                                                <div class="price-range__field font-body--md-400">Price: <span class="min font-body--md-500">50</span> - <span class="max font-body--md-500">1,500</span></div>
-                                            </form>
+                                            <div class="price-range-slider">
+                                                <div id="priceRangeSlider"></div>
+                                                <!-- <div class="d-flex justify-content-between flex-wrap">
+                                                    <div>
+                                                        Min: <span id="minPrice">0</span>
+                                                    </div>
+                                                    <div>
+                                                        Max: <span id="maxPrice">0</span>
+                                                    </div>
+                                                </div> -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2914,11 +2921,9 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="src/plugins/js/swiper-bundle.min.js"></script>
         <script src="src/plugins/js/bvselect.js"></script>
-        <script src="src/plugins/js/rangeable.min.js"></script>
         <script src="dist/main.js"></script>
+        <script src="src/plugins/js/nouislider.min.js"></script>
         <script>
-            //  Page Loader
-            
             // Shop Filter Sidebar
             const filterBtn = document.querySelector("button.filter");
 
@@ -2969,6 +2974,20 @@
                 searchbox: false,
                 offset: false,
                 placeholder: "Latest",
+            });
+
+            // <div id="slider"></div>
+            var range = document.getElementById('priceRangeSlider');
+
+            noUiSlider.create(range, {
+                start: [20, 80],
+                connect: true,
+                range: {
+                    'min': 0,
+                    'max': 100
+                },
+                tooltips: true,
+                // padding: [2], // Or just 10
             });
         </script>
     </body>
