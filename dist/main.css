@@ -13625,24 +13625,112 @@ body.overlay {
         -o-object-fit: contain;
            object-fit: contain; } }
 
-.swiper-button-prev-item,
-.swiper-button-next-item {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 999; }
-  .swiper-button-prev-item .swiper-button-icon,
-  .swiper-button-next-item .swiper-button-icon {
-    width: 14px;
-    height: 14px;
-    color: #999; }
-
-.swiper-button-prev-item {
-  top: 0; }
-
-.swiper-button-next-item {
-  bottom: 30px; }
+.gallery-view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px; }
+  .gallery-view .product-main-image {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .gallery-view .gallery-main-image {
+    margin-left: 12px; }
+  .gallery-view .gallery-items-slider {
+    height: 420px; }
+  .gallery-view .gallery-items {
+    position: relative;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 80px;
+        -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+    width: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .gallery-view .gallery-items .gallery-item {
+      height: 90px;
+      width: 80px;
+      margin-bottom: 10px; }
+      .gallery-view .gallery-items .gallery-item.active {
+        border: 1px solid #00b207; }
+      .gallery-view .gallery-items .gallery-item img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        width: 100%;
+        height: 100%; }
+    .gallery-view .gallery-items .gallery-prev-item,
+    .gallery-view .gallery-items .gallery-next-item {
+      cursor: pointer;
+      display: block !important;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      z-index: 999; }
+      .gallery-view .gallery-items .gallery-prev-item .gallery-icon,
+      .gallery-view .gallery-items .gallery-next-item .gallery-icon {
+        width: 40px;
+        height: 40px;
+        color: #999;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+    .gallery-view .gallery-items .gallery-prev-item {
+      top: 0px; }
+    .gallery-view .gallery-items .gallery-next-item {
+      bottom: 0px; }
+  @media only screen and (max-width: 991px) {
+    .gallery-view {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .gallery-view .gallery-items {
+        width: 100%;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1; }
+      .gallery-view .gallery-main-image {
+        width: 100%;
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 0;
+            -ms-flex-order: 0;
+                order: 0; }
+        .gallery-view .gallery-main-image .gallery-items {
+          width: 100%; }
+      .gallery-view .gallery-items-slider {
+        height: auto; }
+      .gallery-view .gallery-items {
+        height: 100%; }
+        .gallery-view .gallery-items .gallery-prev-item {
+          -webkit-transform: rotate(-90deg) translateX(50%);
+                  transform: rotate(-90deg) translateX(50%);
+          left: 0;
+          top: 50%; }
+        .gallery-view .gallery-items .gallery-next-item {
+          -webkit-transform: rotate(270deg) translateX(50%);
+                  transform: rotate(270deg) translateX(50%);
+          left: unset;
+          bottom: unset;
+          top: 50%;
+          right: 0; } }
 
 .footer {
   position: relative;

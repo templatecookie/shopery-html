@@ -429,6 +429,50 @@ var productsContentFour = new Swiper('.our-products__content-slider-four', {
   },
 });
 
+var productViewThumbs = new Swiper('.gallery-items-slider', {
+  centeredSlides: true,
+  // centeredSlidesBounds: true,
+  slidesPerView: 4,
+  loop: true,
+  autoHeight: false,
+  // watchOverflow: true,
+  // watchSlidesVisibility: true,
+  // watchSlidesProgress: true,
+  direction: 'vertical',
+  navigation: {
+    nextEl: '.gallery-next-item',
+    prevEl: '.gallery-prev-item',
+  },
+  breakpoints: {
+
+    0: {
+      slidesPerView: 2,
+      centeredSlides: false,
+      direction: 'horizontal',
+    },
+    570: {
+      slidesPerView: 4,
+      centeredSlides: false,
+      direction: 'horizontal',
+    },
+    992: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+  },
+});
+
+$('.gallery-item').on('click', function () { 
+    $('.gallery-item.active').removeClass('active');
+    $(this).addClass("active");
+    let element = $(this).find('img');
+    if(element){
+        let imgSource = element.attr('src');
+
+        $('.product-main-image').attr('src', imgSource);
+    }
+});
+
 var galleryThumbs = new Swiper('.gallery-thumbs', {
   centeredSlides: true,
   centeredSlidesBounds: true,
@@ -477,7 +521,7 @@ var productViewThumbs = new Swiper('.gallery-thumbs-slider', {
     0: {
       slidesPerView: 3,
     },
-    768: {
+    992: {
       slidesPerView: 4,
     },
   },
