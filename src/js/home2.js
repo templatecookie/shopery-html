@@ -1,8 +1,4 @@
 // modal
-var newsletterModal = new bootstrap.Modal(document.getElementById('newsletter'))
-newsletterModal.show();
-
-
 $(".venobox").venobox({
     spinner: "cube-grid",
 });

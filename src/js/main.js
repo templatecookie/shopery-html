@@ -35,6 +35,13 @@ window.addEventListener('load', (event) => {
     preloader.style.display = 'none';
 });
 
+newsletterModal =document.getElementById('newsletter');
+
+if(newsletterModal){
+    var newsletterModal = new bootstrap.Modal(newsletterModal)
+    newsletterModal.show();
+}
+
 //  Header navigation Sidebar
 let closeBar = document.querySelector('.header__cross');
 let mobileSidebar = document.querySelector('.header__sidebar');

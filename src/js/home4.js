@@ -1,6 +1,3 @@
-var newsletterModal = new bootstrap.Modal(document.getElementById('newsletter'))
-newsletterModal.show();
-
 // Popup window
 $(".venobox").venobox();
 $(".video-player").venobox({

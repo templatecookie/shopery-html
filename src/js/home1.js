@@ -1,4 +1,3 @@
-
 function increment() {
     document.getElementById("counter-btn-counter").stepUp();
 }
@@ -6,10 +5,6 @@ function increment() {
 function decrement() {
     document.getElementById("counter-btn-counter").stepDown();
 }
-
-// Modal
-var newsletterModal = new bootstrap.Modal(document.getElementById('newsletter'))
-newsletterModal.show();
 
 //  Venobox
 $(".venobox").venobox();

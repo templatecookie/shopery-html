@@ -1,7 +1,4 @@
 // Modal
-var newsletterModal = new bootstrap.Modal(document.getElementById('newsletter'))
-newsletterModal.show();
-
 $(".venobox").venobox();
 
 $("#countdownTwo").syotimer({

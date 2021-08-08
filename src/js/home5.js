@@ -1,7 +1,4 @@
 // Modal
-var newsletterModal = new bootstrap.Modal(document.getElementById('newsletter'))
-newsletterModal.show();
-
 $("#countdownTwo").syotimer({
     year: 2022,
     month: 7,
