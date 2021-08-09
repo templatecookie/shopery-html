@@ -8,8 +8,7 @@
 --------------------------------------------------
               -----------------
           ------------------------
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ \/\/\/\/\/\ 
-
+          
  === Swipper Slider ==
  01. Banners 
  02. Shipping
@@ -25,21 +24,21 @@
  13.Blogs-list
  14.Shops
 
- \/\/\/\/\/\/\/\*/
+
 'use strict';
 
 //  Page Loader
 const preloader = document.querySelector('.loader');
 
 window.addEventListener('load', (event) => {
-    preloader.style.display = 'none';
+  preloader.style.display = 'none';
 });
 
-newsletterModal =document.getElementById('newsletter');
+newsletterModal = document.getElementById('newsletter');
 
-if(newsletterModal){
-    var newsletterModal = new bootstrap.Modal(newsletterModal)
-    newsletterModal.show();
+if (newsletterModal) {
+  var newsletterModal = new bootstrap.Modal(newsletterModal);
+  newsletterModal.show();
 }
 
 //  Header navigation Sidebar
@@ -444,7 +443,6 @@ var productViewThumbs = new Swiper('.gallery-items-slider', {
     prevEl: '.gallery-prev-item',
   },
   breakpoints: {
-
     0: {
       slidesPerView: 2,
       centeredSlides: false,
@@ -462,15 +460,15 @@ var productViewThumbs = new Swiper('.gallery-items-slider', {
   },
 });
 
-$('.gallery-item').on('click', function () { 
-    $('.gallery-item.active').removeClass('active');
-    $(this).addClass("active");
-    let element = $(this).find('img');
-    if(element){
-        let imgSource = element.attr('src');
+$('.gallery-item').on('click', function () {
+  $('.gallery-item.active').removeClass('active');
+  $(this).addClass('active');
+  let element = $(this).find('img');
+  if (element) {
+    let imgSource = element.attr('src');
 
-        $('.product-main-image').attr('src', imgSource);
-    }
+    $('.product-main-image').attr('src', imgSource);
+  }
 });
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {

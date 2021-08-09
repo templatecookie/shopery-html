@@ -11605,7 +11605,7 @@ body.overlay {
 .deals-products__wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: 'lg-card lg-card sm-card-one sm-card-two sm-card-three' 'lg-card lg-card sm-card-four sm-card-five sm-card-six' 'sm-card-seven sm-card-eight sm-card-nine sm-card-ten sm-card-eleven'; }
+  grid-template-areas: 'lg-card lg-card sm-card-one sm-card-two sm-card-three' 'lg-card lg-card sm-card-four sm-card-five sm-card-six' 'sm-card-seven sm-card-eight sm-card-nine sm-card-ten sm-card-eleven'; }
 
 .deals-products__wrapper-item--one {
   grid-area: lg-card; }
@@ -11904,7 +11904,7 @@ body.overlay {
     grid-template-columns: repeat(4, 1fr); }
   .deals-products__wrapper {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 'lg-card lg-card sm-card-one sm-card-two ' 'lg-card lg-card sm-card-three sm-card-four' 'sm-card-five sm-card-six sm-card-seven sm-card-eight' 'sm-card-nine sm-card-ten sm-card-eleven sm-card-twelve'; } }
+    grid-template-areas: 'lg-card lg-card sm-card-one sm-card-two ' 'lg-card lg-card sm-card-three sm-card-four' 'sm-card-five sm-card-six sm-card-seven sm-card-eight' 'sm-card-nine sm-card-ten sm-card-eleven sm-card-twelve'; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .popular-categories__wrapper,
@@ -11912,7 +11912,7 @@ body.overlay {
     grid-template-columns: repeat(3, 1fr); }
   .deals-products__wrapper {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'lg-card lg-card sm-card-one' 'lg-card lg-card sm-card-two' 'sm-card-three sm-card-four sm-card-five' 'sm-card-six sm-card-seven sm-card-eight' 'sm-card-nine sm-card-ten sm-card-eleven'; } }
+    grid-template-areas: 'lg-card lg-card sm-card-one' 'lg-card lg-card sm-card-two' 'sm-card-three sm-card-four sm-card-five' 'sm-card-six sm-card-seven sm-card-eight' 'sm-card-nine sm-card-ten sm-card-eleven'; } }
 
 @media (min-width: 768px) {
   .popular-categories--slider,
@@ -12004,6 +12004,9 @@ body.overlay {
       line-height: 24px;
       color: #1a1a1a;
       border: 1px solid #e5e5e5; }
+      @media (max-width: 767px) {
+        .newsletter__input input {
+          width: 100%; } }
       .newsletter__input input:focus {
         border-color: #84d187; }
       .newsletter__input input:hover {
@@ -14767,7 +14770,9 @@ body.overlay {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  background: #2b572ecc; }
+  background: #2b572ecc;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
   .cards-ig__overlay span {
     display: -webkit-box;
     display: -webkit-flex;

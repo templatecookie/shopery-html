@@ -39,7 +39,9 @@
       line-height: 24px;
       color: color(gray-9);
       border: 1px solid color(gray-1);
-
+      @include max(767px) {
+        width: 100%;
+      }
       &:focus {
         border-color: color(soft-primary);
       }
