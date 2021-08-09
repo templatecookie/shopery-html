@@ -26,7 +26,7 @@
 
 
 'use strict';
-
+ */
 //  Page Loader
 const preloader = document.querySelector('.loader');
 

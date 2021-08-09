@@ -15763,8 +15763,8 @@ body.overlay {
 
 .faq .accordion-button, .faq .accordion-body {
   border: 1px solid #84d187;
-  -webkit-transition: all 0.9s linear;
-  transition: all 0.9s linear; }
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
 
 .faq .accordion-body {
   border-top: 0px; }
