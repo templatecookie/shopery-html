@@ -15701,6 +15701,9 @@ body.overlay {
     position: absolute;
     top: 21px;
     right: 21px; }
+  .shoping-card .counter-btn-wrapper {
+    margin: auto;
+    margin-bottom: 12px; }
   .shoping-card__img-wrapper {
     width: 120px;
     height: 120px;

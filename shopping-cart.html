@@ -48,19 +48,19 @@
                                 <select id="selectbox1" class="header__dropdown-menu">
                                     <option value="pt_1">Eng</option>
                                     <option value="en_2">Bng</option>
-                                    
+
                                     <option value="ch_4">cn</option>
                                     <option value="5">Urdu</option>
                                 </select>
                                 <select id="selectbox2" class="header__dropdown-menu">
                                     <option value="pt_1">USD</option>
                                     <option value="en_2">Tk</option>
-                                    
+
                                     <option value="ch_4">yan</option>
                                     <option value="5">rup</option>
                                 </select>
                             </div>
-                                                       <div class="header__in">
+                            <div class="header__in">
                                 <a href="sign-in.html">Sign in </a>
                                 <span>/</span>
                                 <a href="create-account.html">Sign up</a>
@@ -471,11 +471,11 @@
                                             <td class="cart-table-item order-date align-middle">$14.00</td>
                                             <!-- quantity -->
                                             <td class="cart-table-item order-total align-middle">
-                                                <a href="product-details.html" class="counter-btn-wrapper">
+                                                <div class="counter-btn-wrapper">
                                                     <button class="counter-btn-dec counter-btn" onclick="decrement()">-</button>
-                                                    <input type="number" class="counter-btn-counter" min="0" max="1000" placeholder="0" />
+                                                    <input type="number" id="counter-btn-counter" class="counter-btn-counter" min="0" max="1000" placeholder="0" />
                                                     <button class="counter-btn-inc counter-btn" onclick="increment()">+</button>
-                                                </a>
+                                                </div>
                                             </td>
                                             <!-- Subtotal  -->
                                             <td class="cart-table-item order-subtotal align-middle">
@@ -499,6 +499,68 @@
                                 </table>
                             </div>
                             <!-- Action Buttons  -->
+                            <form action="#">
+                                <div class="cart-table-action-btn d-flex">
+                                    <a href="shop-01.html" class="button button--md button--disable shop">Return to Shop</a>
+                                    <a href="#" class="button button--md button--disable update">Update to Cart</a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="shoping-cart__mobile">
+                            <div class="shoping-card">
+                                <div class="shoping-card__img-wrapper">
+                                    <img src="src/images/products/img-01.png " alt="product-item" />
+                                </div>
+                                <h5 class="shoping-card__product-caption font-body--lg-400">Green Apple</h5>
+
+                                <h6 class="shoping-card__product-price font-body--lg-400">
+                                    $45.00
+                                </h6>
+
+                                <div class="counter-btn-wrapper">
+                                    <button class="counter-btn-dec counter-btn" onclick="decrement()">-</button>
+                                    <input type="number" id="counter-btn-counter" class="counter-btn-counter" min="0" max="1000" placeholder="0">
+                                    <button class="counter-btn-inc counter-btn" onclick="increment()">+</button>
+                                </div>
+                                <h6 class="shoping-card__product-totalprice font-body--lg-600">
+                                    $225.00
+                                </h6>
+                                <button class="close-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z" stroke="#CCCCCC" stroke-miterlimit="10" />
+                                        <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="shoping-card">
+                                <div class="shoping-card__img-wrapper">
+                                    <img src="src/images/products/img-02.png " alt="product-item" />
+                                </div>
+                                <h5 class="shoping-card__product-caption font-body--lg-400">Fresh orange</h5>
+
+                                <h6 class="shoping-card__product-price font-body--lg-400">
+                                    $45.00
+                                </h6>
+
+                                <div class="counter-btn-wrapper">
+                                    <button class="counter-btn-dec counter-btn" onclick="decrement()">-</button>
+                                    <input type="number" id="counter-btn-counter" class="counter-btn-counter" min="0" max="1000" placeholder="0">
+                                    <button class="counter-btn-inc counter-btn" onclick="increment()">+</button>
+                                </div>
+                                <h6 class="shoping-card__product-totalprice font-body--lg-600">
+                                    $225.00
+                                </h6>
+                                <button class="close-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z" stroke="#CCCCCC" stroke-miterlimit="10" />
+                                        <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+
                             <form action="#">
                                 <div class="cart-table-action-btn d-flex">
                                     <a href="shop-01.html" class="button button--md button--disable shop">Return to Shop</a>
@@ -817,14 +879,13 @@
             </div>
         </div>
         <!-- Shopping Cart sidebar  end -->
-
+        <script src="src/plugins/js/jquery.min.js"></script>
         <script src="src/plugins/js/swiper-bundle.min.js"></script>
         <script src="src/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
         <script>
             //  Page Loader
-            
 
             function increment() {
                 document.getElementById("counter-btn-counter").stepUp();
