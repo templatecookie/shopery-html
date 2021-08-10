@@ -1417,3 +1417,54 @@
     margin-bottom: 25px;
   }
 }
+
+// shoping Card
+.shoping-card {
+  position: relative;
+  padding: 24px 0px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+
+  .close-btn {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+  }
+
+  &__img-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-bottom: 18px;
+  }
+
+  &__product-caption {
+    color: color(gray-9);
+    margin-bottom: 18px;
+    .tag {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      margin-left: 8px;
+      &--in {
+        color: #2c742f;
+        background: #20b52633;
+      }
+
+      &--out {
+        color: #ea4b48;
+        background: #ea4b4833;
+      }
+    }
+  }
+
+  &__product-price {
+    color: color(gray-9);
+    margin-bottom: 16px;
+    .prev-price {
+      color: color(gray-4);
+      font-weight: 400;
+    }
+  }
+}

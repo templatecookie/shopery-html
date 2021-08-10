@@ -31,6 +31,24 @@
 
 .shoping-cart {
   padding-top: 40px;
+
+  &__content {
+    .cart-table {
+      @include max(991px) {
+        display: none;
+      }
+    }
+  }
+
+  &__mobile {
+    @include min(992px) {
+      display: none;
+    }
+    .cart-table__share-content {
+      border: 1px solid #e5e5e5;
+      border-top: 0px;
+    }
+  }
 }
 
 .cart-table {
