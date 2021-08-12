@@ -1041,8 +1041,9 @@
   // Shipping Card one
 
   &--one {
+    padding: 40px;
     .cards-ship__item {
-      padding: 40px 0px;
+      padding: 0px;
       justify-content: center;
       @include max(1199px) {
         padding: 24px 0px;
