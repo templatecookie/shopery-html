@@ -224,6 +224,17 @@
         width: 100%;
         height: 560px;
         overflow: hidden;
+        z-index: 2;
+        &::after {
+            position: absolute;
+            content: '';
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 56.91%);
+        }
         img {
           width: inherit;
           height: inherit;
@@ -245,11 +256,11 @@
         .sale-off {
           border-left: 1px solid transparent;
           padding-left: 12px;
+          margin: 20px 0px 33px;
           h5 {
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.6);
             max-width: 135px;
-            margin: 12px 0px;
             span {
               color: rgba(255, 255, 255, 0.6);
             }
