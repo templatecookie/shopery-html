@@ -12096,8 +12096,7 @@ body.overlay {
           color: #fff;
           background-color: #00b207; }
   .newsletter--two {
-    padding-left: 60px;
-    padding-right: 60px; }
+    padding: 60px 60px; }
     .newsletter--two .newsletter__leftcontent {
       display: -webkit-box;
       display: -webkit-flex;

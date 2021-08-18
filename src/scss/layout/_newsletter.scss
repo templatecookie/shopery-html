@@ -90,9 +90,9 @@
   }
 
   &--two {
-    padding-left: 60px;
-    padding-right: 60px;
-
+    // padding-left: 60px;
+    // padding-right: 60px;
+    padding: 60px 60px;
     .newsletter {
       &__leftcontent {
         display: flex;
