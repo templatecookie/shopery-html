@@ -10954,6 +10954,17 @@ body.overlay {
         width: 10px;
         height: 10px;
         background-color: #fff; }
+    .banner--02 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      left: 48px;
+      -webkit-transform: unset;
+              transform: unset; }
+    .banner--02 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+    .banner--02 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev,
+    .banner--02 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
+    .banner--02 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+      left: 0 !important;
+      -webkit-transform: unset !important;
+              transform: unset !important; }
     .banner--02 .swiper-slide-active .banner__wrapper-text h2, .banner--02 .swiper-slide-active .banner__wrapper-text .h2,
     .banner--02 .swiper-slide-active .banner__wrapper-text h5 span,
     .banner--02 .swiper-slide-active .banner__wrapper-text .h5 span,

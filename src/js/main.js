@@ -121,7 +121,7 @@ var bannerTwo = new Swiper('.banner-slider--02', {
   loopFillGroupWithBlank: true,
   effect: 'fade',
   autoplay: {
-    delay: 2500,
+    delay: 50500,
     disableOnInteraction: false,
   },
   pagination: {
