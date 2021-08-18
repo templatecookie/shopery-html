@@ -10916,7 +10916,18 @@ body.overlay {
       position: relative;
       width: 100%;
       height: 560px;
-      overflow: hidden; }
+      overflow: hidden;
+      z-index: 2; }
+      .banner--02 .banner__wrapper-img::after {
+        position: absolute;
+        content: '';
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(56.91%, rgba(0, 0, 0, 0)));
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 56.91%); }
       .banner--02 .banner__wrapper-img img {
         width: inherit;
         height: inherit;
@@ -10935,12 +10946,12 @@ body.overlay {
         opacity: 0.3; }
       .banner--02 .banner__wrapper-text .sale-off {
         border-left: 1px solid transparent;
-        padding-left: 12px; }
+        padding-left: 12px;
+        margin: 20px 0px 33px; }
         .banner--02 .banner__wrapper-text .sale-off h5, .banner--02 .banner__wrapper-text .sale-off .h5 {
           text-transform: uppercase;
           color: rgba(255, 255, 255, 0.6);
-          max-width: 135px;
-          margin: 12px 0px; }
+          max-width: 135px; }
           .banner--02 .banner__wrapper-text .sale-off h5 span, .banner--02 .banner__wrapper-text .sale-off .h5 span {
             color: rgba(255, 255, 255, 0.6); }
       .banner--02 .banner__wrapper-text a.button {
@@ -11944,24 +11955,22 @@ body.overlay {
   position: relative;
   border: 1px solid #e5e5e5;
   overflow: hidden; }
-  .card-category li {
-    padding: 15px 20px; }
-    .card-category li:hover {
-      background-color: #00b207; }
-      .card-category li:hover a {
-        color: #fff; }
-        .card-category li:hover a span {
-          color: inherit; }
-    .card-category li a {
-      font-size: 14px;
-      line-height: 21px;
-      text-transform: capitalize;
-      font-weight: 400;
-      color: #1a1a1a;
-      width: 100%; }
-      .card-category li a span {
-        margin-right: 15px;
-        color: #999999; }
+  .card-category li a {
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #1a1a1a;
+    width: 100%; }
+    .card-category li a span {
+      margin-right: 15px;
+      color: #999999; }
+    .card-category li a:hover {
+      background-color: #00b207;
+      color: #fff; }
+      .card-category li a:hover span {
+        color: inherit; }
   .card-category--view-all {
     border-top: 1px solid #e5e5e5; }
 
@@ -14981,10 +14990,11 @@ body.overlay {
     .cards-mb:hover .cards-mb__img-wrapper::after {
       opacity: 1;
       visibility: visible;
-      pointer-events: all;
-      -webkit-transition: all 0.6s ease-in-out;
-      transition: all 0.6s ease-in-out; }
+      pointer-events: all; }
     .cards-mb:hover .cards-mb__img-wrapper--social {
+      top: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+              transform: translateX(-50%) translateY(-50%) scale(1);
       opacity: 1;
       visibility: visible;
       pointer-events: all; }
@@ -15004,19 +15014,21 @@ body.overlay {
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
-      -webkit-transition: all 0.3s linear;
-      transition: all 0.3s linear; }
+      -webkit-transition: all 0.6s cubic-bezier(1, 0, 0.46, 0.76);
+      transition: all 0.6s cubic-bezier(1, 0, 0.46, 0.76); }
     .cards-mb__img-wrapper img {
       width: 100%;
       height: inherit;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      -webkit-transition: all 0.6s linear;
+      transition: all 0.6s linear; }
     .cards-mb__img-wrapper--social {
       position: absolute;
-      top: 50%;
+      top: 100%;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
+      -webkit-transform: translateX(-50%) scale(0.1);
+              transform: translateX(-50%) scale(0.1);
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -15028,8 +15040,10 @@ body.overlay {
       z-index: 1;
       visibility: hidden;
       pointer-events: none;
-      -webkit-transition-delay: 0.1s;
-              transition-delay: 0.1s; }
+      -webkit-transition: 0.3s all cubic-bezier(0.35, 0.61, 0.24, 0.82);
+      transition: 0.3s all cubic-bezier(0.35, 0.61, 0.24, 0.82);
+      -webkit-transition-delay: 0.05s;
+              transition-delay: 0.05s; }
       .cards-mb__img-wrapper--social span {
         margin-right: 8px; }
         .cards-mb__img-wrapper--social span a {
@@ -16443,7 +16457,8 @@ body.overlay {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #002e0399; }
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 44, 2, 0.7)), to(rgba(0, 44, 2, 0.7)));
+      background: linear-gradient(0deg, rgba(0, 44, 2, 0.7), rgba(0, 44, 2, 0.7)); }
     .banner-promo__content img {
       width: inherit;
       height: inherit;
