@@ -361,8 +361,11 @@
           transition: all 0.3s linear;
         }
       }
-      &__info h2 {
+      &__info  {
         color: color(hard-primary);
+        .blog-title {
+            color: color(hard-primary);
+        }
       }
 
       &__play-icon {
@@ -440,12 +443,6 @@
         margin-right: 8px;
       }
     }
-
-    h2 {
-      margin: 8px 0px;
-      color: color(gray-9);
-    }
-
     a {
       font-size: 16px;
       line-height: 19.2px;
@@ -457,6 +454,14 @@
         margin-left: 12px;
       }
     }
+
+    .blog-title {
+      margin: 8px 0px;
+      color: color(gray-9);
+      font-weight: 500;
+      font-size: 18px;
+    }
+
   }
 
   &--two {

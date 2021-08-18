@@ -14818,8 +14818,10 @@ body.overlay {
       background-color: #fff;
       -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear; }
-    .cards-blog:hover .cards-blog__info h2, .cards-blog:hover .cards-blog__info .h2 {
+    .cards-blog:hover .cards-blog__info {
       color: #2c742f; }
+      .cards-blog:hover .cards-blog__info .blog-title {
+        color: #2c742f; }
     .cards-blog:hover .cards-blog__play-icon {
       color: #00b207;
       -webkit-transition: all 0.3s linear;
@@ -14916,9 +14918,6 @@ body.overlay {
       .cards-blog__info-tags-item span {
         color: #b2b2b2;
         margin-right: 8px; }
-    .cards-blog__info h2, .cards-blog__info .h2 {
-      margin: 8px 0px;
-      color: #1a1a1a; }
     .cards-blog__info a {
       font-size: 16px;
       line-height: 19.2px;
@@ -14927,6 +14926,11 @@ body.overlay {
       margin-top: 12px; }
       .cards-blog__info a span {
         margin-left: 12px; }
+    .cards-blog__info .blog-title {
+      margin: 8px 0px;
+      color: #1a1a1a;
+      font-weight: 500;
+      font-size: 18px; }
   .cards-blog--two {
     padding: 24px;
     border-radius: 8px;
