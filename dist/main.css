@@ -15074,9 +15074,9 @@ body.overlay {
     .cards-mb__designation h5, .cards-mb__designation .h5 {
       color: #1a1a1a;
       text-transform: capitalize; }
-      .cards-mb__designation h5 span, .cards-mb__designation .h5 span {
-        color: #808080;
-        text-transform: capitalize; }
+    .cards-mb__designation span {
+      color: #808080;
+      text-transform: capitalize; }
 
 .cards-ss {
   position: relative; }
