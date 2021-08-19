@@ -11200,7 +11200,9 @@ body.overlay {
     font-family: "Segoe Script", sans-serif;
     -webkit-transform: translateX(90px);
             transform: translateX(90px);
-    opacity: 0.3; }
+    opacity: 0.3;
+    text-transform: uppercase;
+    margin-bottom: 8px; }
   .banner--04__text-content h2, .banner--04__text-content .h2 {
     font-size: 56px;
     line-height: 67.2px;
@@ -11214,7 +11216,8 @@ body.overlay {
         margin-bottom: 0px; } }
   .banner--04__text-content p {
     font-weight: 400;
-    color: #1a1a1a; }
+    color: #1a1a1a;
+    font-size: 18px; }
   .banner--04__text-content a.button {
     margin-top: 32px;
     background-color: #84d187; }

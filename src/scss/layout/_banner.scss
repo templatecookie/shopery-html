@@ -545,6 +545,8 @@
         font-family: $font-2;
         transform: translateX(90px);
         opacity: 0.3;
+        text-transform: uppercase;
+        margin-bottom: 8px;
       }
       h2 {
         font-size: 56px;
@@ -561,6 +563,7 @@
       p {
         font-weight: 400;
         color: color(gray-9);
+        font-size: 18px;
       }
       a.button {
         margin-top: 32px;
