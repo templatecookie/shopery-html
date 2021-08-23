@@ -9553,6 +9553,9 @@ a {
 .mb-15 {
   margin-bottom: 15px; }
 
+.bv_mainselect {
+  padding: 5px 5px 0; }
+
 .bv_mainselect > .bv_background {
   min-width: 150px;
   padding: 10px 16px;
@@ -12489,7 +12492,7 @@ body.overlay {
   position: relative;
   height: inherit;
   overflow-y: auto;
-  padding: 15px; }
+  padding: 0 0 15px; }
   .blog__sidebar--item {
     padding-top: 20px;
     padding-bottom: 28px;
@@ -12508,7 +12511,7 @@ body.overlay {
   overflow: hidden;
   position: relative; }
   .blog__search-field input {
-    width: 95%;
+    width: 100%;
     height: inherit;
     border-radius: 6px;
     border: 1px solid #e5e5e5;
