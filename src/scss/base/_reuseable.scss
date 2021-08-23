@@ -1,0 +1,39 @@
+.modal-backdrop {
+  background: #000000;
+  opacity: 0.8;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.bv_mainselect {
+  padding: 5px 5px 0;
+}
+
+.bv_mainselect {
+  & > .bv_background {
+    min-width: 150px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border:  1px solid color(gray-1);
+    position: relative;
+    color: color(gray-7);
+    font-size: 14px;
+    font-family: $font;
+    .arrow {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-100%) rotate(45deg);
+      border-width: 0 2px 2px 0;
+    }
+  }
+  & .bv_background.bv_ul_inner {
+    padding: 4px 5px;
+  }
+}
