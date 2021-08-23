@@ -108,7 +108,7 @@
     .cards-sm--two__content-text {
       span,
       .rating {
-        display: none;
+        display: none !important;
         transition: all 0.3s linear;
       }
       .cards-sm--two__action {

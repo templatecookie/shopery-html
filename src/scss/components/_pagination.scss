@@ -1,6 +1,5 @@
 .pagination {
   &-item {
-    margin-right: 12px;
     &:nth-last-child(1) {
       margin-right: 0px;
     }
@@ -14,18 +13,19 @@
 
     &:hover {
       a {
-        svg {
-          color: #fff;
-        }
+        color: #fff;
       }
     }
 
-    &.disabled {
-      .pagination-link {
+    &.disabled .pagination-link,
+    .pagination-link.disabled,
+    .pagination-link:disabled {
         background-color: color(gray-0);
         border-color: transparent;
         color: color(gray-3);
-      }
+        &:hover {
+          color: color(gray-3);
+        }
     }
   }
   &-link {
@@ -43,5 +43,27 @@
       background-color: color(primary);
       box-shadow: none;
     }
+  }
+}
+
+.pagination-wrapper ul.pagination {
+  margin-top: 20px;
+  li .pagination-link {
+    border: none;
+    margin-left: 0;
+  }
+  li:first-child a,
+  li:last-child a{
+    border: 1px solid color(gray-1);
+    &:hover{
+      border-color: color(primary);
+      color: white;
+    }
+  }
+  li:first-child a {
+    margin-right: 12px;
+  }
+  li:last-child a{
+    margin-left: 12px;
   }
 }
