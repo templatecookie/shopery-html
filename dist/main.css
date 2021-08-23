@@ -12156,6 +12156,7 @@ body.overlay {
   .newsletter--four .newsletter__leftcontent h2, .newsletter--four .newsletter__leftcontent .h2 {
     color: #002603; }
   .newsletter--four .newsletter__leftcontent p {
+    max-width: 100%;
     color: #7a997c; }
   .newsletter--four .newsletter__input {
     border: 1px solid #dae5da; }
@@ -14855,8 +14856,8 @@ body.overlay {
   background-color: transparent; }
   .cards-blog:hover {
     border-color: transparent;
-    -webkit-box-shadow: 0px 20px 50px 0px #00000014;
-            box-shadow: 0px 20px 50px 0px #00000014; }
+    -webkit-box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.1); }
     .cards-blog:hover .cards-blog__img-wrapper img {
       -webkit-transform: scale(1.1);
               transform: scale(1.1);
@@ -15743,8 +15744,7 @@ body.overlay {
 
 .template-card {
   padding: 40px;
-  text-align: center;
-  border: none; }
+  text-align: center; }
   @media (max-width: 991px) {
     .template-card {
       margin-bottom: 24px; } }
@@ -16580,7 +16580,7 @@ body.overlay {
     transition: all 0.3s linear; }
 
 .call-to-action--four {
-  border-top: 1px solid #b4ccb4; }
+  border-top: 1px solid rgba(180, 204, 180, 0.7); }
 
 .best-deals {
   overflow: hidden; }
@@ -16987,6 +16987,9 @@ body.overlay {
 
 .banner-sales .banner-sale--two {
   margin-bottom: 24px; }
+
+.news .cards-blog {
+  margin-bottom: 40px; }
 
 @media (max-width: 1200px) {
   .testimonial {

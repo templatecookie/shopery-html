@@ -415,7 +415,7 @@
     }
   }
   &--four {
-    border-top: 1px solid color(green-2);
+    border-top: 1px solid rgba(color(green-2), 0.7);
   }
 }
 
@@ -876,6 +876,9 @@
 }
 
 // latest News
+.news .cards-blog {
+  margin-bottom: 40px;
+}
 
 // Testimonials
 .testimonial {
