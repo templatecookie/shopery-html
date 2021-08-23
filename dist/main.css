@@ -15743,7 +15743,8 @@ body.overlay {
 
 .template-card {
   padding: 40px;
-  text-align: center; }
+  text-align: center;
+  border: none; }
   @media (max-width: 991px) {
     .template-card {
       margin-bottom: 24px; } }
