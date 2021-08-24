@@ -6,12 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Product Details || Shopery</title>
         <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
-        <link rel="stylesheet" href="dist/plugins/css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="dist/plugins/css/bvselect.css" />
+        <link rel="stylesheet" href="src/plugins/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="src/plugins/css/bvselect.css" />
+        <link rel="stylesheet" href="src/plugins/css/venobox.css" />
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
-    <body onload="loader()">
+    <body>
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -115,22 +116,22 @@
                                 <select id="selectbox1" class="header__dropdown-menu">
                                     <option value="pt_1">Eng</option>
                                     <option value="en_2">Bng</option>
-                                    <option value="es_3" disabled>Hin (Disabled)</option>
+                                    
                                     <option value="ch_4">cn</option>
                                     <option value="5">Urdu</option>
                                 </select>
                                 <select id="selectbox2" class="header__dropdown-menu">
                                     <option value="pt_1">USD</option>
                                     <option value="en_2">Tk</option>
-                                    <option value="es_3" disabled>Rup (Disabled)</option>
+                                    
                                     <option value="ch_4">yan</option>
                                     <option value="5">rup</option>
                                 </select>
                             </div>
-                            <div class="header__in">
-                                <a href="#">Sign in </a>
+                                                       <div class="header__in">
+                                <a href="sign-in.html">Sign in </a>
                                 <span>/</span>
-                                <a href="#">Sign up</a>
+                                <a href="create-account.html">Sign up</a>
                             </div>
                         </div>
                     </div>
@@ -258,7 +259,7 @@
                                     <li class="header__navigation-drop-menu-link"><a href="checkout.html"> Checkout</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="sign-in.html"> Sign in</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="create-account.html"> Create Account</a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="faq.html"> Faqs</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="faq.html"> faq</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="404.html"> Error 404</a></li>
                                 </ul>
                             </li>
@@ -393,7 +394,7 @@
                                     <li class="header__mobile-dropdown-menu-link"><a href="order-history.html">order history</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="order-details.html">Order Details</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="account-setting.html">Account Settings</a></li>
-                                    <li class="header__mobile-dropdown-menu-link"><a href="faq.html">Faqs</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="faq.html">faq</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="404.html">404</a></li>
                                 </ul>
                             </li>
@@ -484,69 +485,58 @@
                 <div class="row" style="margin-top: 32px;">
                     <div class="col-lg-6">
                         <!-- Product View Slider -->
-                        <div class="gallery-container products__container">
-                            <div class="swiper-container gallery-main products__gallery-main">
+                        <div class="gallery-view">
+                            <div class="gallery-items">
+                              <div class="swiper-container gallery-items-slider">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--lg">
-                                            <img src="src/images/product-details/cabbage-lg-01.png" alt="Slide 01" />
-                                        </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/product-details/cabbage-sm-01.png" alt="Slide 01" />
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--lg">
-                                            <img src="src/images/product-details/cabbage-lg-01.png" alt="Slide 02" />
-                                        </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/product-details/cabbage-sm-02.png" alt="Slide 02" />
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--lg">
-                                            <img src="src/images/product-details/cabbage-lg-01.png" alt="Slide 03" />
-                                        </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/product-details/cabbage-sm-03.png" alt="Slide 03" />
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--lg">
-                                            <img src="src/images/product-details/cabbage-lg-01.png" alt="Slide 04" />
-                                        </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/product-details/cabbage-sm-04.png" alt="Slide 04" />
                                     </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/products/img-02.png" alt="Slide 04" />
+                                    </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/products/img-03.png" alt="Slide 04" />
+                                    </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/products/img-04.png" alt="Slide 04" />
+                                    </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/products/img-05.png" alt="Slide 04" />
+                                    </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/products/img-06.png" alt="Slide 04" />
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="gallery-prev-item">
+                                <div class="gallery-icon">
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 8.5L8 1.5L1 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="swiper-container gallery-thumbs products__gallery-thumbs">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--sm">
-                                            <img src="src/images/product-details/cabbage-sm-01.png" alt="Slide 01" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--sm">
-                                            <img src="src/images/product-details/cabbage-sm-02.png" alt="Slide 02" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--sm">
-                                            <img src="src/images/product-details/cabbage-sm-03.png" alt="Slide 03" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--sm">
-                                            <img src="src/images/product-details/cabbage-sm-04.png" alt="Slide 04" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-prev-item">
-                                    <div class="swiper-button-icon">
-                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15 8.5L8 1.5L1 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next-item">
-                                    <div class="swiper-button-icon">
-                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15 1.5L8 8.5L1 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
+                            <div class="gallery-next-item">
+                                <div class="gallery-icon">
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 1.5L8 8.5L1 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                             </div>
+                            </div>
+                            
+                            <div class="gallery-main-image products__gallery-img--lg">
+                              <img class="product-main-image" src="src/images/product-details/cabbage-lg-01.png" alt="Slide 01" />
+                          </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -627,20 +617,9 @@
                             <div class="products__content-brand">
                                 <div class="brand-name">
                                     <h2 class="font-body--md-400">Brand:</h2>
-                                    <div class="brand-name-logo">
-                                        <span class="icon">
-                                            <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M5.13333 7.00159C17.2644 -5.59603 31.2617 7.00159 31.2617 7.00159C31.2617 7.00159 17.2644 19.5992 5.13333 7.00159Z" fill="#36C63F" />
-                                                <path
-                                                    d="M22.8938 12.196C27.954 10.6073 31.4454 7.49925 31.5916 7.36769L32 7.00006L31.5916 6.63244C31.4454 6.50087 27.954 3.39274 22.8938 1.80404C19.902 0.864788 16.9897 0.661537 14.2377 1.20004C10.858 1.86129 7.72564 3.64642 4.92432 6.50543L-2.44735e-07 6.50543L-2.87974e-07 7.49463L4.92432 7.49463C7.7257 10.3536 10.8579 12.1388 14.2377 12.8C16.9897 13.3385 19.9021 13.1353 22.8938 12.196ZM14.4097 11.8258C11.5163 11.256 8.80595 9.80057 6.33845 7.49463L13.3259 7.49463L15.9805 10.1493L16.6798 9.44982L14.7247 7.49469L20.5294 7.49469L20.5294 6.5055L17.0575 6.5055L19.0127 4.5503L18.3133 3.85092L15.6587 6.5055L10.992 6.5055L12.4806 5.01687L11.7812 4.31749L9.59314 6.50556L6.33839 6.50556C8.80595 4.19961 11.5163 2.74417 14.4097 2.17429C16.9942 1.66529 19.7388 1.8551 22.5674 2.73842C26.4272 3.9438 29.4068 6.133 30.4887 7.00013C29.4067 7.86732 26.4272 10.0564 22.5674 11.2618C19.7389 12.1451 16.9942 12.3349 14.4097 11.8258Z"
-                                                    fill="#009F06"
-                                                />
-                                                <path opacity="0.3" d="M22.3945 7.49332L22.3945 6.50421L21.4615 6.50421L21.4615 7.49332L22.3945 7.49332Z" fill="white" />
-                                                <path opacity="0.2" d="M24.2617 7.49332L24.2617 6.50421L23.3287 6.50421L23.3287 7.49332L24.2617 7.49332Z" fill="#1A1A1A" />
-                                            </svg>
-                                        </span>
-                                        <h6>farmarys</h6>
-                                    </div>
+                                    <a href="#" class="brand-name-logo">
+                                      <img src="src/images/brand-icon/brand-img.png" alt="brand-img">
+                                    </a>
                                 </div>
                                 <div class="social-site">
                                     <h2 class="font-body--md-400">Share item:</h2>
@@ -726,7 +705,7 @@
                         </div>
                         <!-- Tags  -->
                         <div class="products__content">
-                            <h5 class="products__content-category font-body--md-500">Category: <span>Vegetables</span></h5>
+                            <h5 class="products__content-category font-body--md-500">Category: <a href="#">Vegetables</a></h5>
                             <div class="products__content-tags">
                                 <h5 class="font-body--md-500">Tag :</h5>
                                 <div class="products__content-tags-item">
@@ -826,7 +805,7 @@
                                 <div class="col-lg-5 order-lg-0 order-1">
                                     <div class="products-video">
                                         <img src="src/images/members/img-10.png" alt="img-src" />
-                                        <a href="#" class="play-icon">
+                                        <a href="https://youtu.be/JkaxUblCGz0" class="play-icon venobox" data-autoplay="true" data-vbtype="video">
                                             <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 0V18L14 9L0 0Z" fill="currentColor" />
                                             </svg>
@@ -953,7 +932,7 @@
                                 <div class="col-lg-5 order-lg-0 order-1">
                                     <div class="products-video">
                                         <img src="src/images/members/img-10.png" alt="img-src" />
-                                        <a href="#" class="play-icon">
+                                        <a href="https://youtu.be/JkaxUblCGz0" class="play-icon venobox" data-autoplay="true" data-vbtype="video">
                                             <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 0V18L14 9L0 0Z" fill="currentColor" />
                                             </svg>
@@ -1323,7 +1302,7 @@
                                 <div class="col-lg-5 order-lg-0 order-1">
                                     <div class="products-video">
                                         <img src="src/images/members/img-10.png" alt="img-src" />
-                                        <a href="#" class="play-icon">
+                                        <a href="https://youtu.be/JkaxUblCGz0" class="play-icon venobox" data-autoplay="true" data-vbtype="video">
                                             <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 0V18L14 9L0 0Z" fill="currentColor" />
                                             </svg>
@@ -1416,9 +1395,11 @@
                 <div class="swiper-container related-slider--one">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="product-details.html" class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
+                                   <a href="product-details.html">
                                     <img src="src/images/products/img-02.png" alt="products" />
+                                   </a>
                                     <span class="tag danger font-body--md-400">sale 50%</span>
                                         <div class="cards-md__favs-list">
                                             <span class="action-btn">
@@ -1447,7 +1428,7 @@
                                         </div>
                                 </div>
                                 <div class="cards-md__info d-flex justify-content-between align-items-center">
-                                    <div class="cards-md__info-left">
+                                    <a href="product-details.html" class="cards-md__info-left">
                                         <h6 class="font-body--md-400">Orange</h6>
                                         <div class="cards-md__info-price">
                                             <span class="font-body--lg-500">$14.99</span>
@@ -1495,7 +1476,7 @@
                                                 </svg>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </a>
                                     <div class="cards-md__info-right">
                                             <span  class="action-btn">
                                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1510,45 +1491,47 @@
                                             </span>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="product-details.html" class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
+                                   <a href="product-details.html">
                                     <img src="src/images/products/img-01.png" alt="products" />
+                                   </a>
                                     <!-- <span class="tag danger font-body--md-400">sale 50%</span> -->
-                                        <div class="cards-md__favs-list">
-                                            <span class="action-btn">
-                                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="action-btn">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                    <path
-                                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                </svg>
-                                            </span>
-                                        </div>
+                                    <div class="cards-md__favs-list">
+                                        <span class="action-btn">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="action-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                                <path
+                                                    d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="cards-md__info d-flex justify-content-between align-items-center">
-                                    <div class="cards-md__info-left">
+                                    <a href="product-details.html" class="cards-md__info-left">
                                         <h6 class="font-body--md-400">Green Apple </h6>
                                         <div class="cards-md__info-price">
                                             <span class="font-body--lg-500">$14.99</span>
-                                            <del class="font-body--lg-400">$20.99</del>
+                                            <del class="font-body--lg-400">$14.99</del>
                                         </div>
                                         <ul class="cards-md__info-rating d-flex">
                                             <li>
@@ -1592,7 +1575,7 @@
                                                 </svg>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </a>
                                     <div class="cards-md__info-right">
                                             <span  class="action-btn">
                                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1607,42 +1590,44 @@
                                             </span>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="product-details.html" class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
+                                   <a href="product-details.html">
                                     <img src="src/images/products/img-03.png" alt="products" />
+                                   </a>
                                     <!-- <span class="tag danger font-body--md-400">sale 50%</span> -->
-                                        <div class="cards-md__favs-list">
-                                            <span class="action-btn">
-                                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="action-btn">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                    <path
-                                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                </svg>
-                                            </span>
-                                        </div>
+                                    <div class="cards-md__favs-list">
+                                        <span class="action-btn">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="action-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                                <path
+                                                    d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="cards-md__info d-flex justify-content-between align-items-center">
-                                    <div class="cards-md__info-left">
-                                        <h6 class="font-body--md-400">Chinese cabbage</h6>
+                                    <a href="product-details.html" class="cards-md__info-left">
+                                        <h6 class="font-body--md-400">Chinese cabbage </h6>
                                         <div class="cards-md__info-price">
                                             <span class="font-body--lg-500">$14.99</span>
                                             <del class="font-body--lg-400">$14.99</del>
@@ -1689,7 +1674,7 @@
                                                 </svg>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </a>
                                     <div class="cards-md__info-right">
                                             <span  class="action-btn">
                                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1704,42 +1689,44 @@
                                             </span>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="product-details.html" class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
+                                   <a href="product-details.html">
                                     <img src="src/images/products/img-04.png" alt="products" />
+                                   </a>
                                     <!-- <span class="tag danger font-body--md-400">sale 50%</span> -->
-                                        <div class="cards-md__favs-list">
-                                            <span class="action-btn">
-                                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="action-btn">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                    <path
-                                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                </svg>
-                                            </span>
-                                        </div>
+                                    <div class="cards-md__favs-list">
+                                        <span class="action-btn">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="action-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                                <path
+                                                    d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="cards-md__info d-flex justify-content-between align-items-center">
-                                    <div class="cards-md__info-left">
-                                        <h6 class="font-body--md-400">Green Lettuce</h6>
+                                    <a href="product-details.html" class="cards-md__info-left">
+                                        <h6 class="font-body--md-400">Green Lettuce </h6>
                                         <div class="cards-md__info-price">
                                             <span class="font-body--lg-500">$14.99</span>
                                             <del class="font-body--lg-400">$14.99</del>
@@ -1786,7 +1773,7 @@
                                                 </svg>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </a>
                                     <div class="cards-md__info-right">
                                             <span  class="action-btn">
                                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1801,42 +1788,44 @@
                                             </span>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="product-details.html" class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
+                                   <a href="product-details.html">
                                     <img src="src/images/products/img-05.png" alt="products" />
+                                   </a>
                                     <!-- <span class="tag danger font-body--md-400">sale 50%</span> -->
-                                        <div class="cards-md__favs-list">
-                                            <span class="action-btn">
-                                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="action-btn">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                    <path
-                                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                </svg>
-                                            </span>
-                                        </div>
+                                    <div class="cards-md__favs-list">
+                                        <span class="action-btn">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="action-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                                <path
+                                                    d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="cards-md__info d-flex justify-content-between align-items-center">
-                                    <div class="cards-md__info-left">
-                                        <h6 class="font-body--md-400">Eggplant</h6>
+                                    <a href="product-details.html" class="cards-md__info-left">
+                                        <h6 class="font-body--md-400">Eggplant  </h6>
                                         <div class="cards-md__info-price">
                                             <span class="font-body--lg-500">$14.99</span>
                                             <del class="font-body--lg-400">$14.99</del>
@@ -1883,7 +1872,7 @@
                                                 </svg>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </a>
                                     <div class="cards-md__info-right">
                                             <span  class="action-btn">
                                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1898,41 +1887,43 @@
                                             </span>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="product-details.html" class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
+                                   <a href="product-details.html">
                                     <img src="src/images/products/img-06.png" alt="products" />
+                                   </a>
                                     <!-- <span class="tag danger font-body--md-400">sale 50%</span> -->
-                                        <div class="cards-md__favs-list">
-                                            <span class="action-btn">
-                                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
-                                                </svg>
-                                            </span>
-                                            <span class="action-btn">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                    <path
-                                                        d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
-                                                        stroke="currentColor"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                </svg>
-                                            </span>
-                                        </div>
+                                    <div class="cards-md__favs-list">
+                                        <span class="action-btn">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z" stroke="currentColor" stroke-width="1.5"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="action-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                                <path
+                                                    d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="cards-md__info d-flex justify-content-between align-items-center">
-                                    <div class="cards-md__info-left">
+                                    <a href="product-details.html" class="cards-md__info-left">
                                         <h6 class="font-body--md-400">Big Potatoes</h6>
                                         <div class="cards-md__info-price">
                                             <span class="font-body--lg-500">$14.99</span>
@@ -1980,7 +1971,7 @@
                                                 </svg>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </a>
                                     <div class="cards-md__info-right">
                                             <span  class="action-btn">
                                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1995,7 +1986,7 @@
                                             </span>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination featured-pagination"></div>
@@ -2120,7 +2111,7 @@
                                     <a href="#"> Contact </a>
                                 </li>
                                 <li class="footer__navigation-link">
-                                    <a href="#"> Faqs </a>
+                                    <a href="#"> faq </a>
                                 </li>
                                 <li class="footer__navigation-link">
                                     <a href="#"> Terms &amp; Condition </a>
@@ -2197,9 +2188,10 @@
             </div>
         </footer>
         <!--Footer Section end  -->
-
-        <script src="dist/plugins/js/swiper-bundle.min.js"></script>
-        <script src="dist/plugins/js/bvselect.js"></script>
+        <script src="src/plugins/js/jquery.min.js"></script>
+        <script src="src/plugins/js/swiper-bundle.min.js"></script>
+        <script src="src/plugins/js/venobox.min.js"></script>
+        <script src="src/plugins/js/bvselect.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/main.js"></script>
         <script>
@@ -2216,13 +2208,6 @@
                 placeholder: "USD",
             });
 
-            //  Page Loader
-            const preloader = document.querySelector(".loader");
-
-            function loader() {
-                preloader.style.display = "none";
-            }
-
             function increment() {
                 document.getElementById("counter-btn-counter").stepUp();
             }
@@ -2230,6 +2215,10 @@
             function decrement() {
                 document.getElementById("counter-btn-counter").stepDown();
             }
+
+            $(".venobox").venobox({
+                spinner: 'cube-grid'
+            });
 
             var swiper = new Swiper(".mySwiper", {
                 spaceBetween: 10,

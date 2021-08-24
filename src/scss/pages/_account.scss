@@ -31,6 +31,24 @@
 
 .shoping-cart {
   padding-top: 40px;
+
+  &__content {
+    .cart-table {
+      @include max(991px) {
+        display: none;
+      }
+    }
+  }
+
+  &__mobile {
+    @include min(992px) {
+      display: none;
+    }
+    .cart-table__share-content {
+      border: 1px solid #e5e5e5;
+      border-top: 0px;
+    }
+  }
 }
 
 .cart-table {
@@ -155,13 +173,16 @@
       align-items: center;
       padding: 16px 20px;
       border-top: 1px solid #e5e5e5;
-      button {
+      .button {
         background-color: color(gray-0);
         color: color(gray-7);
         font-weight: 600;
         @include max(480px) {
           font-size: 12px;
           padding: 14px;
+        }
+        &:hover {
+          background-color: color(gray-1);
         }
       }
     }

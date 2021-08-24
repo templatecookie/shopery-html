@@ -135,7 +135,6 @@
       .header__dropdown {
         display: flex;
         align-items: center;
-        // padding-right: 20px;
         border-right: 1px solid color(gray-1);
         .bv_mainselect {
           padding: 0px;
@@ -156,7 +155,6 @@
               padding: 3px;
               pointer-events: none;
               margin-left: 8px;
-              // margin-top: 5px;
             }
           }
           .bv_ul_inner {
@@ -195,18 +193,13 @@
   &__input-form {
     width: 498px;
     height: 45px;
-    border-radius: 6px;
-    border: 1px solid color(gray-1);
-    overflow: hidden;
     position: relative;
-    &:hover {
-      border-color: color(hard-primary);
-      transition: all 0.3s linear;
-    }
+
     input {
-      width: 75%;
+      width: inherit;
       height: inherit;
-      border: 0px;
+      border-radius: 6px;
+      border: 1px solid color(gray-1);
       font-size: 15px;
       line-height: 21px;
       color: color(gray-9);
@@ -215,6 +208,11 @@
         font-size: inherit;
         line-height: inherit;
         color: color(gray-4);
+      }
+      &:hover,
+      &:focus {
+        border-color: color(soft-primary);
+        transition: all 0.3s linear;
       }
     }
     .search-btn,
@@ -250,6 +248,7 @@
       line-height: 13.2px;
       font-weight: 400;
       color: color(gray-7);
+      white-space: nowrap;
     }
     span {
       font-size: 14px;
@@ -344,7 +343,7 @@
           top: 100%;
           opacity: 1;
           pointer-events: all;
-          user-select: all;
+          //   user-select: all;
           transition: all 0.3s ease-in-out;
         }
         a {
@@ -427,6 +426,38 @@
       font-size: 14px;
       line-height: 21px;
       font-weight: 500;
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &--one {
+    .header__top {
+      background-color: color(gray-8);
+
+      &-left {
+        p {
+          color: color(gray-3);
+        }
+      }
+      &-right {
+        .header__dropdown {
+          .bv_mainselect {
+            .bv_atual.bv_background {
+              min-width: 60px !important;
+              color: color(gray-3);
+              .arrow {
+                border-color: color(gray-3);
+              }
+            }
+          }
+        }
+
+        .header__in a {
+          color: color(gray-3);
+        }
+      }
     }
   }
 
@@ -490,6 +521,7 @@
               &::before {
                 content: '';
                 position: absolute;
+                left: 0;
                 width: 18px;
                 height: 1.5px;
                 background-color: #fff;
@@ -505,6 +537,7 @@
             }
             .toggle-icon {
               margin-left: 12px;
+              transition: all 0.3s linear;
             }
           }
         }
@@ -554,6 +587,14 @@
 
         &:hover {
           .header__category-content {
+            &-item {
+              a {
+                .toggle-icon {
+                  transform: rotate(-180deg);
+                  transition: all 0.3s linear;
+                }
+              }
+            }
             &-dropdown {
               top: 100%;
               opacity: 1;
@@ -563,13 +604,74 @@
             }
           }
         }
+        &.dark {
+          background-color: color(gray-8);
+          .header__category-content {
+            &-item {
+              padding-right: 30px;
+              @include max(767px) {
+                padding-right: 15px;
+              }
+              a {
+                padding: 0px;
+                font-size: 16px;
+                line-height: 24px;
+                .toggle-icon {
+                  margin-left: 70px;
+                  @include max(1200px) {
+                    margin-left: 25px;
+                  }
+                  @include max(767px) {
+                    margin-left: 8px;
+                  }
+                }
+              }
+              .bar-content {
+                padding: 23px 20px;
+                background-color: color(primary);
+                margin-right: 16px;
+                @include max(1200px) {
+                  padding: 20px;
+                }
+                @include max(767px) {
+                  padding: 14px;
+                  margin-right: 8px;
+                }
+                .bar {
+                  margin-right: 0px;
+                  width: 24px;
+                  height: 2px;
+
+                  &::after,
+                  &::before {
+                    width: 24px;
+                    height: 2px;
+                  }
+                  &::before {
+                    bottom: -9px;
+                  }
+                  &::after {
+                    top: -9px;
+                  }
+                }
+              }
+            }
+            &-dropdown {
+              width: 100%;
+              li {
+                a {
+                  padding: 9.5px 20px;
+                }
+              }
+            }
+          }
+        }
       }
       // ites will be delete
 
       &__category-content-menu-bar {
         button {
           color: #fff;
-          // padding: 22px 20px;
           width: 64px;
           height: 64px;
           background-color: color(primary);
@@ -611,9 +713,14 @@
         }
       }
       // ites will be delete
-
       &__navigation-menu {
         margin-left: 32px;
+
+        &-link {
+          @include min-max(992px, 1199px) {
+            margin-right: 12px !important;
+          }
+        }
       }
 
       &__activity-icons {
@@ -757,7 +864,7 @@
       &__center-content {
         .header {
           &__navigation-menu {
-            width: 45%;
+            width: 48%;
             @include max(1200px) {
               width: 65%;
             }
@@ -766,7 +873,6 @@
             }
           }
 
-          &__brand,
           &__cart {
             width: 33%;
             justify-content: center;
@@ -778,8 +884,12 @@
             }
           }
           &__brand {
+            width: 30%;
             @include max(1200px) {
               justify-content: center;
+            }
+            @include max(991px) {
+              width: auto;
             }
           }
           &__cart {

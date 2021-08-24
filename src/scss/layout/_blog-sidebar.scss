@@ -63,7 +63,7 @@
     position: relative;
     height: inherit;
     overflow-y: auto;
-    padding: 15px;
+    padding:0 0 15px;
     &--item {
       padding-top: 20px;
       padding-bottom: 28px;
@@ -86,14 +86,14 @@
   &__search-field {
     width: 100%;
     height: 50px;
-    border-radius: 6px;
+
     overflow: hidden;
-    border: 1px solid #e5e5e5;
     position: relative;
     input {
-      width: 95%;
+      width: 100%;
       height: inherit;
-      border: 0px;
+      border-radius: 6px;
+      border: 1px solid #e5e5e5;
       padding-left: 45px;
       font-size: 16px;
       line-height: 20.8px;
@@ -102,6 +102,11 @@
       &::placeholder {
         font-size: inherit;
         color: colo(gray-4);
+      }
+      &:hover,
+      &:focus {
+        border-color: color(primary);
+        transition: all 0.3s linear;
       }
     }
     .icon {
@@ -136,7 +141,6 @@
   &__popular-tags {
     display: flex;
     align-items: center;
-    // justify-content: space-around;
     flex-wrap: wrap;
     &-item {
       display: inline-block;
@@ -161,12 +165,13 @@
   // Gallery
   &-gallery {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     &__item {
-      margin-right: 8px;
+      margin-right: 6px;
       .cards-ig__img {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         @include max(1199px) {
           width: 60px;
           height: 60px;

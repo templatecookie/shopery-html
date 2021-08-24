@@ -10,6 +10,9 @@
 
   // brands information
   &__brand-info {
+    @include max(991px) {
+      margin-bottom: 38px;
+    }
     &-logo,
     h2 {
       margin-bottom: 16px;
@@ -26,7 +29,6 @@
     }
 
     &-contact {
-      color: color(gray-5);
       @include max(420px) {
         display: flex;
         flex-direction: column;
@@ -35,6 +37,7 @@
       a {
         margin: 0px 16px;
         max-width: 250px;
+
         @include max(420px) {
           margin: 0px;
           margin: 6px;
@@ -49,12 +52,6 @@
         &:nth-child(2) {
           margin-right: 0px;
         }
-        span {
-          &:hover {
-            border-bottom: 2px solid color(hard-primary);
-            transition: all 0.3s linear;
-          }
-        }
       }
 
       span {
@@ -62,6 +59,12 @@
         padding-bottom: 6px;
         border-bottom: 1px solid color(primary);
         font-weight: 500;
+        transition: all 0.3s linear;
+        &:hover {
+          color: color(primary);
+          border-color: color(hard-primary);
+          transition: all 0.3s linear;
+        }
       }
     }
   }
@@ -168,22 +171,34 @@
   &__instagram {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    @include max(1199px) {
+      width: 350px;
+    }
     @include max(1460px) {
       justify-content: flex-start;
     }
     &-item {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      margin-right: -6px;
       @include max(1460px) {
         margin-right: 12px;
       }
       .cards-ig {
         &__img {
-          width: 65px;
-          height: 65px;
+          width: 69px;
+          height: 69px;
         }
       }
+    }
+  }
+
+  // Footer one
+
+  &--one {
+    .footer__brand-info-contact {
+      color: color(gray-5);
     }
   }
 
@@ -196,6 +211,11 @@
         &-contact {
           span {
             color: color(gray-9);
+            &:hover {
+              color: color(primary);
+              border-color: color(hard-primary);
+              transition: all 0.3s linear;
+            }
           }
         }
       }
@@ -229,6 +249,34 @@
 
       &__bottom {
         border-top: 0px;
+      }
+    }
+  }
+
+  &--three,
+  &--five {
+    .footer {
+      &__mobile-app {
+        &--item {
+          background-color: color(gray-8);
+          border-radius: 4px;
+          transition: all 0.3s linear;
+
+          &:hover {
+            background-color: color(gray-7);
+          }
+          span {
+            color: #fff;
+          }
+        }
+        &--info {
+          h5 {
+            color: color(gray-3);
+          }
+          h2 {
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -435,15 +483,6 @@
       }
     }
   }
-
-  // &:hover {
-  //   .footer__overlay {
-  //     &-img {
-  //       color: color(soft-primary);
-  //       transition: all 0.6s ease-in;
-  //     }
-  //   }
-  // }
 }
 
 // Responsive
@@ -464,30 +503,6 @@
     .social-icon {
       margin-bottom: 30px;
     }
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  // footer one
-  // .footer {
-  //   &__brand-info {
-  //     &-contact {
-  //       display: flex;
-  //       flex-direction: column;
-  //       align-items: flex-start;
-
-  //       a {
-  //         margin-left: 0;
-  //         margin-bottom: 15px;
-  //       }
-  //     }
-  //   }
-  // }
-}
-
-@media (max-width: 991px) {
-  .footer__brand-info-contact {
-    margin-bottom: 30px;
   }
 }
 

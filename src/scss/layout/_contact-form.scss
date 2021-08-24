@@ -38,17 +38,17 @@
   }
 
   &__contact-info {
-    padding: 30px 20px;
     text-align: center;
+    padding: 0px 20px;
     @include max(991px) {
       margin-bottom: 24px;
     }
     &--item {
       padding-top: 30px;
       padding-bottom: 24px;
-      border-bottom: 1px solid #e5e5e5;
+      border-top: 1px solid #e5e5e5;
       &:nth-child(1) {
-        padding-top: 0px;
+        border-top: 0px;
       }
       &:nth-last-child(1) {
         border-bottom: 0px;
@@ -67,6 +67,7 @@
 
   &-card {
     padding: 45px 50px;
+    padding-bottom: 50px;
     height: 100%;
     @include max(767px) {
       padding: 30px;
@@ -99,10 +100,9 @@
   &--input {
     position: relative;
     width: 100%;
-    height: 49px;
-    border-radius: 6px;
-    border: 1px solid #e5e5e5;
+    height: 48px;
     margin-bottom: 16px;
+    overflow: hidden;
     label {
       position: absolute;
       top: -26px;
@@ -117,7 +117,8 @@
       width: 95%;
       height: inherit;
       padding-left: 16px;
-      border: 0px;
+      border-radius: 6px;
+      border: 1px solid #e5e5e5;
       font-size: 16px;
       line-height: 20.8px;
       color: color(gray-9);
@@ -127,12 +128,12 @@
         line-height: inherit;
         color: color(gray-4);
       }
-    }
-
-    &.active,
-    &:hover {
-      border: 1px solid color(primary);
-      transition: all 0.6s linear;
+      &.active,
+      &:hover,
+      &:focus {
+        border: 1px solid color(primary);
+        transition: all 0.6s linear;
+      }
     }
   }
 
@@ -141,6 +142,7 @@
 
     textarea {
       padding-top: 14px;
+      resize: none;
     }
   }
 
@@ -257,7 +259,8 @@
       }
 
       &:active,
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: color(primary);
         transform: all 0.3s linear;
       }

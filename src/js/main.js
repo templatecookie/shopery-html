@@ -8,8 +8,7 @@
 --------------------------------------------------
               -----------------
           ------------------------
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ \/\/\/\/\/\ 
-
+          
  === Swipper Slider ==
  01. Banners 
  02. Shipping
@@ -25,13 +24,19 @@
  13.Blogs-list
  14.Shops
 
- \/\/\/\/\/\/\/\*/
-'use strict';
-
+ */
 //  Page Loader
 const preloader = document.querySelector('.loader');
-function loader() {
+
+window.addEventListener('load', (event) => {
   preloader.style.display = 'none';
+});
+
+newsletterModal = document.getElementById('newsletter');
+
+if (newsletterModal) {
+  var newsletterModal = new bootstrap.Modal(newsletterModal);
+  newsletterModal.show();
 }
 
 //  Header navigation Sidebar
@@ -98,13 +103,12 @@ var bannerOne = new Swiper('.banner-slider--one', {
   loopFillGroupWithBlank: true,
   effect: 'fade',
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
 });
 
@@ -114,13 +118,12 @@ var bannerTwo = new Swiper('.banner-slider--02', {
   loopFillGroupWithBlank: true,
   effect: 'fade',
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
 });
 
@@ -129,14 +132,13 @@ var bannerThree = new Swiper('.banner-slider--03', {
   loop: true,
   loopFillGroupWithBlank: true,
   effect: 'fade',
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
 });
 
@@ -146,13 +148,12 @@ var bannerFour = new Swiper('.banner-slider--04', {
   loopFillGroupWithBlank: true,
   effect: 'fade',
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
   navigation: {
     nextEl: ' .swiper-button--next',
@@ -166,13 +167,12 @@ var bannerFive = new Swiper('.banner-slider--05', {
   loopFillGroupWithBlank: true,
   effect: 'fade',
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
   navigation: {
     nextEl: ' .swiper-button--next',
@@ -185,13 +185,12 @@ var bannerFive = new Swiper('.banner-slider--05', {
 //====== Categories ======\\
 var categories = new Swiper('.popular-categories--slider', {
   slidesPerView: 1,
-  // centeredSlides: true,
   spaceBetween: 0,
   loop: true,
   loopFillGroupWithBlank: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
 
@@ -216,7 +215,7 @@ var categoryTwo = new Swiper('.category--top-slider--two', {
   loopFillGroupWithBlank: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
 
@@ -259,7 +258,7 @@ var products = new Swiper('.popular-products--slider', {
   loopFillGroupWithBlank: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
 
@@ -282,7 +281,7 @@ var productsTwo = new Swiper('.newest-products-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -311,7 +310,7 @@ var productsContent = new Swiper('.our-products__content-slider', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -334,7 +333,7 @@ var productsContentOne = new Swiper('.our-products__content-slider-one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -357,7 +356,7 @@ var productsContentTwo = new Swiper('.our-products__content-slider-two', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -380,7 +379,7 @@ var productsContentThree = new Swiper('.our-products__content-slider-three', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -403,7 +402,7 @@ var productsContentFour = new Swiper('.our-products__content-slider-four', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -419,6 +418,49 @@ var productsContentFour = new Swiper('.our-products__content-slider-four', {
       slidesPerView: 2,
     },
   },
+});
+
+var productViewThumbs = new Swiper('.gallery-items-slider', {
+  centeredSlides: true,
+  // centeredSlidesBounds: true,
+  slidesPerView: 4,
+  loop: true,
+  autoHeight: false,
+  // watchOverflow: true,
+  // watchSlidesVisibility: true,
+  // watchSlidesProgress: true,
+  direction: 'vertical',
+  navigation: {
+    nextEl: '.gallery-next-item',
+    prevEl: '.gallery-prev-item',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      centeredSlides: false,
+      direction: 'horizontal',
+    },
+    570: {
+      slidesPerView: 4,
+      centeredSlides: false,
+      direction: 'horizontal',
+    },
+    992: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+  },
+});
+
+$('.gallery-item').on('click', function () {
+  $('.gallery-item.active').removeClass('active');
+  $(this).addClass('active');
+  let element = $(this).find('img');
+  if (element) {
+    let imgSource = element.attr('src');
+
+    $('.product-main-image').attr('src', imgSource);
+  }
 });
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -469,7 +511,7 @@ var productViewThumbs = new Swiper('.gallery-thumbs-slider', {
     0: {
       slidesPerView: 3,
     },
-    768: {
+    992: {
       slidesPerView: 4,
     },
   },
@@ -503,7 +545,7 @@ var deals = new Swiper('.deals-products--slider', {
   loopFillGroupWithBlank: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
 
@@ -524,7 +566,7 @@ var featured = new Swiper('.featured-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -552,7 +594,7 @@ var featuredTwo = new Swiper('.featured-slider--two', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -578,36 +620,36 @@ var featuredTwo = new Swiper('.featured-slider--two', {
   },
 });
 
-var featuredThree = new Swiper('.featured-slider--three', {
-  loop: true,
-  loopFillGroupWithBlank: true,
-  direction: 'vertical',
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 3,
-      spaceBetween: 15,
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 16,
-    },
-  },
-});
+// var featuredThree = new Swiper('.featured-slider--three', {
+//   loop: true,
+//   loopFillGroupWithBlank: true,
+//   direction: 'vertical',
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false,
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//     dynamicBullets: true,
+//   },
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 3,
+//       spaceBetween: 15,
+//     },
+//     1200: {
+//       slidesPerView: 3,
+//       spaceBetween: 16,
+//     },
+//   },
+// });
 
 var featuredFour = new Swiper('.featured-slider--four', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -637,7 +679,7 @@ var featuredFive = new Swiper('.featured-slider--five', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -668,7 +710,7 @@ var featured = new Swiper('.related-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -696,10 +738,10 @@ var featured = new Swiper('.our-feature--slider', {
   spaceBetween: 24,
   loop: true,
   loopFillGroupWithBlank: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   // centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
@@ -720,7 +762,7 @@ var news = new Swiper('.news-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -749,7 +791,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
   autoHeight: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -769,6 +811,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
     },
     768: {
       slidesPerView: 2,
+      spaceBetween: 12,
     },
     1200: {
       slidesPerView: 3,
@@ -783,7 +826,7 @@ var testimonialThree = new Swiper('.testimonial-slider--three', {
   loopFillGroupWithBlank: true,
   autoHeight: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -817,7 +860,7 @@ var insta = new Swiper('.instagram-slider--one', {
   loopFillGroupWithBlank: true,
   autoHeight: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -852,7 +895,7 @@ var brandsName = new Swiper('.brand-name-slide--one', {
   loopFillGroupWithBlank: true,
   autoHeight: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -885,7 +928,7 @@ var memebers = new Swiper('.members-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -919,7 +962,7 @@ var blogs = new Swiper('.blog-list--slider', {
   loopFillGroupWithBlank: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -935,7 +978,7 @@ var shops = new Swiper('.shop-slider--one', {
   loopFillGroupWithBlank: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {

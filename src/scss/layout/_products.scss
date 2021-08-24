@@ -118,7 +118,7 @@
   &-info {
     display: flex;
     align-items: center;
-
+    margin-bottom: 20px;
     .ratings {
       display: flex;
       align-items: center;
@@ -127,14 +127,15 @@
       }
     }
     .dot {
-      font-size: 14px;
-      line-height: 21px;
-      font-weight: 500;
-      color: color(gray-3);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      display: inline-block;
       margin: 0px 12px;
+      background-color: color(gray-3);
     }
     h5 {
-      color: color(gray-9);
+      color: color(gray-8);
       text-transform: uppercase;
       .counting {
         color: color(gray-6);
@@ -180,17 +181,6 @@
       align-items: center;
       h2 {
         margin-right: 8px;
-      }
-      &-logo {
-        padding: 14px 12px;
-        border-radius: 4px;
-        border: 0.8px solid #e5e5e5;
-        h6 {
-          font-size: 13px;
-          line-height: 13px;
-          font-family: $font-3;
-          font-weight: 700;
-        }
       }
     }
 
@@ -286,7 +276,8 @@
     text-transform: capitalize;
     color: color(gray-9);
     margin-bottom: 12px;
-    span {
+    a {
+      font-weight: 400;
       color: color(gray-5);
     }
   }
@@ -305,7 +296,9 @@
         color: color(gray-5);
         text-transform: capitalize;
         margin-right: 6px;
+        transition: all 0.3s ease-in-out;
         &:hover {
+          color: color(gray-9);
           text-decoration: underline;
         }
       }

@@ -1,6 +1,8 @@
 // Reset accordion styles
 .accordion-button {
+  position: relative;
   outline: none;
+
   &:active,
   &:focus {
     box-shadow: none;
@@ -21,7 +23,7 @@
     &-button,
     &-body {
       border: 1px solid #84d187;
-      transition: all 0.9s linear;
+      transition: all 0.3s linear;
     }
     &-body {
       border-top: 0px;
@@ -36,15 +38,14 @@
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
       padding: 16px;
-      // background-color: color(gray-0);
       background-color: #fff;
-      // border-bottom: 0px;
       font-size: 16px;
       line-height: 24px;
       font-weight: 500;
       text-transform: capitalize;
       color: color(gray-9);
       text-align: left;
+      position: relative;
 
       &.collapsed {
         border-radius: 6px;
@@ -52,12 +53,15 @@
         background-color: color(gray-0);
         .icon {
           color: #fff;
+          transition: all 0.3s linear;
+          transform: rotate(0deg);
         }
       }
       .icon {
         margin-left: auto;
-        // color: #fff;
         color: color(gray-0);
+        transition: all 0.3s linear;
+        transform: rotate(45deg);
       }
     }
 

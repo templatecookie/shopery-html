@@ -1,6 +1,9 @@
 .arrows {
   display: flex;
   align-items: center;
+  @include max(767px) {
+    margin-top: 12px;
+  }
   button {
     margin-right: 12px;
     &:nth-last-child(1) {

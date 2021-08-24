@@ -6,19 +6,8 @@
   overflow: hidden;
 
   li {
-    padding: 15px 20px;
-    // border-bottom: 1px solid;
-
-    &:hover {
-      background-color: color(primary);
-      a {
-        color: #fff;
-        span {
-          color: inherit;
-        }
-      }
-    }
     a {
+      padding: 15px 20px;
       font-size: 14px;
       line-height: 21px;
       text-transform: capitalize;
@@ -28,6 +17,13 @@
       span {
         margin-right: 15px;
         color: color(gray-4);
+      }
+      &:hover {
+        background-color: color(primary);
+        color: #fff;
+        span {
+          color: inherit;
+        }
       }
     }
   }

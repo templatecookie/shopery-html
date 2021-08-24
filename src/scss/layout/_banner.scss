@@ -2,6 +2,10 @@
 .banner {
   position: relative;
 
+  &__wrapper-text {
+    z-index: 1;
+  }
+
   // Pagination
   &--03,
   &--04 {
@@ -67,7 +71,9 @@
 
   &--01 {
     margin: 24px 0px;
-
+    @include max(767px) {
+      margin-bottom: 12px;
+    }
     .banner {
       &__wrapper {
         &-img {
@@ -76,6 +82,7 @@
           width: 100%;
           border-radius: 10px;
           overflow: hidden;
+
           img {
             width: inherit;
             height: inherit;
@@ -102,6 +109,19 @@
 
         &--img-01 {
           height: 600px;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              90.02deg,
+              rgba(0, 0, 0, 0.7) 0.03%,
+              rgba(0, 0, 0, 0) 91.31%
+            );
+          }
 
           .banner__wrapper-text {
             top: 165px;
@@ -204,6 +224,21 @@
         width: 100%;
         height: 560px;
         overflow: hidden;
+        z-index: 2;
+        &::after {
+          position: absolute;
+          content: '';
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-image: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0) 56.91%
+          );
+        }
         img {
           width: inherit;
           height: inherit;
@@ -225,11 +260,11 @@
         .sale-off {
           border-left: 1px solid transparent;
           padding-left: 12px;
+          margin: 20px 0px 33px;
           h5 {
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.6);
             max-width: 135px;
-            margin: 12px 0px;
             span {
               color: rgba(255, 255, 255, 0.6);
             }
@@ -251,6 +286,20 @@
         height: 10px;
         background-color: #fff;
       }
+    }
+
+    .swiper-container-horizontal
+      > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      left: 48px;
+      transform: unset;
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev,
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
+    .swiper-pagination-bullets-dynamic
+      .swiper-pagination-bullet-active-next-next {
+      left: 0 !important;
+      transform: unset !important;
     }
 
     // Swiper slide Animation
@@ -303,8 +352,7 @@
       border-bottom-right-radius: 0px;
       margin: auto;
       background-color: color(green-0);
-      // padding-left: 95px;
-      padding-left: 40px;
+      padding-left: 85px;
       margin-top: 24px;
       display: flex;
       align-items: center;
@@ -503,6 +551,8 @@
         font-family: $font-2;
         transform: translateX(90px);
         opacity: 0.3;
+        text-transform: uppercase;
+        margin-bottom: 8px;
       }
       h2 {
         font-size: 56px;
@@ -519,6 +569,7 @@
       p {
         font-weight: 400;
         color: color(gray-9);
+        font-size: 18px;
       }
       a.button {
         margin-top: 32px;
@@ -598,7 +649,6 @@
         color: color(green-1);
         pointer-events: none;
         user-select: none;
-        // z-index: -1;
         @include max(991px) {
           display: none;
         }
@@ -642,14 +692,6 @@
         }
       }
     }
-    &:hover {
-      // .banner--05 {
-      //   &__overlay-img {
-      //     color: color(soft-primary);
-      //     transition: all 0.6s ease-in-out;
-      //   }
-      // }
-    }
 
     .banner--03 {
       .container {
@@ -690,6 +732,22 @@
     height: 358px;
     border-radius: 10px;
     overflow: hidden;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90.02deg,
+        rgba(0, 0, 0, 0.7) 0.03%,
+        rgba(0, 0, 0, 0) 91.31%
+      );
+      @include max(991px) {
+        background: rgba(0, 38, 3, 0.8);
+      }
+    }
     img {
       width: inherit;
       height: inherit;
@@ -701,6 +759,7 @@
     top: 50%;
     left: 60%;
     transform: translateY(-50%);
+    z-index: 1;
     h5 {
       font-size: 16px;
       line-height: 16px;
@@ -806,9 +865,6 @@
 
   // Banner Sales Cards
   .banner-sale {
-    // &__img-wrapper {
-    //   height: 45vh;
-    // }
     &__text-content {
       top: 50%;
       left: 50%;

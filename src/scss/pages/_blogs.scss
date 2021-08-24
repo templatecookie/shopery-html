@@ -1,5 +1,4 @@
 // Filter
-
 .filter--search {
   &__content {
     margin-top: 32px;
@@ -21,26 +20,26 @@
         flex-shrink: 0;
       }
 
-      .bv_mainselect {
-        width: 165px;
-        .bv_atual.bv_background {
-          font-size: 14px;
-          line-height: 21px;
-          color: color(gray-7);
-          font-weight: 400;
-          text-transform: capitalize;
-          .arrow {
-            border: solid color(gray-7);
-            border-width: 0 1.5px 1.5px 0;
-            display: inline-block;
-            padding: 3px;
-            pointer-events: none;
-          }
-        }
-        .bv_ul_inner.bv_background {
-          z-index: 9;
-        }
-      }
+      // .bv_mainselect {
+      //   width: 165px;
+      //   .bv_atual.bv_background {
+      //     font-size: 14px;
+      //     line-height: 21px;
+      //     color: color(gray-7);
+      //     font-weight: 400;
+      //     text-transform: capitalize;
+      //     .arrow {
+      //       border: solid color(gray-7);
+      //       border-width: 0 1.5px 1.5px 0;
+      //       display: inline-block;
+      //       padding: 3px;
+      //       pointer-events: none;
+      //     }
+      //   }
+      //   .bv_ul_inner.bv_background {
+      //     z-index: 9;
+      //   }
+      // }
     }
 
     .result-found {
@@ -63,11 +62,10 @@
 .blog-list {
   &__wrapper {
     margin-top: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
   &__content--desktop {
-    // padding-bottom: 40px;
     @include max(991px) {
       display: none;
     }
