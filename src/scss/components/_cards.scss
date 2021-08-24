@@ -181,7 +181,7 @@
     img {
       width: inherit;
       height: inherit;
-      object-fit: contain;
+      object-fit: cover;
     }
     .tag {
       position: absolute;
@@ -218,6 +218,59 @@
     .action-btn {
       margin-bottom: 6px;
       cursor: pointer;
+    }
+  }
+
+  &--two {
+    .cards-md__img-wrapper {
+      // height: 246px;
+      padding: 0;
+      height: auto;
+      a {
+        width: 100%;
+        height: 246px;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &--three {
+    .cards-md__img-wrapper {
+      padding: 0;
+      height: auto;
+      margin-bottom: 16px;
+      a {
+        width: 100%;
+        height: 312px;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+    .cards-md__info {
+      padding: 20px;
+      padding-top: 0px;
+    }
+  }
+
+  &--four {
+    .cards-md__img-wrapper {
+      padding: 0;
+      height: auto;
+      margin-bottom: 16px;
+      a {
+        width: 100%;
+        height: 300px;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+    .cards-md__info {
+      padding: 20px;
+      padding-top: 0px;
     }
   }
 }

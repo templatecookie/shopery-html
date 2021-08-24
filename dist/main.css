@@ -14718,8 +14718,8 @@ body.overlay {
   .cards-md__img-wrapper img {
     width: inherit;
     height: inherit;
-    -o-object-fit: contain;
-       object-fit: contain; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   .cards-md__img-wrapper .tag {
     position: absolute;
     top: 16px;
@@ -14754,6 +14754,46 @@ body.overlay {
   .cards-md__favs-list .action-btn {
     margin-bottom: 6px;
     cursor: pointer; }
+
+.cards-md--two .cards-md__img-wrapper {
+  padding: 0;
+  height: auto; }
+  .cards-md--two .cards-md__img-wrapper a {
+    width: 100%;
+    height: 246px; }
+    .cards-md--two .cards-md__img-wrapper a img {
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.cards-md--three .cards-md__img-wrapper {
+  padding: 0;
+  height: auto;
+  margin-bottom: 16px; }
+  .cards-md--three .cards-md__img-wrapper a {
+    width: 100%;
+    height: 312px; }
+    .cards-md--three .cards-md__img-wrapper a img {
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.cards-md--three .cards-md__info {
+  padding: 20px;
+  padding-top: 0px; }
+
+.cards-md--four .cards-md__img-wrapper {
+  padding: 0;
+  height: auto;
+  margin-bottom: 16px; }
+  .cards-md--four .cards-md__img-wrapper a {
+    width: 100%;
+    height: 300px; }
+    .cards-md--four .cards-md__img-wrapper a img {
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.cards-md--four .cards-md__info {
+  padding: 20px;
+  padding-top: 0px; }
 
 .cards-lg:hover {
   z-index: 3; }
