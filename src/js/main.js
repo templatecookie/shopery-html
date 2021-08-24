@@ -109,7 +109,6 @@ var bannerOne = new Swiper('.banner-slider--one', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
 });
 
@@ -125,7 +124,6 @@ var bannerTwo = new Swiper('.banner-slider--02', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
 });
 
@@ -141,7 +139,6 @@ var bannerThree = new Swiper('.banner-slider--03', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
 });
 
@@ -157,7 +154,6 @@ var bannerFour = new Swiper('.banner-slider--04', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
   navigation: {
     nextEl: ' .swiper-button--next',
@@ -177,7 +173,6 @@ var bannerFive = new Swiper('.banner-slider--05', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
   navigation: {
     nextEl: ' .swiper-button--next',
@@ -190,7 +185,6 @@ var bannerFive = new Swiper('.banner-slider--05', {
 //====== Categories ======\\
 var categories = new Swiper('.popular-categories--slider', {
   slidesPerView: 1,
-  // centeredSlides: true,
   spaceBetween: 0,
   loop: true,
   loopFillGroupWithBlank: true,

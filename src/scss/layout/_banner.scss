@@ -226,14 +226,18 @@
         overflow: hidden;
         z-index: 2;
         &::after {
-            position: absolute;
-            content: '';
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 56.91%);
+          position: absolute;
+          content: '';
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-image: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0) 56.91%
+          );
         }
         img {
           width: inherit;
@@ -284,16 +288,18 @@
       }
     }
 
-    .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-        left: 48px;
-        transform: unset;
+    .swiper-container-horizontal
+      > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      left: 48px;
+      transform: unset;
     }
     .swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
     .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev,
     .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
-    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
-        left: 0 !important;
-        transform: unset !important;
+    .swiper-pagination-bullets-dynamic
+      .swiper-pagination-bullet-active-next-next {
+      left: 0 !important;
+      transform: unset !important;
     }
 
     // Swiper slide Animation
