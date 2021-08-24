@@ -18286,11 +18286,15 @@ body.overlay {
         transition: all 0.3s ease-in; }
 
 .products-tab__description--text {
+  width: 648px;
   font-size: 14px;
   line-height: 21px;
   color: #808080;
   font-weight: 400;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
+  @media (max-width: 1200px) {
+    .products-tab__description--text {
+      width: 100%; } }
 
 .products-tab__description--list {
   margin-bottom: 20px; }
