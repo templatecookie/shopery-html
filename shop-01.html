@@ -478,7 +478,7 @@
                                                 </span>
                                             </button>
                                         </h2>
-                                        <div id="collapseOne" class="accordion-collapse shop-collapse collapse show" aria-labelledby="shop-item-accordion--one" data-bs-parent="#shop">
+                                        <div id="collapseOne" class="accordion-collapse shop-collapse collapse show show" aria-labelledby="shop-item-accordion--one" data-bs-parent="#shop">
                                             <div class="accordion-body shop-body">
                                                 <div class="categories">
                                                     <div class="categories-item">
@@ -539,17 +539,9 @@
                                                 </span>
                                             </button>
                                         </h2>
-                                        <div id="collapseTwo" class="accordion-collapse shop-collapse collapse" aria-labelledby="shop-item-accordion--two" data-bs-parent="#shop">
+                                        <div id="collapseTwo" class="accordion-collapse shop-collapse collapse show" aria-labelledby="shop-item-accordion--two" data-bs-parent="#shop">
                                             <div class="price-range-slider">
-                                                <div id="priceRangeSlider"></div>
-                                                <!-- <div class="d-flex justify-content-between flex-wrap">
-                                                    <div>
-                                                        Min: <span id="minPrice">0</span>
-                                                    </div>
-                                                    <div>
-                                                        Max: <span id="maxPrice">0</span>
-                                                    </div>
-                                                </div> -->
+                                                <div id="priceRangeSlider" ></div>
                                             </div>
                                         </div>
                                     </div>
@@ -566,7 +558,7 @@
                                             </span>
                                         </button>
                                     </h2>
-                                    <div id="collapseThree" class="accordion-collapse shop-collapse collapse" aria-labelledby="shop-item-accordion--three" data-bs-parent="#shop">
+                                    <div id="collapseThree" class="accordion-collapse shop-collapse collapse show" aria-labelledby="shop-item-accordion--three" data-bs-parent="#shop">
                                         <div class="accordion-body shop-body">
                                             <div class="ratings">
                                                 <div class="ratings--list-item">
@@ -826,7 +818,7 @@
                                             </span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFour" class="accordion-collapse shop-collapse collapse" aria-labelledby="shop-item-accordion--four" data-bs-parent="#shop">
+                                    <div id="collapseFour" class="accordion-collapse shop-collapse collapse show" aria-labelledby="shop-item-accordion--four" data-bs-parent="#shop">
                                         <div class="accordion-body shop-body">
                                             <div class="popular-tags">
                                                 <a href="#" class="tag-btn">Healthy</a>
@@ -2987,10 +2979,9 @@
                 connect: true,
                 range: {
                     'min': 0,
-                    'max': 100
+                    'max': 1500
                 },
                 tooltips: true,
-                // padding: [2], // Or just 10
             });
         </script>
     </body>

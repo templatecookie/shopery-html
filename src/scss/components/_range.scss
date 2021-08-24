@@ -1,0 +1,31 @@
+#priceRangeSlider {
+  height: 6px;
+  border: 0px;
+}
+
+.noUi-target {
+  margin: 50px 0px 10px;
+}
+
+.noUi-connect {
+  background: color(primary-4) !important;
+}
+.noUi-connects {
+  background-color: #e6e6e6;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50%;
+  border: 2px solid #00b207;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  display: none !important;
+}
+
+.noUi-touch-area {
+  width: 16px !important;
+}
