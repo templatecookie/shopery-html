@@ -24,8 +24,6 @@
  13.Blogs-list
  14.Shops
 
-
-'use strict';
  */
 //  Page Loader
 const preloader = document.querySelector('.loader');
