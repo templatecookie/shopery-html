@@ -343,7 +343,7 @@
           top: 100%;
           opacity: 1;
           pointer-events: all;
-        //   user-select: all;
+          //   user-select: all;
           transition: all 0.3s ease-in-out;
         }
         a {
@@ -428,6 +428,35 @@
       font-weight: 500;
       svg {
         margin-right: 5px;
+      }
+    }
+  }
+
+  &--one {
+    .header__top {
+      background-color: color(gray-8);
+
+      &-left {
+        p {
+          color: color(gray-3);
+        }
+      }
+      &-right {
+        .header__dropdown {
+          .bv_mainselect {
+            .bv_atual.bv_background {
+              min-width: 60px !important;
+              color: color(gray-3);
+              .arrow {
+                border-color: color(gray-3);
+              }
+            }
+          }
+        }
+
+        .header__in a {
+          color: color(gray-3);
+        }
       }
     }
   }

@@ -10146,6 +10146,18 @@ a {
   .header__telephone-number span svg {
     margin-right: 5px; }
 
+.header--one .header__top {
+  background-color: #333333; }
+  .header--one .header__top-left p {
+    color: #b2b2b2; }
+  .header--one .header__top-right .header__dropdown .bv_mainselect .bv_atual.bv_background {
+    min-width: 60px !important;
+    color: #b2b2b2; }
+    .header--one .header__top-right .header__dropdown .bv_mainselect .bv_atual.bv_background .arrow {
+      border-color: #b2b2b2; }
+  .header--one .header__top-right .header__in a {
+    color: #b2b2b2; }
+
 .header--two .header__dropdown {
   border-right: 0px; }
 
