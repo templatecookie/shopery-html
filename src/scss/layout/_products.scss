@@ -118,7 +118,7 @@
   &-info {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     .ratings {
       display: flex;
       align-items: center;
@@ -135,7 +135,7 @@
       background-color: color(gray-3);
     }
     h5 {
-      color: color(gray-9);
+      color: color(gray-8);
       text-transform: uppercase;
       .counting {
         color: color(gray-6);
@@ -277,6 +277,7 @@
     color: color(gray-9);
     margin-bottom: 12px;
     a {
+      font-weight: 400;
       color: color(gray-5);
     }
   }
@@ -295,7 +296,9 @@
         color: color(gray-5);
         text-transform: capitalize;
         margin-right: 6px;
+        transition: all 0.3s ease-in-out;
         &:hover {
+          color: color(gray-9);
           text-decoration: underline;
         }
       }
