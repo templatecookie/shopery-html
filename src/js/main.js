@@ -590,40 +590,9 @@ var featured = new Swiper('.featured-slider--one', {
   },
 });
 
-var featuredTwo = new Swiper('.featured-slider--two', {
-  loop: true,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 15,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1201: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
-});
-
-// var featuredThree = new Swiper('.featured-slider--three', {
+// var featuredTwo = new Swiper('.featured-slider--two', {
 //   loop: true,
 //   loopFillGroupWithBlank: true,
-//   direction: 'vertical',
 //   autoplay: {
 //     delay: 4000,
 //     disableOnInteraction: false,
@@ -635,12 +604,18 @@ var featuredTwo = new Swiper('.featured-slider--two', {
 //   },
 //   breakpoints: {
 //     0: {
-//       slidesPerView: 3,
+//       slidesPerView: 1,
 //       spaceBetween: 15,
 //     },
-//     1200: {
+//     480: {
+//       slidesPerView: 2,
+//     },
+//     768: {
 //       slidesPerView: 3,
-//       spaceBetween: 16,
+//     },
+//     1201: {
+//       slidesPerView: 4,
+//       spaceBetween: 20,
 //     },
 //   },
 // });

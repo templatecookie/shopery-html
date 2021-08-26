@@ -31,12 +31,37 @@
 //Our Featured Products
 .featured {
   .row {
-    &:nth-last-child(1) {
-      margin-top: 40px;
+    &:nth-child(1) {
+      margin-bottom: 24px;
     }
   }
+
+  .cards-ss {
+    @include max(1399px) {
+      margin-bottom: 24px;
+    }
+  }
+
   .cards-sm--two {
     margin-bottom: 16px;
+  }
+
+  .cards-md--two {
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
+    @include max(767px) {
+      margin-bottom: 12px;
+    }
+    // .cards-md__img-wrapper {
+    //   a {
+    //     img {
+    //       @include max(767px) {
+    //         object-fit: contain;
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   &__content {
