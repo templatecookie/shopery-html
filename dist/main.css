@@ -15258,6 +15258,14 @@ body.overlay {
       height: 255px;
       overflow: hidden;
       z-index: 1; }
+      .cards-ss--md__img-wrapper::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(114.4deg, rgba(0, 0, 0, 0.25) 8.91%, rgba(0, 0, 0, 0) 80.44%); }
       .cards-ss--md__img-wrapper img {
         width: inherit;
         height: inherit;
@@ -15269,6 +15277,8 @@ body.overlay {
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       z-index: 2; }
+      .cards-ss--md__text-content h5, .cards-ss--md__text-content .h5 {
+        text-transform: uppercase; }
       .cards-ss--md__text-content h2, .cards-ss--md__text-content .h2 {
         width: 185px; }
       .cards-ss--md__text-content .button {
@@ -15313,7 +15323,8 @@ body.overlay {
       line-height: 14px;
       font-weight: 500;
       text-transform: capitalize;
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      text-transform: uppercase; }
   .cards-ss--lg .cards-ss__img-wrapper {
     width: 100%;
     height: 536px;
