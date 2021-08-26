@@ -15548,7 +15548,7 @@ body.overlay {
     -webkit-box-shadow: 0px -0.5px 0px 0px #cccccc inset;
             box-shadow: 0px -0.5px 0px 0px #cccccc inset; }
   .cards-ship--one {
-    padding: 40px; }
+    padding: 40px 0px; }
     .cards-ship--one .cards-ship__item {
       padding: 0px;
       -webkit-box-pack: center;
