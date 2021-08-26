@@ -715,8 +715,8 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ' .swiper-button--next',
-    prevEl: ' .swiper-button--prev',
+    nextEl: ' .btn--next',
+    prevEl: ' .btn--prev',
   },
   breakpoints: {
     0: {

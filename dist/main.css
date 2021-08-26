@@ -13411,7 +13411,6 @@ body.overlay {
               transform: all 0.3s linear; }
   .contact-form-input .bv_mainselect {
     padding: 0px;
-    border: 1px solid #e5e5e5;
     height: 50px; }
     .contact-form-input .bv_mainselect:hover, .contact-form-input .bv_mainselect.active {
       border-color: #00b207;
@@ -13420,7 +13419,7 @@ body.overlay {
     .contact-form-input .bv_mainselect .bv_atual {
       border: 0px;
       height: inherit;
-      border-bottom: 1px solid #e5e5e5;
+      border: 1px solid #e5e5e5;
       font-size: 16px;
       line-height: 30px;
       color: #666666;
@@ -13434,7 +13433,6 @@ body.overlay {
         border-width: 0 1.5px 1.5px 0;
         display: inline-block;
         padding: 3px;
-        margin-top: 8px;
         margin-right: 8px; }
     .contact-form-input .bv_mainselect .bv_ul_inner {
       border: 1px solid #e5e5e5;
