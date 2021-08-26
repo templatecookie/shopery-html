@@ -14710,16 +14710,17 @@ body.overlay {
     cursor: pointer; }
 
 .cards-md__img-wrapper {
-  position: relative;
-  padding: 5px;
-  width: 100%;
-  height: 230px;
-  overflow: hidden; }
-  .cards-md__img-wrapper img {
-    width: inherit;
-    height: inherit;
-    -o-object-fit: cover;
-       object-fit: cover; }
+  position: relative; }
+  .cards-md__img-wrapper a {
+    padding: 5px;
+    width: 100%;
+    height: 230px;
+    overflow: hidden; }
+    .cards-md__img-wrapper a img {
+      width: inherit;
+      height: inherit;
+      -o-object-fit: cover;
+         object-fit: cover; }
   .cards-md__img-wrapper .tag {
     position: absolute;
     top: 16px;
@@ -16446,6 +16447,57 @@ body.overlay {
 
 .featured .row:nth-child(1) {
   margin-bottom: 24px; }
+
+.featured__content-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px; }
+  @media (max-width: 1399px) {
+    .featured__content-card {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+  @media (max-width: 767px) {
+    .featured__content-card {
+      margin-top: 60px; } }
+  .featured__content-card-item {
+    width: 245px;
+    margin-right: 22px; }
+    @media (max-width: 1399px) {
+      .featured__content-card-item {
+        width: 32%;
+        margin-right: 22px;
+        margin-bottom: 22px; } }
+    @media (max-width: 1199px) {
+      .featured__content-card-item {
+        margin-right: 12px;
+        margin-bottom: 12px; } }
+    @media (max-width: 767px) {
+      .featured__content-card-item {
+        width: 48%; } }
+    @media (max-width: 480px) {
+      .featured__content-card-item {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px; } }
+    .featured__content-card-item:nth-last-child(1) {
+      margin-right: 0px; }
+    @media (max-width: 767px) {
+      .featured__content-card-item:nth-child(2), .featured__content-card-item:nth-child(4) {
+        margin-right: 0; } }
+    @media (min-width: 768px) and (max-width: 1399px) {
+      .featured__content-card-item:nth-child(3) {
+        margin-right: 0px; } }
 
 @media (max-width: 1399px) {
   .featured .cards-ss {

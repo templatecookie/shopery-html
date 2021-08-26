@@ -174,14 +174,17 @@
   }
   &__img-wrapper {
     position: relative;
-    padding: 5px;
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
-    img {
-      width: inherit;
-      height: inherit;
-      object-fit: cover;
+
+    a {
+      padding: 5px;
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
     }
     .tag {
       position: absolute;
