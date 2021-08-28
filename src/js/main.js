@@ -590,91 +590,6 @@ var featured = new Swiper('.featured-slider--one', {
   },
 });
 
-var featuredTwo = new Swiper('.featured-slider--two', {
-  loop: true,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 15,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1201: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
-});
-
-// var featuredThree = new Swiper('.featured-slider--three', {
-//   loop: true,
-//   loopFillGroupWithBlank: true,
-//   direction: 'vertical',
-//   autoplay: {
-//     delay: 4000,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//     dynamicBullets: true,
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 3,
-//       spaceBetween: 15,
-//     },
-//     1200: {
-//       slidesPerView: 3,
-//       spaceBetween: 16,
-//     },
-//   },
-// });
-
-var featuredFour = new Swiper('.featured-slider--four', {
-  loop: true,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 15,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1201: {
-      slidesPerView: 5,
-      spaceBetween: 22,
-    },
-  },
-});
-
 var featuredFive = new Swiper('.featured-slider--five', {
   loop: true,
   loopFillGroupWithBlank: true,
@@ -800,8 +715,8 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ' .swiper-button--next',
-    prevEl: ' .swiper-button--prev',
+    nextEl: ' .btn--next',
+    prevEl: ' .btn--prev',
   },
   breakpoints: {
     0: {
