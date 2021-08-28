@@ -98,7 +98,7 @@
       width: inherit;
       height: inherit;
       object-fit: cover;
-      @include min-max(768px, 1399px) {
+      @include max(1399px) {
         object-fit: contain;
       }
     }
@@ -174,14 +174,17 @@
   }
   &__img-wrapper {
     position: relative;
-    padding: 5px;
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
-    img {
-      width: inherit;
-      height: inherit;
-      object-fit: cover;
+
+    a {
+      padding: 5px;
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
     }
     .tag {
       position: absolute;
@@ -221,11 +224,23 @@
     }
   }
 
+  &--two,
+  &--three,
+  &--four {
+    .cards-md__img-wrapper {
+      a {
+        img {
+          @include max(767px) {
+            object-fit: contain !important;
+          }
+        }
+      }
+    }
+  }
+
   &--two {
     .cards-md__img-wrapper {
-      // height: 246px;
       padding: 0;
-      height: auto;
       a {
         width: 100%;
         height: 246px;
@@ -685,6 +700,7 @@
 
   &__img-wrapper {
     position: relative;
+
     img {
       width: inherit;
       height: inherit;
@@ -699,6 +715,19 @@
           width: 100%;
           height: 325px;
           overflow: hidden;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              180deg,
+              #f6f4f2 0%,
+              rgba(246, 244, 242, 0) 63.13%
+            );
+          }
         }
 
         &__content {
@@ -716,9 +745,24 @@
           height: 416px;
           border-radius: 8px;
           overflow: hidden;
-          @include min-max(992px, 1399px) {
-            height: 960px;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.3) 0%,
+              rgba(0, 0, 0, 0) 58.4%,
+              rgba(255, 255, 255, 0) 58.4%
+            );
           }
+
+          // @include min-max(992px, 1399px) {
+          //   height: 960px;
+          // }
         }
       }
       .overlay-img {
@@ -764,6 +808,19 @@
       height: 255px;
       overflow: hidden;
       z-index: 1;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          114.4deg,
+          rgba(0, 0, 0, 0.25) 8.91%,
+          rgba(0, 0, 0, 0) 80.44%
+        );
+      }
       img {
         width: inherit;
         height: inherit;
@@ -776,6 +833,9 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 2;
+      h5 {
+        text-transform: uppercase;
+      }
       h2 {
         width: 185px;
       }
@@ -849,6 +909,7 @@
             font-weight: 500;
             text-transform: capitalize;
             margin-bottom: 8px;
+            text-transform: uppercase;
           }
         }
       }
@@ -1149,7 +1210,7 @@
   // Shipping Card one
 
   &--one {
-    padding: 40px;
+    padding: 40px 0px;
     .cards-ship__item {
       padding: 0px;
       justify-content: center;

@@ -31,12 +31,92 @@
 //Our Featured Products
 .featured {
   .row {
-    &:nth-last-child(1) {
-      margin-top: 40px;
+    &:nth-child(1) {
+      margin-bottom: 24px;
     }
   }
+
+  &__content-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    @include max(1399px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @include max(767px) {
+      margin-top: 60px;
+    }
+
+    &-item {
+      width: 245px;
+      margin-right: 22px;
+      @include max(1399px) {
+        width: 32%;
+        margin-right: 22px;
+        margin-bottom: 22px;
+      }
+
+      @include max(1199px) {
+        margin-right: 12px;
+        margin-bottom: 12px;
+      }
+      @include max(767px) {
+        width: 48%;
+      }
+
+      @include max(480px) {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
+
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(4) {
+        @include max(767px) {
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        @include min-max(768px, 1399px) {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .cards-ss {
+    @include max(1399px) {
+      margin-bottom: 24px;
+    }
+  }
+
   .cards-sm--two {
     margin-bottom: 16px;
+  }
+
+  .cards-md--two {
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
+    @include max(767px) {
+      margin-bottom: 12px;
+    }
+    // .cards-md__img-wrapper {
+    //   a {
+    //     img {
+    //       @include max(767px) {
+    //         object-fit: contain;
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   &__content {
