@@ -335,7 +335,6 @@
     .swiper-container {
       @include max(991px) {
         width: 95%;
-
         margin: auto;
         margin-top: 24px;
         background-color: color(green-0);
@@ -366,14 +365,17 @@
 
       @include max(991px) {
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 115px;
       }
       @include max(767px) {
-        padding-left: 15px;
+        padding-left: 0px;
       }
     }
 
     &__text-content {
+      @include max(767px) {
+        text-align: center;
+      }
       .title {
         font-size: 14px;
         line-height: 14px;
@@ -405,7 +407,6 @@
         @include max(767px) {
           font-size: 32px;
           line-height: 42px;
-          margin-bottom: 0px;
         }
       }
 

@@ -9738,7 +9738,7 @@ a {
     font-size: 28px;
     line-height: 38px; }
   .section--xxl, .section--xl, .section--lg {
-    padding: 30px 0px; } }
+    padding: 48px 0px; } }
 
 .loader {
   position: fixed;
@@ -9926,6 +9926,10 @@ a {
           width: 150px !important;
           text-transform: capitalize;
           z-index: 999; }
+          @media (max-width: 767px) {
+            .header__top-right .header__dropdown .bv_mainselect .bv_ul_inner {
+              height: 150px !important;
+              overflow-y: auto; } }
           .header__top-right .header__dropdown .bv_mainselect .bv_ul_inner li:hover {
             background-color: #00b207;
             color: #fff; }
@@ -10307,7 +10311,7 @@ a {
         @media (max-width: 767px) {
           .header--two .header__category-content.dark .header__category-content-item .bar-content {
             padding: 14px;
-            margin-right: 8px; } }
+            margin-right: 12px; } }
         .header--two .header__category-content.dark .header__category-content-item .bar-content .bar {
           margin-right: 0px;
           width: 24px;
@@ -10378,6 +10382,11 @@ a {
   color: #fff; }
   .header--two .header__activity-icons button:nth-last-child(1) {
     margin-right: 0px; }
+
+@media (max-width: 767px) {
+  .header--two .header__activity-icons a svg,
+  .header--two .header__activity-icons button svg {
+    height: 22px; } }
 
 .header--four .header__top {
   padding: 13px 0px;
@@ -11073,10 +11082,13 @@ body.overlay {
     @media (max-width: 991px) {
       .banner--03__content {
         height: auto;
-        padding-bottom: 30px; } }
+        padding-bottom: 115px; } }
     @media (max-width: 767px) {
       .banner--03__content {
-        padding-left: 15px; } }
+        padding-left: 0px; } }
+  @media (max-width: 767px) {
+    .banner--03__text-content {
+      text-align: center; } }
   .banner--03__text-content .title {
     font-size: 14px;
     line-height: 14px;
@@ -11109,8 +11121,7 @@ body.overlay {
     @media (max-width: 767px) {
       .banner--03__text-content h2, .banner--03__text-content .h2 {
         font-size: 32px;
-        line-height: 42px;
-        margin-bottom: 0px; } }
+        line-height: 42px; } }
   .banner--03__text-content h6, .banner--03__text-content .h6 {
     font-weight: 400;
     color: #1a1a1a;
@@ -16527,13 +16538,11 @@ body.overlay {
 .featured__content h2, .featured__content .h2 {
   margin-bottom: 16px; }
 
-.members {
-  padding-bottom: 0px; }
-  .members-slider--one {
-    padding-bottom: 60px; }
-    @media (max-width: 767px) {
-      .members-slider--one {
-        padding-bottom: 30px; } }
+.members-slider--one {
+  padding-bottom: 60px; }
+  @media (max-width: 767px) {
+    .members-slider--one {
+      padding-bottom: 30px; } }
 
 .brand-name--two .brand-name-slide--one {
   padding: 60px 0px;

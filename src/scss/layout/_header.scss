@@ -163,6 +163,10 @@
             width: 150px !important;
             text-transform: capitalize;
             z-index: 999;
+            @include max(767px) {
+              height: 150px !important;
+              overflow-y: auto;
+            }
             li {
               &:hover {
                 background-color: color(primary);
@@ -637,7 +641,7 @@
                 }
                 @include max(767px) {
                   padding: 14px;
-                  margin-right: 8px;
+                  margin-right: 12px;
                 }
                 .bar {
                   margin-right: 0px;
@@ -731,6 +735,14 @@
           color: #fff;
           &:nth-last-child(1) {
             margin-right: 0px;
+          }
+        }
+        a,
+        button {
+          svg {
+            @include max(767px) {
+              height: 22px;
+            }
           }
         }
       }
