@@ -25,7 +25,7 @@
  14.Shops
 
  */
-//  Page Loader
+//
 const preloader = document.querySelector('.loader');
 
 window.addEventListener('load', (event) => {
