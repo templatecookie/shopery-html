@@ -9904,6 +9904,8 @@ a {
       border-right: 1px solid #e5e5e5; }
       .header__top-right .header__dropdown .bv_mainselect {
         padding: 0px;
+        border-radius: 0px;
+        border-color: #b2b2b2;
         text-transform: capitalize; }
         .header__top-right .header__dropdown .bv_mainselect .bv_atual.bv_background {
           color: #666666;
@@ -10555,7 +10557,7 @@ a {
       .header--one .header__top-right .header__dropdown {
         border: 0px; }
         .header--one .header__top-right .header__dropdown .bv_mainselect {
-          border-right: 1px solid #e5e5e5; }
+          border-right: 1px solid #b2b2b2; }
           .header--one .header__top-right .header__dropdown .bv_mainselect:nth-last-child(1) {
             border: 0px;
             margin-left: 20px; }
@@ -15521,6 +15523,14 @@ body.overlay {
       gap: 0; } }
   .cards-ship__item {
     height: 100%; }
+    @media (max-width: 767px) {
+      .cards-ship__item {
+        width: 100% !important;
+        padding: 24px !important;
+        -webkit-box-pack: start !important;
+        -webkit-justify-content: flex-start !important;
+            -ms-flex-pack: start !important;
+                justify-content: flex-start !important; } }
   .cards-ship__item-process-info h2, .cards-ship__item-process-info .h2 {
     color: #1a1a1a; }
   .cards-ship__item-process-info p {

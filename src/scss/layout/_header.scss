@@ -138,6 +138,8 @@
         border-right: 1px solid color(gray-1);
         .bv_mainselect {
           padding: 0px;
+          border-radius: 0px;
+          border-color: #b2b2b2;
           text-transform: capitalize;
           .bv_atual.bv_background {
             color: color(gray-6);
@@ -991,7 +993,7 @@
         .header__dropdown {
           border: 0px;
           .bv_mainselect {
-            border-right: 1px solid color(gray-1);
+            border-right: 1px solid #b2b2b2;
             &:nth-last-child(1) {
               border: 0px;
               margin-left: 20px;

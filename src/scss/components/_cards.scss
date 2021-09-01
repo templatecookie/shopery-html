@@ -1161,6 +1161,11 @@
 
   &__item {
     height: 100%;
+    @include max(767px) {
+      width: 100% !important;
+      padding: 24px !important;
+      justify-content: flex-start !important;
+    }
   }
 
   &__item-process-info {
