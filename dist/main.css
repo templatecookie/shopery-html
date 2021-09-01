@@ -13554,7 +13554,7 @@ body.overlay {
       padding: 15px 32px; }
       @media (max-width: 575px) {
         .newsletter-popup__text-content .contact-mail button {
-          padding: 14px; } }
+          padding: 15px 12px; } }
   .newsletter-popup__text-content .btn-close {
     position: absolute;
     top: 8px;
