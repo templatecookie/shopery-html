@@ -1440,9 +1440,9 @@
   // Sales Cards
   .cards-ss {
     &__content {
-      top: 50%;
+      top: 15%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
     }
 
     &--lg,

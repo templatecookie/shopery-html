@@ -15752,10 +15752,10 @@ body.overlay {
 
 @media (max-width: 767px) {
   .cards-ss__content {
-    top: 50%;
+    top: 15%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
   .cards-ss--lg .cards-ss__img-wrapper, .cards-ss--small-two .cards-ss__img-wrapper {
     height: 350px; }
   .cards-lg__group-action {
