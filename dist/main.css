@@ -13825,21 +13825,6 @@ body.overlay {
     color: #808080;
     max-width: 350px;
     margin-bottom: 22px; }
-  @media (max-width: 420px) {
-    .footer__brand-info-contact {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: start;
-      -webkit-align-items: flex-start;
-          -ms-flex-align: start;
-              align-items: flex-start; } }
   .footer__brand-info-contact a {
     margin: 0px 16px;
     max-width: 250px; }
@@ -13849,11 +13834,17 @@ body.overlay {
         margin: 6px; } }
     .footer__brand-info-contact a:nth-child(1) {
       margin-left: 0px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .footer__brand-info-contact a:nth-child(1) {
+          margin-bottom: 16px; } }
       @media (max-width: 420px) {
         .footer__brand-info-contact a:nth-child(1) {
           margin-top: 0px; } }
     .footer__brand-info-contact a:nth-child(2) {
       margin-right: 0px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .footer__brand-info-contact a:nth-child(2) {
+          margin: 0px; } }
   .footer__brand-info-contact span {
     color: #fff;
     padding-bottom: 6px;
