@@ -11,6 +11,13 @@
       }
     }
 
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4),
+    &:nth-last-child(5) {
+      display: none;
+    }
+
     &:hover {
       a {
         color: #fff;
@@ -20,12 +27,12 @@
     &.disabled .pagination-link,
     .pagination-link.disabled,
     .pagination-link:disabled {
-        background-color: color(gray-0);
-        border-color: transparent;
+      background-color: color(gray-0);
+      border-color: transparent;
+      color: color(gray-3);
+      &:hover {
         color: color(gray-3);
-        &:hover {
-          color: color(gray-3);
-        }
+      }
     }
   }
   &-link {
@@ -53,9 +60,9 @@
     margin-left: 0;
   }
   li:first-child a,
-  li:last-child a{
+  li:last-child a {
     border: 1px solid color(gray-1);
-    &:hover{
+    &:hover {
       border-color: color(primary);
       color: white;
     }
@@ -63,7 +70,7 @@
   li:first-child a {
     margin-right: 12px;
   }
-  li:last-child a{
+  li:last-child a {
     margin-left: 12px;
   }
 }

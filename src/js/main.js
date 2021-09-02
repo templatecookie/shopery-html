@@ -881,19 +881,3 @@ var blogs = new Swiper('.blog-list--slider', {
     dynamicBullets: true,
   },
 });
-// Shops
-var shops = new Swiper('.shop-slider--one', {
-  spaceBetween: 15,
-  loop: true,
-  loopFillGroupWithBlank: true,
-
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-});

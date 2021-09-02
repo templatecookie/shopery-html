@@ -86,7 +86,7 @@
     }
     @include max(767px) {
       height: 210px;
-      margin-bottom: 15px;
+      margin-top: 16px;
     }
 
     &-two-bg {
@@ -110,7 +110,6 @@
       }
       img {
         width: inherit;
-        height: inherit;
         object-fit: cover;
       }
     }
