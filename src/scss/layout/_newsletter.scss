@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // leftcontent
   &__leftcontent {
     h2 {
       color: color(gray-9);
@@ -18,7 +17,6 @@
     }
   }
 
-  // right content
   &__rightcontent {
     display: flex;
     align-items: center;

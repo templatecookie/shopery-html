@@ -424,6 +424,7 @@
     &-img {
       position: absolute;
       color: #333;
+      z-index: -1;
       &.one {
         top: 0;
         left: 0;

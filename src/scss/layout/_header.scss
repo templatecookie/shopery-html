@@ -921,6 +921,25 @@
     .header {
       &__top {
         background-color: color(green-0);
+
+        &-left {
+          p {
+            color: #2b572e;
+          }
+        }
+
+        &-right {
+          .header__dropdown {
+            .bv_mainselect {
+              .bv_atual.bv_background {
+                color: #2b572e;
+                .arrow {
+                  color: #2b572e;
+                }
+              }
+            }
+          }
+        }
       }
 
       &__center-content {
