@@ -14432,9 +14432,6 @@ body.overlay {
     font-size: 16px;
     line-height: 24px;
     color: #1a1a1a; }
-    @media (max-width: 767px) {
-      .form-input input {
-        width: 80%; } }
     .form-input input::-webkit-input-placeholder {
       font-size: inherit;
       line-height: inherit;

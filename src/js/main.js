@@ -252,7 +252,6 @@ var categoryTwo = new Swiper('.category--top-slider--two', {
 var products = new Swiper('.popular-products--slider', {
   slidesPerView: 'auto',
   autoHeight: true,
-  // centeredSlides: true,
   spaceBetween: 15,
   loop: true,
   loopFillGroupWithBlank: true,
@@ -422,13 +421,9 @@ var productsContentFour = new Swiper('.our-products__content-slider-four', {
 
 var productViewThumbs = new Swiper('.gallery-items-slider', {
   centeredSlides: true,
-  // centeredSlidesBounds: true,
   slidesPerView: 4,
   loop: true,
   autoHeight: false,
-  // watchOverflow: true,
-  // watchSlidesVisibility: true,
-  // watchSlidesProgress: true,
   direction: 'vertical',
   navigation: {
     nextEl: '.gallery-next-item',
