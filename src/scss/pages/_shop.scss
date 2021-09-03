@@ -145,7 +145,7 @@
     @include max(991px) {
       left: 0px;
       width: 60%;
-      transition: all 0.4s linear;
+      transition: all 0.3s linear;
     }
     @include max(767px) {
       width: 50%;

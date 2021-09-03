@@ -10321,8 +10321,8 @@ a {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
   .header--two .header__category-content.dark {
     background-color: #333333; }
     .header--two .header__category-content.dark .header__category-content-item {
@@ -12504,8 +12504,8 @@ body.overlay {
     width: 5%;
     height: 100%;
     z-index: 9999;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear; } }
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; } }
   @media (max-width: 991px) and (max-width: 767px) {
     .sidebar {
       width: 80%;
@@ -12959,8 +12959,8 @@ body.overlay {
     border: 1px solid #00b207;
     -webkit-box-shadow: 0px 0px 12px 0px #20b52652;
             box-shadow: 0px 0px 12px 0px #20b52652;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear; }
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
   .shop-sale-product-item .product-img {
     position: relative;
     width: 102px;
@@ -13029,8 +13029,8 @@ body.overlay {
   .shopping-cart.active {
     right: 0px;
     width: 455px;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear; }
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
     @media (max-width: 575px) {
       .shopping-cart.active {
         width: 100%; } }
@@ -14730,8 +14730,8 @@ body.overlay {
     height: 50px;
     overflow: hidden; }
     .cards-sm--two .slide--top .slide-item {
-      -webkit-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; }
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
   .cards-sm--two:hover .slide--top .slide-item:nth-child(1) {
     -webkit-transform: translateY(-46px);
             transform: translateY(-46px); }
@@ -16241,8 +16241,8 @@ body.overlay {
               transform: translateY(-50%);
       visibility: hidden;
       z-index: 9999;
-      -webkit-transition: all 0.4s linear;
-      transition: all 0.4s linear;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear;
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
       .dashboard__nav.active {
@@ -18154,8 +18154,8 @@ body.overlay {
     .filter__sidebar.active {
       left: 0px;
       width: 60%;
-      -webkit-transition: all 0.4s linear;
-      transition: all 0.4s linear; } }
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; } }
   @media (max-width: 767px) {
     .filter__sidebar.active {
       width: 50%; } }
