@@ -224,6 +224,21 @@
         width: 100%;
         height: 560px;
         overflow: hidden;
+        z-index: 2;
+        &::after {
+          position: absolute;
+          content: '';
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-image: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0) 56.91%
+          );
+        }
         img {
           width: inherit;
           height: inherit;
@@ -245,11 +260,11 @@
         .sale-off {
           border-left: 1px solid transparent;
           padding-left: 12px;
+          margin: 20px 0px 33px;
           h5 {
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.6);
             max-width: 135px;
-            margin: 12px 0px;
             span {
               color: rgba(255, 255, 255, 0.6);
             }
@@ -271,6 +286,20 @@
         height: 10px;
         background-color: #fff;
       }
+    }
+
+    .swiper-container-horizontal
+      > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      left: 48px;
+      transform: unset;
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev,
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
+    .swiper-pagination-bullets-dynamic
+      .swiper-pagination-bullet-active-next-next {
+      left: 0 !important;
+      transform: unset !important;
     }
 
     // Swiper slide Animation
@@ -306,7 +335,6 @@
     .swiper-container {
       @include max(991px) {
         width: 95%;
-
         margin: auto;
         margin-top: 24px;
         background-color: color(green-0);
@@ -337,14 +365,17 @@
 
       @include max(991px) {
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 115px;
       }
       @include max(767px) {
-        padding-left: 15px;
+        padding-left: 0px;
       }
     }
 
     &__text-content {
+      @include max(767px) {
+        text-align: center;
+      }
       .title {
         font-size: 14px;
         line-height: 14px;
@@ -376,7 +407,6 @@
         @include max(767px) {
           font-size: 32px;
           line-height: 42px;
-          margin-bottom: 0px;
         }
       }
 
@@ -463,7 +493,7 @@
         height: 100%;
       }
       @include max(767px) {
-        padding-bottom: 30px;
+        padding: 30px 0px 90px 0px;
       }
     }
 
@@ -522,6 +552,8 @@
         font-family: $font-2;
         transform: translateX(90px);
         opacity: 0.3;
+        text-transform: uppercase;
+        margin-bottom: 8px;
       }
       h2 {
         font-size: 56px;
@@ -532,19 +564,16 @@
         @include max(767px) {
           font-size: 32px;
           line-height: 42px;
-          margin-bottom: 0px;
         }
       }
       p {
         font-weight: 400;
         color: color(gray-9);
+        font-size: 18px;
       }
       a.button {
         margin-top: 32px;
         background-color: color(soft-primary);
-        @include max(767px) {
-          margin-top: 15px;
-        }
       }
     }
 

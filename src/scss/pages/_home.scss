@@ -1,5 +1,3 @@
-// Homepage 01 => Shipping Cards
-
 //=======  Homepage 01 ========== //
 
 // popular categories
@@ -32,20 +30,95 @@
 
 //Our Featured Products
 .featured {
+  .row {
+    &:nth-child(1) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__content-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    @include max(1399px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @include max(767px) {
+      margin-top: 60px;
+    }
+
+    &-item {
+      width: 245px;
+      margin-right: 22px;
+      @include max(1399px) {
+        width: 32%;
+        margin-right: 22px;
+        margin-bottom: 22px;
+      }
+
+      @include max(1199px) {
+        margin-right: 12px;
+        margin-bottom: 12px;
+      }
+      @include max(767px) {
+        width: 48%;
+      }
+
+      @include max(480px) {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
+
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(4) {
+        @include max(767px) {
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        @include min-max(768px, 1399px) {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .cards-ss {
+    @include max(1399px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .cards-sm--two {
+    margin-bottom: 16px;
+  }
+
+  .cards-md--two {
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
+    @include max(767px) {
+      margin-bottom: 12px;
+    }
+  }
+
   &__content {
     h2 {
       margin-bottom: 16px;
     }
   }
-
-  &-slider--three {
-    height: 350px;
-  }
 }
 
 // Our Profesional Members
 .members {
-  padding-bottom: 0px;
   &-slider--one {
     padding-bottom: 60px;
     @include max(767px) {
@@ -325,7 +398,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #002e0399;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 44, 2, 0.6),
+        rgba(0, 44, 2, 0.6)
+      );
     }
     img {
       width: inherit;
@@ -349,6 +426,7 @@
         color: #fff;
         font-weight: 400;
         margin-bottom: 12px;
+        text-transform: uppercase;
       }
       h5 {
         width: 495px;
@@ -414,7 +492,7 @@
     }
   }
   &--four {
-    border-top: 1px solid color(green-2);
+    border-top: 1px solid rgba(color(green-2), 0.7);
   }
 }
 
@@ -770,17 +848,6 @@
 
 // Counter
 .counter {
-  &:hover {
-    .counter {
-      &__overlay {
-        &-img {
-          color: color(primary);
-          transition: all 0.3s ease-in-out;
-        }
-      }
-    }
-  }
-
   &__content-items {
     position: relative;
     display: grid;
@@ -818,6 +885,9 @@
       &.one {
         top: 24px;
         left: 0px;
+        @include max(767px) {
+          display: none;
+        }
       }
       &.two,
       &.three {
@@ -875,6 +945,9 @@
 }
 
 // latest News
+.news .cards-blog {
+  margin-bottom: 40px;
+}
 
 // Testimonials
 .testimonial {
@@ -925,7 +998,7 @@
   &__content {
     &-item {
       position: relative;
-      padding: 25px 20px;
+      padding: 25px;
       border-radius: 8px;
       border: 1px solid #20b52633;
       height: 220px;
@@ -966,7 +1039,7 @@
 
   &__form {
     position: relative;
-    width: 608px;
+    width: 580px;
     height: 45px;
     border-radius: 500px;
     border: 1px solid #e5e5e5;
@@ -989,6 +1062,7 @@
       font-size: 14px;
       line-height: 24px;
       padding-left: 24px;
+      width: 80%;
       @include max(1200px) {
         width: 65%;
       }
@@ -1073,7 +1147,7 @@
     }
 
     &__content {
-      margin-bottom: 15px;
+      margin: 16px 0px;
     }
   }
 }

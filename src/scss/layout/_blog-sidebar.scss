@@ -63,7 +63,7 @@
     position: relative;
     height: inherit;
     overflow-y: auto;
-    padding: 15px;
+    padding:0 0 15px;
     &--item {
       padding-top: 20px;
       padding-bottom: 28px;
@@ -90,7 +90,7 @@
     overflow: hidden;
     position: relative;
     input {
-      width: 95%;
+      width: 100%;
       height: inherit;
       border-radius: 6px;
       border: 1px solid #e5e5e5;

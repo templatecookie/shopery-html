@@ -7,9 +7,6 @@
       position: relative;
       // Slider Arrows
       .arrows {
-        @include max(1200px) {
-          // display: none;
-        }
         .swiper-button {
           &--prev,
           &--next {

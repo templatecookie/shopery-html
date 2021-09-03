@@ -29,11 +29,6 @@
     }
 
     &-contact {
-      @include max(420px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
       a {
         margin: 0px 16px;
         max-width: 250px;
@@ -44,6 +39,11 @@
         }
         &:nth-child(1) {
           margin-left: 0px;
+
+          @include min-max(992px, 1199px) {
+            margin-bottom: 16px;
+          }
+
           @include max(420px) {
             margin-top: 0px;
           }
@@ -51,6 +51,9 @@
 
         &:nth-child(2) {
           margin-right: 0px;
+          @include min-max(992px, 1199px) {
+            margin: 0px;
+          }
         }
       }
 
@@ -421,6 +424,7 @@
     &-img {
       position: absolute;
       color: #333;
+      z-index: -1;
       &.one {
         top: 0;
         left: 0;

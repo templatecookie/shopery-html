@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
-    <body onload="loader()">
+    <body>
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -116,14 +116,14 @@
                                 <select id="selectbox1" class="header__dropdown-menu">
                                     <option value="pt_1">Eng</option>
                                     <option value="en_2">Bng</option>
-                                    <option value="es_3" disabled>Hin (Disabled)</option>
+                                    
                                     <option value="ch_4">cn</option>
                                     <option value="5">Urdu</option>
                                 </select>
                                 <select id="selectbox2" class="header__dropdown-menu">
                                     <option value="pt_1">USD</option>
                                     <option value="en_2">Tk</option>
-                                    <option value="es_3" disabled>Rup (Disabled)</option>
+                                    
                                     <option value="ch_4">yan</option>
                                     <option value="5">rup</option>
                                 </select>
@@ -259,7 +259,7 @@
                                     <li class="header__navigation-drop-menu-link"><a href="checkout.html"> Checkout</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="sign-in.html"> Sign in</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="create-account.html"> Create Account</a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="faq.html"> Faqs</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="faq.html"> faq</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="404.html"> Error 404</a></li>
                                 </ul>
                             </li>
@@ -394,7 +394,7 @@
                                     <li class="header__mobile-dropdown-menu-link"><a href="order-history.html">order history</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="order-details.html">Order Details</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="account-setting.html">Account Settings</a></li>
-                                    <li class="header__mobile-dropdown-menu-link"><a href="faq.html">Faqs</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="faq.html">faq</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="404.html">404</a></li>
                                 </ul>
                             </li>
@@ -485,69 +485,43 @@
                 <div class="row" style="margin-top: 32px;">
                     <div class="col-lg-6">
                         <!-- Product View Slider -->
-                        <div class="gallery-container products__container">
-                            <div class="swiper-container gallery-main products__gallery-main">
+                        <div class="gallery-view">
+                            <div class="gallery-items">
+                              <div class="swiper-container gallery-items-slider">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--lg">
-                                            <img src="src/images/product-details/cabbage-lg-01.png" alt="Slide 01" />
-                                        </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/product-details/img-01.png" alt="Slide 01" />
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--lg">
-                                            <img src="src/images/product-details/cabbage-lg-01.png" alt="Slide 02" />
-                                        </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/product-details/img-02.png" alt="Slide 02" />
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--lg">
-                                            <img src="src/images/product-details/cabbage-lg-01.png" alt="Slide 03" />
-                                        </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/product-details/img-03.png" alt="Slide 03" />
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--lg">
-                                            <img src="src/images/product-details/cabbage-lg-01.png" alt="Slide 04" />
-                                        </div>
+                                    <div class="gallery-item swiper-slide">
+                                        <img src="src/images/product-details/img-04.png" alt="Slide 04" />
                                     </div>
+                                </div>
+                              </div>
+                              <div class="gallery-prev-item">
+                                <div class="gallery-icon">
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 8.5L8 1.5L1 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="swiper-container gallery-thumbs products__gallery-thumbs">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--sm">
-                                            <img src="src/images/product-details/cabbage-sm-01.png" alt="Slide 01" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--sm">
-                                            <img src="src/images/product-details/cabbage-sm-02.png" alt="Slide 02" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--sm">
-                                            <img src="src/images/product-details/cabbage-sm-03.png" alt="Slide 03" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products__gallery-img--sm">
-                                            <img src="src/images/product-details/cabbage-sm-04.png" alt="Slide 04" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-prev-item">
-                                    <div class="swiper-button-icon">
-                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15 8.5L8 1.5L1 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next-item">
-                                    <div class="swiper-button-icon">
-                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15 1.5L8 8.5L1 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
+                            <div class="gallery-next-item">
+                                <div class="gallery-icon">
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 1.5L8 8.5L1 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                             </div>
+                            </div>
+                            
+                            <div class="gallery-main-image products__gallery-img--lg">
+                              <img class="product-main-image" src="src/images/product-details/img-01.png" alt="Slide 01" />
+                          </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -1406,7 +1380,7 @@
                 <div class="swiper-container related-slider--one">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
                                    <a href="product-details.html">
                                     <img src="src/images/products/img-02.png" alt="products" />
@@ -1505,7 +1479,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
                                    <a href="product-details.html">
                                     <img src="src/images/products/img-01.png" alt="products" />
@@ -1604,7 +1578,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
                                    <a href="product-details.html">
                                     <img src="src/images/products/img-03.png" alt="products" />
@@ -1703,7 +1677,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
                                    <a href="product-details.html">
                                     <img src="src/images/products/img-04.png" alt="products" />
@@ -1802,7 +1776,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
                                    <a href="product-details.html">
                                     <img src="src/images/products/img-05.png" alt="products" />
@@ -1901,7 +1875,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="cards-md w-100">
+                            <div class="cards-md cards-md--four w-100">
                                 <div class="cards-md__img-wrapper">
                                    <a href="product-details.html">
                                     <img src="src/images/products/img-06.png" alt="products" />
@@ -2122,7 +2096,7 @@
                                     <a href="#"> Contact </a>
                                 </li>
                                 <li class="footer__navigation-link">
-                                    <a href="#"> Faqs </a>
+                                    <a href="#"> faq </a>
                                 </li>
                                 <li class="footer__navigation-link">
                                     <a href="#"> Terms &amp; Condition </a>
@@ -2218,13 +2192,6 @@
                 offset: false,
                 placeholder: "USD",
             });
-
-            //  Page Loader
-            const preloader = document.querySelector(".loader");
-
-            function loader() {
-                preloader.style.display = "none";
-            }
 
             function increment() {
                 document.getElementById("counter-btn-counter").stepUp();

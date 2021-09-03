@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // leftcontent
   &__leftcontent {
     h2 {
       color: color(gray-9);
@@ -18,7 +17,6 @@
     }
   }
 
-  // right content
   &__rightcontent {
     display: flex;
     align-items: center;
@@ -39,7 +37,9 @@
       line-height: 24px;
       color: color(gray-9);
       border: 1px solid color(gray-1);
-
+      @include max(767px) {
+        width: 100%;
+      }
       &:focus {
         border-color: color(soft-primary);
       }
@@ -88,9 +88,7 @@
   }
 
   &--two {
-    padding-left: 60px;
-    padding-right: 60px;
-
+    padding: 60px 60px;
     .newsletter {
       &__leftcontent {
         display: flex;
@@ -141,6 +139,7 @@
         }
 
         p {
+          max-width: 100%;
           color: #7a997c;
         }
       }

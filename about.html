@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="dist/main.css" />
     </head>
 
-    <body onload="loader()">
+    <body>
         <div class="loader">
             <div class="loader-icon">
                 <img src="src/images/loader.gif" alt="loader" />
@@ -114,14 +114,14 @@
                                 <select id="selectbox1" class="header__dropdown-menu">
                                     <option value="pt_1">Eng</option>
                                     <option value="en_2">Bng</option>
-                                    <option value="es_3" disabled>Hin (Disabled)</option>
+                                    
                                     <option value="ch_4">cn</option>
                                     <option value="5">Urdu</option>
                                 </select>
                                 <select id="selectbox2" class="header__dropdown-menu">
                                     <option value="pt_1">USD</option>
                                     <option value="en_2">Tk</option>
-                                    <option value="es_3" disabled>Rup (Disabled)</option>
+                                    
                                     <option value="ch_4">yan</option>
                                     <option value="5">rup</option>
                                 </select>
@@ -257,7 +257,7 @@
                                     <li class="header__navigation-drop-menu-link"><a href="checkout.html"> Checkout</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="sign-in.html"> Sign in</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="create-account.html"> Create Account</a></li>
-                                    <li class="header__navigation-drop-menu-link"><a href="faq.html"> Faqs</a></li>
+                                    <li class="header__navigation-drop-menu-link"><a href="faq.html"> faq</a></li>
                                     <li class="header__navigation-drop-menu-link"><a href="404.html"> Error 404</a></li>
                                 </ul>
                             </li>
@@ -393,7 +393,7 @@
                                     <li class="header__mobile-dropdown-menu-link"><a href="order-history.html">order history</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="order-details.html">Order Details</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="account-setting.html">Account Settings</a></li>
-                                    <li class="header__mobile-dropdown-menu-link"><a href="faq.html">Faqs</a></li>
+                                    <li class="header__mobile-dropdown-menu-link"><a href="faq.html">faq</a></li>
                                     <li class="header__mobile-dropdown-menu-link"><a href="404.html">404</a></li>
                                 </ul>
                             </li>
@@ -897,7 +897,7 @@
         <section class="hero section--xl section">
             <div class="container">
                 <div class="row hero__content">
-                    <div class="col-lg-6 order-lg-0 order-2">
+                    <div class="col-lg-6">
                         <div class="hero__text-content">
                             <h6>
                                 We Delivered, You Enjoy Your Order.
@@ -946,9 +946,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-lg-0 order-1">
+                    <div class="col-lg-6">
                         <div class="hero__img-wrapper">
-                            <img src="src/images/members/img-09.png" alt="img" />
+                            <img src="src/images/members/img-09.png" alt="img"  class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -1221,13 +1221,13 @@
                 <div class="section__head">
                     <h2 class="section--title-one font-title--xl">Client Testimonials</h2>
                     <div class="arrows">
-                        <button class="arrows__btn swiper-button--prev">
+                        <button class="arrows__btn btn--prev">
                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.25 7.22607H16.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M7.30005 1.20117L1.25005 7.22517L7.30005 13.2502" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <button class="arrows__btn swiper-button--next">
+                        <button class="arrows__btn btn--next">
                             <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 7.50049H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M9.95001 1.47559L16 7.49959L9.95001 13.5246" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -2242,7 +2242,7 @@
                                     <a href="#"> Contact </a>
                                 </li>
                                 <li class="footer__navigation-link">
-                                    <a href="#"> Faqs </a>
+                                    <a href="#"> faq </a>
                                 </li>
                                 <li class="footer__navigation-link">
                                     <a href="#"> Terms &amp; Condition </a>
@@ -2324,12 +2324,6 @@
         <script src="src/plugins/js/bvselect.js"></script>
         <script src="dist/main.js"></script>
         <script>
-            //  Page Loader
-            const preloader = document.querySelector(".loader");
-            function loader() {
-                preloader.style.display = "none";
-            }
-
             var demo1 = new BVSelect({
                 selector: "#selectbox1",
                 searchbox: false,

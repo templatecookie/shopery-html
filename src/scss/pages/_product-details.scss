@@ -130,11 +130,15 @@
 
   // Description tab
   &__description--text {
+    width: 648px;
     font-size: 14px;
     line-height: 21px;
     color: color(gray-5);
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    @include max(1200px) {
+      width: 100%;
+    }
   }
 
   // Description List

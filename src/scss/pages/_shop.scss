@@ -5,21 +5,9 @@
   }
 
   &__product-items {
-    @include max(767px) {
-      display: none;
-    }
     .cards-md {
       border-radius: 6px;
       margin-bottom: 18px;
-    }
-  }
-
-  &-slider--one {
-    @include min(768px) {
-      display: none;
-    }
-    .swiper-wrapper {
-      padding-bottom: 30px;
     }
   }
 }
@@ -357,4 +345,16 @@
       }
     }
   }
+}
+
+.noUi-target {
+  margin: 50px 0px 10px;
+}
+
+.noUi-connect {
+  background: color(primary) !important;
+}
+
+.price-range-slider {
+  margin-bottom: 30px;
 }
