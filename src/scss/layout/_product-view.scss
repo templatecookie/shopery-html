@@ -104,7 +104,6 @@
 
 .gallery-view {
   display: flex;
-  // align-items: center;
   margin-top: 20px;
 
   .product-main-image {
@@ -114,7 +113,6 @@
   .gallery-main-image {
     margin-left: 12px;
   }
-
 
   .gallery-items-slider {
     height: 420px;
@@ -141,6 +139,9 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+        @include max(991px) {
+          object-fit: contain;
+        }
       }
     }
 
@@ -190,11 +191,11 @@
       }
     }
     .gallery-items-slider {
-      height: auto; 
+      height: auto;
     }
-    .gallery-items { 
+    .gallery-items {
       height: 100%;
-      .gallery-prev-item{
+      .gallery-prev-item {
         transform: rotate(-90deg) translateX(50%);
         left: 0;
         top: 50%;

@@ -11937,38 +11937,18 @@ body.overlay {
                 justify-content: center; } }
     @media (max-width: 575px) {
       .products__content-action {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
+        max-width: 575px;
+        overflow-x: scroll;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-bottom: 16px; } }
     .products__content-action-item {
       margin-right: 12px;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
               flex-shrink: 0; }
-      @media (max-width: 575px) {
-        .products__content-action-item:nth-child(1) {
-          -webkit-box-ordinal-group: 3;
-          -webkit-order: 2;
-              -ms-flex-order: 2;
-                  order: 2; } }
-      @media (max-width: 575px) {
-        .products__content-action-item:nth-child(2) {
-          -webkit-box-ordinal-group: 4;
-          -webkit-order: 3;
-              -ms-flex-order: 3;
-                  order: 3; } }
-      @media (max-width: 575px) {
-        .products__content-action-item:nth-child(3) {
-          -webkit-box-ordinal-group: 2;
-          -webkit-order: 1;
-              -ms-flex-order: 1;
-                  order: 1; } }
-      @media (max-width: 575px) {
-        .products__content-action-item {
-          margin-right: 0px;
-          margin-bottom: 15px; } }
     .products__content-action .button--md {
       width: 445px; }
       @media (max-width: 1440px) {
@@ -12012,12 +11992,34 @@ body.overlay {
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
               flex-shrink: 0; }
+      @media (max-width: 575px) {
+        .products__content-tags h5, .products__content-tags .h5 {
+          padding-bottom: 16px; } }
+    @media (max-width: 575px) {
+      .products__content-tags-item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        max-width: 575px;
+        overflow-x: auto; } }
     .products__content-tags-item a {
       color: #808080;
       text-transform: capitalize;
       margin-right: 6px;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
+      .products__content-tags-item a:nth-last-child(1) {
+        margin-right: 0px; }
+      @media (max-width: 575px) {
+        .products__content-tags-item a {
+          margin-right: 12px;
+          padding-bottom: 16px;
+          white-space: nowrap; } }
       .products__content-tags-item a:hover {
         color: #1a1a1a;
         text-decoration: underline; }
@@ -13788,6 +13790,10 @@ body.overlay {
            object-fit: cover;
         width: 100%;
         height: 100%; }
+        @media (max-width: 991px) {
+          .gallery-view .gallery-items .gallery-item img {
+            -o-object-fit: contain;
+               object-fit: contain; } }
     .gallery-view .gallery-items .gallery-prev-item,
     .gallery-view .gallery-items .gallery-next-item {
       cursor: pointer;
@@ -18491,6 +18497,17 @@ body.overlay {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    @media (max-width: 767px) {
+      .products-tab__btn .nav {
+        display: -webkit-box;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; } }
+    @media (max-width: 400px) {
+      .products-tab__btn .nav {
+        padding-bottom: 16px; } }
     .products-tab__btn .nav-link {
       font-size: 16px;
       line-height: 24px;
@@ -18500,6 +18517,9 @@ body.overlay {
       border-radius: 0px;
       background-color: transparent;
       border-bottom: 2px solid transparent; }
+      @media (max-width: 767px) {
+        .products-tab__btn .nav-link {
+          white-space: nowrap; } }
       .products-tab__btn .nav-link.active {
         background-color: transparent;
         color: #1a1a1a;
