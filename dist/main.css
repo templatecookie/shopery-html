@@ -16689,6 +16689,14 @@ body.overlay {
 
 .our-products__menu {
   border: 0px; }
+  @media (max-width: 400px) {
+    .our-products__menu {
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      width: 320px;
+      overflow-x: scroll;
+      overflow-y: hidden; } }
   .our-products__menu li {
     padding: 15px 0px; }
     @media (max-width: 767px) {
@@ -16710,6 +16718,9 @@ body.overlay {
           padding: 0px;
           padding-right: 15px;
           border-color: transparent !important; } }
+      @media (max-width: 400px) {
+        .our-products__menu li button {
+          white-space: nowrap; } }
       .our-products__menu li button.active {
         background-color: transparent !important;
         color: #00b207 !important;

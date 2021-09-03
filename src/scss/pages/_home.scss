@@ -288,6 +288,12 @@
   }
   &__menu {
     border: 0px;
+    @include max(400px) {
+      flex-wrap: nowrap;
+      width: 320px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
     li {
       padding: 15px 0px;
       @include max(767px) {
@@ -312,6 +318,9 @@
           padding: 0px;
           padding-right: 15px;
           border-color: transparent !important;
+        }
+        @include max(400px) {
+          white-space: nowrap;
         }
 
         &.active {
