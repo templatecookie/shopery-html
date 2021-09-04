@@ -292,7 +292,6 @@
 
 // Large products cards
 .cards-lg {
-  // padding: 25px;
   &:hover {
     z-index: 3;
   }
@@ -636,7 +635,6 @@
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
-      // transition: all 0.6s ease-in-out;
       transition: all 0.6s cubic-bezier(1, 0, 0.46, 0.76);
     }
 
@@ -1342,7 +1340,6 @@
   // Shipping Cards Four
   &--four {
     border: 0px;
-    // border-bottom: 1px solid color(gray-2);
     padding: 0px;
     @include max(767px) {
       border-bottom: 0px;

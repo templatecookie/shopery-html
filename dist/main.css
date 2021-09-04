@@ -14253,14 +14253,16 @@ body.overlay {
     margin-right: 0px;
     margin-bottom: 15px; } }
 
-.border--bottom-left::after {
-  content: '';
-  position: absolute;
-  bottom: -16px;
-  left: 0;
-  width: 80px;
-  height: 3px;
-  background-color: #00b207; }
+.border--bottom-left {
+  position: relative; }
+  .border--bottom-left::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #00b207; }
 
 .swiper-pagination-bullet {
   background-color: #00b207; }
@@ -16124,29 +16126,27 @@ body.overlay {
       .social-icon-link a svg {
         width: 18px; }
 
-.pagination-item:nth-last-child(1) {
-  margin-right: 0px; }
-
-.pagination-item:first-child .pagination-link, .pagination-item:last-child .pagination-link {
-  border-radius: 50%;
-  color: #1a1a1a; }
-
-.pagination-item:nth-last-child(2), .pagination-item:nth-last-child(3), .pagination-item:nth-last-child(4), .pagination-item:nth-last-child(5) {
-  display: none; }
-
-.pagination-item:hover a {
-  color: #fff; }
-
-.pagination-item.disabled .pagination-link,
-.pagination-item .pagination-link.disabled,
-.pagination-item .pagination-link:disabled {
-  background-color: #f2f2f2;
-  border-color: transparent;
-  color: #b2b2b2; }
-  .pagination-item.disabled .pagination-link:hover,
-  .pagination-item .pagination-link.disabled:hover,
-  .pagination-item .pagination-link:disabled:hover {
+.pagination-item {
+  margin-right: 8px; }
+  .pagination-item:nth-last-child(1) {
+    margin-right: 0px; }
+  .pagination-item:first-child .pagination-link, .pagination-item:last-child .pagination-link {
+    border-radius: 50%;
+    color: #1a1a1a; }
+  .pagination-item:nth-last-child(2), .pagination-item:nth-last-child(3), .pagination-item:nth-last-child(4), .pagination-item:nth-last-child(5) {
+    display: none; }
+  .pagination-item:hover a {
+    color: #fff; }
+  .pagination-item.disabled .pagination-link,
+  .pagination-item .pagination-link.disabled,
+  .pagination-item .pagination-link:disabled {
+    background-color: #f2f2f2;
+    border-color: transparent;
     color: #b2b2b2; }
+    .pagination-item.disabled .pagination-link:hover,
+    .pagination-item .pagination-link.disabled:hover,
+    .pagination-item .pagination-link:disabled:hover {
+      color: #b2b2b2; }
 
 .pagination-link {
   width: 36px;
