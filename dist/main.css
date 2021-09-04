@@ -18937,6 +18937,9 @@ body.overlay {
     @media (max-width: 767px) {
       .dashboard__order-history-table-title, .dashboard__order-history-table-item {
         padding: 12px !important; } }
+    @media (max-width: 1199px) {
+      .dashboard__order-history-table-title, .dashboard__order-history-table-item {
+        white-space: nowrap; } }
   .dashboard__order-history-table-title {
     color: #4d4d4d;
     letter-spacing: 0.03em;

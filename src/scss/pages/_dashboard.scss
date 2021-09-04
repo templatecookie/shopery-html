@@ -301,6 +301,9 @@
         @include max(767px) {
           padding: 12px !important;
         }
+        @include max(1199px) {
+          white-space: nowrap;
+        }
       }
 
       &-title {
