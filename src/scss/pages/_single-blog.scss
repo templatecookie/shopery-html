@@ -56,7 +56,8 @@
     &-item {
       margin-right: 20px;
       @include max(767px) {
-        margin-right: 2px;
+        margin-right: 12px;
+        white-space: nowrap;
       }
       .icon {
         margin-right: 5px;
