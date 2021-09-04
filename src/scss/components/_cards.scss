@@ -76,7 +76,7 @@
 .cards-sm--two {
   display: flex;
   align-items: center;
-  @include min-max(768px, 1399px) {
+  @include min-max(400px, 1399px) {
     flex-direction: column;
   }
   &.radius--6 {
@@ -90,7 +90,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    @include min-max(768px, 1399px) {
+    @include min-max(400px, 1399px) {
       margin-right: 0px;
       height: 190px;
     }
@@ -105,7 +105,7 @@
   }
 
   &__content-text {
-    @include min-max(768px, 1399px) {
+    @include min-max(400px, 1399px) {
       width: 100%;
       padding: 16px;
     }
@@ -713,7 +713,7 @@
       .cards-ss {
         &__img-wrapper {
           width: 100%;
-          height: 325px;
+          height: 348px;
           overflow: hidden;
           &::after {
             content: '';
@@ -759,10 +759,6 @@
               rgba(255, 255, 255, 0) 58.4%
             );
           }
-
-          // @include min-max(992px, 1399px) {
-          //   height: 960px;
-          // }
         }
       }
       .overlay-img {
@@ -934,7 +930,7 @@
     transform: translateX(-50%);
     color: #fff;
     z-index: 1;
-    @include min-max(768px, 1399px) {
+    @include min-max(400px, 1399px) {
       top: 50%;
       transform: translate(-50%, -50%);
     }
