@@ -101,7 +101,6 @@
 
 // Product Details tabcontent
 .products-tab {
-  // description tabs btn
   &__btn {
     padding: 0px 16px;
     margin-bottom: 32px;
@@ -109,6 +108,15 @@
 
     .nav {
       justify-content: center;
+      @include max(767px) {
+        display: -webkit-box;
+        max-width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+      }
+      @include max(400px) {
+        padding-bottom: 16px;
+      }
       &-link {
         font-size: 16px;
         line-height: 24px;
@@ -118,6 +126,9 @@
         border-radius: 0px;
         background-color: transparent;
         border-bottom: 2px solid transparent;
+        @include max(767px) {
+          white-space: nowrap;
+        }
         &.active {
           background-color: transparent;
           color: color(gray-9);

@@ -245,7 +245,7 @@
       &::placeholder {
         font-size: inherit;
         line-height: inherit;
-        color: color(gray-4);
+        color: color(gray-6);
 
         @include max(767px) {
           font-size: 12px;
@@ -269,7 +269,6 @@
     // Dropdown input
     .bv_mainselect {
       padding: 0px;
-      // border: 1px solid #e5e5e5;
       height: 50px;
       &:hover,
       &.active {
@@ -280,7 +279,7 @@
         border: 0px;
         height: inherit;
         border: 1px solid #e5e5e5;
-        font-size: 16px;
+        // font-size: 16px;
         line-height: 30px;
         color: color(gray-6);
         padding-left: 16px;

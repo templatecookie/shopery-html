@@ -53,6 +53,7 @@
   &--disable {
     color: color(primary);
     background: #56ac591a;
+    pointer-events: none;
     &:hover {
       color: color(hard-primary);
       background: #2c742f33;

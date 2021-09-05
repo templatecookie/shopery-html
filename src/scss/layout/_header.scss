@@ -138,8 +138,11 @@
         border-right: 1px solid color(gray-1);
         .bv_mainselect {
           padding: 0px;
+          border-radius: 0px;
+          border-color: #b2b2b2;
           text-transform: capitalize;
           .bv_atual.bv_background {
+            min-width: 60px;
             color: color(gray-6);
             border: 0px;
             padding: 0px;
@@ -161,6 +164,10 @@
             width: 150px !important;
             text-transform: capitalize;
             z-index: 999;
+            @include max(767px) {
+              height: 150px !important;
+              overflow-y: auto;
+            }
             li {
               &:hover {
                 background-color: color(primary);
@@ -474,6 +481,33 @@
           padding: 13px 0px;
           box-shadow: 0px 1px 0px 0px #e5e5e5;
         }
+        &-left {
+          @include max(767px) {
+            display: none;
+          }
+        }
+        &-right {
+          @include max(767px) {
+            width: 100%;
+          }
+          div {
+            &:nth-child(1) {
+              @include max(767px) {
+                width: 30%;
+              }
+            }
+            &:nth-child(2) {
+              @include max(767px) {
+                width: 70%;
+              }
+            }
+          }
+          .header__in {
+            @include max(767px) {
+              text-align: right;
+            }
+          }
+        }
       }
 
       &__bottom {
@@ -494,12 +528,19 @@
       &__category-content {
         display: flex;
         align-items: center;
+        @include max(767px) {
+          width: 100%;
+        }
       }
 
       &__category-content {
         position: relative;
         background-color: color(primary);
+
         &-item {
+          @include max(767px) {
+            width: 100%;
+          }
           a {
             font-size: 14px;
             line-height: 21px;
@@ -509,6 +550,11 @@
             display: flex;
             align-items: center;
             padding: 20px 25px;
+
+            @include max(767px) {
+              justify-content: space-between;
+            }
+
             .bar {
               position: relative;
               width: 18px;
@@ -555,6 +601,10 @@
           visibility: hidden;
           pointer-events: none;
           padding: 10px 0px;
+          @include max(767px) {
+            width: 100%;
+            justify-content: flex-start;
+          }
           li {
             &:hover {
               transition: all 0.3s linear;
@@ -577,6 +627,10 @@
               text-transform: capitalize;
               color: color(gray-9);
               padding: 9.5px 20px;
+              @include max(767px) {
+                justify-content: flex-start;
+              }
+
               .icon {
                 color: color(gray-5);
                 margin-right: 12px;
@@ -600,7 +654,7 @@
               opacity: 1;
               visibility: visible;
               pointer-events: all;
-              transition: all 0.4s ease-in-out;
+              transition: all 0.3s ease-in-out;
             }
           }
         }
@@ -635,7 +689,7 @@
                 }
                 @include max(767px) {
                   padding: 14px;
-                  margin-right: 8px;
+                  margin-right: 12px;
                 }
                 .bar {
                   margin-right: 0px;
@@ -729,6 +783,14 @@
           color: #fff;
           &:nth-last-child(1) {
             margin-right: 0px;
+          }
+        }
+        a,
+        button {
+          svg {
+            @include max(767px) {
+              height: 22px;
+            }
           }
         }
       }
@@ -859,6 +921,25 @@
     .header {
       &__top {
         background-color: color(green-0);
+
+        &-left {
+          p {
+            color: #2b572e;
+          }
+        }
+
+        &-right {
+          .header__dropdown {
+            .bv_mainselect {
+              .bv_atual.bv_background {
+                color: #2b572e;
+                .arrow {
+                  color: #2b572e;
+                }
+              }
+            }
+          }
+        }
       }
 
       &__center-content {
@@ -991,7 +1072,7 @@
         .header__dropdown {
           border: 0px;
           .bv_mainselect {
-            border-right: 1px solid color(gray-1);
+            border-right: 1px solid #b2b2b2;
             &:nth-last-child(1) {
               border: 0px;
               margin-left: 20px;
@@ -1024,9 +1105,6 @@
     }
   }
   .header--two .header__contact-info-number {
-    display: none;
-  }
-  .header--two .header__top-left {
     display: none;
   }
 

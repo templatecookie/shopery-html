@@ -5,21 +5,9 @@
   }
 
   &__product-items {
-    @include max(767px) {
-      display: none;
-    }
     .cards-md {
       border-radius: 6px;
       margin-bottom: 18px;
-    }
-  }
-
-  &-slider--one {
-    @include min(768px) {
-      display: none;
-    }
-    .swiper-wrapper {
-      padding-bottom: 30px;
     }
   }
 }
@@ -157,7 +145,7 @@
     @include max(991px) {
       left: 0px;
       width: 60%;
-      transition: all 0.4s linear;
+      transition: all 0.3s linear;
     }
     @include max(767px) {
       width: 50%;
@@ -360,13 +348,13 @@
 }
 
 .noUi-target {
-    margin: 50px 0px 10px;
+  margin: 50px 0px 10px;
 }
 
 .noUi-connect {
-    background: color(primary) !important;
+  background: color(primary) !important;
 }
 
 .price-range-slider {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }

@@ -248,7 +248,7 @@
     &:hover {
       border: 1px solid #00b207;
       box-shadow: 0px 0px 12px 0px #20b52652;
-      transition: all 0.4s linear;
+      transition: all 0.3s linear;
     }
     .product {
       &-img {
@@ -316,7 +316,7 @@
   &.active {
     right: 0px;
     width: 455px;
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
     @include max(575px) {
       width: 100%;
     }

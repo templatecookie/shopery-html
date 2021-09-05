@@ -1,7 +1,4 @@
 @use "sass:math";
-// Homepage 01 = > Popular - Categories, Products
-
-// == Functions == //
 
 .popular-categories {
   &__wrapper {
@@ -220,30 +217,15 @@
       justify-content: center;
     }
     @include max(575px) {
-      flex-direction: column;
+      max-width: 575px;
+      overflow-x: scroll;
+      justify-content: space-between;
+      padding-bottom: 16px;
     }
+
     &-item {
       margin-right: 12px;
       flex-shrink: 0;
-      &:nth-child(1) {
-        @include max(575px) {
-          order: 2;
-        }
-      }
-      &:nth-child(2) {
-        @include max(575px) {
-          order: 3;
-        }
-      }
-      &:nth-child(3) {
-        @include max(575px) {
-          order: 1;
-        }
-      }
-      @include max(575px) {
-        margin-right: 0px;
-        margin-bottom: 15px;
-      }
     }
     .button {
       &--md {
@@ -290,13 +272,30 @@
       text-transform: capitalize;
       color: color(gray-9);
       flex-shrink: 0;
+      @include max(575px) {
+        padding-bottom: 16px;
+      }
     }
     &-item {
+      @include max(575px) {
+        display: flex;
+        align-items: center;
+        max-width: 575px;
+        overflow-x: auto;
+      }
       a {
         color: color(gray-5);
         text-transform: capitalize;
         margin-right: 6px;
         transition: all 0.3s ease-in-out;
+        &:nth-last-child(1) {
+          margin-right: 0px;
+        }
+        @include max(575px) {
+          margin-right: 12px;
+          padding-bottom: 16px;
+          white-space: nowrap;
+        }
         &:hover {
           color: color(gray-9);
           text-decoration: underline;

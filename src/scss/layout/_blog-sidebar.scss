@@ -7,7 +7,7 @@
     width: 5%;
     height: 100%;
     z-index: 9999;
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
     @include max(767px) {
       width: 80%;
       left: -80%;
@@ -63,7 +63,7 @@
     position: relative;
     height: inherit;
     overflow-y: auto;
-    padding:0 0 15px;
+    padding: 0 0 15px;
     &--item {
       padding-top: 20px;
       padding-bottom: 28px;

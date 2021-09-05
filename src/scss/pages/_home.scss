@@ -108,15 +108,6 @@
     @include max(767px) {
       margin-bottom: 12px;
     }
-    // .cards-md__img-wrapper {
-    //   a {
-    //     img {
-    //       @include max(767px) {
-    //         object-fit: contain;
-    //       }
-    //     }
-    //   }
-    // }
   }
 
   &__content {
@@ -128,7 +119,6 @@
 
 // Our Profesional Members
 .members {
-  padding-bottom: 0px;
   &-slider--one {
     padding-bottom: 60px;
     @include max(767px) {
@@ -298,6 +288,12 @@
   }
   &__menu {
     border: 0px;
+    @include max(400px) {
+      flex-wrap: nowrap;
+      width: 320px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
     li {
       padding: 15px 0px;
       @include max(767px) {
@@ -322,6 +318,9 @@
           padding: 0px;
           padding-right: 15px;
           border-color: transparent !important;
+        }
+        @include max(400px) {
+          white-space: nowrap;
         }
 
         &.active {
@@ -858,17 +857,6 @@
 
 // Counter
 .counter {
-  &:hover {
-    .counter {
-      &__overlay {
-        &-img {
-          color: color(primary);
-          transition: all 0.3s ease-in-out;
-        }
-      }
-    }
-  }
-
   &__content-items {
     position: relative;
     display: grid;
@@ -906,6 +894,9 @@
       &.one {
         top: 24px;
         left: 0px;
+        @include max(767px) {
+          display: none;
+        }
       }
       &.two,
       &.three {
@@ -1016,7 +1007,7 @@
   &__content {
     &-item {
       position: relative;
-      padding: 25px 20px;
+      padding: 25px;
       border-radius: 8px;
       border: 1px solid #20b52633;
       height: 220px;
@@ -1057,7 +1048,7 @@
 
   &__form {
     position: relative;
-    width: 608px;
+    width: 580px;
     height: 45px;
     border-radius: 500px;
     border: 1px solid #e5e5e5;
@@ -1080,6 +1071,7 @@
       font-size: 14px;
       line-height: 24px;
       padding-left: 24px;
+      width: 80%;
       @include max(1200px) {
         width: 65%;
       }
