@@ -1,0 +1,58 @@
+$colors: (
+  'soft-primary': #84d187,
+  'primary': #00b207,
+  'hard-primary': #2c742f,
+  'warning': #ff8a00,
+  'danger': #ea4b48,
+  'white': #fff,
+  'gray-9': #1a1a1a,
+  'gray-8': #333333,
+  'gray-7': #4d4d4d,
+  'gray-6': #666666,
+  'gray-5': #808080,
+  'gray-4': #999999,
+  'gray-3': #b2b2b2,
+  'gray-2': #cccccc,
+  'gray-1': #e5e5e5,
+  'gray-0': #f2f2f2,
+  'gray': #f7f7f7,
+  'green-9': #002603,
+  'green-8': #173b1a,
+  'green-7': #2b572e,
+  'green-6': #406b42,
+  'green-5': #618062,
+  'green-4': #7a997c,
+  'green-3': #96b297,
+  'green-2': #b4ccb4,
+  'green-1': #dae5da,
+  'green-0': #edf2ee,
+);
+
+// title size
+$font-title: (
+  'xxxl': 72px,
+  'xxl': 56px,
+  'xl': 48px,
+  'lg': 40px,
+  'md': 36px,
+  'sm': 32px,
+);
+
+// Fonts body
+$font-body: (
+  'xxxl': 24px,
+  'xxl': 20px,
+  'xl': 18px,
+  'lg': 16px,
+  'md': 14px,
+  'sm': 12px,
+);
+
+// section paddings
+$spacing: (
+  'xxl': 100px,
+  'xl': 80px,
+  'lg': 60px,
+  'md': 30px,
+  'sm': 15px,
+);

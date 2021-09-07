@@ -1,0 +1,106 @@
+@use "sass:math";
+
+// colors
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
+
+// fonts size for title/heading
+@each $name, $size in $font-title {
+  .font-title--#{$name} {
+    font-size: $size;
+    font-weight: 600;
+    position: relative;
+    text-transform: capitalize;
+  }
+  .font-title--#{$name}-n {
+    font-size: $size;
+    font-weight: 400;
+    position: relative;
+    text-transform: capitalize;
+  }
+}
+
+// fonts body
+@each $name, $size in $font-body {
+  .font-body--#{$name}-400 {
+    font-size: $size;
+    font-weight: 400;
+  }
+
+  .font-body--#{$name}-500 {
+    font-size: $size;
+    font-weight: 500;
+  }
+
+  .font-body--#{$name}-600 {
+    font-size: $size;
+    font-weight: 600;
+  }
+}
+
+// Spacing
+@each $name, $space in $spacing {
+  .section--#{$name} {
+    padding: $space 0px;
+  }
+  .section--my-#{$name} {
+    margin: $space 0px;
+  }
+}
+
+// Bg Colors
+@each $name, $value in $colors {
+  .section--#{$name} {
+    background-color: $value;
+  }
+  .bg--#{$name} {
+    background-color: $value;
+  }
+}
+
+// Border radius
+
+// Responsive
+
+@mixin max($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin min($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin min-max($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+// Responsive Breakpoints
+$breakpoints: (
+  'phone': 400px,
+  'phone-wide': 480px,
+  'phablet': 576px,
+  'tablet-small': 640px,
+  'tablet': 768px,
+  'tablet-wide': 992px,
+  'desktop': 1200px,
+  'desktop-wide': 1400px,
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}

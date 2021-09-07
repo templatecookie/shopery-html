@@ -1,0 +1,103 @@
+.button {
+  position: relative;
+  font-size: 12px;
+  line-height: 15.6px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 43px;
+  color: #fff;
+  background-color: color(primary);
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+  // arrow buttons
+  span {
+    margin-left: 12px;
+  }
+  &:hover {
+    background-color: color(hard-primary);
+  }
+
+  &--md,
+  &--lg {
+    font-weight: 600;
+  }
+  &--md {
+    font-size: 14px;
+    line-height: 16.8px;
+    padding: 14px 32px;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &--lg {
+    font-size: 16px;
+    line-height: 19.2px;
+    padding: 16px 40px;
+  }
+
+  // Buttons outline
+  &--outline {
+    color: color(primary);
+    background-color: transparent;
+    border: 2px solid color(primary);
+    &:hover {
+      color: color(hard-primary);
+      border-color: color(hard-primary);
+      background-color: transparent;
+    }
+  }
+
+  // Disable buttons
+  &--disable {
+    color: color(primary);
+    background: #56ac591a;
+    pointer-events: none;
+    &:hover {
+      color: color(hard-primary);
+      background: #2c742f33;
+    }
+  }
+}
+
+// actions buttons
+.action-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: color(gray-9);
+  background-color: color(gray-0);
+  transition: all 0.3s linear;
+  &:hover {
+    color: #fff;
+    background-color: color(primary);
+    border-color: transparent;
+  }
+}
+
+// badge
+.tag {
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  &.danger {
+    background-color: color(danger);
+  }
+  &.blue {
+    background-color: #2388ff;
+  }
+}
+
+// Responsive
+@media (max-width: 767px) {
+  .button {
+    &--lg {
+      padding: 16px 20px;
+    }
+  }
+}
