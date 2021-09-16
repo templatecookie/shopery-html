@@ -26,6 +26,21 @@
 
  */
 //
+
+var demo1 = new BVSelect({
+  selector: "#selectbox1",
+  searchbox: false,
+  offset: false,
+  placeholder: "Eng",
+});
+
+var demo2 = new BVSelect({
+  selector: "#selectbox2",
+  searchbox: false,
+  offset: false,
+  placeholder: "USD",
+});
+
 const preloader = document.querySelector('.loader');
 
 window.addEventListener('load', (event) => {
@@ -46,10 +61,12 @@ let menuBtn = document.querySelector('.header__sidebar-btn');
 const body = document.querySelector('body');
 
 // Open
-menuBtn.addEventListener('click', function () {
-  mobileSidebar.classList.add('active');
-  body.classList.add('overlay');
-});
+if(menuBtn){
+  menuBtn.addEventListener('click', function () {
+    mobileSidebar.classList.add('active');
+    body.classList.add('overlay');
+  });
+}
 
 // close
 closeBar.addEventListener('click', function () {
