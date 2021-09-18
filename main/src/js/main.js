@@ -26,20 +26,33 @@
 
  */
 //
+if(document.getElementById('selectbox1')){
+    var demo1 = new BVSelect({
+        selector: "#selectbox1",
+        searchbox: false,
+        offset: false,
+        placeholder: "Eng",
+    });
+}
 
-var demo1 = new BVSelect({
-  selector: "#selectbox1",
-  searchbox: false,
-  offset: false,
-  placeholder: "Eng",
-});
+if(document.getElementById('selectbox2')){
+    var demo2 = new BVSelect({
+        selector: "#selectbox2",
+        searchbox: false,
+        offset: false,
+        placeholder: "USD",
+    });
+}
 
-var demo2 = new BVSelect({
-  selector: "#selectbox2",
-  searchbox: false,
-  offset: false,
-  placeholder: "USD",
-});
+if(document.getElementById('countdownTwo')){
+    $("#countdownTwo").syotimer({  
+        year: 2021,
+        month: 9,
+        day: 30,
+        hour: 20,
+        minute: 30,
+    });
+}
 
 const preloader = document.querySelector('.loader');
 
@@ -1119,7 +1132,6 @@ if(blogListFilter){
         body.classList.toggle("overlay");
     });
 }
-$(".venobox").venobox();
 if(document.getElementById('sort')){
     var demo3 = new BVSelect({
         selector: "#sort",
