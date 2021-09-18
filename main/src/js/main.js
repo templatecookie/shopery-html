@@ -910,3 +910,256 @@ var blogs = new Swiper('.blog-list--slider', {
     dynamicBullets: true,
   },
 });
+
+
+
+// User Dashboard
+
+//  Filter Sidebar
+const filterBtn = document.querySelector(".filter-icon");
+
+// Click Event
+filterBtn.addEventListener("click", () => {
+    let sidebarNav = document.querySelector(".dashboard__nav");
+    let body = document.querySelector("body");
+    sidebarNav.classList.toggle("active");
+    body.classList.toggle("overlay");
+});
+
+// Single Blog
+// Shop Filter Sidebar
+const filterBtn = document.querySelector("button.filter");
+
+// Click Event
+filterBtn.addEventListener("click", () => {
+    let blogSidebar = document.querySelector(".sidebar");
+    let body = document.querySelector("body");
+    blogSidebar.classList.toggle("active");
+    body.classList.toggle("overlay");
+});
+
+
+// Shopping Cart
+function increment() {
+    document.getElementById("counter-btn-counter").stepUp();
+}
+function decrement() {
+    document.getElementById("counter-btn-counter").stepDown();
+}
+
+
+// Shop 01
+// Shop Filter Sidebar
+const filterBtn = document.querySelector("button.filter");
+
+// Large Device Filter
+const filterToggle = document.querySelector("#filter");
+filterToggle.addEventListener("click", function () {
+    const sidebar = document.querySelector(".shop-content .col-lg-3");
+    const productGallery = document.querySelector(".shop-content .col-lg-9");
+    const productContent = document.querySelectorAll(".shop__product-items .col-md-6");
+
+    sidebar.classList.toggle("d-none");
+    productGallery.classList.toggle("col-lg-12");
+
+    // it's will be on 4 column
+    productContent.forEach((item) => {
+        if (item.classList.contains("col-xl-4")) {
+            item.classList.add("col-xl-3");
+            item.classList.remove("col-xl-4");
+        } else if (item.classList.contains("col-xl-3")) {
+            item.classList.add("col-xl-4");
+            item.classList.remove("col-xl-3");
+        }
+    });
+});
+
+// Click Event
+filterBtn.addEventListener("click", () => {
+    let shopSidebar = document.querySelector(".shop__sidebar");
+    let body = document.querySelector("body");
+    shopSidebar.classList.toggle("active");
+    body.classList.toggle("overlay");
+});
+
+var demo3 = new BVSelect({
+    selector: "#sort",
+    searchbox: false,
+    offset: false,
+    placeholder: "Latest",
+});
+
+var range = document.getElementById('priceRangeSlider');
+
+noUiSlider.create(range, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 1500
+    },
+    tooltips: true,
+});
+
+
+// Product Details
+function increment() {
+    document.getElementById("counter-btn-counter").stepUp();
+}
+
+function decrement() {
+    document.getElementById("counter-btn-counter").stepDown();
+}
+
+$(".venobox").venobox({
+    spinner: 'cube-grid'
+});
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    direction: "vertical",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
+
+// Order History 
+//  Filter Sidebar
+const filterBtn = document.querySelector(".filter-icon");
+
+// Click Event
+filterBtn.addEventListener("click", () => {
+    let sidebarNav = document.querySelector(".dashboard__nav");
+    let body = document.querySelector("body");
+    sidebarNav.classList.toggle("active");
+    body.classList.toggle("overlay");
+});
+
+
+// Create Account 
+// Hide type in toggle
+function showPassword(id, el) {
+    let x = document.getElementById(id);
+    if (x.type === "password") {
+        x.type = "text";
+        el.innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> ';
+    } else {
+        x.type = "password";
+        el.innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+    }
+}
+
+
+// Checkout 
+var country = new BVSelect({
+    selector: "#country",
+    searchbox: false,
+    offset: false,
+    placeholder: "Select",
+});
+var states = new BVSelect({
+    selector: "#states",
+    searchbox: false,
+    offset: false,
+    placeholder: "Selects",
+});
+var zip = new BVSelect({
+    selector: "#zip",
+    searchbox: false,
+    offset: false,
+    placeholder: "Zip Code",
+});
+
+// Blog List 
+// Shop Filter Sidebar
+const filterBtn = document.querySelector("button.filter");
+
+// Click Event
+filterBtn.addEventListener("click", () => {
+    let blogSidebar = document.querySelector(".sidebar");
+    let body = document.querySelector("body");
+    blogSidebar.classList.toggle("active");
+    body.classList.toggle("overlay");
+});
+$(".venobox").venobox();
+var demo3 = new BVSelect({
+    selector: "#sort",
+    searchbox: false,
+    offset: false,
+    placeholder: "Results..",
+});
+
+
+// Sign in Page
+// Hide type in toggle
+function showPassword(id, el) {
+    let x = document.getElementById(id);
+    if (x.type === "password") {
+        x.type = "text";
+        el.innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> ';
+    } else {
+        x.type = "password";
+        el.innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+    }
+}
+
+// Account Setting 
+// Hide type in toggle
+function showPassword(id, el) {
+    let x = document.getElementById(id);
+    if (x.type === "password") {
+        x.type = "text";
+        el.innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> ';
+    } else {
+        x.type = "password";
+        el.innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+    }
+}
+
+//  Filter Sidebar
+const filterBtn = document.querySelector(".filter-icon");
+
+// Click Event
+filterBtn.addEventListener("click", () => {
+    let sidebarNav = document.querySelector(".dashboard__nav");
+    let body = document.querySelector("body");
+    sidebarNav.classList.toggle("active");
+    body.classList.toggle("overlay");
+});
+
+var country = new BVSelect({
+    selector: "#country",
+    searchbox: false,
+    offset: false,
+    placeholder: "Select",
+});
+var states = new BVSelect({
+    selector: "#states",
+    searchbox: false,
+    offset: false,
+    placeholder: "Select",
+});
+var zip = new BVSelect({
+    selector: "#zip",
+    searchbox: false,
+    offset: false,
+    placeholder: "Zip Code",
+});

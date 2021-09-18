@@ -1828,58 +1828,5 @@
         <script src="src/lib/js/bootstrap.min.js"></script>
         <script src="src/lib/js/jquery.syotimer.min.js"></script>
         <script src="src/js/main.js"></script>
-        <script>
-
-            // Shop Filter Sidebar
-            const filterBtn = document.querySelector("button.filter");
-
-            // Click Event
-            filterBtn.addEventListener("click", () => {
-                let filterSidebar = document.querySelector(".filter__sidebar");
-                let body = document.querySelector("body");
-                filterSidebar.classList.toggle("active");
-                body.classList.toggle("overlay");
-            });
-
-            // Countdown
-            $("#countdown").syotimer({
-                year: 2022,
-                month: 01,
-                day: 06,
-                hour: 00,
-                minute: 00,
-            });
-
-            var category = new BVSelect({
-                selector: "#category",
-                searchbox: false,
-                offset: false,
-                placeholder: "Select Catecory",
-            });
-            var price = new BVSelect({
-                selector: "#price",
-                searchbox: false,
-                offset: false,
-                placeholder: "Select Price ",
-            });
-            var ratings = new BVSelect({
-                selector: "#rating",
-                searchbox: false,
-                offset: false,
-                placeholder: "Select Rating",
-            });
-            var sort = new BVSelect({
-                selector: "#sort-by",
-                searchbox: false,
-                offset: false,
-                placeholder: "sort by: Latest",
-            });
-            var number = new BVSelect({
-                selector: "#number",
-                searchbox: false,
-                offset: false,
-                placeholder: "Show: 16",
-            });
-        </script>
     </body>
 </html>

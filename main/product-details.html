@@ -2181,37 +2181,5 @@
         <script src="src/lib/js/bootstrap.bundle.min.js"></script>
         <script src="src/lib/js/bootstrap.min.js"></script>
         <script src="src/js/main.js"></script>
-        <script>
-            function increment() {
-                document.getElementById("counter-btn-counter").stepUp();
-            }
-
-            function decrement() {
-                document.getElementById("counter-btn-counter").stepDown();
-            }
-
-            $(".venobox").venobox({
-                spinner: 'cube-grid'
-            });
-
-            var swiper = new Swiper(".mySwiper", {
-                spaceBetween: 10,
-                slidesPerView: 4,
-                freeMode: true,
-                watchSlidesVisibility: true,
-                watchSlidesProgress: true,
-            });
-            var swiper2 = new Swiper(".mySwiper2", {
-                spaceBetween: 10,
-                direction: "vertical",
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                thumbs: {
-                    swiper: swiper,
-                },
-            });
-        </script>
     </body>
 </html>

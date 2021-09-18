@@ -927,17 +927,5 @@
         <script src="src/lib/js/bootstrap.bundle.min.js"></script>
         <script src="src/lib/js/bootstrap.min.js"></script>
         <script src="src/js/main.js"></script>
-        <script>
-            //  Filter Sidebar
-            const filterBtn = document.querySelector(".filter-icon");
-
-            // Click Event
-            filterBtn.addEventListener("click", () => {
-                let sidebarNav = document.querySelector(".dashboard__nav");
-                let body = document.querySelector("body");
-                sidebarNav.classList.toggle("active");
-                body.classList.toggle("overlay");
-            });
-        </script>
     </body>
 </html>
