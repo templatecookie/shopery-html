@@ -464,16 +464,28 @@ var productViewThumbs = new Swiper('.gallery-items-slider', {
   },
 });
 
-$('.gallery-item').on('click', function () {
-  $('.gallery-item.active').removeClass('active');
-  $(this).addClass('active');
-  let element = $(this).find('img');
-  if (element) {
-    let imgSource = element.attr('src');
+// $galleryItem = $('.gallery-item');
+// var galleryItem = document.getElementByClassName('gallery-item')[0];
 
-    $('.product-main-image').attr('src', imgSource);
-  }
-});
+// if(galleryItem){
+//   galleryItem.addEventListener('click', function () { 
+//     document.getElementByClassName('gallery-item');
+//     var elems = document.querySelectorAll(".class1.class2.class3");
+
+//   })
+// }
+
+
+// $galleryItem.on('click', function () {
+//   $('.gallery-item.active').removeClass('active');
+//   $(this).addClass('active');
+//   let element = $(this).find('img');
+//   if (element) {
+//     let imgSource = element.attr('src');
+
+//     $('.product-main-image').attr('src', imgSource);
+//   }
+// });
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
   centeredSlides: true,
