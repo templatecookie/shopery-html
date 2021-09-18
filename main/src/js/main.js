@@ -916,27 +916,31 @@ var blogs = new Swiper('.blog-list--slider', {
 // User Dashboard
 
 //  Filter Sidebar
-const filterBtn = document.querySelector(".filter-icon");
+const userDashboardFilter = document.querySelector(".filter-icon");
 
 // Click Event
-filterBtn.addEventListener("click", () => {
-    let sidebarNav = document.querySelector(".dashboard__nav");
-    let body = document.querySelector("body");
-    sidebarNav.classList.toggle("active");
-    body.classList.toggle("overlay");
-});
+if(userDashboardFilter){    
+    userDashboardFilter.addEventListener("click", () => {
+        let sidebarNav = document.querySelector(".dashboard__nav");
+        let body = document.querySelector("body");
+        sidebarNav.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
 
 // Single Blog
 // Shop Filter Sidebar
-const filterBtn = document.querySelector("button.filter");
+const singleBlogFilter = document.querySelector("button.filter");
 
 // Click Event
-filterBtn.addEventListener("click", () => {
-    let blogSidebar = document.querySelector(".sidebar");
-    let body = document.querySelector("body");
-    blogSidebar.classList.toggle("active");
-    body.classList.toggle("overlay");
-});
+if(singleBlogFilter){
+    singleBlogFilter.addEventListener("click", () => {
+        let blogSidebar = document.querySelector(".sidebar");
+        let body = document.querySelector("body");
+        blogSidebar.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
 
 
 // Shopping Cart
@@ -950,56 +954,64 @@ function decrement() {
 
 // Shop 01
 // Shop Filter Sidebar
-const filterBtn = document.querySelector("button.filter");
 
 // Large Device Filter
 const filterToggle = document.querySelector("#filter");
-filterToggle.addEventListener("click", function () {
-    const sidebar = document.querySelector(".shop-content .col-lg-3");
-    const productGallery = document.querySelector(".shop-content .col-lg-9");
-    const productContent = document.querySelectorAll(".shop__product-items .col-md-6");
+if(filterToggle){
+    filterToggle.addEventListener("click", function () {
+        const sidebar = document.querySelector(".shop-content .col-lg-3");
+        const productGallery = document.querySelector(".shop-content .col-lg-9");
+        const productContent = document.querySelectorAll(".shop__product-items .col-md-6");
 
-    sidebar.classList.toggle("d-none");
-    productGallery.classList.toggle("col-lg-12");
+        sidebar.classList.toggle("d-none");
+        productGallery.classList.toggle("col-lg-12");
 
-    // it's will be on 4 column
-    productContent.forEach((item) => {
-        if (item.classList.contains("col-xl-4")) {
-            item.classList.add("col-xl-3");
-            item.classList.remove("col-xl-4");
-        } else if (item.classList.contains("col-xl-3")) {
-            item.classList.add("col-xl-4");
-            item.classList.remove("col-xl-3");
-        }
+        // it's will be on 4 column
+        productContent.forEach((item) => {
+            if (item.classList.contains("col-xl-4")) {
+                item.classList.add("col-xl-3");
+                item.classList.remove("col-xl-4");
+            } else if (item.classList.contains("col-xl-3")) {
+                item.classList.add("col-xl-4");
+                item.classList.remove("col-xl-3");
+            }
+        });
     });
-});
+}
 
 // Click Event
-filterBtn.addEventListener("click", () => {
-    let shopSidebar = document.querySelector(".shop__sidebar");
-    let body = document.querySelector("body");
-    shopSidebar.classList.toggle("active");
-    body.classList.toggle("overlay");
-});
+const filterBtn = document.querySelector("button.filter");
+if(filterBtn){
+    filterBtn.addEventListener("click", () => {
+        let shopSidebar = document.querySelector(".shop__sidebar");
+        let body = document.querySelector("body");
+        shopSidebar.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
 
-var demo3 = new BVSelect({
-    selector: "#sort",
-    searchbox: false,
-    offset: false,
-    placeholder: "Latest",
-});
+if(document.getElementById('sort')){
+    var demo3 = new BVSelect({
+        selector: "#sort",
+        searchbox: false,
+        offset: false,
+        placeholder: "Latest",
+    });
+}
 
 var range = document.getElementById('priceRangeSlider');
 
-noUiSlider.create(range, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 1500
-    },
-    tooltips: true,
-});
+if(range){
+    noUiSlider.create(range, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 1500
+        },
+        tooltips: true,
+    });
+}
 
 
 // Product Details
@@ -1037,15 +1049,17 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 // Order History 
 //  Filter Sidebar
-const filterBtn = document.querySelector(".filter-icon");
+const orderHisotryFilter = document.querySelector(".filter-icon");
 
 // Click Event
-filterBtn.addEventListener("click", () => {
-    let sidebarNav = document.querySelector(".dashboard__nav");
-    let body = document.querySelector("body");
-    sidebarNav.classList.toggle("active");
-    body.classList.toggle("overlay");
-});
+if(orderHisotryFilter){
+    orderHisotryFilter.addEventListener("click", () => {
+        let sidebarNav = document.querySelector(".dashboard__nav");
+        let body = document.querySelector("body");
+        sidebarNav.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
 
 
 // Create Account 
@@ -1065,43 +1079,55 @@ function showPassword(id, el) {
 
 
 // Checkout 
-var country = new BVSelect({
-    selector: "#country",
-    searchbox: false,
-    offset: false,
-    placeholder: "Select",
-});
-var states = new BVSelect({
-    selector: "#states",
-    searchbox: false,
-    offset: false,
-    placeholder: "Selects",
-});
-var zip = new BVSelect({
-    selector: "#zip",
-    searchbox: false,
-    offset: false,
-    placeholder: "Zip Code",
-});
+if(document.getElementById('country')){
+    var country = new BVSelect({
+        selector: "#country",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select",
+    });
+}
+
+if(document.getElementById('states')){
+    var states = new BVSelect({
+        selector: "#states",
+        searchbox: false,
+        offset: false,
+        placeholder: "Selects",
+    });
+}
+
+if(document.getElementById('zip')){
+    var zip = new BVSelect({
+        selector: "#zip",
+        searchbox: false,
+        offset: false,
+        placeholder: "Zip Code",
+    });
+}
 
 // Blog List 
 // Shop Filter Sidebar
-const filterBtn = document.querySelector("button.filter");
+const blogListFilter = document.querySelector("button.filter");
 
 // Click Event
-filterBtn.addEventListener("click", () => {
-    let blogSidebar = document.querySelector(".sidebar");
-    let body = document.querySelector("body");
-    blogSidebar.classList.toggle("active");
-    body.classList.toggle("overlay");
-});
+if(blogListFilter){
+    blogListFilter.addEventListener("click", () => {
+        let blogSidebar = document.querySelector(".sidebar");
+        let body = document.querySelector("body");
+        blogSidebar.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
 $(".venobox").venobox();
-var demo3 = new BVSelect({
-    selector: "#sort",
-    searchbox: false,
-    offset: false,
-    placeholder: "Results..",
-});
+if(document.getElementById('sort')){
+    var demo3 = new BVSelect({
+        selector: "#sort",
+        searchbox: false,
+        offset: false,
+        placeholder: "Results..",
+    });
+}
 
 
 // Sign in Page
@@ -1135,31 +1161,41 @@ function showPassword(id, el) {
 }
 
 //  Filter Sidebar
-const filterBtn = document.querySelector(".filter-icon");
+const accountSettingFilter = document.querySelector(".filter-icon");
 
 // Click Event
-filterBtn.addEventListener("click", () => {
-    let sidebarNav = document.querySelector(".dashboard__nav");
-    let body = document.querySelector("body");
-    sidebarNav.classList.toggle("active");
-    body.classList.toggle("overlay");
-});
+if(accountSettingFilter){
+    accountSettingFilter.addEventListener("click", () => {
+        let sidebarNav = document.querySelector(".dashboard__nav");
+        let body = document.querySelector("body");
+        sidebarNav.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
 
-var country = new BVSelect({
-    selector: "#country",
-    searchbox: false,
-    offset: false,
-    placeholder: "Select",
-});
-var states = new BVSelect({
-    selector: "#states",
-    searchbox: false,
-    offset: false,
-    placeholder: "Select",
-});
-var zip = new BVSelect({
-    selector: "#zip",
-    searchbox: false,
-    offset: false,
-    placeholder: "Zip Code",
-});
+if(document.getElementById('country')){
+    var country = new BVSelect({
+        selector: "#country",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select",
+    });
+}
+
+if(document.getElementById('states')){
+    var states = new BVSelect({
+        selector: "#states",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select",
+    });
+}
+
+if(document.getElementById('country')){
+    var zip = new BVSelect({
+        selector: "#zip",
+        searchbox: false,
+        offset: false,
+        placeholder: "Zip Code",
+    });
+}
