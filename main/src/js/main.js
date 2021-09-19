@@ -60,11 +60,26 @@ window.addEventListener('load', (event) => {
   preloader.style.display = 'none';
 });
 
-newsletterModal = document.getElementById('newsletter');
+// Do not show newsletter
+let doNotShowNewsletter = document.getElementById("doNotShowNewsletter");
 
+if(doNotShowNewsletter){
+    doNotShowNewsletter.addEventListener('change', (event) => {
+        if (event.currentTarget.checked) {
+            localStorage.setItem('hide-newsletter', true);
+        }
+    });
+}
+
+// Show Newsletter Modal
+newsletterModal = document.getElementById('newsletter');
 if (newsletterModal) {
-  var newsletterModal = new bootstrap.Modal(newsletterModal);
-  newsletterModal.show();
+    let newsletter = JSON.parse(localStorage.getItem('hide-newsletter'))
+    
+    if(newsletter == false || !newsletter){
+        var newsletterModal = new bootstrap.Modal(newsletterModal);
+        newsletterModal.show();
+    }
 }
 
 //  Header navigation Sidebar
@@ -1036,9 +1051,11 @@ function decrement() {
     document.getElementById("counter-btn-counter").stepDown();
 }
 
-$(".venobox").venobox({
-    spinner: 'cube-grid'
-});
+if(document.getElementsByClassName('venobox')[0]){
+    $(".venobox").venobox({
+        spinner: 'cube-grid'
+    });
+}
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
@@ -1047,6 +1064,7 @@ var swiper = new Swiper(".mySwiper", {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
 });
+
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     direction: "vertical",
