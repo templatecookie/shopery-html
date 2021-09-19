@@ -1093,3 +1093,70 @@ function showPassword(id, el) {
             '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
     }
 }
+
+// Countdown
+if(document.getElementById('countdown')){
+    $("#countdown").syotimer({
+        year: 2022,
+        month: 09,
+        day: 06,
+        hour: 20,
+        minute: 30,
+    });
+}
+
+if(document.getElementById('category')){
+    var category = new BVSelect({
+        selector: "#category",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select Catecory",
+    });
+}
+
+if(document.getElementById('price')){
+    var price = new BVSelect({
+        selector: "#price",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select Price ",
+    });
+}
+
+if(document.getElementById('rating')){
+    var ratings = new BVSelect({
+        selector: "#rating",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select Rating",
+    });
+}
+
+if(document.getElementById('sort-by')){
+    var sort = new BVSelect({
+        selector: "#sort-by",
+        searchbox: false,
+        offset: false,
+        placeholder: "Sort by: Latest",
+    });
+}
+
+if(document.getElementById('number')){
+    var number = new BVSelect({
+        selector: "#number",
+        searchbox: false,
+        offset: false,
+        placeholder: "Show: 16",
+    });
+}
+
+// Shop Filter Sidebar
+const filterSidebarButton = document.querySelector("button.filter");
+if(filterSidebarButton){
+    filterSidebarButton.addEventListener("click", () => {
+        let filterSidebar = document.querySelector(".filter__sidebar");
+        let body = document.querySelector("body");
+        filterSidebar.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
