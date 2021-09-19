@@ -1,24 +1,71 @@
 /*
+
 Table Contents
 ==============================
-
-Swipper Slider
- 01. Banners 
- 02. Shipping
- 03. Categories 
- 04. Products 
- 06. Deal Cards 
- 07. Featured 
- 08. News 
- 09. Testimonials 
- 10. Brands name 
- 11. Members 
- 12. Instagram
- 13.Blogs-list
- 14.Shops
+    1. Countdown timer
+    2. Stirct Mode
+    3. BVSelect Plugin
+    4. Loader
+    5. Newsletter Modal
+    6. Menu
+    7. Shopping Cart 
+    8. Cart Quantity
+    9. Products Filter
+    10. Range Slider
+    11. Lightbox Plugin
+    12. Swiper Slider
+    13. Filter
+        13.1    Filter Sidebar
+        13.2    Blog Sidebar Filter
+        13.3    Shop Sidebar Filter 
+    14. Password Show/Hide
+    15. Slider
+        15.1    Banner Slider
+        15.2    Categories Slider
+        15.3    Shipping Slider 
+        15.4    Gallery Item
+        15.5    Deals Slider
+        15.6    Featured Sliders
+        15.7    News Slider
+        15.8    Testimonial Slider
+        15.9    Instagram Slider
+        15.10   Brands Slider
+        15.11   Member Slider
+        15.12   Blog Post Slider
 
  */
 
+/* 
+    Countdown Timer 
+======================== */
+if (document.getElementById('countdownTwo')) {
+    $("#countdownTwo").syotimer({
+        year: 2021,
+        month: 9,
+        day: 30,
+        hour: 20,
+        minute: 30,
+    });
+}
+
+if(document.getElementById('countdown')){
+    $("#countdown").syotimer({
+        year: 2022,
+        month: 09,
+        day: 06,
+        hour: 20,
+        minute: 30,
+    });
+}
+
+/* 
+    Strict Mode on 
+======================== */
+"use strict";
+
+/* 
+    BVSelect Plugin
+======================== */
 if (document.getElementById('selectbox1')) {
     var demo1 = new BVSelect({
         selector: "#selectbox1",
@@ -37,22 +84,101 @@ if (document.getElementById('selectbox2')) {
     });
 }
 
-if (document.getElementById('countdownTwo')) {
-    $("#countdownTwo").syotimer({
-        year: 2021,
-        month: 9,
-        day: 30,
-        hour: 20,
-        minute: 30,
+if (document.getElementById('sort')) {
+    var demo3 = new BVSelect({
+        selector: "#sort",
+        searchbox: false,
+        offset: false,
+        placeholder: "Latest",
     });
 }
 
+if (document.getElementById('country')) {
+    var country = new BVSelect({
+        selector: "#country",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select",
+    });
+}
+
+if (document.getElementById('states')) {
+    var states = new BVSelect({
+        selector: "#states",
+        searchbox: false,
+        offset: false,
+        placeholder: "Selects",
+    });
+}
+
+if (document.getElementById('zip')) {
+    var zip = new BVSelect({
+        selector: "#zip",
+        searchbox: false,
+        offset: false,
+        placeholder: "Zip Code",
+    });
+}
+
+if(document.getElementById('category')){
+    var category = new BVSelect({
+        selector: "#category",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select Catecory",
+    });
+}
+
+if(document.getElementById('price')){
+    var price = new BVSelect({
+        selector: "#price",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select Price ",
+    });
+}
+
+if(document.getElementById('rating')){
+    var ratings = new BVSelect({
+        selector: "#rating",
+        searchbox: false,
+        offset: false,
+        placeholder: "Select Rating",
+    });
+}
+
+if(document.getElementById('sort-by')){
+    var sort = new BVSelect({
+        selector: "#sort-by",
+        searchbox: false,
+        offset: false,
+        placeholder: "Sort by: Latest",
+    });
+}
+
+if(document.getElementById('number')){
+    var number = new BVSelect({
+        selector: "#number",
+        searchbox: false,
+        offset: false,
+        placeholder: "Show: 16",
+    });
+}
+
+
+/* 
+    Loader 
+======================== */
 const preloader = document.querySelector('.loader');
 
 window.addEventListener('load', (event) => {
     preloader.style.display = 'none';
 });
 
+
+/* 
+    Newsletter Modal 
+======================== */
 // Do not show newsletter
 let doNotShowNewsletter = document.getElementById("doNotShowNewsletter");
 
@@ -74,6 +200,11 @@ if (newsletterModal) {
         newsletterModal.show();
     }
 }
+
+
+/* 
+    Menu 
+======================== */
 
 //  Header navigation Sidebar
 let closeBar = document.querySelector('.header__cross');
@@ -115,8 +246,9 @@ function menuClick(current) {
     }
 }
 
-// Shoping Cart
-// Cart
+/* 
+    Shopping Cart 
+======================== */
 let cartBtn = document.querySelector('.cart-bag');
 let closeBtn = document.querySelector('.shopping-cart .close');
 const shoppingCart = document.querySelector('.shopping-cart');
@@ -135,7 +267,178 @@ closeBtn.addEventListener('click', function () {
     shoppingCart.classList.remove('active');
 });
 
-//====== Banners Slider ====== \\
+
+// Gallery Item
+$galleryItem = $('.gallery-item');
+$galleryItem.on('click', function () {
+    $('.gallery-item.active').removeClass('active');
+    $(this).addClass('active');
+    let element = $(this).find('img');
+    if (element) {
+        let imgSource = element.attr('src');
+
+        $('.product-main-image').attr('src', imgSource);
+    }
+});
+
+
+/* 
+    Cart Quantity
+======================== */
+function increment() {
+    document.getElementById("counter-btn-counter").stepUp();
+}
+
+function decrement() {
+    document.getElementById("counter-btn-counter").stepDown();
+}
+
+
+/* 
+    Products Filter 
+======================== */
+const filterToggle = document.querySelector("#filter");
+if (filterToggle) {
+    filterToggle.addEventListener("click", function () {
+        const sidebar = document.querySelector(".shop-content .col-lg-3");
+        const productGallery = document.querySelector(".shop-content .col-lg-9");
+        const productContent = document.querySelectorAll(".shop__product-items .col-md-6");
+
+        sidebar.classList.toggle("d-none");
+        productGallery.classList.toggle("col-lg-12");
+
+        // it's will be on 4 column
+        productContent.forEach((item) => {
+            if (item.classList.contains("col-xl-4")) {
+                item.classList.add("col-xl-3");
+                item.classList.remove("col-xl-4");
+            } else if (item.classList.contains("col-xl-3")) {
+                item.classList.add("col-xl-4");
+                item.classList.remove("col-xl-3");
+            }
+        });
+    });
+}
+
+const filterBtn = document.querySelector("button.filter");
+if (filterBtn) {
+    filterBtn.addEventListener("click", () => {
+        let shopSidebar = document.querySelector(".shop__sidebar");
+        let body = document.querySelector("body");
+        shopSidebar.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
+
+
+/* 
+    Range Slider
+======================== */
+var range = document.getElementById('priceRangeSlider');
+
+if (range) {
+    noUiSlider.create(range, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 1500
+        },
+        tooltips: true,
+    });
+}
+
+
+/* 
+    Lightbox Plugin 
+======================== */
+if (document.getElementsByClassName('venobox')[0]) {
+    $(".venobox").venobox({
+        spinner: 'cube-grid'
+    });
+}
+
+/* 
+    Swiper Slider 
+======================== */
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    direction: "vertical",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
+
+/* 
+    Filter 
+======================== */
+// Filter Sidebar
+const orderHisotryFilter = document.querySelector(".filter-icon");
+
+if (orderHisotryFilter) {
+    orderHisotryFilter.addEventListener("click", () => {
+        let sidebarNav = document.querySelector(".dashboard__nav");
+        let body = document.querySelector("body");
+        sidebarNav.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
+
+// Blog Sidebar Filter
+const blogListFilter = document.querySelector("button.filter");
+if (blogListFilter) {
+    blogListFilter.addEventListener("click", () => {
+        let blogSidebar = document.querySelector(".sidebar");
+        let body = document.querySelector("body");
+        blogSidebar.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
+
+// Shop Filter Sidebar
+const filterSidebarButton = document.querySelector("button.filter");
+if(filterSidebarButton){
+    filterSidebarButton.addEventListener("click", () => {
+        let filterSidebar = document.querySelector(".filter__sidebar");
+        let body = document.querySelector("body");
+        filterSidebar.classList.toggle("active");
+        body.classList.toggle("overlay");
+    });
+}
+
+/* 
+    Password Show/Hide 
+======================== */
+function showPassword(id, el) {
+    let x = document.getElementById(id);
+    if (x.type === "password") {
+        x.type = "text";
+        el.innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> ';
+    } else {
+        x.type = "password";
+        el.innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+    }
+}
+
+
+/* 
+    Banner Slider
+======================== */
 var bannerOne = new Swiper('.banner-slider--one', {
     spaceBetween: 15,
     loop: true,
@@ -219,9 +522,7 @@ var bannerFive = new Swiper('.banner-slider--05', {
     },
 });
 
-//====== Shipping Slider one ======\\
-
-//====== Categories ======\\
+// Categories
 var categories = new Swiper('.popular-categories--slider', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -287,7 +588,7 @@ var categoryTwo = new Swiper('.category--top-slider--two', {
     },
 });
 
-//====== Shipping Slider one ======\\
+// Shipping Slider
 var products = new Swiper('.popular-products--slider', {
     slidesPerView: 'auto',
     autoHeight: true,
@@ -486,18 +787,6 @@ var productViewThumbs = new Swiper('.gallery-items-slider', {
     },
 });
 
-$galleryItem = $('.gallery-item');
-$galleryItem.on('click', function () {
-    $('.gallery-item.active').removeClass('active');
-    $(this).addClass('active');
-    let element = $(this).find('img');
-    if (element) {
-        let imgSource = element.attr('src');
-
-        $('.product-main-image').attr('src', imgSource);
-    }
-});
-
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     centeredSlides: true,
     centeredSlidesBounds: true,
@@ -570,7 +859,7 @@ var productViewGallery = new Swiper('.gallery-main-slider', {
     },
 });
 
-//======  deals Slider one ====== \\
+// Deals Slider
 var deals = new Swiper('.deals-products--slider', {
     slidesPerView: 'auto',
     autoHeight: true,
@@ -595,7 +884,7 @@ var deals = new Swiper('.deals-products--slider', {
     },
 });
 
-//====== featured Sliders one ====== \\
+// Featured Sliders
 var featured = new Swiper('.featured-slider--one', {
     spaceBetween: 0,
     loop: true,
@@ -706,7 +995,7 @@ var featured = new Swiper('.our-feature--slider', {
     },
 });
 
-// ====== News Slider one ====== \\
+// News Slider
 var news = new Swiper('.news-slider--one', {
     spaceBetween: 24,
     loop: true,
@@ -734,7 +1023,7 @@ var news = new Swiper('.news-slider--one', {
     },
 });
 
-// ====== Testimonials ====== \\
+// Testimonial Slider
 var testimonialOne = new Swiper('.testimonial-slider--one', {
     loop: true,
     loopFillGroupWithBlank: true,
@@ -803,7 +1092,7 @@ var testimonialThree = new Swiper('.testimonial-slider--three', {
     },
 });
 
-// ====== Instagram ====== \\
+// Instagram Slider
 var insta = new Swiper('.instagram-slider--one', {
     slidesPerView: 6,
     loop: true,
@@ -839,7 +1128,7 @@ var insta = new Swiper('.instagram-slider--one', {
     },
 });
 
-//====== brands name ====== \\
+// Brands Slider
 var brandsName = new Swiper('.brand-name-slide--one', {
     loop: true,
     loopFillGroupWithBlank: true,
@@ -873,7 +1162,7 @@ var brandsName = new Swiper('.brand-name-slide--one', {
     },
 });
 
-//====== Members ====== \\
+// Member Slider
 var memebers = new Swiper('.members-slider--one', {
     loop: true,
     loopFillGroupWithBlank: true,
@@ -905,7 +1194,7 @@ var memebers = new Swiper('.members-slider--one', {
     },
 });
 
-// Blogs
+// Blog Post Slider
 var blogs = new Swiper('.blog-list--slider', {
     spaceBetween: 15,
     loop: true,
@@ -921,242 +1210,3 @@ var blogs = new Swiper('.blog-list--slider', {
         dynamicBullets: true,
     },
 });
-
-
-// Shopping Cart
-function increment() {
-    document.getElementById("counter-btn-counter").stepUp();
-}
-
-function decrement() {
-    document.getElementById("counter-btn-counter").stepDown();
-}
-
-
-// Shop 01
-// Shop Filter Sidebar
-
-// Large Device Filter
-const filterToggle = document.querySelector("#filter");
-if (filterToggle) {
-    filterToggle.addEventListener("click", function () {
-        const sidebar = document.querySelector(".shop-content .col-lg-3");
-        const productGallery = document.querySelector(".shop-content .col-lg-9");
-        const productContent = document.querySelectorAll(".shop__product-items .col-md-6");
-
-        sidebar.classList.toggle("d-none");
-        productGallery.classList.toggle("col-lg-12");
-
-        // it's will be on 4 column
-        productContent.forEach((item) => {
-            if (item.classList.contains("col-xl-4")) {
-                item.classList.add("col-xl-3");
-                item.classList.remove("col-xl-4");
-            } else if (item.classList.contains("col-xl-3")) {
-                item.classList.add("col-xl-4");
-                item.classList.remove("col-xl-3");
-            }
-        });
-    });
-}
-
-// Click Event
-const filterBtn = document.querySelector("button.filter");
-if (filterBtn) {
-    filterBtn.addEventListener("click", () => {
-        let shopSidebar = document.querySelector(".shop__sidebar");
-        let body = document.querySelector("body");
-        shopSidebar.classList.toggle("active");
-        body.classList.toggle("overlay");
-    });
-}
-
-if (document.getElementById('sort')) {
-    var demo3 = new BVSelect({
-        selector: "#sort",
-        searchbox: false,
-        offset: false,
-        placeholder: "Latest",
-    });
-}
-
-var range = document.getElementById('priceRangeSlider');
-
-if (range) {
-    noUiSlider.create(range, {
-        start: [20, 80],
-        connect: true,
-        range: {
-            'min': 0,
-            'max': 1500
-        },
-        tooltips: true,
-    });
-}
-
-// Product Details
-
-if (document.getElementsByClassName('venobox')[0]) {
-    $(".venobox").venobox({
-        spinner: 'cube-grid'
-    });
-}
-
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-});
-
-var swiper2 = new Swiper(".mySwiper2", {
-    spaceBetween: 10,
-    direction: "vertical",
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-        swiper: swiper,
-    },
-});
-
-
-// Order History 
-// Filter Sidebar
-const orderHisotryFilter = document.querySelector(".filter-icon");
-
-// Click Event
-if (orderHisotryFilter) {
-    orderHisotryFilter.addEventListener("click", () => {
-        let sidebarNav = document.querySelector(".dashboard__nav");
-        let body = document.querySelector("body");
-        sidebarNav.classList.toggle("active");
-        body.classList.toggle("overlay");
-    });
-}
-
-// Checkout 
-if (document.getElementById('country')) {
-    var country = new BVSelect({
-        selector: "#country",
-        searchbox: false,
-        offset: false,
-        placeholder: "Select",
-    });
-}
-
-if (document.getElementById('states')) {
-    var states = new BVSelect({
-        selector: "#states",
-        searchbox: false,
-        offset: false,
-        placeholder: "Selects",
-    });
-}
-
-if (document.getElementById('zip')) {
-    var zip = new BVSelect({
-        selector: "#zip",
-        searchbox: false,
-        offset: false,
-        placeholder: "Zip Code",
-    });
-}
-
-// Blog List 
-// Shop Filter Sidebar
-const blogListFilter = document.querySelector("button.filter");
-
-// Click Event
-if (blogListFilter) {
-    blogListFilter.addEventListener("click", () => {
-        let blogSidebar = document.querySelector(".sidebar");
-        let body = document.querySelector("body");
-        blogSidebar.classList.toggle("active");
-        body.classList.toggle("overlay");
-    });
-}
-
-// Account Setting 
-// Hide type in toggle
-function showPassword(id, el) {
-    let x = document.getElementById(id);
-    if (x.type === "password") {
-        x.type = "text";
-        el.innerHTML =
-            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> ';
-    } else {
-        x.type = "password";
-        el.innerHTML =
-            '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
-    }
-}
-
-// Countdown
-if(document.getElementById('countdown')){
-    $("#countdown").syotimer({
-        year: 2022,
-        month: 09,
-        day: 06,
-        hour: 20,
-        minute: 30,
-    });
-}
-
-if(document.getElementById('category')){
-    var category = new BVSelect({
-        selector: "#category",
-        searchbox: false,
-        offset: false,
-        placeholder: "Select Catecory",
-    });
-}
-
-if(document.getElementById('price')){
-    var price = new BVSelect({
-        selector: "#price",
-        searchbox: false,
-        offset: false,
-        placeholder: "Select Price ",
-    });
-}
-
-if(document.getElementById('rating')){
-    var ratings = new BVSelect({
-        selector: "#rating",
-        searchbox: false,
-        offset: false,
-        placeholder: "Select Rating",
-    });
-}
-
-if(document.getElementById('sort-by')){
-    var sort = new BVSelect({
-        selector: "#sort-by",
-        searchbox: false,
-        offset: false,
-        placeholder: "Sort by: Latest",
-    });
-}
-
-if(document.getElementById('number')){
-    var number = new BVSelect({
-        selector: "#number",
-        searchbox: false,
-        offset: false,
-        placeholder: "Show: 16",
-    });
-}
-
-// Shop Filter Sidebar
-const filterSidebarButton = document.querySelector("button.filter");
-if(filterSidebarButton){
-    filterSidebarButton.addEventListener("click", () => {
-        let filterSidebar = document.querySelector(".filter__sidebar");
-        let body = document.querySelector("body");
-        filterSidebar.classList.toggle("active");
-        body.classList.toggle("overlay");
-    });
-}
