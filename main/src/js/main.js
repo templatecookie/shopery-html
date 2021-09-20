@@ -9,34 +9,35 @@ Table Contents
     5. Newsletter Modal
     6. Menu
     7. Shopping Cart 
-    8. Cart Quantity
-    9. Products Filter
-    10. Range Slider
-    11. Lightbox Plugin
-    12. Swiper Slider
-    13. Filter
-        13.1    Filter Sidebar
-        13.2    Blog Sidebar Filter
-        13.3    Shop Sidebar Filter 
-    14. Password Show/Hide
-    15. Slider
-        15.1    Banner Slider
-        15.2    Categories Slider
-        15.3    Shipping Slider 
-        15.4    Gallery Item
-        15.5    Deals Slider
-        15.6    Featured Sliders
-        15.7    News Slider
-        15.8    Testimonial Slider
-        15.9    Instagram Slider
-        15.10   Brands Slider
-        15.11   Member Slider
-        15.12   Blog Post Slider
+    8. Product Image Change
+    9. Cart Quantity
+    10. Products Filter
+    11. Range Slider
+    12. Lightbox Plugin
+    13. Swiper Slider
+    14. Filter
+        14.1    Filter Sidebar
+        14.2    Blog Sidebar Filter
+        14.3    Shop Sidebar Filter 
+    15. Password Show/Hide
+    16. Slider
+        16.1    Banner Slider
+        16.2    Categories Slider
+        16.3    Products Slider
+        16.4    Gallery Slider
+        16.5    Deals Slider
+        16.6    Featured Sliders
+        16.7    News Slider
+        16.8    Testimonial Slider
+        16.9    Instagram Slider
+        16.10   Brands Slider
+        16.11   Member Slider
+        16.12   Blog Post Slider
 
  */
 
 /* 
-    Countdown Timer 
+    1. Countdown timer
 ======================== */
 if (document.getElementById('countdownTwo')) {
     $("#countdownTwo").syotimer({
@@ -59,12 +60,12 @@ if(document.getElementById('countdown')){
 }
 
 /* 
-    Strict Mode on 
+    2. Stirct Mode
 ======================== */
 "use strict";
 
 /* 
-    BVSelect Plugin
+    3. BVSelect Plugin
 ======================== */
 if (document.getElementById('selectbox1')) {
     var demo1 = new BVSelect({
@@ -167,7 +168,7 @@ if(document.getElementById('number')){
 
 
 /* 
-    Loader 
+    4. Loader 
 ======================== */
 const preloader = document.querySelector('.loader');
 
@@ -177,7 +178,7 @@ window.addEventListener('load', (event) => {
 
 
 /* 
-    Newsletter Modal 
+    5. Newsletter Modal
 ======================== */
 // Do not show newsletter
 let doNotShowNewsletter = document.getElementById("doNotShowNewsletter");
@@ -203,7 +204,7 @@ if (newsletterModal) {
 
 
 /* 
-    Menu 
+    6. Menu 
 ======================== */
 
 //  Header navigation Sidebar
@@ -247,7 +248,7 @@ function menuClick(current) {
 }
 
 /* 
-    Shopping Cart 
+    7. Shopping Cart 
 ======================== */
 let cartBtn = document.querySelector('.cart-bag');
 let closeBtn = document.querySelector('.shopping-cart .close');
@@ -268,7 +269,7 @@ closeBtn.addEventListener('click', function () {
 });
 
 
-// Gallery Item
+// 8. Product Image Change
 $galleryItem = $('.gallery-item');
 $galleryItem.on('click', function () {
     $('.gallery-item.active').removeClass('active');
@@ -283,7 +284,7 @@ $galleryItem.on('click', function () {
 
 
 /* 
-    Cart Quantity
+    9. Cart Quantity
 ======================== */
 function increment() {
     document.getElementById("counter-btn-counter").stepUp();
@@ -295,7 +296,7 @@ function decrement() {
 
 
 /* 
-    Products Filter 
+    10. Products Filter
 ======================== */
 const filterToggle = document.querySelector("#filter");
 if (filterToggle) {
@@ -332,7 +333,7 @@ if (filterBtn) {
 
 
 /* 
-    Range Slider
+    11. Range Slider
 ======================== */
 var range = document.getElementById('priceRangeSlider');
 
@@ -350,7 +351,7 @@ if (range) {
 
 
 /* 
-    Lightbox Plugin 
+    12. Lightbox Plugin
 ======================== */
 if (document.getElementsByClassName('venobox')[0]) {
     $(".venobox").venobox({
@@ -359,7 +360,7 @@ if (document.getElementsByClassName('venobox')[0]) {
 }
 
 /* 
-    Swiper Slider 
+    13. Swiper Slider
 ======================== */
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
@@ -383,9 +384,9 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 
 /* 
-    Filter 
+    14. Filter 
 ======================== */
-// Filter Sidebar
+// 14.1    Filter Sidebar
 const orderHisotryFilter = document.querySelector(".filter-icon");
 
 if (orderHisotryFilter) {
@@ -397,7 +398,7 @@ if (orderHisotryFilter) {
     });
 }
 
-// Blog Sidebar Filter
+// 14.2    Blog Sidebar Filter
 const blogListFilter = document.querySelector("button.filter");
 if (blogListFilter) {
     blogListFilter.addEventListener("click", () => {
@@ -408,7 +409,7 @@ if (blogListFilter) {
     });
 }
 
-// Shop Filter Sidebar
+// 14.3    Shop Sidebar Filter 
 const filterSidebarButton = document.querySelector("button.filter");
 if(filterSidebarButton){
     filterSidebarButton.addEventListener("click", () => {
@@ -420,7 +421,7 @@ if(filterSidebarButton){
 }
 
 /* 
-    Password Show/Hide 
+    15. Password Show/Hide
 ======================== */
 function showPassword(id, el) {
     let x = document.getElementById(id);
@@ -435,10 +436,10 @@ function showPassword(id, el) {
     }
 }
 
-
 /* 
-    Banner Slider
+    16. Slider
 ======================== */
+// 16.1    Banner Slider
 var bannerOne = new Swiper('.banner-slider--one', {
     spaceBetween: 15,
     loop: true,
@@ -522,7 +523,7 @@ var bannerFive = new Swiper('.banner-slider--05', {
     },
 });
 
-// Categories
+// 16.2    Categories Slider
 var categories = new Swiper('.popular-categories--slider', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -588,7 +589,7 @@ var categoryTwo = new Swiper('.category--top-slider--two', {
     },
 });
 
-// Shipping Slider
+// 16.3    Products Slider 
 var products = new Swiper('.popular-products--slider', {
     slidesPerView: 'auto',
     autoHeight: true,
@@ -759,6 +760,7 @@ var productsContentFour = new Swiper('.our-products__content-slider-four', {
     },
 });
 
+// 16.4    Gallery Slider
 var productViewThumbs = new Swiper('.gallery-items-slider', {
     centeredSlides: true,
     slidesPerView: 4,
@@ -859,7 +861,7 @@ var productViewGallery = new Swiper('.gallery-main-slider', {
     },
 });
 
-// Deals Slider
+// 16.5    Deals Slider
 var deals = new Swiper('.deals-products--slider', {
     slidesPerView: 'auto',
     autoHeight: true,
@@ -884,7 +886,7 @@ var deals = new Swiper('.deals-products--slider', {
     },
 });
 
-// Featured Sliders
+// 16.6    Featured Sliders
 var featured = new Swiper('.featured-slider--one', {
     spaceBetween: 0,
     loop: true,
@@ -995,7 +997,7 @@ var featured = new Swiper('.our-feature--slider', {
     },
 });
 
-// News Slider
+// 16.7    News Slider
 var news = new Swiper('.news-slider--one', {
     spaceBetween: 24,
     loop: true,
@@ -1023,7 +1025,7 @@ var news = new Swiper('.news-slider--one', {
     },
 });
 
-// Testimonial Slider
+// 16.8    Testimonial Slider
 var testimonialOne = new Swiper('.testimonial-slider--one', {
     loop: true,
     loopFillGroupWithBlank: true,
@@ -1092,7 +1094,7 @@ var testimonialThree = new Swiper('.testimonial-slider--three', {
     },
 });
 
-// Instagram Slider
+// 16.9    Instagram Slider
 var insta = new Swiper('.instagram-slider--one', {
     slidesPerView: 6,
     loop: true,
@@ -1128,7 +1130,7 @@ var insta = new Swiper('.instagram-slider--one', {
     },
 });
 
-// Brands Slider
+// 16.10   Brands Slider
 var brandsName = new Swiper('.brand-name-slide--one', {
     loop: true,
     loopFillGroupWithBlank: true,
@@ -1162,7 +1164,7 @@ var brandsName = new Swiper('.brand-name-slide--one', {
     },
 });
 
-// Member Slider
+// 16.11   Member Slider
 var memebers = new Swiper('.members-slider--one', {
     loop: true,
     loopFillGroupWithBlank: true,
@@ -1194,7 +1196,7 @@ var memebers = new Swiper('.members-slider--one', {
     },
 });
 
-// Blog Post Slider
+// 16.12   Blog Post Slider
 var blogs = new Swiper('.blog-list--slider', {
     spaceBetween: 15,
     loop: true,
