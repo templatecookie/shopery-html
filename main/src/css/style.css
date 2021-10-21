@@ -2561,7 +2561,7 @@ body.overlay {
   .cyclone .cards-ss--lg {
     margin-bottom: 24px; } }
 /** 2.6 Products Layout */
-@use "sass:math";
+@use 'sass:math';
 .popular-categories__wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -2774,7 +2774,8 @@ body.overlay {
           width: 50%; } }
       @media (max-width: 575px) {
         .products__content-action .button--md {
-          width: auto; } }
+          width: auto;
+          padding: 14px 12px; } }
     .products__content-action .button-fav {
       width: 52px;
       height: 52px;

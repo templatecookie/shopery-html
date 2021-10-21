@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 .popular-categories {
   &__wrapper {
@@ -235,6 +235,7 @@
         }
         @include max(575px) {
           width: auto;
+          padding: 14px 12px;
         }
       }
     }
