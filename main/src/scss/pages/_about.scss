@@ -7,9 +7,9 @@
       position: relative;
       // Slider Arrows
       .arrows {
-        .swiper-button {
-          &--prev,
-          &--next {
+        .arrows {
+          &__btn-prev,
+          &__btn-next {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -18,10 +18,10 @@
               display: none;
             }
           }
-          &--prev {
+          &__btn-prev {
             left: -64px;
           }
-          &--next {
+          &__btn-next {
             right: -64px;
           }
         }

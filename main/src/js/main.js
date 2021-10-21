@@ -1171,8 +1171,8 @@ var memebers = new Swiper('.members-slider--one', {
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ' .arrows__btn-prev ',
-    prevEl: ' .arrows__btn-next',
+    nextEl: ' .arrows__btn-next ',
+    prevEl: ' .arrows__btn-prev',
   },
   breakpoints: {
     0: {

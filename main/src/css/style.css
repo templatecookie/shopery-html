@@ -7919,18 +7919,18 @@ body.overlay {
   background: linear-gradient(180deg, #f2f2f2 0%, #ffffff 100%); }
   .members--two .container {
     position: relative; }
-    .members--two .container .arrows .swiper-button--prev, .members--two .container .arrows .swiper-button--next {
+    .members--two .container .arrows .arrows__btn-prev, .members--two .container .arrows .arrows__btn-next {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       z-index: 1; }
       @media (max-width: 1200px) {
-        .members--two .container .arrows .swiper-button--prev, .members--two .container .arrows .swiper-button--next {
+        .members--two .container .arrows .arrows__btn-prev, .members--two .container .arrows .arrows__btn-next {
           display: none; } }
-    .members--two .container .arrows .swiper-button--prev {
+    .members--two .container .arrows .arrows__btn-prev {
       left: -64px; }
-    .members--two .container .arrows .swiper-button--next {
+    .members--two .container .arrows .arrows__btn-next {
       right: -64px; }
   .members--two .cards-mb {
     border-radius: 8px;
