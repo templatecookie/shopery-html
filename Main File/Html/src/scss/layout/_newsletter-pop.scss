@@ -1,0 +1,112 @@
+// Popup window
+
+.newsletter-popup {
+  .modal {
+    position: relative;
+    &-body {
+      padding: 10px;
+    }
+  }
+
+  &__text-content {
+    padding: 0px 40px;
+    text-align: center;
+    margin-top: 40px;
+    @include max(991px) {
+      padding: 30px 15px;
+      margin-top: 0px;
+    }
+    h5 {
+      text-transform: capitalize;
+      color: color(gray-9);
+      margin-bottom: 12px;
+    }
+    p {
+      color: color(gray-4);
+      margin-bottom: 24px;
+      text-transform: capitalize;
+      span {
+        color: color(warning);
+        font-weight: 600;
+      }
+    }
+
+    .contact-mail {
+      position: relative;
+      width: 100%;
+      height: 48px;
+      overflow: hidden;
+      margin-bottom: 50px;
+      @include max(991px) {
+        margin-bottom: 30px;
+      }
+      input {
+        width: inherit;
+        height: inherit;
+        border: 1px solid #e5e5e5;
+        border-radius: 46px;
+        padding-left: 24px;
+        font-size: 14px;
+        line-height: 21px;
+        color: color(gray-9);
+
+        &::placeholder {
+          text-transform: capitalize;
+          color: color(gray-5);
+        }
+        &:hover,
+        &:focus {
+          border-color: color(primary);
+        }
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        padding: 15px 32px;
+        @include max(575px) {
+          padding: 15px 12px;
+        }
+      }
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      &:hover {
+        color: color(gray-9);
+      }
+      @include max(991px) {
+        top: 0px;
+        right: 0px;
+      }
+    }
+    .form-check {
+      display: inline-block;
+      margin-bottom: 0;
+      label {
+        font-size: 14px;
+        line-height: 28px;
+        color: color(gray-6);
+      }
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 4px;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.cyclone {
+  .cards-ss--lg {
+    margin-bottom: 24px;
+  }
+}
+
+// responsive
+@include max(991px) {
+  .cyclone {
+    &__content {
+      .cards-ss {
+        margin-bottom: 24px;
+      }
+    }
+    .cards-ss--lg {
+      margin-bottom: 24px;
+    }
+  }
+}

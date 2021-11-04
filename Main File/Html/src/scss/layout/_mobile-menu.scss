@@ -1,0 +1,232 @@
+.header {
+  &__sidebar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -340px;
+    width: 150px;
+    height: 100%;
+    padding: 24px 0px;
+    z-index: 9999;
+    transition: all 0.3s linear;
+    @include min(992px) {
+      display: none;
+    }
+    &.active {
+      left: 0px;
+      width: 308px;
+      transition: all 0.3s linear;
+      @include max(380px) {
+        width: 270px;
+      }
+    }
+  }
+
+  &__mobile-sidebar {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+  }
+
+  &__mobile-input {
+    position: relative;
+    width: 260px;
+    height: 44px;
+    margin: auto;
+    border-radius: 6px;
+    border: 1px solid color(gray-1);
+    overflow: hidden;
+    margin: 0px 24px;
+    @include max(380px) {
+      width: 230px;
+    }
+    input {
+      width: 80%;
+      height: inherit;
+      border: 0px;
+      font-size: 13px;
+      line-height: 21px;
+      text-transform: capitalize;
+      color: color(gray-5);
+      padding-left: 16px;
+
+      &::placeholder {
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+
+    .search-btn {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 0px 6px 6px 0px;
+      background-color: color(primary);
+      color: #fff;
+    }
+  }
+
+  &__mobile-menu {
+    margin-top: 12px;
+    overflow: hidden;
+    &-item {
+      padding: 16px 0px;
+      border-bottom: 1px solid color(gray-1);
+      &:nth-last-child(1) {
+        border-bottom: 0px;
+      }
+    }
+
+    &-item-link {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+      color: color(gray-9);
+      margin-left: 24px;
+      width: 100%;
+      position: relative;
+
+      &.active {
+        color: color(primary);
+      }
+
+      &:hover {
+        color: inherit;
+      }
+
+      .drop-icon {
+        position: absolute;
+        right: 48px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: color(gray-5);
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  &__mobile-dropdown-menu {
+    height: 0px;
+    overflow: hidden;
+    pointer-events: none;
+    margin-left: 24px;
+    transition: all 0.6s linear;
+    &-link {
+      margin: 12px 0px;
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+      &.active {
+        a {
+          color: color(primary);
+        }
+      }
+      a {
+        font-size: 14px;
+        line-height: 21px;
+        color: color(gray-6);
+        width: 100%;
+        text-transform: capitalize;
+        &:hover {
+          color: color(primary);
+        }
+      }
+    }
+  }
+
+  &__mobile-action,
+  &__mobile-user {
+    padding-left: 24px;
+    @include max(380px) {
+      padding-left: 15px;
+    }
+  }
+
+  &__mobile-action {
+    a {
+      margin-right: 16px;
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__mobile-user {
+    display: flex;
+    align-items: center;
+
+    &--img {
+      margin-right: 16px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    &--info {
+      h2 {
+        color: color(gray-9);
+      }
+      p {
+        color: color(gray-5);
+      }
+    }
+  }
+
+  &__cross {
+    position: absolute;
+    top: 30px;
+    right: -40px;
+    color: #fff;
+  }
+
+  // Action on hover/click
+  &__mobile-menu-item {
+    &.active {
+      .header__mobile-menu-item-link {
+        .drop-icon {
+          color: color(gray-9);
+          svg {
+            transform: rotate(0deg);
+          }
+        }
+      }
+
+      .header__mobile-dropdown-menu {
+        height: auto;
+        overflow: visible;
+        pointer-events: all;
+      }
+    }
+  }
+}
+
+// It's will be active after js
+body {
+  &.overlay {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      opacity: 0.8;
+      z-index: 999;
+    }
+  }
+}

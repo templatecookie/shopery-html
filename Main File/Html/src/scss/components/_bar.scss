@@ -1,0 +1,12 @@
+.border--bottom-left {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: color(primary);
+  }
+}

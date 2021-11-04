@@ -1,0 +1,91 @@
+// Font Import
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/segoe-script');
+
+$font: 'Poppins', sans-serif;
+$font-2: 'Segoe Script', sans-serif;
+.font-title--xxxl,
+.font-title--xxxl-n {
+  line-height: 86.4px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+.font-title--xxl,
+.font-title--xxl-n {
+  line-height: 67.2px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+.font-title--xl,
+.font-title--xl-n {
+  line-height: 57.6px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+.font-title--lg,
+.font-title--lg-n {
+  line-height: 48px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+.font-title--md,
+.font-title--md-n {
+  line-height: 43.2px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+.font-title--sm,
+.font-title--sm-n {
+  line-height: 38.4px;
+  @include max(767px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+// Fonts body line height
+.font-body--xxxl-400,
+.font-body--xxxl-500,
+.font-body--xxxl-600 {
+  line-height: 36px;
+}
+
+.font-body--xxl-400,
+.font-body--xxl-500,
+.font-body--xxl-600 {
+  line-height: 30px;
+}
+
+.font-body--xl-400,
+.font-body--xl-500,
+.font-body--xl-600 {
+  line-height: 27px;
+}
+
+.font-body--lg-400,
+.font-body--lg-500,
+.font-body--lg-600 {
+  line-height: 24px;
+}
+
+.font-body--md-400,
+.font-body--md-500,
+.font-body--md-600 {
+  line-height: 21px;
+}
+
+.font-body--sm-400,
+.font-body--sm-500,
+.font-body--sm-600 {
+  line-height: 15.6px;
+}

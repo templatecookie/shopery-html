@@ -1,0 +1,29 @@
+// Social Icons
+
+.social-icon {
+  display: flex;
+
+  &-link {
+    margin-right: 8px;
+
+    a {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #b3b3b3;
+      transition: all 0.3s linear;
+      &:hover {
+        color: #fff;
+        background-color: color(primary);
+        transition: all 0.3s linear;
+      }
+
+      svg {
+        width: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.brand-name {
+  &__icon {
+    display: inline-block;
+    width: 100%;
+    border-right: 1px solid #e6e6e6;
+    color: color(gray-2);
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.6s ease-in-out;
+      color: color(primary);
+    }
+  }
+  .swiper-wrapper {
+    .swiper-slide {
+      &:nth-last-child(1) {
+        border-right: 0px !important;
+      }
+    }
+  }
+}

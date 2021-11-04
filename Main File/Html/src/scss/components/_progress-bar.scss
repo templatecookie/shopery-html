@@ -1,0 +1,166 @@
+.progress__bar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 24px;
+  margin-bottom: 40px;
+
+  @include max(500px) {
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+  }
+
+  // when order processing start check mark will be appear otherwise it's will be d-none
+  .check-mark {
+    display: none;
+  }
+
+  &-1x,
+  &-2x,
+  &-3x,
+  &-4x {
+    .progress__bar {
+      &-border {
+        &-active {
+          transition: all 0.6s linear;
+        }
+      }
+    }
+  }
+  &-1x {
+    .progress__bar {
+      &-border {
+        &-active {
+          width: 20%;
+          @include max(500px) {
+            width: inherit;
+            height: 20%;
+          }
+        }
+      }
+    }
+  }
+
+  &-2x {
+    .progress__bar {
+      &-border {
+        &-active {
+          width: 35%;
+          @include max(500px) {
+            width: inherit;
+            height: 35%;
+          }
+        }
+      }
+    }
+  }
+
+  &-3x {
+    .progress__bar {
+      &-border {
+        &-active {
+          width: 70%;
+          @include max(500px) {
+            width: inherit;
+            height: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  &-4x {
+    .progress__bar {
+      &-border {
+        &-active {
+          width: 100%;
+          @include max(500px) {
+            width: inherit;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &-border {
+    position: absolute;
+    // display: inline-block;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 75%;
+    height: 10px;
+    background-color: color(gray-0);
+    z-index: -1;
+    @include max(500px) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 10px;
+      height: 90%;
+    }
+
+    &-active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      background-color: color(primary);
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      transition: all 0.6s linear;
+    }
+  }
+
+  &-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    &-ball {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px dashed color(primary);
+      background-color: #fff;
+      .count-number {
+        color: color(primary);
+      }
+    }
+    h2 {
+      text-transform: capitalize;
+      color: color(hard-primary);
+      margin-top: 8px;
+    }
+
+    &.active {
+      .progress__bar {
+        &-item {
+          &-ball {
+            background-color: color(primary);
+            .count-number {
+              color: #fff;
+              font-weight: 500;
+              &-active {
+                display: none;
+              }
+            }
+            .check-mark {
+              display: block;
+              color: #fff;
+            }
+          }
+        }
+      }
+      h2 {
+        font-weight: 500;
+      }
+    }
+  }
+}

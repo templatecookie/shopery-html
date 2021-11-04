@@ -1,0 +1,77 @@
+// Reset accordion styles
+.accordion-button {
+  position: relative;
+  outline: none;
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.faq {
+  .accordion {
+    &-item {
+      margin-bottom: 12px;
+    }
+
+    &-button,
+    &-body {
+      border: 1px solid #84d187;
+      transition: all 0.3s linear;
+    }
+    &-body {
+      border-top: 0px;
+    }
+
+    &-button,
+    &-body {
+      padding: 16px;
+    }
+
+    &-button {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      padding: 16px;
+      background-color: #fff;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: color(gray-9);
+      text-align: left;
+      position: relative;
+
+      &.collapsed {
+        border-radius: 6px;
+        border: 0px;
+        background-color: color(gray-0);
+        .icon {
+          color: #fff;
+          transition: all 0.3s linear;
+          transform: rotate(0deg);
+        }
+      }
+      .icon {
+        margin-left: auto;
+        color: color(gray-0);
+        transition: all 0.3s linear;
+        transform: rotate(45deg);
+      }
+    }
+
+    &-body {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      color: color(gray-6);
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//======== Category Cards ========= \\
+
+.card-category {
+  position: relative;
+  border: 1px solid color(gray-1);
+  overflow: hidden;
+
+  li {
+    a {
+      padding: 15px 20px;
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: capitalize;
+      font-weight: 400;
+      color: color(gray-9);
+      width: 100%;
+      span {
+        margin-right: 15px;
+        color: color(gray-4);
+      }
+      &:hover {
+        background-color: color(primary);
+        color: #fff;
+        span {
+          color: inherit;
+        }
+      }
+    }
+  }
+  &--view-all {
+    border-top: 1px solid color(gray-1);
+  }
+}
+
+// =========== Responsive ============= //
+@include max(1199px) {
+  .card-category {
+    margin: 12px 0px;
+  }
+}

@@ -1,0 +1,89 @@
+.dashboard {
+  &__nav {
+    position: relative;
+    border-radius: 8px;
+    padding: 24px 0px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    .filter-icon {
+      display: none;
+      position: absolute;
+      top: 8px;
+      right: -38px;
+      background-color: color(primary);
+      padding: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    @include max(991px) {
+      position: fixed;
+      top: 50%;
+      left: -20%;
+      width: 20%;
+      height: auto;
+      z-index: 9;
+      transform: translateY(-50%);
+      visibility: hidden;
+      z-index: 9999;
+      transition: all 0.3s linear;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      &.active {
+        left: 0px;
+        width: 35%;
+        transition: all 0.3s ease-in-out;
+        visibility: visible;
+        transition: all 0.3s linear;
+      }
+
+      .filter-icon {
+        display: block;
+        visibility: visible;
+      }
+    }
+
+    @include max(767px) {
+      width: 70%;
+      left: -70%;
+      &.active {
+        width: 70%;
+      }
+    }
+
+    &-title {
+      text-transform: capitalize;
+      margin-bottom: 16px;
+      padding: 0px 24px;
+    }
+
+    &-item {
+      &-link {
+        border-left: 2px solid transparent;
+        &:hover,
+        &.active {
+          background-color: color(green-0);
+          border-color: color(primary);
+          transition: all 0.3s linear;
+          a {
+            color: color(gray-9);
+          }
+        }
+        a {
+          display: flex;
+          align-items: center;
+          color: color(gray-6);
+          padding: 16px 24px;
+          .icon {
+            margin-right: 6px;
+            width: 30px;
+          }
+          .name {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}

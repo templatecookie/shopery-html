@@ -1,0 +1,567 @@
+.footer {
+  position: relative;
+  background-color: color(gray-9);
+  z-index: 1;
+  overflow: hidden;
+
+  &__top {
+    padding: 66px 0px;
+  }
+
+  // brands information
+  &__brand-info {
+    @include max(991px) {
+      margin-bottom: 38px;
+    }
+    &-logo,
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      color: #fff;
+    }
+
+    p {
+      color: color(gray-5);
+      max-width: 350px;
+      margin-bottom: 22px;
+    }
+
+    &-contact {
+      a {
+        margin: 0px 16px;
+        max-width: 250px;
+
+        @include max(420px) {
+          margin: 0px;
+          margin: 6px;
+        }
+        &:nth-child(1) {
+          margin-left: 0px;
+
+          @include min-max(992px, 1199px) {
+            margin-bottom: 16px;
+          }
+
+          @include max(420px) {
+            margin-top: 0px;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-right: 0px;
+          @include min-max(992px, 1199px) {
+            margin: 0px;
+          }
+        }
+      }
+
+      span {
+        color: #fff;
+        padding-bottom: 6px;
+        border-bottom: 1px solid color(primary);
+        font-weight: 500;
+        transition: all 0.3s linear;
+        &:hover {
+          color: color(primary);
+          border-color: color(hard-primary);
+          transition: all 0.3s linear;
+        }
+      }
+    }
+  }
+
+  // footer navigation menu
+  &__navigation {
+    overflow: hidden;
+    @include max(767px) {
+      margin-bottom: 20px;
+    }
+    &-title {
+      margin-bottom: 20px;
+
+      h2 {
+        color: #fff;
+        text-transform: capitalize;
+      }
+    }
+
+    &-link {
+      margin-bottom: 12px;
+
+      a {
+        font-size: 14px;
+        line-height: 21px;
+        color: color(gray-4);
+        transition: all 0.3s linear;
+        text-transform: capitalize;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid color(gray-8);
+  }
+
+  &__copyright-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: color(gray-5);
+  }
+
+  &__partner {
+    &-item {
+      margin-right: 8px;
+
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  // Mobile app
+  &__mobile-app {
+    display: flex;
+    align-items: center;
+
+    &--item {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      padding: 10px;
+      flex: none;
+      &:hover {
+        background-color: color(gray-1);
+        transition: all 0.3s linear;
+      }
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+
+      span {
+        margin-right: 8px;
+        color: color(gray-9);
+      }
+    }
+
+    &--info {
+      h5 {
+        font-size: 11px;
+        line-height: 14.3px;
+        color: color(gray-7);
+      }
+
+      h2 {
+        font-size: 16px;
+        line-height: 24px;
+        color: color(gray-9);
+      }
+    }
+  }
+
+  // instagram galery
+  &__instagram {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include max(1199px) {
+      width: 350px;
+    }
+    @include max(1460px) {
+      justify-content: flex-start;
+    }
+    &-item {
+      margin-bottom: 6px;
+      margin-right: -6px;
+      @include max(1460px) {
+        margin-right: 12px;
+      }
+      .cards-ig {
+        &__img {
+          width: 69px;
+          height: 69px;
+        }
+      }
+    }
+  }
+
+  // Footer one
+
+  &--one {
+    .footer__brand-info-contact {
+      color: color(gray-5);
+    }
+  }
+
+  // Footer two
+  &--two {
+    background-color: #fff;
+
+    .footer {
+      &__brand-info {
+        &-contact {
+          span {
+            color: color(gray-9);
+            &:hover {
+              color: color(primary);
+              border-color: color(hard-primary);
+              transition: all 0.3s linear;
+            }
+          }
+        }
+      }
+
+      &__navigation {
+        &-title {
+          h2 {
+            color: color(gray-9);
+          }
+        }
+
+        &-link {
+          a {
+            color: color(gray-6);
+
+            &:hover {
+              color: color(gray-9);
+            }
+          }
+        }
+      }
+
+      &__top {
+        background-color: color(gray-0);
+        padding: 60px;
+        @include max(1200px) {
+          padding: 0px;
+          padding-top: 60px;
+        }
+      }
+
+      &__bottom {
+        border-top: 0px;
+      }
+    }
+  }
+
+  &--three,
+  &--five {
+    .footer {
+      &__mobile-app {
+        &--item {
+          background-color: color(gray-8);
+          border-radius: 4px;
+          transition: all 0.3s linear;
+
+          &:hover {
+            background-color: color(gray-7);
+          }
+          span {
+            color: #fff;
+          }
+        }
+        &--info {
+          h5 {
+            color: color(gray-3);
+          }
+          h2 {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &--four {
+    background-color: color(green-9);
+
+    .footer {
+      &__brand-info {
+        @include max(1199px) {
+          margin-bottom: 30px;
+        }
+        p {
+          color: color(green-5);
+        }
+
+        &-contact {
+          color: color(green-5);
+        }
+      }
+
+      &__navigation {
+        &-link {
+          a {
+            color: color(green-5);
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &__social-icon {
+        &-link {
+          a {
+            color: #96b297;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &__copyright-text {
+        color: color(green-5);
+      }
+
+      &__bottom {
+        border-top: 0;
+        box-shadow: 0px -1px 0px 0px #1b421d;
+      }
+    }
+  }
+
+  &--five {
+    background-color: color(gray-9);
+    overflow: hidden;
+
+    .footer {
+      &__bottom {
+        border-top: 0px;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -50%;
+          width: calc(100% * 2);
+          height: 1px;
+          background-color: color(gray-8);
+        }
+      }
+
+      &__brand-info {
+        p {
+          color: color(gray-4);
+        }
+      }
+
+      &__navigation {
+        &-title {
+          h2 {
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: -12px;
+              left: 0px;
+              width: 24px;
+              height: 2px;
+              background-color: color(primary);
+            }
+          }
+        }
+
+        &-link {
+          a {
+            color: color(gray-4);
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &__mobile-app {
+        margin-top: 30px;
+
+        &--item {
+          border-radius: 4px;
+          background-color: color(gray-8);
+
+          span {
+            color: #fff;
+          }
+        }
+
+        &--info {
+          h5 {
+            color: color(gray-3);
+          }
+
+          h2 {
+            color: #fff;
+          }
+        }
+      }
+
+      &__copyright-text {
+        color: color(gray-4);
+      }
+    }
+  }
+
+  // Footer Fours overlay shape
+  &__overlay {
+    &-img {
+      position: absolute;
+      color: #333;
+      z-index: -1;
+      &.one {
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      &.two {
+        bottom: 50px;
+        left: 105px;
+        z-index: 1;
+        @include max(1024px) {
+          left: 0px;
+        }
+        @include max(767px) {
+          bottom: 90px;
+          z-index: -1;
+        }
+        @include max(575px) {
+          left: -55px;
+        }
+      }
+
+      &.three {
+        top: 12px;
+        right: 18px;
+      }
+      &.four {
+        top: 11px;
+        right: 142px;
+      }
+      &.five {
+        top: 106px;
+        right: 16px;
+      }
+      &.six {
+        top: 213px;
+        right: 60px;
+      }
+      &.seven {
+        top: 165px;
+        right: 0px;
+      }
+    }
+  }
+  &--four {
+    .footer__overlay {
+      &-img {
+        color: #173b1a;
+        z-index: -1;
+        @include max(767px) {
+          display: none;
+        }
+        &.three {
+          @include max(1024px) {
+            top: auto;
+            bottom: 0px;
+            right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+
+@media (max-width: 1200px) {
+  // Footer two
+  .footer--two {
+    background-color: #f2f2f2;
+  }
+
+  .footer--two .footer__brand-info-contact,
+  .footer--three .footer__brand-info-contact {
+    margin-bottom: 30px;
+  }
+
+  // Footer five
+  .footer--five {
+    .social-icon {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__top {
+    padding-bottom: 30px;
+  }
+
+  .footer__brand-info p {
+    max-width: 100%;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+
+    .footer__copyright-text {
+      order: 2;
+    }
+
+    .footer__partner {
+      order: 1;
+      margin-bottom: 15px;
+    }
+  }
+
+  // Footers Two
+  .footer--two {
+    background-color: #f2f2f2;
+  }
+
+  // Footer three
+  .footer--three,
+  .footer--four {
+    .footer__bottom .footer__copyright-text {
+      order: 2;
+      margin: 15px 0px;
+    }
+
+    .footer__bottom .footer__partner {
+      order: 3;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (max-width: 574px) {
+  .footer__mobile-app {
+    flex-direction: column;
+  }
+
+  .footer__mobile-app--item {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}

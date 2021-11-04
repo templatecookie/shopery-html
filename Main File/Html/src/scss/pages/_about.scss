@@ -1,0 +1,43 @@
+// Members
+.members {
+  &--two {
+    background: linear-gradient(180deg, #f2f2f2 0%, #ffffff 100%);
+
+    .container {
+      position: relative;
+      // Slider Arrows
+      .arrows {
+        .arrows {
+          &__btn-prev,
+          &__btn-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            @include max(1200px) {
+              display: none;
+            }
+          }
+          &__btn-prev {
+            left: -64px;
+          }
+          &__btn-next {
+            right: -64px;
+          }
+        }
+      }
+    }
+
+    .cards-mb {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+// Testimonial
+.testimonial {
+  &--five {
+    background: #f2f2f2;
+  }
+}

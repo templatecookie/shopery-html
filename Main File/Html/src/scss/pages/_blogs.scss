@@ -1,0 +1,70 @@
+// Filter
+.filter--search {
+  &__content {
+    margin-top: 32px;
+  }
+  &-result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include max(767px) {
+      justify-content: center;
+    }
+    .sort-list {
+      display: flex;
+      align-items: center;
+      label {
+        font-size: 14px;
+        line-height: 21px;
+        color: color(gray-5);
+        font-weight: 400;
+        text-transform: capitalize;
+        margin-right: 6px;
+        flex-shrink: 0;
+      }
+    }
+
+    .result-found {
+      p {
+        font-size: 16px;
+        line-height: 21px;
+        color: color(gray-5);
+        font-weight: 400;
+        text-transform: capitalize;
+        @include max(767px) {
+          display: none;
+        }
+        .number {
+          font-weight: 600;
+          color: color(gray-9);
+        }
+      }
+    }
+  }
+}
+
+// Blog list contents
+.blog-list {
+  &__wrapper {
+    margin-top: 32px;
+    margin-bottom: 80px;
+  }
+
+  &__content--desktop {
+    @include max(991px) {
+      display: none;
+    }
+    .cards-blog {
+      margin-bottom: 24px;
+    }
+  }
+  &--slider {
+    @include min(992px) {
+      display: none;
+    }
+
+    &.swiper-container {
+      padding-bottom: 30px;
+    }
+  }
+}

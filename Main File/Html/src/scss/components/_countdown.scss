@@ -1,0 +1,72 @@
+#countdown {
+  .timer-body-block {
+    .table-cell {
+      .tab-val {
+        font-size: 24px;
+        line-height: 36px;
+        color: color(primary);
+        font-weight: 400;
+        @include max(767px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+      .tab-unit {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        color: color(gray-4);
+      }
+    }
+  }
+}
+
+#countdownTwo {
+  .timer-body-block {
+    justify-content: center;
+    .table-cell {
+      &::after {
+        top: 0px;
+        right: -12px;
+        color: #fff;
+      }
+      .tab-val {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .tab-unit {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+      }
+    }
+  }
+}
+
+.banner-sale__countdown {
+  .timer-body-block {
+    justify-content: flex-start !important;
+  }
+}
+
+.info-countdown__card {
+  .timer-body-block {
+    justify-content: center;
+    .table-cell {
+      .tab-val {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+        color: color(gray-9);
+      }
+      .tab-unit {
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.03em;
+        color: color(gray-4);
+        font-weight: 500;
+      }
+    }
+  }
+}
