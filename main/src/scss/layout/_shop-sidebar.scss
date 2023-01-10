@@ -104,10 +104,13 @@
         margin-bottom: 0px;
       }
       .form-check {
+        display: flex !important;
+        align-items: center !important;
         input {
           width: 20px;
           height: 20px;
           margin-right: 8px;
+          margin-top: 0px;
           &:checked {
             border: 0.5px solid color(primary);
             background-color: color(primary);

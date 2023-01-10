@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="src/lib/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="src/lib/css/bvselect.css" />
     <link rel="stylesheet" href="src/lib/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/scss/main.css" />
   </head>
 
   <body>
@@ -155,9 +155,9 @@
 
         <form action="#">
           <button class="button button--lg w-100">Checkout</button>
-          <button class="button button--lg button--disable w-100">
+          <a href="shopping-cart.html" class="button button--lg button--disable w-100">
             go to cart
-          </button>
+          </a>
         </form>
       </div>
     </div>
@@ -303,7 +303,7 @@
                 </a>
               </div>
               <div class="header__cart-item">
-                <div class="header__cart-item-content">
+                <div class="header__cart-item-content" id="cart-bag">
                   <button class="cart-bag">
                     <svg
                       width="34"
@@ -822,7 +822,7 @@
     <section class="section section--xl faq">
       <div class="container">
         <div class="row faq__content">
-          <div class="col-lg-6 order-lg-0 order-2">
+          <div class="col-lg-6 order-lg-0 order-1">
             <div class="faq__accordion">
               <h5 class="font-title--xl">Welcome, Let’s Talk About Our faq</h5>
               <div class="accordion" id="faq-accordion">
@@ -1037,7 +1037,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 order-lg-0 order-1">
+          <div class="col-lg-6 order-lg-0 order-2">
             <div class="faq__img-wrapper">
               <img
                 src="src/images/banner/banner-lg-09.png"

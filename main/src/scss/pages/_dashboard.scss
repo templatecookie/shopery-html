@@ -311,6 +311,8 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
         background-color: color(gray-0) !important;
       }
 
@@ -418,10 +420,13 @@
       border-radius: 100%;
       overflow: hidden;
       margin-bottom: 20px;
-      img {
+      div {
         width: inherit;
         height: inherit;
         object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
       }
     }
     .button {
@@ -449,5 +454,17 @@
     h5 {
       color: color(gray-9);
     }
+  }
+}
+
+.upload-image{
+  position: relative;
+  input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
   }
 }

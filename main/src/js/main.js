@@ -51,7 +51,7 @@ if (document.getElementById('countdownTwo')) {
 
 if (document.getElementById('countdown')) {
   $('#countdown').syotimer({
-    year: 2022,
+    year: 2023,
     month: 09,
     day: 06,
     hour: 20,
@@ -247,7 +247,7 @@ function menuClick(current) {
 /* 
     7. Shopping Cart 
 ======================== */
-let cartBtn = document.querySelector('.cart-bag');
+let cartBtn = document.querySelector('#cart-bag');
 let closeBtn = document.querySelector('.shopping-cart .close');
 const shoppingCart = document.querySelector('.shopping-cart');
 
@@ -297,12 +297,25 @@ if (filterToggle) {
   filterToggle.addEventListener('click', function () {
     const sidebar = document.querySelector('.shop-content .col-lg-3');
     const productGallery = document.querySelector('.shop-content .col-lg-9');
+    const column = document.querySelectorAll('.custom-col');
     const productContent = document.querySelectorAll(
       '.shop__product-items .col-md-6'
     );
 
     sidebar.classList.toggle('d-none');
     productGallery.classList.toggle('col-lg-12');
+    console.log(column);
+    column.forEach((item) => {
+      if(item.classList.contains('col-xl-6')){
+        item.classList.remove("col-xl-6");
+		    item.classList.add("col-xl-4");
+      }
+      else if (item.classList.contains("col-xl-4")) {
+			item.classList.remove("col-xl-4");
+			item.classList.add("col-xl-6");
+		}
+      
+    }) 
 
     // it's will be on 4 column
     productContent.forEach((item) => {
@@ -382,14 +395,28 @@ var swiper2 = new Swiper('.mySwiper2', {
 // 14.1    Filter Sidebar
 const orderHisotryFilter = document.querySelector('.filter-icon');
 
+
 if (orderHisotryFilter) {
   orderHisotryFilter.addEventListener('click', () => {
     let sidebarNav = document.querySelector('.dashboard__nav');
     let body = document.querySelector('body');
-    // sidebarNav.classList.toggle("active");
+    sidebarNav.classList.toggle("active");
     body.classList.toggle('overlay');
   });
 }
+
+var overlay = document.querySelector(".overlay");
+if(overlay){
+  var overlayAfter = window.getComputedStyle(overlay, "::after");
+  console.log(overlayAfter);
+}
+
+  // overlayAfter.addEventListener('click', () => {
+  //   let sidebarNav = document.querySelector(".dashboard__nav");
+	//   let body = document.querySelector("body");
+	//   sidebarNav.classList.toggle("active");
+	//   body.classList.toggle("overlay");
+  // })
 
 // 14.2    Blog Sidebar Filter
 const blogListFilter = document.querySelector('button.filter');
@@ -467,7 +494,6 @@ var bannerThree = new Swiper('.banner-slider--03', {
   spaceBetween: 15,
   loop: true,
   loopFillGroupWithBlank: true,
-  effect: 'fade',
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
@@ -754,32 +780,37 @@ var productsContentFour = new Swiper('.our-products__content-slider-four', {
 });
 
 // 16.4    Gallery Slider
-var productViewThumbs = new Swiper('.gallery-items-slider', {
-  centeredSlides: true,
-  slidesPerView: 4,
-  loop: true,
-  autoHeight: false,
-  direction: 'vertical',
-  navigation: {
-    nextEl: '.gallery-next-item',
-    prevEl: '.gallery-prev-item',
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-      centeredSlides: false,
-      direction: 'horizontal',
-    },
-    570: {
-      slidesPerView: 4,
-      centeredSlides: false,
-      direction: 'horizontal',
-    },
-    992: {
-      slidesPerView: 4,
-      centeredSlides: false,
-    },
-  },
+var productViewThumbs = new Swiper(".gallery-items-slider", {
+	centeredSlides: true,
+	slidesPerView: 4,
+	loop: true,
+	autoHeight: false,
+	direction: "vertical",
+	spaceBetween: 24,
+	navigation: {
+		nextEl: ".gallery-next-item",
+		prevEl: ".gallery-prev-item",
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 2,
+			centeredSlides: false,
+			direction: "horizontal",
+			spaceBetween: 10,
+		},
+		570: {
+			slidesPerView: 4,
+			centeredSlides: false,
+			direction: "horizontal",
+			spaceBetween: 24,
+		},
+		992: {
+			slidesPerView: 4,
+			centeredSlides: false,
+			direction: "vertical",
+			spaceBetween: 24,
+		},
+	},
 });
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -991,31 +1022,31 @@ var featured = new Swiper('.our-feature--slider', {
 });
 
 // 16.7    News Slider
-var news = new Swiper('.news-slider--one', {
-  spaceBetween: 24,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
+var news = new Swiper(".news-slider--one", {
+	spaceBetween: 24,
+	loop: true,
+	loopFillGroupWithBlank: true,
+	// autoplay: {
+	// 	delay: 4000,
+	// 	disableOnInteraction: false,
+	// },
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		dynamicBullets: true,
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 12,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		1200: {
+			slidesPerView: 3,
+		},
+	},
 });
 
 // 16.8    Testimonial Slider
@@ -1023,7 +1054,7 @@ var testimonialOne = new Swiper('.testimonial-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
   autoHeight: true,
-
+  slidesPerView: 1,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
@@ -1161,6 +1192,7 @@ var brandsName = new Swiper('.brand-name-slide--one', {
 var memebers = new Swiper('.members-slider--one', {
   loop: true,
   loopFillGroupWithBlank: true,
+  slidesPerView: 4,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
@@ -1204,4 +1236,24 @@ var blogs = new Swiper('.blog-list--slider', {
     clickable: true,
     dynamicBullets: true,
   },
+});
+
+
+// upload image
+function readURL(input) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			$("#imagePreview").css(
+				"background-image",
+				"url(" + e.target.result + ")"
+			);
+			$("#imagePreview").hide();
+			$("#imagePreview").fadeIn(650);
+		};
+		reader.readAsDataURL(input.files[0]);
+	}
+}
+$("#imageUpload").change(function () {
+	readURL(this);
 });
