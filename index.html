@@ -11,6 +11,70 @@
         <link rel="stylesheet" href="src/lib/css/bootstrap.min.css" />
         <link rel="stylesheet" href="src/css/style.css" />
     </head>
+    <style>
+    .templatecookie-btn {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 10000000000000000 !important;
+}
+.templatecookie-btn .purchase-btn {
+  box-shadow: 0px 0px 3px 0px white !important;
+  background-color: #171717 !important;
+  color: white !important;
+  width: max-content !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0px 20px !important;
+  height: 50px !important;
+  border-radius: 30px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  animation-name: wave-animation !important;
+  animation-duration: 2.5s !important;
+  animation-iteration-count: infinite !important;
+  transform-origin: 70% 70% !important;
+}
+.templatecookie-btn .purchase-btn span svg {
+  margin-left: 8px;
+  display: block;
+  width: 20px;
+  height: 18px;
+}
+.templatecookie-btn .purchase-btn span svg path {
+  stroke: white;
+}
+.templatecookie-btn .purchase-btn:hover {
+  animation-name: unset !important;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+ }
+  10% {
+    transform: rotate(14deg);
+ }
+  20% {
+    transform: rotate(-8deg);
+ }
+  30% {
+    transform: rotate(14deg);
+ }
+  40% {
+    transform: rotate(-4deg);
+ }
+  50% {
+    transform: rotate(10deg);
+ }
+  60% {
+    transform: rotate(0deg);
+ }
+  100% {
+    transform: rotate(0deg);
+ }
+}
+    </style>
 
     <body>
         <div class="loader">
@@ -41,7 +105,7 @@
                             </li>
                         </ul>
                         <form action="#" class="">
-                            <a href="#" class="button button--lg text-white">
+                            <a href="https://1.envato.market/kjkaBN" target="_blank" class="button button--lg text-white">
                                 Purchase Now
                                 <span>
                                     <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -507,7 +571,7 @@
                 <h2 class="font-title--xl">Start to build your beautiful store now!</h2>
 
                 <div class="call-action__btn-group">
-                    <a href="#" class="button button--md">
+                    <a href="https://1.envato.market/kjkaBN" target="_blank"  class="button button--md">
                         Purchase Now
                         <span>
                             <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -532,5 +596,16 @@
 
         <script src="src/lib/js/bootstrap.bundle.min.js"></script>
         <script src="src/js/main.js"></script>
+        <!-- Purchase Button -->
+        <div class="templatecookie-btn">
+            <a href="https://1.envato.market/kjkaBN" target="_blank" class="purchase-btn">
+                Purchase Now
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </span>
+            </a>
+        </div>
     </body>
 </html>
