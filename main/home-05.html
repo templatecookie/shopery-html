@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="src/lib/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="src/lib/css/bvselect.css" />
         <link rel="stylesheet" href="src/lib/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="src/scss/main.css" />
     </head>
 
     <body>
@@ -243,7 +243,7 @@
                                     <path d="M15.999 28.0722C-10.6672 13.3333 7.9995 -2.66666 15.999 7.45075C23.9995 -2.66666 42.6661 13.3333 15.999 28.0722Z" stroke="currentColor" stroke-width="1.5" />
                                 </svg>
                             </a>
-                            <a href="#" class="icon shopping-bag cart-bag">
+                            <a href="#" class="icon shopping-bag cart-bag" id="cart-bag">
                                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M11.3333 14.1667H7.08333L4.25 29.75H29.75L26.9167 14.1667H22.6667M11.3333 14.1667V9.91667C11.3333 6.78705 13.8704 4.25 17 4.25V4.25C20.1296 4.25 22.6667 6.78705 22.6667 9.91667V14.1667M11.3333 14.1667H22.6667M11.3333 14.1667V18.4167M22.6667 14.1667V18.4167"
@@ -8925,7 +8925,7 @@
                                         <div class="brand-name">
                                             <h2 class="font-body--md-400">Brand:</h2>
                                             <div class="brand-name-logo">
-                                                <span class="icon">
+                                                <!-- <span class="icon">
                                                     <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M5.13333 7.00159C17.2644 -5.59603 31.2617 7.00159 31.2617 7.00159C31.2617 7.00159 17.2644 19.5992 5.13333 7.00159Z" fill="#36C63F" />
                                                         <path
@@ -8936,7 +8936,8 @@
                                                         <path opacity="0.2" d="M24.2617 7.49332L24.2617 6.50421L23.3287 6.50421L23.3287 7.49332L24.2617 7.49332Z" fill="#1A1A1A" />
                                                     </svg>
                                                 </span>
-                                                <h6>farmarys</h6>
+                                                <h6>farmarys</h6> -->
+                                                <img src="./src/images/brand-icon/brand-img.png" alt="">
                                             </div>
                                         </div>
                                         <div class="social-site">
@@ -8996,7 +8997,7 @@
                                             <button class="counter-btn-dec counter-btn" onclick="decrement()">
                                                 -
                                             </button>
-                                            <input type="number" id="counter-btn-counter" class="counter-btn-counter" min="0" max="1000" placeholder="0" />
+                                            <input type="number" id="counter-btn-counter" class="counter-btn-counter" min="1" max="1000" placeholder="1" />
                                             <button class="counter-btn-inc counter-btn" onclick="increment()">
                                                 +
                                             </button>

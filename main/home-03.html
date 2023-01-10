@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="src/lib/css/bvselect.css" />
         <link rel="stylesheet" href="src/lib/css/venobox.css" />
         <link rel="stylesheet" href="src/lib/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="src/scss/main.css" />
     </head>
 
     <body>
@@ -109,7 +109,7 @@
                                 </a>
                             </div>
                             <div class="header__cart-item">
-                                <div class="header__cart-item-content">
+                                <div class="header__cart-item-content" id="cart-bag">
                                     <button class="cart-bag">
                                         <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -3782,7 +3782,7 @@
                                         <div class="brand-name">
                                             <h2 class="font-body--md-400">Brand:</h2>
                                             <div class="brand-name-logo">
-                                                <span class="icon">
+                                                <!-- <span class="icon">
                                                     <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M5.13333 7.00159C17.2644 -5.59603 31.2617 7.00159 31.2617 7.00159C31.2617 7.00159 17.2644 19.5992 5.13333 7.00159Z" fill="#36C63F" />
                                                         <path
@@ -3793,7 +3793,8 @@
                                                         <path opacity="0.2" d="M24.2617 7.49332L24.2617 6.50421L23.3287 6.50421L23.3287 7.49332L24.2617 7.49332Z" fill="#1A1A1A" />
                                                     </svg>
                                                 </span>
-                                                <h6>farmarys</h6>
+                                                <h6>farmarys</h6> -->
+                                                <img src="./src/images/brand-icon/brand-img.png" alt="">
                                             </div>
                                         </div>
                                         <div class="social-site">
@@ -3853,7 +3854,7 @@
                                             <button class="counter-btn-dec counter-btn" onclick="decrement()">
                                                 -
                                             </button>
-                                            <input type="number" id="counter-btn-counter" class="counter-btn-counter" min="0" max="1000" placeholder="0" />
+                                            <input type="number" id="counter-btn-counter" class="counter-btn-counter" min="1" max="1000" placeholder="1" />
                                             <button class="counter-btn-inc counter-btn" onclick="increment()">
                                                 +
                                             </button>

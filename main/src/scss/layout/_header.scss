@@ -242,6 +242,7 @@
   &__cart-item-content {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   &__cart {
     @include max(767px) {
@@ -441,11 +442,11 @@
 
   &--one {
     .header__top {
-      background-color: color(gray-8);
+      background-color: color(white);
 
       &-left {
         p {
-          color: color(gray-3);
+          color: color(gray-6);
         }
       }
       &-right {
@@ -453,16 +454,16 @@
           .bv_mainselect {
             .bv_atual.bv_background {
               min-width: 60px !important;
-              color: color(gray-3);
+              color: color(gray-5);
               .arrow {
-                border-color: color(gray-3);
+                border-color: color(gray-5);
               }
             }
           }
         }
 
         .header__in a {
-          color: color(gray-3);
+          color: color(gray-5);
         }
       }
     }
@@ -866,7 +867,7 @@
       }
 
       &__telephone-number {
-        @include max(575px) {
+        @include max(767px) {
           display: none;
         }
         span {

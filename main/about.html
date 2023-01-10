@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="src/lib/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="src/lib/css/bvselect.css" />
         <link rel="stylesheet" href="src/lib/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="src/scss/main.css" />
     </head>
 
     <body>
@@ -79,7 +79,7 @@
 
                 <form action="#">
                     <button class="button button--lg w-100">Checkout</button>
-                    <button class="button button--lg button--disable w-100">go to cart</button>
+                    <a href="shopping-cart.html" class="button button--lg button--disable w-100">go to cart</a>
                 </form>
             </div>
         </div>
@@ -179,7 +179,7 @@
                                 </a>
                             </div>
                             <div class="header__cart-item">
-                                <div class="header__cart-item-content">
+                                <div class="header__cart-item-content" id="cart-bag">
                                     <button class="cart-bag">
                                         <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path

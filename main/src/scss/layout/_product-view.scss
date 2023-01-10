@@ -73,7 +73,7 @@
       img {
         width: inherit;
         height: inherit;
-        object-fit: cover;
+        object-fit: contain;
 
         @include max(575px) {
           object-fit: contain;
@@ -92,7 +92,7 @@
       img {
         width: inherit;
         height: inherit;
-        object-fit: cover;
+        object-fit: contain;
 
         @include max(575px) {
           object-fit: contain;
@@ -136,7 +136,7 @@
       }
 
       img {
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
         height: 100%;
         @include max(991px) {
@@ -175,7 +175,7 @@
   }
 
   @include mq('tablet-wide', max) {
-    flex-wrap: wrap;
+    flex-direction: column;
 
     .gallery-items {
       width: 100%;
@@ -206,6 +206,10 @@
         bottom: unset;
         top: 50%;
         right: 0;
+      }
+      .gallery-item{
+          width: 56px;
+          height: 56px;
       }
     }
   }

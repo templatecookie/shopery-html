@@ -4,7 +4,7 @@
     margin-top: 32px;
     .blog-head-title {
       text-transform: capitalize;
-
+      font-weight: 500;
       @include max(767px) {
         font-size: 26px;
         line-height: 36px;
@@ -284,7 +284,19 @@
       margin-top: 36px;
     }
     .contact-form--input {
-      margin-bottom: 32px;
+      height: auto;
+      input{
+        height: 48px;
+        width: 100%;
+      }
+      textarea{
+        height: 98px;
+        width: 100%;
+      }
+      label{
+        position: static;
+        margin-bottom: 6px;
+      }
     }
     .contact-form--check {
       margin-top: 16px;
