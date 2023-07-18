@@ -459,7 +459,7 @@
             }
             h5 {
               transform: translateY(0px);
-              transition: all 0.6s ease-in-out;
+              transition: all 0.6s ease-in;
               @include max(991px) {
                 transform: translate(0px);
               }

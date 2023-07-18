@@ -2041,7 +2041,7 @@ body.overlay::after {
 .banner--03 .swiper-pagination-bullet-active, .banner--04 .swiper-pagination-bullet-active {
   width: 16px;
   border-radius: 50px;
-  transition: all 0.6s linear ease-in-out;
+  transition: all 0.6s ease;
 }
 .banner--04 .container, .banner--05 .container {
   position: relative;
