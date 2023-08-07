@@ -1,13 +1,13 @@
 # [templatecookie.com](https://templatecookie.com)
 FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place where a team of design & developers create beautiful templates. Visit [templatecookie.com](https://templatecookie.com) for more updates.
 
-# [Jobpilot](https://kevin-html.vercel.app/)
+# [Shopery](https://shopery.netlify.app/)
 
-> Kevin Personal Portfolio HTML template based on SCSS and Bootstrap
+> Shopery eCommerce HTML template based on SCSS and Bootstrap
 
-This project is a bootstrap version [Kevin Portfolio HTML Template](https://kevin-html.vercel.app/) designed with HTML & CSS.
+This project is a bootstrap version [Shopery HTML Template](https://shopery.netlify.app/) designed with HTML & CSS.
 
-Check the [Live Demo here](https://kevin-html.vercel.app/).
+Check the [Live Demo here](https://shopery.netlify.app/).
 
 
 ## Credits
