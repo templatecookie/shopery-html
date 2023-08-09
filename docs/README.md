@@ -10,12 +10,19 @@ Check the [Live Demo here](https://shopery.netlify.app/).
 ![](screenshot.png)
 
 ## Pages List
-- Home (Landing Page)
-- shop (product list)
+- 5 unique Home (Landing Page)
+- Shop (Product Page)
 - Product Details
-- Authentication Page
-- cart
+- About
+- Account Setting
+- Sign In
+- Sign Up
+- Forget Password
+- Change Password
+- 404
 - Checkout
+- Cart
+- Wishlist
 
   
 ## Framework & Technologies
