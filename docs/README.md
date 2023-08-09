@@ -28,6 +28,9 @@ Check the [Live Demo here](https://shopery.netlify.app/).
 ## Framework & Technologies
 - bootstrap
 - jQuery
+- nouislider
+- paralax
+- venobox
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
