@@ -7,7 +7,7 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 Check the [Live Demo here](https://shopery.netlify.app/).
 
-![](preview.png)
+![../](preview.png)
 
 ## Pages List
 - 5 unique Home (Landing Page)
