@@ -10,19 +10,19 @@ Check the [Live Demo here](https://shopery.netlify.app/).
 ![](preview.png)
 
 ## Pages List
-- 5 unique Home (Landing Page)
-- Shop (Product Page)
-- Product Details
-- About
-- Account Setting
-- Sign In
-- Sign Up
-- Forget Password
-- Change Password
-- 404
-- Checkout
-- Cart
-- Wishlist
+- [5 unique Home Page](https://shopery.netlify.app/#preview)
+- [2 Unique Shop Page](https://shopery.netlify.app/main/shop-01)
+- [Product Details](https://shopery.netlify.app/main/product-details)
+- [About](https://shopery.netlify.app/main/about)
+- [Account Setting](https://shopery.netlify.app/main/account-setting)
+- [Sign In](https://shopery.netlify.app/main/sign-in)
+- [Sign Up](https://shopery.netlify.app/main/create-account)
+- [Order History](https://shopery.netlify.app/main/order-history)
+- [User Dashboard](https://shopery.netlify.app/main/user-dashboard)
+- [Checkout](https://shopery.netlify.app/main/checkout)
+- [Blog List](https://shopery.netlify.app/main/blog-list)
+- [Blog Details](https://shopery.netlify.app/main/single-blog)
+- [Wishlist](https://shopery.netlify.app/main/wishlist)
 
   
 ## Framework & Technologies
