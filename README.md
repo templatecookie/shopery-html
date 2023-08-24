@@ -26,11 +26,11 @@ Check the [Live Demo here](https://shopery.netlify.app/).
 
   
 ## Framework & Technologies
-- bootstrap
-- jQuery
-- nouislider
-- paralax
-- venobox
+- [bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [jQuery](https://jquery.com/)
+- [nouislider](https://refreshless.com/nouislider/)
+- [parallax](https://matthew.wagerfield.com/parallax/)
+- [venobox](https://github.com/nicolafranchini/VenoBox)
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
